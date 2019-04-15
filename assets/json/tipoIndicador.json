@@ -1,0 +1,47 @@
+{
+	"estadoOperacion": {
+		"codigoOperacion": "000",
+		"glosaOperacion": "Ok consulta"
+	},
+	"tipo": [{
+		"codTipo": "ACC",
+		"descripcion": "Acciones Nacionales",
+		"idTipo": 1
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Acciones Internacionales",
+		"idTipo": 2
+	}, {
+		"codTipo": "IND",
+		"descripcion": "Mercados",
+		"idTipo": 3
+	}, {
+		"codTipo": "MON",
+		"descripcion": "Monedas",
+		"idTipo": 4
+	}, {
+		"codTipo": "COM",
+		"descripcion": "Commodities",
+		"idTipo": 5
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "Renta Fija",
+		"idTipo": 6
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Fondos Mutuos",
+		"idTipo": 7
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "Indicadores Financieros",
+		"idTipo": 8
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "ETF",
+		"idTipo": 9
+	}, {
+		"codTipo": "FUT",
+		"descripcion": "Futuros",
+		"idTipo": 10
+	}]
+}

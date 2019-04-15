@@ -1,0 +1,50 @@
+<!--gbujes 18 -->
+<div class="cardSeleccion" ng-controller="SelectCtrl">
+  <div class="ban-row">
+     <div class="ban-col-xs-12 ban-col-sm-5 ban-col-md-5 ban-col-md-offset-2 ban-col-lg-5 ban-col-lg-offset-2">
+        <md-card-content class="cardSeleccion--select md-block">
+            <div class="seleccionCuenta">
+              <span class="select--option">Empresa:</span>
+              <md-select ng-model="select.empresa" placeholder="Selecciona" class="md-no-underline">
+                 <md-optgroup label="Selección de Cuenta">
+                    <md-option value="1">Agrícola Campo Lindo Ltda.
+                       <span class="selectEmpresa">Rut: 97.554.554-6</span>
+                    </md-option>
+                    <md-option value="2">Pesquera Corp Fish Ltda.
+                       <span class="selectEmpresa">Rut: 97.554.554-6</span>
+                    </md-option>
+                    <md-option value="3">Importadora Saigon S.A.
+                       <span class="selectEmpresa">Rut: 97.554.554-6</span>
+                    </md-option>
+                 </md-optgroup>
+              </md-select>
+           </div>
+        </md-card-content>
+     </div>
+     <div class="ban-col-xs-12 ban-col-sm-5 ban-col-md-5  ban-col-lg-5">
+       <md-card-content class="cardSeleccion--select md-block">
+         <div class="seleccionCuenta">
+              <span class="select--option">Cuenta:</span>
+              <md-select ng-model="select.cuenta" class="md-no-underline">
+                 <md-optgroup label="Selección de Cuenta">
+                    <md-option value="1">Gonzalo Ahumada 1</md-option>
+                    <md-option value="2">Gonzalo Ahumada 2</md-option>
+                    <md-option value="3">Gonzalo Ahumada 3</md-option>
+                 </md-optgroup>
+              </md-select>
+          </div>
+       </md-card-content>
+     </div>
+  </div>
+</div>
+<!-- No borrar, cuenta unica empresa persona  -->
+<!-- <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+  <md-card-content class="cardSeleccion--select md-block">
+    <div layout="row" layout-align="space-between center">
+      <span class="select--option">Cuenta:</span>
+         <div class="contenedor--noselect">
+            <span class="noselect--opcion">8239490230423490234234234234234</span>
+         </div>
+    </div>
+  </md-card-content>
+</div> -->

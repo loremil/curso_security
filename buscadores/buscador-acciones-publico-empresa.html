@@ -1,0 +1,153 @@
+<!-- inicio contenedorBuscador -->
+<div class="contenedorBuscador--ffmm colorFondo--buscador colorFuente--buscador collapseFFMM">
+  <div class="ban-row">
+    <div class="margen--buscador">
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input ayuda--buscador">
+          <md-icon>
+            <i class="material-icons buscador--icono">search</i>
+          </md-icon>
+          <label>Palabra clave</label>
+          <input name="texto" ng-model="ffmm.palabra">
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input">
+          <label>Sector</label>
+          <md-select name="clasificacion" ng-model="ffmm.clasificacion">
+            <md-option value="1">Mineria</md-option>
+            <md-option value="2">Electricidad</md-option>
+            <md-option value="3">Aerolineas</md-option>
+            <md-option value="4">Banca</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input">
+          <label>Índice Bursatil</label>
+          <md-select name="region" ng-model="ffmm.region">
+            <md-option value="1">Lorem</md-option>
+            <md-option value="2">Lorem</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <div class="buscador--boton">
+          <md-button ng-click="accionesResultado = !accionesResultado" class="boton2 boton--100 md-raised primario" type="button">
+            <span class="ng-scope">Buscar</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin contenedorBuscador -->
+<!-- inicio contenedorResultados -->
+<div class="tablaMaster h--paddingBottom2" ng-show="accionesResultado">
+  <!-- inicio resultadosTags -->
+  <div class="ban-row">
+    <div class="ban-col-sm-12 ban-col-md-12">
+      <div class="resultado--busqueda h--margin2">
+        <p> Se han encontrado 5 resultados</p>
+      </div>
+      <div class="tags">
+        <ul>
+          <li class="tags--chip">LTM
+            <button class="chip--cerrar" aria-label="cerrar">
+              <md-icon class="material-icons">
+                <i class="material-icons icono">close</i>
+              </md-icon>
+            </button>
+          </li>
+          <li class="tags--chip">CENCOSUD
+            <button class="chip--cerrar" aria-label="cerrar">
+              <md-icon class="material-icons">
+                <i class="material-icons icono">close</i>
+              </md-icon>
+            </button>
+          </li>
+          <li class="tags--chip">BSANTANDER
+            <button class="chip--cerrar" aria-label="cerrar">
+              <md-icon class="material-icons">
+                <i class="material-icons icono">close</i>
+              </md-icon>
+            </button>
+          </li>
+          <li class="tags--chip">ANTARCHILE
+            <button class="chip--cerrar" aria-label="cerrar">
+              <md-icon class="material-icons">
+                <i class="material-icons icono">close</i>
+              </md-icon>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- fin resultadosTags -->
+  <!-- inicio resultadosAcciones -->
+  <table fixed-header class="animated fadeInDown" wt-responsive-table ng-controller="tablaFFMM">
+    <thead class="tableHead--recomendado">
+      <tr>
+        <th></th>
+        <th class="tableHead--titulo">Serie</th>
+        <th>Variación %</th>
+        <th>Precio mercado</th>
+        <th>Precio compra</th>
+        <th>Precio venta</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tableHead--informativo">
+        <td></td>
+        <td class="td--principal">Acciones</td>
+        <td class="td--left" colspan="12" data-title="Acciones">Son una atractiva opción para no adquirir riesgos elevados, pero aún así obtener rentabilidades competitivas en el corto plazo. </td>
+      </tr>
+      <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded"ng-repeat-start="fondomut in accionesCartera | orderBy : sort">
+        <td class="td--iconoApertura">
+          <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+            <md-icon>
+              <i class="material-icons"></i>
+            </md-icon>
+          </md-button>
+          <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+            <md-icon>
+              <i class="material-icons"></i>
+            </md-icon>
+          </md-button>
+        </td>
+        <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+        <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación %">
+          <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+          <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+          <div class="td--valoresVariacion">{{fondomut.variacion}}%</div>
+        </td>
+        <td class="td--valores" data-title="Precio mercado">$2.003,1234</td>
+        <td class="td--valores" data-title="Precio compra">$2.003,1234</td>
+        <td class="td--valores" data-title="Precio venta">$2.003,1234</td>
+        <td class="td--botones">
+          <div class="td--botonesTransar">
+            <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#personas-acciones-compra">Comprar</md-button>
+          </div>
+        </td>
+      </tr>
+      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+        <td colspan="12">
+          <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+            <table class="tableContenido tableContenido__margin">
+              <tbody>
+                <tr>
+                  <td class="despliegueDetalle" colspan="7">
+                    <div ng-include class="fadeIn animated" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- fin resultadosAcciones -->

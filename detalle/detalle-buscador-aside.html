@@ -1,0 +1,54 @@
+<section>
+  <div class="ban-row">
+    <div class="ban-col-xs-9 ban-col-md-6">
+        <h2 class="titulo--operacion titulo--aside ">Buscador</h2>
+        <div class="border--titulo">
+          <hr>
+        </div>
+    </div>
+    <div class=" ban-col-xs-3 ban-col-md-6" ng-controller="asideCloseRight">
+        <md-button class="md-icon-button md-primary asideClose" ng-click="close()">
+          <i class="material-icons">close</i>
+        </md-button>
+    </div>
+  </div>
+</section>
+<!-- inicio buscador -->
+<section ng-controller="asideCloseRight">
+  <!-- inicio contenedorBuscador -->
+  <div class="ban-row">
+    <div class="ban-col-md-12">
+      <div ng-controller="VerAyudaFFMM">
+        <!-- inicio buscadorCaja -->
+        <div class="contenedorBuscador--ffmm colorFondo--buscador colorFuente--buscador collapseFFMM" ng-show="ayudaFondos">
+          <div class="margen--buscador">
+            <div class="ban-row">
+              <div class="ban-col-md-6">
+                <md-input-container class="ayuda--input ayuda--buscador">
+                  <md-icon>
+                    <i class="material-icons buscador--icono">search</i>
+                  </md-icon>
+                  <label>Palabra clave</label>
+                  <input name="texto" ng-model="ffmm.palabra">
+                </md-input-container>
+              </div>
+              <div class="ban-col-md-6">
+                <div class="buscador--boton">
+                  <md-button href="#/buscador-sitio"  ng-click="close()" class="boton2 boton--100 md-raised primario" type="button">
+                    <span class="ng-scope">Buscar</span>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin buscadorCaja -->
+    </div>
+    <div class="resultado--busqueda h--margin2 h--marginTop1">
+      <p> Se han encontrado 0 resultados</p>
+    </div>
+  </div>
+</div>
+  <!-- fin contenedorBuscador -->
+</section>
+<!-- fin buscador -->

@@ -1,0 +1,497 @@
+<section>
+  <div class="contenido--background consultar-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Patrimonio</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-fav.html' "></div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+            <div ng-include src=" 'buscadores/buscador-documentos.html'">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPatrimonioTotal -->
+<section>
+  <div class="ban-container">
+    <div class="card" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row" ng-controller="solicFondoM">
+        <div class="ban-col-md-12">
+          <!-- inicio contenedorHistorial -->
+          <div ng-repeat-start="aporte in solicfm | orderBy : sort">
+            <div class="ban-row a_fadeup1">
+              <div class="ban-col-md-12">
+                <div class="operacion--seleccion">
+                  <div class="ban-row">
+                    <div class="ban-col-sm-4 ban-col-md-2 h--paddingTop1">
+                      <p class="seleccionado--textoPatrimonio">Patrimonio total</p>
+                    </div>
+                    <div class="ban-col-sm-4 ban-col-md-3">
+                      <p class="seleccion__montos h--alignRight">Saldo inicial período</p>
+                      <p class="seleccion__cifra h--alignRight">$1.578.982,095</p>
+                    </div>
+                    <div class="ban-col-sm-4 ban-col-md-2">
+                      <p class="seleccion__montos h--alignRight">Saldo final período</p>
+                      <p class="seleccion__cifra h--alignRight">$100</p>
+                    </div>
+                    <div class="ban-col-sm-5 ban-col-md-2">
+                      <md-input-container class="seleccionado--input md-block">
+                        <label>Período</label>
+                        <md-select name="date01" ng-model="date01">
+                          <md-option value="1">Enero, 2016</md-option>
+                          <md-option value="2">Febrero, 2016</md-option>
+                          <md-option selected value="3">Marzo, 2016</md-option>
+                          <md-option value="4">Abril, 2016</md-option>
+                          <md-option value="5">Mayo, 2016</md-option>
+                          <md-option value="6">Junio, 2016</md-option>
+                          <md-option value="7">Julio, 2016</md-option>
+                          <md-option value="8">Agosto, 2016</md-option>
+                          <md-option value="9">Septiembre, 2016</md-option>
+                          <md-option value="10">Octubre, 2016</md-option>
+                          <md-option value="11">Noviembre, 2016</md-option>
+                          <md-option value="12">Diciembre, 2016</md-option>
+                        </md-select>
+                      </md-input-container>
+                    </div>
+                    <div class="ban-col-sm-7 ban-col-md-3 seleccion--buttonCenter">
+                      <md-button ng-click="toggleRight()" ng-hide="isOpenRight()" class="boton1 md-raised primario">Descargar cartola</md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin contenedorHistorial -->
+          <!-- inicio contenedorGraficos -->
+          <div class="a_fadeup1" ng-repeat-end="" aria-label="Toggle ngHide">
+            <div ng-if="!expanded">
+              <div class="graficoPatrimonio" ng-controller="graficoPatrimonio-p" ng-init="createGraphic(5)">
+                <ks-swiper-container override-parameters="parametrosPatrimonio" on-ready="onReadySwiper(swiper)" class="graficoPatrimonio--swiper-container">
+                  <ks-swiper-slide class="graficoWidgetPatrimonio--swiperSlide">
+                    <div class="graficoWidgetPatrimonio--graficoGeneral" ng-controller="graficoGeneralWidgetPatrimonio-p">
+                      <div class="graficoPatrimonio--slideProducto__textos">
+                        <span class="nombre">Patrimonio total</span>
+                        <span class="monto">$18.690.898.097.000</span>
+                        <span class="porcentaje">100%</span>
+                        <span class="fecha">03/12/2017</span>
+                      </div>
+                      <div id="graficoGeneralWidgetPatrimonio"></div>
+                    </div>
+                  </ks-swiper-slide>
+                  <ks-swiper-slide ng-repeat="producto in productos" class="graficoPatrimonio--swiperSlide">
+                    <div class="graficoPatrimonio--slideProducto">
+                      <div class="graficoPatrimonio--slideProducto__textos">
+                        <span class="nombre">{{producto.nombre}}</span>
+                        <span class="monto">{{producto.monto}}</span>
+                        <span class="porcentaje">{{producto.porcentaje}}</span>
+                        <span class="fecha">{{producto.fecha}}</span>
+                      </div>
+                      <hc-chart options="producto.opcionesGrafico"> </hc-chart>
+                    </div>
+                  </ks-swiper-slide>
+                </ks-swiper-container>
+              </div>
+            </div>
+          </div>
+          <!-- inicio contenedorGraficos -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPatrimonioTotal -->
+<!-- inicio contenedorPatrimonio -->
+<section>
+  <div class="ban-container" ng-controller="tablaPatrim">
+    <div class="card tablaMaster tablaPatrimonio" ng-controller="animateCtrl">
+      <!-- inicio contenedorPatrimonioNacional -->
+      <table class="a_fadein">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Patrimonio nacional</th>
+            <th>Saldo inicial</th>
+            <th>Ingresos</th>
+            <th>Egresos</th>
+            <th>Cambio de valor</th>
+            <th>Saldo final</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- inicio totalNacional -->
+          <tr class="tableHead--secundario a_fadein">
+            <td></td>
+            <td class="td--principal">Total nacional</td>
+            <td class="td--valores">$90.000.000</td>
+            <td class="td--valores">$10.000.000</td>
+            <td class="td--valores">$1.000.000</td>
+            <td class="td--valores">$10.000.000</td>
+            <td class="td--valores">$100.000.000</td>
+          </tr>
+          <tr class="tr--separador">
+            <td colspan="12">&nbsp;</td>
+          </tr>
+          <!-- fin totalNacional -->
+          <!-- inicio totalCaja -->
+          <tr class="tableHead--secundario no_visible" when-visible="a_fadein">
+            <td></td>
+            <td class="td--principal">
+              <span>50%</span> Total en Caja Internet</td>
+            <td class="td--valores">$45.000,000</td>
+            <td class="td--valores"></td>
+            <td class="td--valores"></td>
+            <td class="td--valores"></td>
+            <td class="td--valores">$1.450.132,950</td>
+          </tr>
+          <tr class="tr--separador">
+            <td colspan="12" class="no_visible" when-visible="a_fadeup1">
+              <div class="ban-col-sm-6 ban-col-md-3">
+              <md-button md-no-ink class="boton1 boton--100 md-raised" href="#caja-abono">Abonar a Caja Internet</md-button>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-button md-no-ink class="boton2 boton--100 md-raised" href="#caja-retiro">Retirar de Caja Internet</md-button>
+            </div>
+            </td>
+          </tr>
+          <!-- fin totalCaja -->
+          <!-- inicio totalAcciones -->
+          <tr class="tableHead--secundario no_visible" when-visible="a_fadein">
+            <td></td>
+            <td class="td--principal">
+              <span>33%</span> Total en Acciones</td>
+            <td class="td--valores">$1.505.463,030</td>
+            <td class="td--valores">$113.440,000</td>
+            <td class="td--valores">$170.000,000</td>
+            <td class="td--valores">$1.230,910</td>
+            <td class="td--valores">$1.450.132,950</td>
+          </tr>
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in acciones | orderBy : sort" class="no_visible"
+            when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">
+              <span>{{usuarios.porcent}}</span>{{usuarios.producto}}</td>
+            <td class="td--valores">{{usuarios.monto}}</td>
+            <td class="td--valores">{{usuarios.ingresos}}</td>
+            <td class="td--valores">{{usuarios.egresos}}</td>
+            <td class="td--valores">{{usuarios.cambio}}</td>
+            <td class="td--valores">{{usuarios.saldo}}</td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="animacionApertura" ng-hide="!usuarios.expanded" ng-repeat-end="">
+            <td class="h--padding0" colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td class="h--padding0" colspan="7">
+                        <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr class="tr--separador">
+            <td colspan="12" class="no_visible" when-visible="a_fadeup1">
+              <div class="ban-col-sm-6 ban-col-md-3">
+              <md-button md-no-ink class="boton1 boton--100 md-raised" href="#acciones">Invertir en Acciones</md-button>
+              </div>
+            </td>
+          </tr>
+          <!-- fin totalAcciones -->
+          <!-- inicio totalFondos -->
+          <tr class="tableHead--secundario no_visible" when-visible="a_fadein">
+            <td></td>
+            <td class="td--principal">
+              <span>40%</span> Total en Fondos Mutuos</td>
+            <td class="td--valores">$21.500.000</td>
+            <td class="td--valores">$21.500.000</td>
+            <td class="td--valores">$21.500.000</td>
+            <td class="td--valores">$21.500.000</td>
+            <td class="td--valores">$21.500.000</td>
+          </tr>
+          <!-- fin totalFondos -->
+          <!-- inicio fondosVarios -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in fondom | orderBy : sort" class="no_visible"
+            when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">
+              <span>{{usuarios.porcent}}</span>{{usuarios.producto}}</td>
+            <td class="td--valores">{{usuarios.monto}}</td>
+            <td class="td--valores">{{usuarios.monto}}</td>
+            <td class="td--valores">{{usuarios.monto}}</td>
+            <td class="td--valores">{{usuarios.monto}}</td>
+            <td class="td--valores">{{usuarios.monto}}</td>
+          </tr>
+          <!-- fin fondosVarios -->
+          <!-- inicio fondosInternos -->
+          <tr aria-label="Toggle ngHide" ng-hide="!usuarios.expanded" ng-repeat-end="">
+            <td class="h--padding0" colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <!-- inicio fondosInternos-contenedores -->
+                    <tr class="tr--secundario" ng-class="{'tr--activeSecundario': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in fondom | orderBy : sort">
+                      <td class="td--iconoApertura">
+                        <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                          <md-icon>
+                            <i class="material-icons"></i>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                          <md-icon>
+                            <i class="material-icons"></i>
+                          </md-icon>
+                        </md-button>
+                      </td>
+                      <td class="td--principal">
+                        <span class="info--porcentaje">{{fondomut.porcent}}</span> {{fondomut.product}}
+                      </td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                    </tr>
+                    <!-- fin fondosInternos-contenedores -->
+                    <!-- inicio fondosInternos-contenido -->
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                      <td class="h--padding0" colspan="7">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr class="tr--terciario">
+                              <td class="td--iconoApertura">
+                              </td>
+                              <td class="td--principal">Valorizado en USD</td>
+                              <td class="td--valores">USD 91.84</td>
+                              <td class="td--valores">USD 1822.20</td>
+                              <td class="td--valores">USD 23000.21</td>
+                              <td class="td--valores">USD 2110.32</td>
+                              <td class="td--valores">USD 1844.43</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="contenidoDesplegable-secundario" ng-controller="tablaFondoMutuos">
+                          <table class="tableContenido" wt-responsive-table>
+                            <tbody>
+                              <tr>
+                                <td colspan="7">
+                                  <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- fin fondosInternos-contenido -->
+                  </tbody>
+                </table>
+                <table class="tableContenido">
+                  <tbody>
+                    <!-- inicio fondosInternosSinUSD-contenedores -->
+                    <tr class="tr--secundario" ng-class="{'tr--activeSecundario': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in fondomClp | orderBy : sort">
+                      <td class="td--iconoApertura">
+                        <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                          <md-icon>
+                            <i class="material-icons"></i>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                          <md-icon>
+                            <i class="material-icons"></i>
+                          </md-icon>
+                        </md-button>
+                      </td>
+                      <td class="td--principal">
+                        <span class="info--porcentaje">{{fondomut.porcent}}</span> {{fondomut.product}}
+                      </td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                      <td class="td--valores">{{fondomut.mont}}</td>
+                    </tr>
+                    <!-- fin fondosInternosSinUSD-contenedores -->
+                    <!-- inicio fondosInternosSinUSD-contenido -->
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                      <td class="h--padding0" colspan="7">
+                        <div class="contenidoDesplegable-secundario" ng-controller="tablaFondoMutuos">
+                          <table class="tableContenido" wt-responsive-table>
+                            <tbody>
+                              <tr>
+                                <td colspan="7">
+                                  <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                </td>
+                              </tr>
+                              <tr class="tableContenido--detalle info--detalle" ng-repeat="fondomut in cuenta | orderBy : sort">
+                                <td class="td--width">
+                                </td>
+                                <td class="cuenta--texto">
+                                  <p class="numero--cta">{{fondomut.cuenta}}</p>
+                                  <p> Beneficio Tributario
+                                    <span>57 BIS</span>
+                                  </p>
+                                </td>
+                                <td class="cuenta--texto">
+                                  <p> Plan de inversión
+                                    <span>normal</span>
+                                  </p>
+                                  <p>Monto libre de comisión
+                                    <span>$5.000.000</span>
+                                  </p>
+                                </td>
+                                <td class="cuenta--texto">
+                                  <p> Monto
+                                    <span>$14.601</span>
+                                  </p>
+                                  <p> Número de cuotas
+                                    <span>14.601,0987</span>
+                                  </p>
+                                </td>
+                                <td colspan="3" class="contenido--botones">
+                                  <div class="datos--botones">
+                                    <md-button md-no-ink class="boton--rescatar md-raised" href="#fondosmutuos-rescate">Rescatar</md-button>
+                                    <md-button md-no-ink class="boton--aportar md-raised" href="#fondosmutuos-aporte-clp">Aportar</md-button>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- fin fondosInternosSinUSD-contenido -->
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr class="tr--separador">
+            <td colspan="12" class="no_visible" when-visible="a_fadeup1">
+              <div class="ban-col-sm-6 ban-col-md-3">
+              <md-button md-no-ink class="boton1 boton--100 md-raised" href="#fondos-mutuos">Invertir en Fondos</md-button>
+              </div>
+            </td>
+          </tr>
+          <!-- fin fondosInternos -->
+        </tbody>
+      </table>
+      <!-- fin contenedorPatrimonioNacional -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPatrimonio -->
+<!-- inicio contenedorPatrimonio -->
+<section>
+  <div class="ban-container" ng-controller="tablaPatrim">
+    <div class="card tablaMaster tablaPatrimonio h--marginBottomcard h--borderRadiusBottom4px h--marginBottom4" ng-controller="animateCtrl">
+      <!-- inicio contenedorPatrimonioInternacional -->
+      <table class="a_fadein h--marginTop2">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Patrimonio internacional</th>
+            <th>Saldo inicial</th>
+            <th>Ingresos</th>
+            <th>Egresos</th>
+            <th>Cambio de valor</th>
+            <th>Saldo final</th>
+          </tr>
+        </thead>
+        <tbody class="responsive">
+          <!-- inicio totalInternacional -->
+          <tr class="tableHead--secundario no_visible" when-visible="a_fadein">
+            <td></td>
+            <td class="td--principal">
+              <span>30%</span>Total en Acciones</td>
+            <td class="td--valores">$1.505.463,030</td>
+            <td class="td--valores">$113.440,000</td>
+            <td class="td--valores">$170.000,000</td>
+            <td class="td--valores">$1.230,910</td>
+            <td class="td--valores">$1.450.132,950</td>
+          </tr>
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in acciones | orderBy : sort" class="no_visible"
+            when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">
+              <span>{{usuarios.porcent}}</span>{{usuarios.producto}}</td>
+            <td class="td--valores">{{usuarios.monto}}</td>
+            <td class="td--valores">{{usuarios.ingresos}}</td>
+            <td class="td--valores">{{usuarios.egresos}}</td>
+            <td class="td--valores">{{usuarios.cambio}}</td>
+            <td class="td--valores">{{usuarios.saldo}}</td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="animacionApertura" ng-hide="!usuarios.expanded" ng-repeat-end="">
+            <td class="h--padding0" colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td class="h--padding0" colspan="7">
+                        <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr class="tr--separador">
+            <td colspan="12" class="no_visible" when-visible="a_fadeup1">
+              <div class="ban-col-sm-6 ban-col-md-3">
+              <md-button md-no-ink class="boton1 boton--100 md-raised" href="#acciones">Invertir en Acciones</md-button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin contenedorPatrimonioInternacional -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPatrimonio -->

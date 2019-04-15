@@ -1,0 +1,377 @@
+<!-- 24 Agosto Loreto -->
+<section>
+  <div class="contenido--background servicios-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Transferencia Banchile Pay</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-controller="BuscaListadoCtrl" ng-include src=" 'select-cuenta/empresas/card-cuenta-fav.html' "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-controller="animateCtrl">
+  <div class="ban-container" ng-controller="solicFondoM">
+    <div class="card">
+      <!-- subtitulo -->
+      <div class="contenedor--subtitulo">
+        <h3 class="subtitulo a_fadeup1">
+          <span class="subtitulo__icono--verde">
+            <md-icon><i class="material-icons">check</i></md-icon>
+          </span>Características de la transferencia
+        </h3>
+      </div>
+      <!-- fin subtitulo -->
+      <!-- Inicio Caracteristicas transferencia -->
+      <div class="ban-row h--marginTop1 a_fadein" ng-controller="EditarBeneficiarioCtrl" ng-cloak>
+        <div class="h--col12">
+          <div class="ban-row">
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Moneda de transferencia</label>
+                <md-select required name="pais" ng-model="beneficiario.pais">
+                  <md-option value="1">USD</md-option>
+                  <md-option value="2">CLP</md-option>
+                </md-select>
+                <div ng-messages="beneficiarioForm.pais.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns ">
+                <label>Usar una plantilla</label>
+                <md-select required name="pais" ng-model="beneficiario.pais">
+                  <md-option value="1">Proveedores en China</md-option>
+                  <md-option value="2">Proveedores en India</md-option>
+                </md-select>
+                <div ng-messages="beneficiarioForm.pais.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <div class="ban-row">
+                <div class="ban-col-xs-1">
+                  <md-input-container class="input--dropdowns">
+                    <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+                    </md-checkbox>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-xs-10">
+                  <md-input-container class="input--dropdowns labelNone">
+                    <label>Crear plantilla de transferencia</label>
+                    <textarea rows="1" md-select-on-focus="" placeholder="Ingresa un nombre "></textarea>
+                  </md-input-container>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin Caracteristicas transferencia -->
+      <!-- inicio origen transferencia-->
+      <div class="contenedor--subtitulo">
+        <h3 class="subtitulo no_visible" when-visible="a_fadeup1">
+          <span class="subtitulo__icono--verde">
+            <md-icon><i class="material-icons">check</i></md-icon>
+          </span> Origen de la transferencia
+        </h3>
+      </div>
+      <div class="ban-row a_fadein" ng-controller="solicFondoM">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+          <div class="operacion--seleccion">
+            <div class="ban-row">
+              <div class="ban-col-sm-7 ban-col-md-6">
+                <p class="seleccion__label">Saldo disponible en caja</p>
+                <p class="seleccion__fondo">$1.000.000.000</p>
+              </div>
+              <div class="ban-col-xs-12 ban-col-sm-5 ban-col-md-6 h--alignCenter">
+                <md-button ng-href="popup.html#/popup-cajaInternet" target="popup" onClick="window.open(this.href, this.target, 'width=800, height=500'); return false;" class="boton2 md-raised primario">abonar</md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin origen trasferencia-->
+      <!-- inicio compra dolar -->
+      <div class="contenedor--subtitulo h--marginTop2">
+        <h3 class="subtitulo no_visible" when-visible="a_fadeup1">
+          <span class="subtitulo__icono--amarillo">
+          <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+        </span> Datos de la compra
+        </h3>
+      </div>
+      <div ng-include src="'mensajes/mensajes--alertaDolar.html'"></div>
+      <!-- inicio input montos -->
+      <div class="ban-row hclea--marginTop1 no_visible" when-visible="a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+          <div class="operacion--seleccion">
+            <div class="ban-row">
+              <div class="ban-col-xs-12 ban-col-sm-3 ban-col-md-3  h--alignCenter">
+                <p class="seleccion__label">Precio Dólar</p>
+                <p class="seleccion__fondo">$670,00</p>
+              </div>
+              <div class="ban-col-xs-12 ban-col-sm-3 ban-col-md-3">
+                <div class="progressCirculo--boxOperacion h--marginCenter">
+                  <div class="progress-wrapper" ng-controller="timerProgress">
+                    <div class="progress ng-cloak" ng-style="getStyle()">{{ time }}</div>
+                    <round-progress max="59" current="seconds" color="#F6A623" bgcolor="transparent" radius="{{ radius*0.27 }}" semi="isSemi" rounded="rounded" clockwise="clockwise" responsive="responsive" stroke="{{ stroke*0.38 }}" animation="{{ currentAnimation }}" offset="inherit"></round-progress>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6 h--alignCenter" ng-controller="modalesCrtl">
+                <md-button ng-click="showPrecioDolar($event)" ng-hide="isOpenRight()" class="boton2 md-raised primario">fijar precio</md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6 h--paddingTop1" ng-init="clp='$'; dolar='USD$'">
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+            <md-input-container class="input--text md-input-has-placeholder">
+              <label for="input_0">Quiero comprar</label>
+              <p class="input--txt_pay">US$</p>
+              <input class="input--text_monto md-input" placeholder="0" id="input_0">
+              <div class="md-errors-spacer"></div>
+              <div ng-messages="banchilepayForm.monto.$error" class="md-input-messages-animation md-auto-hide ng-inactive" aria-live="assertive">
+                <!-- ngMessage: required -->
+              </div>
+            </md-input-container>
+          </div>
+          <div class="moneda-icono">
+            <md-icon class="material-icons"><i class="material-icons">autorenew</i></md-icon>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+            <md-input-container class="input--text md-input-has-placeholder">
+              <label for="input_1">Equivalente a</label>
+              <p class="input--txt_pay">$</p>
+              <input class="input--text_monto ng-pristine ng-untouched ng-valid md-input ng-empty" ng-model="user.monto" placeholder="0" id="input_1" aria-invalid="false">
+              <div class="md-errors-spacer"></div>
+              <div ng-messages="banchilepayForm.aPagar.$error" class="md-input-messages-animation md-auto-hide ng-inactive" aria-live="assertive">
+                <!-- ngMessage: required -->
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+      <!-- fin input montos -->
+      <!-- fin compra dolar -->
+      <!-- inicio agregar -->
+      <div ng-controller="agregarOtro">
+        <div class="contenedor--subtitulo subtitulos__usuarios animated fadeInDown">
+          <div class="ban-row">
+            <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+              <h3 class="subtitulo no_visible" when-visible="a_fadeup1">
+                <span class="subtitulo__icono--amarillo">
+              <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+            </span>Destino de la transferencia</h3>
+            </div>
+            <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+              <div class="subtitulo--boton">
+                <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="items.length == 1">
+                  <md-icon class="boton--agregar--icon">
+                    <i class="material-icons boton--agregar--plus">add</i>
+                    <md-tooltip>Agregar otro</md-tooltip>
+                  </md-icon>
+                </md-button>
+                <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)" ng-if="items.length > 1">
+                  <md-icon>
+                    <i class="material-icons boton--color">&#xE872;</i>
+                    <md-tooltip>Eliminar</md-tooltip>
+                  </md-icon>
+                </md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ng-repeat="item in items">
+          <div class="ban-row animated fadeInDown" ng-if="!$first">
+            <div class="contenedor--subtitulo subtitulos__usuarios sub__padding">
+              <div class="ban-row a_fadein">
+                <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                  <h3 class="subtitulo">
+                    <span class="subtitulo__icono--amarillo">
+                      <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+                    </span> Ingresa otro
+                  </h3>
+                </div>
+                <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                  <div class="subtitulo--boton">
+                    <div>
+                      <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="$last">
+                        <md-icon class="boton--agregar--icon">
+                          <i class="material-icons boton--agregar--plus">add</i>
+                          <md-tooltip>Agregar otro</md-tooltip>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)">
+                        <md-icon>
+                          <i class="material-icons boton--color">&#xE872;</i>
+                          <md-tooltip>Eliminar</md-tooltip>
+                        </md-icon>
+                      </md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ban-row">
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>A mi beneficiario</label>
+                <md-select name="beneficiario" ng-model="banchilepay.beneficiario">
+                  <md-option value="1">Beneficiario 1</md-option>
+                  <md-option value="2">Beneficiario 2</md-option>
+                  <md-option value="3">Beneficiario 3</md-option>
+                </md-select>
+                <div class="input--hint_select">Previamente registrado</div>
+                <div ng-messages="banchilepayForm.BancoCuenta.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>En el Banco y Cuenta</label>
+                <md-select required name="BancoCuenta" ng-model="banchilepay.BancoCuenta">
+                  <md-option value="1">Banco/cuenta 0001</md-option>
+                  <md-option value="2">Banco/cuenta 0002</md-option>
+                  <md-option value="3">Banco/cuenta 0003</md-option>
+                </md-select>
+                <div class="input--hint_select">Definidos en el registro de beneficiarios</div>
+                <div ng-messages="banchilepayForm.BancoCuenta.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Por Concepto de pago</label>
+                <md-select name="ConceptoPago" ng-model="banchilepay.ConceptoPago">
+                  <md-option value="1">0001 Concepto de Pago</md-option>
+                  <md-option value="2">0002 Concepto de Pago</md-option>
+                  <md-option value="3">0003 Concepto de Pago</md-option>
+                </md-select>
+                <div class="input--hint_select">Asociado a código de Banco Central</div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Un monto de</label>
+                <p class="input--txt_pay">$</p>
+                <input class="input--text_monto" placeholder="0">
+                <div ng-messages="banchilepayForm.monto.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+          <div class="ban-row">
+            <div class="ban-col-md-9  h--paddingTop2">
+              <md-input-container class="input--dropdowns">
+                <label>Observaciones</label>
+                <textarea rows="1" md-select-on-focus="" placeholder="Ingresa tus observaciones "></textarea>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-12 ban-col-md-3 ban-col-md-push-0">
+              <div class="bubble-amarillo">
+                <p class="bubble__label">Comisión por transferencia</p>
+                <p class="bubble__monto">
+                  <span class="h--pullRight">$24,00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin agregar -->
+      <div class="ban-row no_visible" when-visible="a_fadein">
+        <div class="ban-col-md-9">
+          <div class="contenedor-alerta">
+            <div ng-include src="'mensajes/mensajes--alertaSaldo.html'"></div>
+          </div>
+        </div>
+        <div class="ban-col-sm-12 ban-col-md-3 ban-col-md-push-0">
+          <div class="producto--seleccionadoB">
+            <div class="ban-col-xs-12">
+              <p class="seleccionado__label">Total a transferir</p>
+              <p class="seleccionado__total ">
+                <span class="total--monto h--pullRight">$0</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bloque 5 terminos -->
+      <div class="contenedor--subtitulo">
+        <h3 class="subtitulo no_visible" when-visible="a_fadeup1">
+          <span class="subtitulo__icono--amarillo">
+              <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+           </span> Confirma tu solicitud
+        </h3>
+      </div>
+      <div class="ban-row no_visible" when-visible="a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-6">
+          <div class="condiciones">
+            <div class="condiciones--texto" height="200">
+              <p>Declaro que he sido informado de lo siguiente:</p>
+              <br/>
+              <p>
+                El Cliente declara su intención de entregar en administración a Banchile Administradora General de Fondos S.A. activos de su propiedad, para ser invertidos única y exclusivamente en Fondos Mutuos administrados por la misma Administradora, de modo que
+                ésta, por cuenta y riesgo del Cliente, pueda decidir su inversión, enajenación y demás actividades que correspondan, de acuerdo a las disposiciones del presente Contrato y a las normas legales o reglamentarias vigentes o que se dicten
+                en el futuro.
+                <br/>Las partes entienden por “Activos” la totalidad de los recursos en efectivo y cuotas de fondos mutuos de que el Cliente sea titular y que éste entregue a la Administradora para su administración, así como las cuotas de fondos mutuos
+                que éste adquiera para el Cliente en dicha administración y los dividendos y rescates provenientes de las respectivas inversiones que la Administradora efectúe por cuenta del Cliente. En el Anexo al Contrato de Administración de Cartera
+                en Fondos Mutuos se contempla el “Plan de Inversión” donde se señala la Cartera de Fondos Mutuos administrados por la Administradora en la que se deberán mantener invertidos los Activos del Cliente, según se define más adelante. El Cliente
+                podrá mantener una o más Carteras objeto de inversión, las que serán administradas por la Administradora, de acuerdo a los límites establecidos en el respectivo Anexo Plan de Inversión. Con todo, previa firma de un nuevo Anexo, el Cliente
+                podrá siempre y en cualquier tiempo cambiarse de una Cartera a otra a partir del primer proceso de ajuste, según se señala más adelante. Por “Cartera” se entenderá aquel conjunto de cuotas de aquellos fondos mutuos administrados por la
+                Administradora, que componen cada una de las categorías de fondos mutuos en las cuales se invertirán los activos del Cliente. Existirán 7 Carteras denominadas: Cartera Protegida, Cartera Defensiva, Cartera Controlada, Cartera Moderada,
+                Cartera Equilibrada, Cartera Potenciada y Cartera Agresiva, cuyas características, Activo objeto y límites, están definidos en los respectivos Anexos. Sin perjuicio de lo anterior, el número de carteras puede aumentarse en el futuro, de
+                común acuerdo por las partes, mediante la formalización de un nuevo Anexo. Cada vez que el presente Contrato se refiera a la palabra “Fondos Mutuos”, deberá entenderse por tal aquel patrimonio a que se refiere el artículo 28 de la Ley
+                número 20.712 de 2014, administrado para estos efectos por Banchile Administradora General de Fondos S.A.
+              </p>
+            </div>
+            <md-input-container class="input--dropdowns">
+              <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+                He leído y acepto las condiciones
+              </md-checkbox>
+            </md-input-container>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6">
+          <div ng-show="datachecked.check">
+            <div ng-include class="a_fadein" src="'autorizaciones/autorizacion_banchilepay.html'"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bloque 5 terminos -->
+    </div>
+    <!-- boton volver -->
+    <div class="ban-row">
+      <div class="ban-col-xs-3 ban-col-sm-2 ban-col-md-2">
+        <div class="boton--back h--marginBottom2" ng-controller="modalesCrtl">
+          <md-button ng-href="#banchilepay">
+            <i class="material-icons">arrow_back</i>
+            <span>Volver</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <!-- fin boton volver -->
+  </div>
+</section>
+<!-- aside include -->
+<section>
+  <md-sidenav class="md-sidenav-right h--positionFix" md-whiteframe="4" md-component-id="right">
+    <div ng-include class="a_fadein" src="'detalle/detalle-abono.html'"></div>
+  </md-sidenav>
+</section>

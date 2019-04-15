@@ -1,0 +1,144 @@
+<!-- actualización modales--card-->
+<section>
+  <div class="contenido--background rconsultar-persona"></div>
+  <div class="card">
+  </div>
+  <section>
+    <div class="contenido--background consultar-empresa"></div>
+    <div class="ban-container">
+      <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+        <div class="ban-row h--marginBottom2 animated fadeInDown ">
+          <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+            <h1 class="titulo--operacion ">Resumen </h1>
+            <div class="border--titulo">
+              <hr>
+            </div>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+            <div id="select-cuenta" ng-controller="BuscaListadoCtrl" ng-include src=" 'select-cuenta/personas/card-cuenta-fav.html' "></div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </section>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--paddingBottom2">
+      <!-- inicio alertas -->
+      <div class="container--alertas">
+        <div ng-include src="'mensajes/mensajes--alerta.html'"></div>
+        <div ng-include src="'mensajes/mensajes--exito.html'"></div>
+        <div ng-include src="'mensajes/mensajes--error.html'"></div>
+        <div ng-include src="'mensajes/mensajes--info.html'"></div>
+      </div>
+      <!-- fin alertas-->
+      <!-- inicio card resumen -->
+      <div class="resumenInversiones">
+        <div class="ban-row">
+          <!-- inicio bloque 1 -->
+          <div class="ban-col-sm-12 ban-col-md-4">
+            <div class="resumen--bloque h--shadowBoxNoHover">
+              <div class="resumen--bloque__titulo">
+                <h2 class="subtitulos">PATRIMONIO</h2>
+              </div>
+              <div class="resumen--bloque__contenido">
+                <!-- inicio mensaje error -->
+                <!-- <div ng-include src="'mensajes-card/mensajes--error.html'"></div> -->
+                <div ng-include src="'mensajes-card/mensajesErrorWidget--movimientos.html'"></div>
+                <!-- fin  mensaje  error -->
+              </div>
+              <md-button class="md-raised boton2 boton--100" href="#patrimonio"><span>VER MIS INVERSIONES</span></md-button>
+            </div>
+          </div>
+          <!-- fin bloque 1 -->
+          <!-- inicio bloque 2 -->
+          <div class="ban-col-sm-12 ban-col-md-4">
+            <div class="resumen--bloque h--shadowBoxNoHover">
+              <div class="resumen--bloque__titulo">
+                <h2 class="subtitulos">ÚLTIMOS MOVIMIENTOS</h2>
+              </div>
+              <div class="resumen--bloque__contenido">
+                <!-- inicio  mensaje alerta -->
+                <div ng-include src="'mensajes-card/mensajesErrorWidget--alerta.html'"></div>
+                <!-- fin mensaje alerta -->
+              </div>
+              <md-button class="md-raised boton2 boton--100" href="#movimientos"><span>VER TODOS</span></md-button>
+            </div>
+          </div>
+          <!-- fin bloque 2 -->
+          <!-- inicio bloque 3 -->
+          <div class="ban-col-sm-12 ban-col-md-4">
+            <div class="resumen--bloque h--shadowBoxNoHover">
+              <div class="bloque--imagen ">
+                <div class="imagen--encabezado">
+                  <img src="assets/images/resumen_pers_encab.png">
+                </div>
+                <p class="titulo--imagen">NUEVO FONDO MUTUO</p>
+                <p>Estrategia Multifondo</p>
+              </div>
+              <div class="resumen--bloque__titulo">
+                <h2 class="subtitulos">RECOMENDACIÓN</h2>
+              </div>
+              <!-- inicio mensaje información -->
+              <div h--paddingTop1 ng-include src="'mensajes-card/mensajesErrorWidget--info.html'"></div>
+              <!-- fin mensaje información -->
+              <md-button class="md-raised boton2 boton--100" href="#fondos-mutuos"><span>ACTUALIZAR</span></md-button>
+            </div>
+          </div>
+          <!-- fin bloque 3 -->
+        </div>
+      </div>
+      <!-- fin card resumen -->
+      <!-- inicio cajas -->
+      <div class="informacion">
+        <div class="ban-row">
+          <!-- inicio caja 1 -->
+          <div class="ban-col-sm-12 ban-col-md-4">
+            <div class="informacion--cajas h--shadowBox">
+              <div class="cajas--imagen ban-responsive-cajas">
+                <img class="imagen" src="assets/images/ffmm-caja01.png" alt="">
+              </div>
+              <md-button class="cajas--btn md-button" aria-label="ir">
+                ¿QUIERES APRENDER?
+              </md-button>
+              <div class="cajas--descripcion">
+                <p>Te enseñamos todo sobre inversiones</p>
+              </div>
+            </div>
+          </div>
+          <!-- fin caja 1 -->
+          <!-- inicio caja 2 -->
+          <div class="ban-col-sm-12 ban-col-md-4">
+            <div class="informacion--cajas h--shadowBox ">
+              <div class="cajas--imagen ban-responsive-cajas">
+                <img class="imagen" src="assets/images/ffmm-caja02.png" alt="">
+              </div>
+              <md-button class="cajas--btn md-button" aria-label="ir">
+                INFORMES DE ESTUDIO
+              </md-button>
+              <div class="cajas--descripcion">
+                <p>Infórmate al momento de tomar decisiones.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Fin caja 2 -->
+          <!-- Inicio caja 3 -->
+          <div class="ban-col-sm-12 ban-col-md-4">
+            <div class="informacion--cajas h--shadowBox">
+              <div class="cajas--imagen ban-responsive-cajas">
+                <img class="imagen" src="assets/images/bannerBoton--asesoria.png" alt="">
+              </div>
+              <md-button class="cajas--btn md-button" aria-label="ir">
+                Asesórate con un experto
+              </md-button>
+              <div class="cajas--descripcion">
+                <p>Herramientas e información para tus inversiones</p>
+              </div>
+            </div>
+          </div>
+          <!-- Fin caja 3 -->
+        </div>
+      </div>
+      <!-- fin cajas -->
+    </div>
+  </div>
+  <section>

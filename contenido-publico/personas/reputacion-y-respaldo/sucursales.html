@@ -1,0 +1,246 @@
+<!-- 24 nov jorge IE -tabs-->
+<section>
+  <div class="contenido--background reputacion-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion">Sucursales</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-buscar.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include class="a_fadein" src=" 'buscadores/buscador-sucursales.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerSucursales contenido--publico">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Busca tu Sucursal</h3>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Banchile Inversiones cuenta con una amplia red de sucursales por las cuales puedes operar y disfrutar de los beneficios que se ofrecen. Asesorías personalizadas, cobros y pagos son algunos de los servicios que se ofrecen en nuestras sucursales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio contenedorMapa -->
+<div class=" " id="scrollArea">
+
+
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card" ng-controller="anclaMapa">
+      <div class="contenedorMapa h--marginTop2" id="lugarMapa">
+        <img src="assets/images/sitio_publico/mapa_sucursales1.png">
+        <div class="infoWindow no_visible" when-visible="a_fadeup1">
+          <div class="titulo h--borderRadiusTop4px">
+            <div class="ban-row">
+              <div class="ban-col-xs-8 ban-col-md-8">
+                <p>Datos de la sucursal</p>
+              </div>
+              <div class="ban-col-xs-3 ban-col-md-3">
+                <i class="material-icons">highlight_off</i>
+              </div>
+            </div>
+          </div>
+          <div class="info h--paddingBottom0_8 h--borderRadiusBottom4px">
+            <div class="ban-row">
+              <div class="ban-row">
+                <div class="ban-col-xs-9 ban-col-xs-push-1 h--paddingTop1 h--marginLeft0_6 h--paddingBottom1">
+                  <p>Sucursal Huérfanos</p>
+                </div>
+              </div>
+              <div class="ban-row">
+                <div class="h--borderBottom h--resetCol"></div>
+                <div class=" h--padding1">
+                  <div class="ban-col-xs-2 ban-col-xs-push-1">
+                    <p>
+                      <i class="material-icons">room</i>
+                    </p>
+                  </div>
+                  <div class="ban-col-xs-8 ban-col-xs-push-1">
+                    <p>666 Huérfanos Santiago, Región Metroplitana, Chile</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-row">
+                <div class=" h--borderBottom"></div>
+                <div class="h--padding1">
+                  <div class="ban-col-xs-2 ban-col-xs-push-1">
+                    <p>
+                      <i class="material-icons">phone</i>
+                    </p>
+                  </div>
+                  <div class="ban-col-xs-8 ban-col-xs-push-1 h--paddingTop0_5">
+                    <p>+56 22468 5363</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-row">
+                <div class="h--borderBottom"></div>
+                <div class="h--padding1">
+                  <div class="ban-col-xs-2 ban-col-xs-push-1">
+                    <p>
+                      <i class="material-icons">schedule</i>
+                    </p>
+                  </div>
+                  <div class="ban-col-xs-8 ban-col-xs-push-1 h--paddingTop0_5">
+                    <p>Lun - Vie 09:00 - 14:00 hrs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorMapa-->
+<!-- inicio contenedorSucursales -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2 tablaMaster" ng-controller="anclaMapa">
+      <!-- inicio mapaSucursales -->
+      <div class="card--contenido">
+        <div class="documentos a_fadein">
+          <md-tabs md-dynamic-height md-border-bottom>
+            <!-- inicio mapaSantiago -->
+            <md-tab label="Santiago">
+              <div class="contenedor-documentos">
+                <table class="a_fadein"  wt-responsive-table ng-controller="tablaSucursales">
+                  <thead>
+                    <tr class="no_visible" when-visible="a_fadein">
+                      <th class="tableHead--titulo">Nombre Oficina</th>
+                      <th>Dirección</th>
+                      <th>Comuna</th>
+                      <th>Zona</th>
+                      <th>Teléfono</th>
+                      <th>Cómo llegar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat-start="fondomut in cartola | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                      <td class=" td--principal " data-title="Oficina ">{{fondomut.oficina}}</td>
+                      <td class="td--valores " data-title="Dirección ">{{fondomut.direccion}}</td>
+                      <td class="td--valores " data-title="Comuna ">{{fondomut.comuna}}</td>
+                      <td class="td--valores " data-title="Zona ">{{fondomut.zona}}</td>
+                      <td class="td--valores " data-title="Teléfono ">{{fondomut.telefono}}</td>
+                      <td class="td--botones ">
+                        <div class="td--botonesTransar ">
+                          <md-button class="boton--aportar btn_accionesPublico md-raised primario " ng-click="scrollTo('lugarMapa') ">Ver Mapa</md-button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide " class="animacionApertura " ng-if="fondomut.expanded " ng-repeat-end=" ">
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </md-tab>
+            <!-- fin mapaSantiago -->
+            <!-- inicio mapaRegiones -->
+            <md-tab label="Regiones ">
+            <div class="contenedor-documentos">
+              <table class="a_fadein"  wt-responsive-table ng-controller="tablaSucursales ">
+                <thead>
+                  <tr class="no_visible" when-visible="a_fadein">
+                    <th class="tableHead--titulo ">Nombre Oficina</th>
+                    <th>Dirección</th>
+                    <th>Comuna</th>
+                    <th>Zona</th>
+                    <th>Teléfono</th>
+                    <th>Cómo llegar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat-start="fondomut in cartola | orderBy : sort ">
+                    <td class="td--principal " data-title="Oficina ">{{fondomut.oficina}}</td>
+                    <td class="td--valores " data-title="Dirección ">{{fondomut.direccion}}</td>
+                    <td class="td--valores " data-title="Comuna ">{{fondomut.comuna}}</td>
+                    <td class="td--valores " data-title="Zona ">{{fondomut.zona}}</td>
+                    <td class="td--valores " data-title="Teléfono ">{{fondomut.telefono}}</td>
+                    <td class="td--botones ">
+                      <div class="td--botonesTransar ">
+                        <md-button class="boton--aportar btn_accionesPublico md-raised primario " ng-click="scrollTo( 'lugarMapa') ">Ver Mapa</md-button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr aria-label="Toggle ngHide " class="animacionApertura " ng-if="fondomut.expanded " ng-repeat-end="" class="no_visible" when-visible="a_fadein">
+                  </tr>
+                </tbody>
+              </table>
+
+              </div>
+
+            </md-tab>
+            <!-- fin mapaRegiones -->
+          </md-tabs>
+        </div>
+      </div>
+      <!-- fin mapaSucursales -->
+    </div>
+  </div>
+  <!-- fin mapaSucursales -->
+</section>
+<!-- fin contenedorSucursales -->
+
+</div>
+<!-- inicio contenedorCajaCliente -->
+<section>
+  <div class="ban-container h--marginBottom4" ng-controller="animateCtrl">
+    <div class="card h--paddingTop2 h--paddingBottom2 h--borderRadiusBottom4px">
+      <!-- inicio cajaCliente -->
+      <div class="ban-row">
+        <div class="ban-col-sm-12 ban-col-md-12">
+          <div class="cajasCliente">
+            <div class="cajas-informacion">
+              <div class="cajas--texto no_visible" when-visible="a_fadeup1">
+                <p>
+                  Si quieres obtener información profesional o contratar este producto
+                </p>
+              </div>
+              <div class="cajas--botones">
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-2 no_visible" when-visible="a_fadeup1">
+                  <md-button class="botonCliente boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO SER CLIENTE</span>
+                  </md-button>
+                </div>
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-0 no_visible" when-visible="a_fadeup2">
+                  <md-button class="boton2 boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO QUE ME CONTACTEN</span>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+            <div class="cajas--imagen">
+              <img src="assets/images/HazteCliente.png" alt="Manos estrechandose ante un acuerdo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin cajaCliente -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorCajaCliente -->

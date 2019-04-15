@@ -1,0 +1,44 @@
+<!--30-03 -->
+<section class="login--contenido">
+    <div class="ban-container">
+        <div class="card--login configuracion">
+            <div class="configuracion">
+                <p class="configuracion--usuario">Esteban Henríquez</p>
+                <h2 class="configuracion--bienvenido">Bienvenido a esta nueva experiencia
+                        </h2>
+                <p class="configuracion--mensaje">
+                    Para una mejor experiencia de uso y para poder comenzar a usar todos los servicios que tenemos creados para ti debes indicarnos con que empresa quieres comenzar.
+                </p>
+                <h3 class="configuracion--titulo">Datos de la empresa</h3>
+                <div class="configuracion--formulario">
+                    <div class="ban-row">
+                        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4">
+                            <md-input-container class="input--dropdowns">
+                                <label>Rut</label>
+                                <input required name="monto" ng-model="RUT">
+                                <div ng-messages="banchilepayForm.monto.$error">
+                                    <div ng-message="required">Este campo es obligatorio.</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+                        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4">
+                            <md-input-container class="input--dropdowns">
+                                <label>Nº Cuenta Corriente</label>
+                                <input required name="monto" ng-model="banchilepay.monto">
+                                <div class="input--hint_select">Del Banco de Chile</div>
+                                <div ng-messages="banchilepayForm.monto.$error">
+                                    <div ng-message="required">Este campo es obligatorio.</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+                        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-4">
+                          <div class="contenedor--botones" ng-controller="modalesCrtl">
+                            <md-button href="#contrato" class="boton1 md-raised primario">COMENZAR</md-button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

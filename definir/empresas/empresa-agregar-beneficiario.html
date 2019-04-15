@@ -1,0 +1,269 @@
+<!-- 21 Agosto "gbujes" -->
+<section>
+  <div class="contenido--background definir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion">Agregar beneficiario</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-include src="'select-cuenta/empresas/card-cuenta-fav.html'"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card h--borderRadiusBottom4px h--paddingBottom2">
+      <!-- subtitulo -->
+      <div class="contenedor--subtitulo">
+        <h3 class="subtitulo a_fadeup1">
+          <span class="subtitulo__icono--amarillo" >
+            <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+          </span>
+          Ingresar datos del Beneficiario
+        </h3>
+      </div>
+      <!-- fin subtitulo -->
+      <!-- inicio datos del beneficiario -->
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--dropdowns">
+            <label>Alias</label>
+            <input required name="alias" ng-model="beneficiario.alias">
+            <div ng-messages="beneficiarioForm.alias.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--dropdowns">
+            <label>Nombre</label>
+            <input required name="nombre" ng-model="beneficiario.nombre">
+            <div ng-messages="beneficiarioForm.nombre.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--dropdowns">
+            <label>País</label>
+            <md-select required name="pais" ng-model="beneficiario.pais">
+              <md-option value="1">País 1</md-option>
+              <md-option value="2">País 2</md-option>
+              <md-option value="3">País 3</md-option>
+              <md-option value="4">País 4</md-option>
+            </md-select>
+            <div ng-messages="beneficiarioForm.pais.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--dropdowns">
+            <label>Dirección</label>
+            <input required name="direccion" ng-model="beneficiario.direccion">
+            <div ng-messages="beneficiarioForm.direccion.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+      </div>
+      <!-- fin datos del beneficiario -->
+      <!-- inicio agregar -->
+      <div ng-controller="agregarOtro">
+        <div class="contenedor--subtitulo subtitulos__usuarios">
+          <div class="ban-row">
+            <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+              <h3 class="subtitulo a_fadeup1">
+                <span class="subtitulo__icono--amarillo" >
+              <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+            </span>Ingresar banco del Beneficiario</h3>
+            </div>
+            <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+              <div class="subtitulo--boton">
+                <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="items.length == 1">
+                  <md-icon class="boton--agregar--icon">
+                    <i class="material-icons boton--agregar--plus">add</i>
+                    <md-tooltip>Agregar banco Beneficiario</md-tooltip>
+                  </md-icon>
+                </md-button>
+                <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)" ng-if="items.length > 1">
+                  <md-icon>
+                    <i class="material-icons boton--color">&#xE872;</i>
+                  </md-icon>
+                </md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ng-repeat="item in items">
+          <div class="ban-row a_fadein" ng-if="!$first">
+            <div class="contenedor--subtitulo subtitulos__usuarios sub__padding">
+              <div class="ban-row">
+                <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                  <h3 class="subtitulo">
+                    <span class="subtitulo__icono--amarillo">
+                      <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+                    </span> Ingresa otro banco del Beneficiario
+                  </h3>
+                </div>
+                <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                  <div class="subtitulo--boton">
+                    <div>
+                      <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="$last">
+                        <md-icon class="boton--agregar--icon">
+                          <i class="material-icons boton--agregar--plus">add</i>
+                          <md-tooltip>Agregar otra dirección</md-tooltip>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)">
+                        <md-icon>
+                          <i class="material-icons boton--color">&#xE872;</i>
+                        </md-icon>
+                        <md-tooltip>
+                          Eliminar
+                        </md-tooltip>
+                      </md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ban-row a_fadein">
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Nombre del Banco</label>
+                <md-select required name="nombre" ng-model="nombre.banco">
+                  <md-option value="1">Banco Nombre 001</md-option>
+                  <md-option value="2">Banco Nombre 002</md-option>
+                  <md-option value="3">Banco Nombre 003</md-option>
+                  <md-option value="4">Banco Nombre 004</md-option>
+                </md-select>
+                <div class="input--hint_select">Seleccione el Banco</div>
+                <div ng-messages="usuarioForm.cuenta.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>País</label>
+                <md-select required ng-model="beneficiario.paisBanco">
+                  <md-option value="1">País 1</md-option>
+                  <md-option value="2">País 2</md-option>
+                  <md-option value="3">País 3</md-option>
+                  <md-option value="4">País 4</md-option>
+                </md-select>
+                <div class="input--hint_select">Seleccione el país</div>
+                <div ng-messages="beneficiarioForm.paisBanco.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Dirección</label>
+                <input required name="direccionBanco" ng-model="beneficiario.direccionBanco">
+                <div class="input--hint_select">Ingrese dirección del Banco</div>
+                <div ng-messages="beneficiarioForm.direccionBanco.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Nº de Cuenta</label>
+                <input required name="cuenta" ng-model="beneficiario.cuenta">
+                <div class="input--hint_select">Ingrese nº de cuenta</div>
+                <div ng-messages="beneficiarioForm.cuenta.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Moneda</label>
+                <md-select ng-model="beneficiario.monedaBanco">
+                  <md-option value="1">Pesos</md-option>
+                  <md-option value="2">USD</md-option>
+                  <md-option value="3">Euros</md-option>
+                </md-select>
+                <div class="input--hint_select">Seleccione moneda del Banco</div>
+                <div ng-messages="beneficiarioForm.monedaBanco.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Cód. Swift/Bic del Banco</label>
+                <input ng-model="beneficiario.codigoSwiftBanco">
+                <div class="input--hint_select">Ingrese código swift</div>
+                <div ng-messages="beneficiarioForm.codigoSwiftBanco.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Cód. ABA/Routing Number</label>
+                <input ng-model="beneficiario.codigoAbaBanco">
+                <div class="input--hint_select">Ingrese código ABA</div>
+                <div ng-messages="beneficiarioForm.codigoAbaBanco.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Cód. IBAN del Banco</label>
+                <input ng-model="beneficiario.codigoIbanBanco">
+                <div class="input--hint_select">Ingrese código IBAN</div>
+                <div ng-messages="beneficiarioForm.codigoIbanBanco.$error">
+                  <div ng-message="required"> Este campo es obligatorio. </div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin agregar -->
+      <!-- inicio autorizar -->
+      <div class="contenedor--subtitulo h--paddingTop1">
+        <h3 class="subtitulo no_visible" when-visible="a_fadeup1">
+          <span class="subtitulo__icono--amarillo">
+            <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+          </span> Autorizar
+        </h3>
+      </div>
+      <!-- fin autorizar -->
+      <!-- inicio seccionAutorizacion -->
+      <div class="ban-row">
+        <div class="ban-col-md-12">
+          <div ng-include src="'autorizaciones/autorizacion-empresas-agregar.html'"></div>
+        </div>
+      </div>
+      <!-- fin seccionAutorizacion -->
+      <!-- botones modal -->
+    </div>
+    <!-- bloque 03 -->
+    <!-- boton volver -->
+    <div class="ban-row">
+      <div class="ban-col-xs-3 ban-col-sm-2 ban-col-md-2">
+        <div class="boton--back h--marginBottom2" ng-controller="modalesCrtl">
+          <md-button ng-href="#beneficiario">
+            <i class="material-icons">arrow_back</i>
+            <span>Volver</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <!-- fin boton volver -->
+</section>

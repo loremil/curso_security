@@ -1,0 +1,15 @@
+<div class="ban-col-sm-6 ban-col-md-3 h--marginTop1 no_visible" when-visible="a_fadein">
+  <md-input-container class="input--dropdowns">
+    <label>Ingrese clave de seguridad</label>
+    <md-icon class="dropdowns--icon">
+      <i class="material-icons">verified_user</i></md-icon>
+    <input ng-model="user.autorizacion">
+  </md-input-container>
+</div>
+<!-- fin autorizar -->
+<!-- botones modal -->
+<div class="ban-col-sm-6 ban-col-md-12">
+  <div class="acciones--botones h--alignRight" ng-controller="modalesCrtl">
+    <md-button ng-click="showAgregarUsuario($event)" class="boton1 md-raised primario no_visible" when-visible="a_fadeup1">Agregar</md-button>
+  </div>
+</div>

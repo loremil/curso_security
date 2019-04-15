@@ -1,0 +1,197 @@
+/* ESTILOS DOCUMENTOS */
+.documentos {
+  padding-top: 0;
+
+  md-tab-content {
+    padding-top: 1em;
+  }
+
+  md-tabs-canvas {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+    a:active,
+    a:focus {
+      text-decoration: none;
+    }
+  }
+
+  md-pagination-wrapper {
+    // width: 64em !important;
+  }
+
+  md-tabs md-ink-bar,
+  md-tabs.md-default-theme md-ink-bar {
+    height: 0.25em;
+  }
+
+  md-tabs .md-tab,
+  md-tabs.md-default-theme .md-tab {
+    text-transform: inherit;
+    color: inherit;
+    padding: 12px 50px;
+    @include font-16;
+    @include roboto-normal;
+  }
+
+  md-tabs .md-tab.md-active,
+  md-tabs .md-tab.md-active md-icon,
+  md-tabs .md-tab.md-focused,
+  md-tabs .md-tab.md-focused md-icon,
+  md-tabs.md-default-theme .md-tab.md-active,
+  md-tabs.md-default-theme .md-tab.md-active md-icon,
+  md-tabs.md-default-theme .md-tab.md-focused,
+  md-tabs.md-default-theme .md-tab.md-focused md-icon {
+    @include roboto-normal;
+  }
+
+  md-tabs .md-tab .md-ripple-container {
+    color: $color-botones;
+  }
+
+  md-tabs md-ink-bar {
+    background: $color-active;
+    color: $color-active;
+  }
+}
+/***************
+Estilos de los documentos
+ ****************/
+.documentosCliente {
+  border: 1px solid #cbd0d9;
+  box-sizing: border-box;
+  height: 100px;
+  padding: 1rem;
+  max-width: 100%;
+  margin: 0 0 2rem;
+
+  .documentosCliente--icon {
+    color: $color-active;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 10%;
+
+    i.material-icons {
+      padding-top: 0.5em;
+    }
+  }
+
+  .documentosCliente--info {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+
+    .caja--titulo {
+      color: $color-active;
+      margin-bottom: 10px;
+      line-height: 1em;
+      @include font-16;
+      @include roboto-normal;
+    }
+
+    .caja--periodo {
+      @include font-12;
+      margin-bottom: 5px;
+    }
+
+    .caja--publicacion {
+      @include font-14;
+    }
+  }
+
+  .documentosCliente--download {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+
+    .download--icon {
+      border: 1px solid #cbd0d9;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 70px;
+      text-align: center;
+      width: 70px;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+
+      i {
+        color: #cbd0d9;
+        font-size: 30px;
+        line-height: 65px;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+
+        &.icon--exito {
+          color: #7EB645;
+        }
+
+        &.icon--error {
+          color: #C11818;
+        }
+      }
+
+      &.border--exito {
+        border: 1px solid #7EB645;
+      }
+
+      &.border--error {
+        border: 1px solid #C11818;
+      }
+    }
+
+    .download--circular {
+      md-progress-circular {
+        position: absolute;
+        top: 0.95rem;
+
+        path {
+          stroke: #519CAD !important;
+          stroke-width: 2.2px !important;
+        }
+
+        svg {
+          margin-left: -2px;
+        }
+      }
+    }
+
+    .download--icon:hover {
+      border: 1px solid $color-active;
+
+      i {
+        color: $color-active;
+        line-height: 75px;
+      }
+    }
+
+    .firmado--icon:hover {
+      border: 1px solid $color-active;
+
+      i {
+        color: $color-active;
+        line-height: 75px;
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+  .documentos md-tabs .md-tab,
+  .documentos md-tabs.md-default-theme .md-tab {
+    padding: 12px 1em;
+  }
+
+  .misDatos md-tabs-wrapper {
+    padding: 0.8em 0;
+  }
+
+  md-tabs-canvas.md-paginated {
+    margin: 0 1em;
+  }
+}
+/***************
+FIN estilos de los documentos
+ ****************/
+/* ESTILOS DOCUMENTOS */

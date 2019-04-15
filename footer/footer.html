@@ -1,0 +1,52 @@
+<footer ng-controller="menuFooterCtrl">
+  <div class="ban-container">
+    <div class="ban-row footerMenu">
+      <div class="ban-col-md-3 ban-col-sm-12">
+        <div class="footer--logo">
+          <img src="assets/images/logotipoBanchileWhite.png" class="ban-img-responsive" />
+        </div>
+      </div>
+      <div class="ban-col-md-3 ban-col-sm-4" ng-repeat="menu in menuFooter">
+        <div class="footerMenu--titulo">
+          <p>{{menu.name}}</p>
+        </div>
+        <div ng-repeat="subMenu in menu.menu">
+          <md-list-item class="footerMenu--item" ng-href="{{subMenu.url}}" ng-click="doPrimaryAction($event)">
+            <p>{{subMenu.name}}</p>
+          </md-list-item>
+        </div>
+      </div>
+    </div>
+    <md-divider></md-divider>
+    <div class="ban-row footerInformacion">
+      <div class="ban-col-md-6 footerInformacion--item">
+        <div class="ban-col-xs-12">
+          <p class="footerItem--texto">
+            <i class="material-icons">location_city</i>
+            <span>
+              <span class="textoBlanco">Casa Matriz Banchile </span>Agustinas 975, Piso 2, Santiago, Chile</span>
+          </p>
+        </div>
+      </div>
+      <div class="ban-col-md-3 footerInformacion--item">
+        <div class="ban-col-xs-12">
+          <p class="footerItem--texto">
+            <i class="material-icons">email</i>
+            <span>contacto@banchile.cl</span>
+          </p>
+        </div>
+      </div>
+      <div class="ban-col-md-3 footerInformacion--item numeroXl">
+        <div class="ban-col-xs-12">
+          <p class="footerItem--texto">
+            <i class="material-icons">phone</i>
+            <span>800 202 820</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerCopyright">
+    <p>© 2017 Banchile Inversiones. </p>
+  </div>
+</footer>

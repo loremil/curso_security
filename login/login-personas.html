@@ -1,0 +1,45 @@
+<section class="login--contenido">
+    <div class="ban-container">
+        <div class="card--login" ng-cloak="">
+            <div class="login--titulo">
+                <h2 class="titulo--bienvenido">Bienvenido</h2>
+                <h3 class="titulo--mensaje">Ingresa a tu cuenta <span class="titulo--cliente"></span></h3>
+            </div>
+            <form name="loginForm">
+                <div class="login--datos">
+                    <md-input-container class="login--input">
+                        <label>Rut de usuario</label>
+                        <md-icon>
+                            <i>account_circle</i>
+                        </md-icon>
+                        <input name="rut" ng-model="project.rut" required="" type="text" />
+                        <div ng-messages="loginForm.rut.$error">
+                            <div ng-message="required">El rut ingresado no es válido.</div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="login--input">
+                        <label>Clave</label>
+                        <md-icon>
+                            <i>lock</i>
+                        </md-icon>
+                        <input name="clave" ng-model="project.clave" required="" type="password" />
+                        <div ng-messages="loginForm.clave.$error">
+                            <div ng-message="required">Los datos ingresados no son correctos.</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div class="login--ingresar" ng-controller="modalesCrtl">
+                    <a ng-href="#bienvenida-personas" >
+                        <md-button class="boton1 md-raised primario" >Ingresar</md-button>
+                    </a>
+                    <p class="login--pregunta h--paddingTop2">
+                        <a href="#">¿Olvidaste o bloqueaste tu clave?</a>
+                    </p>
+                    <p class="login--pregunta">
+                        <a href="#">¿Necesitas ayuda?</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

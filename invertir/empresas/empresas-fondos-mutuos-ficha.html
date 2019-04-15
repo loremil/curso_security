@@ -1,0 +1,306 @@
+
+<!-- Jadra 25 Oct-->
+<section>
+  <div class="contenido--background invertir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Fondos Mutuos</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+            <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-buscar-fav.html' "></div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+           <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+              <div ng-include src=" 'buscadores/buscador-ffmm.html' ">
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<!-- inicio section detalle resumen -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="contenidoDesplegable--info h--paddingLeft0 h--paddingRight0 info__detalle">
+        <div class="ban-row">
+          <div class="ban-col-sm-6 ban-col-md-8">
+            <h3 class="detalle--titulo">Money Market</h3>
+            <h4 class="detalle--subtitulo">Fondo Mutuo Capital Efectivo</h4>
+          </div>
+        </div>
+        <div class="ban-row ban--paddingTop">
+          <div class="ban-col-xs-6 ban-col-sm-3 ban-col-md-3">
+            <div class="contenido--datos">
+              <h4>Valor cuota</h4>
+              <p><span>$30.985.097</span></p>
+            </div>
+          </div>
+          <div class="ban-col-xs-6 ban-col-sm-3 ban-col-md-3">
+            <div class="contenido--datos">
+              <h4>Plazo recomendado</h4>
+              <p>Desde 1 día</p>
+            </div>
+          </div>
+          <div class="ban-col-xs-6 ban-col-sm-3 ban-col-md-3">
+            <div class="contenido--datos">
+              <h4>Monto mínimo</h4>
+              <p>No tiene</p>
+            </div>
+          </div>
+          <div class="ban-col-xs-6 ban-col-sm-3 ban-col-md-3">
+            <div class="contenido--datos">
+              <h4>Moneda</h4>
+              <p>Pesos Chilenos</p>
+            </div>
+          </div>
+        </div>
+        <hr class="lineaPunteada">
+        <div class="h--marginTop1 h--alignRight">
+          <md-button class="boton1 md-raised primario" ng-href="#fondosmutuos-aporte-clp" type="button">
+            <span class="ng-scope">APORTAR</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin section detalle resumen -->
+<!-- inicio section vision general -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <!-- inicio subtitulo -->
+      <div class="contenedor--subtitulo  animated fadeInDown">
+        <h3 class="subtitulo">Visión general</h3>
+      </div>
+      <!-- fin subtitulo -->
+      <!-- inicio visión general -->
+      <div class="ban-row">
+        <div class="ban-col-sm-6 ban-col-sm-push-3 ban-col-md-3 ban-col-md-push-0">
+          <div class="items--cajaDirectorio items--cajaDepto h--shadowBox">
+            <img class="caja--icono h--marginTop2" src="assets/images/sitio_publico/home/detallePerfil.png" alt="">
+            <p class="caja--subtitulo">Juan Pablo Cerda</p>
+            <p class="caja--textoDirectorio">Gerente de Mesa de Distribución <br/>Banchile Inversiones</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-12 ban-col-sm-push-0 ban-col-md-9">
+          <div class="contenedorDetalle">
+            <p class="contenedorDetalle--subtitulo">Comentario del experto.</p>
+            <p class="contenedorDetalle--texto">La estrategia este fondo consiste en invertir la totalidad de su cartera en instrumentos emitidos por el Banco Central. Esto le permite tener un desempeño estable y con un muy bajo riesgo. El fondo prácticamente no se vio afectado por las
+              volatilidades de las tasas de interés, debido a que el fondo estuvo invertido muy en el corto plazo.</p>
+            <p class="contenedorDetalle--subtitulo">Objetivo del Fondo.</p>
+            <p class="contenedorDetalle--texto">Ofrecer una alternativa de inversión para aquellas personas naturales y jurídicas interesadas en realizar operaciones financieras de corto plazo en un fondo cuya cartera está compuesta por instrumentos de deuda emitidos por las principales
+              instituciones que participan en el mercado de capital nacional.</p>
+            <p class="contenedorDetalle--subtitulo">Inversionistas.</p>
+            <p class="contenedorDetalle--texto">Dirigido a personas naturales y jurídicas interesadas en participar de un portafolio de inversiones en el corto plazo. El riesgo de éste, dependerá de los instrumentos en los que se invierta el fondo.</p>
+          </div>
+        </div>
+      </div>
+      <!-- fin visión general -->
+    </div>
+  </div>
+</section>
+<!-- fin section vision general -->
+<!-- inicio section grafico -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <!-- inicio subtitulo -->
+      <div class="contenedor--subtitulo  animated fadeInDown">
+        <h3 class="subtitulo">Evolución valor cuota</h3>
+      </div>
+      <!-- fin subtitulo -->
+      <div class="ban-row h--paddingTop2">
+        <div class="ban-col-md-3">
+
+        </div>
+
+        <div class="ban-col-md-9">
+          <div ng-controller="graficosLineal-07">
+            <div id="grafico-07">Placeholder for chart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin section grafico -->
+<!-- inicio section remuneración -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <!-- inicio subtitulo -->
+      <div class="contenedor--subtitulo  animated fadeInDown">
+        <h3 class="subtitulo">Remuneración</h3>
+      </div>
+      <!-- fin subtitulo -->
+      <!-- inicio visión general -->
+      <div class="ban-row">
+        <div class="ban-col-md-3"></div>
+        <div class="ban-col-md-9">
+          <div class="contenedorDetalle">
+            <p class="contenedorDetalle--subtitulo">Montos mínimos.</p>
+            <p class="contenedorDetalle--texto">Serie A: $ No tiene.-<br/> Serie P: $ 5.000.000.000.- <br/> Serie IT (Serie de uso exclusivo solo para Inversionistas Institucionales): $10.000.000.000.- </p>
+            <p class="contenedorDetalle--subtitulo">Remuneración.</p>
+            <p class="contenedorDetalle--texto">Serie A: Hasta 1,50% anual (IVA incluido).<br/> Serie P: Hasta 0,357% anual (IVA incluido).<br/> Serie IT (Serie de uso exclusivo solo para Inversionistas Institucionales): Hasta 0,12% anual (IVA incluido).<br/></p>
+          </div>
+        </div>
+      </div>
+      <!-- fin visión general -->
+    </div>
+  </div>
+</section>
+<!-- fin section remuneración -->
+<!-- inicio section gastos y riesgo -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <!-- inicio subtitulo -->
+      <div class="contenedor--subtitulo  animated fadeInDown">
+        <h3 class="subtitulo">Gastos y Riesgo</h3>
+      </div>
+      <!-- fin subtitulo -->
+      <!-- inicio visión general -->
+      <div class="ban-row">
+        <div class="ban-col-md-3"></div>
+        <div class="ban-col-md-9">
+          <div class="contenedorDetalle">
+            <p class="contenedorDetalle--subtitulo">Gastos</p>
+            <p class="contenedorDetalle--texto">Los demás gastos atribuibles al Fondo, tales como los gastos derivados con ocasión de la contratación de servicios externos, incluyendo los gastos derivados de la contratación de servicios de administración de cartera, servicios de auditoría,
+              custodia, clasificaciones de riesgo, costos de intermediación, etc., ya sean directos o indirectos, serán de cargo de la Sociedad Administradora. No obstante lo anterior, los impuestos, retenciones, encajes u otro tipo de carga tributaria
+              o cambiaria que conforme el marco legal vigente de la jurisdicción respectiva deba aplicarse a las inversiones, operaciones o ganancias del Fondo e indemnizaciones, incluidas aquellas de carácter extrajudicial que tenga por objeto precaver
+              o poner término a litigios y costas, honorarios profesionales, gastos de orden judicial en que se incurra en la representación de los intereses del Fondo, serán de cargo del Fondo y se devengarán cuando estos sean generados, sin estar sujeto
+              a límite alguno.</p>
+            <p class="contenedorDetalle--subtitulo">Riesgo</p>
+            <p class="contenedorDetalle--texto">Fondo clasificado como R1. La tolerancia al riesgo se determina en función de la volatilidad de la cuota en un periodo de los últimos 5 años. La volatilidad de R1 es menor que R7. La clasificación R1 no significa que esté exenta de riesgo.
+              Este indicador se basa en datos históricos y puede que no represente el riesgo futuro del fondo. La categoría de riesgo no está garantizada y puede que varíe en el tiempo.</p>
+          </div>
+        </div>
+      </div>
+      <!-- fin visión general -->
+    </div>
+  </div>
+</section>
+<!-- fin section gastos y riesgo -->
+<!-- inicio section Rescates -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <!-- inicio subtitulo -->
+      <div class="contenedor--subtitulo  animated fadeInDown">
+        <h3 class="subtitulo">Rescates</h3>
+      </div>
+      <!-- fin subtitulo -->
+      <!-- inicio visión general -->
+      <div class="ban-row ">
+        <div class="ban-col-md-3"></div>
+        <div class="ban-col-md-9">
+          <div class="contenedorDetalle">
+            <p class="contenedorDetalle--subtitulo">Pago de rescate</p>
+            <p class="contenedorDetalle--texto">El pago de los rescates se efectuará dentro de un plazo no mayor de 1 día hábil bancario, contado desde la fecha de presentación de la solicitud pertinente o desde la fecha en que se dé curso al rescate, si se trata de un rescate programado.</p>
+            <p class="contenedorDetalle--subtitulo">Rescates permitidos</p>
+            <p class="contenedorDetalle--texto">Todos los que sean necesarios, todos los días hábiles del año, totales o parciales.</p>
+          </div>
+        </div>
+      </div>
+      <!-- fin visión general -->
+    </div>
+  </div>
+</section>
+<!-- fin section Rescates -->
+<!-- inicio section documentos -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <!-- inicio subtitulo -->
+      <div class="contenedor--subtitulo  animated fadeInDown">
+        <h3 class="subtitulo">Documentos</h3>
+      </div>
+      <!-- fin subtitulo -->
+      <div ng-controller="dialogCtrl">
+        <div class="ban-row">
+          <div class="ban-col-sm-6 ban-col-md-4" ng-repeat="contrato in contratosFirmados">
+            <div class="documentosCliente">
+              <div class="documentosCliente--icon">
+                <i class="material-icons">picture_as_pdf</i>
+              </div>
+              <div class="documentosCliente--info">
+                <h3 class="caja--titulo">{{contrato.name}}</h3>
+                <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+              </div>
+              <div class="documentosCliente--download">
+                <div class="download--icon {{contrato.classBorder}}">
+                  <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                </div>
+                <div class="download--circular">
+                  <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- inicio nota al pie -->
+      <div class="bitacora--header">
+        <h3 class="bitacora--header--titulo border-bottom">
+          <i class="material-icons titulo--icono">info</i>Comisión</h3>
+      </div>
+      <div class="bitacora--contenido">
+        <p class="bitacora--contenido--texto">La rentabilidad o ganancia obtenida en el pasado por estos fondos, no garantiza que ella se repita en el futuro. Los valores de las cuotas de los fondos son variables. Infórmese de las características esenciales de la inversión en estos fondos,
+          las que se encuentran contenidas en su reglamento interno y contrato general de fondos. Las pérdidas que eventualmente pueda sufrir el Fondo serán asumidos exclusivamente por tus aportantes y no por la administradora ni por las entidades bancarias
+          o financieras del grupo empresarial al cual pertenece, o tus filiales. Antes de invertir revise el Reglamento Interno y el Folleto Informativo del Fondo. Las inversiones en el Fondo no están aseguradas por la garantía estatal de los depósitos
+          de la Ley General de Bancos ni por la Federal Deposit Insurance Corporation, y no son depósitos, obligaciones, ni están endosados o garantizados, en cualquier forma, por cualquier entidad bancaria. Banchile Administradora General de Fondos S.A.
+          es filial del Banco de Chile, quien puede designar directores en aquella. Banco de Chile y Banchile Corredores de Bolsa S.A. son agentes de Banchile Administradora General de Fondos S.A. en la colocación, suscripción y rescates de las cuotas
+          de los Fondos que administra.</p>
+      </div>
+      <!-- fin nota al pie -->
+    </div>
+  </div>
+</section>
+<!-- fin section documentos -->
+<!-- inicio contenedorCajaCliente -->
+<section>
+  <div class="ban-container h--marginBottom4" ng-controller="animateCtrl">
+    <div class="card h--paddingTop2 h--paddingBottom2 h--borderRadiusBottom4px">
+      <!-- inicio cajaCliente -->
+      <div class="ban-row">
+        <div class="ban-col-sm-12 ban-col-md-12">
+          <div class="cajasCliente">
+            <div class="cajas-informacion">
+              <div class="cajas--texto no_visible" when-visible="a_fadein">
+                <p>
+                  Si quieres obtener información profesional o contratar este producto
+                </p>
+              </div>
+              <div class="cajas--botones">
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-2 no_visible" when-visible="a_fadeup1">
+                  <md-button class="botonCliente boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO SER CLIENTE</span>
+                  </md-button>
+                </div>
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-0 no_visible" when-visible="a_fadeup2">
+                  <md-button class="boton2 boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO QUE ME CONTACTEN</span>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+            <div class="cajas--imagen">
+              <img src="assets/images/HazteCliente.png" alt="Manos estrechandose ante un acuerdo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin cajaCliente -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorCajaCliente -->

@@ -1,0 +1,126 @@
+/*INICIO CONFIGURACION*/
+.configuracion {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+
+	.configuracion--usuario {
+		@include font-24;
+		padding: 1em 0;
+		text-align: center;
+	}
+
+	.configuracion--bienvenido {
+		@include font-42;
+		color: $color-primario;
+		text-align: center;
+		margin-bottom: 0.8em;
+		line-height: 1.2em;
+		@include roboto-light;
+	}
+
+	.configuracion--mensaje {
+		line-height: 1.4em;
+		margin-bottom: 2em;
+		padding: 0 3em;
+		@include font-16;
+	}
+
+	.configuracion--titulo {
+		text-align: left;
+		padding-top: 1em;
+		@include font-16;
+		@include roboto-normal;
+	}
+
+	.configuracion--formulario {
+		padding-top: 1em;
+		text-align: center;
+		margin-bottom: 4em;
+
+		.formulario--boton {
+			line-height: 1.3em;
+			margin-top: 1.8em;
+		}
+	}
+}
+
+.configuracion_contrato {
+	margin-bottom: 1em;
+	margin-top: 2em;
+	min-height: 400px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	.configuracion--usuario {
+		font-size: 24px;
+		margin: 0 auto;
+		padding: 3.5em 0 1em;
+		text-align: center;
+		width: 60%;
+	}
+
+	.configuracion--bienvenido {
+		color: $color-primario;
+		line-height: 1.2em;
+		margin: 0 auto;
+		padding: 0 0 0.5em;
+		text-align: center;
+		@include font-36;
+		@include roboto-light;
+	}
+
+	.usuario--nombre {
+		text-align: center;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		@include font-20;
+	}
+}
+
+.contrato--pdf {
+	height: 1000px;
+	margin: 1em 0 0;
+	width: 100%;
+}
+@media screen and (max-width: 991px) {
+	.configuracion {
+		.configuracion--formulario {
+			.formulario--boton {
+				text-align: center;
+			}
+		}
+
+		.configuracion--mensaje {
+			padding: 0;
+		}
+
+		.configuracion--bienvenido {
+			@include font-36;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.configuracion {
+		width: 100%;
+		padding: 1em;
+		box-sizing: border-box;
+
+		.configuracion--bienvenido {
+			@include font-30;
+		}
+
+		.configuracion--usuario {
+			@include font-20;
+			padding: 1em;
+		}
+
+		.configuracion--formulario {
+			.formulario--boton {
+				text-align: center;
+			}
+		}
+	}
+}
+/*FIN CONFIGURACION*/

@@ -1,0 +1,407 @@
+//Jadra css Indicadores Notificaciones ult. actualizacion 23-08
+
+.navMenu--contenido {
+  z-index: 1000;
+
+  .navMenu--notificaciones {
+    margin: 0;
+
+    .notificaciones--caja {
+      padding: 12px 0 12px 15px;
+      display: inline-flex;
+      display: -ms-inline-flexbox;
+
+
+      .notificaciones--texto {
+        margin: 0;
+
+        h3 {
+          margin: 0;
+          font-size: 16px;
+          color: #486C7C;
+          line-height: 20px;
+        }
+
+        h4 {
+          font-size: 12px;
+          color: #69B4C5;
+          line-height: 20px;
+        }
+
+        p {
+          font-size: 11px;
+          color: #9B9B9B;
+          line-height: 20px;
+        }
+      }
+
+      &.leido {
+        h3,
+        h4,
+        p,
+        i {
+          color: #9B9B9B !important;
+        }
+
+      }
+      i{
+        color: #69B4C5;
+        padding: 4px 5px 0 0;
+        font-size: 14px;
+
+      }
+    }
+
+    .notificaciones--caja:hover {
+      background-color: rgba(105,180,197,.2);
+      transition: 0.3s ease-in;
+    }
+  }
+
+  h2 {
+    border-bottom: none !important;
+    margin-top: 25px;
+    padding: 0 !important;
+    margin-bottom: 25px;
+    color: red;
+  }
+
+
+  .indicadores--contenedor {
+    margin: 10px;
+    // height: 225px;
+    align-items: center;
+    height: 180px;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    padding: 0;
+
+    .indicadores--contenedorCategoria {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+
+
+      .indicadores--categoria {
+        background-color: rgba(0, 0, 0, 0.35);
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        text-align: left;
+        box-sizing: border-box;
+        bottom: 0;
+        padding: 0 15px;
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 10px;
+          margin-top: 10px;
+          color: white;
+          border-bottom: none !important;
+          padding-bottom: 0;
+          margin-bottom: 0;
+
+        }
+
+        h4 {
+          font-size: 14px;
+          margin-top: 5px;
+          color: white;
+          border-bottom: none !important;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          @include roboto-normal;
+        }
+
+        p {
+          font-size: 18px;
+          margin-top: 12px;
+          color: white;
+          border-bottom: none !important;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          text-align: center;
+          @include roboto-normal;
+        }
+      }
+
+      .indicadores--porcentaje {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        text-align: left;
+        box-sizing: border-box;
+        bottom: 0;
+        padding: 15px 10px;
+
+        p {
+          font-size: 18px;
+          color: white;
+          // margin: 0;
+          border-bottom: none !important;
+          text-align: center;
+          @include roboto-normal;
+        }
+        &.negativo {
+          background-color: #C11818;
+        }
+        &.positivo {
+          background-color: #197919;
+        }
+
+        &.neutro {
+          background-color: #DB8916;
+        }
+      }
+    }
+  }
+
+  .indicadores--ACC,
+  .indicadores--ACI {
+    background-image: url("../images/fav-acciones.png");
+  }
+
+  .indicadores--IND {
+    background-image: url("../images/fav-mercado.png");
+  }
+
+  .indicadores--MON {
+    background-image: url("../images/fav-moneda.png");
+  }
+
+  .indicadores--TAX {
+    background-image: url("../images/fav-rentaFija.png");
+  }
+
+  .indicadores--FIN {
+    background-image: url("../images/fav-indicadoresFinancieros.png");
+  }
+
+
+}
+/************ TRANCISIONES Y ANIMACIONES *********/
+/**** ANIMACION DE TRANSICION login  ****/
+.login--open {
+  opacity: 1;
+  transition: all 0.2s linear, opacity 1ms;
+  transform: translate(-300px, 0);
+  position: fixed;
+  float: right;
+  top: 0 !important;
+}
+
+.login--close {
+  opacity: 1;
+  transition: all 0.2s linear, opacity 1ms;
+  transform: translate(300px, 0);
+  background-color: #f0f2f5;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.14);
+}
+/**** FIN ANIMACION DE TRANSICION login  ****/
+/**** ANIMACION DE TRANSICION MENU menuPublicoMobil   ****/
+.menuPublicoMobil--open {
+  opacity: 1;
+  transition: all 0.2s linear, opacity 1ms;
+  transform: translate(300px, 0);
+  position: relative;
+  box-shadow: 0 2px 13px 6px rgba(0, 0, 0, 0.14);
+  border-right: solid 1px rgba(0, 0, 0, 0.22);
+  float: left;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0 !important;
+}
+
+.menuPublicoMobil--close {
+  opacity: 1;
+  transition: all 0.2s linear, opacity 1ms;
+  transform: translate(-300px, 0);
+  position: relative;
+  box-shadow: 0 2px 13px 6px rgba(0, 0, 0, 0.14);
+  border-right: solid 1px rgba(0, 0, 0, 0.22);
+  float: left;
+  height: 100%;
+  background-color: white;
+}
+/**** FIN ANIMACION DE TRANSICION    ****/
+/**** MEGA MENU NAV ****/
+.megaMenu {
+  background: white;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  left: 0;
+  height: auto;
+  position: absolute !important;
+  text-align: left;
+  width: 100%;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: bottom 43px right 0;
+  background-size: 290px;
+  outline: none;
+  padding: 30px 0;
+  animation-duration: 0.1s;
+
+  .navMenu--imagen {
+    position: relative;
+
+    .grafico--indicadores {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #fff;
+    }
+  }
+
+
+  h2 {
+    @include font-48;
+  }
+
+  ul {
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+/*Media queries*/
+@media all and (max-width: 1024px) {
+  .grafico--tablas {
+    width: 100%;
+    svg{
+      width: 70% !important;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .indicadores--L{
+    width: 20%;
+    margin-top: 0.5em;
+  }
+  .indicadores--porcentaje {
+    p {
+      margin-top: -5px;
+    }}
+
+}
+@media all and (max-width: 991px) {
+  .indicadores--porcentaje {
+    width: 35%;
+    height: 100%;
+  }
+
+  .megaMenu {
+    h2 {
+      font-size: 2.4em;
+    }
+  }
+
+  .grafico--tablas {
+    width: 100%;
+    svg{
+      width: 87% !important;
+    }
+  }
+
+}
+@media all and(min-width: 768px) and (max-width: 991px) {
+  .navMenu--contenido {
+    .navMenu--notificaciones {
+      .notificaciones--caja {
+        padding: 0.5em 0 0.5em 2em;
+      }
+    }
+  }
+
+  .megaMenuFooter {
+    display: none;
+  }
+  .navMenu--contenido {
+    margin-bottom: 20px;
+    min-height: 304px !important;
+    .indicadores--contenedor {
+      margin: 0.625em 0em;
+      height: 70px;
+      position: relative;
+      .indicadores--contenedorCategoria {
+        .indicadores--categoria {
+          height: 70px;
+          padding: 0.438em 0.625em 0em 0.625em;
+          h3 {
+            margin: 0px;
+            padding: 0px;
+            @include font-14;
+            line-height: 12px;
+          }
+          h4 {
+            margin: 0px;
+            padding: 0px;
+            @include font-14;
+            line-height: 12px;
+          }
+          p {
+            margin: 0px;
+            padding: 0px;
+            @include font-16;
+            line-height: 12px;
+          }
+        }
+
+        .indicadores--porcentaje {
+          position: absolute;
+          margin: 0px;
+          padding: 0px;
+          height: 25px;
+          top: 50px;
+          p {
+            margin: 0px;
+            padding: 0px;
+            line-height: 25px !important;
+            @include font-16;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .navMenu--contenido {
+    .navMenu--notificaciones {
+      .notificaciones--caja {
+        padding: 1em 1em 0;
+      }
+    }
+  }
+}
+@media all and (max-width: 767px) {
+  .megaMenuFooter {
+    display: none;
+  }
+
+  .megaMenu {
+    h2 {
+      display: none;
+    }
+  }
+  .navMenu--contenido{
+    .navMenu--notificaciones{
+      .notificaciones--caja{
+        .notificaciones--texto {
+          h3{
+            @include font-14;
+          }
+        }
+      }
+    }
+  }
+}
+
+.grafico--tablas {
+  width: 100px;
+  svg{
+    width: 87%  ;
+  }
+}

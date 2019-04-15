@@ -1,0 +1,144 @@
+<div class="contenidoDesplegable--info info__detalle">
+  <div class="ban-row">
+    <div class="ban-col-sm-6 ban-col-md-9">
+      <h3 class="detalle--titulo">Detalle de la transferencia</h3>
+    </div>
+    <div class="ban-col-sm-6 ban-col-md-3 h--alingR">
+      <div class="info--operacion">
+        Nº de Orden
+        <span class="operacion--numero">756040</span>
+      </div>
+    </div>
+  </div>
+  <div class="ban-row ban--paddingTop h--marginBottom2">
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Moneda</h4>
+        <p>Dólar</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Tipo</h4>
+        <p>Transferencia Internacional</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Origen</h4>
+        <p>Moneda extranjera</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Modalidad de pago</h4>
+        <p>City 24</p>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <h3 class="detalle--titulo">Detalle destino del pago</h3>
+  </div>
+  <div class="ban-row ban--paddingTop h--marginBottom2">
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Proveedor</h4>
+        <p>Proveedor de Metales</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Beneficiario</h4>
+        <p>Juan Pérez</p>
+      </div>
+    </div>
+
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>País</h4>
+        <p>República Dominicana</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Dirección</h4>
+        <p>La Beda 1993</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Nombre del Banco</h4>
+        <p>Banco de Panama</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>País</h4>
+        <p>Panama</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Dirección</h4>
+        <p>Las Perdices 99</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Nº de cuenta</h4>
+        <p>232133</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Concepto de pago</h4>
+        <p>20009 -Futura Transferencia</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Cód. Swift / Bic del Banco</h4>
+        <p>Aba 89234-2424</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Código Aba/Routing Number</h4>
+        <p>Aba 89234-2424</p>
+      </div>
+    </div>
+    <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+      <div class="contenido--datos">
+        <h4>Código IBAN del Banco </h4>
+        <p>12313 IBAN</p>
+      </div>
+    </div>
+  </div>
+  <div ng-controller="instruccionesVentanaCtrl">
+    <div class="ban-row">
+      <div class="ban-col-md-6 ban-col-md-offset-6">
+        <div class="contenidoDesplegable--acciones" ng-show="btnAutorizacion">
+          <!-- botones uno -->
+          <md-button ng-click="verForRechazar($event)" class="boton2 md-raised">rechazar</md-button>
+          <md-button ng-click="verForAutorizar($event)" class="boton1 md-raised primario">autorizar</md-button>
+        </div>
+      </div>
+    </div>
+    <!-- Fin sub-bloque ver autorizadores -->
+    <div class="contenidoDesplegable--acciones">
+      <form name="autorizacionesForm">
+        <div class="bitacora h--borderNone h--padding0" ng-show="autorizar" ng-cloak>
+          <div ng-include src="'autorizaciones/autorizacion_confirmarSolicitudP.html'"></div>
+        </div>
+        <div class="bitacora h--borderNone h--padding0" ng-show="rechazar" ng-cloak>
+          <!-- sub-bloque rechazar -->
+          <div ng-include src="'autorizaciones/autorizacion-rechazo-personas.html'"></div>
+        </div>
+        <!-- FIN sub-bloque rechazar -->
+      </form>
+    </div>
+    <!-- FIN bloque dos -->
+    <!-- fin botones uno -->
+  </div>
+  <!-- FIN conttrolador instruccionesVentanaCtrl -->
+</div>

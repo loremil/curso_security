@@ -1,0 +1,104 @@
+<div class="contenidoDesplegable">
+  <div class="contenidoDesplegable--info info__detalle">
+    <div class="ban-row">
+      <div class="ban-col-sm-6 ban-col-md-9">
+        <h3 class="detalle--titulo">Creación de Beneficiario</h3>
+      </div>
+    </div>
+    <div class="ban-row ban--paddingTop">
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Nombre del Banco</h4>
+          <p>{{usuarios.bancoNombre}}</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>País Banco</h4>
+          <p>{{usuarios.bancoPais}}</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Dirección Banco</h4>
+          <p>{{usuarios.bancoDireccion}}</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Nº de Cuenta</h4>
+          <p>{{usuarios.bancoCuenta}}</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Moneda</h4>
+          <p>{{usuarios.bancoMoneda}}</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Cód. Aba/Routing Number</h4>
+          <p>{{usuarios.bancoSwift}}</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Cód. Swift/Bic del Banco</h4>
+          <p>{{usuarios.bancoAba}}</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Código  IBAN del Banco</h4>
+          <p>{{usuarios.bancoIban}}</p>
+        </div>
+      </div>
+    </div>
+<div class="h--lineaEntrecortada"></div>
+    <div ng-controller="instruccionesVentanaCtrl">
+      <!-- Fin sub-bloque ver autorizadores -->
+      <div class="contenidoDesplegable--acciones">
+        <!-- bloque dos -->
+        <div class="bitacora h--borderNone" ng-show="autorizadores" ng-cloak>
+          <!-- sub-bloque Autorizadores -->
+          <div ng-include class="animated fadeIn" src="'autorizaciones/bitacora-beneficiario.html'"></div>
+        </div>
+        <!-- FIN sub-bloque Autorizadores -->
+        <form name="autorizacionesForm">
+          <div class="bitacora h--borderNone" ng-show="autorizar" ng-cloak>
+            <div ng-include class="animated fadeIn" src="'autorizaciones/autorizacion-personas.html'"></div>
+          </div>
+          <!-- Fin sub-bloque autorizar -->
+        </form>
+      </div>
+      <!-- FIN bloque dos -->
+      <div class="contenidoDesplegable--acciones" ng-show="btnAutorizacion">
+        <!-- botones uno -->
+        <div class="ban-row">
+          <div class="ban-col-sm-12 ban-col-md-12">
+            <div class="acciones--botones h--alignRight">
+              <md-button ng-click="verForAutorizar($event)" class="boton1 md-raised primario">autorizar</md-button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN botones uno -->
+      <div class="contenidoDesplegable--acciones h--borderBoton" ng-show="btnConfirmacion">
+        <!-- botones modal -->
+        <div class="ban-row">
+          <div class="ban-col-sm-12 ban-col-md-12">
+            <div class="acciones--botones acciones--botones__rigth " ng-controller="modalesCrtl">
+              <md-button ng-click="showAutorizarBeneficiario($event)" class="boton1 md-raised primario">confirmar</md-button>
+            </div>
+            <div class="acciones--botones">
+              <md-button ng-click="cancelar($event)" class="boton2 md-raised">cancelar</md-button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN botones modal -->
+    </div>
+    <!-- FIN conttrolador instruccionesVentanaCtrl -->
+  </div>
+</div>

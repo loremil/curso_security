@@ -1,0 +1,229 @@
+/* inicio modales */
+
+.modalDocumento{
+  background-color: #525659;
+  overflow-y: hidden;
+  overflow-x: hidden;
+    .contenedorPdf{
+      width: 98%;
+    }
+}
+
+.modal--documentos {
+  md-dialog {
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  md-dialog._md-transition-in {
+    max-width: 100%;
+    overflow: hidden !important;
+  }
+  #plugin {
+    width: 90% !important;
+  }
+}
+
+.modal {
+  md-dialog {
+    padding: 1.5em;
+    box-sizing: border-box;
+    margin: 0 auto;
+    // overflow-y: hidden !important;
+    // overflow-x: hidden !important;
+    &.emergente {
+      height: 680px;
+    }
+  }
+
+  .modal--documentos {
+    md-dialog {
+      max-width: 90% !important;
+      overflow: hidden !important;
+    }
+  }
+
+  .botonpago_md {
+    height: auto !important;
+    min-height: auto;
+
+    .botonpago {
+      text-align: left!important;
+    }
+  }
+
+  &.ubicacionMensaje--card {
+    min-height: 400px;
+    margin-top: 8em;
+  }
+
+  &.modales-m {
+    max-width: 600px;
+    min-width: 610px;
+  }
+
+  &.modales-l {
+    min-width: 800px;
+  }
+
+  &.modales-xl {
+    width: 100%;
+  }
+
+  .mensajeTitulo--container {
+    text-align: center;
+
+    i.material-icons {
+      &.statusExito__small {
+        color: #7EB645;
+        font-size: 3em;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+      }
+
+      &.statusError__small {
+        color: #C11818;
+        font-size: 3em;
+        padding-bottom: 0.5em;
+      }
+
+      &.statusInfo__small {
+        color: #4E84B4;
+        font-size: 3em;
+        padding-bottom: 0.5em;
+      }
+
+      &.statusAlerta__small {
+        color: #F69D00;
+        font-size: 3em;
+        padding-bottom: 0.5em;
+      }
+    }
+
+    h2.mensajeTitulo__error {
+      font-size: 18px;
+      color: #536374;
+      padding-top: 0.8em;
+      line-height: 1.2em;
+    }
+
+    h2.mensajeTitulo__info {
+      font-size: 18px;
+      color: #536374;
+      padding-top: 0.8em;
+    }
+
+    h2.mensajeTitulo__exito {
+      color: #7EB645;
+      padding-bottom: 1em;
+      @include font-20;
+      @include roboto-normal;
+    }
+
+    h2.mensajeTitulo__alerta {
+      font-size: 18px;
+      color: #F69D00;
+      padding-top: 0.8em;
+    }
+
+    .mensajeTexto__large {
+      margin: 0.6em 0;
+      padding-left: 0.5em;
+      text-align: center;
+      color: #9B9B9B;
+      padding-bottom: 1em;
+      line-height: 1.4em;
+      @include font-14;
+    }
+
+    .timbre--comprobante {
+      width: 0;
+    }
+
+    .timbre--comprobante img {
+      width: 80px;
+      position: absolute;
+      bottom: 24px;
+      left: 13px;
+    }
+  }
+}
+/* fin modales */
+/* inicio modalesDialogo */
+md-dialog {
+  md-toolbar.md-default-theme:not(.md-menu-toolbar),
+  md-toolbar:not(.md-menu-toolbar) {
+    background-color: #fff;
+    color: $color-primario;
+
+    .toolbar--logo {
+      height: 50px;
+      width: auto;
+    }
+  }
+
+  md-dialog-actions {
+    padding: 16px;
+    min-height: auto;
+    display: block !important;
+    overflow: unset;
+
+    md-input-container {
+      margin: 0.5em 0;
+    }
+  }
+}
+/* fin modalesDialogo */
+@media (max-width: 767px) {
+  .modal {
+    .contenedor--botones {
+      width: 50%;
+      margin: 0 auto;
+      padding: 0 25px;
+
+      .boton1,
+      .boton2 {
+        min-height: 37px;
+        max-width: 250px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &.ubicacionMensaje--card {
+      min-height: 200px;
+      margin-top: 4em;
+    }
+
+    &.modales-m {
+      min-width: 100%;
+    }
+
+    &.modales-l {
+      min-width: 100%;
+    }
+
+    &.modales-xl {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .modal {
+    .contenedor--botones {
+      width: 100%;
+      padding: 0;
+
+      .boton2 {
+        min-height: 37px;
+        max-width: 250px;
+      }
+    }
+
+    &.modales-xl {
+      md-dialog.emergente {
+        top: 50px;
+      }
+    }
+  }
+}
+/* fin modales*/

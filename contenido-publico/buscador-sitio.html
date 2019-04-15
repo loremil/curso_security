@@ -1,0 +1,112 @@
+<!-- 08 nov gissell -->
+<div class="" ng-controller="BuscaListadoCtrl">
+  <section>
+    <div class="contenido--background invertir-persona"></div>
+    <div class="ban-container">
+      <div class="card h--marginTopcard h--borderRadiusTop4px">
+        <div class="ban-row a_fadein">
+          <div class="ban-col-xs-12 ban-col-sm-11 ban-col-md-5 ban-col-lg-4">
+            <h1 class="titulo--operacion">Buscador</h1>
+            <div class="border--titulo">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- inicio buscador -->
+  <section>
+    <div class="ban-container">
+      <div class="card">
+        <div class="ban-row">
+          <div class="ban-col-md-12 ">
+            <div ng-controller="VerAyudaFFMM">
+              <!-- inicio buscadorCaja -->
+              <div class="contenedorBuscador--ffmm colorFondo--buscador colorFuente--buscador collapseFFMM" ng-show="ayudaFondos">
+                <div class="margen--buscador">
+                  <div class="ban-row">
+                    <div class="ban-col-md-6">
+                      <md-input-container class="ayuda--input ayuda--buscador">
+                        <md-icon>
+                          <i class="material-icons buscador--icono">search</i>
+                        </md-icon>
+                        <label>Palabra clave</label>
+                        <input name="texto" ng-model="ffmm.palabra">
+                      </md-input-container>
+                    </div>
+                    <div class="ban-col-md-6">
+                      <div class="buscador--boton" ng-controller="asideCloseRight">
+                        <md-button href="#buscador-sitio" ng-click="close()" class="boton2 boton--100 md-raised primario" type="button">
+                          <span class="ng-scope">Buscar</span>
+                        </md-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resultado--busqueda h--margin2 h--marginTop1">
+          <p> Se han encontrado 0 resultados</p>
+        </div>
+      </div>
+    </div>
+    <!-- fin contenedorBuscador -->
+  </section>
+  <!-- fin buscador -->
+  <section>
+    <div class="ban-container">
+      <div class="card h--marginBottom4">
+        <div ng-controller="busquedaArray">
+          <div class="espacio--busqueda">
+            <div class="contenedor--busqueda" ng-repeat="resultado in resultados">
+              <div class="contenedor--subtitulo busqueda subtitulos__usuarios a_fadeup1">
+                <h3 ng-class="titulo-resultado" class="subtitulo ">{{resultado.titulo}}</h3>
+              </div>
+              <a class="link--busqueda" ng-href="{{resultado.link}}">{{resultado.link}}</a>
+              <p class="resultado--busqueda h--marginBottom2">{{resultado.detalle}}</p>
+            </div>
+          </div>
+        </div>
+        <!-- inicio paginador -->
+        <div class="pie--tabla" ng-cloak>
+          <div class="pie--contenido">
+            <div class="ban-row">
+              <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                <div class="pie--paginacion">
+                  <div class="paginacion--accion h--displayNone">
+                    <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                  </div>
+                  <div class="paginacion--accion h--displayNone">
+                    <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                      <md-option value="1">10</md-option>
+                      <md-option value="2">20</md-option>
+                      <md-option value="3">30</md-option>
+                    </md-select>
+                  </div>
+                  <div class="paginacion--accion">
+                    <p class="paginacion--parrafo">10 de 22</p>
+                  </div>
+                  <div class="paginacion--accion">
+                    <md-button class="md-icon-button" aria-label="Atras">
+                      <md-icon>
+                        <i class="material-icons">&#xE314;</i>
+                      </md-icon>
+                    </md-button>
+                    <md-button class="md-icon-button" aria-label="Adelante">
+                      <md-icon>
+                        <i class="material-icons">&#xE315;</i>
+                      </md-icon>
+                    </md-button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin paginador -->
+      </div>
+    </div>
+  </section>

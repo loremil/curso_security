@@ -1,0 +1,781 @@
+.tablaMaster {
+  table {
+    width: 100%;
+    border-bottom: 0;
+    background-color: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    @include font-12;
+
+    /* inicio estructuraHead */
+    thead {
+      height: 40px;
+      background-color: #536374;
+      tr {
+        height: 40px;
+      }
+      th {
+        text-align: right;
+        vertical-align: middle;
+        color: #FFF;
+        padding: 0em 0.5em;
+        //Estilos Head titulos
+        &.tableHead--titulo {
+          text-align: left;
+          @include roboto-normal;
+        }
+        &.tableHead--left {
+          text-align: left;
+        }
+      }
+      //Borde redondeados
+      th:first-child {
+        border-radius: 4px 0 0 0 !important;
+        -moz-border-radius: 4px 0 0 0 !important;
+        -webkit-border-radius: 4px 0 0 0 !important;
+      }
+      th:last-child {
+        border-radius: 0 4px 0 0 !important;
+        -moz-border-radius: 4px 0 0 0 !important;
+        -webkit-border-radius: 4px 0 0 0;
+      }
+    }
+    //Estilos colores cabeceras
+    .tableHead--recomendado {
+      background-color: #5BABBF;
+    }
+    .tableHead--secundario {
+      background-color: #ABD4DF;
+      &:hover {
+        background-color: #ABD4DF;
+      }
+      //Estilo para % Patrimonio
+      td {
+        &.td--principal {
+          span {
+            color: #424242;
+            padding-right: 0.5em;
+          }
+        }
+      }
+    }
+    .tableHead--buscador {
+      background-color: #336A9B;
+    }
+    .tableHead--informativo {
+      background-color: #F0F2F5;
+    }
+    /* fin estructuraHead */
+
+    /* inicio estructuraFilas */
+    tbody {
+      tr {
+        @include font-12;
+        height: 40px;
+        border-bottom: 1px solid #E7EAF0;
+        &:hover {
+          background-color: #DADFE8;
+          //Estilo Botones transar hover
+          .td--botonesTransar {
+            visibility: visible;
+          }
+        }
+        //Estilo tr interno tablas
+        .tr--secundario {
+          &:hover {
+          background-color: #F0F2F5;
+          }
+        }
+        .tr--terciario {
+          background-color: #F0F2F5;
+          border-bottom: 0px;
+          &:hover {
+            background-color: #F0F2F5;
+          }
+        }
+        &.tr--separador {
+          background-color: transparent;
+          border-bottom: 0px;
+          &:hover {
+            background-color: transparent;
+          }
+          td {
+            text-align: left;
+            .md-button {
+              margin-bottom: 2em;
+            }
+          }
+        }
+      }
+      tr:focus {
+        outline: none;
+      }
+      //Estilo Active de filas
+      .tr--active {
+        background-color: #DADFE8;
+        border-bottom: 1px solid #DADFE8;
+      }
+      .tr--activeSecundario {
+        background-color: #F0F2F5;
+        border-bottom: 0px;
+      }
+      td {
+        text-align: right;
+        vertical-align: middle;
+        /* inicio estilosElementos */
+        &.td--iconoApertura {
+          vertical-align: middle;
+          text-align: center;
+          width: 1%;
+          max-width: 45px;
+          button.md-icon-button.icons {
+            margin: 0;
+            padding: 0.5em;
+          }
+        }
+        &.td--iconoAperturaFixed {
+          @extend .td--iconoApertura;
+          width: 45px;
+          button.md-icon-button.icons {
+            margin: 0;
+            padding: 0.5em;
+          }
+        }
+        &.td--iconoAperturaResponsive {
+          @extend .td--iconoApertura;
+          display: none;
+        }
+        &.td--principal {
+          width: 15%;
+          text-align: left;
+          padding: 0em 0.5em;
+          span {
+            padding-right: 0.5em;
+          }
+        }
+        &.td--valores {
+          width: 10%;
+          padding: 0em 0.5em;
+          .td--valoresTendencia {
+            float: right;
+          }
+          .td--valoresVariacion {
+            float: right;
+            padding-top: 6px;
+          }
+        }
+        &.contenidoDesplegable--info {
+          @include font-12;
+          background-color: transparent;
+          i {
+            vertical-align: middle;
+            @include font-18;
+          }
+        }
+        &.td--left {
+          text-align: left;
+        }
+        &.td--datos {
+          width: 10%;
+          padding: 0em 0.5em;
+          text-align: left;
+        }
+        &.td--auto {
+          width: auto !important;
+        }
+        &.td--iconos {
+          width: 3%;
+        }
+        &.td--botones {
+          width: 10%;
+        }
+        &.td--botones-x2 {
+          width: 20%;
+        }
+        /* fin estilosElementos */
+        /* inicio estilosHelperWidth */
+        &.td--width10 {
+          width: 10%;
+        }
+        &.td--width15 {
+          width: 15%;
+        }
+        &.td--width20 {
+          width: 20% !important;
+        }
+        &.td--width25 {
+          width: 25% !important;
+        }
+        &.td--width30 {
+          width: 30% !important;
+        }
+        &.td--width40 {
+          width: 40% !important;
+        }
+        &.td--width50 {
+          width: 50% !important;
+        }
+        &.td--width80 {
+          width: 80% !important;
+        }
+        /* fin estilosHelperWidth */
+      }
+    }
+    /* fin estructuraFilas */
+  }
+}
+
+.tablaMaster {
+  /* inicio menuContextual */
+  ._md-open-menu-container {
+    width: auto !important;
+    left: none;
+  }
+  .menuContextual {
+    width: 40px;
+    md-menu {
+    }
+    md-menu-content {
+      width: 120px !important;
+      background: blue;
+    }
+  }
+  /* fin menuContextual */
+}
+
+/* inicio estilosTendencias */
+.td--valoresRojo {
+  color: #E60A00 !important;
+}
+.td--valoresVerde {
+  color: #197919 !important;
+}
+.td--valoresAmarillo {
+  color: #F69D00 !important;
+}
+/* fin estilosTendencias */
+
+/* inicio estilosIconos */
+table {
+  tbody {
+    td {
+      .icono--estado {
+        display: inline;
+        margin-left: 0.5em;
+        i {
+          top: 2px;
+          font-size: 16px;
+          position: relative;
+          color: #F69D00;
+        }
+      }
+      i.icono--principal {
+        color: $color-active;
+      }
+      i.icono--check {
+        color: #7EB645;
+      }
+      i.icono--download {
+        color: $color-active;
+      }
+      i.icono--block {
+        color: #9B9B9B;
+      }
+      i.icono--cancel {
+        color: #C21818;
+      }
+      i.icono--pending {
+        color: #F69D00;
+      }
+    }
+  }
+}
+/* fin estilosIconos */
+
+.tablaMaster {
+  /* inicio estilosBotones */
+  .td--botonesTransar {
+    visibility: hidden;
+    .md-button.boton--aportar {
+      color: rgba(255, 255, 255, 0.96);
+      background-color: $color-botones;
+      min-height: 27px;
+      margin: 0px 6px;
+      border-radius: 4px;
+      line-height: 2.3em;
+      vertical-align: middle;
+    }
+    .md-button.boton--aportar:not([disabled]) {
+      color: rgba(255, 255, 255, 0.96);
+      background-color: $color-botones;
+    }
+    .md-button.boton--aportar:not([disabled]):hover {
+      color: rgba(255, 255, 255, 0.96);
+      background-color: $color-botones;
+    }
+    .md-button.boton--rescatar {
+      min-height: 27px;
+      margin: 0px 6px;
+      border-radius: 4px;
+      line-height: 2.3em;
+      vertical-align: middle;
+    }
+    .md-button.boton--rescatar:not([disabled]) {
+      color: $color-botones;
+      background-color: rgba(255, 255, 255, 0.96) !important;
+    }
+  }
+  /* fin estilosBotones */
+}
+
+/* inicio estilosPieTabla */
+.pie--tabla {
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 1em;
+  width: 100%;
+
+  .pie--contenido {
+    padding: 0;
+    margin: 0 0 1em;
+
+    .pie--paginacion {
+      padding: 0;
+      text-align: right;
+
+      .paginacion--accion {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      p.paginacion--parrafo {
+        margin: 0.625em 0;
+        @include font-14;
+      }
+
+      p.paginacion--parrafo__right {
+        text-align: right;
+      }
+
+      md-select.paginacion--select {
+        margin: 0 1em;
+      }
+    }
+  }
+
+  md-select.md-default-theme:not([disabled]):focus ._md-select-value,
+  md-select:not([disabled]):focus ._md-select-value {
+    border-bottom-color: $color-active;
+    color: rgba(0,0,0,0.87);
+  }
+}
+/* fin estilosPieTabla */
+
+/* inicio mediaQueries */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tablaMaster {
+    /* inicio estructuraFilas */
+    table {
+      //Estilo Helper None
+      .td--none-sm {
+        display: none;
+      }
+    }
+  }
+  .tablaMaster {
+    /* inicio estructuraFilas */
+    tbody {
+      td {
+        &.td--principal {
+          width: 11% !important;
+        }
+        &.td--botones {
+          width: 13% !important;
+        }
+        &.td--botones-x2 {
+          width: 24% !important;
+        }
+      }
+    }
+    /* fin estructuraFilas */
+  }
+}
+
+@media (max-width: 991px) {
+  .tablaMaster {
+    table {
+      //Estilo Helper None
+      .td--none-sm,
+      .td--none-xs {
+        display: none;
+      }
+    }
+  }
+  .tablaMaster {
+    /* inicio estructuraFilas */
+    tbody {
+      td {
+        &.td--botones-x2 {
+          width: 30% !important;
+        }
+        &.td--iconos {
+          .md-button.md-icon-button {
+            width: auto;
+            padding: 8px 0px;
+          }
+        }
+      }
+    }
+    /* fin estructuraFilas */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width: 800px) {
+  .tablaMaster {
+    table {
+      /* inicio estructuraHead */
+      thead {
+        display: none !important;
+        tr {
+          th {
+            padding: 0.8em 1em !important;
+          }
+        }
+      }
+      /* fin estructuraHead */
+
+      /* inicio estructuraFilas */
+      tbody {
+        tr {
+          height: auto;
+          margin-top: 1em;
+          border-radius: 4px;
+          overflow: hidden;
+          &:hover {
+            background-color: #fff;
+          }
+          &.td--width10, .td--width15, .td--width20, .td--width25, .td--width30, .td--width40, .td--width50, .td--width80 {
+            width: auto !important;
+          }
+          td {
+            padding: 0.8em 1em !important;
+            margin-left: 0.5em;
+            text-align: right !important;
+            border: none !important;
+            &.td--iconoApertura {
+              display: none;
+            }
+            &.td--iconoAperturaResponsive {
+              display: block;
+              width: auto;
+              position: absolute;
+            }
+            &.td--principal {
+              width: auto;
+            }
+            &.td--valores {
+              width: auto;
+              .td--valoresTendencia {
+                margin-top: -6px
+              }
+              .td--valoresVariacion {
+                padding-top: 0;
+              }
+            }
+            &.td--iconos {
+              display: block;
+              float: right;
+              width: auto;
+              .menuContextual {
+                display: none;
+              }
+            }
+            &.td--botones-x2 {
+              padding-left: 0% !important;
+              width: 66% !important;
+              margin: 0 auto;
+              float: right;
+            }
+            &.td--botones {
+              padding-left: 0% !important;
+              width: 66% !important;
+              margin: 0 auto;
+              float: right;
+            }
+            &.td--botones--icono {
+              padding-left: 0% !important;
+              width: 35% !important;
+              margin: 0 auto;
+              float: right;
+              .md-button.boton--aportar{
+              width:80%;
+              }
+            }
+            &.td--left{
+              padding-left: 35% !important;
+            }
+          }
+        }
+        // Estilos Tr para informacion desplegable
+        .tr--informativo {
+          .td--iconoApertura {
+            width: auto;
+            display: block;
+            float: left;
+            padding: 0em !important;
+            z-index: 1;
+            button {
+              padding: 0em !important;
+              width: 20px;
+            }
+          }
+          .td--principal {
+            width: 80% !important;
+            text-align: left !important;
+            float: left;
+            padding: 0.8em 0.5em !important;
+            line-height: 1.5em;
+          }
+        }
+        // Estilos Detalle desplegable responsive
+        .tr--desplegable {
+          margin: 0px;
+          padding: 0px !important;
+          border: 0px;
+          td {
+            margin: 0px;
+            padding: 0px !important;
+            .contenidoDesplegable {
+              border: 0px;
+              tr {
+                border: 0px;
+              }
+              .tableContenido__cuenta {
+                border: 0px;
+              }
+            }
+          }
+        }
+        .tr--terciario {
+          height: 40px;
+          .td--principal {
+            text-align: left !important;
+            padding-left: 1em !important;
+            font-weight: 700 !important;
+          }
+          .td--valores {
+            padding-right: 1em !important;
+          }
+        }
+        .tableContenido--responsive {
+          margin-top: 1em;
+          border-radius: 4px;
+          overflow: hidden;
+        }
+        .contenidoDesplegable-secundario {
+          border: 0px;
+        }
+        .tr--informativoDesplegable {
+          margin-top: 1em;
+          border: 0px;
+          td {
+            margin: 0px;
+            padding: 0.5em 1em  !important;
+            background: #f4f5f8;
+            .contenidoDesplegable {
+              border: 0px;
+              table {
+                border-radius: 0px;
+                text-align: left;
+                td {
+                  text-align: left !important;
+                }
+              }
+            }
+          }
+        }
+        .tableHead--informativo{
+          td {
+            &:nth-child(1), &:nth-child(2) {
+              display: none;
+            }
+          }
+        }
+      }
+      /* fin estructuraFilas */
+    }
+  }
+  .tablaMaster {
+    /* inicio estilosBotones */
+    .td--botonesTransar {
+      visibility: visible;
+
+      .md-button.boton--aportar {
+        width: 45%;
+      }
+      .md-button.boton--rescatar {
+        width: 45%;
+        margin-bottom: 0.6em;
+      }
+    }
+    /* fin estilosBotones */
+  }
+  .tablaMaster {
+    &.tablaPatrimonio {
+      table {
+        /* inicio estructuraHead */
+        thead {
+          display: table-header-group !important;
+        }
+        /* fin estructuraHead */
+      }
+      tbody {
+        tr {
+          td {
+            height: 20px;
+            padding: 0.8em 1em !important;
+            margin-left: 0.5em;
+            border: none !important;
+            &.td--iconoApertura {
+              display: table;
+            }
+            &.td--principal {
+              text-align: left !important;
+            }
+            //Clase necesaria para el responsive, no borrar!
+            &.h--padding0 {
+              padding: 0 !important
+            }
+            //Fondo de detalle anidado (Patrimonio)
+            .contenidoDesplegable-secundario {
+              .contenidoDesplegable--info {
+                &.info__detalle {
+                  background: #ffffff
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 800px) {
+  thead.ocultar {
+    display:none;
+  }
+}
+
+@media (max-width: 767px) {
+  .tablaMaster {
+    &.tablaPatrimonio {
+      table {
+        /* inicio estructuraHead */
+        thead {
+          tr {
+            th {
+              &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+                display: none;
+              }
+            }
+          }
+        }
+        /* fin estructuraHead */
+      }
+      tbody {
+        tr {
+          td {
+            &.td--iconoApertura {
+              display: table;
+            }
+            &.td--principal {
+              width: 100% !important;
+            }
+            &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+   // .tablaMaster table tbody td.td--iconoAperturaResponsive button.md-icon-button.icons{
+   //    margin: 0;
+   //    padding: 0.5em;
+   //    border-radius: 0px;
+   //    // border: 1px solid red;
+   //    width: 336px;
+   // }
+   // .md-button.md-icon-button md-icon, button.md-button.md-fab md-icon{
+   //    width: 250px;
+   // }
+   // .tablaMaster table tbody tr td.td--iconoAperturaResponsive{
+   //    width: 100%;
+   //    position:inherit;
+   // }
+   // button.md-icon-button{
+   //    width: 300px;
+   //    .boton--VER{
+   //       display: inline-block;
+   //       @include font-12;
+   //       font-family: robotoregular;
+   //    }
+   // }
+   .h--borderTop{
+      display: none;
+   }
+   .responsive>tbody>tr{
+      border: none;
+      flex-direction: column;
+      -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.14);
+      border-radius: 4px 4px 0 0 !important;
+   }
+   .tablaMaster{
+      padding: 0 1em !important;
+      table{
+         -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.14);
+         border: 0px;
+         tbody {
+            .tr--active{
+               background-color: #DADFE8;
+               color: #536374;
+            }
+            tr {
+               // border-bottom: 1px solid #DADFE8;
+                padding: 1em 0.4em 1em 0.5em;
+                td{
+                   padding: 0.5em !important;
+                   margin-left: 0;
+                    border-radius: 0 !important;
+
+                   .contenidoDesplegable--info:hover{
+                     background-color: #ffff;
+                     color: #536374 !important;
+                   }
+                   .contenidoDesplegable--info{
+                      padding: 1em 0.8em;
+                   }
+                }
+            }
+            tr:hover{
+               background-color: #DADFE8;
+               color: #536374;
+            }
+         }
+         .info__detalle{
+            padding: 0.5em 0.1em;
+            background-color: #ffff;
+            margin: 0;
+            border: solid #DADFE8;
+            border-width: 0px 5px 5px 5px;
+         }
+      }
+   }
+}

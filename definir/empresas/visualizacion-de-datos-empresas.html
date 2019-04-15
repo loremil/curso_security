@@ -1,0 +1,462 @@
+<section>
+  <div class="contenido--background definir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row h--marginBottom2 animated fadeInDown ">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion ">Actualización de datos</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <div class="card h--borderRadiusBottom4px h--marginBottomcard">
+      <div ng-cloak class="documentos" ng-controller="ActualizacionController">
+        <md-tabs class="misDatos" md-dynamic-height md-border-bottom>
+          <!-- DATOS INICIALES TABS -->
+          <md-tab label="Datos Iniciales">
+            <!-- tabs -->
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Datos personales</h3>
+              </div>
+            </div>
+            <div id="datosPersonales" class="operacion--seleccion">
+              <div class="ban-row">
+                <div class="ban-col-md-3">
+                  <div class="imagenPersonal">
+                    <img src="assets/images/avatar-empresa.png" alt="">
+                  </div>
+                </div>
+                <div class="ban-col-md-9">
+                  <div class="ban-row">
+                    <div class="ban-col-md-4">
+                      <p class="seleccion__label">Rut empresa</p>
+                      <p class="seleccion__texto">25.234.345-5</p>
+                    </div>
+                    <div class="ban-col-md-4">
+                      <p class="seleccion__label">Razón social</p>
+                      <p class="seleccion__texto">Company S.A.</p>
+                    </div>
+                    <div class="ban-col-md-4">
+                      <p class="seleccion__label">Nombre de Fantasía</p>
+                      <p class="seleccion__texto">Company</p>
+                    </div>
+                  </div>
+                  <div class="ban-row h--marginTop1">
+                    <div class="ban-col-md-4">
+                      <p class="seleccion__label">Giro</p>
+                      <p class="seleccion__texto">Finanzas</p>
+                    </div>
+                    <div class="ban-col-md-4">
+                      <p class="seleccion__label">Nacionalidad</p>
+                      <p class="seleccion__texto">Chilena</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Declaración Obligación Tributaria Extranjera</h3>
+              </div>
+            </div>
+            <div id="declaracionObbligatoria" class="operacion--seleccion">
+              <p>Residencia tributaria en otro país</p>
+              <p class="seleccion--respuesta">SI</p>
+              <div class="ban-row h--marginTop1">
+                <div class="ban-col-md-12">
+                  <p class="texto--seleccion">Residencia tributaria en otro país, distinto de Chile.</p>
+                </div>
+                <div class="ban-col-md-6">
+                  <p class="seleccion__label">País extranjero de residencia</p>
+                  <p class="seleccion__texto">Estados Unidos</p>
+                </div>
+                <div class="ban-col-md-6">
+                  <p class="seleccion__label">Nº Identificación Tributaria</p>
+                  <p class="seleccion__texto">1234455</p>
+                </div>
+              </div>
+            </div>
+          </md-tab>
+          <!-- FIN DATOS INICIALES TABS -->
+          <!--  DATOS DE CONTACTO TABS -->
+          <md-tab label="Datos de Contacto">
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Dirección Principal</h3>
+              </div>
+            </div>
+            <div id="direccionPrincipal" class="operacion--seleccion">
+              <div class="ban-row">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">País</p>
+                  <p class="seleccion__texto">Chile</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Región</p>
+                  <p class="seleccion__texto">Metropolitana</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Estado o Provincia</p>
+                  <p class="seleccion__texto">Santiago</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Ciudad</p>
+                  <p class="seleccion__texto">Santiago</p>
+                </div>
+              </div>
+              <div class="ban-row h--marginTop1">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Comuna</p>
+                  <p class="seleccion__texto">Macul</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Tipo de calle</p>
+                  <p class="seleccion__texto">Calle</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Nonbre de la calle</p>
+                  <p class="seleccion__texto">Providencia</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Número</p>
+                  <p class="seleccion__texto">5456</p>
+                </div>
+              </div>
+              <div class="ban-row h--marginTop1">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Depto / Casa / Block</p>
+                  <p class="seleccion__texto">55</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Código postal</p>
+                  <p class="seleccion__texto">544543</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Clasificación de dirección</p>
+                  <p class="seleccion__texto">Particular</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label"></p>
+                  <p class="seleccion__texto"></p>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Teléfono Principal</h3>
+              </div>
+            </div>
+            <div id="telefonoPrincipal" class="operacion--seleccion">
+              <div class="ban-row">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Teléfono</p>
+                  <p class="seleccion__texto">56 02 2251426</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Tipo de teléfono</p>
+                  <p class="seleccion__texto">Fijo</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Clasificación del teléfono</p>
+                  <p class="seleccion__texto">Particular</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label"></p>
+                  <p class="seleccion__texto"> </p>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Email Principal</h3>
+              </div>
+            </div>
+            <div id="emailPrincipal" class="operacion--seleccion">
+              <div class="ban-row">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Email</p>
+                  <p class="seleccion__texto">gahumada@gmail.com</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__texto icon">
+                    <i class="material-icons check check__color">check_circle</i>Normativos y legales</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__texto icon">
+                    <i class="material-icons check check__color">check_circle</i>Facturas y notas de crédito</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__texto icon">
+                    <i class="material-icons check check__color">check_circle</i>Comunicaciones </p>
+                </div>
+              </div>
+            </div>
+          </md-tab>
+          <!--  FIN DATOS DE CONTACTO TABS -->
+          <!--  DATOS DE PARA INVERTIR  TABS -->
+          <md-tab label="Datos para invertir">
+
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Cuentas bancarias</h3>
+              </div>
+            </div>
+            <div id="cuentasBancarias" class="operacion--seleccion">
+              <div class="ban-row">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Numero de cuenta</p>
+                  <p class="seleccion__texto">3434632453</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Banco</p>
+                  <p class="seleccion__texto">Banco de Chile</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Nacionalidad</p>
+                  <p class="seleccion__texto">Chilena</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Moneda</p>
+                  <p class="seleccion__texto">Pesos</p>
+                </div>
+              </div>
+              <div class="ban-row h--marginTop1">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Tipo de cuenta</p>
+                  <p class="seleccion__texto">Cuenta Corriente</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__texto">Principal</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Otra cuenta bancaria</h3>
+              </div>
+            </div>
+            <div id="otraCuentasBancarias" class="operacion--seleccion">
+              <div class="ban-row">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Numero de cuenta</p>
+                  <p class="seleccion__texto">3434632453</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Banco</p>
+                  <p class="seleccion__texto">Banco de Chile</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Nacionalidad</p>
+                  <p class="seleccion__texto">Chilena</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Moneda</p>
+                  <p class="seleccion__texto">Pesos</p>
+                </div>
+              </div>
+              <div class="ban-row h--marginTop1">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Tipo de cuenta</p>
+                  <p class="seleccion__texto">Cuenta Corriente</p>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Declaración de origen de fondos</h3>
+              </div>
+            </div>
+            <div id="origendeFondos" class="operacion--seleccion">
+              <div class="ban-row">
+                <div class="ban-col-md-3">
+                  <p class="seleccion__label">Ingresos</p>
+                  <p class="seleccion__texto">de 4 a 15 millones</p>
+                </div>
+                <div class="ban-col-md-9">
+                  <p class="seleccion__texto">Ahorros derivados de mi actividad principal</p>
+                </div>
+
+              </div>
+            </div>
+          </md-tab>
+          <!--  FIN DATOS DE PARA INVERTIR  TABS -->
+          <!--  ASESORIAS  TABS -->
+          <md-tab label="Asesoría">
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Marco de actuación personal</h3>
+              </div>
+            </div>
+            <div id="marcoDeActuacionPersonal" class="contenedorDatos operacion--seleccion animated fadeInDown">
+              <div class="contenedor--perfil">
+                <div class="ban-row">
+                  <div class="ban-col-sm-12 ban-col-md-4">
+                    <h4 class="seleccion__subtitulo">Marco de actuacción calculado</h4>
+                    <div class="perfil--contenido">
+                      <div class="contenido--marco">
+                        <img src="assets/images/nivel-actuacion.png" alt="">
+                        <div class="marco--info">
+                          <p class="calculado--title">Prudente</p>
+                          <p class="calculado--texto">Inviertes hasta un 30% RV.</p>
+                        </div>
+                      </div>
+                      <div class="contenido--porcentaje">
+                        <img src="assets/images/marco1.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ban-col-sm-12 ban-col-md-8">
+                    <h4 class="seleccion__subtitulo">Marco de actuacción selecionado</h4>
+                    <div class="marcoSeleccionado">
+                      <div class="marco--select h--shadowBoxNoHover h--opacity05">
+                        <img src="assets/images/iconosDisplay/IcoDisplay_Conservador.png" alt="">
+                        <h4>Conservador</h4>
+                        <p>hasta 10% RV</p>
+                      </div>
+                      <div class="marco--select h--shadowBoxNoHover">
+                        <img src="assets/images/iconosDisplay/IcoDisplay_Prudente.png" alt="">
+                        <h4>Prudente</h4>
+                        <p>hasta 30% RV</p>
+                      </div>
+                      <div class="marco--select h--shadowBoxNoHover h--opacity05">
+                        <img src="assets/images/iconosDisplay/IcoDisplay_Intermedio.png" alt="">
+                        <h4>Intermedio</h4>
+                        <p>hasta 50% RV</p>
+                      </div>
+                      <div class="marco--select h--shadowBoxNoHover h--opacity05">
+                        <img src="assets/images/iconosDisplay/IcoDisplay_Decidido.png" alt="">
+                        <h4>Decidido</h4>
+                        <p>asta 70% RV</p>
+                      </div>
+                      <div class="marco--select h--shadowBoxNoHover h--opacity05">
+                        <img src="assets/images/iconosDisplay/IcoDisplay_Arriesgado.png" alt="">
+                        <h4 class="">Arriesgado</h4>
+                        <p>asta 70% RV</p>
+                      </div>
+                    </div>
+                    <div class="contenido--descrip descrip--activo">
+                      <i class="material-icons icon--activo">info</i>
+                      <div class="marco--tooltip">Busca la protección del capital y acepta un riesgo bajo de pérdida a cambio de un pequeño aumento en
+                        la expectativa de la rentabilidad.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Productos para invertir</h3>
+              </div>
+            </div>
+            <div id="productosInvertir" class="contenedorDatos animated fadeInDown operacion--seleccion">
+              <div class="contenedor--perfil ">
+                <div class="ban-row">
+                  <div class="ban-col-sm-12 ban-col-md-4">
+                    <h4 class="seleccion__subtitulo">Tu perfil de inversionista calculado es</h4>
+                    <div class="perfil--contenido">
+                      <div class="contenido--marco">
+                        <img src="assets/images/nivel-productos.png" alt="">
+                        <div class="marco--info">
+                          <p class="calculado--title">Nivel de Productos 5</p>
+                        </div>
+                        <md-tooltip class="productos--tooltip">Este Nivel de Producto es asignado por Banchile Inversiones de acuerdo a tu perfil de cliente y a
+                          la sotisficación de los productos y servicios ofrecidos. Banchile podrás modificar en el futuro
+                          los productos que se asocian al perfil.
+                        </md-tooltip>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ban-col-sm-12 ban-col-md-8">
+                    <h4 class="seleccion__subtitulo">Productos en los que quieres invertir</h4>
+                    <div class="actuacion--bg">
+                      <div class="ban-row">
+                        <div class="ban-col-sm-6 ban-col-md-4">
+                          <p class="seleccion__texto icon h--opacity05">
+                            <i class="material-icons check check__color">check_circle</i>Moneda Extranjera</p>
+                        </div>
+                        <div class="ban-col-sm-6 ban-col-md-4">
+                          <p class="seleccion__texto icon">
+                            <i class="material-icons check check__color">check_circle</i>Acciones Nacionales</p>
+                        </div>
+                        <div class="ban-col-sm-6 ban-col-md-4">
+                          <p class="seleccion__texto icon">
+                            <i class="material-icons check check__color">check_circle</i>Pactos</p>
+                        </div>
+                        <div class="ban-col-sm-6 ban-col-md-4 ">
+                          <p class="seleccion__texto icon h--opacity05">
+                            <i class="material-icons check check__color">check_circle</i>Fondos Mutuos</p>
+                        </div>
+                        <div class="ban-col-sm-6 ban-col-md-4">
+                          <p class="seleccion__texto icon h--opacity05">
+                            <i class="material-icons check check__color">check_circle</i>Cartera Activa</p>
+                        </div>
+                        <div class="ban-col-sm-6 ban-col-md-4">
+                          <p class="seleccion__texto icon h--opacity05">
+                            <i class="material-icons check check__color">check_circle</i>Préstamo de Acciones</p>
+                        </div>
+                        <div class="ban-col-sm-6 ban-col-md-4">
+                          <p class="seleccion__texto icon">
+                            <i class="material-icons check check__color">check_circle</i>Mercado de Valores Extranjeros</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor--subtitulo animated fadeInDown">
+              <div class="subtitulo--pasos">
+                <h3 class="subtitulo">Email Principal</h3>
+              </div>
+            </div>
+            <div id="supscripcionesEnvios" class="operacion--seleccion">
+              <div class="ban-row">
+                <div class="ban-col-md-12">
+                  <h4 class="seleccion__subtitulo">Informes que quieres recibir</h4>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__texto icon">
+                    <i class="material-icons check check__color">check_circle</i>Informes Diarios</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__texto icon">
+                    <i class="material-icons check check__color">check_circle</i>Informes Semanales</p>
+                </div>
+                <div class="ban-col-md-3">
+                  <p class="seleccion__texto icon">
+                    <i class="material-icons check check__color">check_circle</i>Informes de empresas </p>
+                </div>
+              </div>
+            </div>
+          </md-tab>
+          <!--  ASESORIAS  TABS -->
+        </md-tabs>
+        <!-- FIN TABS -->
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <!-- boton volver -->
+    <div class="ban-row">
+      <div class="ban-col-xs-3 ban-col-sm-2 ban-col-md-2">
+        <div class="boton--back" ng-controller="modalesCrtl">
+          <md-button ng-href="#mis-datos-resumen">
+            <i class="material-icons">arrow_back</i>
+            <span>Volver</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <!-- fin boton volver -->
+  </div>
+</section>

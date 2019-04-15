@@ -1,0 +1,44 @@
+<md-dialog class="modal modales-xl modal--documentos" aria-label="Contrato">
+  <form ng-cloak >
+    <!-- inicio tituloDialogo -->
+    <md-toolbar class="h--shadowBoxNoHover">
+      <div class="md-toolbar-tools">
+        <a href="home-empresa-sinLogin.html" title="Banchile Inversiones">
+          <img src="assets/images/logo--Banchile_E.png" class="toolbar--logo">
+        </a>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <i class="material-icons" aria-label="Boton cerrar">&#xE14C;</i>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <!-- fin tituloDialogo -->
+    <!-- inicio contenedorDialogo -->
+  <md-dialog-content class="modalDocumento">
+      <div class="ban-container">
+        <div class="ban-row">
+          <div class="contenedorPdf ban-col-md-12">
+        <embed style="pdfObjeto" src="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" type="application/pdf" width="100%" height="375"></embed>
+      </div>
+        </div>
+        </div>
+    </md-dialog-content>
+    <!-- fin contenedorDialogo -->
+    <!-- inicio botonesDialogo -->
+    <md-dialog-actions>
+      <div class="ban-row">
+        <div class="ban-col-sm-8 ban-col-md-9">
+          <md-input-container class="input--dropdowns">
+            <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+              He leído y acepto las condiciones
+            </md-checkbox>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-4 ban-col-md-3 h--alignRight">
+          <md-button class="boton1 md-raised primario boton--100" ng-click="answer('useful')">Firmar</md-button>
+        </div>
+      </div>
+    </md-dialog-actions>
+    <!-- fin botonesDialogo -->
+  </form>
+</md-dialog>

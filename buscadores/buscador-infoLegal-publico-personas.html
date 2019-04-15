@@ -1,0 +1,91 @@
+<div class="contenedorBuscador--ffmm colorFondo--buscador colorFuente--buscador collapseFFMM h--marginTop1">
+  <div class="ban-row">
+    <div class="margen--buscador">
+      <div class="ban-col-sm-12 ban-col-md-6">
+        <md-input-container class="ayuda--input ayuda--buscador">
+          <md-icon>
+            <i class="material-icons buscador--icono">search</i>
+          </md-icon>
+          <label>Palabra clave</label>
+          <input name="texto" ng-model="ffmm.palabra">
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="input--dropdowns">
+          <label>Desde</label>
+          <md-datepicker ng-model="ctrl.myDate"></md-datepicker>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="input--dropdowns">
+          <label>Hasta</label>
+          <md-datepicker ng-model="ctrl.myDate"></md-datepicker>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input">
+          <label>Tipo de documento</label>
+          <md-select name="region" ng-model="ffmm.region">
+            <md-option value="1">Fondos Mutuos</md-option>
+            <md-option value="2">Fondos de Inversión</md-option>
+            <md-option value="2">Corporativo</md-option>
+            <md-option value="2">Cartera Activa</md-option>
+            <md-option value="2">Negocios Internacionales</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input">
+          <label>Categoria del documento</label>
+          <md-select name="region" ng-model="ffmm.region">
+            <md-option value="1">Actas</md-option>
+            <md-option value="2">Corporativo</md-option>
+            <md-option value="2">Estados financieros</md-option>
+            <md-option value="2">Estatutos y Manuales</md-option>
+            <md-option value="2">Informativo</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-12 ban-col-md-3 ban-col-md-offset-3">
+        <div class="buscador--boton">
+          <md-button class="boton2 boton--100 md-raised primario" ng-click="infoLegalResultado = !infoLegalResultado" type="button">
+            <span class="ng-scope">Buscar</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- inicio contenedorResultados -->
+<div class="tablaMaster h--paddingBottom2" ng-show="infoLegalResultado">
+  <!-- inicio resultadosFFMM -->
+  <table fixed-header class="animated fadeInDown h--marginTop1" wt-responsive-table ng-controller="tablaInfoLegalAdministradora">
+    <thead class="tableHead--buscador">
+      <tr>
+        <th class="tableHead--titulo">Nombre</th>
+        <th>Categoría</th>
+        <th>Inicio Vigencia</th>
+        <th>Término Vigencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat="categoria in resultadoLinks">
+        <td class="td--principal td--width50 contenidoDesplegable--info" data-title="Fondo Mutuo">
+          <a href="{{categoria.url}}" target="_blank">
+            <i class='material-icons'>{{categoria.iconFile}}</i> {{categoria.nombre}}
+          </a>
+        </td>
+        <td class="td--valores" data-title="%30 días">{{categoria.categoria}}</td>
+        <td class="td--valores" data-title="%30 días">{{categoria.vigInicio}}</td>
+        <td class="td--valores" data-title="%30 días">{{categoria.vigFinal}}</td>
+      </tr>
+      <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+        <td colspan="12">
+          <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- fin resultados -->

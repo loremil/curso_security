@@ -1,0 +1,749 @@
+<section>
+  <div class="bg_content persona-actualizacion "></div>
+  <div class="ban-container">
+    <div class="card h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <h1 class="titulo--operacion h--alignCenter">Registro de cliente</h1>
+        </div>
+        <div class="ban-col-md-12" ng-controller="animateCtrl">
+          <div class="barraProgress a_fadein">
+            <md-progress-linear md-mode="determinate" ng-value="15" class="barraProgress--linea"></md-progress-linear>
+            <div class="checkActualizacion">
+              <div class="check--numero">1</div>
+              <h2 class="check--title">Datos iniciales</h2>
+            </div>
+            <div class="checkActualizacion">
+              <div class="check--numero check__inactive">2</div>
+              <h2 class="check--title check__inactive">Datos de contacto</h2>
+            </div>
+            <div class="checkActualizacion">
+              <div class="check--numero check__inactive">3</div>
+              <h2 class="check--title check__inactive">Datos para invertir</h2>
+            </div>
+            <div class="checkActualizacion">
+              <div class="check--numero check__inactive">4</div>
+              <h2 class="check--title check__inactive">Asesoría</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-controller="ActualizacionController">
+  <div class="ban-container" ng-controller="animateCtrl">
+    <form name="empresaForm">
+      <!--DATOS PERSONALES-->
+      <div class="card h--marginBottom6 h--borderRadiusBottom4px">
+        <div class="contenedor--subtitulo subtitulos__usuarios">
+          <div class="ban-row">
+            <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-12 a_fadeup1">
+              <h3 class="subtitulo">
+                    <span class="subtitulo__icono--verde">
+                      <md-icon><i class="material-icons">check</i></md-icon>
+                   </span> Datos personales
+                 </h3>
+            </div>
+          </div>
+        </div>
+        <div class="ban-row h--paddingL a_fadein">
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <p class="label--txt h--paddingLabel">Rut</p>
+            <p class="input--info">23.456.789-k</p>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Nombres</label>
+              <input required md-no-asterisk name="nombres" ng-model="nombres.nombre">
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Apellido Paterno</label>
+              <input required md-no-asterisk name="Paternoo" ng-model="Paternoo.nombre">
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Apellido Materno</label>
+              <input required md-no-asterisk name="pellido" ng-model="apellido.nombre">
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Sexo</label>
+              <md-select required md-no-asterisk name="sexo" ng-model="sexo.nombre">
+                <md-option value="1 ">Masculino</md-option>
+                <md-option value="2 ">Femenino</md-option>
+              </md-select>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Fecha de nacimiento</label>
+              <md-datepicker required md-no-asterisk name="fecha" ng-model="fecha.nombre"></md-datepicker>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Nacionalidad</label>
+              <md-select required md-no-asterisk name="nacionalidad" ng-model="nacionalidad.nombre">
+                <md-option value="1 ">Chileno</md-option>
+              </md-select>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns input--dropdowns__opcional">
+              <label>Pasaporte</label>
+              <input ng-model="pasaporte">
+              <div class="input--hint_select">Campo opcional</div>
+            </md-input-container>
+          </div>
+        </div>
+        <!--Declaración TRIBUTARIA-->
+        <div class="ban-row a_fadeup1">
+          <div class="ban-col-md-12">
+            <div class="contenedor--subtitulo ">
+              <div class="ban-row  ">
+                <div class="ban-col-xs-12 ban-col-sm-9 ban-col-md-12">
+                  <h3 class="subtitulo">Declaración Obligación Tributaria Extranjera</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ban-row  h--paddingL a_fadein">
+          <div class="infoUser" ng-controller="agregarOtro">
+            <div class="infoUser--radioButton">
+              <div class="ban-col-md-5">
+                <p class="infoUser--pregunta">¿Tiene residencia tributaria en otro país?</p>
+              </div>
+              <div class="ban-row h--paddingL">
+                <div class="ban-col-sm-12 ban-col-md-12">
+                  <div class="infoUser h--marginBottom1 ">
+                    <div class="infoUser--radioButton">
+                      <div class="infoUser--respuesta">
+                        <md-radio-group ng-model="invertirOrdenes">
+                          Si
+                          <md-radio-button value="ordenes" class="md-primary "></md-radio-button>
+                          No
+                          <md-radio-button value="no1" ng-value="specialValue" class="md-primary"></md-radio-button>
+                        </md-radio-group>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div ng-show="invertirOrdenes == 'ordenes'" class="a_fadein">
+                  <div class="contenedor--subtitulo subtitulos__usuarios">
+                    <div class="ban-row ">
+                      <div class="ban-col-xs-7 ban-col-sm-11 ban-col-md-10 ">
+                        <h3 class="subtitulo ">Si tiene residencia tributaria en otro país, distinto de Chile completar los siguientes datos</h3>
+                      </div>
+                      <div class="ban-col-xs-5 ban-col-sm-1 ban-col-md-2 h--alignRight">
+                        <div class="subtitulo--boton boton--color">
+                          <md-button class="md-icon-button boton--color" aria-label="eliminar" ng-click="add()">
+                            <md-icon>
+                              <i class="material-icons boton--color">add</i>
+                            </md-icon>
+                            <md-tooltip>
+                              Agregar otro
+                            </md-tooltip>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div ng-repeat="item in items">
+                    <div class="ban-row a_fadein ">
+                      <div class="ban-col-md-12">
+                        <div class="contenedor--subtitulo" ng-if="!$first">
+                          <div class="ban-row">
+                            <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                              <h3 class="subtitulo">Agregar otra residencia</h3>
+                            </div>
+                            <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                              <div class="subtitulo--boton">
+                                <div>
+                                  <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="$last">
+                                    <md-icon class="boton--agregar--icon">
+                                      <i class="material-icons boton--agregar--plus">add</i>
+                                      <md-tooltip>Agregar otra dirección</md-tooltip>
+                                    </md-icon>
+                                  </md-button>
+                                  <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)">
+                                    <md-icon>
+                                      <i class="material-icons boton--color">&#xE872;</i>
+                                    </md-icon>
+                                    <md-tooltip>
+                                      Eliminar
+                                    </md-tooltip>
+                                  </md-button>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ban-col-sm-6 ban-col-md-4">
+                        <md-input-container class="input--dropdowns">
+                          <label>País Extranjero de residencia</label>
+                          <md-select name="pagarDesde" ng-model="pagarDesde">
+                            <md-option value="1">Estados Unidos</md-option>
+                            <md-option value="2">Puerto Rico</md-option>
+                          </md-select>
+                          <div ng-messages="empresaForm.pais.$error">
+                            <div ng-message="required">Este campo es obligatorio.</div>
+                          </div>
+                        </md-input-container>
+                      </div>
+                      <div class="ban-col-sm-6 ban-col-md-4">
+                        <md-input-container class="input--dropdowns">
+                          <label>Nº identificación tributaria (TAX Id)</label>
+                          <input required md-no-asterisk name="nombres" ng-model="nombres.nombre">
+                          <div ng-messages="empresaForm.nombre.$error">
+                            <div ng-message="required">Este campo es obligatorio.</div>
+                          </div>
+                        </md-input-container>
+                      </div>
+                    </div>
+                    <div ng-show="pagarDesde == '1'" class="input--ingresar">
+                      <div class="contenidoInfo">
+                        <div class="contenidoInfo--info">
+                          <md-icon><i class="material-icons titulo--icono">info</i>
+                            <md-tooltip md-direction="bottom" class="productos--tooltip">1.¿Es ciudadano estadounidense o portoriqueño o guañameña o virgenense o micronesia? 2.¿Tiene residencia permanente en E.E.U.U? 3.¿Ha residido durante el último año calendario más de 183 días en E.E.U.U?
+                            </md-tooltip>
+                          </md-icon>
+                          Eres US Person, debes completar el formulario W9 con su ejecutivo de atención habitual
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--DATOS PROFESIONALES-->
+        <div class="contenedor--subtitulo subtitulos__usuarios">
+          <div class="ban-row ">
+            <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-12 no_visible" when-visible="a_fadeup1" ng-click="toggleClick(1)">
+              <h3 class="subtitulo ">
+                    <span class="subtitulo__icono--amarillo">
+                      <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+                   </span>Datos profesionales
+                 </h3>
+            </div>
+          </div>
+        </div>
+        <div ng-show="show[1]">
+          <div class="ban-row h--paddingL a_fadein">
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Nivel Educacional</label>
+                <md-select required md-no-asterisk name="nivel" ng-model="nivel.nombre">
+                  <md-option value="uno">Universitaria completa</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-s-6 ban-col-md-3 ">
+              <md-input-container class="input--dropdowns ">
+                <label>Profesión o actividad</label>
+                <md-select required md-no-asterisk name="profesion" ng-model="profesion.nombre">
+                  <md-option value="11">Ingeniero Informático</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3 ">
+              <md-input-container class="input--dropdowns ">
+                <label>Experiencia laboral</label>
+                <md-select required md-no-asterisk name="experiencia" ng-model="experiencia.nombre">
+                  <md-option value="1">Más de 10 años</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3 ">
+              <md-input-container class="input--dropdowns ">
+                <label>Relación con intermediario</label>
+                <md-select required md-no-asterisk name="relacion" ng-model="relacion.nombre">
+                  <md-option value="10">Sin relación</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+              <md-icon class="input--mdicon">
+                <i class="material-icons">help</i>
+                <md-tooltip>Relación con Banchile Corredores de Bolsa S.A.</md-tooltip>
+              </md-icon>
+            </div>
+          </div>
+          <div class="ban-row h--paddingL a_fadein">
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns ">
+                <label>Condición laboral</label>
+                <md-select required md-no-asterisk name="condicion" ng-model="condicion.nombre">
+                  <md-option value="12">Dependiente</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3 ">
+              <md-input-container class="input--dropdowns ">
+                <label>Cargo laboral actual</label>
+                <md-select required md-no-asterisk name="cargo" ng-model="cargo.nombre">
+                  <md-option value="15">Ejemplo</md-option>
+                  <md-option value="26">Universitario completo</md-option>
+                  <md-option value="37">Pregado</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3 ">
+              <md-input-container class="input--dropdowns">
+                <label>Empleador</label>
+                <input required md-no-asterisk name="empleador" ng-model="empleador.nombre">
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3 ">
+              <md-input-container class="input--dropdowns ">
+                <label>Rut empleador</label>
+                <input required md-no-asterisk name="rut" ng-model="rut.nombre">
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3 ">
+              <md-input-container class="input--dropdowns ">
+                <label>Giro empleador</label>
+                <md-select required md-no-asterisk name="giro" ng-model="giro.nombre">
+                  <md-option value="13">Tecnología e Innovación</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3 ">
+              <md-input-container class="input--dropdowns ">
+                <label>Renta liquida mensual</label>
+                <md-select required md-no-asterisk name="renta" ng-model="renta.nombre">
+                  <md-option value="17">Plantilla 1</md-option>
+                  <md-option value="28">Plantilla 2</md-option>
+                  <md-option value="39">Plantilla 3</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+
+          </div>
+          <!--Eres PEP-->
+          <div class="ban-row a_fadein">
+            <div class="ban-col-md-12">
+              <div class="contenedor--subtitulo">
+                <div class="ban-row ">
+                  <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-12">
+                    <h3 class="subtitulo">Declaración PEP</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ban-row a_fadein h--paddingL">
+            <div class="infoUser ">
+              <div class="infoUser--radioButton">
+                <div class="ban-col-md-5">
+                  <p class="infoUser--pregunta">¿Has desempeñado algún cargo público en los últimos 10 años?</p>
+                  <div class="infoUser--respuesta">
+                    <md-radio-group ng-model="data.group1">
+                      Si
+                      <md-radio-button value="si" class="md-primary"></md-radio-button>
+                      No
+                      <md-radio-button value="no" class="md-primary">( hasta 2do grado)</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                </div>
+                <div class="ban-col-md-7">
+                  <p class="infoUser--pregunta">¿Eres familiar de un PEP, que ejerce o haya ejercido algún cargo público?</p>
+                  <div class="infoUser--respuesta">
+                    <md-radio-group ng-model="data.group1">
+                      Si
+                      <md-radio-button value="si2" class="md-primary"></md-radio-button>
+                      No
+                      <md-radio-button value="no2" class="md-primary">(hasta 2do grado)</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                  <div class="ban-row h--paddingL">
+                    <div class="ban-col-sm-6 ban-col-md-6">
+                      <md-input-container class="input--dropdowns">
+                        <label>Parentesco del familiar</label>
+                        <md-select required md-no-asterisk name="parentesco" ng-model="parentesco.nombre">
+                          <md-option value="13">Otro parentesco</md-option>
+                        </md-select>
+                        <div ng-messages="empresaForm.nombre.$error">
+                          <div ng-message="required">Este campo es obligatorio.</div>
+                        </div>
+                      </md-input-container>
+                    </div>
+                    <div class="ban-col-sm-6 ban-col-md-6">
+                      <md-input-container class="input--dropdowns">
+                        <label>Ingresar otro parentesco</label>
+                        <input name="otro" ng-model="otro.nombre">
+                      </md-input-container>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--DATOS CIVIL-->
+        <div class="contenedor--subtitulo subtitulos__usuarios">
+          <div class="ban-row">
+            <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-12 no_visible" when-visible="a_fadeup1" ng-click="toggleClick(civil)">
+              <h3 class="subtitulo ">
+                    <span class="subtitulo__icono--amarillo">
+                      <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+                   </span>Estado civil
+                 </h3>
+            </div>
+          </div>
+        </div>
+        <div ng-show="show[civil]">
+          <div class="ban-row h--paddingL a_fadein">
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Estado civil</label>
+                <md-select required md-no-asterisk name="pagarDesde" ng-model="pagarDesde">
+                  <md-option value="1 ">Casado</md-option>
+                  <md-option value="2 ">Soltera</md-option>
+                </md-select>
+                <div class="input--hint_select">Debes ingresar un estado civil</div>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Régimen conyugal</label>
+                <md-select required md-no-asterisk name="nombre" ng-model="empresa.nombre">
+                  <md-option value="1 ">Separación de bienes</md-option>
+                </md-select>
+                <div class="input--hint_select">Debes ingresar un régimen conyugal</div>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+
+        <!--DATOS DE MI CONYUGE O CONVENIENTE CIVIL-->
+        <div class="h--marginTop h--paddingBottom2" ng-show="pagarDesde == '1'">
+          <div class="ban-row">
+            <div class="ban-col-md-12">
+              <div class="contenedor--subtitulo">
+                <div class="ban-row">
+                  <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-12">
+                    <h3 class="subtitulo">Datos de mi conyuge o conviviente civil</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show--contenido">
+            <div class="ban-row h--paddingL">
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                  <label>Nombres</label>
+                  <input ng-model="user.nombre">
+                  <div class="input--hint_select">Campo opcional</div>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                  <label>Apellido paterno</label>
+                  <input ng-model="user.paterno">
+                  <div class="input--hint_select">Campo opcional</div>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                  <label>Apellido materno</label>
+                  <input ng-model="user.materno">
+                  <div class="input--hint_select">Campo opcional</div>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                  <label>Rut</label>
+                  <input ng-model="user.rut">
+                  <div class="input--hint_select">Campo opcional</div>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                  <label>Nacionalidad</label>
+                  <md-select name="plantilla " ng-model="banchilepay.nacionalidad ">
+                    <md-option value="1 ">Casado</md-option>
+                    <md-option value="2 ">Soltera</md-option>
+                    <md-option value="3 ">Plantilla 3</md-option>
+                  </md-select>
+                  <div class="input--hint_select">Campo opcional</div>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                  <label>Pasaporte</label>
+                  <input ng-model="user.pasporte">
+                  <div class="input--hint_select">Campo opcional</div>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                  <label>Relación con el intermediario</label>
+                  <md-select name="plantilla " ng-model="banchilepay.intermediario">
+                    <md-option value="1 ">Casado</md-option>
+                    <md-option value="2 ">Soltera</md-option>
+                    <md-option value="3 ">Plantilla 3</md-option>
+                  </md-select>
+                  <div class="input--hint_select">Campo opcional</div>
+                </md-input-container>
+              </div>
+            </div>
+
+            <div class="ban-row ">
+              <div class="ban-col-md-12">
+                <div class="contenedor--subtitulo">
+                  <div class="ban-row ">
+                    <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-12">
+                      <h3 class="subtitulo">Dirección de mi conyuge o conviviente civil</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="datosDireccion--container ">
+              <div class="ban-row h--paddingL">
+                <div class="ban-col-sm-6 ban-col-md-3 ">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>País</label>
+                    <md-select name="plantilla " ng-model="banchilepay.pais">
+                      <md-option value="1 ">Casado</md-option>
+                      <md-option value="2 ">Soltera</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Región</label>
+                    <md-select name="plantilla " ng-model="banchilepay.region">
+                      <md-option value="1 ">Separación de bienes</md-option>
+                      <md-option value="2 ">Plantilla 2</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Estado o provincia</label>
+                    <md-select name="plantilla " ng-model="banchilepay.provincia">
+                      <md-option value="1 ">Separación de bienes</md-option>
+                      <md-option value="2 ">Plantilla 2</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Ciudad</label>
+                    <md-select name="plantilla" ng-model="banchilepay.ciudad">
+                      <md-option value="1 ">Separación de bienes</md-option>
+                      <md-option value="2 ">Plantilla 2</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3 h--marginTop2">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Comuna</label>
+                    <md-select name="plantilla " ng-model="banchilepay.comuna">
+                      <md-option value="1 ">Casado</md-option>
+                      <md-option value="2 ">Soltera</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3 h--marginTop2">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Tipo de calle</label>
+                    <md-select name="plantilla " ng-model="banchilepay.calle">
+                      <md-option value="1 ">Separación de bienes</md-option>
+                      <md-option value="2 ">Plantilla 2</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3 h--marginTop2">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Nombre de calle</label>
+                    <md-select name="plantilla " ng-model="banchilepay.nombcalle">
+                      <md-option value="1 ">Separación de bienes</md-option>
+                      <md-option value="2 ">Plantilla 2</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3 h--marginTop2">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Número</label>
+                    <md-select name="plantilla " ng-model="banchilepay.numero">
+                      <md-option value="1 ">Separación de bienes</md-option>
+                      <md-option value="2 ">Plantilla 2</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3 h--marginTop2">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Depto/casa/block</label>
+                    <input ng-model="user.firstName ">
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3 h--marginTop2">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Código postal</label>
+                    <input ng-model="user.codigo">
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3 h--marginTop2">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Clasificación de dirección</label>
+                    <md-select name="plantilla " ng-model="banchilepay.clasificacion">
+                      <md-option value="1 ">Separación de bienes</md-option>
+                      <md-option value="2 ">Plantilla 2</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+              </div>
+            </div>
+            <div class="ban-row ">
+              <div class="ban-col-md-12">
+                <div class="contenedor--subtitulo">
+                  <div class="ban-row ">
+                    <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-12">
+                      <h3 class="subtitulo">Contactabilidad del conyuge o conviviente civil</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="datosDireccion--container ">
+              <div class="ban-row h--paddingL">
+                <div class="ban-col-sm-6 ban-col-md-3">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Número de télefono</label>
+                    <input ng-model="user.telef">
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Tipo de télefono</label>
+                    <md-select name="plantilla " ng-model="banchilepay.tipotelf">
+                      <md-option value="1 ">Separación de bienes</md-option>
+                      <md-option value="2 ">Plantilla 2</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Clasificación de télefono</label>
+                    <md-select name="plantilla " ng-model="banchilepay.clasiftelef ">
+                      <md-option value="1 ">Separación de bienes</md-option>
+                      <md-option value="2 ">Plantilla 2</md-option>
+                      <md-option value="3 ">Plantilla 3</md-option>
+                    </md-select>
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-3">
+                  <md-input-container class="input--dropdowns input--dropdowns__opcional">
+                    <label>Email</label>
+                    <input ng-model="user.rut">
+                    <div class="input--hint_select">Campo opcional</div>
+                  </md-input-container>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--BOTONES DESPLAZAMIENTO-->
+        <div class="ban-row h--marginTop1">
+          <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12 no_visible" when-visible="a_fadeup1">
+            <div class="contenedor--botones h--alignRight" ng-controller="modalesCrtl">
+              <md-button href="#actualizacion-datos" class="boton2 md-raised">Anterior</md-button>
+              <md-button href="#actualizacion-datos-2" class="boton1 md-raised primario">Siguiente</md-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

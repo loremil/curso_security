@@ -1,0 +1,8 @@
+*.scssc
+*.scssc
+.sass-cache
+*.map
+main-personas.css.map
+main.css.map
+.DS_Store
+*.DS_Store

@@ -1,0 +1,64 @@
+<div class="cardSeleccion animated fadeInDown" ng-controller="SelectCtrl">
+  <div class="ban-row">
+    <div class="ban-col-sm-4 ban-col-md-4">
+      <md-input-container class="cardSeleccion--select md-block">
+        <div class="select--label">Cuenta:</div>
+        <md-select class="select--option" name="cuenta" ng-model="select.cuenta">
+          <md-optgroup label="Selección de Cuenta">
+            <md-option value="1">Cuenta de Inversión 100-4</md-option>
+            <md-option value="2">Cuenta de Inversión 200-4</md-option>
+            <md-option value="3">Cuenta de Inversión 300-4</md-option>
+          </md-optgroup>
+        </md-select>
+      </md-input-container>
+    </div>
+    <div class="ban-col-sm-4 ban-col-md-4"></div>
+    <div class="ban-col-sm-4 ban-col-md-4 h--alignRight">
+      <div class="boton--select">
+        <md-button href="" ng-click="texto($event)" class="md-icon-button" aria-label="Buscar">
+          <md-icon>
+            <i class="material-icons icons--color">&#xE8B6;</i>
+          </md-icon>
+          <md-tooltip md-direction="Bottom">Buscar</md-tooltip>
+        </md-button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="buscador--avanzado" ng-show="miTexto" ng-cloak>
+  <div class="ban-row">
+    <div class="ban-col-sm-4 ban-col-md-4">
+      <md-input-container class="buscador--input md-block">
+        <label>Periodo </label>
+        <md-select name="date01" ng-model="date01">
+          <md-option value="1">Enero, 2016</md-option>
+          <md-option value="2">Febrero, 2016</md-option>
+          <md-option value="3">Marzo, 2016</md-option>
+          <md-option value="4">Abril, 2016</md-option>
+          <md-option value="5">Mayo, 2016</md-option>
+          <md-option value="6">Junio, 2016</md-option>
+          <md-option value="7">Julio, 2016</md-option>
+          <md-option value="8">Agosto, 2016</md-option>
+          <md-option value="9">Septiembre, 2016</md-option>
+          <md-option value="10">Octubre, 2016</md-option>
+          <md-option value="11">Noviembre, 2016</md-option>
+          <md-option value="12">Diciembre, 2016</md-option>
+        </md-select>
+      </md-input-container>
+    </div>
+    <div class="ban-col-sm-4 ban-col-md-4">
+      <md-input-container class="buscador--input md-block">
+        <md-icon>
+          <i class="material-icons">vpn_key</i>
+        </md-icon>
+        <input name="texto" ng-model="buscar.texto" placeholder="Palabra clave">
+      </md-input-container>
+    </div>
+    <div class="ban-col-sm-4 ban-col-md-4">
+      <div class="buscador--boton">
+        <md-button class="boton1 md-raised primario">Buscar</md-button>
+      </div>
+    </div>
+  </div>
+</div>

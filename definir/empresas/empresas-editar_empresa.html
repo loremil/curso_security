@@ -1,0 +1,92 @@
+<section>
+  <div class="contenido--background definir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion">Editar empresa</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-controller="animateCtrl">
+  <div class="ban-container" ng-controller="EditarEmpresaCtrl as cc">
+    <div class="card h--borderRadiusBottom4px">
+      <!-- inicio tituloDatos -->
+      <div class="contenedor--subtitulo">
+        <h3 class="subtitulo a_fadeup1">
+          <span class="subtitulo__icono--verde">
+            <md-icon><i class="material-icons">check</i></md-icon>
+          </span> Editar datos de la empresa
+        </h3>
+      </div>
+      <!-- fin tituloDatos -->
+      <!-- inicio seccionDatos -->
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-7 ban-col-md-3 ">
+          <md-input-container class="input--dropdowns">
+            <label>Rut de la empresa</label>
+            <input required name="rut" ng-model="empresa.rut">
+            <div class="input--hint_select">Razón social</div>
+            <div ng-messages="empresaForm.rut.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-7 ban-col-md-3 ">
+          <md-input-container class="input--dropdowns">
+            <label>Rut</label>
+            <input required name="rut" ng-model="empresa.rut">
+            <div class="input--hint_select">De la empresa</div>
+            <div ng-messages="empresaForm.rut.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-7 ban-col-md-3">
+          <md-input-container class="input--dropdowns">
+            <label>Nº Cuenta Corriente</label>
+            <input required name="cuenta" ng-model="empresa.cuenta">
+            <div class="input--hint_select">Del Banco de Chile</div>
+            <div ng-messages="empresaForm.cuenta.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+      </div>
+      <!-- fin seccionDatos -->
+      <!-- inicio titulo -->
+      <div class="contenedor--subtitulo h--paddingTop1">
+        <h3 class="subtitulo no_visible" when-visible="a_fadeup1">
+          <span class="subtitulo__icono--amarillo">
+            <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+          </span> Autorizar
+        </h3>
+      </div>
+      <!-- fin titulo -->
+      <!-- inicio seccionAutorizacion -->
+      <div class="ban-row">
+        <div class="ban-col-md-12">
+          <div ng-include src="'autorizaciones/autorizacion-empresas-editar.html'"></div>
+        </div>
+      </div>
+      <!-- fin seccionAutorizacion -->
+    </div>
+    <!-- boton volver -->
+    <div class="ban-row">
+      <div class="ban-col-xs-3 ban-col-sm-2 ban-col-md-2">
+        <div class="boton--back h--marginBottom2" ng-controller="modalesCrtl">
+          <md-button ng-href="#empresa">
+            <i class="material-icons">arrow_back</i>
+            <span>Volver</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <!-- fin boton volver -->
+  </div>
+</section>

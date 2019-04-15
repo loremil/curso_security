@@ -1,0 +1,141 @@
+<section>
+  <div class="contenido--background consultar-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Instrucciones para transferencias</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-buscar-fav.html' "></div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+           <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+              <div ng-include src=" 'buscadores/buscador-movimientos.html' ">
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorTransacciones -->
+<section>
+  <div class="ban-container">
+    <div class="card tablaMaster h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2">
+      <!-- inicio transaccionesInternacionales -->
+      <table class="animated fadeInDown" fixed-header wt-responsive-table ng-controller="tablaCartola">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Fecha</th>
+            <th>Producto</th>
+            <th>Transacción</th>
+            <th>Instrumento</th>
+            <th>Precio</th>
+            <th>Monto</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in transferenciaSinInstruir | orderBy : sort">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--valores td--auto">{{usuarios.producto}}</td>
+            <td class="td--valores td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--valores td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--botones">
+              <div class="td--botonesTransar">
+                <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#moneda-comprainstruccion">Instruir</md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="animated fadeIn" src=" 'detalle/detalle-transferencias.html' ">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin transaccionesInternacionales -->
+      <!-- inicio tablaPaginador -->
+      <div class="pie--tabla animated fadeInDown">
+        <div class="pie--contenido">
+          <div class="ban-row">
+            <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+              <div class="pie--paginacion">
+                <div class="paginacion--accion h--displayNone">
+                  <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                </div>
+                <div class="paginacion--accion h--displayNone">
+                  <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                    <md-option value="1">10</md-option>
+                    <md-option value="2">20</md-option>
+                    <md-option value="3">30</md-option>
+                  </md-select>
+                </div>
+                <div class="paginacion--accion">
+                  <p class="paginacion--parrafo">10 de 22</p>
+                </div>
+                <div class="paginacion--accion">
+                  <md-button class="md-icon-button" aria-label="Atras">
+                    <md-icon>
+                      <i class="material-icons">&#xE314;</i>
+                    </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button" aria-label="Adelante">
+                    <md-icon>
+                      <i class="material-icons">&#xE315;</i>
+                    </md-icon>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin tablaPaginador -->
+      </div>
+    </div>
+</section>
+<!-- inicio contenedorTransacciones -->

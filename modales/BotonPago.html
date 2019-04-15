@@ -1,0 +1,77 @@
+<!-- modal 17/05 -->
+<div class="modal botonpago modales-l wow fadeInDown" ng-controller="VerAyudaFFMM">
+  <md-dialog class="botonpago_md" flex="auto">
+    <div class="ban-row" ng-controller="origendeFondos">
+      <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+        <div class="contenedor--subtitulo">
+          <h3 class="subtitulo ">Botón de pago</h3>
+        </div>
+      </div>
+      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+        <form name="origendeFondos">
+          <md-input-container class="input--text">
+            <p class="input--txt_pay">$</p>
+            <label class="text--label">Abonar un monto de</label>
+            <input class="input--text_monto" type="email" name="monto" ng-model="text" ng-change="test()" placeholder="0">
+          </md-input-container>
+        </form>
+      </div>
+      <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12" ng-if="show">
+        <div class="informacion--atencion ">
+          <md-icon md-font-set="banicon-atencion titulo--icono"> </md-icon>
+          <p class="informacion--atencion__txt"> El monto excede a lo informado en tu declaración de origen de fondos, por favor indícanos el origen de estos nuevos fondos</p>
+        </div>
+        <div class="ban-row">
+          <div class="ban-col-sm-6 ban-col-md-6">
+            <md-input-container class="datosSeleccion">
+              <md-checkbox ng-model="dat0" aria-label="Comunicaciones">
+                Ahorros derivados de mi actividad principal
+              </md-checkbox>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-6">
+            <md-input-container class="datosSeleccion">
+              <md-checkbox ng-model="dat1" aria-label="Comunicaciones">
+                Herencia / Premio
+              </md-checkbox>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-12">
+            <md-input-container class="datosSeleccion">
+              <md-checkbox ng-model="dat2" aria-label="Comunicaciones">
+                Venta de una propiedad
+              </md-checkbox>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-12">
+            <md-input-container class="datosSeleccion">
+              <md-checkbox ng-model="dat3" aria-label="Comunicaciones">
+                Otros
+              </md-checkbox>
+            </md-input-container>
+            <md-input-container class="md-block">
+              <!-- <label>Escribe otros</label> -->
+              <textarea ng-model="user.biography" md-maxlength="150" rows="1" md-select-on-focus></textarea>
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+        <p class="text--label2">Desde mi Banco</p>
+        <div class="contenedor--botonesdePago ">
+          <class="ban-row">
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4 ">
+              <md-button aria-label="botonpago" class="md-raised botonesdePago--boton" ng-click="mostrarSeleccion()">
+                <i class="material-icons h--paddingTop0_2">account_balance</i>
+                <!-- <md-icon md-font-set="banicon-bancologo"></md-icon> -->
+                <md-tooltip md-direction="Bottom">Banco de Chile</md-tooltip>
+              </md-button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor--botones right" ng-controller="modalesCrtl">
+      <md-button ng-click="answer('useful')" class="boton2 md-raised">Cancelar</md-button>
+    </div>
+  </md-dialog>
+</div>

@@ -1,0 +1,328 @@
+<!-- 24 nov jorge IE -tabs-->
+<section>
+  <div class="contenido--background consultar-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Documentos</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-noSelect.html' "></div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-show="miTexto" ng-cloak ng-include src=" 'buscadores/buscador-documentos.html' ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2" ng-controller="dialogCtrl">
+      <div class="card--contenido">
+        <div class="documentos a_fadein">
+          <md-tabs md-dynamic-height md-border-bottom>
+            <!-- inicio contratos -->
+            <md-tab label="Contratos">
+              <div class="contenedor-documentos a_fadein">
+                <div class="ban-row">
+                  <div class="ban-col-sm-12">
+                    <div class="contenedor--subtitulo subt--noborder">
+                      <h3 class="subtitulo a_fadeup1">Contratos pendientes de firma</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-row">
+                  <div class="ban-col-sm-6 ban-col-md-4" ng-repeat="contrato in contratosNoFirmados">
+                    <div class="documentosCliente">
+                      <div class="documentosCliente--icon">
+                        <i class="material-icons">picture_as_pdf</i>
+                      </div>
+                      <div class="documentosCliente--info">
+                        <h3 class="caja--titulo">{{contrato.name}}</h3>
+                        <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                      </div>
+                      <div class="documentosCliente--download">
+                        <div class="download--icon {{contrato.classBorder}}">
+                          <a ng-click="showAdvanced($event, contrato)"><i class="material-icons {{contrato.classIcon}}">{{contrato.icono}}</i></a>
+                        </div>
+                        <div class="download--circular">
+                          <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-row">
+                  <div class="ban-col-xs-12">
+                    <div class="contenedor--subtitulo subt--noborder">
+                      <h3 class="subtitulo a_fadeup4">Contratos firmados</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-row">
+                  <div class="ban-col-sm-6 ban-col-md-4" ng-repeat="contrato in contratosFirmados">
+                    <div class="documentosCliente">
+                      <div class="documentosCliente--icon">
+                        <i class="material-icons">picture_as_pdf</i>
+                      </div>
+                      <div class="documentosCliente--info">
+                        <h3 class="caja--titulo">{{contrato.name}}</h3>
+                        <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                      </div>
+                      <div class="documentosCliente--download">
+                        <div class="download--icon {{contrato.classBorder}}">
+                          <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                        </div>
+                        <div class="download--circular">
+                          <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- inicio paginador -->
+              <div class="pie--tabla" ng-cloak>
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin paginador -->
+            </md-tab>
+            <!-- fin contratos -->
+            <!-- inicio certificados -->
+            <md-tab label="Certificados">
+              <div class="contenedor-documentos">
+                <div class="ban-row">
+                  <div class="ban-col-sm-6 ban-col-md-4" ng-repeat="contrato in contratosCertificados">
+                    <div class="documentosCliente">
+                      <div class="documentosCliente--icon">
+                        <i class="material-icons">picture_as_pdf</i>
+                      </div>
+                      <div class="documentosCliente--info">
+                        <h3 class="caja--titulo">{{contrato.name}}</h3>
+                        <p class="caja--periodo">Periodo: {{contrato.periodo}}</p>
+                        <p class="caja--publicacion">Publicación: {{contrato.publicacion}}</p>
+                      </div>
+                      <div class="documentosCliente--download">
+                        <div class="download--icon {{contrato.classBorder}}">
+                          <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                        </div>
+                        <div class="download--circular">
+                          <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- inicio paginador -->
+              <div class="pie--tabla" ng-cloak>
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin paginador -->
+            </md-tab>
+            <!-- fin certificados -->
+            <!-- inicio facturas -->
+            <md-tab label="Facturas">
+              <div class="contenedor-documentos">
+                <div class="ban-row">
+                  <div class="ban-col-sm-6 ban-col-md-4" ng-repeat="contrato in contratosFacturas">
+                    <div class="documentosCliente">
+                      <div class="documentosCliente--icon">
+                        <i class="material-icons">picture_as_pdf</i>
+                      </div>
+                      <div class="documentosCliente--info">
+                        <h3 class="caja--titulo">{{contrato.name}}</h3>
+                        <p class="caja--periodo">Periodo: {{contrato.periodo}}</p>
+                        <p class="caja--publicacion">Publicación: {{contrato.publicacion}}</p>
+                      </div>
+                      <div class="documentosCliente--download">
+                        <div class="download--icon {{contrato.classBorder}}">
+                          <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                        </div>
+                        <div class="download--circular">
+                          <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- inicio paginador -->
+              <div class="pie--tabla" ng-cloak>
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin paginador -->
+            </md-tab>
+            <!-- fin facturas -->
+            <!-- inicio comprobantes -->
+            <md-tab label="Comprobantes">
+              <div class="contenedor-documentos">
+                <div class="ban-row">
+                  <div class="ban-col-sm-6 ban-col-md-4" ng-repeat="contrato in contratosComprobantes">
+                    <div class="documentosCliente">
+                      <div class="documentosCliente--icon">
+                        <i class="material-icons">picture_as_pdf</i>
+                      </div>
+                      <div class="documentosCliente--info">
+                        <h3 class="caja--titulo">{{contrato.name}}</h3>
+                        <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                      </div>
+                      <div class="documentosCliente--download">
+                        <div class="download--icon {{contrato.classBorder}}">
+                          <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                        </div>
+                        <div class="download--circular">
+                          <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- inicio paginador -->
+              <div class="pie--tabla" ng-cloak>
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin paginador -->
+            </md-tab>
+            <!-- Fin comprobantes -->
+          </md-tabs>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

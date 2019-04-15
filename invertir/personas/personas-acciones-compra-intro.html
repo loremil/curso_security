@@ -1,0 +1,224 @@
+<!-- 21 Agosto header "gbujes" -->
+<section>
+  <div class="contenido--background invertir-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion ">Compra de Acciones</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-fav.html' "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="contenedor--subtitulo subtitulos__usuarios">
+        <div class="ban-row">
+          <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+            <h3 class="subtitulo animated fadeInDown">Instrucción de compra de Acciones</h3>
+          </div>
+          <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+            <div class="subtitulo--boton">
+              <p class="boton--mercado">Mercado: <span class="boton--estado">Cerrado</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor--formulario " ng-controller="solicFondoM">
+        <div class="ban-row h--marginTop1" ng-repeat-start="aporte in solicfm | orderBy : sort">
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+            <div class="producto--seleccionado">
+
+              <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-7">
+                <p class="seleccionado--intro">¿En qué Acción quiere invertir?</p>
+              </div>
+              <div class="ban-col-xs-12 ban-col-sm-1 ban-col-md-2">
+                <md-button ng-click="toggleRight()" ng-hide="isOpenRight()" class="boton2 md-raised primario">
+                  SELECCIONA
+                </md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animacion--tabla" ng-repeat-end="" aria-label="Toggle ngHide">
+          <div ng-hide="!aporte.expanded" class="animated fadeInDown h--marginTop1">
+            <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+          </div>
+        </div>
+        <div class="ban-row h--marginTop1 ">
+          <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-3">
+            <md-input-container class="input--radiobutton">
+              <label class="radiobutton--label">Tipo de transacción</label>
+              <md-radio-group ng-model="data.group1">
+                <md-radio-button value="1" class="md-primary precio--limite">Precio Limite</md-radio-button>
+                <md-radio-button value="2" class="md-primary precio--limite">Precio Mercado</md-radio-button>
+              </md-radio-group>
+            </md-input-container>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-3">
+            <div class="producto--info-celeste ">
+              <p class="info__label">Precio Dólar</p>
+              <p class="info__monto ">$<span class="h--pullRight">680,00</span></p>
+            </div>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+              <md-input-container class="input--dropdowns">
+                <label>Una cantidad de</label>
+                <input class="input--text_monto" placeholder="$">
+                <div ng-messages="banchilepayForm.monto.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="moneda-icono">
+              <md-icon><i class="material-icons">autorenew</i></md-icon>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-6">
+              <md-input-container class="input--text">
+                <label>Un monto en CLP</label>
+                <input class="input--text_monto" ng-model="user.monto" placeholder="$">
+                <div ng-messages="banchilepayForm.aPagar.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+        <div class="ban-row h--marginTop1 ">
+          <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+            <div class="ban-row">
+              <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+                <md-input-container class="input--dropdowns">
+                  <label>Valido hasta</label>
+                  <md-datepicker ng-model="ctrl.myDate"></md-datepicker>
+                </md-input-container>
+              </div>
+              <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+                <md-input-container class="input--dropdowns">
+                  <label>Precio limite</label>
+                  <input class="input--text_monto" placeholder="$">
+                  <div ng-messages="banchilepayForm.monto.$error">
+                    <div ng-message="required">Este campo es obligatorio.</div>
+                  </div>
+                </md-input-container>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ng-controller="agregarOtro">
+        <div class="contenedor--subtitulo subtitulos__usuarios">
+          <div class="ban-row">
+            <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+              <h3 class="subtitulo">Ingresar medios de pago</h3>
+            </div>
+            <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+              <div class="subtitulo--boton">
+                <md-button class="md-icon-button boton--agregar" ng-click="add()">
+                  <md-icon class="boton--agregar--icon">
+                    <i class="material-icons boton--agregar--plus">add</i>
+                    <md-tooltip>Agregar otra dirección</md-tooltip>
+                  </md-icon>
+                </md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ng-repeat="item in items">
+          <div class="contenedor--subtitulo " ng-if="!$first">
+            <div class="ban-row animated fadeInDown">
+              <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                <h3 class="subtitulo">Ingresar destinos del pago</h3>
+              </div>
+              <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                <div class="subtitulo--boton boton--color">
+                  <md-button class="md-icon-button boton--color" aria-label="eliminar" ng-click="remove($index)">
+                    <md-icon>
+                      <i class="material-icons boton--color">&#xE872;</i>
+                    </md-icon>
+                    <md-tooltip>
+                      Eliminar
+                    </md-tooltip>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ban-row h--marginTop1" ng-controller="modalesCrtl">
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+              <div class="producto--seleccionado">
+
+                <div class="ban-col-xs-10 ban-col-sm-5 ban-col-md-5">
+                  <p class="md-caption producto--seleccionado__label h--paddingLft">Saldo Disponible en caja</p>
+                  <p class="md-subhead producto--fondo h--paddingLft">$ 0</p>
+                </div>
+                <div class="ban-col-xs-12 ban-col-sm-5 ban-col-md-6 h--pullRight ">
+                  <md-button ng-click="toggleRight()" ng-hide="isOpenRight()" class="boton2 md-raised primario h--pullRight">
+                    Abonar
+                  </md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor--formulario animated fadeInDown">
+        <div class="ban-row animated fadeInDown">
+          <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+            <div class="contenedor--subtitulo h--borde animated fadeInDown">
+              <h3 class="subtitulo">Términos y condiciones</h3>
+            </div>
+            <div class="condiciones">
+              <div class="ban-row">
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                  <div class="condiciones--texto" height="200">
+                    <p>Declaro que he sido informado de lo siguiente:</p>
+                    </br>
+                    <p>
+                      El Cliente declara su intención de entregar en administración a Banchile Administradora General de Fondos S.A. activos de su propiedad, para ser invertidos única y exclusivamente en Fondos Mutuos administrados por la misma Administradora, de modo que
+                      ésta, por cuenta y riesgo del Cliente, pueda decidir su inversión, enajenación y demás actividades que correspondan, de acuerdo a las disposiciones del presente Contrato y a las normas legales o reglamentarias vigentes o que se dicten
+                      en el futuro.
+                      </br>Las partes entienden por “Activos” la totalidad de los recursos en efectivo y cuotas de fondos mutuos de que el Cliente sea titular y que éste entregue a la Administradora para su administración, así como las cuotas de fondos
+                      mutuos que éste adquiera para el Cliente en dicha administración y los dividendos y rescates provenientes de las respectivas inversiones que la Administradora efectúe por cuenta del Cliente. En el Anexo al Contrato de Administración
+                      de Cartera en Fondos Mutuos se contempla el “Plan de Inversión” donde se señala la Cartera de Fondos Mutuos administrados por la Administradora en la que se deberán mantener invertidos los Activos del Cliente, según se define más
+                      adelante. El Cliente podrás mantener una o más Carteras objeto de inversión, las que serán administradas por la Administradora, de acuerdo a los límites establecidos en el respectivo Anexo Plan de Inversión. Con todo, previa firma
+                      de un nuevo Anexo, el Cliente podrás siempre y en cualquier tiempo cambiarse de una Cartera a otra a partir del primer proceso de ajuste, según se señala más adelante. Por “Cartera” se entenderá aquel conjunto de cuotas de aquellos
+                      fondos mutuos administrados por la Administradora, que componen cada una de las categorías de fondos mutuos en las cuales se invertirán los activos del Cliente. Existirán 7 Carteras denominadas: Cartera Protegida, Cartera Defensiva,
+                      Cartera Controlada, Cartera Moderada, Cartera Equilibrada, Cartera Potenciada y Cartera Agresiva, cuyas características, Activo objeto y límites, están definidos en los respectivos Anexos. Sin perjuicio de lo anterior, el número
+                      de carteras puede aumentarse en el futuro, de común acuerdo por las partes, mediante la formalización de un nuevo Anexo. Cada vez que el presente Contrato se refiera a la palabra “Fondos Mutuos”, deberá entenderse por tal aquel patrimonio
+                      a que se refiere el artículo 28 de la Ley número 20.712 de 2014, administrado para estos efectos por Banchile Administradora General de Fondos S.A.
+                    </p>
+                  </div>
+                  <md-input-container class="input--dropdowns">
+                    <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+                      He leído y acepto las condiciones
+                    </md-checkbox>
+                  </md-input-container>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin contenedor -->
+    </div>
+    <div ng-show="datachecked.check">
+      <div ng-include class="animated fadeIn" src="'autorizaciones/autorizacion_operacion-accionesCompra.html'"></div>
+    </div>
+  </div>
+</section>
+<section>
+  <md-sidenav class="md-sidenav-right h--positionFix" md-whiteframe="4" md-component-id="right">
+    <div ng-include class="animated fadeIn" src="'detalle/detalle-acciones-intro.html'"></div>
+  </md-sidenav>
+</section>

@@ -1,0 +1,37 @@
+
+<section>
+  <div class="contenido--background invertir-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion ">alerta error</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-fav.html' "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container" ng-controller="solicFondoM" id="solicFondoMCtrl">
+    <div class="card">
+  <div ng-include class="animated fadeIn" src=" 'mensajes-card/mensajesInfo--movimientos.html' "></div>
+    </div>
+  </div>
+</section>
+<section>
+  <md-sidenav class="md-sidenav-right h--positionFix" md-whiteframe="4" md-component-id="right2">
+    <div ng-include class="animated fadeIn" src="'detalle/detalle-abono.html'"></div>
+  </md-sidenav>
+</section>
+
+<section>
+  <md-sidenav class="md-sidenav-right h--positionFix" md-whiteframe="4" md-component-id="right">
+    <div ng-include class="animated fadeIn" src="'detalle/detalle-operaciones-aside-ffmm-reinv-new.html'"></div>
+  </md-sidenav>
+</section>

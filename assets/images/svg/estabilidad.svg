@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="20px" viewBox="0 0 25 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.39002963 0 10.3590667 24.282637 10.3590667 24.282637 0.39002963 0 0.39002963"></polygon>
+    </defs>
+    <g id="Flujo-sitio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1">
+            <polygon id="Fill-1" fill="#5BABBF" points="5.17113333 11.0675185 5.17113333 19.314037 8.67165185 19.314037 8.67165185 10.3872222"></polygon>
+            <polygon id="Fill-2" fill="#5BABBF" points="15.6720667 9.02678519 15.6720667 19.3141926 19.1725852 19.3141926 19.1725852 12.8342667 18.7541407 10.7477481 18.3891037 8.92567407 18.3087333 8.51345185"></polygon>
+            <polygon id="Fill-3" fill="#5BABBF" points="10.5868 10.0151852 10.5868 19.3137778 14.0209481 19.3137778 14.0209481 9.34681481"></polygon>
+            <polygon id="Fill-4" fill="#5BABBF" points="21.5688667 11.3115852 20.8896074 12.3195852 20.8896074 19.3138815 24.3242741 19.3138815 24.2921259 7.27388148"></polygon>
+            <g id="Group-10" transform="translate(0.000000, 0.128800)">
+                <path d="M0.000103703704,11.9440741 C0.00217777778,14.306963 0.0198074074,17.431037 0.0198074074,17.459037 L0.0198074074,19.1851852 L3.45395556,19.1851852 L3.45395556,11.2725926 L0.296696296,11.8865185 L0.000103703704,11.9440741 Z" id="Fill-5" fill="#5BABBF"></path>
+                <g id="Group-9">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-8"></g>
+                    <polygon id="Fill-7" fill="#69B4C5" mask="url(#mask-2)" points="24.282637 4.37847407 23.5313037 3.87136296 18.3689333 0.39002963 19.074637 4.14877037 -0.000103703704 7.85617778 -0.000103703704 10.3590667 0.00197037037 10.3585481 3.45374815 9.68758519 19.5392296 6.56143704 19.9156741 8.49965926 20.2791556 10.313437 20.8894519 9.40862222"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,261 @@
+body.personas {
+  .login--contenido {
+    .card--login {
+      .login--titulo {
+        .titulo--mensaje {
+          span.titulo--cliente {
+            &:before {
+              content: 'Persona';
+            }
+          }
+        }
+      }
+    }
+  }
+  .login {
+      .titulo--cliente:before {
+          content: 'persona' !important;
+      }
+  }
+    /* ESTILOS HEADER 24-05*/
+    header {
+    //  background-color: #535557;
+    /*  estilos nuevo logo en imagen --jorge  */
+      .header--logo {
+        img{
+          width: 200px !important;
+        }
+      }
+    /*  estilos nuevo logo en imagen --jorge  */
+      #headerBanchile--basic{
+        background-color: rgba(83, 85, 87, 0);
+      }
+        .menuSitios {
+            li {
+                a {
+                    color: white !important;
+                    &.active {
+                        color: #5BABBF !important;
+                        border-top: 3px solid #5BABBF;
+                    }
+                }
+            }
+        }
+        .menu-sitios {
+            li {
+                a {
+                    color: white !important;
+                    &.active {
+                        color: #5BABBF !important;
+                        border-top: 3px solid #5BABBF;
+                    }
+                }
+            }
+        }
+        nav#navegacionPublica {
+
+            background-color: #535557;
+            .menu--PublicoMobil {
+              color: white ;
+              md-icon {
+                color: white ;
+                i {
+                  color: white ;
+                }
+              }
+            }
+            .menu--publico{
+              li {
+                a {
+                  color: #fff;
+                }
+              }
+            }
+            .menu--sitios {
+              a{
+                  color: #fff ;
+            }
+          }
+            h1 {
+              /*   background-image: url('../images/logo--Banchile_P.png')!important; */
+/*            filter: blur(2px);*/
+              -ms-interpolation-mode: nearest-neighbor; // IE 7+ (non-standard property)
+              image-rendering: -webkit-optimize-contrast; // Safari 6, UC Browser 9.9
+              image-rendering: -webkit-crisp-edges; // Safari 7+
+              image-rendering: -moz-crisp-edges; // Firefox 3.6+
+              image-rendering: -o-crisp-edges; // Opera 12
+              image-rendering: pixelated; // Chrome 41+
+            }
+            .menuPublico--link {
+                color: white !important;
+            }
+            .menuPublicoMobil {
+                md-icon {
+                    i {
+                        color: white !important;
+                    }
+                }
+            }
+            .menuPublico {
+                .menuPublico--item {
+                    &:hover {
+                        &::after {
+                            border-top: 8px solid #626466 !important;
+                        }
+                    }
+                    .menuPublico--link {
+                        color: white;
+                    }
+                    a.menuPublico--link.md-button.md-ink-ripple {
+                        &.activo-menuPublico {
+                            background-color: #626466 !important;
+                        }
+                    }
+                }
+            }
+            .menuLogin {
+                .menuLogin--despliegue {
+                    md-icon {
+                        i {
+                            color: white;
+                        }
+                    }
+                    p {
+                        color: white;
+                    }
+                }
+            }
+        }
+        #headerBanchile--basic {
+            .header--logo {
+              /*   background-image: url('../images/logo--Banchile_P.png'); */
+            }
+            i{
+                color: #fff;
+            }
+        }
+        .background--login {
+            background-image: url(../images/bg-header-personas.jpg);
+        }
+
+        /* ESTILOS HOME */
+        .home--presentacion {
+            background-image: url('../images/bg-header-personas.jpg');
+        }
+        /* FIN ESTILOS HOME */
+        /* ESTILOS LOGIN */
+        .background--login {
+            background-image: url(../images/bg-header-personas.jpg);
+        }
+
+        .login--contenido {
+            background-image: url("../images/seccionBanner-Persona.png");
+        }
+    }
+    /* FIN ESTILOS HEADER */
+    #menuPublicoMobil {
+        background-color: white;
+        .menuPublicoMobil--eleccionSitio {
+            background-color: #535557;
+            border-right: solid 1px rgba(0, 0, 0, 0.22);
+            li:nth-child(1),
+            li:nth-child(2) {
+                a {
+                    color: #fff;
+                }
+            }
+            li.activo {
+                border-bottom: solid 4px #5BABBF;
+                a {
+                    color: #5BABBF;
+                }
+            }
+        }
+        .menuPublicoMobil--buscador {
+            padding: 15px;
+            md-input-container {
+                background-color: rgba(240, 242, 245, 0.22);
+                border: solid 1px rgba(151, 151, 151, 0.3);
+            }
+        }
+        .nivel2 {
+            background-color: #F9F9F9;
+            .md-button.md-ink-ripple {
+                color: #4A4A4A;
+            }
+        }
+    }
+    #login {
+        .panelLogin {
+            .panelLogin--usuario {
+                background-color: #535557;
+                .panelLogin--usuario__contenedor {
+                    p {
+                        color: #fff !important;
+                    }
+                }
+                button.md-icon-button.md-button.md-ink-ripple {
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+    }
+    .login--contenido {
+        background-image: url("../images/1_edificio.jpg");
+    }
+
+    /*ESTILOS HOME */
+
+  .menu--login {
+    .menuLogin--despliegue {
+      md-icon {
+        i {
+          color: white;
+        }
+      }
+
+      p {
+        color: white;
+      }
+    }
+  }
+  #login--menu{
+    .menu--cerrar{
+      background: #535557 !important;
+      i {
+        color: white;
+      }
+      
+    }
+    .menu--usuario{
+      background-color: #535557;
+      .usuario--contenedor{
+        color: #fff;
+        i {
+          color: white;
+        }
+
+      }
+
+    }
+
+  }
+}
+
+
+
+/*Nuevos menu publico jorge*/
+.menu--publico{
+  li {
+    a {
+      color: white !important;
+    }
+  }
+}
+
+
+
+/*Nuevos menu publico jorge*/

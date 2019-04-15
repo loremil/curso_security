@@ -1,0 +1,76 @@
+<div ng-controller="asideCloseRight">
+  <md-button class="md-icon-button md-primary asideClose" ng-click="close()">
+    <i class="material-icons">close</i>
+  </md-button>
+</div>
+<h2 class="operaciones--titulo">Selecciona un Fondos01 </h2>
+<h3 class="operaciones--subtitulo">Selecciona uno de tus Fondos Mutuos disponibles para venta de Moneda Extranjera</h3>
+
+<table fixed-header class="table tableContenido" wt-responsive-table ng-controller="tablaFFMM">
+  <thead class="tableContenido--head head__segundario">
+    <tr>
+      <th></th>
+      <th class="td--label">Fondo Mutuo</th>
+      <th>%30 días</th>
+      <th>%1 año</th>
+      <th>Riesgo</th>
+      <th>Cuota</th>
+      <th>Monto</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tableContenido--info info--detalle" ng-repeat-start=" money in moneda  | orderBy : sort">
+      <td class="info--iconos">
+        <md-button class="md-icon-button icons" ng-click="money.expanded = false" ng-if="money.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+        <md-button class="md-icon-button icons" ng-click="money.expanded = true" ng-if="!money.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+      </td>
+      <td class="info--principal__cuenta" data-title="Fondo Mutuo">{{money.producto}}
+        <div class="cartera--ico" aria-label="Ya tienes este Fondo">
+          <i class="material-icons icons--color icons--small">work</i>
+        </div>
+      </td>
+      <td class="valor--td__inf" data-title="%30 días">{{money.dias}}
+        <div class="moneda--ico" aria-label="Ya tienes este Fondo">
+          <md-icon aria-hidden="true"><i class="material-icons">arrow_drop_up</i></md-icon>
+        </div>
+      </td>
+      <td class="valor--td__inf" data-title="%1 año">{{money.ano}}
+        <div class="moneda--ico" aria-label="Ya tienes este Fondo">
+          <md-icon aria-hidden="true"><i class="material-icons">arrow_drop_up</i></md-icon>
+        </div>
+      </td>
+      <td class="valor--td__info" data-title="Riesgo">{{money.riesgo}}</td>
+      <td class="valor--td__info" data-title="Nº cuotas">{{money.cuota}}</td>
+      <td class="valor--td__info" data-title="Monto">{{money.monto}}</td>
+      <td class="contenido--botones">
+        <div class="datos--botones">
+          <div class="datos--botones">
+            <md-button class="boton--rescatar md-raised" href="#moneda-venta2">SELECCIONA</md-button>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="money.expanded" ng-repeat-end="">
+      <td class="animacionApertura--shadow" colspan="8" data-title="">
+        <table class="tableContenido tableContenido__margin">
+          <tbody>
+            <tr>
+              <td class="despliegueDetalle h--marginTop2" colspan="7">
+                <div ng-include src="'detalle/detalle-cuenta-fm.html'"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>

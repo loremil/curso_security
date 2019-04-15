@@ -1,0 +1,35 @@
+<section class="login--contenido">
+    <div class="ban-container">
+        <div class="card--login" ng-cloak="">
+            <div class="login--titulo">
+                <h2 class="titulo--bienvenido">Bienvenido</h2>
+                <h3 class="titulo--mensaje">Ingresa a tu cuenta <span class="titulo--cliente"></span></h3>
+            </div>
+            <form name="loginForm">
+               <div ng-controller="progressCircularCargando as vm">
+                   <div class="contenedorCargando--paginas h--loading">
+                     <div class="ban-row">
+                       <div class="ban-col-md-12">
+                         <div class="cargando--circulo">
+                           <div layout="row" layout-sm="column" layout-align="space-around">
+                             <md-progress-circular md-mode="indeterminate" ng-disabled="!vm.activated" md-diameter="50"></md-progress-circular>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="ban-col-md-12">
+                         <div class="cargando--texto">
+                           <p>Tu información se está cargando</p>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+               </div>
+                <div class="login--ingresar" ng-controller="modalesCrtl">
+                    <a> <md-button ng-disabled="true" class="boton1 md-raised primario disabled" >Ingresar</md-button> </a>
+                    <p class="login--pregunta h--paddingTop2"><a href="#">¿Olvidaste o bloqueaste tu clave?</a></p>
+                    <p class="login--pregunta"><a href="#">¿Necesitas ayuda?</a> </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,138 @@
+<section>
+  <div class="bg_content persona-actualizacion "></div>
+  <div class="ban-container">
+    <div class="card h--bgnegro h--borderRadiusTop4px">
+      <div class="ban-row animated fadeInDown ">
+         <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <h1 class="titulo--operacion titulo--encuesta  ">Encuesta del Inversionista</h1>
+          <hr class="titulo-linea">
+        </div>
+    </div>
+  </div>
+</section>
+<section>
+   <div class="ban-container">
+      <div class="card h--bgnegro">
+         <div class="ban-row animated fadeInDown ">
+            <div class="ban-col-md-12">
+               <h3 class="subtitulos-centrados centrados--blanco">Este es tu resultado</h3>
+               <p class="bajada--texto texto--blanco h--paddingTop0_5">Este es tu marco de actuación calculado, si no estás de acuerdo con este resultado a continuación puedes seleccionar otro marco de actuación.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section>
+    <div class="ban-container">
+        <div class="card h--marginBottom6  h--borderRadiusBottom4px h--bgnegro">
+            <div class="contenedorDatos animated fadeInDown ">
+               <div class="ban-row">
+                  <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                     <div ng-controller="sliderInformesDepto">
+                             <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="false">
+                                 <!-- cajaTranzadas -->
+                               <ks-swiper-slide>
+                                 <div class="ban-col-md-12">
+                                   <div class="items--caja h--shadowBox  h--opacity05">
+                                     <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Conservador.png" alt="">
+                                     <p class="caja--subtitulo">Conservador</p>
+                                     <p class="caja--texto">Te recomendamos invertir hasta un 10% en Renta Variable</p>
+                                     <!-- <div class="botones-cajaDepto">
+                                        <md-input-container class="input--radiobutton">
+                                          <md-radio-group ng-model="data.group1">
+                                            <md-radio-button value="1" class="md-primary">Selecciona</md-radio-button>
+                                          </md-radio-group>
+                                        </md-input-container>
+                                     </div> -->
+                                   </div>
+                                 </div>
+                               </ks-swiper-slide>
+                               <!-- cajaTranzadas -->
+                               <!-- cajaTranzadas -->
+                               <ks-swiper-slide>
+                                 <div class="ban-col-md-12">
+                                   <div class="items--caja h--shadowBox ">
+                                     <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Prudente.png"  alt="">
+                                     <p class="caja--subtitulo">Prudente</p>
+                                     <p class="caja--texto">Te recomendamos invertir hasta un 30% en Renta Variable.</p>
+                                     <!-- <div class="botones-cajaDepto">
+                                        <md-input-container class="input--radiobutton">
+                                          <md-radio-group ng-model="data.group1">
+                                            <md-radio-button value="2" selected class="md-primary">Selecciona</md-radio-button>
+                                          </md-radio-group>
+                                        </md-input-container>
+                                     </div> -->
+                                   </div>
+                                 </div>
+                               </ks-swiper-slide>
+                               <!-- cajaTranzadas -->
+                               <!-- cajaTranzadas -->
+                               <ks-swiper-slide>
+                                 <div class="ban-col-md-12">
+                                   <div class="items--caja h--shadowBox  h--opacity05">
+                                     <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Intermedio.png" alt="">
+                                     <p class="caja--subtitulo">Intermedio</p>
+                                     <p class="caja--texto">Te recomendamos invertir hasta un 50% en Renta Variable</p>
+                                     <!-- <div class="botones-cajaDepto">
+                                        <md-input-container class="input--radiobutton">
+                                          <md-radio-group ng-model="data.group1">
+                                            <md-radio-button value="3" class="md-primary">Selecciona</md-radio-button>
+                                          </md-radio-group>
+                                        </md-input-container>
+                                     </div> -->
+                                   </div>
+                                 </div>
+                               </ks-swiper-slide>
+                               <!-- cajaTranzadas -->
+                               <!-- cajaTranzadas -->
+                               <ks-swiper-slide>
+                                 <div class="ban-col-md-12">
+                                   <div class="items--caja  h--opacity05">
+                                     <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Decidido.png"  alt="">
+                                     <p class="caja--subtitulo">Decidido</p>
+                                     <p class="caja--texto">Te recomendamos invertir hasta un 70% en Renta Variable</p>
+                                     <!-- <div class="botones-cajaDepto">
+                                        <md-input-container class="input--radiobutton">
+                                          <md-radio-group ng-model="data.group1">
+                                            <md-radio-button value="4" class="md-primary">Selecciona</md-radio-button>
+                                          </md-radio-group>
+                                        </md-input-container>
+                                     </div> -->
+                                   </div>
+                                 </div>
+                               </ks-swiper-slide>
+                               <ks-swiper-slide>
+                                 <div class="ban-col-md-12">
+                                   <div class="items--caja  h--opacity05">
+                                     <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Arriesgado.png" alt="">
+                                     <p class="caja--subtitulo">Arriesgado</p>
+                                     <p class="caja--texto"> Te recomendamos invertir hasta un 70% en Renta Variable.</p>
+                                     <!-- <div class="botones-cajaDepto">
+                                        <md-input-container class="input--radiobutton">
+                                          <md-radio-group ng-model="data.group1">
+                                            <md-radio-button  value="5" class="md-primary">Selecciona</md-radio-button>
+                                          </md-radio-group>
+                                        </md-input-container>
+                                     </div> -->
+                                   </div>
+                                 </div>
+                               </ks-swiper-slide>
+                             <!-- cajaTranzadas -->
+                             </ks-swiper-container>
+                           </div>
+                  </div>
+               </div>
+            </div>
+            <!--botones-->
+           <div class="ban-row h--marginTop1">
+              <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                 <div class="contenedor--botones h--alignRight" ng-controller="modalesCrtl">
+                      <md-button href="#encuesta-inversionista-5" class="boton2 md-raised">Anterior</md-button>
+                      <md-button href="#actualizacion-datos-4" class="boton1 md-raised primario">Siguiente</md-button>
+                 </div>
+              </div>
+           </div>
+           <!--botones-->
+        </div>
+    </div>
+</section>

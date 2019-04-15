@@ -1,0 +1,264 @@
+$back_image: "../images/indicadores_background.jpg";
+$blur_radius: 13px;
+
+/* efecto acrylix */
+.indicadores--acrylic {
+  position: absolute;
+  top: -$blur_radius*2;
+  left: -$blur_radius*2;
+  right: -$blur_radius*2;
+  bottom: -$blur_radius*2; // overflow: hidden;
+  background: url($back_image) fixed;
+  background-size: cover;
+  filter: blur($blur_radius);
+}
+
+#indicadoresContainer {
+    width: 100%;
+    height: 100vh;
+    padding: 3em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url($back_image);
+    &:last-child {
+        background-color: #F0F2F5;
+    }
+    .sliderCards .swiper-container {
+        padding-top: 0;
+    }
+    .sliderCards .swiper-container .swiper-wrapper {
+        margin-bottom: 0;
+    }
+}
+
+.indicadoresCard {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.14);
+    -ms-flex-direction: column;
+    -moz-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.14);
+    z-index: initial;
+    margin-top: -1px;
+    &:focus {
+        outline: none;
+    }
+    .card {
+        padding: 0em 0.8em;
+        border-radius: 4px;
+    }
+}
+
+.indicadoresHeader {
+    width: 100%;
+    height: 128px;
+    // height: calc(15vh - 3em);
+    text-align: left;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 33;
+    background: rgba(255, 255, 255, 1);
+    .banchile--logo {
+        width: auto;
+        height: 96px;
+        line-height: 96px;
+        text-align: left;
+        display: inline-block;
+        overflow: hidden;
+        a {
+            width: auto;
+            height: 86px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .indicadoresHeader--tituloContainer {
+        display: inline-block;
+        height: 96px;
+        line-height: 96px;
+        margin-left: 2em;
+        .indicadoresHeader--titulo {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            .titulo--operacion {
+                font-size: 28px;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+    .indicadoresHeader--mercado {
+        height: 96px;
+        line-height: 96px;
+        .indicadorMercado {
+            width: 100%;
+            display: inline-block;
+            line-height: normal;
+            vertical-align: middle;
+            font-size: 22px;
+        }
+    }
+}
+
+.indicadoresEstructure {
+    width: 100%;
+    height: calc(85vh - 6em);
+    min-height: 330px;
+    padding-top: 2em;
+    z-index: 33;
+    background: rgba(255, 255, 255, 0.66);
+    .indicadoresEstructure--infoFooter {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  
+.indicadoresNotificacion {
+  box-sizing: content-box;
+  display: block;
+  padding: 1em 5em;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 1);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0.5em 3em rgba(0, 0, 0, 0.4);
+  &.notificacionAzul {
+      background-color: #002464;
+      color: #ffffff;
+  }
+  &.notificacionPublicitaria {
+      height: 96px;
+      padding: 0 !important;
+      background-size: cover;
+      background-position: center;
+      .notificacionPublicitaria--contenedor {
+        position: absolute;
+        z-index: 99;
+        padding: 1.3em 3em;
+        color: #ffffff;
+        .indicadoresNotificacion--titulo{
+            color: #ffffff !important;
+        }
+    }
+  }
+  .indicadoresNotificacion--icono {
+    height: 48px;
+    display: inline-block;
+    img {
+      height: 100%;
+    }
+  }
+  .indicadoresNotificacion--contenido {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+    text-align: left;
+    .indicadoresNotificacion--titulo {
+      font-size: 25px;
+      color: #519CAD;
+      line-height: 1.3em;
+    }
+    .indicadoresNotificacion--texto {
+      font-size: 22px;
+      line-height: 1.3em;
+    }
+  }
+  .indicadoresNotificacion--filtro {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      background: linear-gradient(90deg, rgba(210, 210, 210, 0.1) 0%, rgba(50, 50, 50, 0.88) 0%, rgba(210, 210, 210, 0.1) 100%);
+      border-radius: 4px;
+  }
+}
+
+.indicadoresTablas {
+    &.tablaMaster {
+        table {
+            thead {
+                tr {
+                    height: 55px;
+                    font-size: 25px;
+                }
+            }
+            tbody {
+                tr {
+                    height: 60px;
+                    font-size: 28px;
+                    .td--principal {
+                        font-weight: 700;
+                    }
+                }
+                td {
+                    &.td--valores {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+        .card {
+            height: 70vh;
+          .contenedor--subtitulo {
+            text-align: center;
+            text-transform: uppercase;
+            border: 0px;
+            margin-bottom: 3.3em;
+            .subtitulo {
+              padding-top: 0.3em;
+              padding-bottom: 0.8em;
+              font-size: 25px;
+              font-weight: 700;
+            }
+          }
+        }
+        .homeNoticias {
+            margin: 0;
+            .cardNoticias {
+                margin: 0;
+                .contenedorimg--noticiasNormales {
+                    min-height: auto;
+                    max-height: 70vh;
+                    height: 70vh;
+                    display: block;
+                    text-align: center;
+                    img {
+                        height: 100%;
+                        display: inline-block;
+                    }
+                }
+                .contenedor--noticiaNormales {
+                    height: 70vh;
+                    h4 {
+                        font-size: 22px;
+                    }
+                    h3 {
+                        max-height: 8em;
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 1.5em;
+                        color: #fff;
+                    }
+                    p {
+                        font-size: 25px;
+                        line-height: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}

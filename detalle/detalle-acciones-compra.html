@@ -1,0 +1,198 @@
+<tr class="animacionApertura" ng-repeat-end="" aria-label="Toggle ngHide">
+  <div class="contenidoDesplegable--info info__detalle">
+    <div class="ban-row">
+      <div class="ban-col-sm-6 ban-col-md-9">
+        <h3 class="detalle--titulo">Compra de Acciones</h3>
+        <h4 class="detalle--subtitulo">Serie CCU
+          <span>Fecha de Solicitud 22 de Julio 2017.11:30 GMT-4</span>
+        </h4>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3 h--alignRight">
+        <div class="info--operacion">
+          Nº de orden
+          <span class="operacion--numero">213456789</span>
+        </div>
+      </div>
+    </div>
+    <div class="ban-row ban--paddingTop">
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Medio de pago</h4>
+          <p>Caja Internet</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Estado</h4>
+          <p>Asignado</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Mercado</h4>
+          <p>Nacional</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Comisión/IVA</h4>
+          <p>$46.000</p>
+        </div>
+      </div>
+    </div>
+    <div class="ban-row">
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Cantidad</h4>
+          <p>544</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Precio</h4>
+          <p>$35.976</p>
+        </div>
+      </div>
+    </div>
+    <div class="ban-row h--borderTop" ng-controller="instruccionesVentanaCtrl">
+      <div class="ban-col-xs-12">
+        <div class="ban-row">
+          <div class="ban-col-sm-12 ban-col-md-6 ban-col-md-push-6">
+            <div class="contendidoMonto">
+              <p class="contendidoMonto--texto">Monto</p>
+              <p class="contendidoMonto--valor">CLP $460.000,00</p>
+            </div>
+          </div>
+          <div class="ban-col-md-3 ban-col-md-pull-6">
+            <div ng-click="verMejoresofertas($event)">
+              <md-button ng-click="verMejoresofertas($event)" class="boton2 md-raised">
+                Ver detalle
+                <md-tooltip md-direction="bottom">Ver mejores ofertas de transacciones</md-tooltip>
+              </md-button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-row">
+        <div class="ban-col-xs-12">
+          <div class="bitacora h--paddingCenter" ng-show="mejoresofertas" ng-cloak>
+            <div class="informacion--atencion">
+
+              <p class="informacion--atencion__txt">
+                <i class="material-icons titulo--icono">info</i>
+                La ejecución de una orden de compra o venta de un determinado instrumento, podría realizarse en más de una operación. Es
+                por ello que en el cuadro de ejecución, es factible que una orden tenga varias ejecuciones asociadas.</p>
+            </div>
+            <div class="info--titulo">
+              <h3 class="info--txt">Mejores ofertas de transacción</h3>
+            </div>
+            <p class="texto--tabla">Ingreso de orden</p>
+            <table class="table tableContenido h--marginTop" wt-responsive-table>
+              <thead class="tableContenido--head">
+                <tr>
+                  <th class="td--label">Folio</th>
+                  <th class="td--label">Recepción</th>
+                  <th class="td--label">Aceptación</th>
+                  <th>Cantidad</th>
+                  <th>Precio</th>
+                  <th>Monto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tableContenido--info info--detalle h--heigth45px">
+                  <td class="info--fecha">0032213</td>
+                  <td class="info--principal">02/11/2011 09:01:12</td>
+                  <td class="info--principal">02/11/2011 09:01:12</td>
+                  <td class="valor--td">576</td>
+                  <td class="valor--td">PM
+                    <md-tooltip>Precio mercado</md-tooltip>
+                  </td>
+                  <td class="valor--td">$1.775.555.43</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="texto--tabla">Ejecución de la orden </p>
+            <table class="table tableContenido h--marginTop" wt-responsive-table>
+              <thead class="tableContenido--head">
+                <tr>
+                  <th class="td--label">Ejecución</th>
+                  <th class="td--label">Bolsa</th>
+                  <th class="td--label">Modalidad</th>
+                  <th>Contraparte</th>
+                  <th>Cantidad</th>
+                  <th>Precio</th>
+                  <th>Monto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tableContenido--info info--detalle h--heigth45px">
+                  <td class="info--principal">02/11/2011 09:01:12</td>
+                  <td class="info--fecha">BCS</td>
+                  <td class="info--fecha">OS
+                    <md-tooltip>Operación con otros operadores contraparte</md-tooltip>
+                  </td>
+                  <td class="valor--td">Sin relación</td>
+                  <td class="valor--td">573</td>
+                  <td class="valor--td">$6.334,3220</td>
+                  <td class="valor--td">$1.775.555.43</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="texto--tabla">Operaciones corredor y mercado</p>
+            <table class="table tableContenido h--marginTop" wt-responsive-table>
+              <thead class="tableContenido--head">
+                <tr>
+                  <th class="td--label">Fecha</th>
+                  <th class="td--label">Mayor precio corredor</th>
+                  <th class="td--label">Menor precio corredor</th>
+                  <th>Mayor precio mercado</th>
+                  <th>Menor precio mercado</th>
+                  <th>Mayor precio vigente / Otra bolsa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tableContenido--info info--detalle">
+                  <td class="info--fecha">02/11/2011</td>
+                  <td class="info--precio">$3.122.3333 / 10:45:48</td>
+                  <td class="info--precio">$3.122.3333 / 10:45:48</td>
+                  <td class="info--precio">$3.122.3333 / 10:45:48</td>
+                  <td class="info--precio">$ 3.122.3333 / 10:45:48</td>
+                  <td class="info--precio--bolsa">$ 3.122.3333 / 10:45:48</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="bitacora h--borderNone h--paddingTop1">
+              <div class="ban-row">
+                <div class="ban-col-md-12">
+                  <div class="bitacora--header">
+                    <h3 class="bitacora--header--titulo border-bottom">
+                      <i class="material-icons titulo--icono">info</i>Riesgos de invertir en acciones</h3>
+                  </div>
+                  <div class="bitacora--contenido">
+                    <p class="bitacora--contenido--texto">Cualquier inversión en el mercado accionario lleva ímplicito un riesgo. Los precios de las acciones son
+                      esencialmente variables, pudiendo subir o bajar de acuerdo al comportamiento de una serie de factores:
+                      resultados de la empresa, factores económicos, financieros, políticos, etc. Para minimizar el riesgo,
+                      se debe tener adecuada política de diversificación, distribuyendo el capital invertido en distintas
+                      alternativas.
+                    </p>
+                  </div>
+                </div>
+                <div class="ban-col-md-12">
+                  <div class="bitacora--header">
+                    <h3 class="bitacora--header--titulo border-bottom">
+                      <i class="material-icons titulo--icono">info</i>Asignación de operaciones</h3>
+                  </div>
+                  <div class="bitacora--contenido">
+                    <p class="bitacora--contenido--texto">Banchile Corredores de Bolsa S.A da preferencia a la ejecución de órdenes a precio de mercado. De entre
+                      las órdenes a precio límite, se privilegia a las de mejor precio y a igualdad de condiciones , se da
+                      preferencia a las órdenes recibidas con anterioridad.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</tr>

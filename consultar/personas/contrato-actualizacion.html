@@ -1,0 +1,35 @@
+<!-- LMalave 03 Oct -->
+<section>
+  <div class="contenido--background consultar-persona"></div>
+  <div class="ban-container" >
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row h--marginBottom2">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion ">Documentos </h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-controller="BuscaListadoCtrl" ng-include src=" 'select-cuenta/personas/card-cuenta-fav_new.html' "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorContratos -->
+<section>
+  <div class="ban-container">
+    <div class="card h--marginBottom2 h--paddingBottom2">
+      <div class="configuracion_contrato animated fadeInDown">
+        <h3 class="configuracion--bienvenido">Contrato general de fondos
+        </h3>
+        <embed class="contrato--pdf animated fadeInDown" src="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf">
+      </div>
+    </div>
+    <div class="contenedor--botones right" ng-controller="modalesCrtl">
+      <md-button ng-click="showAutorizado($event)" class="boton1 md-raised">Firmar</md-button>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorContratos -->

@@ -1,0 +1,471 @@
+<section>
+  <div class="bg_content persona-actualizacion "></div>
+  <div class="ban-container">
+    <div class="card h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <h1 class="titulo--operacion h--alignCenter ">Registro de cliente</h1>
+        </div>
+        <div class="ban-col-md-12">
+          <div class="barraProgress a_fadein">
+            <md-progress-linear md-mode="determinate" ng-value="49" class="barraProgress--linea"></md-progress-linear>
+            <div class="checkActualizacion">
+              <div class="check-active"> <i class="material-icons">&#xE86C;</i></div>
+              <h2 class="check--title">Datos iniciales</h2>
+            </div>
+            <div class="checkActualizacion">
+              <div class="check--numero">2</div>
+              <h2 class="check--title">Datos de contacto</h2>
+            </div>
+            <div class="checkActualizacion">
+              <div class="check--numero check__inactive">3</div>
+              <h2 class="check--title check__inactive">Datos para invertir</h2>
+            </div>
+            <div class="checkActualizacion">
+              <div class="check--numero check__inactive">4</div>
+              <h2 class="check--title check__inactive">Asesoría</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-controller="ActualizacionController">
+  <div class="ban-container">
+    <form name="empresaForm">
+      <!--MIS DIRECCIONES-->
+      <div class="card  h--marginBottom6 h--borderRadiusBottom4px">
+      <div ng-controller="agregarOtro">
+        <div class="contenedor--subtitulo subtitulos__usuarios a_fadeup1 ">
+          <div class="ban-row " >
+            <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+              <h3 class="subtitulo ">
+                 <span class="subtitulo__icono--verde">
+                   <md-icon><i class="material-icons">check</i></md-icon>
+                </span> Direcciones
+              </h3>
+            </div>
+            <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+              <div class="subtitulo--boton ">
+                <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="items.length == 1">
+                  <md-icon class="boton--agregar--icon">
+                    <i class="material-icons boton--agregar--plus">add</i>
+                    <md-tooltip>Agregar otra dirección</md-tooltip>
+                  </md-icon>
+                </md-button>
+                <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)" ng-if="items.length > 1">
+                  <md-icon>
+                    <i class="material-icons boton--color">&#xE872;</i>
+                  </md-icon>
+                </md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ng-repeat="item in items">
+         <div class="ban-row a_fadein" ng-if="!$first">
+           <div class="contenedor--subtitulo subtitulos__usuarios sub__padding">
+             <div class="ban-row">
+               <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                 <h3 class="subtitulo">
+                   <span class="subtitulo__icono--amarillo">
+                     <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+                  </span> Ingresa otra
+                 </h3>
+               </div>
+               <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                 <div class="subtitulo--boton">
+                   <div>
+                     <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="$last">
+                       <md-icon class="boton--agregar--icon">
+                        <i class="material-icons boton--agregar--plus">add</i>
+                        <md-tooltip>Agregar otra dirección</md-tooltip>
+                       </md-icon>
+                     </md-button>
+                     <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)">
+                       <md-icon>
+                        <i class="material-icons boton--color">&#xE872;</i>
+                       </md-icon>
+                       <md-tooltip>
+                        Eliminar
+                       </md-tooltip>
+                     </md-button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="ban-row h--paddingL a_fadein">
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>País</label>
+              <md-select required md-no-asterisk name="nombre" ng-model="empresa.nombre">
+                <md-option value="3">Masculino</md-option>
+              </md-select>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Región</label>
+              <md-select required md-no-asterisk name="region" ng-model="region.nombre">
+                <md-option value="1">Región Metropolitana</md-option>
+              </md-select>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Estado o provincia</label>
+              <md-select required md-no-asterisk name="estado" ng-model="estado.nombre">
+                <md-option value="1">Santiago</md-option>
+              </md-select>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Ciudad</label>
+              <md-select required md-no-asterisk name="ciudad" ng-model="ciudad.nombre">
+                <md-option value="1">Santiago</md-option>
+              </md-select>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Comuna</label>
+              <md-select required md-no-asterisk name="comuna" ng-model="comuna.nombre">
+                <md-option value="1">Macul</md-option>
+              </md-select>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Tipo de calle</label>
+              <md-select required md-no-asterisk name="tipo" ng-model="tipo.nombre">
+                <md-option value="11">Calle</md-option>
+              </md-select>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Nombre calle</label>
+              <input required md-no-asterisk name="nombre" ng-model="nombre.nombre">
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Número</label>
+              <input required md-no-asterisk name="numero" ng-model="numero.nombre">
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Depto/Casa/Block</label>
+              <input required md-no-asterisk name="numero" ng-model="numero.nombre">
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns input--dropdowns__opcional">
+              <label>Código postal</label>
+              <input ng-model="user.codigo">
+              <div class="input--hint_select">Campo opcional</div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Clasificación dirección</label>
+              <md-select required md-no-asterisk name="clasificicacion" ng-model="clasificicacion.nombre">
+                <md-option value="1">Particular</md-option>
+              </md-select>
+              <div ng-messages="empresaForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns h--inputDatos">
+              <md-radio-group ng-model="data.group1">
+                <md-radio-button value="Apple" class="md-primary">Dirección principal</md-radio-button>
+              </md-radio-group>
+            </md-input-container>
+          </div>
+       </div>
+         </div>
+      </div>
+        <!--TELÉFONOS-->
+        <div ng-controller="agregarOtro">
+           <div class="contenedor--subtitulo subtitulos__usuarios a_fadeup1 ">
+             <div class="ban-row " >
+               <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9" ng-click="toggleClick(1)">
+                 <h3 class="subtitulo ">
+                     <span class="subtitulo__icono--amarillo">
+                      <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+                   </span>Teléfono
+                 </h3>
+               </div>
+               <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+                 <div class="subtitulo--boton ">
+                   <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="items.length == 1">
+                     <md-icon class="boton--agregar--icon">
+                       <i class="material-icons boton--agregar--plus">add</i>
+                       <md-tooltip>Agregar otro teléfono</md-tooltip>
+                     </md-icon>
+                   </md-button>
+                   <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)" ng-if="items.length > 1">
+                     <md-icon>
+                       <i class="material-icons boton--color">&#xE872;</i>
+                     </md-icon>
+                   </md-button>
+                 </div>
+               </div>
+             </div>
+           </div>
+        <div ng-repeat="item in items">
+        <div ng-show="show[1]">
+           <div class="ban-row a_fadein" ng-if="!$first">
+            <div class="contenedor--subtitulo subtitulos__usuarios sub__padding">
+              <div class="ban-row">
+                <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                  <h3 class="subtitulo">
+                    <span class="subtitulo__icono--amarillo">
+                      <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+                   </span> Ingresa otro
+                  </h3>
+                </div>
+                <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                  <div class="subtitulo--boton">
+                    <div>
+                      <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="$last">
+                        <md-icon class="boton--agregar--icon">
+                         <i class="material-icons boton--agregar--plus">add</i>
+                         <md-tooltip>Agregar otro teléfono</md-tooltip>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)">
+                        <md-icon>
+                         <i class="material-icons boton--color">&#xE872;</i>
+                        </md-icon>
+                        <md-tooltip>
+                         Eliminar
+                        </md-tooltip>
+                      </md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ban-row h--paddingL a_fadein">
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <div class="input--label">
+                <p class="label--texto">Número de télefono</p>
+                <md-input-container class="input--dropdowns__ancho">
+                  <md-select name="plantilla1" ng-model="area" placeholder="56">
+                    <md-option value="1">56</md-option>
+                    <md-option value="1">54</md-option>
+                    <md-option value="1">52</md-option>
+                  </md-select>
+                </md-input-container>
+                <md-input-container class="input--dropdowns__ancho">
+                  <label></label>
+                  <md-select name="plantilla2" ng-model="codigofono" placeholder="02">
+                    <md-option value="1">02</md-option>
+                    <md-option value="1">32</md-option>
+                    <md-option value="1">09</md-option>
+                  </md-select>
+                </md-input-container>
+                <md-input-container class="input--dropdowns__number">
+                  <label></label>
+                  <input required md-no-asterisk name="number" ng-model="number.nombre" placeholder="84567654">
+                  <div ng-messages="empresaForm.nombre.$error">
+                    <div ng-message="required">Este campo es obligatorio.</div>
+                  </div>
+                </md-input-container>
+              </div>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Tipo de télefono</label>
+                <md-select required md-no-asterisk name="tipo" ng-model="tipo.nombre">
+                  <md-option value="1">Fijo</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Clasificación de télefono</label>
+                <md-select required md-no-asterisk name="clasif" ng-model="clasif.nombre">
+                  <md-option value="9">Particular</md-option>
+                </md-select>
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns h--inputDatos">
+                <md-radio-group ng-model="data.group1">
+                  <md-radio-button value="principal" class="md-primary">Télefono principal</md-radio-button>
+                </md-radio-group>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+        <!--EMAILS-->
+        <div ng-controller="agregarOtro">
+           <div class="contenedor--subtitulo subtitulos__usuarios a_fadeup1 ">
+            <div class="ban-row " >
+             <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9" ng-click="toggleClick(2)">
+                <h3 class="subtitulo ">
+                    <span class="subtitulo__icono--amarillo">
+                     <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+                  </span>Emails
+                </h3>
+             </div>
+             <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+                <div class="subtitulo--boton ">
+                  <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="items.length == 1">
+                    <md-icon class="boton--agregar--icon">
+                      <i class="material-icons boton--agregar--plus">add</i>
+                      <md-tooltip>Agregar otro email</md-tooltip>
+                    </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)" ng-if="items.length > 1">
+                    <md-icon>
+                      <i class="material-icons boton--color">&#xE872;</i>
+                    </md-icon>
+                  </md-button>
+                </div>
+             </div>
+            </div>
+          </div>
+         <div ng-repeat="item in items">
+        <div ng-show="show[2]">
+           <div class="ban-row a_fadein" ng-if="!$first">
+           <div class="contenedor--subtitulo subtitulos__usuarios sub__padding">
+             <div class="ban-row">
+               <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                 <h3 class="subtitulo">
+                   <span class="subtitulo__icono--amarillo">
+                     <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+                  </span> Ingresa otro
+                 </h3>
+               </div>
+               <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                 <div class="subtitulo--boton">
+                   <div>
+                     <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="$last">
+                       <md-icon class="boton--agregar--icon">
+                        <i class="material-icons boton--agregar--plus">add</i>
+                        <md-tooltip>Agregar otro email</md-tooltip>
+                       </md-icon>
+                     </md-button>
+                     <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)">
+                       <md-icon>
+                        <i class="material-icons boton--color">&#xE872;</i>
+                       </md-icon>
+                       <md-tooltip>
+                        Eliminar
+                       </md-tooltip>
+                     </md-button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+          <div class="ban-row h--paddingL a_fadein" >
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Email</label>
+                <input required md-no-asterisk name="email" ng-model="email.nombre">
+                <div ng-messages="empresaForm.nombre.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns h--inputDatos">
+                <md-radio-group ng-model="data.group1">
+                  <md-radio-button value="Apple" class="md-primary">Email principal</md-radio-button>
+                </md-radio-group>
+              </md-input-container>
+            </div>
+          </div>
+          <div class="ban-row a_fadein">
+            <div class="ban-col-sm-12 ban-col-md-12">
+              <div class="input--label">
+                <p class="label--info">Quiero recibir los siguientes correos</p>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns__check">
+                  <md-checkbox ng-model="dat" aria-label="Normativos y legales">
+                    Normativos y legales
+                  </md-checkbox>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns__check">
+                  <md-checkbox ng-model="dat2" aria-label="Facturas y notas de crédito">
+                    Facturas y notas de crédito
+                  </md-checkbox>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns__check">
+                  <md-checkbox ng-model="dat3" aria-label="Comunicaciones">
+                    Comunicaciones
+                  </md-checkbox>
+                </md-input-container>
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
+      </div>
+        <!--botones-->
+        <div class="ban-row h--marginTop1">
+          <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+            <div class="contenedor--botones h--alignRight" ng-controller="modalesCrtl">
+              <md-button href="#actualizacion-datos-registro" class="boton2 md-raised">Anterior</md-button>
+              <md-button href="#actualizacion-datos-3" class="boton1 md-raised primario">Siguiente</md-button>
+            </div>
+          </div>
+        </div>
+        <!--botones-->
+      </div>
+    </form>
+  </div>
+</section>

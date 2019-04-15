@@ -1,0 +1,68 @@
+<div ng-controller="asideCloseRight">
+  <md-button class="md-icon-button md-primary asideClose" ng-click="close()">
+    <i class="material-icons">close</i>
+  </md-button>
+</div>
+<h2 class="operaciones--titulo">Selecciona una Acción</h2>
+<h3 class="operaciones--subtitulo">Selecciona uno de tus Acciones disponibles para venta de Acciones</h3>
+
+<table fixed-header class="table tableContenido" wt-responsive-table ng-controller="tablaFFMM">
+  <thead class="tableContenido--head head__segundario">
+    <tr>
+      <th></th>
+      <th class="td--label">Serie</th>
+      <th>Validación</th>
+      <th>Precio</th>
+      <th>Monto</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tableContenido--info info--detalle" ng-repeat-start=" action in acciones  | orderBy : sort">
+      <td class="info--iconos">
+        <md-button class="md-icon-button icons" ng-click="action.expanded = false" ng-if="action.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+        <md-button class="md-icon-button icons" ng-click="action.expanded = true" ng-if="!action.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+      </td>
+      <td class="info--principal__cuenta" data-title="acciones">{{action.serie}}
+        <div class="cartera--ico" aria-label="Ya tienes este Fondo">
+          <i class="material-icons icons--color icons--small">work</i>
+        </div>
+      </td>
+      <td class="valor--td__inf" data-title="%30 días">{{action.validacion}}
+        <div class="moneda--ico" aria-label="Ya tienes este Fondo">
+          <md-icon aria-hidden="true"><i class="material-icons">arrow_drop_down</i></md-icon>
+        </div>
+      </td>
+      <td class="valor--td__info" data-title="Monto">{{action.precio}}</td>
+      <td class="valor--td__info" data-title="Nº cuotas">{{action.monto}}</td>
+      <td class="contenido--botones">
+        <div class="datos--botones">
+          <div class="datos--botones">
+            <md-button class="boton--rescatar md-raised" href="#acciones-compra2">SELECCIONA</md-button>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="action.expanded" ng-repeat-end="">
+      <td class="animacionApertura--shadow" colspan="8" data-title="">
+        <table class="tableContenido tableContenido__margin">
+          <tbody>
+            <tr>
+              <td class="despliegueDetalle h--marginTop2" colspan="7">
+                <div ng-include src="'detalle/detalle-cuenta-patrimonio.html'"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>

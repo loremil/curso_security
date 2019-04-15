@@ -1,0 +1,74 @@
+<section>
+  <div class="bg_content persona-actualizacion "></div>
+  <div class="ban-container">
+    <div class="card h--bgnegro h--borderRadiusTop4px">
+      <div class="ban-row animated fadeInDown ">
+         <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <h1 class="titulo--operacion titulo--encuesta  ">Encuesta del Inversionista</h1>
+        </div>
+        <div class="ban-col-md-12">
+           <div class="barraProgress">
+              <md-progress-linear md-mode="determinate" ng-value="87" class="barraProgress--linea  encuestaBarra"></md-progress-linear>
+              <div class="checkActualizacion">
+                 <div class="check-active"><i class="material-icons encuesta--check">&#xE86C;</i></div>
+                 <h2 class="check--title h--pasosucces">Experiencia</h2>
+              </div>
+              <div class="checkActualizacion">
+                <div class="check-active"><i class="material-icons encuesta--check">&#xE86C;</i></div>
+                 <h2 class="check--title h--pasosucces ">Ahorro</h2>
+              </div>
+              <div class="checkActualizacion">
+               <div class="check-active "><i class="material-icons encuesta--check">&#xE86C;</i></div>
+                <h2 class="check--title h--pasosucces ">Horizonte</h2>
+              </div>
+              <div class="checkActualizacion">
+                 <div class="check--numero encuesta--numero">4</div>
+                 <h2 class="check--title check__inactive">Liquidez</h2>
+              </div>
+              <div class="checkActualizacion pasos__inactive">
+                 <div class="check--numero check__inactive encuesta--numero">5</div>
+                 <h2 class="check--title check__inactive ">Riesgo</h2>
+              </div>
+              </div>
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-cloak>
+    <div class="ban-container">
+        <div class="card--misDatos  h--marginBottom6">
+            <div class="contenedorDatos ">
+                <div class="contenedor--preguntas" ng-controller="active--bloque01">
+                    <h2 class="preguntas--titulo">¿Piensas realizar algún retiro de tu inversión durante el próximo año? </h2>
+                      <div class="preguntas--rango">
+                         <rzslider rz-slider-model="slider3.value"
+                             rz-slider-options="slider3.options">
+                         </rzslider>
+                      </div>
+                    <h2 class="preguntas--titulo">¿Necesitas que la mayor proporción de tus inversiones sean de alta liquidez?</h2>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==1}" ng-click="changeIndex(1)">
+                        <img class="boton--img" src="./assets/images/svg/no.svg" alt="">
+                        <p class="boton--texto">No</p>
+                    </md-button>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==2}" ng-click="changeIndex(2)">
+                        <img class="boton--img" src="./assets/images/svg/si.svg" alt="">
+                        <p class="boton--texto">Si</p>
+                    </md-button>
+
+                </div>
+            </div>
+            <!--botones-->
+           <div class="ban-row h--marginTop1">
+              <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                 <div class="contenedor--botones h--alignRight" ng-controller="modalesCrtl">
+                      <md-button href="#encuesta-inversionista-3" class="boton2 md-raised">Anterior</md-button>
+                      <md-button href="#encuesta-inversionista-5" class="boton1 md-raised primario">Siguiente</md-button>
+                 </div>
+              </div>
+           </div>
+           <!--botones-->
+        </div>
+    </div>
+</section>

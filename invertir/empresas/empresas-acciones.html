@@ -1,0 +1,1369 @@
+<section>
+  <div class="contenido--background invertir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Acciones</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-buscar-fav.html' "></div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+            <div ng-include src=" 'buscadores/buscador-ffmm.html' ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerAcciones">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Recomendamos</h3>
+        </div>
+        <div class="cuadroFlotanteP ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">En general la compra o venta de moneda extranjera tiene un protocolo sencillo y se puede realizar a través de la corredora de un banco, en una sucursal de banco directamente o por internet, también a través de una casa de cambio autorizada.
+          </p>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <a href="#">Aprende más sobre Acciones</a>
+          <a href="#">¿Cómo invertir en este producto?</a>
+          <a href="#">Más asesoría sobre mis inversiones</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- contenedorBarraIndicadores -->
+<section>
+  <div class="contenido--carteraActva">
+    <div class="ban-container">
+      <div class="card homeIndicadores">
+        <div class="sliderIndicadoresHome" ng-controller="sliderIndicadoresHome">
+          <!-- Swiper -->
+          <div class="swiper-container a_fadein">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="contenedorIndicador">
+                  <div class="datos">
+                    <p>Dólar Ob.</p>
+                    <p>$650,09</p>
+                  </div>
+                  <p class="porcentaje">0,02%</p>
+                  <img src="assets/images/indicadores-down.png" class="img-responsive">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contenedorIndicador">
+                  <div class="datos">
+                    <p>Euro</p>
+                    <p>$716,04</p>
+                  </div>
+                  <p class="porcentaje">0,12%</p>
+                  <img src="assets/images/indicadores-down.png" class="img-responsive">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contenedorIndicador">
+                  <div class="datos">
+                    <p>Euro</p>
+                    <p>$716,04</p>
+                  </div>
+                  <p class="porcentaje">0,12%</p>
+                  <img src="assets/images/indicadores-down.png" class="img-responsive">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contenedorIndicador">
+                  <div class="datos">
+                    <p>Yen</p>
+                    <p>$4.138,59</p>
+                  </div>
+                  <p class="porcentaje">0,99%</p>
+                  <img src="assets/images/indicadores-down.png" class="img-responsive">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contenedorIndicador">
+                  <div class="datos">
+                    <p>Libra</p>
+                    <p>$$20.418,29</p>
+                  </div>
+                  <p class="porcentaje">0,26</p>
+                  <img src="assets/images/indicadores-down.png" class="img-responsive">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contenedorIndicador">
+                  <div class="datos">
+                    <p>USD</p>
+                    <p>$27.598.658</p>
+                  </div>
+                  <p class="porcentaje">1,1%</p>
+                  <img src="assets/images/indicadores-down.png" class="img-responsive">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contenedorIndicador">
+                  <div class="datos">
+                    <p>AUD</p>
+                    <p>$144,04</p>
+                  </div>
+                  <p class="porcentaje">0,69%</p>
+                  <img src="assets/images/indicadores-down.png" class="img-responsive">
+                </div>
+              </div>
+            </div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorBarraIndicadores -->
+<!-- inicio indicadorMercado -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="container--alertas">
+        <div class="contenedor--mensajeAlerta color--info h--marginTop1">
+          <div class="indicadorMercado mercado--abierto">
+            <h3>
+              Mercado:
+              <span>Abierto</span>
+            </h3>
+            <md-icon>
+              <i class="material-icons">&#xE3FA;</i>
+              <md-tooltip md-direction="bottom">Pendiente</md-tooltip>
+            </md-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin indicadorMercado -->
+<!-- inicio tituloAccionesRecomendadas -->
+<section ng-controller="animateCtrl">
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados no_visible" when-visible="a_fadeup1">Acciones recomendadas</h3>
+          <p class="bajada--texto">Puedes usar nuestras herramientas para hacer análisis de estos índices</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloAccionesRecomendadas -->
+<!-- contenedorAccionesRecomendadas -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster">
+      <!-- inicio accionesRecomendadas -->
+      <div class="card--contenido" ng-cloak>
+        <div ng-cloak class="documentos">
+          <md-tabs md-dynamic-height md-border-bottom>
+            <!-- inicio carteraDividendos -->
+            <md-tab label="Top Dividendos">
+              <table wt-responsive-table ng-controller="tablaFFMM">
+                <thead class="tableHead--recomendado">
+                  <tr>
+                    <th></th>
+                    <th class="tableHead--titulo">Serie</th>
+                    <th>Peso</th>
+                    <th>Variación %</th>
+                    <th>Precio mercado</th>
+                    <th>Precio compra</th>
+                    <th>Precio venta</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in accionesCartera | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                    <td class="td--valores" data-title="Peso">20%</td>
+                    <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación %">
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                      <div class="td--valoresVariacion">{{fondomut.variacion}}%</div>
+                    </td>
+                    <td class="td--valores" data-title="Precio mercado">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio compra">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio venta">$2.003,1234</td>
+                    <!-- inicio iconoAperturaResponsive -->
+                    <td class="td--iconoAperturaResponsive">
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <!-- fin iconoAperturaResponsive -->
+                    <td class="td--botones-x2">
+                      <div class="td--botonesTransar">
+                        <md-button class="boton--rescatar btn_accionesPublico md-raised" href="#empresas-acciones-venta">Vender</md-button>
+                        <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#empresas-acciones-compra">Comprar</md-button>
+                      </div>
+                    </td>
+                    <!-- inicio menuContextual -->
+                    <td class="td--iconos">
+                      <div class="menuContextual" ng-controller="menuContextual as ctrl" ng-cloak>
+                        <md-menu>
+                          <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+                            <md-icon>
+                              <i class="material-icons">more_vert</i>
+                            </md-icon>
+                          </md-button>
+                          <md-menu-content width="2">
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE915;</i>
+                                </md-icon>
+                                Comparar Acción
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE003;</i>
+                                </md-icon>
+                                Agregar alerta
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE83A;</i>
+                                </md-icon>
+                                Agregar a favoritos
+                              </md-button>
+                            </md-menu-item>
+                          </md-menu-content>
+                        </md-menu>
+                      </div>
+                    </td>
+                    <!-- fin menuContextual -->
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="despliegueDetalle" colspan="7">
+                                <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin carteraDividendos -->
+            <!-- inicio carteraTop7 -->
+            <md-tab label="Top 7">
+              <table wt-responsive-table ng-controller="tablaFFMM">
+                <thead class="tableHead--recomendado">
+                  <tr>
+                    <th></th>
+                    <th class="tableHead--titulo">Serie</th>
+                    <th>Peso</th>
+                    <th>Variación %</th>
+                    <th>Precio mercado</th>
+                    <th>Precio compra</th>
+                    <th>Precio venta</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in accionesCartera | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                    <td class="td--valores" data-title="Peso">20%</td>
+                    <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación %">
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                      <div class="td--valoresVariacion">{{fondomut.variacion}}%</div>
+                    </td>
+                    <td class="td--valores" data-title="Precio mercado">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio compra">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio venta">$2.003,1234</td>
+                    <!-- inicio iconoAperturaResponsive -->
+                    <td class="td--iconoAperturaResponsive">
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <!-- fin iconoAperturaResponsive -->
+                    <td class="td--botones-x2">
+                      <div class="td--botonesTransar">
+                        <md-button class="boton--rescatar btn_accionesPublico md-raised" href="#empresass-acciones-venta">Vender</md-button>
+                        <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#empresas-acciones-compra">Comprar</md-button>
+                      </div>
+                    </td>
+                    <!-- inicio menuContextual -->
+                    <td class="td--iconos">
+                      <div class="menuContextual" ng-controller="menuContextual as ctrl" ng-cloak>
+                        <md-menu>
+                          <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+                            <md-icon>
+                              <i class="material-icons">more_vert</i>
+                            </md-icon>
+                          </md-button>
+                          <md-menu-content width="2">
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE915;</i>
+                                </md-icon>
+                                Comparar Acción
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE003;</i>
+                                </md-icon>
+                                Agregar alerta
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE83A;</i>
+                                </md-icon>
+                                Agregar a favoritos
+                              </md-button>
+                            </md-menu-item>
+                          </md-menu-content>
+                        </md-menu>
+                      </div>
+                    </td>
+                    <!-- fin menuContextual -->
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="despliegueDetalle" colspan="7">
+                                <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin carteraTop7 -->
+            <!-- inicio carteraTop15 -->
+            <md-tab label="Top 15">
+              <table wt-responsive-table ng-controller="tablaFFMM">
+                <thead class="tableHead--recomendado">
+                  <tr>
+                    <th></th>
+                    <th class="tableHead--titulo">Serie</th>
+                    <th>Peso</th>
+                    <th>Variación %</th>
+                    <th>Precio mercado</th>
+                    <th>Precio compra</th>
+                    <th>Precio venta</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in accionesCartera | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                    <td class="td--valores" data-title="Peso">20%</td>
+                    <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación %">
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                      <div class="td--valoresVariacion">{{fondomut.variacion}}%</div>
+                    </td>
+                    <td class="td--valores" data-title="Precio mercado">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio compra">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio venta">$2.003,1234</td>
+                    <!-- inicio iconoAperturaResponsive -->
+                    <td class="td--iconoAperturaResponsive">
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <!-- fin iconoAperturaResponsive -->
+                    <td class="td--botones-x2">
+                      <div class="td--botonesTransar">
+                        <md-button class="boton--rescatar btn_accionesPublico md-raised" href="#empresas-acciones-venta">Vender</md-button>
+                        <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#empresas-acciones-compra">Comprar</md-button>
+                      </div>
+                    </td>
+                    <!-- inicio menuContextual -->
+                    <td class="td--iconos">
+                      <div class="menuContextual" ng-controller="menuContextual as ctrl" ng-cloak>
+                        <md-menu>
+                          <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+                            <md-icon>
+                              <i class="material-icons">more_vert</i>
+                            </md-icon>
+                          </md-button>
+                          <md-menu-content width="2">
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE915;</i>
+                                </md-icon>
+                                Comparar Acción
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE003;</i>
+                                </md-icon>
+                                Agregar alerta
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE83A;</i>
+                                </md-icon>
+                                Agregar a favoritos
+                              </md-button>
+                            </md-menu-item>
+                          </md-menu-content>
+                        </md-menu>
+                      </div>
+                    </td>
+                    <!-- fin menuContextual -->
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="despliegueDetalle" colspan="7">
+                                <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin carteraTop15 -->
+            <!-- inicio seleccionNacional -->
+            <md-tab label="Seleccion Nacional">
+              <table wt-responsive-table ng-controller="tablaFFMM">
+                <thead class="tableHead--recomendado">
+                  <tr>
+                    <th></th>
+                    <th class="tableHead--titulo">Serie</th>
+                    <th>Peso</th>
+                    <th>Variación %</th>
+                    <th>Precio mercado</th>
+                    <th>Precio compra</th>
+                    <th>Precio venta</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in accionesCartera | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                    <td class="td--valores" data-title="Peso">20%</td>
+                    <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación %">
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                      <div class="td--valoresVariacion">{{fondomut.variacion}}%</div>
+                    </td>
+                    <td class="td--valores" data-title="Precio mercado">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio compra">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio venta">$2.003,1234</td>
+                    <!-- inicio iconoAperturaResponsive -->
+                    <td class="td--iconoAperturaResponsive">
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <!-- fin iconoAperturaResponsive -->
+                    <td class="td--botones-x2">
+                      <div class="td--botonesTransar">
+                        <md-button class="boton--rescatar btn_accionesPublico md-raised" href="#empresas-acciones-venta">Vender</md-button>
+                        <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#empresas-acciones-compra">Comprar</md-button>
+                      </div>
+                    </td>
+                    <!-- inicio menuContextual -->
+                    <td class="td--iconos">
+                      <div class="menuContextual" ng-controller="menuContextual as ctrl" ng-cloak>
+                        <md-menu>
+                          <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+                            <md-icon>
+                              <i class="material-icons">more_vert</i>
+                            </md-icon>
+                          </md-button>
+                          <md-menu-content width="2">
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE915;</i>
+                                </md-icon>
+                                Comparar Acción
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE003;</i>
+                                </md-icon>
+                                Agregar alerta
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE83A;</i>
+                                </md-icon>
+                                Agregar a favoritos
+                              </md-button>
+                            </md-menu-item>
+                          </md-menu-content>
+                        </md-menu>
+                      </div>
+                    </td>
+                    <!-- fin menuContextual -->
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="despliegueDetalle" colspan="7">
+                                <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- fin seleccionNacional -->
+            </md-tab>
+          </md-tabs>
+        </div>
+      </div>
+      <!-- fin accionesRecomendadas -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorAccionesRecomendadas -->
+<!-- inicio tituloAccionesRecomendadas -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados no_visible" when-visible="a_fadeup1">Mis Acciones</h3>
+          <p class="bajada--texto">Aquí podrás ver todas tus alertas configuradas y tus índices favoritos para hacer seguimiento de ellos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloAccionesRecomendadas -->
+<!-- contenedorMisAcciones -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster">
+      <!-- inicio misAcciones -->
+      <table wt-responsive-table ng-controller="tablaFFMM">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Serie</th>
+            <th>Variación %</th>
+            <th>Precio mercado</th>
+            <th>Cantidad</th>
+            <th>Monto</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in accionesCartera | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+            <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación %">
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+              <div class="td--valoresVariacion">{{fondomut.variacion}}%</div>
+            </td>
+            <td class="td--valores" data-title="Precio mercado">$2.003,1234</td>
+            <td class="td--valores" data-title="Cantidad">{{fondomut.cantidad}}</td>
+            <td class="td--valores" data-title="Monto">{{fondomut.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--botones-x2">
+              <div class="td--botonesTransar">
+                <md-button class="boton--rescatar btn_accionesPublico md-raised" href="#empresas-acciones-venta">Vender</md-button>
+                <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#empresas-acciones-compra">Comprar</md-button>
+              </div>
+            </td>
+            <!-- inicio menuContextual -->
+            <td class="td--iconos">
+              <div class="menuContextual" ng-controller="menuContextual as ctrl" ng-cloak>
+                <md-menu>
+                  <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+                    <md-icon>
+                      <i class="material-icons">more_vert</i>
+                    </md-icon>
+                  </md-button>
+                  <md-menu-content width="2">
+                    <md-menu-item>
+                      <md-button>
+                        <md-icon>
+                          <i class="material-icons icons--color">&#xE915;</i>
+                        </md-icon>
+                        Comparar Acción
+                      </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                      <md-button>
+                        <md-icon>
+                          <i class="material-icons icons--color">&#xE003;</i>
+                        </md-icon>
+                        Agregar alerta
+                      </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                      <md-button>
+                        <md-icon>
+                          <i class="material-icons icons--color">&#xE83A;</i>
+                        </md-icon>
+                        Agregar a favoritos
+                      </md-button>
+                    </md-menu-item>
+                  </md-menu-content>
+                </md-menu>
+              </div>
+            </td>
+            <!-- fin menuContextual -->
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido tableContenido__margin">
+                  <tbody>
+                    <tr>
+                      <td class="despliegueDetalle" colspan="7">
+                        <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin misAcciones -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorMisAcciones -->
+<!-- inicio tituloResumen -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados no_visible" when-visible="a_fadeup1">Resumen Bursátil</h3>
+          <p class="bajada--texto">Puedes usar nuestras herramientas para hacer análisis de estos índices</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloAccionesResumen -->
+<!-- inicio contenedorResumen -->
+<section>
+  <div class="ban-container">
+    <div class="card tablaMaster">
+      <!-- inicio resumenBursatil -->
+      <div ng-controller="sliderAccionesRecomendadas">
+        <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+          <!-- inicio cajaTranzadas -->
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="card h--shadowBoxNoHover">
+                <div class="contenedor--subtitulo">
+                  <h3 class="subtitulo ">Acciones más transadas</h3>
+                </div>
+                <table class="h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                  <thead class="tableHead--recomendado">
+                    <tr>
+                      <th class="tableHead--titulo">Serie</th>
+                      <th>Precio</th>
+                      <th>Var(%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                      <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                      <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                      <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <!-- fin cajaTranzadas -->
+          <!-- inicio cajaAlzas -->
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="card h--shadowBoxNoHover">
+                <div class="contenedor--subtitulo">
+                  <h3 class="subtitulo ">Acciones con mayores alzas</h3>
+                </div>
+                <table fixed-header class="animated fadeInDown h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                  <thead class="tableHead--recomendado">
+                    <tr>
+                      <th class="tableHead--titulo">Serie</th>
+                      <th>Precio</th>
+                      <th>Var(%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort ">
+                      <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                      <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                      <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <!-- fin cajaAlzas -->
+          <!-- inicio cajaBajas -->
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="card h--shadowBoxNoHover">
+                <div class="contenedor--subtitulo">
+                  <h3 class="subtitulo ">Acciones con mayores bajas</h3>
+                </div>
+                <table fixed-header class="animated fadeInDown h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                  <thead class="tableHead--recomendado">
+                    <tr>
+                      <th class="tableHead--titulo">Serie</th>
+                      <th>Precio</th>
+                      <th>Var(%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                      <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                      <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                      <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <!-- fin cajaBajas -->
+          <!-- inicio cajaIndicadores -->
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="card h--shadowBoxNoHover">
+                <div class="contenedor--subtitulo">
+                  <h3 class="subtitulo ">Indicadores financieros</h3>
+                </div>
+                <table fixed-header class="animated fadeInDown h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                  <thead class="tableHead--recomendado">
+                    <tr>
+                      <th class="tableHead--titulo">Serie</th>
+                      <th>Precio</th>
+                      <th>Var(%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                      <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                      <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                      <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <!-- fin cajaIndicadores -->
+        </ks-swiper-container>
+      </div>
+      <!-- inicio resumenBursatil -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorResumen -->
+<!-- inicio tituloAccionesFavoritas -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados no_visible" when-visible="a_fadeup1">Alertas de Acciones & Acciones Favoritas</h3>
+          <p class="bajada--texto">Aquí podrás ver todas tus alertas configuradas y tus índices favoritos para hacer seguimiento de ellos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloAccionesFavoritas -->
+<!-- Inicio contenedorAccionesFavoritas -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <!-- inicio accionesFav -->
+      <div class="card--contenido">
+        <div ng-cloak class="documentos">
+          <md-tabs md-dynamic-height md-border-bottom>
+            <!-- inicio accionesFavAlertas -->
+            <md-tab label="Alerta de acciones">
+              <div class="alertasAcciones no_visible" when-visible="a_fadein">
+                <div class="contenedor--mensajeAlerta color--info h--marginTop1">
+                  <i class="material-icons">info</i>
+                  <p>Aún no tienes alertas configuradas, puedes hacer click en el icono</p>
+                  <i class="material-icons">add_alert</i>
+                  <p>
+                    para crear alertas de precios.</p>
+                </div>
+              </div>
+            </md-tab>
+            <!-- fin accionesFavAlertas -->
+            <!-- inicio accionesFavFavoritas -->
+            <md-tab label="Acciones Favoritas">
+              <div class="alertasAcciones no_visible" when-visible="a_fadein">
+                <div class="contenedor--mensajeAlerta color--info h--marginTop1">
+                  <i class="material-icons">info</i>
+                  <p>Aún no tienes Acciones favoritas añadidas, puedes hacer click en el icono</p>
+                  <i class="material-icons">&#xE83A;</i>
+                  <p>para agregarlas.</p>
+                </div>
+              </div>
+            </md-tab>
+            <!-- fin accionesFavFavoritas -->
+          </md-tabs>
+        </div>
+      </div>
+      <!-- fin accionesFav -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorAccionesFavoritas -->
+<!-- inicio tituloAccionesAlertas -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados no_visible" when-visible="a_fadeup1">Alertas de Acciones & Acciones Favoritas</h3>
+          <p class="bajada--texto">Aquí podrás ver todas tus alertas configuradas y tus índices favoritos para hacer seguimiento de ellos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloAccionesAlertas -->
+<!-- inicio contenedorAlertas -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster">
+      <!-- inicio accionesAlertas -->
+      <div class="card--contenido">
+        <div ng-cloak class="documentos no_visible" when-visible="a_fadein">
+          <md-tabs md-dynamic-height md-border-bottom>
+            <!-- inicio carteraAlertaAcciones -->
+            <md-tab label="Alertas de Acciones">
+              <table wt-responsive-table ng-controller="tablaFFMM">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="tableHead--titulo">Serie</th>
+                    <th>Peso</th>
+                    <th>Variación %</th>
+                    <th>Precio mercado</th>
+                    <th>Precio compra</th>
+                    <th>Precio venta</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in accionesCartera | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                    <td class="td--valores" data-title="Peso">20%</td>
+                    <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación %">
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                      <div class="td--valoresVariacion">{{fondomut.variacion}}%</div>
+                    </td>
+                    <td class="td--valores" data-title="Precio mercado">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio compra">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio venta">$2.003,1234</td>
+                    <!-- inicio iconoAperturaResponsive -->
+                    <td class="td--iconoAperturaResponsive">
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <!-- fin iconoAperturaResponsive -->
+                    <td class="td--botones-x2">
+                      <div class="td--botonesTransar">
+                        <md-button class="boton--rescatar btn_accionesPublico md-raised" href="#empresas-acciones-venta">Vender</md-button>
+                        <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#empresas-acciones-compra">Comprar</md-button>
+                      </div>
+                    </td>
+                    <!-- inicio menuContextual -->
+                    <td class="td--iconos">
+                      <div class="menuContextual" ng-controller="menuContextual as ctrl" ng-cloak>
+                        <md-menu>
+                          <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+                            <md-icon>
+                              <i class="material-icons">more_vert</i>
+                            </md-icon>
+                          </md-button>
+                          <md-menu-content width="2">
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE915;</i>
+                                </md-icon>
+                                Comparar Acción
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE003;</i>
+                                </md-icon>
+                                Agregar alerta
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE83A;</i>
+                                </md-icon>
+                                Agregar a favoritos
+                              </md-button>
+                            </md-menu-item>
+                          </md-menu-content>
+                        </md-menu>
+                      </div>
+                    </td>
+                    <!-- fin menuContextual -->
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido">
+                          <tbody>
+                            <tr>
+                              <td colspan="7">
+                                <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin carteraAlertaAcciones -->
+            <!-- inicio carteraFavoritas -->
+            <md-tab label="Acciones Favoritas">
+              <table wt-responsive-table ng-controller="tablaFFMM">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="tableHead--titulo">Serie</th>
+                    <th>Peso</th>
+                    <th>Variación %</th>
+                    <th>Precio mercado</th>
+                    <th>Precio compra</th>
+                    <th>Precio venta</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in accionesCartera | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                    <td class="td--valores" data-title="Peso">20%</td>
+                    <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación %">
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                      <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                      <div class="td--valoresVariacion">{{fondomut.variacion}}%</div>
+                    </td>
+                    <td class="td--valores" data-title="Precio mercado">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio compra">$2.003,1234</td>
+                    <td class="td--valores" data-title="Precio venta">$2.003,1234</td>
+                    <!-- inicio iconoAperturaResponsive -->
+                    <td class="td--iconoAperturaResponsive">
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <!-- fin iconoAperturaResponsive -->
+                    <td class="td--botones-x2">
+                      <div class="td--botonesTransar">
+                        <md-button class="boton--rescatar btn_accionesPublico md-raised" href="#empresas-acciones-venta">Vender</md-button>
+                        <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#empresas-acciones-compra">Comprar</md-button>
+                      </div>
+                    </td>
+                    <!-- inicio menuContextual -->
+                    <td class="td--iconos">
+                      <div class="menuContextual" ng-controller="menuContextual as ctrl" ng-cloak>
+                        <md-menu>
+                          <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+                            <md-icon>
+                              <i class="material-icons">more_vert</i>
+                            </md-icon>
+                          </md-button>
+                          <md-menu-content width="2">
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE915;</i>
+                                </md-icon>
+                                Comparar Acción
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE003;</i>
+                                </md-icon>
+                                Agregar alerta
+                              </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                              <md-button>
+                                <md-icon>
+                                  <i class="material-icons icons--color">&#xE83A;</i>
+                                </md-icon>
+                                Agregar a favoritos
+                              </md-button>
+                            </md-menu-item>
+                          </md-menu-content>
+                        </md-menu>
+                      </div>
+                    </td>
+                    <!-- fin menuContextual -->
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido">
+                          <tbody>
+                            <tr>
+                              <td colspan="7">
+                                <div ng-include class="a_fadein" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin carteraFavoritas -->
+          </md-tabs>
+        </div>
+      </div>
+      <!-- fin accionesAlertas -->
+    </div>
+  </div>
+</section>
+<!-- Fin Alerta y Favoritos-->
+<!-- inicio sliderCajas -->
+<section ng-controller="animateCtrl">
+  <div class="ban-container">
+    <div class="card h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2">
+      <div class="ban-row no_visible" when-visible="a_fadein">
+        <!-- slider indicadores-->
+        <div ng-controller="sliderCajas">
+          <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html" target="_blank">
+                <div class="ban-col-sm-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f2.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>LÍDERES INDISCUTIDOS-v3</h3>
+                        <p>
+                          Por quinto año consecutivo somos líderes en el mercado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html" target="_blank">
+                <div class="ban-col-md-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f1.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>AHORRO PREVISIONAL VOLUNTARIO</h3>
+                        <p>
+                          Asegura tu futuro hoy con la asesoría de un experto
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html" target="_blank">
+                <div class="ban-col-md-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f2.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>LÍDERES INDISCUTIDOS</h3>
+                        <p>
+                          Por quinto año consecutivo somos líderes en el mercado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html" target="_blank">
+                <div class="ban-col-md-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f1.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>AHORRO PREVISIONAL VOLUNTARIO</h3>
+                        <p>
+                          Asegura tu futuro hoy con la asesoría de un experto
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+          </ks-swiper-container>
+        </div>
+        <!--fin slider indicadores-->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin sliderCajas -->

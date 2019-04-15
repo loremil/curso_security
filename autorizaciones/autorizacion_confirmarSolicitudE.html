@@ -1,0 +1,66 @@
+<div class="contenedor--subtitulo subtitulos__usuarios">
+  <div class="ban-row">
+    <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+      <h3 class="subtitulo">Autorizar</h3>
+    </div>
+    <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+      <div class="subtitulo--boton">
+        <md-button class="md-icon-button boton--agregar md-button md-ink-ripple" ng-click="cancelar($event)">
+          <md-icon class="boton--agregar--icon ng-scope material-icons">
+            <i class="material-icons">close</i>
+          </md-icon>
+        </md-button>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <!-- incio contenedorCondiciones -->
+  <div class="ban-row">
+    <div class="ban-col-sm-6">
+      <div class="condiciones">
+        <div class="condiciones--texto" height="200">
+          <p>Declaro que he sido informado de lo siguiente:</p>
+          </br>
+          <p>
+            El Cliente declara su intención de entregar en administración a Banchile Administradora General de Fondos S.A. activos de
+            su propiedad, para ser invertidos única y exclusivamente en Fondos Mutuos administrados por la misma Administradora,
+            de modo que ésta, por cuenta y riesgo del Cliente, pueda decidir su inversión, enajenación y demás actividades
+            que correspondan, de acuerdo a las disposiciones del presente Contrato y a las normas legales o reglamentarias
+            vigentes o que se dicten en el futuro.
+            </br>Las partes entienden por “Activos” la totalidad de los recursos en efectivo y cuotas de fondos mutuos
+            de que el Cliente sea titular y que éste entregue a la Administradora para su administración, así como las
+            cuotas de fondos mutuos que éste adquiera para el Cliente en dicha administración y los dividendos y rescates
+            provenientes de las respectivas inversiones que la Administradora efectúe por cuenta del Cliente. En el Anexo
+            al Contrato de Administración de Cartera en Fondos Mutuos se contempla el “Plan de Inversión” donde se señala
+            la Cartera de Fondos Mutuos administrados por la Administradora en la que se deberán mantener invertidos
+            los Activos del Cliente, según se define más adelante. El Cliente podrás mantener una o más Carteras objeto
+            de inversión, las que serán administradas por la Administradora, de acuerdo a los límites establecidos en
+            el respectivo Anexo Plan de Inversión. Con todo, previa firma de un nuevo Anexo, el Cliente podrás siempre
+            y en cualquier tiempo cambiarse de una Cartera a otra a partir del primer proceso de ajuste, según se señala
+            más adelante. Por “Cartera” se entenderá aquel conjunto de cuotas de aquellos fondos mutuos administrados
+            por la Administradora, que componen cada una de las categorías de fondos mutuos en las cuales se invertirán
+            los activos del Cliente. Existirán 7 Carteras denominadas: Cartera Protegida, Cartera Defensiva, Cartera
+            Controlada, Cartera Moderada, Cartera Equilibrada, Cartera Potenciada y Cartera Agresiva, cuyas características,
+            Activo objeto y límites, están definidos en los respectivos Anexos. Sin perjuicio de lo anterior, el número
+            de carteras puede aumentarse en el futuro, de común acuerdo por las partes, mediante la formalización de
+            un nuevo Anexo. Cada vez que el presente Contrato se refiera a la palabra “Fondos Mutuos”, deberá entenderse
+            por tal aquel patrimonio a que se refiere el artículo 28 de la Ley número 20.712 de 2014, administrado para
+            estos efectos por Banchile Administradora General de Fondos S.A.
+          </p>
+        </div>
+        <md-input-container class="input--dropdowns">
+          <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+            He leído y acepto las condiciones
+          </md-checkbox>
+        </md-input-container>
+      </div>
+    </div>
+    <div class="ban-col-sm-6">
+      <div ng-show="datachecked.check">
+        <div ng-include src="'autorizaciones/autorizacion_operacion-meAceptar-empresas.html'"></div>
+      </div>
+    </div>
+  </div>
+  <!-- fin contenedorCondiciones -->
+</div>

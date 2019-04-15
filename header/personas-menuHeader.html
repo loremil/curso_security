@@ -1,0 +1,77 @@
+<!-- Nuevo menu angular  jorge 26-10-->
+<div id="menulateral" ng-controller="menuPublicoCrtl-p">
+  <div class="menu--usuario_lateral">
+    <ul class="menuPublicoMobil--eleccionSitio">
+      <li class="activo"><a href="home-persona.html">PERSONAS</a></li>
+      <li><a href="home-empresa.html">EMPRESAS</a></li>
+    </ul>
+    <div ng-controller="expandCollapseCtrl">
+      <div class="ban-container menuPublicoMobil--bloque" ng-controller="busquedaArray" ng-repeat="menu in buscador">
+        <div class="menuPublicoMobil--publico">
+          <md-input-container md-no-float="" class="md-block" ng-controller="asideCloseLeft">
+            <input class="input--text_monto buscador--inputMovil" type="text" placeholder="Buscar">
+            <div class="icono--buscar movil">
+              <md-button class="md-icon-button" href="#/buscador-sitio" ng-click="close()">
+                <md-icon><i class="material-icons icons--color claro">search</i></md-icon>
+              </md-button>
+            </div>
+          </md-input-container>
+          <i class="material-icons down">keyboard_arrow_down</i>
+          <i class="material-icons up">keyboard_arrow_up</i>
+        </div>
+        <md-content class="lateral--contenido" ng-hide="menuMovil" ng-class="{'slideDown-0': menu.name=='resultadosMovil',}">
+          <div class=" ban-col-md-12">
+            <div class="espacio--busqueda">
+              <div class="contenedor--busqueda h--borderRadiusBottom4px h--borderRadiusTop4px" ng-repeat="resultado in resultados">
+                <a class="link--busqueda" ng-href="{{resultado.link}}">{{resultado.link}}</a>
+                <p class="resultado--busqueda">{{resultado.detalle}}</p>
+              </div>
+            </div>
+          </div>
+          <!-- inicio tablaPaginador -->
+          <div class="pie--tabla animated fadeInDown">
+            <div class="pie--contenido">
+              <div class="ban-row">
+                <div class=" ban-col-sm-12">
+                  <div class="pie--paginacion">
+                    <div class="paginacion--accion">
+                      <p class="paginacion--parrafo">7 de 22</p>
+                    </div>
+                    <div class="paginacion--accion">
+                      <md-button class="md-icon-button" aria-label="Atras">
+                        <md-icon>
+                          <i class="material-icons">&#xE314;</i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button" aria-label="Adelante">
+                        <md-icon>
+                          <i class="material-icons">&#xE315;</i>
+                        </md-icon>
+                      </md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin tablaPaginador -->
+      </div>
+    </div>
+    <div ng-controller="expandCollapseCtrl">
+      <div class="ban-container menuPublicoMobil--bloque" ng-repeat="menu in menuEmpresa">
+        <div class="menuPublicoMobil--publico" ng-click="menuMovil = !menuMovil" ng-class="{'navegacion-cerrada': menuMovil, 'navegacion-expandida': !menuMovil}">
+          {{menu.name}}
+          <i class="material-icons down">keyboard_arrow_down</i>
+          <i class="material-icons up">keyboard_arrow_up</i>
+        </div>
+        <md-content class="lateral--contenido slideDown-base" ng-hide="menuMovil">
+          <md-list>
+            <md-list-item ng-repeat="subMenu in menu.menu" ng-controller="asideCloseLeft">
+              <md-button ng-href="{{subMenu.url}}" ng-click="close()" target="{{subMenu.target}}">{{subMenu.name}}</md-button>
+            </md-list-item>
+          </md-list>
+        </md-content>
+      </div>
+    </div>
+  </div>
+</div>

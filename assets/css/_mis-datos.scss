@@ -1,0 +1,130 @@
+.icono-alertaTab {
+    md-tab-item:nth-child(1) {
+        background-image: url(../images/svg/erroroutline.svg) !important;
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: 10px 11px;
+    }
+}
+
+.marcoSeleccionado {
+    display: inline-block;
+    justify-content: space-between;
+    .marco--select {
+      display: inline-block;
+     flex-direction: column;
+     padding: 5px 10px;
+     vertical-align: unset;
+     background-color: white;
+     border-radius: 4px;
+     text-align: center;
+     margin: 0.6em;
+     align-items: center;
+        md-radio-button {
+            display: block;
+            margin: 7px 0 10px 38px !important;
+        }
+    }
+}
+
+.imagenPersonal {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.contenido--porcentaje {
+    max-width: 257px;
+    img {
+        width: 100%;
+    }
+}
+
+.descripcionMarco {
+    padding: 1.5em 1.5em !important;
+    color: #536374 !important;
+    background-color: #F8F9FA !important;
+    border-radius: 3px !important;
+    border: 1px solid #CCD1D9 !important;
+    display: flex !important;
+    display: -ms-flexbox !important;
+    margin-top: 1.7em !important;
+    margin-bottom: 0 !important;
+    align-items: center;
+    -ms-flex-align: center;
+    i {
+        float: left;
+        margin-right: 10px;
+        color: #536374;
+    }
+    p {
+        @include font-12;
+    }
+}
+
+.selectorInforme {
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: left;
+    -ms-flex-pack: center;
+    p {
+        margin-right: 10px;
+    }
+}
+
+#emailPrincipal,
+#productosInvertir,
+#supscripcionesEnvios {
+    .icon {
+        display: flex;
+        display: -ms-flexbox;
+        margin-top: 22px;
+        i {
+            color: #7EB645;
+            margin-right: 10px;
+        }
+    }
+}
+
+#supscripcionesEnvios {
+    .icon {
+        margin-top: 5px;
+    }
+}
+
+.otroOrigen {
+    display: flex;
+    display: -ms-flexbox;
+    margin-left: 15px;
+    p {
+        @include font-16;
+    }
+    .checkBox {
+        display: flex;
+        display: -ms-flexbox;
+        min-width: 120px;
+        align-items: center;
+        -ms-flex-align: center;
+        md-checkbox {
+            margin-top: 0px;
+        }
+    }
+}
+
+.texto--seleccion {
+    margin-bottom: 10px;
+}
+
+.seleccion--respuesta {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+@media (max-width:767px) {
+    .marcoSeleccionado {
+        justify-content: center;
+
+        .marco--select {
+            margin: 15px 15px;
+            max-width: 100px;
+        }
+    }
+}

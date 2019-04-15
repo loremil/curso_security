@@ -1,0 +1,246 @@
+<section>
+<div class="ban-row">
+  <div class="ban-col-xs-9 ban-col-md-6">
+      <h2 class="titulo--operacion titulo--aside ">Selecciona una Cartera</h2>
+      <div class="border--titulo">
+        <hr>
+      </div>
+  </div>
+  <div class=" ban-col-xs-3 ban-col-md-6"  ng-controller="asideCloseRight">
+      <md-button class="md-icon-button md-primary asideClose" ng-click="close()">
+        <i class="material-icons">close</i>
+      </md-button>
+  </div>
+</div>
+</section>
+<!-- inicio contenedorCarteraActiva -->
+<section>
+  <div class="ban-row tablaMaster">
+    <div class="ban-col-md-12">
+      <!-- carteraActiva -->
+      <table fixed-header class="animated fadeInDown h--marginTop1" wt-responsive-table ng-controller="tablaFFMM">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Cartera Activa</th>
+            <th>%30 días</th>
+            <th>%90 días</th>
+            <th>%1 año</th>
+            <th>Acum. año</th>
+            <th>Composición RF/RV</th>
+            <th>Monto Invertido</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in carteraActiva | orderBy : sort">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal" data-title="Cartera activa">{{fondomut.producto}}</td>
+            <td class="td--valores" data-title="%30 días">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="%90 días">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="%1 año">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="Acum. año">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="Composición RF/RV">
+              <img src="assets/images/composicion-rf-rv.png" class="datos--comp" />
+            </td>
+            <td class="td--valores" data-title="Monto Invertido">{{fondomut.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--botones">
+              <div class="td--botonesTransar" ng-controller="asideCloseRight">
+                <md-button class="boton--rescatar btn_accionesPublico md-raised primario" ng-click="close();">Selecciona</md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="12">
+                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-ca.html'"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- carteraActiva -->
+          <!-- carteraAgresiva -->
+          <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in carteraActivaCuenta | orderBy : sort">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal" data-title="Cartera activa">{{fondomut.producto}}
+              <div class="cartera--ico" aria-label="Ya tienes este Fondo">
+                <i class="material-icons icons--color icons--small">work</i>
+              </div>
+            </td>
+            <td class="td--valores" data-title="%30 días">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="%90 días">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="%1 año">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="Acum. año">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="Composición RF/RV">
+              <img src="assets/images/composicion-rf-rv.png" class="datos--comp" />
+            </td>
+            <td class="td--valores" data-title="Monto Invertido">{{fondomut.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--botones">
+              <div class="td--botonesTransar" ng-controller="asideCloseRight">
+                <md-button class="boton--rescatar btn_accionesPublico md-raised" ng-click="close();">Selecciona</md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-ca.html'"></div>
+                      </td>
+                    </tr>
+                    <tr class="tableContenido--detalle info--detalle" ng-repeat="fondomut in cuenta | orderBy : sort">
+                      <td class="td--width">
+                      </td>
+                      <td class="cuenta--texto">
+                        <p class="numero--cta">{{fondomut.cuenta}}</p>
+                        <p> Beneficio Tributario
+                          <span>57 BIS</span>
+                        </p>
+                      </td>
+                      <td class="cuenta--texto">
+                        <p> Plan de inversión
+                          <span>normal</span>
+                        </p>
+                        <p>Monto libre de comisión
+                          <span>$5.000.000</span>
+                        </p>
+                      </td>
+                      <td class="cuenta--texto">
+                        <p> Monto
+                          <span>$14.601</span>
+                        </p>
+                        <p> Número de cuotas
+                          <span>14.601,0987</span>
+                        </p>
+                      </td>
+                      <td colspan="3" class="contenido--botones">
+                        <div class="datos--botones">
+                          <div class="botones--grupo" ng-controller="asideCloseRight">
+                            <md-button class="boton--rescatar btn_accionesPublico md-raised" ng-click="close();">Selecciona</md-button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tableContenido--detalle info--detalle">
+                      <td class="td--width">
+                      </td>
+                      <td class="cuenta--texto">
+                        <p class="numero--cta">Cuenta nueva</p>
+                      </td>
+                      <td class="cuenta--texto">
+                      </td>
+                      <td class="cuenta--texto">
+                      </td>
+                      <td colspan="4" class="contenido--botones">
+                        <div class="datos--botones" ng-controller="asideCloseRight">
+                            <md-button class="boton--rescatar btn_accionesPublico md-raised" ng-click="close();">Selecciona</md-button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- carteraAgresiva -->
+        </tbody>
+      </table>
+      <!-- inicio carteraInformacion -->
+      <div class="detalle--descripcion">
+        <div class="descripcion--composicion"></div>
+        <div class="descripcion--texto">
+          <p> % de inversión en instrumentos Deuda</p>
+        </div>
+        <div class="descripcion--composicion descripcion--composicion__naranja"></div>
+        <div class="descripcion--texto">
+          <p> % de inversión en instrumentos Capitalización</p>
+        </div>
+      </div>
+      <!-- fin carteraInformacion -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorCarteraActiva -->
+<div class="ban-col-md-12">
+  <div class="informese ">
+    <p class="informese--texto ">
+      <span>
+        <md-icon>
+          <i class="material-icons">info</i>
+        </md-icon>
+      </span>Rentabilidades calculadas con los valores cuota de la cartera referencia.</p>
+  </div>
+</div>
+<div class="ban-col-md-12">
+  <div class="informese ">
+    <p class="informese--texto ">
+      <span>
+        <md-icon>
+          <i class="material-icons">info</i>
+        </md-icon>
+      </span>Servicio de Administración de Cartera en Fondos Mutuos prestado por Banchile Administradora General de Fondos S.A.</p>
+  </div>
+</div>
+
+
+<!-- fin tabla -->

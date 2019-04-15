@@ -1,0 +1,189 @@
+<!-- Version 01/05/ Jorge v4.1 XD -->
+<section>
+  <div class="contenido--background consultar-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <h1 class="titulo">Banchile Pay</h1>
+      <div id="select-cuenta" ng-controller="BuscaListadoCtrl" ng-include src=" 'select-cuenta/empresas/card-cuenta-fav.html' "></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="contenedor--subtitulo">
+        <h3 class="subtitulo">Solicitud de pagos a proveedores</h3>
+      </div>
+      <div class="ban-row h--marginBottom animated fadeInDown">
+        <!-- datos empresa -->
+        <div class="ban-col-xs-12 ban-col-sm-7 ban-col-sm-6">
+          <div class="ban-row datos--empresaCuenta">
+            <div class="ban-col-xs-12 ban-col-sm-2 ban-col-md-1">
+              <div class="empresaCuenta--caja">
+                <md-input-container class="empresaCuenta--icono">
+                  <md-icon>
+                    <i class="material-icons">&#xE7EE;</i>
+                  </md-icon>
+                </md-input-container>
+              </div>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-9 ban-col-md-11">
+              <div class="ban-row">
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-8">
+                  <p class="empresaCuenta--origen">Banchile Administradora General de Fondos</p>
+                </div>
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-4">
+                  <p class="empresaCuenta--monto">$ 35.230.032.424</p>
+                </div>
+
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+                  <p class="empresaCuenta--rut">RUT: 76.003.234-2</p>
+                </div>
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+                  <p class="empresaCuenta--fecha">Valorizado al 20/02/2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-7 ban-col-sm-6">
+          <div class="ban-row datos--empresaCuenta">
+            <div class="ban-col-xs-12 ban-col-sm-2 ban-col-md-1">
+              <div class="empresaCuenta--caja">
+                <md-input-container class="empresaCuenta--icono">
+                  <md-icon>
+                    <i class="material-icons">&#xE0C3;</i>
+                  </md-icon>
+                </md-input-container>
+              </div>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-9 ban-col-md-11">
+              <div class="ban-row">
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-8">
+                  <p class="empresaCuenta--origen">Cuenta de Inversión 200</p>
+                </div>
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-4">
+                  <p class="empresaCuenta--monto">$ 12.230.032</p>
+                </div>
+              </div>
+              <div class="ban-row">
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-md-offset-7">
+                  <p class="empresaCuenta--fecha"> <span class="quitar--fecha">Valorizado</span>al 20/02/2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-controller="formularioCtrl">
+  <div class="ban-container">
+    <div class="card">
+      <div ng-controller="agregarOtro">
+        <div class="contenedor--subtitulo subtitulos__usuarios">
+          <div class="ban-row">
+            <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+              <h3 class="subtitulo">Ingresar destinos del pago</h3>
+            </div>
+            <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+              <div class="subtitulo--boton">
+                <md-button class="md-icon-button boton--agregar" ng-click="add()">
+                  <md-icon class="boton--agregar--icon">
+                    <i class="material-icons boton--agregar--plus">add</i>
+                    <md-tooltip>Agregar otra dirección</md-tooltip>
+                  </md-icon>
+                </md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ng-repeat="item in items">
+          <div class="contenedor--subtitulo" ng-if="!$first">
+            <div class="ban-row animated fadeInDown">
+              <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                <h3 class="subtitulo subtitulo__agregar">Otro banco intermediario</h3>
+              </div>
+              <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                <div class="subtitulo--boton boton--color">
+                  <md-button class="md-icon-button boton--color" aria-label="eliminar" ng-click="remove($index)">
+                    <md-icon>
+                      <i class="material-icons boton--color">&#xE872;</i>
+                    </md-icon>
+                    <md-tooltip>
+                      Eliminar
+                    </md-tooltip>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ban-row animated fadeInDown">
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>A mi beneficiario</label>
+                <md-select name="beneficiario" ng-model="banchilepay.beneficiario">
+                  <md-option value="1">Beneficiario 1</md-option>
+                  <md-option value="2">Beneficiario 2</md-option>
+                  <md-option value="3">Beneficiario 3</md-option>
+                </md-select>
+                <div class="input--hint_select">Previamente registrado</div>
+                <div ng-messages="banchilepayForm.BancoCuenta.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>En el Banco y Cuenta</label>
+                <md-select required name="BancoCuenta" ng-model="banchilepay.BancoCuenta">
+                  <md-option value="1">Banco/cuenta 0001</md-option>
+                  <md-option value="2">Banco/cuenta 0002</md-option>
+                  <md-option value="3">Banco/cuenta 0003</md-option>
+                </md-select>
+                <div class="input--hint_select">Definidos en el registro de beneficiarios</div>
+                <div ng-messages="banchilepayForm.BancoCuenta.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Por Concepto de pago</label>
+                <md-select name="ConceptoPago" ng-model="banchilepay.ConceptoPago">
+                  <md-option value="1">0001 Concepto de Pago</md-option>
+                  <md-option value="2">0002 Concepto de Pago</md-option>
+                  <md-option value="3">0003 Concepto de Pago</md-option>
+                </md-select>
+                <div class="input--hint_select">Asociado a código de Banco Central</div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Un monto de</label>
+                <p class="input--txt_pay">US$</p>
+                <input class="input--text_monto" placeholder="$0">
+                <div class="input--hint_select">A pagar a mi beneficiario</div>
+                <div ng-messages="banchilepayForm.monto.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+                <p class="comision--texto">Comisión por transferencia</p>
+                <p class="comision--valor">US$ 20</p>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-12">
+              <md-input-container class="input--dropdowns">
+                <label>Observaciones</label>
+                <textarea rows="1" md-select-on-focus="" placeholder="Ingresa tus observaciones "></textarea>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Total a distribuir-->
+    </div>
+    <!-- bloque 03 -->
+  </div>
+</section>

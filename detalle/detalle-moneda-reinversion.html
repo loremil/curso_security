@@ -1,0 +1,67 @@
+<div class="ban-row h--marginTop1" ng-repeat-start="aporte02 in solicfm | orderBy : sort">
+  <div class="ban-col-sm-12 ban-col-md-6">
+    <div class="producto--seleccionado">
+      <div class="ban-row">
+        <div class="ban-col-xs-1 ban-col-sm-1 ban-col-md-1">
+          <div class="button--detalleaporte">
+            <md-button class="md-icon-button test" ng-if="aporte02.expanded" ng-click="aporte02.expanded = false">
+              <md-icon><i class="material-icons">&#xE316;</i> </md-icon>
+            </md-button>
+            <md-button class="md-icon-button test" ng-if="!aporte02.expanded" ng-click="aporte02.expanded = true">
+              <md-icon><i class="material-icons">&#xE313;</i> </md-icon>
+            </md-button>
+          </div>
+        </div>
+        <div class="ban-col-xs-10 ban-col-sm-6 ban-col-md-5">
+          <p class="md-caption producto--seleccionado__label">Fondo Mutuo Seleccionado</p>
+          <p class="md-subhead producto--fondo">Capital Efectivo Serie A</p>
+        </div>
+        <div class="ban-col-sm-5 ban-col-md-6 h--alignCenter">
+          <md-button ng-click="toggleRight()" ng-hide="isOpenRight()" class="boton2 md-raised primario">
+            Cambiar
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ban-col-sm-6 ban-col-md-3">
+    <md-input-container class="input--dropdowns">
+      <label>En la cuenta</label>
+      <md-select name="pagarDesde" ng-model="banchilepay.pagarDesde">
+        <md-option value="1" selected>14-01</md-option>
+        <md-option value="2">14-02</md-option>
+        <md-option value="3">14-03</md-option>
+      </md-select>
+      <!-- <div class="input--hint_select">Cuenta del portafolio</div> -->
+      <div ng-messages="banchilepayForm.pagarDesde.$error">
+        <div ng-message="required">Este campo es obligatorio.</div>
+      </div>
+    </md-input-container>
+  </div>
+  <div class="ban-col-sm-6 ban-col-md-3">
+    <md-input-container class="input--dropdowns">
+      <label>Un monto de</label>
+      <p class="input--txt_pay">US$</p>
+      <input class="input--text_monto" placeholder="$0">
+      <div ng-messages="banchilepayForm.monto.$error">
+        <div ng-message="required">Este campo es obligatorio.</div>
+      </div>
+    </md-input-container>
+  </div>
+</div>
+<div class="animacion--tabla" ng-repeat-end="" aria-label="Toggle ngHide">
+  <div ng-hide="!aporte02.expanded">
+    <div ng-include src="'detalle/detalle-cuenta-fm.html'"></div>
+  </div>
+</div>
+<div class="ban-row h--marginTop1">
+  <div class="ban-col-sm-3 ban-col-md-3">
+    <md-checkbox ng-model="data1" aria-label="Checkbox 1">
+      <p class="moneda-info">
+        Plan Familia de Fondos
+        <md-icon class="informacionTooltipR"><i class="material-icons">&#xE88E;</i></md-icon>
+        <md-tooltip class="plan--tooltip" md-direction="bottom"> Permite trasladar, exento de comisión, las inversiones entre los distintos Fondos Mutuos </md-tooltip>
+      </p>
+    </md-checkbox>
+  </div>
+</div>

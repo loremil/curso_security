@@ -1,0 +1,248 @@
+<section>
+  <div class="contenido--background invertir-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion ">Comprar Acciones</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-fav.html' "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container" ng-controller="solicFondoM">
+    <div class="card h--borderRadiusBottom4px">
+      <!-- inicio tituloCaracteristicas -->
+      <div class="contenedor--subtitulo a_fadeup1">
+        <h3 class="subtitulo ">
+          <span class="subtitulo__icono--verde">
+            <md-icon><i class="material-icons">check</i></md-icon>
+          </span> Características de la Acción
+        </h3>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 h--pullRight">
+          <div class="indicadorMercado mercado--abierto">
+            <h3>
+              Mercado:
+              <span>Abierto</span>
+            </h3>
+            <md-icon><i class="material-icons">&#xE3FA;</i>
+              <md-tooltip md-direction="bottom">Pendiente</md-tooltip>
+            </md-icon>
+          </div>
+        </div>
+      </div>
+      <!-- fin tituloCaracteristicas -->
+      <!-- inicio contenedorCaracteristicas -->
+      <div class="ban-row a_fadein">
+        <div class="ban-col-sm-12">
+          <div class="operacion--seleccion">
+            <div class="ban-row">
+              <div class="ban-col-xs-12 ban-col-md-5">
+                <div class="ban-col-md-12">
+                  <p class="seleccion__label">Acción Seleccionada</p>
+                  <p class="seleccion__fondo">ANTARCHILE</p>
+                </div>
+              </div>
+              <div class="ban-col-xs-12 ban-col-md-7">
+                <div class="ban-col-xs-12 ban-col-sm-4 ">
+                  <p class="seleccion__montos">Punta compra</p>
+                  <p class="seleccion__cifra">$9.000,500</p>
+                </div>
+                <div class="ban-col-xs-12 ban-col-sm-4 ">
+                  <p class="seleccion__montos">Monto invertido</p>
+                  <p class="seleccion__cifra">$4.000.000,500</p>
+                </div>
+                <div class="ban-col-xs-12 ban-col-sm-4 ">
+                  <p class="seleccion__montos">Acciones disponibles</p>
+                  <p class="seleccion__cifra">665</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin contenedorCaracteristicas -->
+      <!-- inicio titutloOrigen -->
+      <div class="contenedor--subtitulo h--paddingTop1 a_fadeup1">
+        <h3 class="subtitulo ">
+          <span class="subtitulo__icono--verde">
+            <md-icon><i class="material-icons">check</i></md-icon>
+          </span> Origen de la compra
+        </h3>
+      </div>
+      <!-- fin titutloOrigen -->
+      <!-- inicio seccionOrigen -->
+      <div class="ban-row a_fadein" ng-controller="solicFondoM" ng-init="clp='$'; dolar='USD$'">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+          <div class="operacion--seleccion">
+            <div class="ban-row">
+              <div class="ban-col-sm-7 ban-col-md-6">
+                <p class="seleccion__label">Saldo disponible en caja</p>
+                <p class="seleccion__fondo">$1.000.000.000</p>
+              </div>
+              <div class="ban-col-xs-12 ban-col-sm-5 ban-col-md-6 h--alignCenter">
+                <md-button ng-href="popup.html#/popup-cajaInternet" target="popup" onClick="window.open(this.href, this.target, 'width=800, height=500'); return false;" class="boton2 md-raised primario">abonar</md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+          <div ng-include src="'mensajes/mensajes--alertaAbono.html'"></div>
+        </div>
+      </div>
+      <!-- fin seccionOrigen -->
+      <!-- inicio tituloCompra -->
+      <div class="contenedor--subtitulo h--paddingTop1 a_fadeup1">
+        <h3 class="subtitulo ">
+          <span class="subtitulo__icono--amarillo">
+            <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+          </span> Datos de la compra</h3>
+      </div>
+      <!-- fin tituloCompra -->
+      <!-- inicio seccionCompra -->
+      <div class="ban-row h--marginTop1 a_fadein">
+        <div class="ban-col-sm-12 ban-col-md-3">
+          <md-input-container class="input--radiobutton">
+            <label class="radiobutton--label">Tipo de precio</label>
+            <md-radio-group ng-model="data.group1">
+              <md-radio-button value="1" class="md-primary">Limite</md-radio-button>
+              <md-radio-button value="2" class="md-primary">Mercado</md-radio-button>
+            </md-radio-group>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--text">
+            <label>Precio límite</label>
+            <p class="input--txt_pay">$</p>
+            <input class="input--text_monto" placeholder="0">
+            <div ng-messages="banchilepayForm.monto.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--dropdowns">
+            <label>Válido hasta</label>
+            <md-datepicker ng-model="ctrl.myDate"></md-datepicker>
+          </md-input-container>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-sm-push-6 ban-col-md-3 ban-col-md-push-0">
+          <div class="operacion--seleccion">
+            <p class="seleccion__label">Precio mercado</p>
+            <p class="seleccion__cifra h--alignRight">$9.303,922</p>
+          </div>
+        </div>
+      </div>
+      <div class="ban-row h--marginTop1 a_fadein" ng-init="clp='$'; dolar='USD$'">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6 ban-col-md-offset-3">
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6 h--paddingTop1">
+            <md-input-container class="input--dropdowns md-input-has-placeholder">
+              <label for="input_0">Ingresa una cantidad</label>
+              <!-- <p class="input--txt_pay">US$</p> -->
+              <input class="input--text_monto md-input" placeholder="0" id="input_0">
+              <div class="md-errors-spacer"></div>
+              <div ng-messages="banchilepayForm.monto.$error" class="md-input-messages-animation md-auto-hide ng-inactive" aria-live="assertive">
+                <!-- ngMessage: required -->
+              </div>
+            </md-input-container>
+          </div>
+          <div class="moneda-icono">
+            <md-icon class="material-icons">
+              <i class="material-icons">autorenew</i>
+            </md-icon>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6 h--paddingTop1">
+            <md-input-container class="input--text md-input-has-placeholder">
+              <label for="input_1">Ingresa un monto estimado</label>
+              <p class="input--txt_pay">$</p>
+              <input class="input--text_monto ng-pristine ng-untouched ng-valid md-input ng-empty" placeholder="0" id="input_1" aria-invalid="false">
+              <div class="md-errors-spacer"></div>
+              <div ng-messages="banchilepayForm.aPagar.$error" class="md-input-messages-animation md-auto-hide ng-inactive" aria-live="assertive">
+                <!-- ngMessage: required -->
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-sm-push-6 ban-col-md-3 ban-col-md-push-0">
+          <div class="bubble-amarillo ">
+            <p class="bubble__label">Comisión estimada</p>
+            <p class="bubble__monto">
+              <span class="h--pullRight">$460,00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- fin seccionCompra -->
+      <!-- inicio tituloTerminos -->
+      <div class="contenedor--subtitulo a_fadeup1">
+        <h3 class="subtitulo ">
+          <span class="subtitulo__icono--amarillo">
+            <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+          </span> Confirma tu solicitud
+        </h3>
+      </div>
+      <!-- fin tituloTerminos -->
+      <!-- inicio seccionTerminos -->
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-6">
+          <div class="condiciones">
+            <div class="condiciones--texto" height="200">
+              <p>Declaro que he sido informado de lo siguiente:</p>
+              <br/>
+              <p>
+                El Cliente declara su intención de entregar en administración a Banchile Administradora General de Fondos S.A. activos de su propiedad, para ser invertidos única y exclusivamente en Fondos Mutuos administrados por la misma Administradora, de modo que
+                ésta, por cuenta y riesgo del Cliente, pueda decidir su inversión, enajenación y demás actividades que correspondan, de acuerdo a las disposiciones del presente Contrato y a las normas legales o reglamentarias vigentes o que se dicten
+                en el futuro.
+                <br/>Las partes entienden por “Activos” la totalidad de los recursos en efectivo y cuotas de fondos mutuos de que el Cliente sea titular y que éste entregue a la Administradora para su administración, así como las cuotas de fondos mutuos
+                que éste adquiera para el Cliente en dicha administración y los dividendos y rescates provenientes de las respectivas inversiones que la Administradora efectúe por cuenta del Cliente. En el Anexo al Contrato de Administración de Cartera
+                en Fondos Mutuos se contempla el “Plan de Inversión” donde se señala la Cartera de Fondos Mutuos administrados por la Administradora en la que se deberán mantener invertidos los Activos del Cliente, según se define más adelante. El Cliente
+                podrás mantener una o más Carteras objeto de inversión, las que serán administradas por la Administradora, de acuerdo a los límites establecidos en el respectivo Anexo Plan de Inversión. Con todo, previa firma de un nuevo Anexo, el Cliente
+                podrás siempre y en cualquier tiempo cambiarse de una Cartera a otra a partir del primer proceso de ajuste, según se señala más adelante. Por “Cartera” se entenderá aquel conjunto de cuotas de aquellos fondos mutuos administrados por la
+                Administradora, que componen cada una de las categorías de fondos mutuos en las cuales se invertirán los activos del Cliente. Existirán 7 Carteras denominadas: Cartera Protegida, Cartera Defensiva, Cartera Controlada, Cartera Moderada,
+                Cartera Equilibrada, Cartera Potenciada y Cartera Agresiva, cuyas características, Activo objeto y límites, están definidos en los respectivos Anexos. Sin perjuicio de lo anterior, el número de carteras puede aumentarse en el futuro, de
+                común acuerdo por las partes, mediante la formalización de un nuevo Anexo. Cada vez que el presente Contrato se refiera a la palabra “Fondos Mutuos”, deberá entenderse por tal aquel patrimonio a que se refiere el artículo 28 de la Ley
+                número 20.712 de 2014, administrado para estos efectos por Banchile Administradora General de Fondos S.A.
+              </p>
+            </div>
+            <md-input-container class="input--dropdowns">
+              <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+                He leído y acepto las condiciones
+              </md-checkbox>
+            </md-input-container>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6">
+          <div ng-show="datachecked.check">
+            <div ng-include class="a_fadein" src="'autorizaciones/autorizacion_operacion-accionesCompra-personas.html'"></div>
+          </div>
+        </div>
+      </div>
+      <!-- fin seccionTerminos -->
+    </div>
+    <!-- boton volver -->
+    <div class="ban-row">
+      <div class="ban-col-xs-3 ban-col-sm-2 ban-col-md-2">
+        <div class="boton--back" ng-controller="modalesCrtl">
+          <md-button ng-href="#home-persona">
+            <i class="material-icons">arrow_back</i>
+            <span>Volver</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <!-- fin boton volver -->
+  </div>
+</section>
+<!-- aside include -->
+<section>
+  <md-sidenav class="md-sidenav-right h--positionFix" md-whiteframe="4" md-component-id="right">
+    <div ng-include class="animated fadeIn" src="'detalle/detalle-abono.html'"></div>
+  </md-sidenav>
+</section>

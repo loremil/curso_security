@@ -1,0 +1,18 @@
+<div ng-controller="progressCircularCargando as vm">
+    <div class="contenedorCargando--paginas">
+      <div class="ban-row">
+        <div class="ban-col-md-12">
+          <div class="cargando--circulo">
+            <div layout="row" layout-sm="column" layout-align="space-around">
+              <md-progress-circular md-mode="indeterminate" ng-disabled="!vm.activated" md-diameter="50"></md-progress-circular>
+            </div>
+          </div>
+        </div>
+        <div class="ban-col-md-12">
+          <div class="cargando--texto">
+            <p>Tu información se está cargando</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

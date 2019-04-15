@@ -1,0 +1,197 @@
+<!-- 21 Agosto header "gbujes" -->
+<section>
+  <div class="contenido--background invertir-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion ">Caja Internet</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-fav.html' "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container" ng-controller="VerCaja">
+    <div class="card h--paddingBottom2">
+      <div class="informacion--atencion animated fadeInDown">
+        <md-icon md-font-set="banicon-atencion titulo--icono"> </md-icon>
+        <p class="informacion--atencion__txt">Recuerda que nuestro horario para invertir es hasta las 14:00 hrs. de días hábiles. Fuera de este horario verás reflejada tu inversión al día hábil siguiente.</p>
+      </div>
+      <div class="contenedor--cajainternet animated fadeInDown">
+        <div class="ban-row h—paddingTop">
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-8">
+            <div class="producto--seleccionado">
+              <div class="ban-row">
+                <div class="ban-col-xs-10 ban-col-sm-10 ban-col-md-5">
+                  <p class="md-caption  producto--seleccionado__label2">Saldo disponible en caja</p>
+                  <p class="md-subhead producto--seleccionado__monto">$122.310.320.001</p>
+                </div>
+                <div class="ban-col-sm-12 ban-col-md-7 right" ng-controller="modalesCrtl">
+                  <md-button ng-click="deposito($event)" class="boton2 md-raised">Abonar</md-button>
+                  <md-button ng-click="retiro($event)" class="boton1 md-raised primario">Retirar</md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4">
+            <div class="producto--info">
+              <div class="ban-row">
+                <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-6">
+                  <p class="md-caption info--caption info--caption__label">Último abono</p>
+                  <p class="md-subhead">20/03/2017</p>
+                </div>
+                <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-6">
+                  <p class="md-caption info--caption info--caption__label">Último retiro</p>
+                  <p class="md-subhead">20/03/2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deposito" ng-show="verdeposito">
+      <div class="card h--marginBottomcard">
+        <div class="contenedor--subtitulo">
+          <h3 class="subtitulo animated fadeInDown">Ingresar Solicitud de Abono</h3>
+        </div>
+        <div class="ban-row h—paddingTop">
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 ">
+            <md-input-container class="input--text">
+              <label>Retirar un monto</label>
+              <input class="input--text_monto" ng-model="user.monto" placeholder="$0">
+              <div ng-messages="banchilepayForm.aPagar.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 ">
+            <div class="destino--boton_pago">
+              <label class="pago--label">Desde mi banco</label>
+              <md-button aria-label="botonpago" class="pago--boton">
+                <md-icon md-font-set="banicon-bancologo boton--banco"></md-icon>
+                <md-tooltip md-direction="Bottom">Banco de Chile</md-tooltip>
+              </md-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="retiro" ng-show="verretiro">
+      <div class="card">
+        <div class="contenedor--subtitulo">
+          <h3 class="subtitulo animated fadeInDown">Ingresar Solicitud de Retiro</h3>
+        </div>
+        <div class="ban-row h—paddingTop">
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 ">
+            <md-input-container class="input--text">
+              <label>Quiero Retirar</label>
+              <input class="input--text_monto" ng-model="user.monto" placeholder="$0">
+              <div class="hint-select">Mínimo a transferir de $1.000</div>
+              <div ng-messages="banchilepayForm.aPagar.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 ">
+            <md-input-container class="input--dropdowns">
+              <label>Hacia mi cuenta corriente</label>
+              <md-select name="cuenta" ng-model="cajainternet.cuenta">
+                <md-option value="1">102.331.332-3</md-option>
+                <md-option value="2">B123213</md-option>
+                <md-option value="3">B235235</md-option>
+              </md-select>
+              <!-- <div class="hint-select">Previamente registrado</div> -->
+            </md-input-container>
+          </div>
+        </div>
+        <div class="informese animated fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+          <md-icon md-font-set="banicon-informacion " class="banicon-informacion" aria-hidden="true"></md-icon>
+          <p class="informese--texto ">Las transferencias requieren el ingreso correcto de la información solicitada, recuerda que sólo puedes ingresar montos a retirar iguales o menores a lo que tengas en la caja disponible. <br/><br/>Al efectuar una trasferencia, el cargo a la
+            Caja (cuenta origen) se realiza en línea, mientras que el abono a tu cuenta corriente (cuenta destino) se efectúa según el horario de ingreso de la transferencia: <br/><br/>1. De lunes a viernes (días hábiles) hasta las 12:00 horas, el abono
+            estará disponible antes de las 14:00 horas del mismo día.<br/> 2. De lunes a viernes (días hábiles) después de las 12:00 horas, el abono estará disponible antes de las 14:00 horas del día (hábil) siguiente.<br/> 3- En días no hábiles, se considera
+            como transferencia ingresada al siguiente día hábil antes de las 12:00 horas. Si el banco de destino rechazara la transferencia, los fondos serán devueltos a la caja del Club (cuenta origen) al día hábil siguiente de informado el rechazo.</p>
+        </div>
+      </div>
+      <div class="card h--marginTop animated fadeInDown">
+        <div class="ban-row h--paddingBottom2 animated fadeInDown">
+          <div class="ban-col-xs-12">
+            <div class="contenedor--subtitulo subt--noborder">
+              <h3 class="subtitulo animated fadeInDown">Autorización</h3>
+            </div>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-7 ban-col-md-3">
+            <md-input-container class="h--paddingBottom2">
+              <label>Clave Internet</label>
+              <input required name="internet" ng-model="banchilepay.internet">
+              <!-- No puedo agregar type="password"-->
+              <div ng-messages="banchilepayForm.internet.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor--botones right" ng-controller="modalesCrtl">
+        <md-button ng-click="showRechazado($event)" class="boton2 md-raised">Cancelar</md-button>
+        <md-button ng-click="showAutorizado($event)" class="boton1 md-raised">Ingresar</md-button>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <div class="informacion animated fadeInDown">
+      <div class="ban-row">
+        <div class="ban-col-sm-12 ban-col-md-4">
+          <div class="informacion--cajas h--shadowBox ">
+            <div class="cajas--imagen ban-responsive-cajas">
+              <img class="imagen" src="assets/images/ffmm-caja01.png" alt="">
+            </div>
+            <md-button class="cajas--btn md-button" aria-label="ir">
+              ¿QUIERES APRENDER?
+            </md-button>
+
+            <div class="cajas--descripcion">
+              <p>Te enseñamos todo sobre inversiones</p>
+            </div>
+          </div>
+        </div>
+        <div class="ban-col-sm-12 ban-col-md-4">
+          <div class="informacion--cajas h--shadowBox  ">
+            <div class="cajas--imagen ban-responsive-cajas">
+              <img class="imagen" src="assets/images/ffmm-caja02.png" alt="">
+            </div>
+            <md-button class="cajas--btn md-button" aria-label="ir">
+              INFORMES DE ESTUDIO
+            </md-button>
+            <div class="cajas--descripcion">
+              <p>Infórmate al momento de tomar decisiones.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ban-col-sm-12 ban-col-md-4">
+          <div class="informacion--cajas h--shadowBox">
+            <div class="cajas--imagen ban-responsive-cajas">
+              <img class="imagen" src="assets/images/bannerBoton--asesoria.png" alt="">
+            </div>
+            <md-button class="cajas--btn md-button" aria-label="ir">
+              Asesórate con un experto
+            </md-button>
+
+            <div class="cajas--descripcion">
+              <p>Herramientas e información para tus inversiones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

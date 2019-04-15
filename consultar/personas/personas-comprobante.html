@@ -1,0 +1,60 @@
+<!-- 18 agosto gbujes-->
+<section>
+  <div class="contenido--background consultar-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row h--marginBottom2">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion ">Documentos </h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-controller="BuscaListadoCtrl" ng-include src=" 'select-cuenta/personas/card-cuenta-fav.html' "></div>
+        </div>
+     </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <div class="card h--marginBottom2 h--paddingBottom2">
+      <div class="configuracion_contrato">
+        <h3 class="configuracion--bienvenido">Tu comprobante ya está disponible
+            </h3>
+        <embed class="contrato--pdf animated fadeInDown" src="assets/images/INSTRUCCION DE TRANSFERENCIA CAPÍTULO XIV.pdf">
+      </div>
+      <md-input-container class="input--dropdowns">
+        <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+          He leído y acepto las condiciones
+        </md-checkbox>
+      </md-input-container>
+    </div>
+    <div ng-show="datachecked.check">
+      <div class="card h--marginTop">
+        <div class="ban-row animated fadeInDown">
+          <div class="ban-col-xs-12">
+            <div class="contenedor--subtitulo subt--noborder">
+              <h3 class="subtitulo animated fadeInDown">Autorización</h3>
+            </div>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-7 ban-col-md-3">
+            <md-input-container class="h--paddingBottom2">
+              <label>Clave Internet</label>
+              <input required name="internet" ng-model="banchilepay.internet">
+              <!-- No puedo agregar type="password"-->
+              <div ng-messages="banchilepayForm.internet.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor--botones right" ng-controller="modalesCrtl">
+        <md-button ng-click="showRechazado($event)" class="boton2 md-raised">Cancelar</md-button>
+        <md-button ng-click="showAutorizado($event)" class="boton1 md-raised">Ingresar</md-button>
+      </div>
+    </div>
+  </div>
+</section>

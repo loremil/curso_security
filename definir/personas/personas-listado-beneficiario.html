@@ -1,0 +1,160 @@
+<!-- 24 nov jorge IE -tabs-->
+<section>
+  <div class="contenido--background definir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion ">Beneficiarios</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-buscar-add-fav-beneficiario.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+            <div ng-include src=" 'buscadores/buscador-documentos.html' ">
+            </div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorBeneficiarios -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster h--marginBottom4 h--borderRadiusBottom4px" ng-controller="BuscaListadoCtrl">
+      <!-- inicio beneficiariosListado -->
+      <div class="card--contenido">
+        <div class="documentos a_fadein">
+          <table class="a_fadein" wt-responsive-table ng-controller="tablaBeneficiarios">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="tableHead--titulo">Alias</th>
+                <th>Nombre</th>
+                <th>País</th>
+                <th>Creación</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in benef | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                <td class="td--iconoApertura">
+                  <md-button class="md-icon-button acciones" ng-if="!usuarios.expanded">
+                    <md-icon>
+                      <i class="material-icons"></i>
+                    </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button acciones" ng-if="usuarios.expanded">
+                    <md-icon>
+                      <i class="material-icons"></i>
+                    </md-icon>
+                  </md-button>
+                </td>
+                <td class="td--principal">{{usuarios.alias}}</td>
+                <td class="td--valores">{{usuarios.nombre}}</td>
+                <td class="td--valores">{{usuarios.pais}}</td>
+                <td class="td--valores">{{usuarios.creacion}}</td>
+                <!-- inicio iconoAperturaResponsive -->
+                <td class="td--iconoAperturaResponsive">
+                  <md-button class="md-icon-button acciones" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                    <md-icon>
+                      <i class="material-icons"></i>
+                    </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button acciones" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                    <md-icon>
+                      <i class="material-icons"></i>
+                    </md-icon>
+                  </md-button>
+                </td>
+                <!-- fin iconoAperturaResponsive -->
+                <td class="td--iconos">
+                  <div class="td--botonesTransar">
+                    <md-button href="#persona-editar-beneficiario" class="md-icon-button acciones" aria-label="comprobante">
+                      <md-icon>
+                        <i class="material-icons icono--principal">&#xE254;</i>
+                      </md-icon>
+                      <md-tooltip md-direction="bottom">Editar</md-tooltip>
+                    </md-button>
+                  </div>
+                </td>
+                <td class="td--iconos">
+                  <div class="td--botonesTransar">
+                    <md-button class="md-icon-button acciones" aria-label="comprobante">
+                      <md-icon>
+                        <i class="material-icons icono--principal">&#xE872;</i>
+                      </md-icon>
+                      <md-tooltip md-direction="bottom">Eliminar</md-tooltip>
+                    </md-button>
+                  </div>
+                </td>
+              </tr>
+              <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+                <td colspan="12">
+                  <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                    <table class="tableContenido tableContenido__margin">
+                      <tbody>
+                        <tr>
+                          <td class="despliegueDetalle" colspan="7">
+                            <div ng-include class="a_fadein" src="'detalle/detalle-beneficiario.html'"></div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- inicio tablaPaginador -->
+          <div class="pie--tabla">
+            <div class="pie--contenido">
+              <div class="ban-row">
+                <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                  <div class="pie--paginacion">
+                    <div class="paginacion--accion h--displayNone">
+                      <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                    </div>
+                    <div class="paginacion--accion h--displayNone">
+                      <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                        <md-option value="1">10</md-option>
+                        <md-option value="2">20</md-option>
+                        <md-option value="3">30</md-option>
+                      </md-select>
+                    </div>
+                    <div class="paginacion--accion">
+                      <p class="paginacion--parrafo">10 de 22</p>
+                    </div>
+                    <div class="paginacion--accion">
+                      <md-button class="md-icon-button" aria-label="Atras">
+                        <md-icon>
+                          <i class="material-icons">&#xE314;</i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button" aria-label="Adelante">
+                        <md-icon>
+                          <i class="material-icons">&#xE315;</i>
+                        </md-icon>
+                      </md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin tablaPaginador -->
+        </div>
+      </div>
+      <!-- fin beneficiariosListado -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorBeneficiarios -->

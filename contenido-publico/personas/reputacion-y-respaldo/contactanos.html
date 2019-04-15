@@ -1,0 +1,113 @@
+<section>
+  <div class="contenido--background reputacion-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion">Contáctanos</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerContacto contenido--publico">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Quiero que me contacten</h3>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Complete el siguiente formulario para detallarnos su consulta. Estamos atentos a responder tus comentarios a la brevedad. También puede llamarnos al 800 20 28 20, nuestro Servicio de Atención al Cliente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio contenedorFormulario -->
+<section>
+  <div class="ban-container solicFondoM h--marginBottom4" ng-controller="EditarBeneficiarioCtrl" ng-cloak>
+    <div class="card h--borderRadiusBottom4px h--paddingBottom3">
+      <div class="ban-row h--marginTop4 h--paddingBottom2" ng-cloak>
+        <div class="h--col12 a_fadein">
+          <div class="ban-row">
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4 ban-col-md-offset-2">
+              <md-input-container class="input--dropdowns labelNone">
+                <label>Nombres</label>
+                <textarea rows="1" md-select-on-focus="" placeholder=""></textarea>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4 ">
+              <md-input-container class="input--dropdowns labelNone">
+                <label>Apellidos</label>
+                <textarea rows="1" md-select-on-focus="" placeholder=""></textarea>
+              </md-input-container>
+            </div>
+          </div>
+          <div class="ban-row">
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4 ban-col-md-offset-2">
+              <md-input-container class="input--dropdowns labelNone">
+                <label>Rut</label>
+                <textarea rows="1" md-select-on-focus="" placeholder=""></textarea>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4">
+              <md-input-container class="input--dropdowns labelNone">
+                <label>Teléfono</label>
+                <textarea rows="1" md-select-on-focus="" placeholder=""></textarea>
+              </md-input-container>
+            </div>
+          </div>
+          <div class="ban-row">
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4 ban-col-md-offset-2">
+              <md-input-container class="input--dropdowns labelNone">
+                <label>Email</label>
+                <textarea rows="1" md-select-on-focus="" placeholder=""></textarea>
+              </md-input-container>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4">
+              <md-input-container class="input--dropdowns">
+                <label>Motivo</label>
+                <md-select required name="pais" ng-model="beneficiario.pais">
+                  <md-option value="1">Consultas</md-option>
+                  <md-option value="2">Hacerse cliente</md-option>
+                </md-select>
+                <div ng-messages="beneficiarioForm.pais.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+          <div class="ban-row">
+            <div class="ban-col-xs-12 ban-col-md-8 ban-col-md-offset-2">
+              <md-input-container class="input--dropdowns labelNone md-input-has-placeholder">
+                <label>Mensaje</label>
+                <input required name="rechazo" ng-model="autorizaciones.rechazo" md-maxlength="100">
+                <div ng-messages="autorizacionesForm.rechazo.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                  <div ng-message="md-maxlength">Ingrese 100 dígitos</div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- inicio botonEnviar -->
+      <div class="ban-col-md-3 ban-col-md-offset-7 a_fadein" ng-controller="modalesCrtl">
+        <div class="contenedor--botones h--alignRight ">
+          <md-button ng-click="showcontactoExito($event)" class="boton1 md-raised primario">Enviar</md-button>
+        </div>
+      </div>
+      <!-- fin botonEnviar -->
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorFormulario -->

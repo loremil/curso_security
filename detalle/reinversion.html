@@ -1,0 +1,103 @@
+<!-- inicio destino -->
+<div class="contenedor--formulario" ng-init="clp='$'; dolar='USD$'">
+  <div class="ban-row no_visible" when-visible="a_fadein">
+    <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+      <md-input-container class="input--dropdowns">
+        <label>Al destino</label>
+        <md-select name="pagarDesde" ng-model="formData.destino">
+          <md-option value="1">Cta. Cte. 435456777-0</md-option>
+          <md-option value="2">Caja Internet</md-option>
+          <md-option ng-click="toggleRight()" ng-hide="isOpenRight()" value="3">Reinversión en Fondo Mutuo </md-option>
+          <md-option ng-click="toggleRight2()" ng-hide="isOpenRight()" value="4">Reinversión Cartera Activa</md-option>
+          <md-option value="5">Transferencia al Extranjero</md-option>
+        </md-select>
+      </md-input-container>
+    </div>
+    <div ng-show="formData.destino == '1' ">
+      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 ban-col-md-offset-6">
+        <md-input-container class="input--dropdowns">
+          <label>Un monto de</label>
+          <p class="input--txt_pay">$</p>
+          <input class="input--text_monto" placeholder="0">
+          <div ng-messages="banchilepayForm.monto.$error">
+            <div ng-message="required">Este campo es obligatorio.</div>
+          </div>
+        </md-input-container>
+      </div>
+    </div>
+    <div ng-show="formData.destino == '2' " class="ng-cloak">
+      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 ban-col-md-offset-6">
+        <md-input-container class="input--dropdowns">
+          <label>Un monto de</label>
+          <p class="input--txt_pay">$</p>
+          <input class="input--text_monto" placeholder="0">
+          <div ng-messages="banchilepayForm.monto.$error">
+            <div ng-message="required">Este campo es obligatorio.</div>
+          </div>
+        </md-input-container>
+      </div>
+    </div>
+    <!-- botonreinvesion FFMM -->
+    <div ng-show="formData.destino == '3' " class="ng-cloak">
+      <!-- reinvesion FFMM -->
+      <div ng-class="{'reinversion--hide' : !mostrarReinversion, 'reinversion--show' : mostrarReinversion}">
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-button ng-click="toggleRight()" ng-hide="isOpenRight()" class="boton2 md-raised primario">
+            Seleccionar
+          </md-button>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 ban-col-md-push-3">
+          <md-input-container class="input--dropdowns">
+            <label>Un monto de</label>
+            <p class="input--txt_pay">$</p>
+            <input class="input--text_monto" placeholder="0">
+            <div ng-messages="banchilepayForm.monto.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+          <div ng-include src="'detalle/detalle-operacion-reinversion.html'"></div>
+      </div>
+      <!-- reinvesion FFMM -->
+    </div>
+    <!--boton reinvesion FFMM -->
+    <!--Boton reinversion CAT -->
+    <div ng-show="formData.destino == '4' " class="ng-cloak">
+      <div  ng-class="{'reinversion--hide' : !mostrarCartera, 'reinversion--show' : mostrarCartera}">
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-button ng-click="toggleRight2()" ng-hide="isOpenRight()" class="boton2 md-raised primario">
+            Seleccionar
+          </md-button>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 ban-col-md-offset-3">
+          <md-input-container class="input--dropdowns">
+            <label>Un monto de</label>
+            <p class="input--txt_pay">$</p>
+            <input class="input--text_monto" placeholder="0">
+            <div ng-messages="banchilepayForm.monto.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+          <div ng-include src="'detalle/detalle-operacion-reinversion-CAT.html'"></div>
+      </div>
+    </div>
+    <!--Boton reinversion CAT -->
+    <div ng-show="formData.destino == '5' ">
+      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 ban-col-md-offset-6">
+        <md-input-container class="input--dropdowns">
+          <label>Un monto de</label>
+          <p class="input--txt_pay">$</p>
+          <input class="input--text_monto" placeholder="0">
+          <div ng-messages="banchilepayForm.monto.$error">
+            <div ng-message="required">Este campo es obligatorio.</div>
+          </div>
+        </md-input-container>
+      </div>
+      <div class="ban-col-xs-12">
+        <div ng-include src="'detalle/detalle-operacion-transferencia.html'"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin destino -->

@@ -1,0 +1,337 @@
+<!-- 08 nov gissell -->
+<div class="" ng-controller="BuscaListadoCtrl">
+<section>
+  <div class="contenido--background invertir-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" >
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-11 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Fondos Mutuos</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-1 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-buscar.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include src=" 'buscadores/buscador-ffmm-publico-persona.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerFondosMutuos">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Recomendamos</h3>
+        </div>
+        <div class="cuadroFlotanteP ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Invertir en Fondos Mutuos Balanceados, son productos auto-gestionados, lo que te permite seguir una estrategia de inversión de acuerdo a tu perfil de riesgo sin esfuerzo.
+          </p>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <a href="#">Aprende más sobre Fondos Mutuos</a>
+          <a href="#">¿Cómo leer un folleto informativo?</a>
+          <a href="#">Más asesoría sobre mis inversiones</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio tituloFortalezas -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-md-10 ban-col-md-offset-1 h--paddingTop2 a_fadein">
+        <h3 class="subtitulos-centrados">Explora nuestros Fondos Mutuos</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloFortalezas -->
+<!-- inicio contenedorFortalezas -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12  ban-col-lg-11">
+        <div class="ban-col-xs-12 ban-col-md-4 h--paddingTop2 no_visible" when-visible="a_fadeleft1">
+          <div class="items--linea"></div>
+          <div class="items--pilares">
+            <h3 class="items--subtitulo">Fondos Money Market</h3>
+            <p class="items--texto">
+               Invierte en fondos de corto plazo cuyas carteras estén compuestas principalmente por instrumentos de deuda, tanto nacionales como extranjeros cuya duración será menor o igual a 90 días.</p>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-md-4 h--paddingTop2 no_visible" when-visible="a_fadeleft2">
+          <div class="items--linea"></div>
+          <div class="items--pilares">
+            <h3 class="items--subtitulo">Fondos de Deuda</h3>
+            <p class="items--texto">Invierte en fondos de mediano y largo plazo cuyas carteras estén compuestas principalmente por instrumentos de deuda, tanto nacional como extranjeros cuya duración es mayor a 90 días.</p>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-md-4 h--paddingTop2 no_visible" when-visible="a_fadeleft3">
+          <div class="items--linea"></div>
+          <div class="items--pilares">
+            <h3 class="items--subtitulo">Fondos Balanceados</h3>
+            <p class="items--texto">  Combinan inversiones en instrumentos de deuda e instrumentos de capitalización, con el propósito de equilibrar dos objetivos: la Preservación de Capital y la Capitalización.</p>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-md-4 h--paddingTop2 no_visible" when-visible="a_fadeleft1">
+          <div class="items--linea"></div>
+          <div class="items--pilares">
+            <h3 class="items--subtitulo">Fondos de Acciones</h3>
+            <p class="items--texto">
+             Su cartera de inversiones es compuesta por instrumentos de deuda de corto, mediano y largo plazo, e instrumentos de capitalización (en estos deberá ser a lo menos un 90% del valor de los activos del fondo).</p>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-md-4 h--paddingTop2 no_visible" when-visible="a_fadeleft2">
+          <div class="items--linea"></div>
+          <div class="items--pilares">
+            <h3 class="items--subtitulo">Fondos Estructurados</h3>
+            <p class="items--texto"> Buscan la obtención de una rentabilidad previamente determinada, fija (nominal o real) y/o variable, al cabo de un período de tiempo.</p>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-md-4 h--paddingTop2 no_visible" when-visible="a_fadeleft3">
+          <div class="items--linea"></div>
+          <div class="items--pilares">
+            <h3 class="items--subtitulo">Fondos Balanceados</h3>
+            <p class="items--texto">  Realizando descripción de este producto          </p>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-md-12 a_fadein">
+         <div class="contenedor--botones h--marginTop1 h--paddingBottom2 h--alignCenter" >
+           <md-button  class="boton2 md-raised boton--xl" ng-click="texto($event)">BUSCA UN FONDO MUTUO</md-button>
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<!-- fin contenedorFortalezas -->
+<!-- inicio tituloExpertos -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde no_visible" when-visible="a_fadein">
+          <h3 class="subtitulos-centrados">Razones para invertir en Fondos Mutuos</h3>
+          <p class="bajada--texto">Una excelente alternativa de inversión de una manera fácil, cómoda y conveniente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- fin tituloExpertos -->
+<!-- inicio contenedorVentajas -->
+<section ng-controller="animateCtrl">
+  <div class="ban-container">
+    <div class="card">
+      <!-- inicio ventajasCards -->
+      <div class="ban-row">
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <div class="items--caja h--shadowBox no_visible" when-visible="a_fadeup1">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Diversificacion.png" alt="">
+            <p class="caja--subtitulo">Menor riesgo,
+              <br>mayor diversificación</p>
+            <p class="caja--texto">Permite diversificar tus inversiones en una amplia gama de Fondos Mutuos.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <div class="items--caja h--shadowBox no_visible" when-visible="a_fadeup2">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Profesional.png" alt="">
+            <p class="caja--subtitulo">Asesoría profesional</p>
+            <p class="caja--texto">Nuestro equipo de expertos te recomiendan invertir en Fondos Balanceados.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <div class="items--caja h--shadowBox no_visible" when-visible="a_fadeup3">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_ Diagram-GraficoGanancias.png" alt="">
+            <p class="caja--subtitulo">Rentabilidad día a día</p>
+            <p class="caja--texto">La rentabilidad de los Fondos Mutuos se reconoce diariamente y se expresa en la variación del valor de la cuota.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <div class="items--caja h--shadowBox no_visible" when-visible="a_fadeup4">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Fondo-preciso.png" alt="">
+            <p class="caja--subtitulo">Tenemos el Fondo preciso para ti</p>
+            <p class="caja--texto">La rentabilidad de los Fondos Mutuos se reconoce diariamente y se expresa en la variación del valor de la cuota.</p>
+          </div>
+        </div>
+      </div>
+      <!-- inicio ventajasCards -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorVentajas -->
+<!-- inicio tituloVideo -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card fondoSeparador">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1 no_visible" when-visible="a_fadein">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados">Aprende a invertir en Fondos Mutuos</h3>
+          <p class="bajada--texto">Te entregamos toda la información que necesitas para tomar tus decisiones de inversión</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio tituloVideo -->
+<!-- inicio contendorVideo -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card fondoSeparador h--paddingBottom2">
+      <div class="contenedorVideo">
+        <div class="ban-row">
+          <div class="ban-col-md-5">
+            <div class="contenedorVideo--imagen">
+                <img src="assets/images/sitio_publico/Aprende-FFMM.jpg">
+            </div>
+          </div>
+          <div class="ban-col-md-7">
+            <div class="contenedorVideo--Texto no_visible" when-visible="a_fadein">
+              <h3 class="subtitulo--subseccion h--marginTop0_6">¿Cómo invertir en un Fondo Mutuo?</h3>
+              <p class="normal--lectura h--paddingTop1">Para invertir en un fondo mutuo se debe realizar un aporte en dinero a la sociedad administradora del fondo en el cual se haya decidido invertir. No existe un monto mínimo definido, ya que depende del tipo de fondo en que se esté invirtiendo.
+                <br/> El aporte realizado al fondo elegido es convertido en cuotas de participación, las que tienen un valor que se informa día a día, debido a que pueden aumentar o disminuir a raíz de las fluctuaciones de precios de los instrumentos
+                que componen la cartera de inversión del fondo mutuo. Al haber hecho la inversión, se puede revisar frecuentemente el valor de la cuota y así conocer la rentabilidad que va alcanzando la inversión</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contendorVideo -->
+</div>
+<!-- inicio tituloNoticias -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2 no_visible" when-visible="a_fadein">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados">Noticias relacionadas</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio tituloNoticias -->
+<!-- inicio contenedorNoticias -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="sliderNoticiasRecomendadas" ng-controller="sliderNoticiasRecomendadas">
+        <ks-swiper-container class="sliderCards" override-parameters="noticiasRecomendadas" show-nav-buttons="true">
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado"</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas"</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+        </ks-swiper-container>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorNoticias -->
+<!-- inicio contenedorCajaCliente -->
+<section>
+  <div class="ban-container h--marginBottom4" ng-controller="animateCtrl">
+    <div class="card h--paddingTop2 h--paddingBottom2 h--borderRadiusBottom4px">
+      <!-- inicio cajaCliente -->
+      <div class="ban-row">
+        <div class="ban-col-sm-12 ban-col-md-12">
+          <div class="cajasCliente">
+            <div class="cajas-informacion">
+              <div class="cajas--texto no_visible" when-visible="a_fadein">
+                <p>
+                  Si quieres obtener información profesional o contratar este producto
+                </p>
+              </div>
+              <div class="cajas--botones">
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-2 no_visible" when-visible="a_fadeup1">
+                  <md-button class="botonCliente boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO SER CLIENTE</span>
+                  </md-button>
+                </div>
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-0 no_visible" when-visible="a_fadeup2">
+                  <md-button class="boton2 boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO QUE ME CONTACTEN</span>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+            <div class="cajas--imagen">
+              <img src="assets/images/HazteCliente.png" alt="Manos estrechandose ante un acuerdo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin cajaCliente -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorCajaCliente -->

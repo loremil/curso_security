@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="328px" height="99px" viewBox="0 0 328 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M140.162951,18 L3.92134761,18 C2.27049179,18 0.918524548,19.3445495 0.918524548,21.0031354 L0.918524548,95.9968646 C0.918524548,97.6616741 2.26293423,99 3.92134761,99 L324.915701,99 C326.566557,99 327.918525,97.6554505 327.918525,95.9968646 L327.918525,21.0031354 C327.918525,19.3383259 326.574115,18 324.915701,18 L176,18 L158.081475,0.081475452 L140.162951,18 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="327" height="98.9185245" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Combined-Shape-Copy" stroke="#D5D9E0" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-1"></use>
+    </g>
+</svg>

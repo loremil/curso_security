@@ -1,0 +1,364 @@
+/* ESTILOS BANCHILE PAY */
+/*13-04-2017*/
+.input--dropdowns {
+  &.labelNone {
+    label:not(.md-no-float):not(._md-container-ignore) {
+      overflow: visible !important;
+      color: $color-active;
+    }
+  }
+}
+
+.progresscirculo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 5px;
+  right: 11px;
+  top: 10px;
+}
+
+.progressCirculo--box {
+  width: 60px;
+  height: 60px;
+}
+
+.progressCirculo--boxOperacion {
+  width: 60px;
+  height: 40px;
+}
+
+.progress-wrapper {
+  position: relative;
+  font-size: 20px;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100% !important;
+  line-height: 9em;
+  font-size: 1em;
+  text-align: center;
+  background-color: #fff !important;
+  box-shadow: none !important;
+}
+// label.subtitulo {
+//   display: inline-block;
+//   vertical-align: middle;
+//   padding-bottom: 0.5em;
+//   font-size: 20px;
+//   font-size: 1.25rem;
+// }
+
+.icons--color {
+  color: $color-active;
+}
+
+i.material-icons.icons--color.icons--small {
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.info--caption__labelPadding {
+  padding-left: 1em;
+}
+
+.producto--seleccionado__label {
+  @include font-12;
+  line-height: 1.5em;
+  color: $color-active;
+  width: 100%;
+}
+
+.producto--info__conimagen {
+  text-align: left;
+  display: flex;
+  display: -ms-flexbox;
+}
+@media (max-width: 760px) {}
+/*reecomponer estilos*/
+.datos--empresaCuenta {
+  height: auto;
+  min-height: 80px;
+  background: #F0F2F5;
+  margin: 10px 0;
+  border-radius: 5px;
+
+  md-input-container {
+    display: inline-block;
+    position: relative;
+    padding: 2px;
+    margin: 10px 0;
+    vertical-align: middle;
+  }
+
+  .empresaCuenta--icono {
+    color: $color-active;
+    font-size: 60px;
+
+    i {
+      color: $color-active;
+      font-size: 35px;
+      line-height: 40px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .empresaCuenta--origen {
+    color: $color-primario;
+    padding-top: 1em;
+    line-height: 1em;
+    @include font-16;
+    @include roboto-normal;
+  }
+
+  .empresaCuenta--monto {
+    color: $color-primario;
+    text-align: right;
+    padding-top: 1em;
+    line-height: 0.8em;
+    @include font-16;
+    @include roboto-normal;
+  }
+
+  .empresaCuenta--rut {
+    color: $color-primario;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+    @include font-13;
+    @include roboto-normal;
+  }
+
+  .empresaCuenta--fecha {
+    color: $color-primario;
+    text-align: right;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+    @include font-13;
+    @include roboto-normal;
+  }
+}
+
+.input--txt_pay {
+  display: inline-block;
+  padding-top: 8px;
+  position: absolute;
+  left: 0;
+}
+/*reecomponer estilos*/
+.comision--texto {
+  @include font-12;
+  padding-top: 1em;
+  display: inline-block;
+}
+
+.comision--valor {
+  @include font-12;
+  display: inline-block;
+  padding-top: 1em;
+}
+
+.info_montoleft {
+  float: left;
+  margin: 0 0 0 20px;
+}
+@media (max-width:767px) {
+  .datos--empresaCuenta {
+    padding-bottom: 1em;
+
+    .empresaCuenta--monto {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      height: 25px;
+      line-height: 25px !important;
+    }
+
+    .empresaCuenta--origen {
+      min-height: inherit;
+    }
+
+    .empresaCuenta--fecha,
+    .empresaCuenta--rut {
+      color: $color-primario;
+      padding-bottom: 0;
+      text-align: left;
+      @include font-12;
+      @include roboto-normal;
+    }
+
+    .empresaCuenta--caja {
+      height: 60px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .caja--subtitulo {
+    height: 100px;
+
+    .subtitulo--boton {
+      float: left !important;
+    }
+  }
+}
+@media (max-width: 362px) {
+  .producto--info {
+    margin-left: 17px;
+  }
+}
+@media (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+  .datos--empresaCuenta {
+    min-height: 116px;
+    padding-bottom: 1em;
+
+    .empresaCuenta--origen {
+      height: auto;
+    }
+
+    .empresaCuenta--monto {
+      padding: 0;
+      margin: 0;
+      height: auto;
+      line-height: 1.3em;
+      text-align: left;
+    }
+
+    .empresaCuenta--rut {
+      padding-bottom: 0;
+    }
+
+    .empresaCuenta--fecha,
+    .empresaCuenta--rut {
+      color: $color-primario;
+      padding-bottom: 0;
+      text-align: left;
+      @include font-12;
+      @include roboto-normal;
+    }
+
+    .empresaCuenta--caja {
+      height: 3.125em;
+      padding: 0;
+      margin: 0.313em 0 0 0.625em;
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .datos--empresaCuenta {
+    .empresaCuenta--icono {
+      color: $color-active;
+      font-size: 60px;
+
+      i {
+        color: $color-active;
+        font-size: 30px;
+        line-height: 40px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .empresaCuenta--origen {
+      @include font-14;
+    }
+
+    .empresaCuenta--rut {
+      padding-bottom: 0;
+    }
+
+    .empresaCuenta--monto {
+      @include font-12;
+    }
+
+    .empresaCuenta--fecha,
+    .empresaCuenta--rut {
+      color: $color-primario;
+      padding-bottom: 0;
+      @include font-12;
+      @include roboto-normal;
+    }
+  }
+
+  .quitar--fecha {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .progressCirculo--boxOperacion{
+    padding-top:1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .actual--dolar {
+    margin-top: -6em;
+  }
+
+  .h--marginTop_5_5 {
+    margin-top: -5.5em !important;
+  }
+
+  .h--marginRight50 {
+    margin-right: 50%;
+  }
+
+  .input--dropdowns {
+    margin-bottom: 0.5em;
+
+    &.input--responsive {
+      padding-bottom: 1.2em;
+    }
+  }
+
+  .banchile--totales {
+    padding-bottom: 0.5em !important;
+  }
+}
+@media (max-width:991px) {
+  .input--ingresar {
+    .producto--info {
+      margin-top: 0.8em;
+
+      &.info--direccion:before {
+        border-width: 0 10px 10px 10px;
+        border-color: #D5D9E0 transparent #D5D9E0 transparent;
+        top: -10px;
+        left: 45%;
+      }
+
+      &.info--direccion:after {
+        border-width: 0 10px 10px 10px;
+        border-color: #fff transparent #fff transparent;
+        top: -8.5px;
+        left: 45%;
+      }
+    }
+  }
+
+  .progressCirculo--boxOperacion {
+    height: 60px;
+  }
+}
+
+.banchile--totales {
+  background: $background-body;
+  padding: 0.5em 1em 0;
+  border-radius: 4px;
+
+  .input--icon {
+    padding-left: 0.5em;
+  }
+
+  .input--dropdowns {
+    margin-bottom: 0;
+  }
+}
+
+/* FIN DE ESTILOS BANCHILE PAY */

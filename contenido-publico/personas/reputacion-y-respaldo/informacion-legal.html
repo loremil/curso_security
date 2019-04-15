@@ -1,0 +1,243 @@
+<section>
+  <div class="contenido--background invertir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-11 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Información Legal</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-1 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-buscar.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include src=" 'buscadores/buscador-infoLegal-publico-personas.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerInfoLegal contenido--publico">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Buscador de documentos</h3>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Encuentra toda la información legal importante relacionada a tus inversiones. Si tienes alguna consulta, no dudes
+            en contactarnos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio tituloAdministradora -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde no_visible" when-visible="a_fadeup1">
+          <h3 class="subtitulos-centrados">Banchile Administradora General de Fondos</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloAdministradora -->
+<!-- inicio contenedorAdministradora -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster">
+      <div class="h--marginBottom2 h--paddingTop1">
+        <!--inicio administradoraDocumentos-->
+        <table ng-controller="tablaInfoLegalAdministradora">
+          <tbody ng-repeat="categoria in categorias">
+            <tr class="tr--informativo" ng-class="{'tr--active': categoria.expanded}" ng-click="categoria.expanded = !categoria.expanded" class="no_visible" when-visible="a_fadein">
+              <td class="td--iconoApertura">
+                <md-button class="md-icon-button icons" ng-if="categoria.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+                <md-button class="md-icon-button icons" ng-if="!categoria.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+              </td>
+              <td class="td--principal td--auto">{{categoria.name}}</td>
+            </tr>
+            <tr aria-label="Toggle ngHide" class="tr--informativoDesplegable animacionApertura" ng-hide="!categoria.expanded">
+              <td colspan="12">
+                <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                  <table class="tableContenido tableContenido__margin">
+                    <tbody>
+                      <tr>
+                        <div class="contenidoDesplegable--info info__detalle" ng-repeat="links in categoria.links">
+                          <a href="{{links.url}}">
+                            <i class='material-icons'>{{links.iconFile}}</i> {{links.name}}
+                          </a>
+                        </div>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--inicio administradoraDocumentos-->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorAdministradora -->
+<!-- inicio tituloCorredores -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde no_visible" when-visible="a_fadeup1">
+          <h3 class="subtitulos-centrados">Banchile Corredores de Bolsa</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloCorredores -->
+<!-- inicio contenedorCorredores -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster">
+      <div class="h--paddingTop1">
+        <!--inicio administradoraDocumentos-->
+        <table ng-controller="tablaInfoLegalCorredora">
+          <tbody ng-repeat="categoria in categorias">
+            <tr class="tr--informativo" ng-class="{'tr--active': categoria.expanded}" ng-click="categoria.expanded = !categoria.expanded" class="no_visible" when-visible="a_fadein">
+              <td class="td--iconoApertura">
+                <md-button class="md-icon-button icons" ng-if="categoria.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+                <md-button class="md-icon-button icons" ng-if="!categoria.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+              </td>
+              <td class="td--principal td--auto">{{categoria.name}}</td>
+            </tr>
+            <tr aria-label="Toggle ngHide" class="tr--informativoDesplegable animacionApertura" ng-hide="!categoria.expanded">
+              <td colspan="12">
+                <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                  <table class="tableContenido tableContenido__margin">
+                    <tbody>
+                      <tr>
+                        <div class="contenidoDesplegable--info info__detalle" ng-repeat="links in categoria.links">
+                          <a href="{{links.url}}">
+                            <i class='material-icons'>{{links.iconFile}}</i> {{links.name}}
+                          </a>
+                        </div>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--inicio administradoraDocumentos-->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorCorredores -->
+<!-- inicio tituloFondos -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde no_visible" when-visible="a_fadeup1">
+          <h3 class="subtitulos-centrados">Fondos Mutuos</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloFondos -->
+<!-- inicio contenedorFondos -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster">
+      <div class="h--paddingBottom2">
+        <!--inicio administradoraDocumentos-->
+        <table ng-controller="tablaInfoLegalFondos">
+          <tbody ng-repeat="categoria in categorias">
+            <tr class="tr--informativo" ng-class="{'tr--active': categoria.expanded}" ng-click="categoria.expanded = !categoria.expanded" class="no_visible" when-visible="a_fadein">
+              <td class="td--iconoApertura">
+                <md-button class="md-icon-button icons" ng-if="categoria.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+                <md-button class="md-icon-button icons" ng-if="!categoria.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+              </td>
+              <td class="td--principal td--auto">{{categoria.name}}</td>
+            </tr>
+            <tr aria-label="Toggle ngHide" class="tr--informativoDesplegable animacionApertura" ng-hide="!categoria.expanded">
+              <td colspan="12">
+                <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                  <table class="tableContenido tableContenido__margin">
+                    <tbody>
+                      <tr>
+                        <div class="contenidoDesplegable--info info__detalle" ng-repeat="links in categoria.links">
+                          <a href="{{links.url}}">
+                            <i class='material-icons'>{{links.iconFile}}</i> {{links.name}}
+                          </a>
+                        </div>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--inicio administradoraDocumentos-->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorFondos -->
+<!-- inicio contendorPreguntas -->
+<section>
+  <div class="ban-container h--marginBottom4" ng-controller="animateCtrl">
+    <div class="card h--borderRadiusBottom4px">
+      <div class="h--marginBottom2 h--paddingTop1">
+        <div class="ban-row h--paddingBottom1">
+          <div class="ban-col-md-12 h--alignCenter h--paddingTop1 no_visible" when-visible="a_fadeup1">
+            <md-button class="boton2 md-raised primario boton--xl" href="#/preguntas-frecuentes">VER PREGUNTAS FRECUENTES</md-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contendorPreguntas -->

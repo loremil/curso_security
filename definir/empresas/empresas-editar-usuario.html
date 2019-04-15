@@ -1,0 +1,299 @@
+<!-- 18 Agosto "gbujes" -->
+<section>
+  <div class="contenido--background definir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion">Editar usuario</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-include src="'select-cuenta/empresas/card-cuenta.html'"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <form name="usuarioForm">
+      <div class="card h--borderRadiusBottom4px" ng-controller="EditarUsuarioCtrl as cc">
+        <!-- inicio tituloDatos -->
+        <div class="contenedor--subtitulo">
+          <h3 class="subtitulo a_fadeup1">
+            <span class="subtitulo__icono--verde">
+              <md-icon><i class="material-icons">check</i></md-icon>
+            </span> Editar datos del usuario
+          </h3>
+        </div>
+        <!-- fin tituloDatos -->
+        <!-- inicio seccionDatos -->
+        <div class="ban-row a_fadein">
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Nombres</label>
+              <input required name="nombre" ng-model="usuario.nombre" disabled>
+              <div ng-messages="usuarioForm.nombre.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Apellido Paterno</label>
+              <input required name="apellidoPaterno" ng-model="usuario.apellidoPaterno">
+              <div ng-messages="usuarioForm.apellidoPaterno.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Apellido Materno</label>
+              <input required name="apellidoMaterno" ng-model="usuario.apellidoMaterno">
+              <div ng-messages="usuarioForm.apellidoMaterno.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Rut</label>
+              <input required name="rut" ng-model="usuario.rut">
+              <div class="input--hint_select">Con puntos y guión</div>
+              <div ng-messages="usuarioForm.rut.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Email</label>
+              <input required ng-model="usuario.email">
+              <div ng-messages="usuarioForm.rut.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <div class="input--label">
+              <p class="label--texto">Número de télefono móvil</p>
+              <md-input-container class="input--dropdowns__ancho">
+                <md-select name="plantilla1" ng-model="area">
+                  <md-option value="1" selected>56</md-option>
+                  <md-option value="2">54</md-option>
+                  <md-option value="3">52</md-option>
+                </md-select>
+              </md-input-container>
+              <md-input-container class="input--dropdowns__number">
+                <label></label>
+                <input required name="numero" ng-model="usuario.numero" placeholder="0984567654">
+                <div ng-messages="usuarioForm.numero.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <div class="input--label">
+              <p class="label--texto">Número de télefono</p>
+              <md-input-container class="input--dropdowns__ancho">
+                <md-select name="plantilla1" ng-model="area2">
+                  <md-option value="1" selected>56</md-option>
+                  <md-option value="2">54</md-option>
+                  <md-option value="3">52</md-option>
+                </md-select>
+              </md-input-container>
+              <md-input-container class="input--dropdowns__number">
+                <label></label>
+                <input ng-model="usuario.numberopcional" placeholder="0284567654">
+                <div class="input--hint_select">Campo opcional</div>
+              </md-input-container>
+            </div>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3">
+            <md-input-container class="input--dropdowns">
+              <label>Cuenta Corriente</label>
+              <md-select required name="cuenta" ng-model="usuario.cuenta">
+                <md-option value="1" selected>001</md-option>
+                <md-option value="2">002</md-option>
+                <md-option value="3">003</md-option>
+              </md-select>
+              <div ng-messages="usuarioForm.cuenta.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+        <!-- fin seccionDatos -->
+        <!-- inicio seccionRoles -->
+        <div ng-controller="agregarOtro">
+          <div class="contenedor--subtitulo subtitulos__usuarios">
+            <div class="ban-row">
+              <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+                <h3 class="subtitulo a_fadeup1">
+                  <span class="subtitulo__icono--verde" >
+                <md-icon><i class="material-icons">check</i></md-icon>
+              </span>Editar roles de usuario</h3>
+              </div>
+              <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+                <div class="subtitulo--boton">
+                  <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="items.length == 1">
+                    <md-icon class="boton--agregar--icon">
+                      <i class="material-icons boton--agregar--plus">add</i>
+                      <md-tooltip>Agregar roles de usuario</md-tooltip>
+                    </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)" ng-if="items.length > 1">
+                    <md-icon>
+                      <i class="material-icons boton--color">&#xE872;</i>
+                    </md-icon>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ng-repeat="item in items">
+            <div ng-if="!$first">
+              <div class="contenedor--subtitulo a_fadein">
+                <div class="ban-row a_fadein">
+                  <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                    <h3 class="subtitulo">
+                      <span class="subtitulo__icono--verde">
+                        <md-icon><i class="material-icons">check</i></md-icon>
+                      </span>Ingresa otro roles de usuario
+                    </h3>
+                  </div>
+                  <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                    <div class="subtitulo--boton">
+                      <div>
+                        <md-button class="md-icon-button boton--agregar" ng-click="add()" ng-if="$last">
+                          <md-icon class="boton--agregar--icon">
+                            <i class="material-icons boton--agregar--plus">add</i>
+                            <md-tooltip>Agregar otra dirección</md-tooltip>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button boton--agregar" aria-label="eliminar" ng-click="remove($index)">
+                          <md-icon>
+                            <i class="material-icons boton--color">&#xE872;</i>
+                          </md-icon>
+                          <md-tooltip>
+                            Eliminar
+                          </md-tooltip>
+                        </md-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ban-row a_fadein">
+              <div class="ban-col-xs-12 ban-col-sm-3 ban-col-sm-push-9 ban-col-md-4 ban-col-md-push-8">
+                <md-switch md-invert md-theme="altTheme" ng-true-value="'Activo'" ng-false-value="'Inactivo'" class="md-primary contenedorSwitch" ng-model="data.cb1" aria-label="Switch 1">
+                  {{ data.cb1 }}
+                </md-switch>
+              </div>
+              <div class="ban-col-xs-12 ban-col-sm-9 ban-col-sm-pull-3 ban-col-md-8  ban-col-md-pull-4">
+                <md-radio-group ng-model="cc.selectedId1">
+                  <div ng-repeat='person in cc.contacts1' class="input--roles">
+                    <md-radio-button ng-value="person.id" ng-disabled="person.isDisabled">
+                      {{person.fullName}}
+                    </md-radio-button>
+                  </div>
+                </md-radio-group>
+
+                <p class="input--roles__roles">
+                  <span class="lastName"></span>{{cc.selectedUser1()}}
+                </p>
+              </div>
+            </div>
+            <div class="ban-row h--marginTop1 a_fadein">
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns">
+                  <label>Para mi producto</label>
+                  <md-select required name="servicio" ng-model="usuario.servicio">
+                    <md-option value="1" selected>Acciones</md-option>
+                    <md-option value="2">Banchile Pay</md-option>
+                  </md-select>
+                  <div ng-messages="usuarioForm.servicio.$error">
+                    <div ng-message="required">Este campo es obligatorio.</div>
+                  </div>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns">
+                  <label>En la cuenta</label>
+                  <md-select required name="cuenta" ng-model="usuario.cuenta">
+                    <md-option value="1" selected>001</md-option>
+                    <md-option value="2">002</md-option>
+                    <md-option value="3">003</md-option>
+                    <md-option value="4">004</md-option>
+                  </md-select>
+                  <div ng-messages="usuarioForm.cuenta.$error">
+                    <div ng-message="required">Este campo es obligatorio.</div>
+                  </div>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns">
+                  <label>Con el Fondo Mutuo</label>
+                  <md-select required name="fondoMutuo" ng-model="usuario.fondoMutuo">
+                    <md-option value="1" selected>Cash serie A</md-option>
+                    <md-option value="2">Cash serie B</md-option>
+                    <md-option value="3">Cash serie C</md-option>
+                  </md-select>
+                  <div ng-messages="usuarioForm.fondoMutuo.$error">
+                    <div ng-message="required">Este campo es obligatorio.</div>
+                  </div>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="input--dropdowns">
+                  <label>Monto máximo</label>
+                  <p class="input--txt_pay">CLP</p>
+                  <input required name="monto" ng-model="usuario.monto" class="input--text_monto">
+                  <div ng-messages="usuarioForm.monto.$error">
+                    <div ng-message="required">Este campo es obligatorio.</div>
+                  </div>
+                </md-input-container>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin seccionRoles -->
+        <!-- inicio titutloAutorizacion -->
+        <div class="contenedor--subtitulo h--paddingTop1 a_fadeup1">
+          <h3 class="subtitulo no_visible" when-visible="a_fadeup1">
+            <span class="subtitulo__icono--amarillo">
+              <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+            </span>
+            Autorizar
+          </h3>
+        </div>
+        <!-- fin titutloAutorizacion -->
+        <!-- inicio seccionAutorizacion -->
+        <div class="ban-row a_fadein">
+          <div class="ban-col-md-12">
+            <div ng-include src="'autorizaciones/autorizacion-empresas-editar.html'"></div>
+          </div>
+        </div>
+        <!-- fin seccionAutorizacion -->
+      </div>
+    </form>
+    <!-- boton volver -->
+    <div class="ban-row">
+      <div class="ban-col-xs-3 ban-col-sm-2 ban-col-md-2">
+        <div class="boton--back h--marginBottom2" ng-controller="modalesCrtl">
+          <md-button ng-href="#usuario">
+            <i class="material-icons">arrow_back</i>
+            <span>Volver</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <!-- fin boton volver -->
+  </div>
+</section>

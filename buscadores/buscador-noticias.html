@@ -1,0 +1,75 @@
+<div class="contenedorBuscador--ffmm colorFondo--buscador colorFuente--buscador collapseFFMM">
+  <div class="ban-row">
+    <div class="margen--buscador">
+      <div class="ban-col-sm-6 ban-col-md-6">
+        <md-input-container class="ayuda--input ayuda--buscador">
+          <md-icon>
+            <i class="material-icons buscador--icono">search</i>
+          </md-icon>
+          <label>Palabra clave</label>
+          <input name="texto" ng-model="ffmm.palabra">
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-3 ban-col-md-3">
+        <md-input-container class="ayuda--input">
+          <label>Categorias</label>
+          <md-select name="Categorias" ng-model="ffmm.clasificacion">
+            <md-option value="1">ECONOMIA</md-option>
+            <md-option value="2">COMMODITIES</md-option>
+            <md-option value="3">NACIONAL</md-option>
+            <md-option value="4">INTERNACIONAL</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-3 ban-col-md-3">
+        <div class="buscador--boton">
+          <md-button ng-click="accionesResultado = !accionesResultado" class="boton2 boton--100 md-raised primario" type="button">
+            <span class="ng-scope">Buscar</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- inicio resultados -->
+<div class="h--marginBottom2" ng-show="accionesResultado">
+  <div class="ban-row">
+    <div class="ban-col-sm-12 ban-col-md-12">
+      <div class="resultado--busqueda h--margin2">
+        <p> Se han encontrado 3 resultados</p>
+      </div>
+    </div>
+  </div>
+  <div class="sliderNoticiasRecomendadas" ng-controller="sliderNoticiasRecomendadas">
+    <div class="ban-col-md-4">
+      <div class="noticiasRecomendadas h--shadowBox">
+        <h4>ECONOMÍA</h4>
+        <h3>Hacienda: "No es el momento apropiado"</h3>
+        <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas"</p>
+        <div class="pin"></div>
+        <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+      </div>
+    </div>
+    <div class="ban-col-md-4">
+      <div class="noticiasRecomendadas h--shadowBox">
+        <h4>ECONOMÍA</h4>
+        <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+        <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones
+          el impacto fiscal anual.</p>
+        <div class="pin"></div>
+        <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+      </div>
+    </div>
+    <div class="ban-col-md-4">
+      <div class="noticiasRecomendadas h--shadowBox">
+        <h4>ECONOMÍA</h4>
+        <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+        <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones
+          el impacto fiscal anual.</p>
+        <div class="pin"></div>
+        <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin resultados -->

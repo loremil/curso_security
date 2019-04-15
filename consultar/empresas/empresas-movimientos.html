@@ -1,0 +1,727 @@
+<!-- 17 agosto gbujes-->
+<section>
+  <div class="contenido--background consultar-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Movimientos</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-buscar-descar-fav.html' "></div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+            <div ng-include src=" 'buscadores/buscador-movimientos.html' ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorMovimientos -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-sm-12">
+          <div class="contenedor--subtitulo">
+            <h3 class="subtitulo ">Período Marzo 2016
+            </h3>
+          </div>
+        </div>
+      </div>
+      <table class="a_fadein" wt-responsive-table ng-controller="tablaCartola">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Fecha</th>
+            <th class="tableHead--left">Producto</th>
+            <th class="tableHead--left">Transacción</th>
+            <th class="tableHead--left">Instrumento</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Monto</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- inicio movimientosFFMM-aporte -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in cartola | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.cantidad}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--pending">rotate_right</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Pendiente</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-ffmm-aporte.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- fin movimientosFFMM-aporte -->
+          <!-- inicio movimientosFFMM-rescate -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in cartola2 | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.cantidad}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--check">check</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Aprobado</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-ffmm-rescate.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- fin movimientosFFMM-rescate -->
+          <!-- inicio movimientosCartera-aporte -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in cartola3 | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.cantidad}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--block">block</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Anulado</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-CA-aporte.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- fin movimientosCartera-aporte -->
+          <!-- inicio movimientosCartera-rescate -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in cartola4 | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.cantidad}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--cancel">close</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Rechazado</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-CA-rescate.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- fin movimientosCartera-rescate -->
+          <!-- inicio movimientosAcciones-compra -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in cartola5 | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.cantidad}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--pending">rotate_right</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Pendiente</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="animated fadeIn" src=" 'detalle/detalle-acciones-compra.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- fin movimientosAcciones-compra -->
+          <!-- inicio movimientosMoneda-compra -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in cartola6 | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.cantidad}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--check">check</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Aprobado</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-ME-compraUsd.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- fin movimientosMoneda-compra -->
+          <!-- inicio movimientosMoneda-venta -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in cartola7 | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.cantidad}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--pending">rotate_right</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Pendiente</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-ME-ventaUsd.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- fin movimientosMoneda-venta -->
+          <!-- inicio movimientosCaja-abono -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in cartola8 | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.cantidad}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--pending">rotate_right</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Pendiente</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-CI-abono.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- fin movimientosCaja-abono -->
+          <!-- inicio movimientosCaja-retiro -->
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in cartola9 | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores td--auto">{{usuarios.cantidad}}</td>
+            <td class="td--valores td--auto">{{usuarios.precio}}</td>
+            <td class="td--valores td--auto">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--pending">rotate_right</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Pendiente</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-CI-retiro.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <!-- fin movimientosCaja-abono -->
+        </tbody>
+      </table>
+      <!-- fin tablaMovimientos -->
+      <!-- inicio tablaPaginador -->
+      <div class="pie--tabla animated fadeInDown">
+        <div class="pie--contenido">
+          <div class="ban-row">
+            <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+              <div class="pie--paginacion">
+                <div class="paginacion--accion h--displayNone">
+                  <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                </div>
+                <div class="paginacion--accion h--displayNone">
+                  <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                    <md-option value="1">10</md-option>
+                    <md-option value="2">20</md-option>
+                    <md-option value="3">30</md-option>
+                  </md-select>
+                </div>
+                <div class="paginacion--accion">
+                  <p class="paginacion--parrafo">10 de 22</p>
+                </div>
+                <div class="paginacion--accion">
+                  <md-button class="md-icon-button" aria-label="Atras">
+                    <md-icon>
+                      <i class="material-icons">&#xE314;</i>
+                    </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button" aria-label="Adelante">
+                    <md-icon>
+                      <i class="material-icons">&#xE315;</i>
+                    </md-icon>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin tablaPaginador -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorMovimientos -->

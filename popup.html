@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Banchile</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./bower_components/material-design-icons/iconfont/material-icons.css">
+  <link rel="stylesheet" href="./assets/css/banchile-fonts.css">
+  <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="./assets/css/ban-bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/ban-main.css">
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="./bower_components/angular-responsive-tables/release/angular-responsive-tables.min.css">
+  <link rel="stylesheet" href="./bower_components/ng-scrollbar/ng-scrollbar.min.css">
+  <link rel="stylesheet" href="./bower_components/dragular/dist/dragular.css" />
+  <!-- Todos mis script -->
+  <script src="./bower_components/swiper/dist/js/swiper.min.js"></script>
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-material/angular-material.js"></script>
+  <script src="./bower_components/bower-angular-route-master/angular-route.js"></script>
+  <script src="./bower_components/angular-messages/angular-messages.js"></script>
+  <script src="./assets/js/wow.min.js"></script>
+  <!--scroll animate -->
+  <script src="./bower_components/angular-scroll-animate/dist/angular-scroll-animate.js"></script>
+  <script src="./bower_components/angular-parallax/scripts/angular-parallax.js"></script>
+  <script src="./bower_components/angular-sticky/dist/angular-sticky.js"></script>
+  <!--timer-->
+  <script src="./bower_components/angular-timer/dist/angular-timer.js"></script>
+  <script src="./bower_components/angular-svg-round-progressbar/build/roundProgress.js"></script>
+  <script src="./bower_components/humanize-duration/humanize-duration.js"></script>
+  <script src="./bower_components/moment/moment.js"></script>
+  <!-- este archivo tiene los controladores AngularJS -->
+  <script src="./assets/js/controller.js"></script>
+  <script src="./assets/js/navegacion-popup.js"></script>
+
+
+  <!-- este archivo tiene los controladores AngularJS -->
+  <script src="./bower_components/ng-scrollbar/ng-scrollbar.js"></script>
+  <script src="./bower_components/highcharts/highcharts.js"></script>
+  <script src="./bower_components/highcharts/highcharts-more.js"></script>
+  <script src="./bower_components/highcharts/modules/exporting.js"></script>
+  <script src="./bower_components/highcharts//modules/solid-gauge.js"></script>
+  <script src="./assets/js/angular-progressbar.js"></script>
+  <script src="./bower_components/angular-swiper/dist/angular-swiper.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-responsive-tables/release/angular-responsive-tables.min.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-media-queries/match-media.js"></script>
+  <script src="./bower_components/dragular/dist/dragular.js"></script>
+  <script src="./assets/js/rzslider.js"></script>
+  <script src="./assets/js/menu.js"></script>
+  <script src="./assets/js/menu-animate.js"></script>
+</head>
+
+<body ng-app="banchileApp" class="popup">
+  <div ng-include src="'header/header-blanco.html'"></div>
+  <!--<div ng-include src="'detalle/detalle-abono.html'"></div>-->
+  <div ng-view autoscroll><span>{{currentNavItem}}</span></div>
+</body>
+
+</html>

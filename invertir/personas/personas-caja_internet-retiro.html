@@ -1,0 +1,159 @@
+<!-- 21 Agosto header "gbujes" -->
+<section>
+  <div class="contenido--background invertir-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion ">Retirar de Caja Internet</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-controller="animateCtrl">
+  <div class="ban-container" ng-controller="solicFondoM">
+    <div class="card h--borderRadiusBottom4px">
+      <!-- subtitulo -->
+      <div class="contenedor--subtitulo a_fadeup1">
+        <h3 class="subtitulo ">
+          <span class="subtitulo__icono--verde">
+            <md-icon><i class="material-icons">check</i></md-icon>
+          </span> Saldos y últimos movimientos
+        </h3>
+      </div>
+      <!-- fin subtitulo -->
+      <!-- bloque 1 saldo -->
+      <div class="operacion--seleccion a_fadein">
+        <div class="ban-row">
+          <div class="ban-col-sm-4 ban-col-md-6">
+            <p class="seleccion__label">Saldo disponible en caja</p>
+            <p class="seleccion__fondo">$1.000.000</p>
+          </div>
+          <div class="ban-col-sm-4 ban-col-md-3">
+            <p class="seleccion__montos">Último abono</p>
+            <p class="seleccion__cifra">
+              <span class="cifra__moneda"></span>$100.000</p>
+          </div>
+          <div class="ban-col-sm-4 ban-col-md-3">
+            <p class="seleccion__montos">Último retiro</p>
+            <p class="seleccion__cifra">
+              <span class="cifra__moneda"></span>$150</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- fin bloque 1 saldo -->
+      <!--inicio bloque 2 datos-->
+      <div class="contenedor--subtitulo no_visible" when-visible="a_fadeup1">
+        <h3 class="subtitulo ">
+          <span class="subtitulo__icono--verde">
+            <md-icon><i class="material-icons">check</i></md-icon>
+          </span> Datos del retiro
+        </h3>
+      </div>
+      <div class="ban-row h--marginTop1" ng-init="clp='$'">
+        <div class="ban-col-sm-3 no_visible" when-visible="a_fadein">
+          <md-input-container class="input--dropdowns">
+            <label>Quiero retirar un monto de</label>
+            <p class="input--txt_pay">$</p>
+            <input class="input--text_monto" placeholder="0">
+            <div ng-messages="banchilepayForm.monto.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+      </div>
+      <!--fin bloque 2 datos-->
+      <!-- bloque 3 destino-->
+      <div class="ban-row">
+        <div class="ban-col-xs-12">
+          <div class="contenedor--subtitulo no_visible" when-visible="a_fadeup1">
+            <h3 class="subtitulo ">
+              <span class="subtitulo__icono--amarillo">
+                <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+              </span> Destino del retiro
+            </h3>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3 h--marginTop1">
+          <md-input-container class="input--dropdowns">
+            <label>Al destino</label>
+            <md-select name="pagarDesde" ng-model="pagarDesde">
+              <md-option value="1">Retiro en Efectivo</md-option>
+              <md-option value="2">Cta. Cte. 123.456.789</md-option>
+            </md-select>
+          </md-input-container>
+        </div>
+        <div ng-show="pagarDesde == '1' ">
+          <div ng-include src="'detalle/detalle-operacion-retiroEfectivo.html'"></div>
+        </div>
+      </div>
+      <!--fin bloque 3 destino-->
+
+      <!-- bloque 4 terminos -->
+      <div class="contenedor--subtitulo h--paddingTop1">
+        <h3 class="subtitulo no_visible" when-visible="a_fadeup1">
+          <span class="subtitulo__icono--amarillo">
+            <md-icon><i class="material-icons">arrow_downward</i></md-icon>
+          </span> Confirma tu solicitud
+        </h3>
+      </div>
+      <div class="ban-row no_visible" when-visible="a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-6">
+          <div class="condiciones">
+            <div class="condiciones--texto" height="200">
+              <p>Declaro que he sido informado de lo siguiente:</p>
+              </br>
+              <p>
+                El Cliente declara su intención de entregar en administración a Banchile Administradora General de Fondos S.A. activos de su propiedad, para ser invertidos única y exclusivamente en Fondos Mutuos administrados por la misma Administradora, de modo que
+                ésta, por cuenta y riesgo del Cliente, pueda decidir su inversión, enajenación y demás actividades que correspondan, de acuerdo a las disposiciones del presente Contrato y a las normas legales o reglamentarias vigentes o que se dicten
+                en el futuro.
+                </br>Las partes entienden por “Activos” la totalidad de los recursos en efectivo y cuotas de fondos mutuos de que el Cliente sea titular y que éste entregue a la Administradora para su administración, así como las cuotas de fondos mutuos
+                que éste adquiera para el Cliente en dicha administración y los dividendos y rescates provenientes de las respectivas inversiones que la Administradora efectúe por cuenta del Cliente. En el Anexo al Contrato de Administración de Cartera
+                en Fondos Mutuos se contempla el “Plan de Inversión” donde se señala la Cartera de Fondos Mutuos administrados por la Administradora en la que se deberán mantener invertidos los Activos del Cliente, según se define más adelante. El Cliente
+                podrás mantener una o más Carteras objeto de inversión, las que serán administradas por la Administradora, de acuerdo a los límites establecidos en el respectivo Anexo Plan de Inversión. Con todo, previa firma de un nuevo Anexo, el Cliente
+                podrás siempre y en cualquier tiempo cambiarse de una Cartera a otra a partir del primer proceso de ajuste, según se señala más adelante. Por “Cartera” se entenderá aquel conjunto de cuotas de aquellos fondos mutuos administrados por la
+                Administradora, que componen cada una de las categorías de fondos mutuos en las cuales se invertirán los activos del Cliente. Existirán 7 Carteras denominadas: Cartera Protegida, Cartera Defensiva, Cartera Controlada, Cartera Moderada,
+                Cartera Equilibrada, Cartera Potenciada y Cartera Agresiva, cuyas características, Activo objeto y límites, están definidos en los respectivos Anexos. Sin perjuicio de lo anterior, el número de carteras puede aumentarse en el futuro, de
+                común acuerdo por las partes, mediante la formalización de un nuevo Anexo. Cada vez que el presente Contrato se refiera a la palabra “Fondos Mutuos”, deberá entenderse por tal aquel patrimonio a que se refiere el artículo 28 de la Ley
+                número 20.712 de 2014, administrado para estos efectos por Banchile Administradora General de Fondos S.A.
+              </p>
+            </div>
+            <md-input-container class="input--dropdowns">
+              <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+                He leído y acepto las condiciones
+              </md-checkbox>
+            </md-input-container>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-md-6">
+          <div ng-show="datachecked.check">
+            <div ng-include src="'autorizaciones/autorizacion_operacion-ciRetirar-persona.html'"></div>
+          </div>
+        </div>
+      </div>
+      <!-- fin bloque 4 terminos -->
+    </div>
+    <!-- boton volver -->
+    <div class="ban-row">
+      <div class="ban-col-xs-3 ban-col-sm-2 ban-col-md-2 no_visible" when-visible="a_fadeup1">
+        <div class="boton--back" ng-controller="modalesCrtl">
+          <md-button ng-href="#home-persona">
+            <i class="material-icons">arrow_back</i>
+            <span>Volver</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <!-- fin boton volver -->
+</section>
+<!-- aside include -->
+<section>
+  <md-sidenav class="md-sidenav-right h--positionFix" md-whiteframe="4" md-component-id="right">
+    <div ng-include src="'home-personas.html'"></div>
+  </md-sidenav>
+</section>

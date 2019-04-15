@@ -1,0 +1,55 @@
+
+  <div class="contenedor--subtitulo subtitulos__usuarios">
+    <div class="ban-row">
+      <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+        <h3 class="subtitulo">Rechazar</h3>
+      </div>
+      <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+        <div class="subtitulo--boton">
+          <md-button class="md-icon-button boton--agregar md-button md-ink-ripple" ng-click="cancelar($event)">
+            <md-icon class="boton--agregar--icon ng-scope material-icons">
+              <i class="material-icons">close</i>
+            </md-icon>
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="ban-col-md-12">
+  <md-input-container class="input--dropdowns">
+    <label>Escriba el motivo del rechazo</label><input required name="rechazo" ng-model="autorizaciones.rechazo" md-maxlength="100">
+    <div ng-messages="autorizacionesForm.rechazo.$error">
+      <div ng-message="required">Este campo es obligatorio.</div>
+      <div ng-message="md-maxlength">Ingrese 100 dígitos</div>
+    </div>
+  </md-input-container>
+</div>
+<div class="ban-col-md-6">
+  <div class="autorizacionSms">
+    <div class="autorizacionSms--contenedor" ng-controller="modalesCrtl">
+      <md-button class="md-raised autorizacionSms--boton" ng-click="showAutorizarBeneficiario($event)">
+        <md-icon class="boton--icon"><i class="material-icons">phone_iphone</i></md-icon>
+        <span class="boton--texto">Generar SMS</span>
+      </md-button>
+    </div>
+    <div class="texto--sms">
+      <md-icon class="boton--icon"><i class="material-icons">info</i></md-icon>
+      <p class="">Un SMS llegará a tu celular para autorizar tu operación de manera fácil, rápida y segura</p>
+    </div>
+  </div>
+</div>
+<div class="ban-col-md-6">
+  <div class="claveSeguridad" ng-controller="modalesCrtl">
+    <div class="claveSeguridad--input">
+      <md-input-container class="input--dropdowns">
+        <label>Ingrese clave</label>
+        <md-icon class="dropdowns--icon">
+          <i class="material-icons">verified_user</i></md-icon>
+        <input ng-model="user.autorizacion">
+      </md-input-container>
+    </div>
+    <div class="acciones--botones acciones--botones__rigth " ng-controller="modalesCrtl">
+      <md-button ng-click="showAutorizarBeneficiario($event)" class="boton1 md-raised primario">confirmar</md-button>
+    </div>
+  </div>
+</div>

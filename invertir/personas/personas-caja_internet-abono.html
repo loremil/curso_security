@@ -1,0 +1,110 @@
+<!-- 21 Agosto header "gbujes" -->
+<section>
+  <div class="contenido--background invertir-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion ">Abonar a Caja Internet</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-fav.html' "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-controller="animateCtrl">
+  <div class="ban-container" ng-controller="solicFondoM">
+    <div class="card h--borderRadiusBottom4px">
+      <!-- inicio tituloSaldo -->
+      <div class="contenedor--subtitulo a_fadeup1">
+        <h3 class="subtitulo ">
+          <span class="subtitulo__icono--verde">
+            <md-icon>
+              <i class="material-icons">check</i>
+            </md-icon>
+          </span> Saldos y últimos movimientos
+        </h3>
+      </div>
+      <!-- fin tituloSaldo -->
+      <!-- inicio contenedorSaldo -->
+      <div class="ban-row a_fadein">
+        <div class="ban-col-sm-12">
+          <div class="operacion--seleccion">
+            <div class="ban-row">
+              <div class="ban-col-xs-12 ban-col-sm-7">
+                <p class="seleccion__label">Saldo disponible en caja</p>
+                <p class="seleccion__fondo">$1.000.000</p>
+              </div>
+              <div class="ban-col-xs-12 ban-col-sm-3">
+                <p class="seleccion__montos">Último abono</p>
+                <p class="seleccion__cifra">$100.000</p>
+              </div>
+              <div class="ban-col-xs-12 ban-col-sm-2">
+                <p class="seleccion__montos">Último retiro</p>
+                <p class="seleccion__cifra">$150</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin contenedorSaldo -->
+      <!-- inicio tituloOrigen -->
+      <div class="contenedor--subtitulo no_visible" when-visible="a_fadeup1">
+        <h3 class="subtitulo ">
+          <span class="subtitulo__icono--verde">
+            <md-icon>
+              <i class="material-icons">check</i>
+            </md-icon>
+          </span> Origen del abono
+        </h3>
+      </div>
+      <!-- fin tituloOrigen -->
+      <!-- inicio contenedorAbono -->
+      <div class="ban-row h—paddingTop h--marginBottomcard" ng-controller="solicFondoM">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6 h--marginBottom1 no_visible" when-visible="a_fadein">
+          <div class="operacion--seleccion producto--seleccionado">
+            <div class="ban-row ">
+              <div class="ban-col-sm-6 h--alignCenter">
+                <p class="seleccionado--intro">Abona desde tu banco</p>
+              </div>
+              <div class="ban-col-md-6">
+                <md-button ng-href="popup.html#/popup-cajaInternet" target="popup" onClick="window.open(this.href, this.target, 'width=800, height=500'); return false;"
+                  class="boton2 md-raised primario" ng-click="accionesResultado = !accionesResultado">abonar</md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ban-col-md-12" ng-show="accionesResultado">
+          <div ng-include src="'mensajes/mensajes--alertaAbono.html'"></div>
+        </div>
+        <div class="ban-col-md-3 ban-col-md-offset-9 h--alignRight h--paddingTop2" ng-show="accionesResultado">
+          <md-button class="boton1 md-raised primario" ng-href="#comprobante-12">ver comprobante</md-button>
+        </div>
+      </div>
+      <!-- fin contenedorAbono -->
+    </div>
+    <!-- boton volver -->
+    <div class="ban-row">
+      <div class="ban-col-xs-3 ban-col-sm-2 ban-col-md-2 no_visible" when-visible="a_fadeup1">
+        <div class="boton--back" ng-controller="modalesCrtl">
+          <md-button ng-href="#home-persona">
+            <i class="material-icons">arrow_back</i>
+            <span>Volver</span>
+          </md-button>
+        </div>
+      </div>
+      <!-- fin boton volver -->
+    </div>
+</section>
+<!-- inicio includes -->
+<section>
+  <md-sidenav class="md-sidenav-right h--positionFix" md-whiteframe="4" md-component-id="right">
+    <div ng-include src="'detalle/detalle-abono.html'"></div>
+  </md-sidenav>
+</section>
+<!-- fin includes -->

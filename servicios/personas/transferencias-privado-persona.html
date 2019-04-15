@@ -1,0 +1,363 @@
+<section>
+  <div class="contenido--background servicios-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Transferencias</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-buscar-fav.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include class="animated fadeIn" src=" 'buscadores/buscador-ffmm-privado-empresas.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerTransferencias">
+      <!-- este div col 12 es necesario para imagenes full -->
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Envía dinero de manera simple</h3>
+        </div>
+        <div class="cuadroFlotanteP ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Gracias a nuestra conexión con distintos bancos internacionales podemos realizar pagos y transferencias dentro
+            y fuera de Chile en forma rápida, segura y confiable.
+          </p>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <a href="#">¿Cómo crear un beneficiario?</a>
+          <a href="#transferencias-publico-empresa">¿Cómo enviar dinero?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio tituloInstrucciones -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2 a_fadeup1">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados">Instrucciones para transferencias internacionales</h3>
+          <p class="bajada--texto">Puedes ver todos los movimientos sin instruir de todos los productos en la sección instrucciones</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio tituloInstrucciones -->
+<!-- inicio contendorInstrucciones -->
+<section>
+  <div class="ban-container">
+    <div class="card tablaMaster">
+      <!-- inicio movimientosInstrucciones -->
+      <table fixed-header class="a_fadein" wt-responsive-table ng-controller="tablaCartola">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Fecha</th>
+            <th class="tableHead--left">Producto</th>
+            <th class="tableHead--left">Transacción</th>
+            <th class="tableHead--left">Instrumento</th>
+            <th>Nº de Orden</th>
+            <th>Monto</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in transferencia | orderBy : sort" class="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos td--auto">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores">{{usuarios.orden}}</td>
+            <td class="td--valores">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--botones">
+              <div class="td--botonesTransar">
+                <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#transferencia-internacional-persona">Completar</md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-hide="!usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-transferenciasSinInstruir.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin movimientosInstrucciones -->
+      <!-- inicio botonPendientes -->
+      <div class="ban-col-md-12 h--alignCenter h--paddingTop1">
+        <md-button class="boton2 md-raised primario boton--xl" href="#personas-transaccionesTransf">Ver todas las pendientes</md-button>
+      </div>
+      <!-- fin botonPendientes -->
+    </div>
+  </div>
+</section>
+<!-- fin contendorInstrucciones -->
+<!-- inicio tituloTransferencias -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2 no_visible" when-visible="a_fadeup1">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados">Últimas transferencias ingresadas</h3>
+          <p class="bajada--texto">Puedes ver todos los movimientos en la sección Movimientos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio tituloITransferencias -->
+<!-- inicio contendorTransferencias -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster">
+      <!-- inicio ultimasTransferencias -->
+      <table fixed-header class="a_fadein" wt-responsive-table ng-controller="tablaCartola">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Fecha</th>
+            <th class="tableHead--left">Producto</th>
+            <th class="tableHead--left">Transacción</th>
+            <th class="tableHead--left">Instrumento</th>
+            <th>Nº de Orden</th>
+            <th>Monto</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-class="{'tr--active': usuarios.expanded}" ng-click="usuarios.expanded = !usuarios.expanded" ng-repeat-start="usuarios in transferencia | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button" ng-if="usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button" ng-if="!usuarios.expanded">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal">{{usuarios.fecha}}</td>
+            <td class="td--datos td--auto">{{usuarios.producto}}</td>
+            <td class="td--datos">{{usuarios.transaccion}}</td>
+            <td class="td--datos td--auto">{{usuarios.instrumento}}</td>
+            <td class="td--valores">{{usuarios.orden}}</td>
+            <td class="td--valores">{{usuarios.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                <md-icon>
+                  <i class="material-icons">&#xE316;</i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                <md-icon>
+                  <i class="material-icons">&#xE313;</i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--iconos">
+              <md-button class="md-icon-button" aria-label="comprobante">
+                <md-icon>
+                  <i class="material-icons icono--check">check</i>
+                </md-icon>
+                <md-tooltip md-direction="bottom">Aprobado</md-tooltip>
+              </md-button>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">description</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-hide="!usuarios.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="a_fadein" src=" 'detalle/detalle-transferenciasIngresadas.html' "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin ultimasTransferencias -->
+      <!-- inicio botonPendientes -->
+      <div class="ban-col-md-12 h--alignCenter h--paddingTop1">
+        <md-button class="boton2 md-raised primario boton--xl" href="#personas-transaccionesTransf">ver todos las ingresadas</md-button>
+      </div>
+      <!-- fin botonPendientes -->
+    </div>
+  </div>
+</section>
+<!-- fin contendorTransferencias -->
+<!-- inicio sliderCajas -->
+<section>
+  <div class="ban-container animated fadeInDown">
+    <div class="card h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2">
+      <div class="ban-row" ng-controller="solicFondoM">
+        <!-- slider indicadores-->
+        <div ng-controller="sliderCajas">
+          <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html" target="_blank">
+                <div class="ban-col-sm-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f2.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>LÍDERES INDISCUTIDOS-v3</h3>
+                        <p>
+                          Por quinto año consecutivo somos líderes en el mercado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html" target="_blank">
+                <div class="ban-col-md-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f1.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>AHORRO PREVISIONAL VOLUNTARIO</h3>
+                        <p>
+                          Asegura tu futuro hoy con la asesoría de un experto
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html" target="_blank">
+                <div class="ban-col-md-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f2.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>LÍDERES INDISCUTIDOS</h3>
+                        <p>
+                          Por quinto año consecutivo somos líderes en el mercado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html" target="_blank">
+                <div class="ban-col-md-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f1.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>AHORRO PREVISIONAL VOLUNTARIO</h3>
+                        <p>
+                          Asegura tu futuro hoy con la asesoría de un experto
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+          </ks-swiper-container>
+        </div>
+        <!--fin slider indicadores-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- fin sliderCajas -->

@@ -1,0 +1,45 @@
+<!-- 17 agosto gbujes-->
+<section>
+  <div class="contenido--background definir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row h--marginBottom2 animated fadeInDown ">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion ">Usuarios</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+       <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7" >
+          <div id="select-cuenta"  ng-include src=" 'select-cuenta/empresas/card-cuenta-buscar-add-fav-usuario.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+           <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+              <div ng-include src=" 'buscadores/buscador-documentos.html' ">
+              </div>
+           </div>
+        </div>
+        <!-- fin buscador -->
+     </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <div class="card h--marginBottomcard">
+      <div class="configuracion">
+        <p class="configuracion--usuario">Esteban Henríquez</p>
+        <h2 class="configuracion--bienvenido">Lo sentimos no puedes ver esta página
+                            </h2>
+        <p class="configuracion--mensaje">
+          No cuentas con los permisos suficientes para acceder a este contenido, te sugerimos comunicarte con el administrador de tu sitio.
+        </p>
+        <div class="contenedor--botones">
+          <md-button href="#resumen" class="boton1 md-raised">Aceptar</md-button>
+        </div>
+      </div>
+    </div>
+    <!--Fin card 1-->
+  </div>
+</section>

@@ -1,0 +1,447 @@
+<!-- giss 16 nov-->
+<section>
+  <div class="contenido--background invertir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Fondos Mutuos</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-buscar-fav.html' "></div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+            <div ng-include src=" 'buscadores/buscador-ffmm.html' ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerFondosMutuos">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Recomendamos</h3>
+        </div>
+        <div class="cuadroFlotanteP ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Invertir en Fondos Mutuos Balanceados, son productos auto-gestionados, lo que te permite seguir una estrategia de inversión de acuerdo a tu perfil de riesgo sin esfuerzo.
+          </p>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <a href="#">Aprende más sobre Fondos Mutuos</a>
+          <a href="#">¿Cómo leer un folleto informativo?</a>
+          <a href="#">Más asesoría sobre mis inversiones</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio tituloFondosRecomendados -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados a_fadeup1">Fondos recomendados</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloFondosRecomendados -->
+<!-- inicio contenedorFondosRecomendados -->
+<section ng-controller="animateCtrl">
+  <div class="ban-container">
+    <div class="card tablaMaster">
+      <!-- inicio carteraFFMM CLP -->
+      <table class="h--marginTop1 a_fadein" wt-responsive-table ng-controller="tablaFFMM">
+        <thead class="tableHead--recomendado">
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Fondo Mutuo</th>
+            <th>%30 días</th>
+            <th>%1 año</th>
+            <th>Nº cuotas</th>
+            <th>Monto</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in fondomRecomend | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal td--auto" data-title="Fondo Mutuo">{{fondomut.producto}}</td>
+            <td class="td--valores" data-title="%30 días">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="%1 año">{{fondomut.ano}}</td>
+            <td class="td--valores" data-title="Nº cuotas">{{fondomut.cuota}}</td>
+            <td class="td--valores" data-title="Monto">{{fondomut.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--botones-x2">
+              <div class="td--botonesTransar">
+                <md-button class="boton--aportar md-raised primario" href="#fondosmutuos-aporte-clp">Aportar</md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm-privado-personas.html'"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin carteraFFMM CLP -->
+      <!-- inicio carteraFFMM USD -->
+      <table class="a_fadein" wt-responsive-table ng-controller="tablaFFMM">
+        <tbody>
+          <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in fondousd | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal td--auto" data-title="Fondo Mutuo">{{fondomut.producto1}}</td>
+            <td class="td--valores" data-title="%30 días">{{fondomut.dias1}}</td>
+            <td class="td--valores" data-title="%1 año">{{fondomut.ano1}}</td>
+            <td class="td--valores" data-title="Nº cuotas">{{fondomut.cuota1}}</td>
+            <td class="td--valores" data-title="Monto">{{fondomut.monto1}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--botones-x2">
+              <div class="td--botonesTransar">
+                <md-button class="boton--rescatar md-raised" href="#fondosmutuos-rescate">Rescatar</md-button>
+                <md-button class="boton--aportar md-raised primario" href="#fondosmutuos-aporte-usd">Aportar</md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido">
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm-privado-personas.html'"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin carteraFFMM USD -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorFondosRecomendados -->
+<!-- inicio tituloFondosRecomendados -->
+<section ng-controller="animateCtrl">
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados no_visible" when-visible="a_fadeup1">Mi cartera de Fondos Mutuos</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloFondosRecomendados -->
+<!-- inicio contenedorFondosCartera -->
+<section ng-controller="animateCtrl">
+  <div class="ban-container">
+    <div class="card tablaMaster">
+      <!-- inicio carteraFFMM -->
+      <table class="h--marginTop1" wt-responsive-table ng-controller="tablaFFMM">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Fondo Mutuo</th>
+            <th>%30 días</th>
+            <th>%1 año</th>
+            <th>Nº cuotas</th>
+            <th>Monto</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in fondom | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal td--auto" data-title="Fondo Mutuo">{{fondomut.producto}}
+              <div class="cartera--ico" aria-label="Ya tienes este Fondo">
+                <i class="material-icons icons--color icons--small">work</i>
+              </div>
+            </td>
+            <td class="td--valores" data-title="%30 días">{{fondomut.dias}}</td>
+            <td class="td--valores" data-title="%1 año">{{fondomut.ano}}</td>
+            <td class="td--valores" data-title="Nº cuotas">{{fondomut.cuota}}</td>
+            <td class="td--valores" data-title="Monto">{{fondomut.monto}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--botones-x2">
+              <div class="td--botonesTransar">
+                <md-button class="boton--rescatar md-raised" href="#fondosmutuos-rescate">Rescatar</md-button>
+                <md-button class="boton--aportar md-raised" href="#fondosmutuos-aporte-clp">Aportar</md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+            <td colspan="7">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido tableContenido__margin">
+                  <tbody>
+                  </tbody>
+                </table>
+                <table class="table tableContenido tableContenido__margin tableContenido__cuenta" wt-responsive-table>
+                  <tbody>
+                    <tr>
+                      <td colspan="7">
+                        <div ng-include class="fadeIn animated" src="'detalle/detalle-cuenta-fm-privado-personas.html'"></div>
+                      </td>
+                    </tr>
+                    <tr class="tableContenido--detalle info--detalle" ng-repeat="fondomut in cuenta | orderBy : sort">
+                      <td class="td--width">
+                      </td>
+                      <td class="cuenta--texto">
+                        <p class="numero--cta">{{fondomut.cuenta}}</p>
+                        <p> Beneficio Tributario
+                          <span>57 BIS</span>
+                        </p>
+                      </td>
+                      <td class="cuenta--texto">
+                        <p> Plan de inversión
+                          <span>normal</span>
+                        </p>
+                        <p>Monto libre de comisión
+                          <span>$5.000.000</span>
+                        </p>
+                      </td>
+                      <td class="cuenta--texto">
+                        <p> Monto
+                          <span>$14.601</span>
+                        </p>
+                        <p> Número de cuotas
+                          <span>14.601,0987</span>
+                        </p>
+                      </td>
+                      <td colspan="3" class="contenido--botones">
+                        <div class="datos--botones">
+                          <md-button md-no-ink class="boton--aportar md-raised" href="#fondosmutuos-aporte-clp">Aportar</md-button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tableContenido--detalle info--detalle">
+                      <td class="td--width">
+                      </td>
+                      <td class="cuenta--texto">
+                        <p class="numero--cta">Cuenta nueva</p>
+                      </td>
+                      <td class="cuenta--texto">
+                      </td>
+                      <td class="cuenta--texto">
+                      </td>
+                      <td colspan="3" class="contenido--botones">
+                        <div class="datos--botones">
+                          <md-button md-no-ink class="boton--aportar md-raised" href="#fondosmutuos-aporte-cargando">Aportar</md-button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin carteraFFMM -->
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorFondosCartera -->
+<!-- inicio sliderCajas -->
+<section ng-controller="animateCtrl">
+  <div class="ban-container">
+    <div class="card h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2">
+      <div class="ban-row no_visible" when-visible="a_fadein">
+        <!-- slider indicadores-->
+        <div ng-controller="sliderCajas">
+          <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html">
+                <div class="ban-col-sm-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f2.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>LÍDERES INDISCUTIDOS-v3</h3>
+                        <p>
+                          Por quinto año consecutivo somos líderes en el mercado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html">
+                <div class="ban-col-md-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f1.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>AHORRO PREVISIONAL VOLUNTARIO</h3>
+                        <p>
+                          Asegura tu futuro hoy con la asesoría de un experto
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html">
+                <div class="ban-col-md-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f2.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>LÍDERES INDISCUTIDOS</h3>
+                        <p>
+                          Por quinto año consecutivo somos líderes en el mercado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <a href="landing.html">
+                <div class="ban-col-md-12 h--marginTop1">
+                  <div class="cajaContainer-informacion">
+                    <div class="informacion--cajas">
+                      <div class="cajas--imagen">
+                        <img src="assets/images/resumen_banner2_f1.jpg" alt="">
+                      </div>
+                      <div class="cajas--texto">
+                        <h3>AHORRO PREVISIONAL VOLUNTARIO</h3>
+                        <p>
+                          Asegura tu futuro hoy con la asesoría de un experto
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+          </ks-swiper-container>
+        </div>
+        <!--fin slider indicadores-->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin sliderCajas -->

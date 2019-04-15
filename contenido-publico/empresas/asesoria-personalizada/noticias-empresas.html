@@ -1,0 +1,232 @@
+<!-- loreto 5 enero -->
+
+<section>
+  <div class="contenido--background asesoria-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-10 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Noticias</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-2 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-buscar-fav.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include src=" 'buscadores/buscador-noticias.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerNoticias contenido--publico">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Departamento de noticias</h3>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Nuestro departamento de noticias continuamente trabaja en elaborar entrevistas, notas y artículos sobre la economía nacional e internacional manteniendo a todos nuestros clientes informados sobre el acontecer económico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio contenedorNoticiasPrincipales -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="homeNoticias">
+        <div class="ban-row">
+          <div class="ban-col-md-8 no_visible" when-visible="a_fadeup1">
+            <div class="cardNoticias noticiaDestacada h--shadowBox">
+              <div class="ban-col-sm-6">
+                <div class="contenenedor--noticiaDestacada">
+                  <h4>ECONOMÍA</h4>
+                  <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                  <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado
+                    laboral y calculó en US$ 15 millones el impacto fiscal anual.hoy poner "nuevas cargas" al mercado
+                      laboral y calculó en US$ 15 millones el impacto fiscal anual.hoy poner "nuevas cargas" al mercado
+                        laboral y calculó en US$ 15 millones el impacto fiscal anual.hoy poner "nuevas cargas" al mercado
+                          laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                  <div class="pin"></div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6">
+                <div class="contenenedor--imagenDestacada">
+                  <img src="assets/images/noticia-destacada-card.jpg" alt="">
+                </div>
+              </div>
+              <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+            </div>
+          </div>
+          <div class="ban-col-md-4 no_visible" when-visible="a_fadeup2">
+            <div class="newsLetter h--shadowBoxNoHover">
+              <h4>INFORMES PÚBLICOS</h4>
+              <h3>SUSCRIBETE Y RECIBE NUESTROS INFORMES PÚBLICOS SEMANALMENTE.</h3>
+              <p>Recibirás informes a tu correo realizados por el mejor equipo.</p>
+              <div class="newsLetterFormulario">
+                <div class="ban-row">
+                  <div class="ban-col-md-12 inputBlanco">
+                    <md-input-container class="inputBlanco">
+                      <label>Ingresa aquí tu correo</label>
+                      <input name="texto" ng-model="ffmm.palabra">
+                    </md-input-container>
+                  </div>
+                  <div class="ban-col-md-12 ">
+                    <div class="buscador--boton">
+                      <md-button class="boton2 boton--100 md-raised primario" type="button">
+                        <span class="ng-scope">Enviar</span>
+                      </md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ban-row">
+          <div class="ban-col-md-4 no_visible" when-visible="a_fadeup1">
+            <div class="cardNoticias noticiasNormales h--shadowBox">
+              <div class="contenedorimg--noticiasNormales">
+                <img src="assets/images/noticia-normal-card1.jpg" alt="">
+              </div>
+              <div class="contenedor--noticiaNormales">
+                <h4>ECONOMIA</h4>
+                <h3>Banchile Inversiones lanza su nueva aplicación compatible con IOS y Android.</h3>
+                <p>Dirigido a inversionistas, su nueva aplicación permite operar con diferentes productos, pudiendo comprar y vender acciones desde cualquier lugar.</p>
+              </div>
+              <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+            </div>
+          </div>
+          <div class="ban-col-md-4 no_visible" when-visible="a_fadeup2">
+            <div class="cardNoticias noticiasNormales h--shadowBox">
+              <div class="contenedorimg--noticiasNormales">
+                <img src="assets/images/noticia-normal-card2.jpg" alt="">
+              </div>
+              <div class="contenedor--noticiaNormales">
+                <h4>COMMODITIES</h4>
+                <h3>El cobre vuelve a las alzas en Londres.</h3>
+                <p>La cotización del metal rojo, principal producto de exportación del país, subió 0,26%, hasta los US$ 2,70160 la libra.</p>
+              </div>
+              <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+            </div>
+          </div>
+          <div class="ban-col-md-4 no_visible" when-visible="a_fadeup3">
+            <div class="cardNoticias noticiasNormales h--shadowBox">
+              <div class="contenedorimg--noticiasNormales">
+              </div>
+              <div class="contenedor--noticiaNormales">
+                <h4>ECONOMIA</h4>
+                <h3>Familia Luksic solicita el texto íntegro de la resolución sobre el Banco Popular.</h3>
+                <p>Aeris Invest solicitó también informe secreto que elaboró Deloitte para la entidad financiera española.
+                </p>
+              </div>
+              <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-md-12 a_fadein">
+        <div class="contenedor--botones h--marginTop1 h--paddingBottom2 h--alignCenter">
+          <md-button class="boton1 md-raised boton--xl" when-visible="a_fadeup1" type="button">
+            <span class="ng-scope">Cargar mas noticias</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorNoticiasPrincipales -->
+<!-- inicio tituloNoticias -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2 no_visible" when-visible="a_fadein">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados">Noticias relacionadas</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio tituloNoticias -->
+<!-- inicio contenedorNoticias -->
+<section>
+  <div class="ban-container h--marginBottom4">
+    <div class="card h--borderRadiusBottom4px">
+      <div class="sliderNoticiasRecomendadas" ng-controller="sliderNoticiasRecomendadas">
+        <ks-swiper-container class="sliderCards" override-parameters="noticiasRecomendadas" show-nav-buttons="true">
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado"</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas"</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+        </ks-swiper-container>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin co 5n3z21ºtenedorNoticias -->

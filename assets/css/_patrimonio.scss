@@ -1,0 +1,69 @@
+/* PATRIMONIO*/
+.graficoPatrimonio {
+        margin: 1em 0 2em 0;
+    .graficoPatrimonio--swiper-container {
+        .highcharts-container {
+            margin: auto;
+        }
+        .swiper-container {
+						width: 100%;
+        }
+        .swiper-container-horizontal>.swiper-pagination-bullets {
+            bottom: 0 !important;
+        }
+        .swiper-pagination-bullet-active {
+            background: #5BABBF;
+        }
+    }
+    .swiper-slide-active>.graficoPatrimonio--slideProducto {
+        padding: 0;
+        position: relative;
+    }
+    .graficoPatrimonio--swiperSlide.swiper-slide-active {
+        padding: 0;
+    }
+    .swiper-slide .graficoPatrimonio--slideProducto {
+        padding: 0;
+        /* float: none; */
+    }
+    .graficoPatrimonio--slideProducto__textos {
+        width: 100%;
+        text-align: center;
+        margin: auto !important;
+        position: absolute;;
+        top: 30%;
+        .nombre,
+        .monto,
+        .fecha {
+            display: block;
+        }
+        span.nombre {
+						margin: 0 auto;
+	          width: 60%;
+						@include font-16;
+        }
+        span.monto {
+            @include roboto-normal;
+            @include font-16;
+            padding: 20px 0;
+        }
+        span.porcentaje {
+            @include font-20;
+            color: #69B4C5;
+        }
+        span.fecha {
+            color: #B3B5BB;
+            @include font-9;
+        }
+    }
+}
+
+// .bajada--texto{
+//    text-align: center;
+//    font-family: 'robotolight';
+// 		margin-top: 15px;
+//      @include font-14;
+//      line-height: 1.5em;
+//      margin-bottom: 15px;
+// }
+/* FIN PATRIMONIO*/

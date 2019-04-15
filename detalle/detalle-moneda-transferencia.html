@@ -1,0 +1,65 @@
+<div ng-controller="solicFondoM">
+  <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+    <md-input-container class="input--dropdowns">
+      <label>A mi beneficiario</label>
+      <md-select name="beneficiario" ng-model="banchilepay.beneficiario">
+        <md-option value="1">Beneficiario 1</md-option>
+        <md-option value="2">Beneficiario 2</md-option>
+        <md-option value="3">Beneficiario 3</md-option>
+      </md-select>
+      <div class="input--hint_select">Previamente registrado</div>
+      <div ng-messages="banchilepayForm.BancoCuenta.$error">
+        <div ng-message="required">Este campo es obligatorio.</div>
+      </div>
+    </md-input-container>
+  </div>
+  <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+    <md-input-container class="input--dropdowns">
+      <label>En el Banco y Cuenta</label>
+      <md-select required name="BancoCuenta" ng-model="banchilepay.BancoCuenta">
+        <md-option value="1">Banco/cuenta 0001</md-option>
+        <md-option value="2">Banco/cuenta 0002</md-option>
+        <md-option value="3">Banco/cuenta 0003</md-option>
+      </md-select>
+      <div class="input--hint_select">Definidos en el registro de beneficiarios</div>
+      <div ng-messages="banchilepayForm.BancoCuenta.$error">
+        <div ng-message="required">Este campo es obligatorio.</div>
+      </div>
+    </md-input-container>
+  </div>
+  <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+    <md-input-container class="input--dropdowns">
+      <label>Por Concepto de pago</label>
+      <md-select name="ConceptoPago" ng-model="banchilepay.ConceptoPago">
+        <md-option value="1">0001 Concepto de Pago</md-option>
+        <md-option value="2">0002 Concepto de Pago</md-option>
+        <md-option value="3">0003 Concepto de Pago</md-option>
+      </md-select>
+      <div class="input--hint_select">Asociado a código de Banco Central</div>
+    </md-input-container>
+  </div>
+  <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+    <md-input-container class="input--dropdowns">
+      <label>Un monto de</label>
+      <p class="input--txt_pay">US$</p>
+      <input class="input--text_monto" placeholder="$0">
+      <div ng-messages="banchilepayForm.monto.$error">
+        <div ng-message="required">Este campo es obligatorio.</div>
+      </div>
+    </md-input-container>
+  </div>
+  <!-- <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-9"> -->
+  <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+    <md-input-container class="input--dropdowns">
+      <label>Observacioness</label>
+      <textarea rows="1" md-select-on-focus="" placeholder="Ingresa tus observaciones "></textarea>
+    </md-input-container>
+  </div>
+  <!-- <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+    <div class="bubble-amarillo ">
+      <p class="bubble__label">Comisión estimada</p>
+      <p class="bubble__monto">$<span class="h--pullRight" >460,000</span></p>
+    </div>
+  </div> -->
+
+</div>

@@ -1,0 +1,117 @@
+<div class="contenedorBuscador--ffmm colorFondo--buscador colorFuente--buscador collapseFFMM">
+  <div class="ban-row">
+    <div class="margen--buscador">
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input ayuda--buscador">
+          <md-icon><i class="material-icons buscador--icono">search</i></md-icon>
+          <label>Palabra clave</label>
+          <input name="texto" ng-model="ffmm.palabra">
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input">
+          <label>Paridad</label>
+          <md-select name="clasificacion" ng-model="ffmm.clasificacion">
+            <md-option value="1">CLP</md-option>
+            <md-option value="2">USD</md-option>
+            <md-option value="2">EUR</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3 ban-col-md-offset-3">
+        <div class="buscador--boton">
+          <md-button ng-click="accionesResultado = !accionesResultado" class="boton2 boton--100 md-raised primario" type="button">
+            <span class="ng-scope">Buscar</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- inicio resultados -->
+<div class="h--paddingBottom1" ng-show="accionesResultado">
+  <!-- inicio resultados -->
+  <div class="ban-row">
+    <div class="ban-col-sm-12 ban-col-md-12">
+      <div class="resultado--busqueda h--margin2">
+        <p> Se han encontrado 3 resultados</p>
+      </div>
+      <div class="tags">
+        <ul>
+          <li class="tags--chip">USD/CLP <button class="chip--cerrar" aria-label="cerrar"><md-icon class="material-icons"><i class="material-icons icono">close</i></md-icon></button></li>
+          <li class="tags--chip">USD/EUR<button class="chip--cerrar" aria-label="cerrar"><md-icon class="material-icons"><i class="material-icons icono">close</i></md-icon></button></li>
+          <li class="tags--chip">AUD/USD<button class="chip--cerrar" aria-label="cerrar"><md-icon class="material-icons"><i class="material-icons icono">close</i></md-icon></button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- fin resultados -->
+  <!-- inicio tabla -->
+  <table class="table tableContenido h--marginTop1" wt-responsive-table ng-controller="tablaFFMM">
+    <thead class="tableContenido--head head__tablaresultado">
+      <tr>
+        <th></th>
+        <th class="td--label">Moneda</th>
+        <th>Paridad</th>
+        <th>Var(%)</th>
+        <th>Hora</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tableContenido--info info__descripcion">
+        <td class="info--iconos"></td>
+        <td class="info--title" data-title="">Fondos Money Market</td>
+        <td class="info--descrip" data-title="" colspan="6" data-title="Fondos Money Market">Son una atractiva opción para no adquirir riesgos elevados, pero aún así obtener rentabilidades competitivas en el corto plazo. </td>
+      </tr>
+      <tr class="tableContenido--info info--detalle" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in monedaExt | orderBy : sort">
+        <td class="info--iconos">
+          <md-button class="md-icon-button icons" ng-click="fondomut.expandedd = false" ng-if="fondomut.expandedd">
+            <md-icon>
+              <i class="material-icons"></i>
+            </md-icon>
+          </md-button>
+          <md-button class="md-icon-button icons" ng-click="fondomut.expandedd = true" ng-if="!fondomut.expandedd">
+            <md-icon>
+              <i class="material-icons"></i>
+            </md-icon>
+          </md-button>
+        </td>
+        <td class="info--principal__cuenta" data-title="Fondo Mutuo">{{fondomut.moneda}}</td>
+        <td class="valor--td__info" data-title="%30 días">{{fondomut.paridad}}</td>
+        <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">
+          <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+          <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+          <div class="valor--td__variacion">{{fondomut.variacion}}%</div>
+        </td>
+        <td class="valor--td__info" data-title="Nº cuotas">{{fondomut.hora}}</td>
+        <td class="contenido--botones">
+          <div class="datos--botones">
+            <md-button class="boton--aportar md-raised" href="#/pmoneda-compra">Comprar</md-button>
+            <md-button class="md-icon-button ver--mas" data-title="ver detalle" ng-click="fondomut.expandedd = false" ng-if="fondomut.expandedd">
+              <md-icon><i class="material-icons">&#xE316;</i> </md-icon>
+            </md-button>
+            <md-button class="md-icon-button ver--mas" data-title="ver detalle" ng-click="fondomut.expandedd = true" ng-if="!fondomut.expandedd">
+              <md-icon><i class="material-icons">&#xE313;</i> </md-icon>
+            </md-button>
+          </div>
+        </td>
+      </tr>
+      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+        <td colspan="12">
+          <table class="tableContenido tableContenido__margin">
+            <tbody>
+              <tr>
+                <td class="contenidoDesplegable" colspan="7">
+                  <div ng-include src="'detalle/detalle-cuenta-moneda.html'"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- fin resultados -->

@@ -1,0 +1,279 @@
+<!-- 24 nov jorge IE -tabs-->
+<section>
+  <div class="contenido--background reputacion-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion">Preguntas Frecuentes</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerFAQ contenido--publico">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Resolvemos tus dudas</h3>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Preguntas y respuestas sobre los productos y servicios de Banchile Inversiones
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio contenedorPreguntas -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2 h--paddingTop2">
+      <!-- inicio preguntasFreguntes -->
+      <div class="card--contenido">
+        <div class="documentos a_fadein">
+          <md-tabs md-dynamic-height md-border-bottom>
+            <!-- inicio preguntasFFMM -->
+            <md-tab label="Fondos Mutuos">
+              <table ng-controller="tablaPreguntasFrecuentesFFMM">
+                <tbody ng-repeat="categoria in categorias">
+                  <tr class="tr--informativo" ng-click="categoria.expanded = !categoria.expanded" ng-class="{'tr--active': categoria.expanded}">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal td--auto">{{categoria.pregunta}}</td>
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--informativoDesplegable animacionApertura" ng-hide="!categoria.expanded">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="contenidoDesplegable--info info__detalle" colspan="7">
+                                {{categoria.respuesta}}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin preguntasFFMM -->
+            <!-- inicio preguntasAcciones -->
+            <md-tab label="Acciones">
+              <table ng-controller="tablaPreguntasFrecuentesAcciones">
+                <tbody ng-repeat="categoria in categorias">
+                  <tr class="tr--informativo" ng-click="categoria.expanded = !categoria.expanded" ng-class="{'tr--active': categoria.expanded}">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal td--auto">{{categoria.pregunta}}</td>
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--informativoDesplegable animacionApertura" ng-hide="!categoria.expanded">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="contenidoDesplegable--info info__detalle" colspan="7">
+                                {{categoria.respuesta}}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin preguntasAcciones -->
+            <!-- inicio preguntasMoneda -->
+            <md-tab label="Moneda Extranjera">
+              <table ng-controller="tablaPreguntasFrecuentesMX">
+                <tbody ng-repeat="categoria in categorias">
+                  <tr class="tr--informativo" ng-click="categoria.expanded = !categoria.expanded" ng-class="{'tr--active': categoria.expanded}">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal td--auto">{{categoria.pregunta}}</td>
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--informativoDesplegable animacionApertura" ng-hide="!categoria.expanded">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="contenidoDesplegable--info info__detalle" colspan="7">
+                                {{categoria.respuesta}}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin preguntasMoneda -->
+            <!-- inicio preguntasAPV -->
+            <md-tab label="APV">
+              <table ng-controller="tablaPreguntasFrecuentesAPV">
+                <tbody ng-repeat="categoria in categorias">
+                  <tr class="tr--informativo" ng-click="categoria.expanded = !categoria.expanded" ng-class="{'tr--active': categoria.expanded}">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal td--auto">{{categoria.pregunta}}</td>
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--informativoDesplegable animacionApertura" ng-hide="!categoria.expanded">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="contenidoDesplegable--info info__detalle" colspan="7">
+                                {{categoria.respuesta}}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin preguntasAPV -->
+            <!-- inicio preguntasCarteraActiva -->
+            <md-tab label="Cartera Activa">
+              <table ng-controller="tablaPreguntasFrecuentesCAct">
+                <tbody ng-repeat="categoria in categorias">
+                  <tr class="tr--informativo" ng-click="categoria.expanded = !categoria.expanded" ng-class="{'tr--active': categoria.expanded}">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal td--auto">{{categoria.pregunta}}</td>
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--informativoDesplegable animacionApertura" ng-hide="!categoria.expanded">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="contenidoDesplegable--info info__detalle" colspan="7">
+                                {{categoria.respuesta}}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin preguntasCarteraActiva -->
+            <!-- inicio preguntasFondosInversion -->
+            <md-tab label="ActivaFondos de Inversión">
+              <table ng-controller="tablaPreguntasFrecuentesFInv">
+                <tbody ng-repeat="categoria in categorias">
+                  <tr class="tr--informativo" ng-click="categoria.expanded = !categoria.expanded" ng-class="{'tr--active': categoria.expanded}">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button icons" ng-if="categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button icons" ng-if="!categoria.expanded">
+                        <md-icon>
+                          <i class="material-icons"></i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal td--auto">{{categoria.pregunta}}</td>
+                  </tr>
+                  <tr aria-label="Toggle ngHide" class="tr--informativoDesplegable animacionApertura" ng-hide="!categoria.expanded">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="contenidoDesplegable--info info__detalle" colspan="7">
+                                {{categoria.respuesta}}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </md-tab>
+            <!-- fin preguntasFondosInversion -->
+          </md-tabs>
+        </div>
+      </div>
+      <!-- fin preguntasFreguntes -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPreguntas -->

@@ -1,0 +1,16 @@
+<!-- modal 11/09 -->
+<div class="modal modales-m">
+  <md-dialog flex="auto">
+    <div class="mensajeTitulo--container">
+      <i class="material-icons statusExito__small">check_circle</i>
+      <h2 class="mensajeTitulo__exito ">Tu compra ha sido realizada con éxito</h2>
+      <p class="mensajeTexto__large">Puedes revisar tu comprobante o instruir tus dólares inmediatamente</p>
+      <div class="ban-col-md-12">
+        <div class="contenedor--botones" ng-controller="modalesCrtl">
+           <md-button ng-href="#comprobante-08" ng-click="hide()" class="boton2 md-raised">Ver comprobante</md-button>
+          <md-button ng-href="#pmoneda-comprainstruccion" ng-click="hide()" class="boton1 md-raised">Instruir</md-button>
+        </div>
+      </div>
+    </div>
+  </md-dialog>
+</div>

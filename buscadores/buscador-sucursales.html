@@ -1,0 +1,45 @@
+<div class="contenedorBuscador--ffmm colorFondo--buscador colorFuente--buscador collapseFFMM" ng-show="ayudaFondos">
+  <div class="ban-row">
+    <div class="margen--buscador">
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input">
+          <label>Región geográfica</label>
+          <md-select name="clasificacion" ng-model="ffmm.clasificacion">
+            <md-option value="1">Arica</md-option>
+            <md-option value="2">Antofagasta</md-option>
+            <md-option value="3">Atacama y Coquimbo</md-option>
+            <md-option value="4">Valparaiso</md-option>
+            <md-option value="5">O'Higgins</md-option>
+            <md-option value="6">Maule</md-option>
+            <md-option value="7">Región Metropolitana</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input">
+          <label>Comuna</label>
+          <md-select name="region" ng-model="ffmm.region">
+            <md-option value="1">Maipú</md-option>
+            <md-option value="2">Santiago</md-option>
+            <md-option value="3">La Florida</md-option>
+            <md-option value="4">Lo Espejo</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="ayuda--input ayuda--buscador">
+          <md-icon><i class="material-icons buscador--icono">search</i></md-icon>
+          <label>Palabra clave</label>
+          <input name="texto" ng-model="ffmm.palabra">
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <div class="buscador--boton">
+          <md-button ng-click="patrimonioResultado = !patrimonioResultado" class="boton2 boton--100 md-raised primario" type="button">
+            <span class="ng-scope">Buscar</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

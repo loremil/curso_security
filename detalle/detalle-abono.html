@@ -1,0 +1,113 @@
+<!-- LMalave 05 Oct -->
+<!-- inicio tituloAbonar -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12">
+      <h3 class="subtitulos-centrados">Abonar a Caja Internet</h3>
+      <p class="bajada--texto">Puedes abonar desde alguno de los Banco en asociados</p>
+    </div>
+  </div>
+</section>
+<!-- fin tituloAbonar -->
+<div class="ban-container">
+  <div class="card h--shadowNone h--paddingBottom4">
+    <!-- fin tituloAbono -->
+    <div class="contenedor--subtitulo">
+      <h3 class="subtitulo ">
+        <span class="subtitulo__icono--verde">
+          <md-icon>
+            <i class="material-icons">check</i>
+          </md-icon>
+        </span> Datos del abono
+      </h3>
+    </div>
+    <!-- fin tituloAbono -->
+    <!-- inicio contenedorRescate -->
+    <div class="ban-row" ng-controller="origendeFondos">
+      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6">
+        <form name="origendeFondos">
+          <md-input-container class="input--text">
+            <label class="text--label">Quiero abonar un monto de</label>
+            <p class="input--txt_pay">$</p>
+            <input class="input--text_monto" placeholder="0">
+          </md-input-container>
+        </form>
+        <div class="ban-col-md-12" ng-if="show">
+          <div class="informacion--atencion ">
+            <p class="informacion--atencion__txt"> El monto excede a lo informado en tu declaración de origen de fondos, por favor indícanos el origen de estos
+              nuevos fondos
+            </p>
+          </div>
+          <div class="ban-row">
+            <div class="ban-col-sm-6 ban-col-md-6">
+              <md-input-container class="datosSeleccion">
+                <md-checkbox ng-model="dat0" aria-label="Comunicaciones">
+                  Ahorros derivados de mi actividad principal
+                </md-checkbox>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-6">
+              <md-input-container class="datosSeleccion">
+                <md-checkbox ng-model="dat1" aria-label="Comunicaciones">
+                  Herencia / Premio
+                </md-checkbox>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-12">
+              <md-input-container class="datosSeleccion">
+                <md-checkbox ng-model="dat2" aria-label="Comunicaciones">
+                  Venta de una propiedad
+                </md-checkbox>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-12 ban-col-md-12">
+              <md-input-container class="datosSeleccion">
+                <md-checkbox ng-model="dat3" aria-label="Comunicaciones">
+                  Otros
+                </md-checkbox>
+              </md-input-container>
+              <md-input-container class="md-block">
+                <textarea ng-model="user.biography" md-maxlength="150" rows="1" md-select-on-focus></textarea>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin contenedorRescate -->
+      <!-- inicio contenedorBancos -->
+      <div class="ban-col-sm-6">
+        <label class="text--labelSubtitle">Selecciona un banco</label>
+        <div class="producto--seleccionado h--marginTop1">
+          <div class="ban-row">
+            <div class="ban-col-md-4 ban-col-sm-6">
+              <md-button class="boton2 boton--auto" onclick="window.close();">
+                <img src="assets/images/bancos_bancoChile.jpg"></img>
+              </md-button>
+            </div>
+            <div class="ban-col-md-4 ban-col-sm-6">
+              <md-button class="boton2 boton--auto" onclick="window.close();">
+                <img src="assets/images/bancos_bancoChile.jpg"></img>
+              </md-button>
+            </div>
+            <div class="ban-col-md-4 ban-col-sm-6">
+              <md-button class="boton2 boton--auto" onclick="window.close();">
+                <img src="assets/images/bancos_bancoChile.jpg"></img>
+              </md-button>
+            </div>
+            <div class="ban-col-md-4 ban-col-sm-6">
+              <md-button class="boton2 boton--auto" onclick="window.close();">
+                <img src="assets/images/bancos_bancoChile.jpg"></img>
+              </md-button>
+            </div>
+            <div class="ban-col-md-4 ban-col-sm-6">
+              <md-button class="boton2 boton--auto" onclick="window.close();">
+                <img src="assets/images/bancos_bancoChile.jpg"></img>
+              </md-button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin contenedorBancos -->
+    </div>
+  </div>
+</div>

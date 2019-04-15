@@ -1,0 +1,411 @@
+<!-- Jadra 31 -->
+<section>
+  <div class="contenido--background invertir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row">
+        <div class="ban-col-xs-12 ban-col-sm-11 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Fondos de Inversión</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-1 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-buscar.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include class="animated fadeIn" src=" 'buscadores/buscador-fondosInversion.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerFondosInversion">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Invierte en plazos y con cuotas ilimitadas</h3>
+        </div>
+        <div class="cuadroFlotanteP ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Al igual que un Fondo Mutuo, es una alternativa de inversión que reúne patrimonios de distintas personas para invertirlos
+            en valores de oferta pública nacional e internacional.
+          </p>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <a href="#">Aprende más sobre Fondos de Inversión</a>
+          <a href="#">¿Cómo leer un folleto informativo?</a>
+          <a href="#">Más asesoría sobre mis inversiones</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio tituloVentajas -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde animated fadeInDown">
+          <h3 class="subtitulos-centrados">Razones para invertir en Fondos de Inversión</h3>
+          <p class="bajada--texto">Una excelente opción de inversión con una alta rentabilidad a mediano y largo plazo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloVentajas -->
+<!-- inicio contenedorVentajas -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-row">
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/icoDisplay_Marketing-SocialMedia.png" alt="">
+            <p class="caja--subtitulo">Variedad de fondos para seleccionar</p>
+            <p class="caja--texto">Banchile Inversiones dispone de una amplia variedad de fondos, dentro de las categorias Inmobiliario y Mobiliario.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_ Diagram-GraficoGanancias.png" alt="">
+            <p class="caja--subtitulo">Rentabilidad a mediano y largo plazo</p>
+            <p class="caja--texto">Fondos orientados a personas naturales o jurídicas que se encuentre interesadas en invertir y/o ahorrar.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Performance-Performance.png" alt="">
+            <p class="caja--subtitulo">Riesgo de inversión moderado</p>
+            <p class="caja--texto">Los Fondos de Inversión disponen de una atractiva relación riesgo-retorno ajustable a las condiciones del mercado.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Comunication-SorporteOnline.png" alt="">
+            <p class="caja--subtitulo">Inversión asesorada</p>
+            <p class="caja--texto">Banchile Inversiones cuenta con asesores profesionales disponibles para ofrecer una experiencia personalizada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorVentajas -->
+<!-- inicio tituloFondosInverion -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1">
+        <div class="contenedor--subtitulo h--borde animated fadeInDown">
+          <h3 class="subtitulos-centrados">Fondos de Inversión Inmobiliarios y Mobiliarios</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloFondosInverion -->
+<!-- inicio contenedorFondosInversion -->
+<section>
+  <div class="ban-container">
+    <div class="card tablaMaster">
+      <!-- inicio tablaFondosInmobiliarios -->
+      <table fixed-header class="animated fadeInDown h--marginTop1" wt-responsive-table ng-controller="tablaFFMM">
+        <thead class="tableHead--recomendado">
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Fondos de Inversión</th>
+            <th>% 30 días</th>
+            <th>% 6 meses</th>
+            <th>% 1 año</th>
+            <th>Valor</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tableHead--informativo">
+            <td></td>
+            <td class="td--principal">Fondos Inmobiliarios</td>
+            <td class="td--left" colspan="12">Son una atractiva opción para no adquirir riesgos elevados, pero aún así obtener rentabilidades competitivas
+              en el corto plazo. </td>
+          </tr>
+          <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in fondoInmobiliario | orderBy : sort">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal td--width20" data-title="Fondo Mutuo">{{fondomut.producto}}</td>
+            <td class="td--valores" ng-class="indicador(fondomut.dias)" data-title="Variación">
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaDias == 'B'">&#xE5C5;</i>
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaDias == 'S'">&#xE5C7;</i>
+              <div class="td--valoresVariacion">{{fondomut.dias}}%</div>
+            </td>
+            <td class="td--valores" ng-class="indicador(fondomut.meses)" data-title="Variación">
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaMeses == 'B'">&#xE5C5;</i>
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaMeses == 'S'">&#xE5C7;</i>
+              <div class="td--valoresVariacion">{{fondomut.meses}}%</div>
+            </td>
+            <td class="td--valores" ng-class="indicador(fondomut.ano)" data-title="Variación">
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaAno == 'B'">&#xE5C5;</i>
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaAno == 'S'">&#xE5C7;</i>
+              <div class="td--valoresVariacion">{{fondomut.ano}}%</div>
+            </td>
+            <td class="td--valores" data-title="Monto">{{fondomut.valor}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--botones">
+              <div class="td--botonesTransar">
+                <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#fondosmutuos-aporte-clp">Aportar</md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido tableContenido__margin">
+                  <tbody>
+                    <tr>
+                      <td class="despliegueDetalle" colspan="7">
+                        <div ng-include src="'detalle/detalle-cuenta-ffii-inmobiliario-publico.html'"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin tablaFondosInmobiliarios -->
+      <!-- inicio tablaFondosMobiliarios -->
+      <table fixed-header class="animated fadeInDown h--marginTop2" wt-responsive-table ng-controller="tablaFFMM">
+        <tbody>
+          <tr class="tableHead--informativo">
+            <td></td>
+            <td class="td--principal">Fondos Mobiliarios</td>
+            <td class="td--left" colspan="12">Son una atractiva opción para no adquirir riesgos elevados, pero aún así obtener rentabilidades competitivas
+              en el corto plazo. </td>
+          </tr>
+          <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = fondomut.expanded" ng-repeat-start="fondomut in fondoMobiliario | orderBy : sort">
+            <td class="td--iconoApertura">
+              <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <td class="td--principal td--width20" data-title="Fondo Mutuo">{{fondomut.producto}}</td>
+            <td class="td--valores" ng-class="indicador(fondomut.dias)" data-title="Variación">
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaDias == 'B'">&#xE5C5;</i>
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaDias == 'S'">&#xE5C7;</i>
+              <div class="td--valoresVariacion">{{fondomut.dias}}%</div>
+            </td>
+            <td class="td--valores" ng-class="indicador(fondomut.meses)" data-title="Variación">
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaMeses == 'B'">&#xE5C5;</i>
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaMeses == 'S'">&#xE5C7;</i>
+              <div class="td--valoresVariacion">{{fondomut.meses}}%</div>
+            </td>
+            <td class="td--valores" ng-class="indicador(fondomut.ano)" data-title="Variación">
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaAno == 'B'">&#xE5C5;</i>
+              <i class="material-icons td--valoresTendencia" ng-if="fondomut.tendenciaAno == 'S'">&#xE5C7;</i>
+              <div class="td--valoresVariacion">{{fondomut.ano}}%</div>
+            </td>
+            <td class="td--valores" data-title="Monto">{{fondomut.valor}}</td>
+            <!-- inicio iconoAperturaResponsive -->
+            <td class="td--iconoAperturaResponsive">
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+              <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                <md-icon>
+                  <i class="material-icons"></i>
+                </md-icon>
+              </md-button>
+            </td>
+            <!-- fin iconoAperturaResponsive -->
+            <td class="td--botones">
+              <div class="td--botonesTransar">
+                <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#fondosmutuos-aporte-clp">Aportar</md-button>
+              </div>
+            </td>
+          </tr>
+          <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+            <td colspan="12">
+              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                <table class="tableContenido tableContenido__margin">
+                  <tbody>
+                    <tr>
+                      <td class="despliegueDetalle" colspan="7">
+                        <div ng-include src="'detalle/detalle-cuenta-ffii-inmobiliario-publico.html'"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- fin tablaFondosMobiliarios -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorFondosInversion -->
+<!-- inicio tituloNoticias -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde animated fadeInDown">
+          <h3 class="subtitulos-centrados">Noticias relacionadas</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloNoticias -->
+<!-- inicio contenedorNoticias -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="sliderNoticiasRecomendadas" ng-controller="sliderNoticiasRecomendadas">
+        <ks-swiper-container class="sliderCards" override-parameters="noticiasRecomendadas" show-nav-buttons="true">
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado"</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas"</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en
+                  US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en
+                  US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en
+                  US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en
+                  US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+        </ks-swiper-container>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorNoticias -->
+<!-- inicio contenedorCajaCliente -->
+<section>
+  <div class="ban-container h--marginBottom4">
+    <div class="card h--paddingTop2 h--paddingBottom2 h--borderRadiusBottom4px">
+      <!-- inicio cajaCliente -->
+      <div class="ban-row">
+        <div class="ban-col-sm-12 ban-col-md-12">
+          <div class="cajasCliente">
+            <div class="cajas-informacion">
+              <div class="cajas--texto">
+                <p>
+                  Si quieres obtener información profesional o contratar este producto
+                </p>
+              </div>
+              <div class="cajas--botones">
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-2">
+                  <md-button class="botonCliente boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO SER CLIENTE</span>
+                  </md-button>
+                </div>
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-0">
+                  <md-button class="boton2 boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO QUE ME CONTACTEN</span>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+            <div class="cajas--imagen">
+              <img src="assets/images/HazteCliente.png" alt="Manos estrechandose ante un acuerdo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin cajaCliente -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorCajaCliente -->

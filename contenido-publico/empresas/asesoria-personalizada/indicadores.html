@@ -1,0 +1,1082 @@
+<!-- 20 sept. Loreto -->
+<section>
+  <div class="contenido--background asesoria-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion ">Indicadores</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-buscar-fav.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include class="animated fadeIn h--marginBottom1" src=" 'buscadores/buscador-acciones.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerIndicadores contenido--publico">
+      <!-- este div col 12 es necesario para imagenes full -->
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Indicadores financieros</h3>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">Invierte en Fondos Mutuos Balanceados, son productos auto-gestionados,
+            lo que te permite seguir una estrategia de inversión de acuerdo a tu perfil de riesgo sin esfuerzo.
+          </p>
+        </div>
+        <!--<div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <a href="#">Aprender más sobre Fondos Mutuos</a>
+          <a href="#">¿Cómo leer un folleto informativo?</a>
+          <a href="#">Más asesoría sobre mis inversiones</a>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- contenedorBarraIndicadores -->
+<section>
+    <div class="contenido--carteraActva">
+      <div class="ban-container">
+              <div class="homeIndicadores animated fadeInDown">
+                <div class="sliderIndicadoresHome" ng-controller="sliderIndicadoresHome">
+                  <!-- Swiper -->
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="contenedorIndicador">
+                          <div class="datos">
+                            <p>Dólar Ob.</p>
+                            <p>$650,09</p>
+                          </div>
+                          <p class="porcentaje">0,02%</p>
+                          <img src="assets/images/indicadores-down.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contenedorIndicador">
+                          <div class="datos">
+                            <p>Euro</p>
+                            <p>$716,04</p>
+                          </div>
+                          <p class="porcentaje">0,12%</p>
+                          <img src="assets/images/indicadores-down.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contenedorIndicador">
+                          <div class="datos">
+                            <p>Euro</p>
+                            <p>$716,04</p>
+                          </div>
+                          <p class="porcentaje">0,12%</p>
+                          <img src="assets/images/indicadores-down.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contenedorIndicador">
+                          <div class="datos">
+                            <p>Yen</p>
+                            <p>$4.138,59</p>
+                          </div>
+                          <p class="porcentaje">0,99%</p>
+                          <img src="assets/images/indicadores-down.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contenedorIndicador">
+                          <div class="datos">
+                            <p>Libra</p>
+                            <p>$$20.418,29</p>
+                          </div>
+                          <p class="porcentaje">0,26</p>
+                          <img src="assets/images/indicadores-down.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contenedorIndicador">
+                          <div class="datos">
+                            <p>USD</p>
+                            <p>$27.598.658</p>
+                          </div>
+                          <p class="porcentaje">1,1%</p>
+                          <img src="assets/images/indicadores-down.png" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contenedorIndicador">
+                          <div class="datos">
+                            <p>AUD</p>
+                            <p>$144,04</p>
+                          </div>
+                          <p class="porcentaje">0,69%</p>
+                          <img src="assets/images/indicadores-down.png" class="img-responsive">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add Scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </section>
+  <!-- fin contenedorBarraIndicadores -->
+<!-- inicio subtitulo -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="h--marginTop2">
+        <h3 class="subtitulos-centrados">Mercados</h3>
+        <p class="bajada--texto">Puedes usar nuestras herramientas para hacer análisis de éstos índices </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin subtitulo -->
+<!-- Inicio indicador y mapa -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-row">
+        <div class="ban-col-md-6">
+          <div class="card--contenido animated fadeInDown" data-wow-delay="0.5s" ng-cloak>
+            <div ng-cloak class="documentos">
+              <md-tabs md-dynamic-height md-border-bottom>
+                <!-- inicio NACIONAL -->
+                <md-tab label="Nacional">
+                  <table fixed-header class="table tableContenido animated fadeInDown" wt-responsive-table ng-controller="tablaIndicadores">
+                    <thead class="tableContenido--head head__segundario">
+                      <tr>
+                        <th></th>
+                        <th class="td--label">Indice</th>
+                        <th>Valor</th>
+                        <th>Var(%)día</th>
+                        <th>Fecha/Hora</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tableContenido--info info--detalle" ng-class="{'active': fondomut.expanded}" ng-repeat-start="fondomut in accionesCartera | orderBy : sort">
+                        <td></td>
+                        <td class="info--principal__cuenta h--width50p" data-title="Nemotécnico">{{fondomut.indice}}</td>
+                        <td class="valor--td__info" data-title="Precio">{{fondomut.valor}}</td>
+                        <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">
+                          <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                          <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                          <div class="valor--td__variacion">{{fondomut.variacion}}%</div>
+                        </td>
+                        <td class="valor--td__info" data-title="Monto">{{fondomut.fecha}}</td>
+                        <td></td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                        <td colspan="12">
+                          <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                            <table class="tableContenido tableContenido__margin">
+                              <tbody>
+                                <tr>
+                                  <td class="despliegueDetalle" colspan="7">
+                                    <div ng-include class="fadeIn animated" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </md-tab>
+                <!-- fin NACIONAL -->
+                <!-- inicio INTERNACIONAL -->
+                <md-tab label="Internacional">
+                  <table fixed-header class="table tableContenido animated fadeInDown" wt-responsive-table ng-controller="tablaIndicadores">
+                    <thead class="tableContenido--head head__segundario">
+                      <tr>
+                        <th></th>
+                        <th class="td--label">Indice</th>
+                        <th>Valor</th>
+                        <th>Var(%)día</th>
+                        <th>Fecha</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tableContenido--info info--detalle" ng-class="{'active': fondomut.expanded}" ng-repeat-start="fondomut in accionesCartera | orderBy : sort">
+                        <td></td>
+                        <td class="info--principal__cuenta h--width50p" data-title="Nemotécnico">{{fondomut.indice}}</td>
+                        <td class="valor--td__info" data-title="Precio">{{fondomut.valor}}</td>
+                        <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">
+                          <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                          <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                          <div class="valor--td__variacion">{{fondomut.variacion}}%</div>
+                        </td>
+                        <td class="valor--td__info" data-title="Monto">{{fondomut.fecha}}</td>
+                        <td></td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                        <td colspan="12">
+                          <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                            <table class="tableContenido tableContenido__margin">
+                              <tbody>
+                                <tr>
+                                  <td class="despliegueDetalle" colspan="7">
+                                    <div ng-include class="fadeIn animated" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </md-tab>
+                <!-- fin INTERNACIONAL -->
+              </md-tabs>
+            </div>
+          </div>
+        </div>
+        <div class="ban-col-md-6 h--marginTop1">
+          <div ng-controller="mapaIndicador">
+            <div id="container" style="max-width: 1000px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin indicador y mapa -->
+<!-- inicio md-tab con slider -->
+<section>
+  <div class="ban-container h--marginBottom4">
+    <div class="card h--marginBottomcard">
+      <div class="ban-col-md-12 h--marginTop4">
+        <h3 class="subtitulos-centrados">Resumen Bursátil</h3>
+        <p class="bajada--texto">Puedes usar nuestras herramientas para hacer análisis de estos índices</p>
+      </div>
+      <!-- slider indicadores-->
+      <div ng-controller="sliderAccionesRecomendadas">
+        <div class="card--contenido animated fadeInDown" data-wow-delay="0.5s" ng-cloak>
+          <div ng-cloak class="documentos">
+            <md-tabs md-dynamic-height md-border-bottom>
+              <!-- inicio Monedas-->
+              <md-tab label="Monedas">
+                <table fixed-header class="table tableContenido animated fadeInDown tabla--AccionesPublico" wt-responsive-table ng-controller="tablaIndicadores">
+                  <thead class="tableContenido--head head__destacado">
+                    <tr>
+                      <th></th>
+                      <th class="td--label">Moneda</th>
+                      <th>Paridad</th>
+                      <th>Variación %</th>
+                      <th>Fecha/Hora</th>
+
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="tableContenido--info info--detalle" ng-class="{'active': fondomut.expanded}" ng-repeat-start="fondomut in resumenMoneda | orderBy : sort">
+                      <td class="valor--td__info"></td>
+                      <td class="info--principal__cuenta td_titular" data-title="Nemotécnico">{{fondomut.moneda}}</td>
+                      <td class="valor--td__info" data-title="Precio mercado">{{fondomut.paridad}}</td>
+                      <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación %">
+                        <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                        <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                        <div class="valor--td__variacion">{{fondomut.variacion}}%</div>
+                      </td>
+                      <td class="valor--td__info" data-title="Precio mercado">{{fondomut.fecha}}</td>
+
+                      <!-- inicio iconos -->
+                      <td class="valor--td__info td_iconos" data-title="Alerta">
+                        <div class="datos--botones datos--iconos">
+                          <md-button href="" class="md-icon-button">
+                            <md-icon> <i class="material-icons icons--color">compare_arrows</i> </md-icon>
+                            <md-tooltip md-direction="Bottom">Comparar Accion</md-tooltip>
+                          </md-button>
+                          <md-button href="" ng-click="buscadorMoneda = !buscadorMoneda" class="md-icon-button" aria-label="Buscar">
+                            <md-icon>
+                              <i class="material-icons icons--color">&#xE003;</i>
+                            </md-icon>
+                            <md-tooltip md-direction="Bottom">Agregar alerta</md-tooltip>
+                          </md-button>
+                          <md-button href="" ng-click="buscadorMoneda = !buscadorMoneda" class="md-icon-button" aria-label="Buscar">
+                            <md-icon>
+                              <i class="material-icons icons--color">&#xE83A;</i>
+                            </md-icon>
+                            <md-tooltip md-direction="Bottom">Agregar a favoritos</md-tooltip>
+                          </md-button>
+                        </div>
+                      </td>
+                      <!--fin  iconos -->
+                      <td class="contenido--botones">
+                        <div class="datos--botones">
+                          <!-- <md-button class="boton--rescatar btn_accionesPublico md-raised" href="#personas-acciones-venta">Vender</md-button> -->
+                          <md-button class="boton--aportar btn_accionesPublico md-raised primario" href="#personas-acciones-compra">Comprar</md-button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                      <td colspan="12">
+                        <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                          <table class="tableContenido tableContenido__margin">
+                            <tbody>
+                              <tr>
+                                <td class="despliegueDetalle" colspan="7">
+                                  <div ng-include class="fadeIn animated" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </md-tab>
+              <!-- fin Monedas -->
+              <!-- inicio Acciones-->
+              <md-tab label="Acciones">
+                <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Acciones más transadas</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Acciones con mayores alzas</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Acciones con mayores bajas</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Renta fija</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Indicadores financieros</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                </ks-swiper-container>
+              </md-tab>
+              <!-- fin Acciones-->
+              <!-- inicio FFMM-->
+              <md-tab label="Fondos Mutuos">
+                <div class="ban-col-md-6">
+                  <!-- inicio contenedor scroll -->
+                  <div ng-controller="contenedorScrollme">
+                    <div class="contenedorScrollme--desktop" ng-scrollbar ng-if="!isMobile" rebuild-on="rebuild:me" rebuild-on-resize>
+                      <table fixed-header class="table tableContenido animated fadeInDown" wt-responsive-table ng-controller="tablaIndicadores">
+                        <thead class="tableContenido--head head__segundario">
+                          <tr>
+                            <th></th>
+                            <th class="td--label">Indice</th>
+                            <th>Valor</th>
+                            <th>Var(%)día</th>
+                            <th>Fecha/Hora</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="tableContenido--info info--detalle" ng-class="{'active': fondomut.expanded}" ng-repeat-start="fondomut in accionesCartera | orderBy : sort">
+                            <td></td>
+                            <td class="info--principal__cuenta h--width50p" data-title="Nemotécnico">{{fondomut.indice}}</td>
+                            <td class="valor--td__info" data-title="Precio">{{fondomut.valor}}</td>
+                            <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">
+                              <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                              <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                              <div class="valor--td__variacion">{{fondomut.variacion}}%</div>
+                            </td>
+                            <td class="valor--td__info" data-title="Monto">{{fondomut.fecha}}</td>
+                            <td></td>
+                          </tr>
+                          <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                            <td colspan="12">
+                              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="despliegueDetalle" colspan="7">
+                                        <div ng-include class="fadeIn animated" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="contenedorScrollme--mobile" ng-if="isMobile">
+                      <table fixed-header class="table tableContenido animated fadeInDown" wt-responsive-table ng-controller="tablaIndicadores">
+                        <thead class="tableContenido--head head__segundario">
+                          <tr>
+                            <th></th>
+                            <th class="td--label">Indice</th>
+                            <th>Valor</th>
+                            <th>Var(%)día</th>
+                            <th>Fecha/Hora</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="tableContenido--info info--detalle" ng-class="{'active': fondomut.expanded}" ng-repeat-start="fondomut in accionesCartera | orderBy : sort">
+                            <td></td>
+                            <td class="info--principal__cuenta h--width50p" data-title="Nemotécnico">{{fondomut.indice}}</td>
+                            <td class="valor--td__info" data-title="Precio">{{fondomut.valor}}</td>
+                            <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">
+                              <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'B'">&#xE5C5;</i>
+                              <i class="material-icons valor--td__tendencia" ng-if="fondomut.tendencia == 'S'">&#xE5C7;</i>
+                              <div class="valor--td__variacion">{{fondomut.variacion}}%</div>
+                            </td>
+                            <td class="valor--td__info" data-title="Monto">{{fondomut.fecha}}</td>
+                            <td></td>
+                          </tr>
+                          <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                            <td colspan="12">
+                              <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="despliegueDetalle" colspan="7">
+                                        <div ng-include class="fadeIn animated" src="'detalle/detalle-cuenta-acciones.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- fin contenedor scroll -->
+                </div>
+
+              </md-tab>
+              <!-- fin FFMM-->
+              <!-- inicio FFMM-->
+              <md-tab label="Commodities">
+                <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Acciones más transadas</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Acciones con mayores alzas</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Acciones con mayores bajas</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Renta fija</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Indicadores financieros</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                </ks-swiper-container>
+              </md-tab>
+              <!-- fin FFMM-->
+              <!-- inicio FFMM-->
+              <md-tab label="Renta Fija">
+                <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Acciones más transadas</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Acciones con mayores alzas</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Acciones con mayores bajas</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Renta fija</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                  <!-- cajaTranzadas -->
+                  <ks-swiper-slide>
+                    <div class="ban-col-md-12">
+                      <div class="card h--shadowBoxNoHover">
+                        <div class="contenedor--subtitulo">
+                          <h3 class="subtitulo ">Indicadores financieros</h3>
+                        </div>
+                        <table class="table tableContenido animated fadeInDown h--bottomTable" wt-responsive-table ng-controller="tablaFFMM">
+                          <thead class="tableContenido--head head__destacado">
+                            <tr>
+                              <th class="td--labelPadding">Serie</th>
+                              <th>Precio</th>
+                              <th>Var(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="tableContenido--info info--detalle h--lineHeight_Tablas" ng-class="{'active': fondomut.expandedd}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                              <td class="datos--product" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                              <td class="valor--td__info" data-title="Precio">{{fondomut.precio}}</td>
+                              <td class="valor--td__info" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                            </tr>
+                            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                              <td colspan="8" data-title="">
+                                <table class="tableContenido tableContenido__margin">
+                                  <tbody>
+                                    <tr>
+                                      <td class="contenidoDesplegable" colspan="7">
+                                        <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </ks-swiper-slide>
+                  <!-- cajaTranzadas -->
+                </ks-swiper-container>
+              </md-tab>
+              <!-- fin FFMM-->
+            </md-tabs>
+          </div>
+        </div>
+      </div>
+      <!-- inicio boton -->
+      <div class="contenedor--botones h--alignCenter" ng-controller="modalesCrtl">
+        <md-button ng-href="#acciones-publico-persona" class="boton2 md-raised boton--xl">IR A ACCIONES</md-button>
+      </div>
+      <!-- fin boton -->
+    </div>
+  </div>
+</section>
+<!-- fin md-tab con slider-->

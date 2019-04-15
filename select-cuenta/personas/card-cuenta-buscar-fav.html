@@ -1,0 +1,36 @@
+<div class="cardSeleccion" ng-controller="SelectCtrl">
+   <div class="ban-row">
+      <div class="ban-col-xs-12 ban-col-sm-8 ban-col-md-5 ban-col-md-offset-4 ban-col-lg-5 ban-col-lg-offset-4">
+         <md-card-content class="cardSeleccion--select md-block">
+            <div class="seleccionCuenta">
+               <span class="select--option">Cuenta:</span>
+               <md-select ng-model="select.cuenta" class="md-no-underline">
+                  <md-optgroup label="Selección de Cuenta">
+                     <md-option value="1">Gonzalo Ahumada 1</md-option>
+                     <md-option value="2">Gonzalo Ahumada 2</md-option>
+                     <md-option value="3">Gonzalo Ahumada 3</md-option>
+                  </md-optgroup>
+               </md-select>
+            </div>
+         </md-card-content>
+      </div>
+      <div class="ban-col-xs-12 ban-col-sm-4 ban-col-md-3 ban-col-lg-3 h--alignRight h--smAlignCenter">
+         <div class="boton--select">
+            <md-button href="" ng-click="texto($event)" class="md-icon-button" aria-label="Buscar">
+               <md-icon>
+                  <i class="material-icons icons--color">&#xE8B6;</i>
+               </md-icon>
+               <md-tooltip md-direction="Bottom">Buscar</md-tooltip>
+            </md-button>
+         </div>
+         <div class="boton--select">
+            <md-button href="" ng-click="" class="md-icon-button" aria-label="Favoritos">
+               <md-icon>
+                  <i class="material-icons icons--color">star_border</i>
+               </md-icon>
+               <md-tooltip md-direction="Bottom">Favoritos</md-tooltip>
+            </md-button>
+         </div>
+      </div>
+   </div>
+</div>

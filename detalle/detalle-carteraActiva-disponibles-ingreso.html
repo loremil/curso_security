@@ -1,0 +1,159 @@
+<h2 class="operaciones--titulo">Selecciona una Cartera Activa</h2>
+<h3 class="operaciones--subtitulo">Selecciona una Cartera Activa disponibles para ingresar</h3>
+
+<table class="table tableContenido h—paddingTop" wt-responsive-table ng-controller="tablaFFMM">
+  <thead class="tableContenido--head head__segundario h--alignCenter">
+    <tr>
+      <th></th>
+      <th class="td--label">Cartera Activa</th>
+      <th>%30 días</th>
+      <th>%90 días</th>
+      <th>%1 año</th>
+      <th class="th--width11">Acum. año</th>
+      <th class="th--aligncenter th--width20">Composición RF/RV</th>
+      <th class="th--aligncenter th--width13">Monto Invertido</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tableContenido--info info--detalle" ng-repeat-start="usuarios in carteraActiva | orderBy : sort">
+      <td class="info--iconos">
+        <md-button class="md-icon-button icons" ng-click="usuarios.expanded = false" ng-if="usuarios.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+        <md-button class="md-icon-button icons" ng-click="usuarios.expanded = true" ng-if="!usuarios.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+      </td>
+      <td class="info--porcent" data-title="Cartera activa">{{usuarios.producto}}</td>
+      <td class="valor--td__porcent __up" data-title="%30 días">{{usuarios.dias}}</td>
+      <td class="valor--td__porcent __up" data-title="%90 días">{{usuarios.dias}}</td>
+      <td class="valor--td__porcent __down" data-title="%1 año">{{usuarios.dias}}</td>
+      <td class="valor--td__porcent __up" data-title="Acum. año">{{usuarios.dias}}</td>
+      <td class="valor--td__porcent td--text-alignCenter" data-title="Composición RF/RV"><img src="assets/images/composicion-rf-rv.png" class="datos--comp" /></td>
+      <td class="valor--td__porcent" data-title="Monto Invertido">{{usuarios.monto}}</td>
+
+      <td class="contenido--botones">
+
+        <div class="datos--botones">
+          <md-button class="boton--rescatar md-raised" href="#cartera-activa-ingreso-operacion">SELECCIONA</md-button>
+        </div>
+
+
+      </td>
+    </tr>
+    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+      <td class="animacionApertura--shadow" colspan="9" data-title="">
+        <table class="tableContenido tableContenido__margin">
+          <tbody>
+            <tr>
+              <div ng-include src="'detalle/detalle-cuenta-ca.html'"></div>
+
+            </tr>
+
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr class="tableContenido--info info--detalle" ng-repeat-start="usuarios in carteraActivaCuenta | orderBy : sort">
+      <td class="info--iconos">
+        <md-button class="md-icon-button icons" ng-click="usuarios.expanded = false" ng-if="usuarios.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+        <md-button class="md-icon-button icons" ng-click="usuarios.expanded = true" ng-if="!usuarios.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+      </td>
+      <td class="info--porcent" data-title="Cartera activa">{{usuarios.producto}}
+        <div class="cartera--ico" aria-label="Ya tienes este Fondo">
+          <i class="material-icons icons--color icons--small">work</i>
+        </div>
+      </td>
+      <td class="valor--td__porcent __up" data-title="%30 días">{{usuarios.dias}}</td>
+      <td class="valor--td__porcent __up" data-title="%90 días">{{usuarios.dias}}</td>
+      <td class="valor--td__porcent __down" data-title="%1 año">{{usuarios.dias}}</td>
+      <td class="valor--td__porcent __up" data-title="Acum. año">{{usuarios.dias}}</td>
+      <td class="valor--td__porcent td--text-alignCenter" data-title="Composición RF/RV"><img src="assets/images/composicion-rf-rv.png" class="datos--comp" /></td>
+      <td class="valor--td__porcent" data-title="Monto Invertido">{{usuarios.monto}}</td>
+      <td class="contenido--botones">
+
+
+        <div class="datos--botones">
+          <md-button class="boton--rescatar md-raised" href="#cartera-activa-ingreso-operacion">SELECCIONA</md-button>
+        </div>
+
+
+      </td>
+    </tr>
+    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="usuarios.expanded" ng-repeat-end="">
+      <td class="animacionApertura--shadow" colspan="9" data-title="">
+        <table class="tableContenido tableContenido__margin">
+          <tbody>
+            <tr class="tableContenido--info info__cuenta">
+              <td class="info--iconos">
+              </td>
+              <td class="info--principal">Cuenta 11-2</td>
+              <td class="valor--td__info"></td>
+              <td class="valor--td__info"></td>
+              <td class="valor--td__info"></td>
+              <td class="valor--td__info"></td>
+              <td class="contenido--botones">
+
+                <div class="datos--botones">
+                  <md-button class="boton--rescatar md-raised" href="#cartera-activa-ingreso-operacion">SELECCIONA</md-button>
+                </div>
+              </td>
+            </tr>
+            <tr class="tableContenido--info info__valorizado">
+              <td colspan="7" class="info--cuenta">
+                <p class="cuenta--plan"> Plan de inversión normal</p>
+                <p> Beneficio Tributario 57 BIS</p>
+                <p class="cuenta--comision">Monto libre de comisión $5.000.000</p>
+                <p> Número de cuotas 14.601,0987</p>
+                <p> Monto $14.601</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="despliegueDetalle animated fadeInDown" colspan="7">
+                <div ng-include src="'detalle/detalle-cuenta-ca.html'"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div class="contenedor--botones">
+  <div class="ban-row">
+    <div class="ban-col-sm-6 ban-col-md-8">
+      <div class="detalle--descripcion">
+        <div class="descripcion--composicion"></div>
+        <div class="descripcion--texto">
+          <p> % de inversión en instrumentos Deuda</p>
+        </div>
+        <div class="descripcion--composicion descripcion--composicion__naranja"></div>
+        <div class="descripcion--texto">
+          <p> % de inversión en instrumentos Capitalización</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12 ">
+      <div class="informese ">
+        <md-icon md-font-set="banicon-informacion "></md-icon>
+        <p class="informese--texto ">Rentabilidades calculadas con los valores cuota de la cartera referencia.</p>
+      </div>
+    </div>
+  </div>
+</div>

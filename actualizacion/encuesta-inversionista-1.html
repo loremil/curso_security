@@ -1,0 +1,113 @@
+<section>
+  <div class="bg_content persona-actualizacion "></div>
+  <div class="ban-container">
+    <div class="card h--bgnegro h--borderRadiusTop4px">
+      <div class="ban-row animated fadeInDown ">
+         <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <h1 class="titulo--operacion titulo--encuesta ">Encuesta del Inversionista</h1>
+        </div>
+        <div class="ban-col-md-12">
+           <div class="barraProgress ">
+              <md-progress-linear md-mode="determinate" ng-value="15" class="barraProgress--linea  encuestaBarra"></md-progress-linear>
+              <div class="checkActualizacion">
+                 <div class="check--numero encuesta--numero">1</div>
+                 <h2 class="check--title h--pasosactive">Experiencia</h2>
+              </div>
+              <div class="checkActualizacion pasos__inactive">
+                <div class="check--numero encuesta--numero check__inactive">2</div>
+                 <h2 class="check--title h--pasosinactive">Ahorro</h2>
+              </div>
+              <div class="checkActualizacion pasos__inactive">
+               <div class="check--numero encuesta--numero h--numero check__inactive">3</div>
+                <h2 class="check--title h--pasosinactive">Horizonte</h2>
+              </div>
+              <div class="checkActualizacion pasos__inactive">
+                 <div class="check--numero encuesta--numero  h--numero check__inactive">4</div>
+                 <h2 class="check--title h--pasosinactive">Liquidez</h2>
+              </div>
+              <div class="checkActualizacion pasos__inactive">
+                 <div class="check--numero encuesta--numero h--numero check__inactive">5</div>
+                 <h2 class="check--title h--pasosinactive">Riesgo</h2>
+              </div>
+              </div>
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- bloque 01 -->
+<section ng-cloak>
+    <div class="ban-container">
+        <div class="card--misDatos  h--marginBottom6">
+            <div class="contenedorDatos animated fadeInDown ">
+                <div class="contenedor--preguntas h--padding0" ng-controller="active--bloque01">
+                    <h2 class="preguntas--titulo">¿Cómo clasificarías tu experiencia en inversiones?</h2>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==1}" ng-click="changeIndex(1)">
+                        <img class="boton--img" src="./assets/images/svg/nula.svg" alt="">
+                        <p class="boton--texto">Nula</p>
+                        <md-tooltip>
+                            No tengo ninguna experiencia en inversiones
+                        </md-tooltip>
+                    </md-button>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==2}" ng-click="changeIndex(2)">
+                        <img class="boton--img" src="./assets/images/svg/escasa.svg" alt="">
+                        <p class="boton--texto">Escasa</p>
+                        <md-tooltip>
+                            Tengo muy poca experiencia en inversiones, aparte de cuentas de ahorro y depósitos a plazo
+                        </md-tooltip>
+                    </md-button>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==3}" ng-click="changeIndex(3)">
+                        <img class="boton--img" src="./assets/images/svg/moderada.svg" alt="">
+                        <p class="boton--texto">Moderada</p>
+                        <md-tooltip>
+                            Tengo alguna experiencia en inversiones. Me gustaría recibir asesoramiento adicional
+                        </md-tooltip>
+                    </md-button>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==4}" ng-click="changeIndex(4)">
+                        <img class="boton--img" src="./assets/images/svg/extensa.svg" alt="">
+                        <p class="boton--texto">Extensa</p>
+                        <md-tooltip>
+                            Soy un inversionista activo y experimentado y me siento cómodo tomando mis propias decisiones de inversión
+                        </md-tooltip>
+                    </md-button>
+                    <h2 class="preguntas--titulo">¿En qué productos has operado anteriormente?</h2>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==5}" ng-click="changeIndex(5)">
+                        <img class="boton--img" src="./assets/images/svg/ffmm.svg" alt="">
+                        <p class="boton--texto">Fondos Mutuos</p>
+                    </md-button>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==6}" ng-click="changeIndex(6)">
+                        <img class="boton--img" src="./assets/images/svg/acc.svg" alt="">
+                        <p class="boton--texto">Acciones</p>
+                    </md-button>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==7}" ng-click="changeIndex(7)">
+                        <img class="boton--img" src="./assets/images/svg/cartera.svg" alt="">
+                        <p class="boton--texto">Cartera Activa</p>
+                    </md-button>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==8}" ng-click="changeIndex(8)">
+                        <img class="boton--img" src="./assets/images//svg/deposito.svg" alt="">
+                        <p class="boton--texto">Depósito a plazo</p>
+                    </md-button>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==9}" ng-click="changeIndex(9)">
+                        <img class="boton--img" src="./assets/images/svg/fondosinversion.svg" alt="">
+                        <p class="boton--texto">Fondos de Inversión</p>
+                    </md-button>
+                    <md-button class="md-raised contenedor--boton" ng-class="{blue: selected==10}" ng-click="changeIndex(10)">
+                        <img class="boton--img" src="./assets/images/svg/derivados.svg" alt="">
+                        <p class="boton--texto">Derivados</p>
+                    </md-button>
+                </div>
+            </div>
+            <!--botones-->
+           <div class="ban-row h--marginTop1">
+              <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                 <div class="contenedor--botones h--alignRight" ng-controller="modalesCrtl">
+                      <md-button href="#encuesta-inversionista" class="boton2 md-raised">Anterior</md-button>
+                      <md-button href="#encuesta-inversionista-2" class="boton1 md-raised primario">Siguiente</md-button>
+                 </div>
+              </div>
+           </div>
+           <!--botones-->
+        </div>
+    </div>
+</section>

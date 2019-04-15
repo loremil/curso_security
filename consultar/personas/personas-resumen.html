@@ -1,0 +1,486 @@
+<!-- Alerta-->
+<div class="mensajeContenedor" ng-include src="'mensajes/mensajes--actualizacionDatos.html'"></div>
+<!-- Fin Alerta-->
+<section>
+  <div class="contenido--background consultar-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Resumen de Inversiones</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-fav.html' "></div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+            <div ng-include src=" 'buscadores/buscador-documentos.html' ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorResumen -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <!-- inicio resumenInversiones -->
+      <div class="resumenInversiones h--paddingBottom1">
+        <div class="ban-row" ng-controller="animateCtrl">
+          <!-- inicio resumenPatrimonio -->
+          <section>
+            <div class="ban-col-sm-12 ban-col-md-4">
+              <div class="resumen--bloque h--shadowBoxNoHover no_visible" when-visible="a_fadeup1">
+                <div class="resumen--contenedor">
+                  <div class="resumen--bloque__titulo">
+                    <h2 class="subtitulos">Patrimonio</h2>
+                  </div>
+                  <div class="resumen--bloque__contenido">
+                    <div class="ban-row">
+                      <!-- inicio patrimonioGraficos -->
+                      <div class="ban-col-xs-12 ban-col-sm-12">
+                        <div class="h--paddingBottom1" ng-controller="graficoWidgetPatrimonio-p">
+                          <ks-swiper-container override-parameters="parametrosWidgetPatrimonio" on-ready="onReadySwiper(swiper)">
+                            <ks-swiper-slide>
+                              <div class="grafico--resumen" ng-controller="graficoGeneralWidgetPatrimonio-p">
+                                <div class="resumen--texto">
+                                  <span class="texto--nombre">Patrimonio Total</span>
+                                  <span class="texto--monto">$100.000.000</span>
+                                  <span class="texto--porcentaje">100%</span>
+                                  <span class="texto--fecha">03/12/2017</span>
+                                </div>
+                                <div id="graficoGeneralWidgetPatrimonio"></div>
+                              </div>
+                            </ks-swiper-slide>
+                            <ks-swiper-slide ng-repeat="producto in productos">
+                              <div class="grafico--resumen">
+                                <div class="resumen--texto">
+                                  <span class="texto--nombre">{{producto.nombre}}</span>
+                                  <span class="texto--monto">{{producto.monto}}</span>
+                                  <span class="texto--porcentaje">{{producto.porcentaje}}</span>
+                                  <span class="texto--fecha">{{producto.fecha}}</span>
+                                </div>
+                                <hc-chart options="producto.opcionesGrafico"></hc-chart>
+                              </div>
+                            </ks-swiper-slide>
+                          </ks-swiper-container>
+                        </div>
+                      </div>
+                      <!-- fin patrimonioGraficos -->
+                      <!-- inicio patrimonioCuentas -->
+                      <div ng-controller="contenedorScrollme-p">
+                        <div class="contenedorScrollme--desktop" ng-scrollbar ng-if="!isMobile" rebuild-on="rebuild:me" rebuild-on-resize>
+                          <div class="patrimonioWidgetBar" ng-repeat="prod in productoScroll" ng-class="{'ultimo-hijo': $last}">
+                            <div class="patrimonioWidgetBar--contenedorDatos-personas">
+                              <h3 class="tituloProgresBar">{{prod.nombre}}</h3>
+                              <p class="porcentajeProgresBar">{{prod.porcentaje}}</p>
+                              <p class="totalProgresBar">{{prod.monto}}</p>
+                              <div class="contenedorProgresBar">
+                                <div class="patrimonioWidgetBar--progresBar" ng-controller="progress" style=" width:{{progressval}}%;"></div>
+                              </div>
+                            </div>
+                            <md-button class="md-raised boton1 h--width100 patrimonioWidgetBar--boton" ng-href="{{prod.link}}">
+                              <span class="patrimonioWidget--boton__texto">{{prod.boton}}</span>
+                            </md-button>
+                          </div>
+                        </div>
+                        <div class="contenedorScrollme--mobile" ng-if="isMobile">
+                          <div class="patrimonioWidgetBar" ng-repeat="prod in productoScroll" ng-class="{'ultimo-hijo': $last}">
+                            <div class="patrimonioWidgetBar--contenedorDatos-personas">
+                              <h3 class="tituloProgresBar">{{prod.nombre}}</h3>
+                              <p class="porcentajeProgresBar">{{prod.porcentaje}}</p>
+                              <p class="totalProgresBar">{{prod.monto}}</p>
+                              <div class="contenedorProgresBar">
+                                <div class="patrimonioWidgetBar--progresBar" ng-controller="progress" style=" width:{{progressval}}%;"></div>
+                              </div>
+                            </div>
+                            <md-button class="md-raised boton1 btn-lg btn-block patrimonioWidgetBar--boton" ng-href="{{prod.link}}">
+                              <span class="patrimonioWidget--boton__texto">ABONAR</span>
+                            </md-button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- inicio patrimonioCuentas -->
+                    </div>
+                  </div>
+                </div>
+                <md-button class="md-raised boton2 boton--100" href="#patrimonio">
+                  <span>VER MIS INVERSIONES</span>
+                </md-button>
+              </div>
+            </div>
+          </section>
+          <!-- fin resumenPatrimonio -->
+          <!-- inicio resumenMovimientos -->
+          <section>
+            <div class="ban-col-sm-12 ban-col-md-4">
+              <div class="resumen--bloque h--shadowBoxNoHover no_visible" when-visible="a_fadeup2">
+                <div class="resumen--contenedor">
+                  <div class="resumen--bloque__titulo">
+                    <h2 class="subtitulos">Últimos Movimientos</h2>
+                  </div>
+                  <!-- inicio movimientosHistorial -->
+                  <div class="resumen--bloque__contenido">
+                    <div class="ban-row">
+                      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                        <div class="resumen--detalle">
+                          <div class="detalle--titulo">
+                            <p>Rescate
+                              <span>$100.000</span>
+                            </p>
+                          </div>
+                          <div class="detalle--info">
+                            <p>Fondo Mutuo
+                              <span>Global Mid Cap</span>
+                            </p>
+                          </div>
+                          <div class="detalle--info--destacado">
+                            <p>Cuenta 01
+                              <span>12/02/2017</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                        <div class="resumen--detalle">
+                          <div class="detalle--titulo">
+                            <p>Aporte
+                              <span>$200.000</span>
+                            </p>
+                          </div>
+                          <div class="detalle--info">
+                            <p>Fondo Mutuo
+                              <span>Global Mid Cap</span>
+                            </p>
+                          </div>
+                          <div class="detalle--info--destacado">
+                            <p>Cuenta 0
+                              <span>12/02/2017</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ban-row">
+                      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                        <div class="resumen--detalle">
+                          <div class="detalle--titulo">
+                            <p>Compra
+                              <span>$100.000</span>
+                            </p>
+                          </div>
+                          <div class="detalle--info">
+                            <p>Acciones
+                              <span>LAN</span>
+                            </p>
+                          </div>
+                          <div class="detalle--info--destacado">
+                            <p>Cuenta 01
+                              <span>12/02/2017</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                        <div class="resumen--detalle">
+                          <div class="detalle--titulo">
+                            <p>Venta
+                              <span>$260.000</span>
+                            </p>
+                          </div>
+                          <p class="detalle--info">Acciones
+                            <span>CAP</span>
+                          </p>
+                          <div class="detalle--info--destacado">
+                            <p>Cuenta 01
+                              <span>12/02/2017</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ban-row">
+                      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                        <div class="resumen--detalle">
+                          <div class="detalle--titulo">
+                            <p>Reinversión
+                              <span>$100.000</span>
+                            </p>
+                          </div>
+                          <p class="detalle--info">Fondo Mutuo
+                            <span>Global Mid Cap</span>
+                          </p>
+                          <div class="detalle--info--destacado">
+                            <p>Cuenta 0
+                              <span>12/02/2017</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                        <div class="resumen--detalle">
+                          <div class="detalle--titulo">
+                            <p>Ingreso
+                              <span>$100.000</span>
+                            </p>
+                          </div>
+                          <div class="detalle--info">
+                            <p>Fondo Mutuo
+                              <span>Moderada</span>
+                            </p>
+                          </div>
+                          <div class="detalle--info--destacado">
+                            <p>Cuenta 0
+                              <span>12/02/2017</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- fin movimientosHistorial -->
+                </div>
+                <md-button class="md-raised boton2 boton--100" href="#movimientos">
+                  <span>VER TODOS</span>
+                </md-button>
+              </div>
+            </div>
+          </section>
+          <!-- fin resumenMovimientos -->
+          <!-- inicio resumenRecomendacion -->
+          <section>
+            <div class="ban-col-sm-12 ban-col-md-4">
+              <div class="resumen--bloque h--shadowBoxNoHover no_visible" when-visible="a_fadeup3">
+                <div class="resumen--contenedor">
+                  <!-- inicio recomendacionSlider -->
+                  <section>
+                    <div class="ban-row">
+                      <div class="ban-col-xs-12">
+                        <div class="contenedorSwiper ">
+                          <div id="sliderhomeContenedor">
+                            <div class="sliderHome" ng-controller="TestCtrl">
+                              <div id="sliderHome" class="ban-swiper-container h--shadowBoxBlack">
+                                <ks-swiper-container autoplay="3000" loop="true" swiper="swiper" slides-per-view="1" pagination-is-active="true" pagination-clickable="true" on-ready="onReadySwiper(swiper)">
+                                  <ks-swiper-slide class="swiper-slide">
+                                    <div class="contenedorSliderHome">
+                                      <img src="assets/images/banner-widget1.png">
+                                      <div class="contenedorSliderHome--mensaje">
+                                        <h4>Conoce el nuevo Fondo Mutuo</h4>
+                                        <p>LATAM CORPORATE
+                                          <br> INVESTMENT GRADE</p>
+                                      </div>
+                                    </div>
+                                  </ks-swiper-slide>
+                                  <ks-swiper-slide class="swiper-slide">
+                                    <div class="contenedorSliderHome">
+                                      <img src="assets/images/banner-widget2.png">
+                                      <div class="contenedorSliderHome--mensaje">
+                                        <h4>Conoce el nuevo Fondo Mutuo</h4>
+                                        <p>LATAM CORPORATE
+                                          <br> INVESTMENT GRADE</p>
+                                      </div>
+                                    </div>
+                                  </ks-swiper-slide>
+                                  <ks-swiper-slide class="swiper-slide">
+                                    <div class="contenedorSliderHome">
+                                      <img src="assets/images/banner-widget3.png">
+                                      <div class="contenedorSliderHome--mensaje">
+                                        <h4>Conoce el nuevo Fondo Mutuo</h4>
+                                        <p>LATAM CORPORATE
+                                          <br> INVESTMENT GRADE</p>
+                                      </div>
+                                    </div>
+                                  </ks-swiper-slide>
+                                </ks-swiper-container>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- fin recomendacionSlider -->
+                  <!-- inicio recomendacionProductos -->
+                  <section>
+                    <div class="resumen--bloque__titulo h--marginTop1">
+                      <h2 class="subtitulos">Recomendación</h2>
+                    </div>
+                    <div class="ban-row">
+                      <div class="ban-col-xs-12">
+                        <div class="contenidoWidgetRecomendacion" ng-controller="kSwiperCtrl">
+                          <div id="swipeWidgetRecomendacion--swiper-container" class="ban-swiper-container">
+                            <ks-swiper-container loop="true" swiper="swiper" slides-per-view="1" pagination-is-active="true" pagination-clickable="true" on-ready="onReadySwiper(swiper)">
+                              <ks-swiper-slide class="swiper-slide">
+                                <div class="contenedorTextos--estrategia">
+                                  <h3 class="contenidoWidgetRecomendacion--estrategia">BALANCEADO</h3>
+                                  <h3 class="contenidoWidgetRecomendacion--estrategiaTipo">ESTRATEGIA CONSERVADORA</h3>
+                                </div>
+                                <div class="contenedorVariacion--estrategia">
+                                  <p class="variacionPorcentaje">+0,22%</p>
+                                  <p class="variacionIndicador">Variación</p>
+                                </div>
+                                <div class="contenedorValorCuota--estrategia">
+                                  <p class="variacionPorcentaje">$37.259,7372</p>
+                                  <p class="variacionIndicador">Valor cuota serie C / CLP</p>
+                                </div>
+                              </ks-swiper-slide>
+                              <ks-swiper-slide class="swiper-slide">
+                                <div class="contenedorTextos--estrategia">
+                                  <h3 class="contenidoWidgetRecomendacion--estrategia">BALANCEADO</h3>
+                                  <h3 class="contenidoWidgetRecomendacion--estrategiaTipo">ESTRATEGIA CONSERVADORA</h3>
+                                </div>
+                                <div class="contenedorVariacion--estrategia">
+                                  <p class="variacionPorcentaje">+0,22%</p>
+                                  <p class="variacionIndicador">Variación</p>
+                                </div>
+                                <div class="contenedorValorCuota--estrategia">
+                                  <p class="variacionPorcentaje">$37.259,7372</p>
+                                  <p class="variacionIndicador">Valor cuota serie C / CLP</p>
+                                </div>
+                              </ks-swiper-slide>
+                            </ks-swiper-container>
+                          </div>
+                          <div id="swipeWidgetRecomendacion-pagination" class="ban-swiper-pagination"></div>
+                        </div>
+                        <md-button href="#fondosmutuos-aporte-clp" class="md-raised boton1 boton--100">
+                          <span>APORTAR</span>
+                        </md-button>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- inicio recomendacionProductos -->
+                  <!-- inicio recomendacionStatus -->
+                  <div class="h--paddingTop1">
+                    <div class="h--col12">
+                      <div class="contenidoWidgetAsesorias h--paddingBottom1" ng-controller="barraGraficoAsesoria">
+                        <div class="ban-row">
+                          <div class="col-md-3">
+                            <img class="contenidoWidgetAsesorias--imgIcon" alt="test" src="assets/images/iconoprudente.png">
+                          </div>
+                          <div class="col-md-9 h--marginBottom1">
+                            <div class="contenidoWidgetAsesorias--contenedortitulios">
+                              <h3 class="contenidoWidgetAsesorias--tituloRiesgo">Prudente</h3>
+                              <h4 class="contenidoWidgetAsesorias--tituloConsejo">Invierte hasta un 30% RV</h4>
+                              <p class="contenidoWidgetAsesorias--informe">Tu exposición actual en renta variable es de
+                                <span class="porcentaje--detalle">50%</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="contenidoWidgetAsesorias--grafico" id="barraGraficoAsesoria"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- inicio recomendacionStatus -->
+                </div>
+                <md-button class="md-raised boton2 boton--100" href="login-personas.html#/encuesta-inversionista">
+                  <span>ACTUALIZAR</span>
+                </md-button>
+              </div>
+            </div>
+          </section>
+          <!-- fin resumenRecomendacion -->
+        </div>
+      </div>
+      <!-- fin resumenInversiones -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorResumen -->
+<!-- inicio sliderCajas -->
+<section>
+  <div class="ban-container">
+    <div class="card h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2">
+      <div class="ban-row" ng-controller="solicFondoM">
+        <!-- slider indicadores-->
+        <div ng-controller="sliderCajas">
+          <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <div class="ban-col-sm-12 h--marginTop1">
+                <div class="cajaContainer-informacion">
+                  <div class="informacion--cajas">
+                    <div class="cajas--imagen">
+                      <img src="assets/images/resumen_banner2_f2.jpg" alt="">
+                    </div>
+                    <div class="cajas--texto">
+                      <h3>LÍDERES INDISCUTIDOS</h3>
+                      <p>
+                        Por quinto año consecutivo somos líderes en el mercado
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <div class="ban-col-md-12 h--marginTop1">
+                <div class="cajaContainer-informacion">
+                  <div class="informacion--cajas">
+                    <div class="cajas--imagen">
+                      <img src="assets/images/resumen_banner2_f1.jpg" alt="">
+                    </div>
+                    <div class="cajas--texto">
+                      <h3>AHORRO PREVISIONAL VOLUNTARIO</h3>
+                      <p>
+                        Asegura tu futuro hoy con la asesoría de un experto
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <div class="ban-col-md-12 h--marginTop1">
+                <div class="cajaContainer-informacion">
+                  <div class="informacion--cajas">
+                    <div class="cajas--imagen">
+                      <img src="assets/images/resumen_banner2_f2.jpg" alt="">
+                    </div>
+                    <div class="cajas--texto">
+                      <h3>LÍDERES INDISCUTIDOS</h3>
+                      <p>
+                        Por quinto año consecutivo somos líderes en el mercado
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+            <!-- cajaTranzadas -->
+            <ks-swiper-slide>
+              <div class="ban-col-md-12 h--marginTop1">
+                <div class="cajaContainer-informacion">
+                  <div class="informacion--cajas">
+                    <div class="cajas--imagen">
+                      <img src="assets/images/resumen_banner2_f1.jpg" alt="">
+                    </div>
+                    <div class="cajas--texto">
+                      <h3>AHORRO PREVISIONAL VOLUNTARIO</h3>
+                      <p>
+                        Asegura tu futuro hoy con la asesoría de un experto
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ks-swiper-slide>
+            <!-- cajaTranzadas -->
+          </ks-swiper-container>
+          <!--fin slider indicadores-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin sliderCajas -->

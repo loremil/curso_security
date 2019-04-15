@@ -1,0 +1,79 @@
+<section>
+  <div class="contenido--background definir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion ">Empresas</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-buscar-add-fav-empresas.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+            <div ng-include src=" 'buscadores/buscador-documentos.html' ">
+            </div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorEmpresas -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2 ">
+      <!-- inicio empresasListado -->
+      <table class="a_fadein" wt-responsive-table ng-controller="tablaEmpresas">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tableHead--titulo">Nombre Empresa</th>
+            <th>Rut</th>
+            <th>Cuenta Corriente</th>
+            <th>Creación</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="empresas in empresa | orderBy : sort" class="no_visible" when-visible="a_fadein">
+            <td></td>
+            <td class="td--principal td--auto">{{empresas.nombre}}</td>
+            <td>{{empresas.rut}}</td>
+            <td>{{empresas.cuentaCorriente}}</td>
+            <td>{{empresas.creacion}}</td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante" ng-href="#editar-empresa">
+                  <md-icon>
+                    <i class="material-icons icono--principal">&#xE254;</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Editar</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+            <td class="td--iconos">
+              <div class="td--botonesTransar">
+                <md-button class="md-icon-button acciones" aria-label="comprobante">
+                  <md-icon>
+                    <i class="material-icons icono--principal">&#xE872;</i>
+                  </md-icon>
+                  <md-tooltip md-direction="bottom">Eliminar</md-tooltip>
+                </md-button>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <!-- inicio empresasListado -->
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorEmpresas -->

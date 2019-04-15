@@ -1,0 +1,402 @@
+<!-- LMalave 13 Sept -->
+<!-- contenedorTitular -->
+<section>
+  <div class="contenido--background invertir-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row animated fadeInDown ">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion ">Transacciones por Instruir</h1>
+          <div class="border--titulo">
+            <hr width="43%">
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-fav.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+            <div ng-include class="fadeIn animated" src=" 'buscadores/buscador-movimientos.html' ">
+            </div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorTitular -->
+<!-- contenedorInstrucciones -->
+<section>
+  <div class="ban-container animated fadeInDown">
+    <div class="card h--paddingBottom2 h--marginBottom4">
+      <div class="documentos">
+        <md-tabs md-dynamic-height md-border-bottom>
+          <!-- cajaPendientes-->
+          <md-tab label="Pendientes">
+            <div class="ban-row">
+              <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1 ">
+                <table class="table tableContenido animated fadein" wt-responsive-table ng-controller="tablaCartola">
+                  <thead class="tableContenido--head">
+                    <tr>
+                      <th></th>
+                      <th class="td--label">Fecha</th>
+                      <th class="td--label">Transacción</th>
+                      <th class="td--label">Instrumento</th>
+                      <th click-sort="sort">Cantidad</th>
+                      <th click-sort="sort">Precio</th>
+                      <th>Monto</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--Moneda extranjera compra dolar-->
+                    <tr class="tableContenido--info info--detalle" ng-class="{'active': usuarios.expanded}" ng-repeat-start="usuarios in cartola14 | orderBy : sort">
+                      <td class="info--iconos">
+                        <md-button class="md-icon-button" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                          <md-icon><i class="material-icons">&#xE316;</i> </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                          <md-icon><i class="material-icons">&#xE313;</i> </md-icon>
+                        </md-button>
+                      </td>
+                      <td class="info--fecha">{{usuarios.fecha}}</td>
+                      <td class="info--fecha">{{usuarios.transaccion}}</td>
+                      <td class="info--fecha">{{usuarios.instrumento}}</td>
+                      <td class="valor--td">{{usuarios.cantidad}}</td>
+                      <td class="valor--td">{{usuarios.precio}}</td>
+                      <td class="valor--td montos">{{usuarios.monto}}</td>
+                      <td class="contenedor--acciones">
+                        <md-button class="boton--aportar md-raised acciones" href="#/moneda-comprainstruccion">Instruir</md-button>
+                      </td>
+                    </tr>
+                    <!--Detalle Moneda extranjera compra dolar-->
+                    <tr class="animacionApertura" ng-repeat-end="" aria-label="Toggle ngHide">
+                      <td colspan="9" class="despliegueDetalle collapseTable" ng-hide="!usuarios.expanded">
+                        <div ng-include class="animated fadeIn" src=" 'detalle/detalle-ME-compraUsdPendiente.html' "></div>
+                      </td>
+                    </tr>
+                    <!--Fin Detalle Moneda extranjera compra dolar-->
+                  </tbody>
+                </table>
+              </div>
+              <!-- inicio paginador -->
+              <div class="pie--tabla" ng-cloak>
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin paginador -->
+            </div>
+          </md-tab>
+          <!-- fin cajaPendientes -->
+          <!-- cajaPendientes-->
+          <md-tab label="En proceso">
+            <div class="ban-row">
+              <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1 ">
+                <table class="table tableContenido animated fadein" wt-responsive-table ng-controller="tablaCartola">
+                  <thead class="tableContenido--head">
+                    <tr>
+                      <th></th>
+                      <th class="td--label">Fecha</th>
+                      <th class="td--label">Transacción</th>
+                      <th class="td--label">Instrumento</th>
+                      <th click-sort="sort">Cantidad</th>
+                      <th click-sort="sort">Precio</th>
+                      <th>Monto</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--Moneda extranjera compra dolar-->
+                    <tr class="tableContenido--info info--detalle" ng-class="{'active': usuarios.expanded}" ng-repeat-start="usuarios in cartola14 | orderBy : sort">
+                      <td class="info--iconos">
+                        <md-button class="md-icon-button" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                          <md-icon><i class="material-icons">&#xE316;</i> </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                          <md-icon><i class="material-icons">&#xE313;</i> </md-icon>
+                        </md-button>
+                      </td>
+                      <td class="info--fecha">{{usuarios.fecha}}</td>
+                      <td class="info--fecha">{{usuarios.transaccion}}</td>
+                      <td class="info--fecha">{{usuarios.instrumento}}</td>
+                      <td class="valor--td">{{usuarios.cantidad}}</td>
+                      <td class="valor--td">{{usuarios.precio}}</td>
+                      <td class="valor--td montos">{{usuarios.monto}}</td>
+                      <td class="contenedor--acciones">
+                        <md-button class="md-icon-button" aria-label="comprobante">
+                          <md-icon><i class="material-icons acciones--pendiente">rotate_right</i></md-icon>
+                          <md-tooltip md-direction="bottom">Pendiente</md-tooltip>
+                        </md-button>
+                      </td>
+                    </tr>
+                    <!--Detalle Moneda extranjera compra dolar-->
+                    <tr class="animacionApertura" ng-repeat-end="" aria-label="Toggle ngHide">
+                      <td colspan="9" class="despliegueDetalle collapseTable" ng-hide="!usuarios.expanded">
+                        <div ng-include class="animated fadeIn" src=" 'detalle/detalle-ME-compraUsdPendiente.html' "></div>
+                      </td>
+                    </tr>
+                    <!--Fin Detalle Moneda extranjera compra dolar-->
+                  </tbody>
+                </table>
+              </div>
+              <!-- inicio paginador -->
+              <div class="pie--tabla" ng-cloak>
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin paginador -->
+            </div>
+          </md-tab>
+          <!-- fin cajaPendientes -->
+          <!-- cajaPendientes-->
+          <md-tab label="Aprobadas">
+            <div class="ban-row">
+              <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1 ">
+                <table class="table tableContenido animated fadein" wt-responsive-table ng-controller="tablaCartola">
+                  <thead class="tableContenido--head">
+                    <tr>
+                      <th></th>
+                      <th class="td--label">Fecha</th>
+                      <th class="td--label">Transacción</th>
+                      <th class="td--label">Instrumento</th>
+                      <th click-sort="sort">Cantidad</th>
+                      <th click-sort="sort">Precio</th>
+                      <th>Monto</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--Moneda extranjera compra dolar-->
+                    <tr class="tableContenido--info info--detalle" ng-class="{'active': usuarios.expanded}" ng-repeat-start="usuarios in cartola14 | orderBy : sort">
+                      <td class="info--iconos">
+                        <md-button class="md-icon-button" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                          <md-icon><i class="material-icons">&#xE316;</i> </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                          <md-icon><i class="material-icons">&#xE313;</i> </md-icon>
+                        </md-button>
+                      </td>
+                      <td class="info--fecha">{{usuarios.fecha}}</td>
+                      <td class="info--fecha">{{usuarios.transaccion}}</td>
+                      <td class="info--fecha">{{usuarios.instrumento}}</td>
+                      <td class="valor--td">{{usuarios.cantidad}}</td>
+                      <td class="valor--td">{{usuarios.precio}}</td>
+                      <td class="valor--td montos">{{usuarios.monto}}</td>
+                      <td class="contenedor--acciones">
+                        <md-button class="md-icon-button" aria-label="comprobante">
+                          <md-icon><i class="material-icons acciones--check">check</i></md-icon>
+                          <md-tooltip md-direction="bottom">Aprobado</md-tooltip>
+                        </md-button>
+                      </td>
+                    </tr>
+                    <!--Detalle Moneda extranjera compra dolar-->
+                    <tr class="animacionApertura" ng-repeat-end="" aria-label="Toggle ngHide">
+                      <td colspan="9" class="despliegueDetalle collapseTable" ng-hide="!usuarios.expanded">
+                        <div ng-include class="animated fadeIn" src=" 'detalle/detalle-ME-compraUsdPendiente.html' "></div>
+                      </td>
+                    </tr>
+                    <!--Fin Detalle Moneda extranjera compra dolar-->
+                  </tbody>
+                </table>
+              </div>
+              <!-- inicio paginador -->
+              <div class="pie--tabla" ng-cloak>
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin paginador -->
+            </div>
+          </md-tab>
+          <!-- fin cajaPendientes -->
+          <!-- cajaPendientes-->
+          <md-tab label="Rechazadas">
+            <div class="ban-row">
+              <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1 ">
+                <table class="table tableContenido animated fadein" wt-responsive-table ng-controller="tablaCartola">
+                  <thead class="tableContenido--head">
+                    <tr>
+                      <th></th>
+                      <th class="td--label">Fecha</th>
+                      <th class="td--label">Transacción</th>
+                      <th class="td--label">Instrumento</th>
+                      <th click-sort="sort">Cantidad</th>
+                      <th click-sort="sort">Precio</th>
+                      <th>Monto</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--Moneda extranjera compra dolar-->
+                    <tr class="tableContenido--info info--detalle" ng-class="{'active': usuarios.expanded}" ng-repeat-start="usuarios in cartola14 | orderBy : sort">
+                      <td class="info--iconos">
+                        <md-button class="md-icon-button" ng-if="usuarios.expanded" ng-click="usuarios.expanded = false">
+                          <md-icon><i class="material-icons">&#xE316;</i> </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" ng-if="!usuarios.expanded" ng-click="usuarios.expanded = true">
+                          <md-icon><i class="material-icons">&#xE313;</i> </md-icon>
+                        </md-button>
+                      </td>
+                      <td class="info--fecha">{{usuarios.fecha}}</td>
+                      <td class="info--fecha">{{usuarios.transaccion}}</td>
+                      <td class="info--fecha">{{usuarios.instrumento}}</td>
+                      <td class="valor--td">{{usuarios.cantidad}}</td>
+                      <td class="valor--td">{{usuarios.precio}}</td>
+                      <td class="valor--td montos">{{usuarios.monto}}</td>
+                      <td class="contenedor--acciones">
+                        <md-button class="md-icon-button" aria-label="comprobante">
+                          <md-icon><i class="material-icons acciones--block">block</i></md-icon>
+                          <md-tooltip md-direction="bottom">Anulado</md-tooltip>
+                        </md-button>
+                      </td>
+                    </tr>
+                    <!--Detalle Moneda extranjera compra dolar-->
+                    <tr class="animacionApertura" ng-repeat-end="" aria-label="Toggle ngHide">
+                      <td colspan="9" class="despliegueDetalle collapseTable" ng-hide="!usuarios.expanded">
+                        <div ng-include class="animated fadeIn" src=" 'detalle/detalle-ME-compraUsdPendiente.html' "></div>
+                      </td>
+                    </tr>
+                    <!--Fin Detalle Moneda extranjera compra dolar-->
+                  </tbody>
+                </table>
+              </div>
+              <!-- inicio paginador -->
+              <div class="pie--tabla" ng-cloak>
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin paginador -->
+            </div>
+          </md-tab>
+          <!-- fin cajaPendientes -->
+        </md-tabs>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorInstrucciones -->

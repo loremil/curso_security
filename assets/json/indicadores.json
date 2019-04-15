@@ -1,0 +1,8161 @@
+{
+	"estadoOperacion": {
+		"codigoOperacion": "000",
+		"glosaOperacion": "Ok consulta"
+	},
+	"nemo": [{
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1915",
+		"idNotacion": 0,
+		"nemotecnico": "AESGENER"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Administradora De Fondos De Pensiones Capital S.A.",
+		"idNemotecnico": "2",
+		"idNotacion": 0,
+		"nemotecnico": "AFPCAPITAL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "S.A. Feria De Los Agricultores",
+		"idNemotecnico": "3",
+		"idNotacion": 0,
+		"nemotecnico": "AGRICULTOR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Aguas Andinas S.A.",
+		"idNemotecnico": "4",
+		"idNotacion": 0,
+		"nemotecnico": "AGUAS-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3344",
+		"idNotacion": 0,
+		"nemotecnico": "AGUAS-A2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Aguas Andinas S.A.",
+		"idNemotecnico": "7",
+		"idNotacion": 0,
+		"nemotecnico": "AGUAS-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3345",
+		"idNotacion": 0,
+		"nemotecnico": "AGUITA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3346",
+		"idNotacion": 0,
+		"nemotecnico": "AGUITA2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3347",
+		"idNotacion": 0,
+		"nemotecnico": "AGUITA4"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Agencias Universales S A.",
+		"idNemotecnico": "8",
+		"idNotacion": 0,
+		"nemotecnico": "AGUNSA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Almendral S.A.",
+		"idNemotecnico": "9",
+		"idNotacion": 0,
+		"nemotecnico": "ALMENDRAL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Agrícola Nacional S.A.C. E Ind.",
+		"idNemotecnico": "12",
+		"idNotacion": 0,
+		"nemotecnico": "ANASAC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Andariveles De Cordillera S.A.",
+		"idNemotecnico": "14",
+		"idNotacion": 0,
+		"nemotecnico": "ANDACOR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Embotelladora Andina S.A.",
+		"idNemotecnico": "15",
+		"idNotacion": 0,
+		"nemotecnico": "ANDINA-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Embotelladora Andina S.A.",
+		"idNemotecnico": "18",
+		"idNotacion": 0,
+		"nemotecnico": "ANDINA-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Laboratorio Andrómaco S.A.",
+		"idNemotecnico": "20",
+		"idNotacion": 0,
+		"nemotecnico": "ANDROMACO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2061",
+		"idNotacion": 0,
+		"nemotecnico": "ANGLO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Antarchile S. A.",
+		"idNemotecnico": "24",
+		"idNotacion": 0,
+		"nemotecnico": "ANTARCHILE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1726",
+		"idNotacion": 0,
+		"nemotecnico": "AQUACHILE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3348",
+		"idNotacion": 0,
+		"nemotecnico": "ASDFG"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1732",
+		"idNotacion": 0,
+		"nemotecnico": "AUSTRALIS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1945",
+		"idNotacion": 0,
+		"nemotecnico": "AXXDOS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Axxion S.A.",
+		"idNemotecnico": "27",
+		"idNotacion": 0,
+		"nemotecnico": "AXXION"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Azul Azul S.A.",
+		"idNemotecnico": "28",
+		"idNotacion": 0,
+		"nemotecnico": "AZUL AZUL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banmédica S.A.",
+		"idNemotecnico": "30",
+		"idNotacion": 0,
+		"nemotecnico": "BANMEDICA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banvida S.A.",
+		"idNemotecnico": "32",
+		"idNotacion": 0,
+		"nemotecnico": "BANVIDA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banchile Administradora General De Fondos S.A.",
+		"idNemotecnico": "35",
+		"idNotacion": 0,
+		"nemotecnico": "BAT-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Bata Chile S.A.",
+		"idNemotecnico": "34",
+		"idNotacion": 0,
+		"nemotecnico": "BATA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3349",
+		"idNotacion": 0,
+		"nemotecnico": "BATA-X"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco Bilbao Vizcaya Argentaria,Chile",
+		"idNemotecnico": "37",
+		"idNotacion": 0,
+		"nemotecnico": "BBVACL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco De Crédito E Inversiones",
+		"idNemotecnico": "39",
+		"idNotacion": 0,
+		"nemotecnico": "BCI"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Besalco S.A.",
+		"idNemotecnico": "42",
+		"idNotacion": 0,
+		"nemotecnico": "BESALCO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Bicecorp S.A.",
+		"idNemotecnico": "46",
+		"idNotacion": 0,
+		"nemotecnico": "BICECORP"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1804",
+		"idNotacion": 0,
+		"nemotecnico": "BLUMAR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Bolsa Electrónica De Chile, Bolsa De Valores",
+		"idNemotecnico": "49",
+		"idNotacion": 0,
+		"nemotecnico": "BOLVALORES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco Santander-Chile",
+		"idNemotecnico": "52",
+		"idNotacion": 0,
+		"nemotecnico": "BSANTANDER"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2063",
+		"idNotacion": 0,
+		"nemotecnico": "BWA US"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3350",
+		"idNotacion": 0,
+		"nemotecnico": "BZANTANDER"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inmobiliaria Bajos De Mena S.A.",
+		"idNemotecnico": "54",
+		"idNotacion": 0,
+		"nemotecnico": "CADENA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Sociedad De Inversiones Pampa Calichera S.A.",
+		"idNemotecnico": "58",
+		"idNotacion": 0,
+		"nemotecnico": "CALICHERAA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Sociedad De Inversiones Pampa Calichera S.A.",
+		"idNemotecnico": "59",
+		"idNotacion": 0,
+		"nemotecnico": "CALICHERAB"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Compañía Pesquera Camanchaca S.A.",
+		"idNemotecnico": "1591",
+		"idNotacion": 0,
+		"nemotecnico": "CAMANCHACA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cclv. Contraparte Central S.A.",
+		"idNemotecnico": "60",
+		"idNotacion": 0,
+		"nemotecnico": "CAMARA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3351",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLIN"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3352",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3353",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLO2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3354",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLO3"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3355",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLO4"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3356",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLO5"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3357",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLO6"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3358",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLO7"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3359",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLO8"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3360",
+		"idNotacion": 0,
+		"nemotecnico": "CAMELLO9"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Sociedad De Inversiones Campos Chilenos S.A.",
+		"idNemotecnico": "61",
+		"idNotacion": 0,
+		"nemotecnico": "CAMPOS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cap. S.A.",
+		"idNemotecnico": "64",
+		"idNotacion": 0,
+		"nemotecnico": "CAP"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Capitales S.A.",
+		"idNemotecnico": "66",
+		"idNotacion": 0,
+		"nemotecnico": "CAPITALES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2064",
+		"idNotacion": 0,
+		"nemotecnico": "CARAMPANG"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Industrias Alimenticias Carozzi S.A.",
+		"idNemotecnico": "68",
+		"idNotacion": 0,
+		"nemotecnico": "CAROZZI"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1532",
+		"idNotacion": 0,
+		"nemotecnico": "CARRERA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Carbonífera Victoria De Lebu S.A.",
+		"idNemotecnico": "69",
+		"idNotacion": 0,
+		"nemotecnico": "CARVILE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Energía De Casablanca S.A.",
+		"idNemotecnico": "70",
+		"idNotacion": 0,
+		"nemotecnico": "CASABLANCA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Matriz Ideas S.A.",
+		"idNemotecnico": "71",
+		"idNotacion": 0,
+		"nemotecnico": "CASAIDEAS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cclv. Contraparte Central S.A.",
+		"idNemotecnico": "72",
+		"idNotacion": 0,
+		"nemotecnico": "CCLV"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Chilena De Tabacos S.A.",
+		"idNemotecnico": "73",
+		"idNotacion": 0,
+		"nemotecnico": "CCT"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Cervecerías Unidas S.A.",
+		"idNemotecnico": "75",
+		"idNotacion": 0,
+		"nemotecnico": "CCU"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Campos Deportivos Craighouse S.A.",
+		"idNemotecnico": "79",
+		"idNotacion": 0,
+		"nemotecnico": "CDCRAIG-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Campos Deportivos Craighouse S.A.",
+		"idNemotecnico": "80",
+		"idNotacion": 0,
+		"nemotecnico": "CDCRAIG-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cem S. A.",
+		"idNemotecnico": "82",
+		"idNotacion": 0,
+		"nemotecnico": "CEM"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cementos Bío Bío S.A.",
+		"idNemotecnico": "84",
+		"idNotacion": 0,
+		"nemotecnico": "CEMENTOS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cencosud S.A.",
+		"idNemotecnico": "89",
+		"idNotacion": 0,
+		"nemotecnico": "CENCOSUD"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3361",
+		"idNotacion": 0,
+		"nemotecnico": "CENCOSUD69"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cencosud Retail S.A.",
+		"idNemotecnico": "90",
+		"idNotacion": 0,
+		"nemotecnico": "CENCRETAIL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Industrias Ceresita S.A.",
+		"idNemotecnico": "91",
+		"idNotacion": 0,
+		"nemotecnico": "CERESITA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1722",
+		"idNotacion": 0,
+		"nemotecnico": "CFR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. General De Electricidad S.A.",
+		"idNemotecnico": "135",
+		"idNotacion": 0,
+		"nemotecnico": "CGE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cge Distribucion S.A.",
+		"idNemotecnico": "137",
+		"idNotacion": 0,
+		"nemotecnico": "CGEDISTRO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3362",
+		"idNotacion": 0,
+		"nemotecnico": "CHELA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco De Chile",
+		"idNemotecnico": "140",
+		"idNotacion": 0,
+		"nemotecnico": "CHILE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3363",
+		"idNotacion": 0,
+		"nemotecnico": "CHILE DOS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco De Chile",
+		"idNemotecnico": "142",
+		"idNotacion": 0,
+		"nemotecnico": "CHILE-F"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco De Chile",
+		"idNemotecnico": "143",
+		"idNotacion": 0,
+		"nemotecnico": "CHILE-S"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1967",
+		"idNotacion": 0,
+		"nemotecnico": "CHILE-T"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Chilectra S.A.",
+		"idNemotecnico": "141",
+		"idNotacion": 0,
+		"nemotecnico": "CHILECTRA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Telmex Corp S.A.",
+		"idNemotecnico": "144",
+		"idNotacion": 0,
+		"nemotecnico": "CHILESAT"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Forestal Cholguán S.A.",
+		"idNemotecnico": "146",
+		"idNotacion": 0,
+		"nemotecnico": "CHOLGUAN"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Telmex S.A.",
+		"idNemotecnico": "147",
+		"idNotacion": 0,
+		"nemotecnico": "CHSAT"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Compañias Cic S.A.",
+		"idNemotecnico": "148",
+		"idNotacion": 0,
+		"nemotecnico": "CIC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cintac S.A.",
+		"idNemotecnico": "150",
+		"idNotacion": 0,
+		"nemotecnico": "CINTAC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Ciudad Empresarial S.A.",
+		"idNemotecnico": "152",
+		"idNotacion": 0,
+		"nemotecnico": "CIUDAD EMP"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inmobiliaria Club De Campo Ltda. Y Cpa.",
+		"idNemotecnico": "153",
+		"idNotacion": 0,
+		"nemotecnico": "CLUBCAMPO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Union Inmobiliaria S.A.",
+		"idNemotecnico": "154",
+		"idNotacion": 0,
+		"nemotecnico": "CLUBUNION"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresas Cmpc S.A.",
+		"idNemotecnico": "155",
+		"idNotacion": 0,
+		"nemotecnico": "CMPC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3364",
+		"idNotacion": 0,
+		"nemotecnico": "CMPC-2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Adm. De Fondos De Pensiones A.F.P. Planvital S.A.",
+		"idNemotecnico": "158",
+		"idNotacion": 0,
+		"nemotecnico": "CNTCARRIER"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cobre Cerrillos S.A.",
+		"idNemotecnico": "159",
+		"idNotacion": 0,
+		"nemotecnico": "COCESA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Colbún S.A.",
+		"idNemotecnico": "160",
+		"idNotacion": 0,
+		"nemotecnico": "COLBUN"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Blanco Y Negro  S.A.",
+		"idNemotecnico": "162",
+		"idNotacion": 0,
+		"nemotecnico": "COLO COLO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Soc. Pesquera Coloso S.A.",
+		"idNemotecnico": "163",
+		"idNotacion": 0,
+		"nemotecnico": "COLOSO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Bolsa De Comercio De Stgo, Bolsa De Valores",
+		"idNemotecnico": "164",
+		"idNotacion": 0,
+		"nemotecnico": "COMERCIO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Comercial E Industrial Viña S.A.",
+		"idNemotecnico": "165",
+		"idNotacion": 0,
+		"nemotecnico": "COMVINA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Nac. De Fuerza Eléctrica S.A.",
+		"idNemotecnico": "166",
+		"idNotacion": 0,
+		"nemotecnico": "CONAFE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Viña Concha Y Toro S.A.",
+		"idNemotecnico": "169",
+		"idNotacion": 0,
+		"nemotecnico": "CONcontenedor_fab1ORO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Chilena Consolidada Seguros Generales S.A.",
+		"idNemotecnico": "171",
+		"idNotacion": 0,
+		"nemotecnico": "CONSOGRAL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. De Seguros Vida La Construcción S.A.",
+		"idNemotecnico": "172",
+		"idNotacion": 0,
+		"nemotecnico": "CONSTRUVID"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresas Copec S.A.",
+		"idNemotecnico": "173",
+		"idNotacion": 0,
+		"nemotecnico": "COPEC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Copefrut S.A.",
+		"idNemotecnico": "176",
+		"idNotacion": 0,
+		"nemotecnico": "COPEFRUT"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Compañia Agropecuaria Copeval S.A.",
+		"idNemotecnico": "177",
+		"idNotacion": 0,
+		"nemotecnico": "COPEVAL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Adm. Banchile De Fondos Mutuos S.A.",
+		"idNemotecnico": "179",
+		"idNotacion": 0,
+		"nemotecnico": "COR-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Coresa S.A.",
+		"idNemotecnico": "181",
+		"idNotacion": 0,
+		"nemotecnico": "CORESA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Corpbanca",
+		"idNemotecnico": "182",
+		"idNotacion": 0,
+		"nemotecnico": "CORPBANCA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Corpesca S.A.",
+		"idNemotecnico": "185",
+		"idNotacion": 0,
+		"nemotecnico": "CORPESCA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Prince Of Wales Country Club S.A. Inmobiliaria",
+		"idNemotecnico": "187",
+		"idNotacion": 0,
+		"nemotecnico": "COUNTRY-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Prince Of Wales Country Club S.A. Inmobiliaria",
+		"idNemotecnico": "188",
+		"idNotacion": 0,
+		"nemotecnico": "COUNTRY-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inversiones Covadonga S.A.",
+		"idNemotecnico": "189",
+		"idNotacion": 0,
+		"nemotecnico": "COVADONGA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inmobiliaria Craighouse S.A.",
+		"idNemotecnico": "190",
+		"idNotacion": 0,
+		"nemotecnico": "CRAIGHOUSE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3365",
+		"idNotacion": 0,
+		"nemotecnico": "CRISTAL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cristalerías De Chile S.A.",
+		"idNemotecnico": "192",
+		"idNotacion": 0,
+		"nemotecnico": "CRISTALES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cruzados Sadp",
+		"idNemotecnico": "196",
+		"idNotacion": 0,
+		"nemotecnico": "CRUZADOS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Isapre Cruz Blanca S.A.",
+		"idNemotecnico": "197",
+		"idNotacion": 0,
+		"nemotecnico": "CRUZBLANCA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cia. De Seguros Grles. Consorcio Nacional De Seguros S.A.",
+		"idNemotecnico": "199",
+		"idNotacion": 0,
+		"nemotecnico": "CRUZGENER"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3366",
+		"idNotacion": 0,
+		"nemotecnico": "CRUZNEGRA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3367",
+		"idNotacion": 0,
+		"nemotecnico": "CRUZNEGRA2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Isapre Cruz Blanca S.A.",
+		"idNemotecnico": "200",
+		"idNotacion": 0,
+		"nemotecnico": "CRUZSALUD"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Ing Seguros Vida S.A.",
+		"idNemotecnico": "202",
+		"idNotacion": 0,
+		"nemotecnico": "CRUZVIDA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Telefonica Chile S.A.",
+		"idNemotecnico": "204",
+		"idNotacion": 0,
+		"nemotecnico": "CTC-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Telefonica Chile S.A.",
+		"idNemotecnico": "206",
+		"idNotacion": 0,
+		"nemotecnico": "CTC-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Telefónica Larga Distancia S. A.",
+		"idNemotecnico": "208",
+		"idNotacion": 0,
+		"nemotecnico": "CTC-MUNDO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "C.T.I. Cía. Tecno Industrial S.A.",
+		"idNemotecnico": "209",
+		"idNotacion": 0,
+		"nemotecnico": "CTI"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "A.F.P. Cuprum S.A.",
+		"idNemotecnico": "211",
+		"idNotacion": 0,
+		"nemotecnico": "CUPRUM"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Curauma S.A.",
+		"idNemotecnico": "214",
+		"idNotacion": 0,
+		"nemotecnico": "CURAUMA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Costa Verde Aeronautica S.A.",
+		"idNemotecnico": "215",
+		"idNotacion": 0,
+		"nemotecnico": "CVA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco Del Desarrollo",
+		"idNemotecnico": "216",
+		"idNotacion": 0,
+		"nemotecnico": "DESARROLLO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Detroit Chile S.A.",
+		"idNemotecnico": "217",
+		"idNotacion": 0,
+		"nemotecnico": "DETROIT"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Adm. De Fondos De Pensiones A.F.P. Planvital S.A.",
+		"idNemotecnico": "219",
+		"idNotacion": 0,
+		"nemotecnico": "DOMINGO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Dresdner Bank Lateinamerika",
+		"idNemotecnico": "220",
+		"idNotacion": 0,
+		"nemotecnico": "DRESBANK"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Duncan Fox S.A.",
+		"idNemotecnico": "225",
+		"idNotacion": 0,
+		"nemotecnico": "DUNCANFOX"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "E. C L S.A.",
+		"idNemotecnico": "227",
+		"idNotacion": 0,
+		"nemotecnico": "ECL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3368",
+		"idNotacion": 0,
+		"nemotecnico": "ECL-NEW"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresa Eléctrica De Aysen S.A.",
+		"idNemotecnico": "228",
+		"idNotacion": 0,
+		"nemotecnico": "EDELAYSEN"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresa Eléctrica De Magallanes S.A.",
+		"idNemotecnico": "229",
+		"idNotacion": 0,
+		"nemotecnico": "EDELMAG"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1528",
+		"idNotacion": 0,
+		"nemotecnico": "EDELNOR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Envases Del Pacífico S.A.",
+		"idNemotecnico": "233",
+		"idNotacion": 0,
+		"nemotecnico": "EDELPA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1937",
+		"idNotacion": 0,
+		"nemotecnico": "EISA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Consorcio El Sauce Ames S.A.",
+		"idNemotecnico": "238",
+		"idNotacion": 0,
+		"nemotecnico": "EL SAUCE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresa Electrica De Antofagasta S.A.",
+		"idNemotecnico": "239",
+		"idNotacion": 0,
+		"nemotecnico": "ELECDA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Electro Metalúrgica S.A.",
+		"idNemotecnico": "240",
+		"idNotacion": 0,
+		"nemotecnico": "ELECMETAL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresa Eléctrica De Iquique S.A.",
+		"idNemotecnico": "242",
+		"idNotacion": 0,
+		"nemotecnico": "ELIQSA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3369",
+		"idNotacion": 0,
+		"nemotecnico": "ELLITTE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Coca Cola Embonor S.A.",
+		"idNemotecnico": "245",
+		"idNotacion": 0,
+		"nemotecnico": "EMBONOR-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Coca Cola Embonor S.A.",
+		"idNemotecnico": "246",
+		"idNotacion": 0,
+		"nemotecnico": "EMBONOR-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresa Eléctrica De Arica S.A.",
+		"idNemotecnico": "248",
+		"idNotacion": 0,
+		"nemotecnico": "EMELARI"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresa Eléctrica Atacama S.A.",
+		"idNemotecnico": "249",
+		"idNotacion": 0,
+		"nemotecnico": "EMELAT"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2070",
+		"idNotacion": 0,
+		"nemotecnico": "EMELATACA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2071",
+		"idNotacion": 0,
+		"nemotecnico": "EMELATINV"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2072",
+		"idNotacion": 0,
+		"nemotecnico": "EMELATRANS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2073",
+		"idNotacion": 0,
+		"nemotecnico": "EMELNORTE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3370",
+		"idNotacion": 0,
+		"nemotecnico": "EMELSUR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Viñedos Emiliana S.A.",
+		"idNemotecnico": "251",
+		"idNotacion": 0,
+		"nemotecnico": "EMILIANA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresa Nacional Del Carbón S.A.",
+		"idNemotecnico": "252",
+		"idNotacion": 0,
+		"nemotecnico": "ENACAR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Enaex S.A.",
+		"idNemotecnico": "253",
+		"idNotacion": 0,
+		"nemotecnico": "ENAEX"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3371",
+		"idNotacion": 0,
+		"nemotecnico": "ENDESA-K"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3372",
+		"idNotacion": 0,
+		"nemotecnico": "ENERSIS2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Enjoy S.A.",
+		"idNemotecnico": "260",
+		"idNotacion": 0,
+		"nemotecnico": "ENJOY"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1882",
+		"idNotacion": 0,
+		"nemotecnico": "ENLASA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Emp. Nacional De Telecomunicaciones S.A.",
+		"idNemotecnico": "261",
+		"idNotacion": 0,
+		"nemotecnico": "ENTEL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3373",
+		"idNotacion": 0,
+		"nemotecnico": "ENTEL-NEW"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3374",
+		"idNotacion": 0,
+		"nemotecnico": "ENTEL2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3375",
+		"idNotacion": 0,
+		"nemotecnico": "ENTEL3"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresa Pesquera Eperva S.A.",
+		"idNemotecnico": "265",
+		"idNotacion": 0,
+		"nemotecnico": "EPERVA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. De Inv. La Española S.A.",
+		"idNemotecnico": "268",
+		"idNotacion": 0,
+		"nemotecnico": "ESPANOLA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1848",
+		"idNotacion": 0,
+		"nemotecnico": "ESSAL-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1892",
+		"idNotacion": 0,
+		"nemotecnico": "ESSAL-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Essbio S.A.",
+		"idNemotecnico": "269",
+		"idNotacion": 0,
+		"nemotecnico": "ESSBIO-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1756",
+		"idNotacion": 0,
+		"nemotecnico": "ESSBIO-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Essbio S.A.",
+		"idNemotecnico": "270",
+		"idNotacion": 0,
+		"nemotecnico": "ESSBIO-C"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Emp.De Serv.Sanitarios Del Libertador S.A.",
+		"idNemotecnico": "271",
+		"idNotacion": 0,
+		"nemotecnico": "ESSEL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Emp.De Serv.Sanitarios Del Libertador S.A.",
+		"idNemotecnico": "272",
+		"idNotacion": 0,
+		"nemotecnico": "ESSEL-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inmobiliaria Central Est. Agustinas S.A.",
+		"idNemotecnico": "273",
+		"idNotacion": 0,
+		"nemotecnico": "ESTACIONAM"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Esval S.A.",
+		"idNemotecnico": "274",
+		"idNotacion": 0,
+		"nemotecnico": "ESVAL-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Esval S.A.",
+		"idNemotecnico": "276",
+		"idNotacion": 0,
+		"nemotecnico": "ESVAL-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Esval S.A.",
+		"idNemotecnico": "278",
+		"idNotacion": 0,
+		"nemotecnico": "ESVAL-C"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inversiones Euroluz S.A.",
+		"idNemotecnico": "281",
+		"idNotacion": 0,
+		"nemotecnico": "EUROLUZ-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inversiones Euroluz S.A.",
+		"idNemotecnico": "282",
+		"idNotacion": 0,
+		"nemotecnico": "EUROLUZ-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Masisa S.A. Historico",
+		"idNemotecnico": "294",
+		"idNotacion": 0,
+		"nemotecnico": "EXMASISA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2077",
+		"idNotacion": 0,
+		"nemotecnico": "EXMELON"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "S.A.C.I. Falabella",
+		"idNemotecnico": "296",
+		"idNotacion": 0,
+		"nemotecnico": "FALABELLA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Farmoquimica Del Pacifico S.A.",
+		"idNemotecnico": "298",
+		"idNotacion": 0,
+		"nemotecnico": "FARMOQUIM"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Farmacias Ahumada S.A.",
+		"idNemotecnico": "299",
+		"idNotacion": 0,
+		"nemotecnico": "FASA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Feria De Osorno S.A.",
+		"idNemotecnico": "303",
+		"idNotacion": 0,
+		"nemotecnico": "FERIAOSOR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Fibropac S.A.",
+		"idNemotecnico": "304",
+		"idNotacion": 0,
+		"nemotecnico": "FIBROPAC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2086",
+		"idNotacion": 0,
+		"nemotecnico": "FNMA-USA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Forus S.A.",
+		"idNemotecnico": "305",
+		"idNotacion": 0,
+		"nemotecnico": "FORUS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3376",
+		"idNotacion": 0,
+		"nemotecnico": "FOSFORO1"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Chilena De Fósforos S.A.",
+		"idNemotecnico": "308",
+		"idNotacion": 0,
+		"nemotecnico": "FOSFOROS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Portuaria Cabo Froward S.A.",
+		"idNemotecnico": "310",
+		"idNotacion": 0,
+		"nemotecnico": "FROWARD"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Gasco S.A.",
+		"idNemotecnico": "312",
+		"idNotacion": 0,
+		"nemotecnico": "GASCO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2087",
+		"idNotacion": 0,
+		"nemotecnico": "GATICO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "General Electric De Chile S.A.",
+		"idNemotecnico": "316",
+		"idNotacion": 0,
+		"nemotecnico": "GE-CHILE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "A.F.P. Genera",
+		"idNemotecnico": "318",
+		"idNotacion": 0,
+		"nemotecnico": "GENERA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Liberty Compañía De Seguros Grales S.A.",
+		"idNemotecnico": "320",
+		"idNotacion": 0,
+		"nemotecnico": "GENERALES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "S.A. De Deportes Club De Golf Santiago",
+		"idNemotecnico": "323",
+		"idNotacion": 0,
+		"nemotecnico": "GOLF"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inmobiliaria Club De Golf Y Deportes Las Brisas S.A.",
+		"idNemotecnico": "324",
+		"idNotacion": 0,
+		"nemotecnico": "GOLFBRISAS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Granadilla Country Club S.A.",
+		"idNemotecnico": "325",
+		"idNotacion": 0,
+		"nemotecnico": "GRANADILLA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "The Grange School S.A.",
+		"idNemotecnico": "326",
+		"idNotacion": 0,
+		"nemotecnico": "GRANGE-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "The Grange School S.A.",
+		"idNemotecnico": "327",
+		"idNotacion": 0,
+		"nemotecnico": "GRANGE-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Soc. Industrial Teófilo Grob S.A.",
+		"idNemotecnico": "328",
+		"idNotacion": 0,
+		"nemotecnico": "GROB"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Afp Habitat S.A.",
+		"idNemotecnico": "329",
+		"idNotacion": 0,
+		"nemotecnico": "HABITAT"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3377",
+		"idNotacion": 0,
+		"nemotecnico": "HABITAT1"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3378",
+		"idNotacion": 0,
+		"nemotecnico": "HABITAT2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3379",
+		"idNotacion": 0,
+		"nemotecnico": "HABITVT"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1928",
+		"idNotacion": 0,
+		"nemotecnico": "HF"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Hipermarc S.A.",
+		"idNemotecnico": "330",
+		"idNotacion": 0,
+		"nemotecnico": "HIPERMARC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Club Hípico De Santiago S.A.",
+		"idNemotecnico": "331",
+		"idNotacion": 0,
+		"nemotecnico": "HIPICO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Club Hipico De Concepcion S.A",
+		"idNemotecnico": "332",
+		"idNotacion": 0,
+		"nemotecnico": "HIPICONCE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Sociedad Hipódromo Chile S.A.",
+		"idNemotecnico": "333",
+		"idNotacion": 0,
+		"nemotecnico": "HIPODROMOA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Sociedad Hipódromo Chile S.A.",
+		"idNemotecnico": "334",
+		"idNotacion": 0,
+		"nemotecnico": "HIPODROMOB"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresas Hites S.A.",
+		"idNemotecnico": "336",
+		"idNotacion": 0,
+		"nemotecnico": "HITES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2089",
+		"idNotacion": 0,
+		"nemotecnico": "HOLDCOII"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresas Cabo De Horno S.A.",
+		"idNemotecnico": "338",
+		"idNotacion": 0,
+		"nemotecnico": "HORNOS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1734",
+		"idNotacion": 0,
+		"nemotecnico": "IACSA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inversiones Aguas Metropolitanas S.A.",
+		"idNemotecnico": "339",
+		"idNotacion": 0,
+		"nemotecnico": "IAM"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresas Iansa S.A.",
+		"idNemotecnico": "342",
+		"idNotacion": 0,
+		"nemotecnico": "IANSA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3380",
+		"idNotacion": 0,
+		"nemotecnico": "IANSA1"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2090",
+		"idNotacion": 0,
+		"nemotecnico": "ICBLANCA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1929",
+		"idNotacion": 0,
+		"nemotecnico": "ILC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3381",
+		"idNotacion": 0,
+		"nemotecnico": "ILC-NEW"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1801",
+		"idNotacion": 0,
+		"nemotecnico": "INCERESITA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Industria Nacional De Alimentos S.A.",
+		"idNemotecnico": "349",
+		"idNotacion": 0,
+		"nemotecnico": "INDALSA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Indalum S.A.",
+		"idNemotecnico": "350",
+		"idNotacion": 0,
+		"nemotecnico": "INDALUM"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inmobiliaria Del Comercio S.A.",
+		"idNemotecnico": "351",
+		"idNotacion": 0,
+		"nemotecnico": "INDECOM"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Indigo S.A.",
+		"idNemotecnico": "352",
+		"idNotacion": 0,
+		"nemotecnico": "INDIGO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Instituto De Diagnóstico S.A.",
+		"idNemotecnico": "353",
+		"idNotacion": 0,
+		"nemotecnico": "INDISA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Indiver S.A.",
+		"idNemotecnico": "354",
+		"idNotacion": 0,
+		"nemotecnico": "INDIVER"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Iansagro S.A.",
+		"idNemotecnico": "359",
+		"idNotacion": 0,
+		"nemotecnico": "INDUS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Infodema S.A.",
+		"idNemotecnico": "360",
+		"idNotacion": 0,
+		"nemotecnico": "INFODEMA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1759",
+		"idNotacion": 0,
+		"nemotecnico": "INGEVEC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3382",
+		"idNotacion": 0,
+		"nemotecnico": "INHABITAT"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "A.F.P. Armoniza",
+		"idNemotecnico": "364",
+		"idNotacion": 0,
+		"nemotecnico": "INIA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Intasa S.A.",
+		"idNemotecnico": "365",
+		"idNotacion": 0,
+		"nemotecnico": "INTASA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2091",
+		"idNotacion": 0,
+		"nemotecnico": "INTC-USA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Chilena De Navegación Interoceánica S.A.",
+		"idNemotecnico": "366",
+		"idNotacion": 0,
+		"nemotecnico": "INTEROCEAN"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Invercap S.A.",
+		"idNemotecnico": "368",
+		"idNotacion": 0,
+		"nemotecnico": "INVERCAP"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Invertec Foods S.A.",
+		"idNemotecnico": "369",
+		"idNotacion": 0,
+		"nemotecnico": "INVERFOODS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Invertec Pesquera Mar De Chiloé Ltda.",
+		"idNemotecnico": "371",
+		"idNotacion": 0,
+		"nemotecnico": "INVERMAR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Invernova S.A.",
+		"idNemotecnico": "373",
+		"idNotacion": 0,
+		"nemotecnico": "INVERNOVA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inversiones Unión Española S.A.",
+		"idNemotecnico": "375",
+		"idNotacion": 0,
+		"nemotecnico": "INVIESPA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Grupo Imsa Chile S.A. ",
+		"idNemotecnico": "376",
+		"idNotacion": 0,
+		"nemotecnico": "IPAC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Ipal S.A.",
+		"idNemotecnico": "377",
+		"idNotacion": 0,
+		"nemotecnico": "IPAL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Pesquera Iquique Guanaye S.A.",
+		"idNemotecnico": "378",
+		"idNotacion": 0,
+		"nemotecnico": "IQUIQUE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inmobiliaria San Patricio S.A.",
+		"idNemotecnico": "379",
+		"idNotacion": 0,
+		"nemotecnico": "ISANPA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inmobiliaria Italiana S.A.",
+		"idNemotecnico": "380",
+		"idNotacion": 0,
+		"nemotecnico": "ITALIANO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Kastel S.A.",
+		"idNemotecnico": "386",
+		"idNotacion": 0,
+		"nemotecnico": "KASTEL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "La Cartuja S.A.",
+		"idNemotecnico": "388",
+		"idNotacion": 0,
+		"nemotecnico": "LA CARTUJA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2092",
+		"idNotacion": 0,
+		"nemotecnico": "LA POLARFI"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Laboratorio Chile S.A.",
+		"idNemotecnico": "390",
+		"idNotacion": 0,
+		"nemotecnico": "LABCHILE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Lan Airlines S.A.",
+		"idNemotecnico": "391",
+		"idNotacion": 0,
+		"nemotecnico": "LAN"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Clínica Las Condes S.A.",
+		"idNemotecnico": "396",
+		"idNotacion": 0,
+		"nemotecnico": "LAS CONDES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2094",
+		"idNotacion": 0,
+		"nemotecnico": "LIPESED"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Vidrios Lirquén S.A.",
+		"idNemotecnico": "398",
+		"idNotacion": 0,
+		"nemotecnico": "LIRQUEN"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Eléctrica Del Litoral S.A.",
+		"idNemotecnico": "402",
+		"idNotacion": 0,
+		"nemotecnico": "LITORAL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Compañia De Inversiones Luz S.A.",
+		"idNemotecnico": "406",
+		"idNotacion": 0,
+		"nemotecnico": "LUZ-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Madeco S.A.",
+		"idNemotecnico": "408",
+		"idNotacion": 0,
+		"nemotecnico": "MADECO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3383",
+		"idNotacion": 0,
+		"nemotecnico": "MADECO-2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Maderas Prensadas Cholguán S.A.",
+		"idNemotecnico": "413",
+		"idNotacion": 0,
+		"nemotecnico": "MADERAS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Mainstream Chile S.A.",
+		"idNemotecnico": "415",
+		"idNotacion": 0,
+		"nemotecnico": "MAINSTREAM"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Marbella Country Club S.A.",
+		"idNemotecnico": "418",
+		"idNotacion": 0,
+		"nemotecnico": "MARBELLACC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2095",
+		"idNotacion": 0,
+		"nemotecnico": "MARDELSUR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Marítima De Inversiones S.A.",
+		"idNemotecnico": "419",
+		"idNotacion": 0,
+		"nemotecnico": "MARINSA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Masisa S.A.",
+		"idNemotecnico": "420",
+		"idNotacion": 0,
+		"nemotecnico": "MASISA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Masisa S.A.",
+		"idNemotecnico": "423",
+		"idNotacion": 0,
+		"nemotecnico": "MASISA-S"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Mecánicas",
+		"idNemotecnico": "425",
+		"idNotacion": 0,
+		"nemotecnico": "MECANICAS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Melón S.A.",
+		"idNemotecnico": "427",
+		"idNotacion": 0,
+		"nemotecnico": "MELON"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3384",
+		"idNotacion": 0,
+		"nemotecnico": "MELON2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Metalpar S.A.",
+		"idNemotecnico": "431",
+		"idNotacion": 0,
+		"nemotecnico": "METALPAR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Minera Valparaíso S.A.",
+		"idNemotecnico": "432",
+		"idNotacion": 0,
+		"nemotecnico": "MINERA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Tres Mares S.A.",
+		"idNemotecnico": "435",
+		"idNotacion": 0,
+		"nemotecnico": "MIRAFLORES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1983",
+		"idNotacion": 0,
+		"nemotecnico": "MOLLER"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Molibdenos Y Metales S.A.",
+		"idNemotecnico": "436",
+		"idNotacion": 0,
+		"nemotecnico": "MOLYMET"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2096",
+		"idNotacion": 0,
+		"nemotecnico": "MTCUSA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Multiexport Foods S.A. ",
+		"idNemotecnico": "437",
+		"idNotacion": 0,
+		"nemotecnico": "MULTIFOODS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Navarino S.A.",
+		"idNemotecnico": "438",
+		"idNotacion": 0,
+		"nemotecnico": "NAVARINO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresas Navieras S.A.",
+		"idNemotecnico": "439",
+		"idNotacion": 0,
+		"nemotecnico": "NAVIERA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Nestlé Chile S.A.",
+		"idNemotecnico": "440",
+		"idNotacion": 0,
+		"nemotecnico": "NESTLE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Nibsa S.A.",
+		"idNemotecnico": "441",
+		"idNotacion": 0,
+		"nemotecnico": "NIBSA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2005",
+		"idNotacion": 0,
+		"nemotecnico": "NITRATOS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3385",
+		"idNotacion": 0,
+		"nemotecnico": "NITRATOS3"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Nortegrande S.A.",
+		"idNemotecnico": "443",
+		"idNotacion": 0,
+		"nemotecnico": "NORTEGRAN"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Sociedad De Inversiones Norte Sur S.A.",
+		"idNemotecnico": "445",
+		"idNotacion": 0,
+		"nemotecnico": "NORTESUR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Sociedad De Inversiones Norte Sur S.A.",
+		"idNemotecnico": "446",
+		"idNotacion": 0,
+		"nemotecnico": "NORTESUR-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3386",
+		"idNotacion": 0,
+		"nemotecnico": "NORTESUR-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresas La Polar S.A.",
+		"idNemotecnico": "389",
+		"idNotacion": 0,
+		"nemotecnico": "NUEVAPOLAR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inversiones Nueva Region S.A",
+		"idNemotecnico": "447",
+		"idNotacion": 0,
+		"nemotecnico": "NUEVAREG"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco O'Higgins (Fusion Con Bco.Stgo.13/01/97",
+		"idNemotecnico": "449",
+		"idNotacion": 0,
+		"nemotecnico": "O'HIGGINS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Teatinos Siglo Xxi S.A.",
+		"idNemotecnico": "448",
+		"idNotacion": 0,
+		"nemotecnico": "OHCH"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco Central De Chile",
+		"idNemotecnico": "453",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 100"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco Central De Chile",
+		"idNemotecnico": "454",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 100*"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2097",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 20"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2098",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 20*"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2099",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 200"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2100",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 200*"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2101",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 50"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Banco Central De Chile",
+		"idNemotecnico": "455",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 50*"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2102",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 500"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2103",
+		"idNotacion": 0,
+		"nemotecnico": "ORO 500*"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Sociedad De Inversiones Oro Blanco S.A.",
+		"idNemotecnico": "452",
+		"idNotacion": 0,
+		"nemotecnico": "ORO BLANCO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2104",
+		"idNotacion": 0,
+		"nemotecnico": "OSA-ENERSI"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2105",
+		"idNotacion": 0,
+		"nemotecnico": "OSAENERSIS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2106",
+		"idNotacion": 0,
+		"nemotecnico": "OSALAPOLA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2107",
+		"idNotacion": 0,
+		"nemotecnico": "OXF US"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Quemchi S.A.",
+		"idNemotecnico": "502",
+		"idNotacion": 0,
+		"nemotecnico": "QUEMCHI"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Quilicura S.A.",
+		"idNemotecnico": "503",
+		"idNotacion": 0,
+		"nemotecnico": "QUILICURA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Quiñenco S.A.",
+		"idNemotecnico": "505",
+		"idNotacion": 0,
+		"nemotecnico": "QUINENCO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Quintec S.A.",
+		"idNemotecnico": "508",
+		"idNotacion": 0,
+		"nemotecnico": "QUINTEC"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3387",
+		"idNotacion": 0,
+		"nemotecnico": "QWERTY"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inversiones Ranquil S.A.",
+		"idNemotecnico": "511",
+		"idNotacion": 0,
+		"nemotecnico": "RANQUIL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Rebrisa S.A.",
+		"idNemotecnico": "513",
+		"idNotacion": 0,
+		"nemotecnico": "REBRISA-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Rebrisa S.A.",
+		"idNemotecnico": "514",
+		"idNotacion": 0,
+		"nemotecnico": "REBRISA-B"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Refractori",
+		"idNemotecnico": "515",
+		"idNotacion": 0,
+		"nemotecnico": "REFRACTORI"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Renta Nacional Cía.De Seguros Generales",
+		"idNemotecnico": "516",
+		"idNotacion": 0,
+		"nemotecnico": "RENTAGRAL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Redes, Telas Y Plásticos Argentina S.A.",
+		"idNemotecnico": "517",
+		"idNotacion": 0,
+		"nemotecnico": "RETEPLA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Ripley Corp. S.A.",
+		"idNemotecnico": "518",
+		"idNotacion": 0,
+		"nemotecnico": "RIPLEY"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Minera Tamaya S.A.",
+		"idNemotecnico": "596",
+		"idNotacion": 0,
+		"nemotecnico": "TAMAYA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Empresas Tattersall S.A.",
+		"idNemotecnico": "597",
+		"idNotacion": 0,
+		"nemotecnico": "TATTERSALL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. De Teléfonos De Coyhaique S.A.",
+		"idNemotecnico": "599",
+		"idNotacion": 0,
+		"nemotecnico": "TELCOY"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Nac. De Teléfonos, Telefónica Del Sur S.A.",
+		"idNemotecnico": "603",
+		"idNotacion": 0,
+		"nemotecnico": "TELSUR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Minera De Tocopilla S.A.",
+		"idNemotecnico": "604",
+		"idNotacion": 0,
+		"nemotecnico": "TOCOPILLA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Tome",
+		"idNemotecnico": "605",
+		"idNotacion": 0,
+		"nemotecnico": "TOME"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Tradecor S.A.",
+		"idNemotecnico": "606",
+		"idNotacion": 0,
+		"nemotecnico": "TRADECOR"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Transam Comunicaciones S.A.",
+		"idNemotecnico": "607",
+		"idNotacion": 0,
+		"nemotecnico": "TRANSAM"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "2130",
+		"idNotacion": 0,
+		"nemotecnico": "TRANSNET"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Tres Mares S.A.",
+		"idNemotecnico": "608",
+		"idNotacion": 0,
+		"nemotecnico": "TRES MARES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inv. Tricahue S.A.",
+		"idNemotecnico": "609",
+		"idNotacion": 0,
+		"nemotecnico": "TRICAHUE"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Tricolor S.A.",
+		"idNemotecnico": "610",
+		"idNotacion": 0,
+		"nemotecnico": "TRICOLORSA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3388",
+		"idNotacion": 0,
+		"nemotecnico": "T_PLUS_EFI"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Viña Undurraga S.A.",
+		"idNemotecnico": "611",
+		"idNotacion": 0,
+		"nemotecnico": "UNDURRAGA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Inversiones Unespa S.A.",
+		"idNemotecnico": "612",
+		"idNotacion": 0,
+		"nemotecnico": "UNESPA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Union El Golf S.A.",
+		"idNemotecnico": "613",
+		"idNotacion": 0,
+		"nemotecnico": "UNION GOLF"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Bolsa De Corredores-Bolsa De Valores  ",
+		"idNemotecnico": "614",
+		"idNotacion": 0,
+		"nemotecnico": "VALORES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. Sudamericana De Vapores",
+		"idNemotecnico": "615",
+		"idNotacion": 0,
+		"nemotecnico": "VAPORES"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3389",
+		"idNotacion": 0,
+		"nemotecnico": "VAPORES1"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "3390",
+		"idNotacion": 0,
+		"nemotecnico": "VAPORES2"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Puerto Ventanas S.A.",
+		"idNemotecnico": "618",
+		"idNotacion": 0,
+		"nemotecnico": "VENTANAS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Adm. De Fondos De Pensiones A.F.P. Planvital S.A.",
+		"idNemotecnico": "620",
+		"idNotacion": 0,
+		"nemotecnico": "VESPUCIO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Frutícola Viconto S.A.",
+		"idNemotecnico": "621",
+		"idNotacion": 0,
+		"nemotecnico": "VICONTO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía. De Seg. De Vida Consorcio Nac. De Seguros S.A.",
+		"idNemotecnico": "623",
+		"idNotacion": 0,
+		"nemotecnico": "VIDA"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Video Chile S.A.",
+		"idNemotecnico": "624",
+		"idNotacion": 0,
+		"nemotecnico": "VIDEO"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Cía.Industrial El Volcan S.A.",
+		"idNemotecnico": "625",
+		"idNotacion": 0,
+		"nemotecnico": "VOLCAN"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Telefonica Empresas Ctc Chile S.A.",
+		"idNemotecnico": "626",
+		"idNotacion": 0,
+		"nemotecnico": "VTRTEL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Watts S.A.",
+		"idNemotecnico": "627",
+		"idNotacion": 0,
+		"nemotecnico": "WATTS"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "",
+		"idNemotecnico": "1530",
+		"idNotacion": 0,
+		"nemotecnico": "WATTS-A"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "WMTCL",
+		"idNemotecnico": "1595",
+		"idNotacion": 0,
+		"nemotecnico": "WMTCL"
+	}, {
+		"codTipo": "ACC",
+		"descripcion": "Zona Franca De Iquique S.A.",
+		"idNemotecnico": "629",
+		"idNotacion": 0,
+		"nemotecnico": "ZOFRI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Agilent Technologies",
+		"idNemotecnico": "2247",
+		"idNotacion": 252326,
+		"nemotecnico": "A"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Alcoa",
+		"idNemotecnico": "2251",
+		"idNotacion": 252524,
+		"nemotecnico": "AA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Apple",
+		"idNemotecnico": "2144",
+		"idNotacion": 253929,
+		"nemotecnico": "AAPL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "AbbVie",
+		"idNemotecnico": "2237",
+		"idNotacion": 73800109,
+		"nemotecnico": "ABBV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "AmerisourceBergen Co.",
+		"idNemotecnico": "2262",
+		"idNotacion": 3710125,
+		"nemotecnico": "ABC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Abbott Laboratories",
+		"idNemotecnico": "2236",
+		"idNotacion": 251878,
+		"nemotecnico": "ABT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ace Limited",
+		"idNemotecnico": "2240",
+		"idNotacion": 2764581,
+		"nemotecnico": "ACE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Accenture",
+		"idNemotecnico": "2239",
+		"idNotacion": 4463266,
+		"nemotecnico": "ACN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "ACTAVIS",
+		"idNemotecnico": "2241",
+		"idNotacion": 76124357,
+		"nemotecnico": "ACT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Adobe Systems",
+		"idNemotecnico": "2137",
+		"idNotacion": 252079,
+		"nemotecnico": "ADBE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Analog Devices",
+		"idNemotecnico": "2143",
+		"idNotacion": 253735,
+		"nemotecnico": "ADI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Archer Daniels Mid",
+		"idNemotecnico": "2268",
+		"idNotacion": 254040,
+		"nemotecnico": "ADM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Automatic Data Process",
+		"idNemotecnico": "2147",
+		"idNotacion": 2036204,
+		"nemotecnico": "ADP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Autodesk",
+		"idNemotecnico": "2146",
+		"idNotacion": 254633,
+		"nemotecnico": "ADSK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "ADT Corp",
+		"idNemotecnico": "2242",
+		"idNotacion": 70029247,
+		"nemotecnico": "ADT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ameren Corp",
+		"idNemotecnico": "2257",
+		"idNotacion": 253028,
+		"nemotecnico": "AEE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "American Electric Power",
+		"idNemotecnico": "2258",
+		"idNotacion": 253240,
+		"nemotecnico": "AEP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "AES Corp",
+		"idNemotecnico": "2244",
+		"idNotacion": 251504,
+		"nemotecnico": "AES"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Aetna",
+		"idNemotecnico": "2245",
+		"idNotacion": 252269,
+		"nemotecnico": "AET"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "AFLAC",
+		"idNemotecnico": "2246",
+		"idNotacion": 251468,
+		"nemotecnico": "AFL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "ALLERGAN",
+		"idNemotecnico": "2253",
+		"idNotacion": 252635,
+		"nemotecnico": "AGN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "AIG",
+		"idNemotecnico": "2248",
+		"idNotacion": 253376,
+		"nemotecnico": "AIG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Apartment Inv & Mgt",
+		"idNemotecnico": "2267",
+		"idNotacion": 1550238,
+		"nemotecnico": "AIV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Assurant",
+		"idNemotecnico": "2269",
+		"idNotacion": 9181996,
+		"nemotecnico": "AIZ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Akamai Technologies",
+		"idNemotecnico": "2138",
+		"idNotacion": 252438,
+		"nemotecnico": "AKAM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Allstate Corp",
+		"idNemotecnico": "2254",
+		"idNotacion": 252910,
+		"nemotecnico": "ALL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Altera Corp",
+		"idNemotecnico": "2140",
+		"idNotacion": 1550137,
+		"nemotecnico": "ALTR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Alexion Pharma",
+		"idNemotecnico": "2139",
+		"idNotacion": 252559,
+		"nemotecnico": "ALXN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Applied Materials",
+		"idNemotecnico": "2145",
+		"idNotacion": 253952,
+		"nemotecnico": "AMAT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "ADVANCED MIC.DEV.",
+		"idNemotecnico": "2243",
+		"idNotacion": 252218,
+		"nemotecnico": "AMD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Amgen",
+		"idNemotecnico": "2142",
+		"idNotacion": 253610,
+		"nemotecnico": "AMGN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ameriprise Financial",
+		"idNemotecnico": "2261",
+		"idNotacion": 12909555,
+		"nemotecnico": "AMP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "American Tower",
+		"idNemotecnico": "2260",
+		"idNotacion": 253526,
+		"nemotecnico": "AMT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Amazon Com",
+		"idNemotecnico": "2141",
+		"idNotacion": 252992,
+		"nemotecnico": "AMZN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Autonation",
+		"idNemotecnico": "2271",
+		"idNotacion": 254667,
+		"nemotecnico": "AN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "ABERCROMBIE & FITCH",
+		"idNemotecnico": "2238",
+		"idNotacion": 251890,
+		"nemotecnico": "ANF"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Anthem Inc",
+		"idNemotecnico": "2638",
+		"idNotacion": 10878933,
+		"nemotecnico": "ANTM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "AON",
+		"idNemotecnico": "2265",
+		"idNotacion": 253870,
+		"nemotecnico": "AON"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Apache Corp",
+		"idNemotecnico": "2266",
+		"idNotacion": 253876,
+		"nemotecnico": "APA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Anadarko Petroleum",
+		"idNemotecnico": "2264",
+		"idNotacion": 253729,
+		"nemotecnico": "APC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Air Products & Chem",
+		"idNemotecnico": "2249",
+		"idNotacion": 252385,
+		"nemotecnico": "APD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Amphenol 'A'",
+		"idNemotecnico": "2263",
+		"idNotacion": 253626,
+		"nemotecnico": "APH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Airgas",
+		"idNemotecnico": "2250",
+		"idNotacion": 252402,
+		"nemotecnico": "ARG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "ALLEGHNY TECH",
+		"idNemotecnico": "2252",
+		"idNotacion": 252620,
+		"nemotecnico": "ATI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "ACTIVISION BLIZZARD",
+		"idNemotecnico": "2136",
+		"idNotacion": 23754766,
+		"nemotecnico": "ATVI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Avalonbay Communities",
+		"idNemotecnico": "2273",
+		"idNotacion": 69850,
+		"nemotecnico": "AVB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Avago Technologies",
+		"idNemotecnico": "2148",
+		"idNotacion": 30300105,
+		"nemotecnico": "AVGO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "AVON PRDCTS",
+		"idNemotecnico": "2275",
+		"idNotacion": 254824,
+		"nemotecnico": "AVP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Avery Dennison",
+		"idNemotecnico": "2274",
+		"idNotacion": 69876,
+		"nemotecnico": "AVY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "American Express",
+		"idNemotecnico": "2259",
+		"idNotacion": 253252,
+		"nemotecnico": "AXP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Autozone",
+		"idNemotecnico": "2272",
+		"idNotacion": 254675,
+		"nemotecnico": "AZO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Boeing",
+		"idNemotecnico": "2290",
+		"idNotacion": 256223,
+		"nemotecnico": "BA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Bank of America",
+		"idNemotecnico": "2278",
+		"idNotacion": 255248,
+		"nemotecnico": "BAC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Baxter International",
+		"idNemotecnico": "2281",
+		"idNotacion": 255482,
+		"nemotecnico": "BAX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Bed Bath & Beyond",
+		"idNemotecnico": "2150",
+		"idNotacion": 1550417,
+		"nemotecnico": "BBBY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "BB & T Corp",
+		"idNemotecnico": "2282",
+		"idNotacion": 254856,
+		"nemotecnico": "BBT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Best Buy",
+		"idNemotecnico": "2287",
+		"idNotacion": 255770,
+		"nemotecnico": "BBY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Bard C.R.",
+		"idNemotecnico": "2280",
+		"idNotacion": 70255,
+		"nemotecnico": "BCR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Becton Dickinson",
+		"idNemotecnico": "2284",
+		"idNotacion": 255573,
+		"nemotecnico": "BDX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "BEAM",
+		"idNemotecnico": "2283",
+		"idNotacion": 52579536,
+		"nemotecnico": "BEAM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Franklin Resources",
+		"idNemotecnico": "2391",
+		"idNotacion": 1551449,
+		"nemotecnico": "BEN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Brown-Forman Corp 'B'",
+		"idNemotecnico": "2295",
+		"idNotacion": 70924,
+		"nemotecnico": "BF.B"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Baker Hughes",
+		"idNemotecnico": "2276",
+		"idNotacion": 255043,
+		"nemotecnico": "BHI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "BAIDU",
+		"idNemotecnico": "2149",
+		"idNotacion": 12624108,
+		"nemotecnico": "BIDU"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Biogen Idec",
+		"idNemotecnico": "2151",
+		"idNotacion": 8183957,
+		"nemotecnico": "BIIB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Bank of New York Mellon",
+		"idNemotecnico": "2279",
+		"idNotacion": 255266,
+		"nemotecnico": "BK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Blackrock",
+		"idNemotecnico": "2288",
+		"idNotacion": 256135,
+		"nemotecnico": "BLK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ball Corp",
+		"idNemotecnico": "2277",
+		"idNotacion": 255064,
+		"nemotecnico": "BLL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "BMC SFTWRE USD0.01",
+		"idNemotecnico": "2289",
+		"idNotacion": 69992,
+		"nemotecnico": "BMC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "BEMIS",
+		"idNemotecnico": "2285",
+		"idNotacion": 255657,
+		"nemotecnico": "BMS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Bristol-Myers Squibb",
+		"idNemotecnico": "2294",
+		"idNotacion": 256484,
+		"nemotecnico": "BMY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Broadcom Corp",
+		"idNemotecnico": "2152",
+		"idNotacion": 1550505,
+		"nemotecnico": "BRCM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Berkshire Hathaway",
+		"idNemotecnico": "2286",
+		"idNotacion": 255747,
+		"nemotecnico": "BRK.B"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Boston Scientific",
+		"idNemotecnico": "2293",
+		"idNotacion": 256312,
+		"nemotecnico": "BSX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "PEABODY ENERGY",
+		"idNemotecnico": "2526",
+		"idNotacion": 3041212,
+		"nemotecnico": "BTU"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "BorgWarner",
+		"idNemotecnico": "2291",
+		"idNotacion": 256268,
+		"nemotecnico": "BWA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Boston Properties",
+		"idNemotecnico": "2292",
+		"idNotacion": 70741,
+		"nemotecnico": "BXP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Citigroup",
+		"idNemotecnico": "2319",
+		"idNotacion": 258242,
+		"nemotecnico": "C"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CA",
+		"idNemotecnico": "2153",
+		"idNotacion": 22769281,
+		"nemotecnico": "CA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Conagra Foods",
+		"idNemotecnico": "2330",
+		"idNotacion": 259008,
+		"nemotecnico": "CAG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cardinal Health",
+		"idNemotecnico": "2301",
+		"idNotacion": 257408,
+		"nemotecnico": "CAH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cameron International Co.",
+		"idNemotecnico": "2298",
+		"idNotacion": 259328,
+		"nemotecnico": "CAM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Caterpillar",
+		"idNemotecnico": "2305",
+		"idNotacion": 257535,
+		"nemotecnico": "CAT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Chubb",
+		"idNemotecnico": "2315",
+		"idNotacion": 1550660,
+		"nemotecnico": "CB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CBRE Group 'A'",
+		"idNemotecnico": "2306",
+		"idNotacion": 9946179,
+		"nemotecnico": "CBG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CBS 'B'",
+		"idNemotecnico": "2307",
+		"idNotacion": 13481034,
+		"nemotecnico": "CBS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Coca-Cola Ent",
+		"idNemotecnico": "2326",
+		"idNotacion": 72113,
+		"nemotecnico": "CCE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Crown Castle Intl",
+		"idNemotecnico": "2337",
+		"idNotacion": 2968768,
+		"nemotecnico": "CCI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Carnival",
+		"idNemotecnico": "2304",
+		"idNotacion": 246153,
+		"nemotecnico": "CCL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Celgene",
+		"idNemotecnico": "2155",
+		"idNotacion": 257589,
+		"nemotecnico": "CELG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cerner",
+		"idNemotecnico": "2156",
+		"idNotacion": 257783,
+		"nemotecnico": "CERN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CF Industries",
+		"idNemotecnico": "2310",
+		"idNotacion": 257838,
+		"nemotecnico": "CF"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CAREFUSIO",
+		"idNemotecnico": "2302",
+		"idNotacion": 2779238,
+		"nemotecnico": "CFN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Chesapeake Energy",
+		"idNemotecnico": "2312",
+		"idNotacion": 71857,
+		"nemotecnico": "CHK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Check Point Software Tech",
+		"idNemotecnico": "2159",
+		"idNotacion": 206712,
+		"nemotecnico": "CHKP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "C.H. Robinson Worldwide",
+		"idNemotecnico": "2157",
+		"idNotacion": 256752,
+		"nemotecnico": "CHRW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Charter Communications",
+		"idNemotecnico": "2158",
+		"idNotacion": 38804878,
+		"nemotecnico": "CHTR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cigna",
+		"idNemotecnico": "2316",
+		"idNotacion": 256763,
+		"nemotecnico": "CI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cincinnati Financial",
+		"idNemotecnico": "2317",
+		"idNotacion": 258175,
+		"nemotecnico": "CINF"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Colgate-Palmolive",
+		"idNemotecnico": "2327",
+		"idNotacion": 258599,
+		"nemotecnico": "CL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CLIFFS",
+		"idNemotecnico": "2320",
+		"idNotacion": 72081,
+		"nemotecnico": "CLF"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Clorox",
+		"idNemotecnico": "2321",
+		"idNotacion": 258451,
+		"nemotecnico": "CLX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Comerica",
+		"idNemotecnico": "2328",
+		"idNotacion": 72239,
+		"nemotecnico": "CMA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Comcast Corp",
+		"idNemotecnico": "2163",
+		"idNotacion": 258742,
+		"nemotecnico": "CMCSA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CME Group",
+		"idNemotecnico": "2322",
+		"idNotacion": 6487848,
+		"nemotecnico": "CME"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Chipotle Mexican Grill",
+		"idNemotecnico": "2314",
+		"idNotacion": 13860170,
+		"nemotecnico": "CMG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cummins",
+		"idNemotecnico": "2339",
+		"idNotacion": 1550829,
+		"nemotecnico": "CMI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CMS Energy",
+		"idNemotecnico": "2323",
+		"idNotacion": 71133,
+		"nemotecnico": "CMS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CenterPoint Energy",
+		"idNemotecnico": "2308",
+		"idNotacion": 6202530,
+		"nemotecnico": "CNP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Consol Energy",
+		"idNemotecnico": "2332",
+		"idNotacion": 259166,
+		"nemotecnico": "CNX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Capital One",
+		"idNemotecnico": "2300",
+		"idNotacion": 257334,
+		"nemotecnico": "COF"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cabot Oil & Gas",
+		"idNemotecnico": "2297",
+		"idNotacion": 71280,
+		"nemotecnico": "COG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Coach",
+		"idNemotecnico": "2324",
+		"idNotacion": 258461,
+		"nemotecnico": "COH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Rockwell Collins",
+		"idNemotecnico": "2568",
+		"idNotacion": 3385852,
+		"nemotecnico": "COL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Conoco Philips",
+		"idNemotecnico": "2331",
+		"idNotacion": 6063928,
+		"nemotecnico": "COP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Costco Wholesale",
+		"idNemotecnico": "2164",
+		"idNotacion": 72721,
+		"nemotecnico": "COST"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "COVIDIEN",
+		"idNemotecnico": "2336",
+		"idNotacion": 18354810,
+		"nemotecnico": "COV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Campbell Soup",
+		"idNemotecnico": "2299",
+		"idNotacion": 257253,
+		"nemotecnico": "CPB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "salesforce.com",
+		"idNemotecnico": "2574",
+		"idNotacion": 10344703,
+		"nemotecnico": "CRM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CSC",
+		"idNemotecnico": "2329",
+		"idNotacion": 258966,
+		"nemotecnico": "CSC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cisco Systems",
+		"idNemotecnico": "2160",
+		"idNotacion": 258198,
+		"nemotecnico": "CSCO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CSX",
+		"idNemotecnico": "2338",
+		"idNotacion": 256878,
+		"nemotecnico": "CSX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cintas",
+		"idNemotecnico": "2318",
+		"idNotacion": 258203,
+		"nemotecnico": "CTAS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CenturyLink",
+		"idNemotecnico": "2309",
+		"idNotacion": 71725,
+		"nemotecnico": "CTL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Catamaran Co.",
+		"idNemotecnico": "2154",
+		"idNotacion": 15092499,
+		"nemotecnico": "CTRX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cognizant Technology 'A'",
+		"idNemotecnico": "2162",
+		"idNotacion": 7879721,
+		"nemotecnico": "CTSH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Citrix Systems",
+		"idNemotecnico": "2161",
+		"idNotacion": 258357,
+		"nemotecnico": "CTXS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Cablevision Systems",
+		"idNemotecnico": "2296",
+		"idNotacion": 256916,
+		"nemotecnico": "CVC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "CVS Health",
+		"idNemotecnico": "2340",
+		"idNotacion": 256904,
+		"nemotecnico": "CVS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Chevron Corp",
+		"idNemotecnico": "2313",
+		"idNotacion": 4013353,
+		"nemotecnico": "CVX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Dominion Resources",
+		"idNemotecnico": "2351",
+		"idNotacion": 260826,
+		"nemotecnico": "D"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Du Pont De Nenours",
+		"idNemotecnico": "2357",
+		"idNotacion": 261336,
+		"nemotecnico": "DD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Deere & Co",
+		"idNemotecnico": "2344",
+		"idNotacion": 260156,
+		"nemotecnico": "DE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "DELL",
+		"idNemotecnico": "2165",
+		"idNotacion": 1550877,
+		"nemotecnico": "DELL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Discover Fin Serv",
+		"idNemotecnico": "2349",
+		"idNotacion": 18354816,
+		"nemotecnico": "DFS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Dollar General",
+		"idNemotecnico": "2350",
+		"idNotacion": 31668688,
+		"nemotecnico": "DG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Quest Diagnostics",
+		"idNemotecnico": "2558",
+		"idNotacion": 281590,
+		"nemotecnico": "DGX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "D.R. Horton",
+		"idNemotecnico": "2354",
+		"idNotacion": 73023,
+		"nemotecnico": "DHI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Danaher",
+		"idNemotecnico": "2341",
+		"idNotacion": 260032,
+		"nemotecnico": "DHR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Walt Disney",
+		"idNemotecnico": "2634",
+		"idNotacion": 260731,
+		"nemotecnico": "DIS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Discovery Comm 'A'",
+		"idNemotecnico": "2168",
+		"idNotacion": 12567582,
+		"nemotecnico": "DISCA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Delphi Automotive",
+		"idNemotecnico": "2345",
+		"idNotacion": 54506073,
+		"nemotecnico": "DLPH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Dollar Tree",
+		"idNemotecnico": "2169",
+		"idNotacion": 260809,
+		"nemotecnico": "DLTR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Dun & Bradstreet Delaware",
+		"idNemotecnico": "2359",
+		"idNotacion": 261415,
+		"nemotecnico": "DNB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "DENBURY RES",
+		"idNemotecnico": "2346",
+		"idNotacion": 73185,
+		"nemotecnico": "DNR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Diamond Offshore Drilling",
+		"idNemotecnico": "2348",
+		"idNotacion": 73275,
+		"nemotecnico": "DO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Dover",
+		"idNemotecnico": "2352",
+		"idNotacion": 260905,
+		"nemotecnico": "DOV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Dow Chemical",
+		"idNemotecnico": "2353",
+		"idNotacion": 260913,
+		"nemotecnico": "DOW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Dr. Pepper Snapple",
+		"idNemotecnico": "2355",
+		"idNotacion": 22878747,
+		"nemotecnico": "DPS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Darden Restaurants",
+		"idNemotecnico": "2342",
+		"idNotacion": 73081,
+		"nemotecnico": "DRI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "DTE Energy",
+		"idNemotecnico": "2356",
+		"idNotacion": 259966,
+		"nemotecnico": "DTE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "DirecTV",
+		"idNemotecnico": "2167",
+		"idNotacion": 69418401,
+		"nemotecnico": "DTV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Duke Energy",
+		"idNemotecnico": "2358",
+		"idNotacion": 261370,
+		"nemotecnico": "DUK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "DaVita HealthCare",
+		"idNemotecnico": "2343",
+		"idNotacion": 260115,
+		"nemotecnico": "DVA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Devon Energy",
+		"idNemotecnico": "2347",
+		"idNotacion": 10666615,
+		"nemotecnico": "DVN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Electronic Arts",
+		"idNemotecnico": "2366",
+		"idNotacion": 262027,
+		"nemotecnico": "EA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "eBay",
+		"idNemotecnico": "2170",
+		"idNotacion": 261835,
+		"nemotecnico": "EBAY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ecolab",
+		"idNemotecnico": "2363",
+		"idNotacion": 261869,
+		"nemotecnico": "ECL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Consolidated Edison",
+		"idNemotecnico": "2333",
+		"idNotacion": 259186,
+		"nemotecnico": "ED"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Equifax",
+		"idNemotecnico": "2373",
+		"idNotacion": 262534,
+		"nemotecnico": "EFX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Edison International",
+		"idNemotecnico": "2364",
+		"idNotacion": 261902,
+		"nemotecnico": "EIX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Estee Lauder 'A'",
+		"idNemotecnico": "2375",
+		"idNotacion": 271184,
+		"nemotecnico": "EL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "EMC (Mass.)",
+		"idNemotecnico": "2367",
+		"idNotacion": 261576,
+		"nemotecnico": "EMC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Eastman Chemical",
+		"idNemotecnico": "2361",
+		"idNotacion": 261698,
+		"nemotecnico": "EMN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Emerson Electric",
+		"idNemotecnico": "2368",
+		"idNotacion": 262136,
+		"nemotecnico": "EMR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "EOG Resources",
+		"idNemotecnico": "2371",
+		"idNotacion": 261605,
+		"nemotecnico": "EOG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Equinix",
+		"idNemotecnico": "2171",
+		"idNotacion": 262545,
+		"nemotecnico": "EQIX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Equity Residential",
+		"idNemotecnico": "2374",
+		"idNotacion": 262573,
+		"nemotecnico": "EQR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "EQT Corp",
+		"idNemotecnico": "2372",
+		"idNotacion": 74200,
+		"nemotecnico": "EQT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Eversource Energy",
+		"idNemotecnico": "2512",
+		"idNotacion": 276845,
+		"nemotecnico": "ES"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Express Scripts",
+		"idNemotecnico": "2174",
+		"idNotacion": 263069,
+		"nemotecnico": "ESRX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ensco 'A'",
+		"idNemotecnico": "2369",
+		"idNotacion": 261597,
+		"nemotecnico": "ESV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "E Trade Financial",
+		"idNemotecnico": "2360",
+		"idNotacion": 36788636,
+		"nemotecnico": "ETFC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Eaton Corporation",
+		"idNemotecnico": "2362",
+		"idNotacion": 261764,
+		"nemotecnico": "ETN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Entergy",
+		"idNemotecnico": "2370",
+		"idNotacion": 262344,
+		"nemotecnico": "ETR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Edwards Lifesciences",
+		"idNemotecnico": "2365",
+		"idNotacion": 261923,
+		"nemotecnico": "EW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Exelon Co.",
+		"idNemotecnico": "2376",
+		"idNotacion": 263009,
+		"nemotecnico": "EXC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Expeditors Intl of Wash.",
+		"idNemotecnico": "2173",
+		"idNotacion": 263056,
+		"nemotecnico": "EXPD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Expedia",
+		"idNemotecnico": "2172",
+		"idNotacion": 12562233,
+		"nemotecnico": "EXPE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ford Motor",
+		"idNemotecnico": "2389",
+		"idNotacion": 264959,
+		"nemotecnico": "F"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Fastenal",
+		"idNemotecnico": "2177",
+		"idNotacion": 263245,
+		"nemotecnico": "FAST"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Facebook",
+		"idNemotecnico": "2176",
+		"idNotacion": 63750376,
+		"nemotecnico": "FB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Freeport-McMoran",
+		"idNemotecnico": "2392",
+		"idNotacion": 265428,
+		"nemotecnico": "FCX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "FAMILY DOLLAR STORES",
+		"idNemotecnico": "2378",
+		"idNotacion": 263199,
+		"nemotecnico": "FDO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Fedex Corp",
+		"idNemotecnico": "2379",
+		"idNotacion": 263833,
+		"nemotecnico": "FDX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Firstenergy",
+		"idNemotecnico": "2383",
+		"idNotacion": 1532603,
+		"nemotecnico": "FE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "F5 Networks",
+		"idNemotecnico": "2175",
+		"idNotacion": 263855,
+		"nemotecnico": "FFIV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Fidelity Nat Info",
+		"idNemotecnico": "2380",
+		"idNotacion": 3410982,
+		"nemotecnico": "FIS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Fiserv",
+		"idNemotecnico": "2178",
+		"idNotacion": 264718,
+		"nemotecnico": "FISV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Fifth Third Bancorp",
+		"idNemotecnico": "2381",
+		"idNotacion": 264183,
+		"nemotecnico": "FITB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Flir Systems",
+		"idNemotecnico": "2384",
+		"idNotacion": 263107,
+		"nemotecnico": "FLIR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Fluor Corp",
+		"idNemotecnico": "2386",
+		"idNotacion": 264912,
+		"nemotecnico": "FLR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Flowserve",
+		"idNemotecnico": "2385",
+		"idNotacion": 74943,
+		"nemotecnico": "FLS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "FMC Corp",
+		"idNemotecnico": "2387",
+		"idNotacion": 263110,
+		"nemotecnico": "FMC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Fossil Group",
+		"idNemotecnico": "2179",
+		"idNotacion": 265134,
+		"nemotecnico": "FOSL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "FOREST LABS",
+		"idNemotecnico": "2390",
+		"idNotacion": 265013,
+		"nemotecnico": "FRX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "First Solar",
+		"idNemotecnico": "2382",
+		"idNotacion": 16134535,
+		"nemotecnico": "FSLR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "FMC Technologies",
+		"idNemotecnico": "2388",
+		"idNotacion": 3240270,
+		"nemotecnico": "FTI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Frontier Comms",
+		"idNemotecnico": "2393",
+		"idNotacion": 24083397,
+		"nemotecnico": "FTR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "AGL Resources",
+		"idNemotecnico": "2504",
+		"idNotacion": 276644,
+		"nemotecnico": "GAS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "General Dynamics",
+		"idNemotecnico": "2397",
+		"idNotacion": 266020,
+		"nemotecnico": "GD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "General Electric",
+		"idNemotecnico": "2398",
+		"idNotacion": 266034,
+		"nemotecnico": "GE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Gilead Sciences",
+		"idNemotecnico": "2181",
+		"idNotacion": 266330,
+		"nemotecnico": "GILD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "General Mills",
+		"idNemotecnico": "2399",
+		"idNotacion": 266073,
+		"nemotecnico": "GIS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Corning",
+		"idNemotecnico": "2335",
+		"idNotacion": 259432,
+		"nemotecnico": "GLW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "General Motors",
+		"idNemotecnico": "2908",
+		"idNotacion": 40410563,
+		"nemotecnico": "GM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Gamestop 'A'",
+		"idNemotecnico": "2394",
+		"idNotacion": 4852810,
+		"nemotecnico": "GME"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Genworth Financial 'A'",
+		"idNemotecnico": "2401",
+		"idNotacion": 10169923,
+		"nemotecnico": "GNW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "RANDGOLD ADS ADS (EACH REPR 1 ORD USD0.05)",
+		"idNemotecnico": "2210",
+		"idNotacion": 6489417,
+		"nemotecnico": "GOLD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Google Inc 'A'",
+		"idNemotecnico": "2182",
+		"idNotacion": 10390991,
+		"nemotecnico": "GOOGL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Genuine Parts",
+		"idNemotecnico": "2400",
+		"idNotacion": 266231,
+		"nemotecnico": "GPC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Gap",
+		"idNemotecnico": "2396",
+		"idNotacion": 265906,
+		"nemotecnico": "GPS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Garmin",
+		"idNemotecnico": "2180",
+		"idNotacion": 2009389,
+		"nemotecnico": "GRMN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Goldman Sachs Group",
+		"idNemotecnico": "2402",
+		"idNotacion": 266507,
+		"nemotecnico": "GS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Goodyear Tire & Rubber",
+		"idNemotecnico": "2403",
+		"idNotacion": 266760,
+		"nemotecnico": "GT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Grainger, W.W.",
+		"idNemotecnico": "2404",
+		"idNotacion": 266809,
+		"nemotecnico": "GWW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Halliburton",
+		"idNemotecnico": "2406",
+		"idNotacion": 1551642,
+		"nemotecnico": "HAL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Harman Intl Industries",
+		"idNemotecnico": "2408",
+		"idNotacion": 267436,
+		"nemotecnico": "HAR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "HASBRO",
+		"idNemotecnico": "2411",
+		"idNotacion": 1551696,
+		"nemotecnico": "HAS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Huntington Bancshares",
+		"idNemotecnico": "2425",
+		"idNotacion": 268348,
+		"nemotecnico": "HBAN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Hudson City Bancorp",
+		"idNemotecnico": "2423",
+		"idNotacion": 76475,
+		"nemotecnico": "HCBK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Health Care",
+		"idNemotecnico": "2413",
+		"idNotacion": 76158,
+		"nemotecnico": "HCN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "HCP",
+		"idNemotecnico": "2412",
+		"idNotacion": 1532687,
+		"nemotecnico": "HCP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Home Depot",
+		"idNemotecnico": "2418",
+		"idNotacion": 268077,
+		"nemotecnico": "HD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Hess Corp",
+		"idNemotecnico": "2416",
+		"idNotacion": 1550154,
+		"nemotecnico": "HES"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Hartford FS",
+		"idNemotecnico": "2410",
+		"idNotacion": 1551673,
+		"nemotecnico": "HIG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "HEINZ(HJ)",
+		"idNemotecnico": "2867",
+		"idNotacion": 267752,
+		"nemotecnico": "HNZ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Harley-Davidson",
+		"idNemotecnico": "2407",
+		"idNotacion": 267429,
+		"nemotecnico": "HOG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Honeywell International",
+		"idNemotecnico": "2419",
+		"idNotacion": 268145,
+		"nemotecnico": "HON"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Starwood Hotels & Resorts",
+		"idNemotecnico": "2591",
+		"idNotacion": 285287,
+		"nemotecnico": "HOT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Helmerich&Payne",
+		"idNemotecnico": "2414",
+		"idNotacion": 76221,
+		"nemotecnico": "HP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Hewlett Packard",
+		"idNemotecnico": "2417",
+		"idNotacion": 267894,
+		"nemotecnico": "HPQ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "H & R Block",
+		"idNemotecnico": "2405",
+		"idNotacion": 256167,
+		"nemotecnico": "HRB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Hormel Foods",
+		"idNemotecnico": "2420",
+		"idNotacion": 76417,
+		"nemotecnico": "HRL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Harris Corp",
+		"idNemotecnico": "2409",
+		"idNotacion": 267482,
+		"nemotecnico": "HRS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Henry Schein",
+		"idNemotecnico": "2184",
+		"idNotacion": 283545,
+		"nemotecnico": "HSIC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Hospira",
+		"idNemotecnico": "2421",
+		"idNotacion": 9634755,
+		"nemotecnico": "HSP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Host Hotels & Resorts",
+		"idNemotecnico": "2422",
+		"idNotacion": 268187,
+		"nemotecnico": "HST"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Hershey",
+		"idNemotecnico": "2415",
+		"idNotacion": 267874,
+		"nemotecnico": "HSY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Humana",
+		"idNemotecnico": "2424",
+		"idNotacion": 268317,
+		"nemotecnico": "HUM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "IBM",
+		"idNemotecnico": "2426",
+		"idNotacion": 1551887,
+		"nemotecnico": "IBM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Intercont Exchange",
+		"idNemotecnico": "2430",
+		"idNotacion": 13347848,
+		"nemotecnico": "ICE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Intl Flavors & Fragrances",
+		"idNemotecnico": "2431",
+		"idNotacion": 269550,
+		"nemotecnico": "IFF"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "INTL GAME TECH",
+		"idNemotecnico": "2432",
+		"idNotacion": 269569,
+		"nemotecnico": "IGT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Intel Corp",
+		"idNemotecnico": "2185",
+		"idNotacion": 269226,
+		"nemotecnico": "INTC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Intuit",
+		"idNemotecnico": "2186",
+		"idNotacion": 269774,
+		"nemotecnico": "INTU"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "International Paper",
+		"idNemotecnico": "2433",
+		"idNotacion": 269592,
+		"nemotecnico": "IP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Interpublic Group of Comp",
+		"idNemotecnico": "2434",
+		"idNotacion": 269672,
+		"nemotecnico": "IPG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ingersoll-Rand",
+		"idNemotecnico": "2428",
+		"idNotacion": 269058,
+		"nemotecnico": "IR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Iron Mountain",
+		"idNemotecnico": "2436",
+		"idNotacion": 269876,
+		"nemotecnico": "IRM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Intuitive Surgical",
+		"idNemotecnico": "2187",
+		"idNotacion": 269783,
+		"nemotecnico": "ISRG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Illinois Tool Works",
+		"idNemotecnico": "2427",
+		"idNotacion": 268768,
+		"nemotecnico": "ITW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Invesco",
+		"idNemotecnico": "2435",
+		"idNotacion": 17888900,
+		"nemotecnico": "IVZ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "JABIL CIRCT",
+		"idNemotecnico": "2438",
+		"idNotacion": 270103,
+		"nemotecnico": "JBL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Johnson Controls",
+		"idNemotecnico": "2442",
+		"idNotacion": 270240,
+		"nemotecnico": "JCI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "J.C. Penney",
+		"idNemotecnico": "2437",
+		"idNotacion": 1553012,
+		"nemotecnico": "JCP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "JDS UNIPHASE",
+		"idNemotecnico": "2440",
+		"idNotacion": 77548,
+		"nemotecnico": "JDSU"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Jacobs Engineering Group",
+		"idNemotecnico": "2439",
+		"idNotacion": 77598,
+		"nemotecnico": "JEC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Johnson & Johnson",
+		"idNemotecnico": "2441",
+		"idNotacion": 270227,
+		"nemotecnico": "JNJ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Juniper Networks",
+		"idNemotecnico": "2445",
+		"idNotacion": 270277,
+		"nemotecnico": "JNPR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Joy Global",
+		"idNemotecnico": "2443",
+		"idNotacion": 55813224,
+		"nemotecnico": "JOY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "JPMorgan Chase",
+		"idNemotecnico": "2444",
+		"idNotacion": 274385,
+		"nemotecnico": "JPM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Nordstrom",
+		"idNemotecnico": "2510",
+		"idNotacion": 276734,
+		"nemotecnico": "JWN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Kellogg",
+		"idNemotecnico": "2447",
+		"idNotacion": 270453,
+		"nemotecnico": "K"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Keycorp",
+		"idNemotecnico": "2448",
+		"idNotacion": 270732,
+		"nemotecnico": "KEY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Kimco Realty",
+		"idNemotecnico": "2450",
+		"idNotacion": 77866,
+		"nemotecnico": "KIM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "KLA-Tencor",
+		"idNemotecnico": "2188",
+		"idNotacion": 270319,
+		"nemotecnico": "KLAC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Kimberly-Clark",
+		"idNemotecnico": "2449",
+		"idNotacion": 270771,
+		"nemotecnico": "KMB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Kinder Morgan",
+		"idNemotecnico": "2451",
+		"idNotacion": 43156212,
+		"nemotecnico": "KMI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Carmax",
+		"idNemotecnico": "2303",
+		"idNotacion": 71971,
+		"nemotecnico": "KMX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Coca-Cola",
+		"idNemotecnico": "2325",
+		"idNotacion": 258521,
+		"nemotecnico": "KO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Kroger",
+		"idNemotecnico": "2453",
+		"idNotacion": 270972,
+		"nemotecnico": "KR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Kraft Foods",
+		"idNemotecnico": "2189",
+		"idNotacion": 70336598,
+		"nemotecnico": "KRFT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Kohl's Corp",
+		"idNemotecnico": "2452",
+		"idNotacion": 270833,
+		"nemotecnico": "KSS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Kansas City Southern",
+		"idNemotecnico": "2446",
+		"idNotacion": 270399,
+		"nemotecnico": "KSU"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Loews",
+		"idNemotecnico": "2465",
+		"idNotacion": 21564015,
+		"nemotecnico": "L"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "L Brands",
+		"idNemotecnico": "2454",
+		"idNotacion": 271600,
+		"nemotecnico": "LB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Liberty Global",
+		"idNemotecnico": "2190",
+		"idNotacion": 10344256,
+		"nemotecnico": "LBTYA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Leggett & Platt",
+		"idNemotecnico": "2459",
+		"idNotacion": 78226,
+		"nemotecnico": "LEG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Lennar",
+		"idNemotecnico": "2460",
+		"idNotacion": 271329,
+		"nemotecnico": "LEN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Laboratory Co. of Amer. Hld",
+		"idNemotecnico": "2456",
+		"idNotacion": 78079,
+		"nemotecnico": "LH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "LIFE TECH",
+		"idNemotecnico": "2192",
+		"idNotacion": 26169393,
+		"nemotecnico": "LIFE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "L-3 Communications",
+		"idNemotecnico": "2455",
+		"idNotacion": 78048,
+		"nemotecnico": "LLL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Linear Technology",
+		"idNemotecnico": "2193",
+		"idNotacion": 271657,
+		"nemotecnico": "LLTC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Eli Lilly & Co",
+		"idNemotecnico": "2462",
+		"idNotacion": 271586,
+		"nemotecnico": "LLY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Legg Mason",
+		"idNemotecnico": "2458",
+		"idNotacion": 78234,
+		"nemotecnico": "LM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Lockheed Martin",
+		"idNemotecnico": "2464",
+		"idNotacion": 271715,
+		"nemotecnico": "LMT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Lincoln National",
+		"idNemotecnico": "2463",
+		"idNotacion": 271625,
+		"nemotecnico": "LNC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "LORILLARD",
+		"idNemotecnico": "2466",
+		"idNotacion": 23300558,
+		"nemotecnico": "LO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Lowes Companies",
+		"idNemotecnico": "2467",
+		"idNotacion": 271884,
+		"nemotecnico": "LOW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Lam Research",
+		"idNemotecnico": "2457",
+		"idNotacion": 1552050,
+		"nemotecnico": "LRCX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "LSI CORPOLSI",
+		"idNemotecnico": "2468",
+		"idNotacion": 271051,
+		"nemotecnico": "LSI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Leucadia National",
+		"idNemotecnico": "2461",
+		"idNotacion": 78259,
+		"nemotecnico": "LUK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Southwest Airlines",
+		"idNemotecnico": "2586",
+		"idNotacion": 284968,
+		"nemotecnico": "LUV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Lyondellbasell Ind 'A'",
+		"idNemotecnico": "2469",
+		"idNotacion": 39603672,
+		"nemotecnico": "LYB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Macy's Inc",
+		"idNemotecnico": "2472",
+		"idNotacion": 17943274,
+		"nemotecnico": "M"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "MasterCard 'A'",
+		"idNemotecnico": "2478",
+		"idNotacion": 14865888,
+		"nemotecnico": "MA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Macerich",
+		"idNemotecnico": "2471",
+		"idNotacion": 78638,
+		"nemotecnico": "MAC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Marriott International 'A'",
+		"idNemotecnico": "2475",
+		"idNotacion": 272776,
+		"nemotecnico": "MAR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Masco",
+		"idNemotecnico": "2477",
+		"idNotacion": 272832,
+		"nemotecnico": "MAS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Mattel",
+		"idNemotecnico": "2194",
+		"idNotacion": 272964,
+		"nemotecnico": "MAT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "McDonald's",
+		"idNemotecnico": "2480",
+		"idNotacion": 273053,
+		"nemotecnico": "MCD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Microchip Technology",
+		"idNemotecnico": "2196",
+		"idNotacion": 273993,
+		"nemotecnico": "MCHP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "McKesson",
+		"idNemotecnico": "2482",
+		"idNotacion": 78958,
+		"nemotecnico": "MCK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Moodys",
+		"idNemotecnico": "2491",
+		"idNotacion": 274372,
+		"nemotecnico": "MCO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Mondelez International",
+		"idNemotecnico": "2199",
+		"idNotacion": 70269651,
+		"nemotecnico": "MDLZ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Medtronic",
+		"idNemotecnico": "2485",
+		"idNotacion": 273205,
+		"nemotecnico": "MDT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "MetLife",
+		"idNemotecnico": "2487",
+		"idNotacion": 273835,
+		"nemotecnico": "MET"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "McGraw Hill Fin",
+		"idNemotecnico": "2481",
+		"idNotacion": 78942,
+		"nemotecnico": "MHFI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Mead Johnson Nutrition",
+		"idNemotecnico": "2483",
+		"idNotacion": 27311100,
+		"nemotecnico": "MJN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "McCormick & Co",
+		"idNemotecnico": "2479",
+		"idNotacion": 273040,
+		"nemotecnico": "MKC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Marsh & McLennan Cos.",
+		"idNemotecnico": "2476",
+		"idNotacion": 272751,
+		"nemotecnico": "MMC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "3M CO",
+		"idNemotecnico": "2235",
+		"idNotacion": 274148,
+		"nemotecnico": "MMM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Monster Beverage",
+		"idNemotecnico": "2183",
+		"idNotacion": 267382,
+		"nemotecnico": "MNST"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Altria Group",
+		"idNemotecnico": "2255",
+		"idNotacion": 279770,
+		"nemotecnico": "MO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "MOLEX INC COM STK USD0.05",
+		"idNemotecnico": "2488",
+		"idNotacion": 274241,
+		"nemotecnico": "MOLX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Monsanto",
+		"idNemotecnico": "2490",
+		"idNotacion": 274299,
+		"nemotecnico": "MON"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Mosaic",
+		"idNemotecnico": "2493",
+		"idNotacion": 10723704,
+		"nemotecnico": "MOS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Marathon Petroleum",
+		"idNemotecnico": "2474",
+		"idNotacion": 47709123,
+		"nemotecnico": "MPC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Merck & Co",
+		"idNemotecnico": "2486",
+		"idNotacion": 273340,
+		"nemotecnico": "MRK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "MARATHON OIL",
+		"idNemotecnico": "2473",
+		"idNotacion": 287957,
+		"nemotecnico": "MRO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Morgan Stanley",
+		"idNemotecnico": "2492",
+		"idNotacion": 274646,
+		"nemotecnico": "MS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Microsoft",
+		"idNemotecnico": "2198",
+		"idNotacion": 273978,
+		"nemotecnico": "MSFT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Motorola Solutions",
+		"idNemotecnico": "2494",
+		"idNotacion": 41949516,
+		"nemotecnico": "MSI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "M and T Bank",
+		"idNemotecnico": "2470",
+		"idNotacion": 78521,
+		"nemotecnico": "MTB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Micron Technology",
+		"idNemotecnico": "2197",
+		"idNotacion": 274008,
+		"nemotecnico": "MU"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Murphy Oil",
+		"idNemotecnico": "2495",
+		"idNotacion": 79921,
+		"nemotecnico": "MUR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Meadwestvaco",
+		"idNemotecnico": "2484",
+		"idNotacion": 4834974,
+		"nemotecnico": "MWV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "MAXIM INTEGRTD",
+		"idNemotecnico": "2195",
+		"idNotacion": 19558843,
+		"nemotecnico": "MXIM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Mylan",
+		"idNemotecnico": "2200",
+		"idNotacion": 275423,
+		"nemotecnico": "MYL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Noble Energy",
+		"idNemotecnico": "2509",
+		"idNotacion": 80473,
+		"nemotecnico": "NBL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "NABORS INDS",
+		"idNemotecnico": "2496",
+		"idNotacion": 13255431,
+		"nemotecnico": "NBR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "NASDAQ OMX Group",
+		"idNemotecnico": "2497",
+		"idNotacion": 11304491,
+		"nemotecnico": "NDAQ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Noble Corp Plc",
+		"idNemotecnico": "2508",
+		"idNotacion": 276709,
+		"nemotecnico": "NE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Nextera Energy",
+		"idNemotecnico": "2503",
+		"idNotacion": 37227220,
+		"nemotecnico": "NEE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Newmont Mining",
+		"idNemotecnico": "2501",
+		"idNotacion": 276522,
+		"nemotecnico": "NEM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Netflix",
+		"idNemotecnico": "2202",
+		"idNotacion": 5492248,
+		"nemotecnico": "NFLX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Newfield Exploration",
+		"idNemotecnico": "2500",
+		"idNotacion": 276502,
+		"nemotecnico": "NFX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "NISOURCE",
+		"idNemotecnico": "2507",
+		"idNotacion": 80462,
+		"nemotecnico": "NI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "NIKE 'B'",
+		"idNemotecnico": "2506",
+		"idNotacion": 276651,
+		"nemotecnico": "NKE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Nielsen",
+		"idNemotecnico": "2505",
+		"idNotacion": 42733583,
+		"nemotecnico": "NLSN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Northrop Grumman",
+		"idNemotecnico": "2514",
+		"idNotacion": 276918,
+		"nemotecnico": "NOC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Nat Oilwell Varco",
+		"idNemotecnico": "2498",
+		"idNotacion": 275688,
+		"nemotecnico": "NOV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "NRG Energy",
+		"idNemotecnico": "2515",
+		"idNotacion": 9465563,
+		"nemotecnico": "NRG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Norfolk Southern",
+		"idNemotecnico": "2511",
+		"idNotacion": 276749,
+		"nemotecnico": "NSC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "NetApp",
+		"idNemotecnico": "2201",
+		"idNotacion": 276240,
+		"nemotecnico": "NTAP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Northern Trust",
+		"idNemotecnico": "2513",
+		"idNotacion": 276902,
+		"nemotecnico": "NTRS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "NUANCE COMMUNICATION",
+		"idNemotecnico": "2203",
+		"idNotacion": 276990,
+		"nemotecnico": "NUAN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Nucor",
+		"idNemotecnico": "2516",
+		"idNotacion": 277028,
+		"nemotecnico": "NUE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Nvidia Corporation",
+		"idNemotecnico": "2204",
+		"idNotacion": 277381,
+		"nemotecnico": "NVDA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Newell Rubbermaid",
+		"idNemotecnico": "2499",
+		"idNotacion": 276494,
+		"nemotecnico": "NWL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "NEWS CORP",
+		"idNemotecnico": "2913",
+		"idNotacion": 82704096,
+		"nemotecnico": "NWSA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "NYSE EURONEXT",
+		"idNemotecnico": "2517",
+		"idNotacion": 10750384,
+		"nemotecnico": "NYX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Owens-Illinois",
+		"idNemotecnico": "2522",
+		"idNotacion": 278442,
+		"nemotecnico": "OI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "ONEOK",
+		"idNemotecnico": "2520",
+		"idNotacion": 80765,
+		"nemotecnico": "OKE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Omnicom Group",
+		"idNemotecnico": "2519",
+		"idNotacion": 277861,
+		"nemotecnico": "OMC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Oracle",
+		"idNemotecnico": "2521",
+		"idNotacion": 1552869,
+		"nemotecnico": "ORCL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Oreilly Auto",
+		"idNemotecnico": "2205",
+		"idNotacion": 278341,
+		"nemotecnico": "ORLY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Occidental Petroleum",
+		"idNemotecnico": "2518",
+		"idNotacion": 277685,
+		"nemotecnico": "OXY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Paychex",
+		"idNemotecnico": "2207",
+		"idNotacion": 279361,
+		"nemotecnico": "PAYX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Peoples United Financial",
+		"idNemotecnico": "2528",
+		"idNotacion": 279501,
+		"nemotecnico": "PBCT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Pitney-Bowes",
+		"idNemotecnico": "2540",
+		"idNotacion": 280248,
+		"nemotecnico": "PBI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Paccar",
+		"idNemotecnico": "2206",
+		"idNotacion": 278841,
+		"nemotecnico": "PCAR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "PG & E",
+		"idNemotecnico": "2535",
+		"idNotacion": 278543,
+		"nemotecnico": "PCG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Plum Creek Timber",
+		"idNemotecnico": "2541",
+		"idNotacion": 81584,
+		"nemotecnico": "PCL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Priceline Group",
+		"idNemotecnico": "2208",
+		"idNotacion": 280565,
+		"nemotecnico": "PCLN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Precision Castparts",
+		"idNemotecnico": "2546",
+		"idNotacion": 81743,
+		"nemotecnico": "PCP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Patterson Companies",
+		"idNemotecnico": "2525",
+		"idNotacion": 10287881,
+		"nemotecnico": "PDCO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Public Service Ent",
+		"idNemotecnico": "2552",
+		"idNotacion": 281098,
+		"nemotecnico": "PEG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "PepsiCo",
+		"idNemotecnico": "2530",
+		"idNotacion": 279541,
+		"nemotecnico": "PEP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "PETSMART",
+		"idNemotecnico": "2533",
+		"idNotacion": 279690,
+		"nemotecnico": "PETM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Pfizer Inc",
+		"idNemotecnico": "2534",
+		"idNotacion": 279709,
+		"nemotecnico": "PFE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Principal Financial Group",
+		"idNemotecnico": "2548",
+		"idNotacion": 3986052,
+		"nemotecnico": "PFG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Procter & Gamble",
+		"idNemotecnico": "2549",
+		"idNotacion": 280675,
+		"nemotecnico": "PG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Progressive",
+		"idNemotecnico": "2550",
+		"idNotacion": 1553159,
+		"nemotecnico": "PGR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Parker-Hannifin",
+		"idNemotecnico": "2524",
+		"idNotacion": 279235,
+		"nemotecnico": "PH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Pulte Group",
+		"idNemotecnico": "2554",
+		"idNotacion": 81992,
+		"nemotecnico": "PHM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "PerkinElmer",
+		"idNemotecnico": "2531",
+		"idNotacion": 279592,
+		"nemotecnico": "PKI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Prologis Inc",
+		"idNemotecnico": "2256",
+		"idNotacion": 81889,
+		"nemotecnico": "PLD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Pall Corp",
+		"idNemotecnico": "2523",
+		"idNotacion": 279140,
+		"nemotecnico": "PLL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Philip Morris",
+		"idNemotecnico": "2536",
+		"idNotacion": 22397355,
+		"nemotecnico": "PM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "PNC Financial Services",
+		"idNemotecnico": "2542",
+		"idNotacion": 278759,
+		"nemotecnico": "PNC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Pentair",
+		"idNemotecnico": "2527",
+		"idNotacion": 279486,
+		"nemotecnico": "PNR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Pinnacle West Capital",
+		"idNemotecnico": "2538",
+		"idNotacion": 1553096,
+		"nemotecnico": "PNW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Pepco",
+		"idNemotecnico": "2529",
+		"idNotacion": 280440,
+		"nemotecnico": "POM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "PPG Industries",
+		"idNemotecnico": "2543",
+		"idNotacion": 278782,
+		"nemotecnico": "PPG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "PPL Corp",
+		"idNemotecnico": "2544",
+		"idNotacion": 80962,
+		"nemotecnico": "PPL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Perrigo",
+		"idNemotecnico": "2532",
+		"idNotacion": 279623,
+		"nemotecnico": "PRGO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Prudential Financial",
+		"idNemotecnico": "2551",
+		"idNotacion": 4820847,
+		"nemotecnico": "PRU"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Public Storage",
+		"idNemotecnico": "2553",
+		"idNotacion": 281106,
+		"nemotecnico": "PSA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Phillips 66",
+		"idNemotecnico": "2537",
+		"idNotacion": 62421687,
+		"nemotecnico": "PSX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "PVH Corp",
+		"idNemotecnico": "2555",
+		"idNotacion": 81387,
+		"nemotecnico": "PVH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Quanta Services",
+		"idNemotecnico": "2557",
+		"idNotacion": 82039,
+		"nemotecnico": "PWR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Praxair",
+		"idNemotecnico": "2545",
+		"idNotacion": 280489,
+		"nemotecnico": "PX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Pioneer Natural Resources",
+		"idNemotecnico": "2539",
+		"idNotacion": 81524,
+		"nemotecnico": "PXD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "QUALCOMM",
+		"idNemotecnico": "2209",
+		"idNotacion": 281509,
+		"nemotecnico": "QCOM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "QEP RESO",
+		"idNemotecnico": "2556",
+		"idNotacion": 37360930,
+		"nemotecnico": "QEP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "LIBERTY INTERACTIVE",
+		"idNemotecnico": "2191",
+		"idNotacion": 14776300,
+		"nemotecnico": "QVCA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ryder System",
+		"idNemotecnico": "2571",
+		"idNotacion": 282796,
+		"nemotecnico": "R"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "REYNOLDS AMERICAN",
+		"idNemotecnico": "2565",
+		"idNotacion": 10336523,
+		"nemotecnico": "RAI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "ROWN COMP",
+		"idNemotecnico": "2570",
+		"idNotacion": 282536,
+		"nemotecnico": "RDC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Regeneron Pharmaceuticals",
+		"idNemotecnico": "2211",
+		"idNotacion": 282001,
+		"nemotecnico": "REGN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Regions Financial",
+		"idNemotecnico": "2563",
+		"idNotacion": 10287883,
+		"nemotecnico": "RF"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Robert Half Int",
+		"idNemotecnico": "2566",
+		"idNotacion": 1553355,
+		"nemotecnico": "RHI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Red Hat",
+		"idNemotecnico": "2562",
+		"idNotacion": 6395411,
+		"nemotecnico": "RHT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ralph Lauren 'A'",
+		"idNemotecnico": "2559",
+		"idNotacion": 280369,
+		"nemotecnico": "RL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Rockwell Automation",
+		"idNemotecnico": "2567",
+		"idNotacion": 282429,
+		"nemotecnico": "ROK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Roper Technologies",
+		"idNemotecnico": "2569",
+		"idNotacion": 82525,
+		"nemotecnico": "ROP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ross Stores",
+		"idNemotecnico": "2212",
+		"idNotacion": 282494,
+		"nemotecnico": "ROST"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Range Resources",
+		"idNemotecnico": "2560",
+		"idNotacion": 82191,
+		"nemotecnico": "RRC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Republic Services",
+		"idNemotecnico": "2564",
+		"idNotacion": 82368,
+		"nemotecnico": "RSG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Raytheon",
+		"idNemotecnico": "2561",
+		"idNotacion": 3082218,
+		"nemotecnico": "RTN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "SAIC INC",
+		"idNemotecnico": "2573",
+		"idNotacion": 285124,
+		"nemotecnico": "SAI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "SBA Communications Co.",
+		"idNemotecnico": "2214",
+		"idNotacion": 282878,
+		"nemotecnico": "SBAC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Starbucks",
+		"idNemotecnico": "2220",
+		"idNotacion": 1553684,
+		"nemotecnico": "SBUX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Scana",
+		"idNemotecnico": "2575",
+		"idNotacion": 82882,
+		"nemotecnico": "SCG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Charles Schwab",
+		"idNemotecnico": "2311",
+		"idNotacion": 13547886,
+		"nemotecnico": "SCHW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Spectra Energy",
+		"idNemotecnico": "2588",
+		"idNotacion": 284179,
+		"nemotecnico": "SE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Sealed Air",
+		"idNemotecnico": "2578",
+		"idNotacion": 283790,
+		"nemotecnico": "SEE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "SEARS",
+		"idNemotecnico": "2216",
+		"idNotacion": 11555907,
+		"nemotecnico": "SHLD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Sherwin-Williams",
+		"idNemotecnico": "2580",
+		"idNotacion": 284246,
+		"nemotecnico": "SHW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Sigma-Aldrich",
+		"idNemotecnico": "2217",
+		"idNotacion": 284303,
+		"nemotecnico": "SIAL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Sirius XM",
+		"idNemotecnico": "2218",
+		"idNotacion": 284373,
+		"nemotecnico": "SIRI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "J.M. Smucker",
+		"idNemotecnico": "2583",
+		"idNotacion": 83336,
+		"nemotecnico": "SJM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Schlumberger",
+		"idNemotecnico": "2576",
+		"idNotacion": 87717,
+		"nemotecnico": "SLB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "SLM CORPORATION",
+		"idNemotecnico": "2582",
+		"idNotacion": 85098,
+		"nemotecnico": "SLM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Snap-on",
+		"idNemotecnico": "2584",
+		"idNotacion": 83344,
+		"nemotecnico": "SNA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Sandisk",
+		"idNemotecnico": "2213",
+		"idNotacion": 283397,
+		"nemotecnico": "SNDK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Scripps Networks Int 'A'",
+		"idNemotecnico": "2577",
+		"idNotacion": 23620530,
+		"nemotecnico": "SNI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Southern",
+		"idNemotecnico": "2585",
+		"idNotacion": 284917,
+		"nemotecnico": "SO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Simon Property Group",
+		"idNemotecnico": "2581",
+		"idNotacion": 83218,
+		"nemotecnico": "SPG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "STAPLES",
+		"idNemotecnico": "2219",
+		"idNotacion": 285262,
+		"nemotecnico": "SPLS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Stericycle",
+		"idNemotecnico": "2221",
+		"idNotacion": 285389,
+		"nemotecnico": "SRCL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Sempra Energy",
+		"idNemotecnico": "2579",
+		"idNotacion": 1553563,
+		"nemotecnico": "SRE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "SunTrust Banks",
+		"idNemotecnico": "2594",
+		"idNotacion": 285807,
+		"nemotecnico": "STI"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "St. Jude Medical",
+		"idNemotecnico": "2589",
+		"idNotacion": 283292,
+		"nemotecnico": "STJ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "State Street",
+		"idNemotecnico": "2592",
+		"idNotacion": 1553696,
+		"nemotecnico": "STT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Seagate Technology",
+		"idNemotecnico": "2215",
+		"idNotacion": 6492318,
+		"nemotecnico": "STX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Constellation Brands",
+		"idNemotecnico": "2334",
+		"idNotacion": 259211,
+		"nemotecnico": "STZ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Stanley Black & Decker",
+		"idNemotecnico": "2590",
+		"idNotacion": 83646,
+		"nemotecnico": "SWK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Southwestern Energy",
+		"idNemotecnico": "2587",
+		"idNotacion": 83489,
+		"nemotecnico": "SWN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "SAFEWAY",
+		"idNemotecnico": "2572",
+		"idNotacion": 283255,
+		"nemotecnico": "SWY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Stryker",
+		"idNemotecnico": "2593",
+		"idNotacion": 285618,
+		"nemotecnico": "SYK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Symantec",
+		"idNemotecnico": "2222",
+		"idNotacion": 285910,
+		"nemotecnico": "SYMC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Sysco",
+		"idNemotecnico": "2595",
+		"idNotacion": 285960,
+		"nemotecnico": "SYY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "AT&T Inc",
+		"idNemotecnico": "2270",
+		"idNotacion": 1549994,
+		"nemotecnico": "T"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Molson Coors Brewing 'B'",
+		"idNemotecnico": "2489",
+		"idNotacion": 11302181,
+		"nemotecnico": "TAP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Teradata",
+		"idNemotecnico": "2600",
+		"idNotacion": 19296937,
+		"nemotecnico": "TDC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Teco Energy",
+		"idNemotecnico": "2598",
+		"idNotacion": 286112,
+		"nemotecnico": "TE"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "INTEGRYS ENRGY GRP",
+		"idNemotecnico": "2429",
+		"idNotacion": 17036317,
+		"nemotecnico": "TEG"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "TE CONNECTIVITY",
+		"idNemotecnico": "2597",
+		"idNotacion": 18354857,
+		"nemotecnico": "TEL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "TERADYNE",
+		"idNemotecnico": "2601",
+		"idNotacion": 286861,
+		"nemotecnico": "TER"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Tegna Inc",
+		"idNemotecnico": "2395",
+		"idNotacion": 1551519,
+		"nemotecnico": "TGNA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "TARGET CORP",
+		"idNemotecnico": "2596",
+		"idNotacion": 286318,
+		"nemotecnico": "TGT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Tenet Healthcare",
+		"idNemotecnico": "2599",
+		"idNotacion": 286751,
+		"nemotecnico": "THC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Tiffany & Co",
+		"idNemotecnico": "2605",
+		"idNotacion": 287150,
+		"nemotecnico": "TIF"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "TJX COMPANIES",
+		"idNemotecnico": "2608",
+		"idNotacion": 286170,
+		"nemotecnico": "TJX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Torchmark",
+		"idNemotecnico": "2609",
+		"idNotacion": 287299,
+		"nemotecnico": "TMK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Thermo Fisher Scientific",
+		"idNemotecnico": "2604",
+		"idNotacion": 286988,
+		"nemotecnico": "TMO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Tripadvisor",
+		"idNemotecnico": "2612",
+		"idNotacion": 9494701,
+		"nemotecnico": "TRIP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "T. Rowe Price Group",
+		"idNemotecnico": "2547",
+		"idNotacion": 280553,
+		"nemotecnico": "TROW"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Travelers Companies",
+		"idNemotecnico": "2611",
+		"idNotacion": 17066166,
+		"nemotecnico": "TRV"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Tesla Motors",
+		"idNemotecnico": "2223",
+		"idNotacion": 37295290,
+		"nemotecnico": "TSLA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Tyson Foods 'A'",
+		"idNemotecnico": "2614",
+		"idNotacion": 84969,
+		"nemotecnico": "TSN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Tesoro Co.",
+		"idNemotecnico": "2602",
+		"idNotacion": 84442,
+		"nemotecnico": "TSO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Total System Services",
+		"idNemotecnico": "2610",
+		"idNotacion": 84679,
+		"nemotecnico": "TSS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Time Warner Cable",
+		"idNemotecnico": "2606",
+		"idNotacion": 17087174,
+		"nemotecnico": "TWC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Time Warner",
+		"idNemotecnico": "2607",
+		"idNotacion": 8127243,
+		"nemotecnico": "TWX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Texas Instruments",
+		"idNemotecnico": "2224",
+		"idNotacion": 1553860,
+		"nemotecnico": "TXN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Textron",
+		"idNemotecnico": "2603",
+		"idNotacion": 286949,
+		"nemotecnico": "TXT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Tyco International",
+		"idNemotecnico": "2613",
+		"idNotacion": 29587,
+		"nemotecnico": "TYC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "UnitedHealth Group",
+		"idNemotecnico": "2619",
+		"idNotacion": 85339,
+		"nemotecnico": "UNH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Unum Group",
+		"idNemotecnico": "2620",
+		"idNotacion": 290004,
+		"nemotecnico": "UNM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Union Pacific",
+		"idNemotecnico": "2615",
+		"idNotacion": 288229,
+		"nemotecnico": "UNP"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "United Parcel Service 'B'",
+		"idNemotecnico": "2616",
+		"idNotacion": 288352,
+		"nemotecnico": "UPS"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Urban Outfitters",
+		"idNemotecnico": "2621",
+		"idNotacion": 290024,
+		"nemotecnico": "URBN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "U.S. Bancorp",
+		"idNemotecnico": "2622",
+		"idNotacion": 287997,
+		"nemotecnico": "USB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "United Technologies",
+		"idNemotecnico": "2618",
+		"idNotacion": 289920,
+		"nemotecnico": "UTX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Visa",
+		"idNemotecnico": "2629",
+		"idNotacion": 22119292,
+		"nemotecnico": "V"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Varian Medical Systems",
+		"idNemotecnico": "2625",
+		"idNotacion": 85706,
+		"nemotecnico": "VAR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "V.F. Corp",
+		"idNemotecnico": "2623",
+		"idNotacion": 290058,
+		"nemotecnico": "VFC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "VIACOM 'B'",
+		"idNemotecnico": "2228",
+		"idNotacion": 55524447,
+		"nemotecnico": "VIAB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Valero Energy",
+		"idNemotecnico": "2624",
+		"idNotacion": 290113,
+		"nemotecnico": "VLO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Vulcan Materials",
+		"idNemotecnico": "2631",
+		"idNotacion": 85937,
+		"nemotecnico": "VMC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Vornado Realty Trust",
+		"idNemotecnico": "2630",
+		"idNotacion": 85909,
+		"nemotecnico": "VNO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "VODAFONE GROUP ADR",
+		"idNemotecnico": "2229",
+		"idNotacion": 15332339,
+		"nemotecnico": "VOD"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Verisk Analytics",
+		"idNemotecnico": "2226",
+		"idNotacion": 31127390,
+		"nemotecnico": "VRSK"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Verisign",
+		"idNemotecnico": "2627",
+		"idNotacion": 290516,
+		"nemotecnico": "VRSN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Vertex Pharma",
+		"idNemotecnico": "2227",
+		"idNotacion": 290562,
+		"nemotecnico": "VRTX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Ventas",
+		"idNemotecnico": "2626",
+		"idNotacion": 85745,
+		"nemotecnico": "VTR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Verizon Communications",
+		"idNemotecnico": "2628",
+		"idNotacion": 290534,
+		"nemotecnico": "VZ"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Waters",
+		"idNemotecnico": "2637",
+		"idNotacion": 291415,
+		"nemotecnico": "WAT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Walgreens Boots Alliance",
+		"idNemotecnico": "2633",
+		"idNotacion": 291268,
+		"nemotecnico": "WBA"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Western Digital",
+		"idNemotecnico": "2230",
+		"idNotacion": 1554223,
+		"nemotecnico": "WDC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "WEC Energy",
+		"idNemotecnico": "2645",
+		"idNotacion": 291971,
+		"nemotecnico": "WEC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Wells Fargo",
+		"idNemotecnico": "2639",
+		"idNotacion": 86195,
+		"nemotecnico": "WFC"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Whole Foods Market",
+		"idNemotecnico": "2231",
+		"idNotacion": 291819,
+		"nemotecnico": "WFM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Whirlpool",
+		"idNemotecnico": "2642",
+		"idNotacion": 291799,
+		"nemotecnico": "WHR"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "WINDSTREAM",
+		"idNemotecnico": "2644",
+		"idNotacion": 86359,
+		"nemotecnico": "WIN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Waste Management",
+		"idNemotecnico": "2636",
+		"idNotacion": 291396,
+		"nemotecnico": "WM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "WILLIAMS COMPANIES",
+		"idNemotecnico": "2643",
+		"idNotacion": 291851,
+		"nemotecnico": "WMB"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Wal-Mart Stores",
+		"idNemotecnico": "2632",
+		"idNotacion": 291252,
+		"nemotecnico": "WMT"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "WASHINGTON POST",
+		"idNemotecnico": "2635",
+		"idNotacion": 1554184,
+		"nemotecnico": "WPO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "WPX ENERGY",
+		"idNemotecnico": "2646",
+		"idNotacion": 56020408,
+		"nemotecnico": "WPX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "WESTERN UNION",
+		"idNemotecnico": "2640",
+		"idNotacion": 15674848,
+		"nemotecnico": "WU"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Weyerhaeuser",
+		"idNemotecnico": "2641",
+		"idNotacion": 291784,
+		"nemotecnico": "WY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Wyndham Worldwide Co.",
+		"idNemotecnico": "2647",
+		"idNotacion": 15233942,
+		"nemotecnico": "WYN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Wynn Resorts",
+		"idNemotecnico": "2232",
+		"idNotacion": 6264642,
+		"nemotecnico": "WYNN"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "UNITED STATES STEEL CORP.",
+		"idNemotecnico": "2617",
+		"idNotacion": 288100,
+		"nemotecnico": "X"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Xcel Energy",
+		"idNemotecnico": "2648",
+		"idNotacion": 292109,
+		"nemotecnico": "XEL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "XL Group",
+		"idNemotecnico": "2650",
+		"idNotacion": 61822,
+		"nemotecnico": "XL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Xilinx",
+		"idNemotecnico": "2233",
+		"idNotacion": 292140,
+		"nemotecnico": "XLNX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Exxon Mobil",
+		"idNemotecnico": "2377",
+		"idNotacion": 3306396,
+		"nemotecnico": "XOM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Dentsply Int",
+		"idNemotecnico": "2166",
+		"idNotacion": 260438,
+		"nemotecnico": "XRAY"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Xerox",
+		"idNemotecnico": "2649",
+		"idNotacion": 292165,
+		"nemotecnico": "XRX"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "XYLEM",
+		"idNemotecnico": "2651",
+		"idNotacion": 54016674,
+		"nemotecnico": "XYL"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Yahoo!",
+		"idNemotecnico": "2234",
+		"idNotacion": 292204,
+		"nemotecnico": "YHOO"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Yum! Brands,",
+		"idNemotecnico": "2652",
+		"idNotacion": 287628,
+		"nemotecnico": "YUM"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Zimmer Biomet",
+		"idNemotecnico": "2653",
+		"idNotacion": 3581867,
+		"nemotecnico": "ZBH"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Zions Bancorporation",
+		"idNemotecnico": "2654",
+		"idNotacion": 292307,
+		"nemotecnico": "ZION"
+	}, {
+		"codTipo": "ACI",
+		"descripcion": "Zoetis",
+		"idNemotecnico": "2655",
+		"idNotacion": 75956310,
+		"nemotecnico": "ZTS"
+	}, {
+		"codTipo": "COM",
+		"descripcion": "AZUCAR",
+		"idNemotecnico": "636",
+		"idNotacion": 25881004,
+		"nemotecnico": "AZUCAR"
+	}, {
+		"codTipo": "COM",
+		"descripcion": "CELULOSA NBSK",
+		"idNemotecnico": "632",
+		"idNotacion": 25815104,
+		"nemotecnico": "CELULOSA NBSK"
+	}, {
+		"codTipo": "COM",
+		"descripcion": "COBRE A FUTURO",
+		"idNemotecnico": "637",
+		"idNotacion": 28134859,
+		"nemotecnico": "COBRE A FUTURO"
+	}, {
+		"codTipo": "COM",
+		"descripcion": "COBRE SPOT",
+		"idNemotecnico": "634",
+		"idNotacion": 25881002,
+		"nemotecnico": "COBRE SPOT"
+	}, {
+		"codTipo": "COM",
+		"descripcion": "CRUDE OIL BRENT",
+		"idNemotecnico": "2033",
+		"idNotacion": 53896783,
+		"nemotecnico": "CRUDE OIL BRENT"
+	}, {
+		"codTipo": "COM",
+		"descripcion": "CRUDE OIL WTI",
+		"idNemotecnico": "638",
+		"idNotacion": 28134860,
+		"nemotecnico": "CRUDE OIL WTI"
+	}, {
+		"codTipo": "COM",
+		"descripcion": "GAS NATURAL",
+		"idNemotecnico": "635",
+		"idNotacion": 25881003,
+		"nemotecnico": "GAS NATURAL"
+	}, {
+		"codTipo": "COM",
+		"descripcion": "HARINA DE PESCADO",
+		"idNemotecnico": "633",
+		"idNotacion": 25815105,
+		"nemotecnico": "HARINA DE PESCADO"
+	}, {
+		"codTipo": "COM",
+		"descripcion": "ORO 100 OZ.",
+		"idNemotecnico": "631",
+		"idNotacion": 1326189,
+		"nemotecnico": "ORO 100 OZ."
+	}, {
+		"codTipo": "COM",
+		"descripcion": "PLATA 5000",
+		"idNemotecnico": "630",
+		"idNotacion": 1288094,
+		"nemotecnico": "PLATA 5000"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Ishares Ishares MSCI Emerging Markets Index Fund",
+		"idNemotecnico": "2047",
+		"idNotacion": 21314523,
+		"nemotecnico": "EEM"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Ishares MSCI Emerg MKTS Eastern EUR IDX (ESR)",
+		"idNemotecnico": "2049",
+		"idNotacion": 31046607,
+		"nemotecnico": "ESR"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "IShares MSCI Brazil Capped Index Fund",
+		"idNemotecnico": "2041",
+		"idNotacion": 10746742,
+		"nemotecnico": "EWZ"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "IShares MSCI EMU Index Fund",
+		"idNemotecnico": "2045",
+		"idNotacion": 18856562,
+		"nemotecnico": "EZU"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Ishares FTSE/XINHUA China 25 Index Fund",
+		"idNemotecnico": "2046",
+		"idNotacion": 21313848,
+		"nemotecnico": "FXI"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Ishares Trust High Dividend Equity",
+		"idNemotecnico": "2054",
+		"idNotacion": 44961207,
+		"nemotecnico": "HDV"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Ishares Trust IBOXX Usd High Yield Corpor",
+		"idNemotecnico": "2044",
+		"idNotacion": 17431925,
+		"nemotecnico": "HYG"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Ishares Gold Trust",
+		"idNemotecnico": "2043",
+		"idNotacion": 11131780,
+		"nemotecnico": "IAU"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Ishares Trust Sp 500 Index Fund",
+		"idNemotecnico": "2042",
+		"idNotacion": 10747123,
+		"nemotecnico": "IVV"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Proshares Short Sp500 Registered Shs O.N.",
+		"idNemotecnico": "2051",
+		"idNotacion": 35417114,
+		"nemotecnico": "SH"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Proshs Ultrapro Sh.Sp 500 New Registered Shares O.N.",
+		"idNemotecnico": "2055",
+		"idNotacion": 63791625,
+		"nemotecnico": "SPXU"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Proshares Ultra DJ-UBS Cr.Oil Registered Shares New O.N.",
+		"idNemotecnico": "2053",
+		"idNotacion": 43891294,
+		"nemotecnico": "UCO"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Proshares Ultrapro Sp 500 Registered Shares O.N.",
+		"idNemotecnico": "2050",
+		"idNotacion": 32886412,
+		"nemotecnico": "UPRO"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Ipath Sp 500 Vix Tm ETN",
+		"idNemotecnico": "2052",
+		"idNotacion": 40331436,
+		"nemotecnico": "VXX"
+	}, {
+		"codTipo": "ETF",
+		"descripcion": "Energy Select Sector Spdr ETF",
+		"idNemotecnico": "2056",
+		"idNotacion": 7885340,
+		"nemotecnico": "XLE"
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "Dólar Observado",
+		"idNemotecnico": "1808",
+		"idNotacion": 0,
+		"nemotecnico": "DOOBS"
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "IPC Estimado",
+		"idNemotecnico": "1815",
+		"idNotacion": 0,
+		"nemotecnico": "E-IPC"
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "Euro Observado",
+		"idNemotecnico": "3173",
+		"idNotacion": 0,
+		"nemotecnico": "EUR"
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "Fed Funds",
+		"idNemotecnico": "1814",
+		"idNotacion": 0,
+		"nemotecnico": "FED"
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "IPC Mes Anterior",
+		"idNemotecnico": "1810",
+		"idNotacion": 0,
+		"nemotecnico": "IPC_P"
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "Instancia Monetaria BC",
+		"idNemotecnico": "1813",
+		"idNotacion": 0,
+		"nemotecnico": "TIMBC"
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "Unidad de Fomento",
+		"idNemotecnico": "1809",
+		"idNotacion": 0,
+		"nemotecnico": "UF"
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "UTA",
+		"idNemotecnico": "1811",
+		"idNotacion": 0,
+		"nemotecnico": "UTA"
+	}, {
+		"codTipo": "FIN",
+		"descripcion": "UTM",
+		"idNemotecnico": "1812",
+		"idNotacion": 0,
+		"nemotecnico": "UTM"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Acciones Serie A",
+		"idNemotecnico": "1301",
+		"idNotacion": 0,
+		"nemotecnico": "ACCIONES"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Acciones Serie B",
+		"idNemotecnico": "1417",
+		"idNotacion": 0,
+		"nemotecnico": "ACCIONESB"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1823",
+		"idNotacion": 0,
+		"nemotecnico": "ACCIONES_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1822",
+		"idNotacion": 0,
+		"nemotecnico": "ACCIONES_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Ahorro Serie A",
+		"idNemotecnico": "1324",
+		"idNotacion": 0,
+		"nemotecnico": "AHORRO"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Ahorro Serie B",
+		"idNemotecnico": "1504",
+		"idNotacion": 0,
+		"nemotecnico": "AHORRO_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Ahorro Serie D",
+		"idNemotecnico": "1478",
+		"idNotacion": 0,
+		"nemotecnico": "AHORRO_D"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1834",
+		"idNotacion": 0,
+		"nemotecnico": "AHORRO_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Alianza Serie A",
+		"idNemotecnico": "1350",
+		"idNotacion": 0,
+		"nemotecnico": "ALIANZA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Alianza Serie B",
+		"idNemotecnico": "1443",
+		"idNotacion": 0,
+		"nemotecnico": "ALIANZA_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Alianza Serie D",
+		"idNemotecnico": "1480",
+		"idNotacion": 0,
+		"nemotecnico": "ALIANZA_D"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z20 Prueba",
+		"idNemotecnico": "1389",
+		"idNotacion": 0,
+		"nemotecnico": "AMAZONAS"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z21 Prueba",
+		"idNemotecnico": "1477",
+		"idNotacion": 0,
+		"nemotecnico": "AMAZONAS_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z22 Prueba",
+		"idNemotecnico": "1508",
+		"idNotacion": 0,
+		"nemotecnico": "AMAZONAS_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Asia Fund Serie A",
+		"idNemotecnico": "1393",
+		"idNotacion": 0,
+		"nemotecnico": "ASIAFUND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Asia Fund Serie B",
+		"idNemotecnico": "1420",
+		"idNotacion": 0,
+		"nemotecnico": "ASIAFUND B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Asia Fund Serie C",
+		"idNemotecnico": "1411",
+		"idNotacion": 0,
+		"nemotecnico": "ASIAFUND C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2891",
+		"idNotacion": 0,
+		"nemotecnico": "ASIA_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1837",
+		"idNotacion": 0,
+		"nemotecnico": "ASIA_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Balance I Serie A",
+		"idNemotecnico": "1467",
+		"idNotacion": 0,
+		"nemotecnico": "BALANCE_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Balance I Serie APV",
+		"idNemotecnico": "1491",
+		"idNotacion": 0,
+		"nemotecnico": "BALANCE_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Balance I Serie I",
+		"idNemotecnico": "1492",
+		"idNotacion": 0,
+		"nemotecnico": "BALANCE_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1846",
+		"idNotacion": 0,
+		"nemotecnico": "BALANCE_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Bambú Garantizado",
+		"idNemotecnico": "1481",
+		"idNotacion": 0,
+		"nemotecnico": "BAMBU"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Fondo de Inv. Banchile Trust",
+		"idNemotecnico": "1416",
+		"idNotacion": 0,
+		"nemotecnico": "BANTRUST"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banda Dolar Garantizado",
+		"idNemotecnico": "1329",
+		"idNotacion": 0,
+		"nemotecnico": "BAN_DO_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Inversionista Calificado I",
+		"idNemotecnico": "1361",
+		"idNotacion": 0,
+		"nemotecnico": "BCHCAL 1A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Inversionista Calificado I S_B",
+		"idNemotecnico": "1362",
+		"idNotacion": 0,
+		"nemotecnico": "BCHCAL 1B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1869",
+		"idNotacion": 0,
+		"nemotecnico": "BCHCAL 1S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1918",
+		"idNotacion": 0,
+		"nemotecnico": "BONO_S_UF5"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Bonsai 106 Garantizado",
+		"idNemotecnico": "1425",
+		"idNotacion": 0,
+		"nemotecnico": "BONSAI 106"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1916",
+		"idNotacion": 0,
+		"nemotecnico": "BON_S_UF5B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1917",
+		"idNotacion": 0,
+		"nemotecnico": "BON_S_UF5D"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1889",
+		"idNotacion": 0,
+		"nemotecnico": "BOO_BR2014"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1842",
+		"idNotacion": 0,
+		"nemotecnico": "BOO_CHILE"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Booster China",
+		"idNemotecnico": "1519",
+		"idNotacion": 0,
+		"nemotecnico": "BOO_CHINA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1973",
+		"idNotacion": 0,
+		"nemotecnico": "BOO_EUROPA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Booster India",
+		"idNemotecnico": "1442",
+		"idNotacion": 0,
+		"nemotecnico": "BOO_INDIA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2964",
+		"idNotacion": 0,
+		"nemotecnico": "BOO_JAPON"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1972",
+		"idNotacion": 0,
+		"nemotecnico": "BOO_RE_USA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1890",
+		"idNotacion": 0,
+		"nemotecnico": "BO_BAL_CHI"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Garantizado Plus",
+		"idNemotecnico": "1388",
+		"idNotacion": 0,
+		"nemotecnico": "BPLUS"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Bric-2 Garantizado",
+		"idNemotecnico": "1385",
+		"idNotacion": 0,
+		"nemotecnico": "BRIC-2_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "BRICS Garantizado",
+		"idNemotecnico": "1371",
+		"idNotacion": 0,
+		"nemotecnico": "BRICS"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3152",
+		"idNotacion": 0,
+		"nemotecnico": "B_ACC_EEUU"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3151",
+		"idNotacion": 0,
+		"nemotecnico": "B_ACC_EUR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3222",
+		"idNotacion": 0,
+		"nemotecnico": "B_ACC_JPN"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2954",
+		"idNotacion": 0,
+		"nemotecnico": "B_ASIA_EME"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banca Americana Voltarget Garantizado",
+		"idNemotecnico": "1521",
+		"idNotacion": 0,
+		"nemotecnico": "B_A_V_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1987",
+		"idNotacion": 0,
+		"nemotecnico": "B_CHINA_ST"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3010",
+		"idNotacion": 0,
+		"nemotecnico": "B_CHI_ST_2"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3000",
+		"idNotacion": 0,
+		"nemotecnico": "B_EUROPA_2"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banda Europa Garantizado",
+		"idNemotecnico": "1516",
+		"idNotacion": 0,
+		"nemotecnico": "B_EUR_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banda Japon Garantizado",
+		"idNemotecnico": "1466",
+		"idNotacion": 0,
+		"nemotecnico": "B_JPY_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3104",
+		"idNotacion": 0,
+		"nemotecnico": "B_RE_EURO"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3088",
+		"idNotacion": 0,
+		"nemotecnico": "B_USA_$"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banda Estados Unidos Garantizado",
+		"idNemotecnico": "1465",
+		"idNotacion": 0,
+		"nemotecnico": "B_USA_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z01 Prueba",
+		"idNemotecnico": "1496",
+		"idNotacion": 0,
+		"nemotecnico": "Balance_F"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Capitalisa Accionario Serie A",
+		"idNemotecnico": "1302",
+		"idNotacion": 0,
+		"nemotecnico": "CAPITALISA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Fondo de Inv. Capital Trust",
+		"idNemotecnico": "1415",
+		"idNotacion": 0,
+		"nemotecnico": "CAPTRUST"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Capitalisa Accionario Serie B",
+		"idNemotecnico": "1444",
+		"idNotacion": 0,
+		"nemotecnico": "CAP_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1830",
+		"idNotacion": 0,
+		"nemotecnico": "CAP_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Capital Financiero Serie A",
+		"idNemotecnico": "1439",
+		"idNotacion": 0,
+		"nemotecnico": "CAP_FIN_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Capital Financiero Serie APV",
+		"idNemotecnico": "1351",
+		"idNotacion": 0,
+		"nemotecnico": "CAP_FIN_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1831",
+		"idNotacion": 0,
+		"nemotecnico": "CAP_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Carry Trade Monedas Garantizado",
+		"idNemotecnico": "1386",
+		"idNotacion": 0,
+		"nemotecnico": "CARRY_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Cash Serie A",
+		"idNemotecnico": "1338",
+		"idNotacion": 0,
+		"nemotecnico": "CASH_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Cash Serie I",
+		"idNemotecnico": "1503",
+		"idNotacion": 0,
+		"nemotecnico": "CASH_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Chile 18 Q Serie A",
+		"idNemotecnico": "1524",
+		"idNotacion": 0,
+		"nemotecnico": "CHI18Q-B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Chile 18 Q Serie B",
+		"idNemotecnico": "1522",
+		"idNotacion": 0,
+		"nemotecnico": "CHI18Q-B_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1828",
+		"idNotacion": 0,
+		"nemotecnico": "CHI18Q-B_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1829",
+		"idNotacion": 0,
+		"nemotecnico": "CHI18Q-B_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Chile Garantizado",
+		"idNemotecnico": "1363",
+		"idNotacion": 0,
+		"nemotecnico": "CHILEGAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Cobertura Serie B",
+		"idNemotecnico": "1483",
+		"idNotacion": 0,
+		"nemotecnico": "COB_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Consumo Estable Serie A",
+		"idNemotecnico": "1325",
+		"idNotacion": 0,
+		"nemotecnico": "CON_SEC_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Consumo Estable Serie B",
+		"idNemotecnico": "1457",
+		"idNotacion": 0,
+		"nemotecnico": "CON_SEC_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Consumo Estable Serie C",
+		"idNemotecnico": "1512",
+		"idNotacion": 0,
+		"nemotecnico": "CON_SEC_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Corporativo",
+		"idNemotecnico": "1337",
+		"idNotacion": 0,
+		"nemotecnico": "CORPORATIV"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Corporate Dollar",
+		"idNemotecnico": "1399",
+		"idNotacion": 0,
+		"nemotecnico": "CORPUSFUND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Corto Tasas",
+		"idNemotecnico": "1308",
+		"idNotacion": 0,
+		"nemotecnico": "COR_TAS"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Crecimiento Serie A",
+		"idNemotecnico": "1297",
+		"idNotacion": 0,
+		"nemotecnico": "CRECIMIENT"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Crecimiento Serie B",
+		"idNemotecnico": "1445",
+		"idNotacion": 0,
+		"nemotecnico": "CRE_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Depósito XXI Serie A",
+		"idNemotecnico": "1366",
+		"idNotacion": 0,
+		"nemotecnico": "DEPOSITOXX"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Depósito XXI Serie B",
+		"idNemotecnico": "1484",
+		"idNotacion": 0,
+		"nemotecnico": "DEP_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Depósito XXI Serie D",
+		"idNemotecnico": "1390",
+		"idNotacion": 0,
+		"nemotecnico": "DEP_D"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1835",
+		"idNotacion": 0,
+		"nemotecnico": "DEP_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1943",
+		"idNotacion": 0,
+		"nemotecnico": "DEUDA_USD"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1922",
+		"idNotacion": 0,
+		"nemotecnico": "DEU_EU3A5B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1920",
+		"idNotacion": 0,
+		"nemotecnico": "DEU_EU3A5D"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1919",
+		"idNotacion": 0,
+		"nemotecnico": "DEU_EUF3-5"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1921",
+		"idNotacion": 0,
+		"nemotecnico": "DEU_EUF3A5"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Deuda Pesos 1-5 Años Serie D",
+		"idNemotecnico": "2011",
+		"idNotacion": 0,
+		"nemotecnico": "DE_PES_1_5"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Disponible Serie A",
+		"idNemotecnico": "1353",
+		"idNotacion": 0,
+		"nemotecnico": "DISPONIBLE"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Disponible Serie B",
+		"idNemotecnico": "1485",
+		"idNotacion": 0,
+		"nemotecnico": "DIS_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Dollar Investment Grade",
+		"idNemotecnico": "1400",
+		"idNotacion": 0,
+		"nemotecnico": "DOLARFUND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2962",
+		"idNotacion": 0,
+		"nemotecnico": "D_COR_3-5"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3208",
+		"idNotacion": 0,
+		"nemotecnico": "D_PLUS_7"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "International Bond Fund Serie A",
+		"idNemotecnico": "1347",
+		"idNotacion": 0,
+		"nemotecnico": "ECODES"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Emerging Dollar Fund",
+		"idNemotecnico": "1414",
+		"idNotacion": 0,
+		"nemotecnico": "EMERDOLLAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1873",
+		"idNotacion": 0,
+		"nemotecnico": "EMERDOL_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Cobertura Serie A",
+		"idNemotecnico": "1298",
+		"idNotacion": 0,
+		"nemotecnico": "EMERGENTES"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Emerging Fund Serie A",
+		"idNemotecnico": "1377",
+		"idNotacion": 0,
+		"nemotecnico": "EMERGING"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Emerging Fund Serie B",
+		"idNemotecnico": "1424",
+		"idNotacion": 0,
+		"nemotecnico": "EMERGING B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Emerging Fund Serie C",
+		"idNemotecnico": "1406",
+		"idNotacion": 0,
+		"nemotecnico": "EMERGING C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2892",
+		"idNotacion": 0,
+		"nemotecnico": "EMERGING_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1838",
+		"idNotacion": 0,
+		"nemotecnico": "EMERGING_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Horizonte Serie A",
+		"idNemotecnico": "1319",
+		"idNotacion": 0,
+		"nemotecnico": "EMPRESAS"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Oportunidades Sectoriales Serie A",
+		"idNemotecnico": "1490",
+		"idNotacion": 0,
+		"nemotecnico": "ENE_SEC_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Oportunidades Sectoriales Serie B",
+		"idNemotecnico": "1458",
+		"idNotacion": 0,
+		"nemotecnico": "ENE_SEC_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Oportunidades Sectoriales Serie C",
+		"idNemotecnico": "1459",
+		"idNotacion": 0,
+		"nemotecnico": "ENE_SEC_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1860",
+		"idNotacion": 0,
+		"nemotecnico": "ENE_SEC_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Estratégico Serie A",
+		"idNemotecnico": "1309",
+		"idNotacion": 0,
+		"nemotecnico": "ESTRATEGIC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Estratégico Serie B",
+		"idNemotecnico": "1446",
+		"idNotacion": 0,
+		"nemotecnico": "EST_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Estrategia Commodities Garantizado",
+		"idNemotecnico": "1500",
+		"idNotacion": 0,
+		"nemotecnico": "EST_CO_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Estratégico Serie D",
+		"idNemotecnico": "1387",
+		"idNotacion": 0,
+		"nemotecnico": "EST_D"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3072",
+		"idNotacion": 0,
+		"nemotecnico": "EST_ED_100"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3073",
+		"idNotacion": 0,
+		"nemotecnico": "EST_ED_90"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1824",
+		"idNotacion": 0,
+		"nemotecnico": "EST_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Europe Fund Serie A",
+		"idNemotecnico": "1346",
+		"idNotacion": 0,
+		"nemotecnico": "EUROFUND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Euro Money Market",
+		"idNemotecnico": "1380",
+		"idNotacion": 0,
+		"nemotecnico": "EUROMONEY"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1839",
+		"idNotacion": 0,
+		"nemotecnico": "EUROPA_DES"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Europe Fund Serie B",
+		"idNemotecnico": "1423",
+		"idNotacion": 0,
+		"nemotecnico": "EUROPE B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Europe Fund Serie C",
+		"idNemotecnico": "1379",
+		"idNotacion": 0,
+		"nemotecnico": "EUROPE C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2893",
+		"idNotacion": 0,
+		"nemotecnico": "EUROP_DE_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Euro Technology Fund Serie A",
+		"idNemotecnico": "1396",
+		"idNotacion": 0,
+		"nemotecnico": "EUROTECH"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2916",
+		"idNotacion": 0,
+		"nemotecnico": "EUR_EQ_TAD"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z11 Prueba",
+		"idNemotecnico": "1432",
+		"idNotacion": 0,
+		"nemotecnico": "EUT USD"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Euro Technology Fund Serie B",
+		"idNemotecnico": "1486",
+		"idNotacion": 0,
+		"nemotecnico": "EUT_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3316",
+		"idNotacion": 0,
+		"nemotecnico": "E_BUF_PL_1"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3233",
+		"idNotacion": 0,
+		"nemotecnico": "E_EUR_N90"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3102",
+		"idNotacion": 0,
+		"nemotecnico": "E_JAPON100"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3103",
+		"idNotacion": 0,
+		"nemotecnico": "E_SMC_US90"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Financiero Serie A",
+		"idNemotecnico": "1513",
+		"idNotacion": 0,
+		"nemotecnico": "FIN_SEC_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Financiero Serie B",
+		"idNemotecnico": "1460",
+		"idNotacion": 0,
+		"nemotecnico": "FIN_SEC_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Financiero Serie C",
+		"idNemotecnico": "1461",
+		"idNotacion": 0,
+		"nemotecnico": "FIN_SEC_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Fondo Inversión Privado Chile Blend",
+		"idNemotecnico": "1501",
+		"idNotacion": 0,
+		"nemotecnico": "FIP_CHI_BL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z23 Prueba",
+		"idNemotecnico": "1311",
+		"idNotacion": 0,
+		"nemotecnico": "FIP_IPSA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z24 Prueba",
+		"idNemotecnico": "1723",
+		"idNotacion": 0,
+		"nemotecnico": "FIP_SHARK"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Fondo de Inversion Brasil Renta Variable",
+		"idNemotecnico": "1510",
+		"idNotacion": 0,
+		"nemotecnico": "FI_BRASIL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3265",
+		"idNotacion": 0,
+		"nemotecnico": "FI_DCOR_35"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3219",
+		"idNotacion": 0,
+		"nemotecnico": "FI_DEU_GLO"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3109",
+		"idNotacion": 0,
+		"nemotecnico": "FI_D_CHI"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3266",
+		"idNotacion": 0,
+		"nemotecnico": "FI_EUR_EQT"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1948",
+		"idNotacion": 0,
+		"nemotecnico": "FI_INM_6"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2960",
+		"idNotacion": 0,
+		"nemotecnico": "FI_INM_7"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3231",
+		"idNotacion": 0,
+		"nemotecnico": "FI_INM_8"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3017",
+		"idNotacion": 0,
+		"nemotecnico": "FI_LAT_CHY"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Chile Fondo de Inversión Small Cap",
+		"idNemotecnico": "1336",
+		"idNotacion": 0,
+		"nemotecnico": "FI_LEGG"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1583",
+		"idNotacion": 0,
+		"nemotecnico": "FI_LTM_SM"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3280",
+		"idNotacion": 0,
+		"nemotecnico": "FI_LTM_SMC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3055",
+		"idNotacion": 0,
+		"nemotecnico": "FI_MINERO"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3247",
+		"idNotacion": 0,
+		"nemotecnico": "FI_MKP_GLO"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3248",
+		"idNotacion": 0,
+		"nemotecnico": "FI_MKP_USA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Plusvalía Eficiente",
+		"idNemotecnico": "1592",
+		"idNotacion": 0,
+		"nemotecnico": "FI_PLUS_EF"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3069",
+		"idNotacion": 0,
+		"nemotecnico": "FI_REN_HAB"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1885",
+		"idNotacion": 0,
+		"nemotecnico": "FI_REN_IN1"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3267",
+		"idNotacion": 0,
+		"nemotecnico": "FI_USA_EQT"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Flexible",
+		"idNemotecnico": "1440",
+		"idNotacion": 0,
+		"nemotecnico": "FLEXIBLE"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1731",
+		"idNotacion": 0,
+		"nemotecnico": "FM_AES_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Andes Acciones Serie A",
+		"idNemotecnico": "1599",
+		"idNotacion": 0,
+		"nemotecnico": "FM_AND_ACC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Andes Acciones Serie B",
+		"idNemotecnico": "1600",
+		"idNotacion": 0,
+		"nemotecnico": "FM_AND_A_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1871",
+		"idNotacion": 0,
+		"nemotecnico": "FM_AND_A_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2889",
+		"idNotacion": 0,
+		"nemotecnico": "FM_AND_A_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1870",
+		"idNotacion": 0,
+		"nemotecnico": "FM_AND_A_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1728",
+		"idNotacion": 0,
+		"nemotecnico": "FM_APL_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1729",
+		"idNotacion": 0,
+		"nemotecnico": "FM_BOO_AUS"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1614",
+		"idNotacion": 0,
+		"nemotecnico": "FM_BRA_SC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1615",
+		"idNotacion": 0,
+		"nemotecnico": "FM_BRA_S_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Bric Accionario Serie B",
+		"idNemotecnico": "1602",
+		"idNotacion": 0,
+		"nemotecnico": "FM_BRIC_AC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Bric Accionario Serie A",
+		"idNemotecnico": "1601",
+		"idNotacion": 0,
+		"nemotecnico": "FM_BRI_A_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1868",
+		"idNotacion": 0,
+		"nemotecnico": "FM_BRI_A_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2881",
+		"idNotacion": 0,
+		"nemotecnico": "FM_BRI_A_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1867",
+		"idNotacion": 0,
+		"nemotecnico": "FM_BRI_A_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1730",
+		"idNotacion": 0,
+		"nemotecnico": "FM_BSC_USA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1616",
+		"idNotacion": 0,
+		"nemotecnico": "FM_IND_ACC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1617",
+		"idNotacion": 0,
+		"nemotecnico": "FM_IND_A_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3119",
+		"idNotacion": 0,
+		"nemotecnico": "FM_JAPON_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1725",
+		"idNotacion": 0,
+		"nemotecnico": "FM_LTM_MKT"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "México Accionario Serie A",
+		"idNemotecnico": "1619",
+		"idNotacion": 0,
+		"nemotecnico": "FM_MEX_ACC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "México Accionario Serie B",
+		"idNemotecnico": "1620",
+		"idNotacion": 0,
+		"nemotecnico": "FM_MEX_A_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1593",
+		"idNotacion": 0,
+		"nemotecnico": "FM_REV_STR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1594",
+		"idNotacion": 0,
+		"nemotecnico": "FM_REV_S_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Fortalezas Garantizado",
+		"idNemotecnico": "1511",
+		"idNotacion": 0,
+		"nemotecnico": "FORT_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Fronteras del Este Garantizado",
+		"idNemotecnico": "1438",
+		"idNotacion": 0,
+		"nemotecnico": "FRO_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica Acciones Serie 42COL",
+		"idNemotecnico": "1403",
+		"idNotacion": 0,
+		"nemotecnico": "GACC_42COL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica Acciones Serie BFCOL",
+		"idNemotecnico": "1404",
+		"idNotacion": 0,
+		"nemotecnico": "GACC_BFCOL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica Acciones Serie BFIND",
+		"idNemotecnico": "1405",
+		"idNotacion": 0,
+		"nemotecnico": "GACC_BFIND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Garantizado 112",
+		"idNemotecnico": "1430",
+		"idNotacion": 0,
+		"nemotecnico": "GARANT 112"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z10 Prueba",
+		"idNemotecnico": "1431",
+		"idNotacion": 0,
+		"nemotecnico": "GARANT 116"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1833",
+		"idNotacion": 0,
+		"nemotecnico": "GAR_AHO_E2"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1888",
+		"idNotacion": 0,
+		"nemotecnico": "GAR_AHO_E3"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1938",
+		"idNotacion": 0,
+		"nemotecnico": "GAR_DEP_PL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1939",
+		"idNotacion": 0,
+		"nemotecnico": "GAR_EURACC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1940",
+		"idNotacion": 0,
+		"nemotecnico": "GAR_TWNEUR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica Acciones Serie 42IND",
+		"idNemotecnico": "1375",
+		"idNotacion": 0,
+		"nemotecnico": "GEACC APV"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1854",
+		"idNotacion": 0,
+		"nemotecnico": "GEACC C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1853",
+		"idNotacion": 0,
+		"nemotecnico": "GEACC S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2886",
+		"idNotacion": 0,
+		"nemotecnico": "GEACC_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica Acciones Serie A",
+		"idNemotecnico": "1392",
+		"idNotacion": 0,
+		"nemotecnico": "GEACC_RET"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Gigantes Garantizado",
+		"idNemotecnico": "1520",
+		"idNotacion": 0,
+		"nemotecnico": "GIT_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Global Fund Serie C",
+		"idNemotecnico": "1419",
+		"idNotacion": 0,
+		"nemotecnico": "GLOBAL C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2894",
+		"idNotacion": 0,
+		"nemotecnico": "GLOBAL E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1866",
+		"idNotacion": 0,
+		"nemotecnico": "GLOBAL S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Global Fund Serie B",
+		"idNemotecnico": "1418",
+		"idNotacion": 0,
+		"nemotecnico": "GLOBALB"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Global Dollar Fund",
+		"idNemotecnico": "1412",
+		"idNotacion": 0,
+		"nemotecnico": "GLOBALDOLA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1845",
+		"idNotacion": 0,
+		"nemotecnico": "GLOBALDOLC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica A Serie 42COL",
+		"idNemotecnico": "1321",
+		"idNotacion": 0,
+		"nemotecnico": "GTA_42COL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica A Serie 42IND",
+		"idNemotecnico": "1372",
+		"idNotacion": 0,
+		"nemotecnico": "GTA_APV"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica A Serie BFCOL",
+		"idNemotecnico": "1322",
+		"idNotacion": 0,
+		"nemotecnico": "GTA_BFCOL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica A Serie BFIND",
+		"idNemotecnico": "1320",
+		"idNotacion": 0,
+		"nemotecnico": "GTA_BFIND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica A Serie A",
+		"idNemotecnico": "1523",
+		"idNotacion": 0,
+		"nemotecnico": "GTA_RETAIL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1855",
+		"idNotacion": 0,
+		"nemotecnico": "GTA_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica B Serie 42COL",
+		"idNemotecnico": "1304",
+		"idNotacion": 0,
+		"nemotecnico": "GTB_42COL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica B Serie 42IND",
+		"idNemotecnico": "1376",
+		"idNotacion": 0,
+		"nemotecnico": "GTB_APV"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica B Serie BFCOL",
+		"idNemotecnico": "1331",
+		"idNotacion": 0,
+		"nemotecnico": "GTB_BFCOL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica B Serie BFIND",
+		"idNemotecnico": "1330",
+		"idNotacion": 0,
+		"nemotecnico": "GTB_BFIND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica B Serie A",
+		"idNemotecnico": "1724",
+		"idNotacion": 0,
+		"nemotecnico": "GTB_RETAIL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1856",
+		"idNotacion": 0,
+		"nemotecnico": "GTB_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica C Serie 42COL",
+		"idNemotecnico": "1332",
+		"idNotacion": 0,
+		"nemotecnico": "GTC_42COL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica C Serie 42IND",
+		"idNemotecnico": "1527",
+		"idNotacion": 0,
+		"nemotecnico": "GTC_APV"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica C Serie BFCOL",
+		"idNemotecnico": "1305",
+		"idNotacion": 0,
+		"nemotecnico": "GTC_BFCOL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica C Serie BFIND",
+		"idNemotecnico": "1312",
+		"idNotacion": 0,
+		"nemotecnico": "GTC_BFIND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica C Serie A",
+		"idNemotecnico": "1525",
+		"idNotacion": 0,
+		"nemotecnico": "GTC_RETAIL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1857",
+		"idNotacion": 0,
+		"nemotecnico": "GTC_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica D Serie 42COL",
+		"idNemotecnico": "1313",
+		"idNotacion": 0,
+		"nemotecnico": "GTD_42COL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica D Serie 42IND",
+		"idNemotecnico": "1348",
+		"idNotacion": 0,
+		"nemotecnico": "GTD_APV"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica D Serie BFCOL",
+		"idNemotecnico": "1306",
+		"idNotacion": 0,
+		"nemotecnico": "GTD_BFCOL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica D Serie BFIND",
+		"idNemotecnico": "1333",
+		"idNotacion": 0,
+		"nemotecnico": "GTD_BFIND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica D Serie A",
+		"idNemotecnico": "1526",
+		"idNotacion": 0,
+		"nemotecnico": "GTD_RETAIL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1858",
+		"idNotacion": 0,
+		"nemotecnico": "GTD_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica E Serie 42COL",
+		"idNemotecnico": "1334",
+		"idNotacion": 0,
+		"nemotecnico": "GTE_42COL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica E Serie 42IND",
+		"idNemotecnico": "1349",
+		"idNotacion": 0,
+		"nemotecnico": "GTE_APV"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica E Serie BFCOL",
+		"idNemotecnico": "1335",
+		"idNotacion": 0,
+		"nemotecnico": "GTE_BFCOL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica E Serie BFIND",
+		"idNemotecnico": "1307",
+		"idNotacion": 0,
+		"nemotecnico": "GTE_BFIND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Visión Dinámica E Serie A",
+		"idNemotecnico": "1391",
+		"idNotacion": 0,
+		"nemotecnico": "GTE_Retail"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1859",
+		"idNotacion": 0,
+		"nemotecnico": "GTE_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1954",
+		"idNotacion": 0,
+		"nemotecnico": "G_CHI_BUR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1953",
+		"idNotacion": 0,
+		"nemotecnico": "G_DEP_PL_2"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1970",
+		"idNotacion": 0,
+		"nemotecnico": "G_DEP_PL_3"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1985",
+		"idNotacion": 0,
+		"nemotecnico": "G_DEP_PL_4"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2963",
+		"idNotacion": 0,
+		"nemotecnico": "G_DEP_PL_6"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Depósito Plus V Garantizado",
+		"idNemotecnico": "2952",
+		"idNotacion": 0,
+		"nemotecnico": "G_DEP_PL_V"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2016",
+		"idNotacion": 0,
+		"nemotecnico": "G_GL_STOCK"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1952",
+		"idNotacion": 0,
+		"nemotecnico": "G_SB_CH_US"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2018",
+		"idNotacion": 0,
+		"nemotecnico": "G_SB_EU_CH"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2869",
+		"idNotacion": 0,
+		"nemotecnico": "G_SM_C_USA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Horizonte Serie B",
+		"idNemotecnico": "1447",
+		"idNotacion": 0,
+		"nemotecnico": "HOR_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Horizonte Serie D",
+		"idNemotecnico": "1479",
+		"idNotacion": 0,
+		"nemotecnico": "HOR_D"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1825",
+		"idNotacion": 0,
+		"nemotecnico": "HOR_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Industria y Consumo Cíclico Serie A",
+		"idNemotecnico": "1514",
+		"idNotacion": 0,
+		"nemotecnico": "INC_SEC_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Industria y Consumo Cíclico Serie B",
+		"idNemotecnico": "1462",
+		"idNotacion": 0,
+		"nemotecnico": "INC_SEC_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Industria y Consumo Cíclico Serie C",
+		"idNemotecnico": "1499",
+		"idNotacion": 0,
+		"nemotecnico": "INC_SEC_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Inmobiliario I",
+		"idNemotecnico": "1409",
+		"idNotacion": 0,
+		"nemotecnico": "INMOBI 1"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Inmobiliario II",
+		"idNemotecnico": "1360",
+		"idNotacion": 0,
+		"nemotecnico": "INMOBI 2"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Inmobiliario III",
+		"idNemotecnico": "1402",
+		"idNotacion": 0,
+		"nemotecnico": "INMOBI 3"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banchile Inmobiliario IV",
+		"idNemotecnico": "1518",
+		"idNotacion": 0,
+		"nemotecnico": "INMOBI 4"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1715",
+		"idNotacion": 0,
+		"nemotecnico": "INMOBI 5"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "International Bond Fund Serie B",
+		"idNemotecnico": "1505",
+		"idNotacion": 0,
+		"nemotecnico": "INT_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión Dollar 30 Serie A",
+		"idNemotecnico": "1408",
+		"idNotacion": 0,
+		"nemotecnico": "INVDOL 30"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión Dollar 30 Serie B",
+		"idNemotecnico": "1507",
+		"idNotacion": 0,
+		"nemotecnico": "INVDOL30_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión 10 Serie A",
+		"idNemotecnico": "1426",
+		"idNotacion": 0,
+		"nemotecnico": "INVER 10"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión 10 Serie B",
+		"idNemotecnico": "1427",
+		"idNotacion": 0,
+		"nemotecnico": "INVER 10 B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1791",
+		"idNotacion": 0,
+		"nemotecnico": "INVER 10 C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1850",
+		"idNotacion": 0,
+		"nemotecnico": "INVER 10 S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión 20 Serie A",
+		"idNemotecnico": "1428",
+		"idNotacion": 0,
+		"nemotecnico": "INVER 20"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión 20 Serie B",
+		"idNemotecnico": "1429",
+		"idNotacion": 0,
+		"nemotecnico": "INVER 20 B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1792",
+		"idNotacion": 0,
+		"nemotecnico": "INVER 20 C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1849",
+		"idNotacion": 0,
+		"nemotecnico": "INVER 20 S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión Serie A",
+		"idNemotecnico": "1316",
+		"idNotacion": 0,
+		"nemotecnico": "INVERSION"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3157",
+		"idNotacion": 0,
+		"nemotecnico": "INV_ALTER"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión Serie B",
+		"idNemotecnico": "1448",
+		"idNotacion": 0,
+		"nemotecnico": "INV_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1878",
+		"idNotacion": 0,
+		"nemotecnico": "INV_BRA B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión Brasil",
+		"idNemotecnico": "1401",
+		"idNotacion": 0,
+		"nemotecnico": "INV_BRASIL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1865",
+		"idNotacion": 0,
+		"nemotecnico": "INV_BRA_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2882",
+		"idNotacion": 0,
+		"nemotecnico": "INV_BRA_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1864",
+		"idNotacion": 0,
+		"nemotecnico": "INV_BRA_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Inversión China",
+		"idNemotecnico": "1381",
+		"idNotacion": 0,
+		"nemotecnico": "INV_CHINA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1863",
+		"idNotacion": 0,
+		"nemotecnico": "INV_CHINAB"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1862",
+		"idNotacion": 0,
+		"nemotecnico": "INV_CHINAC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2883",
+		"idNotacion": 0,
+		"nemotecnico": "INV_CHINAE"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1861",
+		"idNotacion": 0,
+		"nemotecnico": "INV_CHINAS"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1840",
+		"idNotacion": 0,
+		"nemotecnico": "INV_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2895",
+		"idNotacion": 0,
+		"nemotecnico": "INV_USA_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z09 Prueba",
+		"idNemotecnico": "1455",
+		"idNotacion": 0,
+		"nemotecnico": "IN_BRASIL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Latin America Fund Serie B",
+		"idNemotecnico": "1421",
+		"idNotacion": 0,
+		"nemotecnico": "LATIN B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Latin America Fund Serie C",
+		"idNemotecnico": "1410",
+		"idNotacion": 0,
+		"nemotecnico": "LATIN C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2896",
+		"idNotacion": 0,
+		"nemotecnico": "LATIN E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1843",
+		"idNotacion": 0,
+		"nemotecnico": "LATIN S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Liquidez Full",
+		"idNemotecnico": "1317",
+		"idNotacion": 0,
+		"nemotecnico": "LFULL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Liquidez 2000",
+		"idNemotecnico": "1303",
+		"idNotacion": 0,
+		"nemotecnico": "LIQUIDEZ 2"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Asiatico Accionario Serie A",
+		"idNemotecnico": "1354",
+		"idNotacion": 0,
+		"nemotecnico": "LM_ASIA_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Asiatico Accionario Serie APV",
+		"idNemotecnico": "1355",
+		"idNotacion": 0,
+		"nemotecnico": "LM_ASIA_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2887",
+		"idNotacion": 0,
+		"nemotecnico": "LM_ASIA_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z06 Prueba",
+		"idNemotecnico": "1469",
+		"idNotacion": 0,
+		"nemotecnico": "LM_ASIA_F"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Asiatico Accionario Serie I",
+		"idNemotecnico": "1342",
+		"idNotacion": 0,
+		"nemotecnico": "LM_ASIA_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1821",
+		"idNotacion": 0,
+		"nemotecnico": "LM_ASIA_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Chile Accionario Serie A",
+		"idNemotecnico": "1517",
+		"idNotacion": 0,
+		"nemotecnico": "LM_CHILE_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Chile Accionario Serie APV",
+		"idNemotecnico": "1344",
+		"idNotacion": 0,
+		"nemotecnico": "LM_CHILE_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z07 Prueba",
+		"idNemotecnico": "1474",
+		"idNotacion": 0,
+		"nemotecnico": "LM_CHILE_F"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Chile Accionario Serie I",
+		"idNemotecnico": "1475",
+		"idNotacion": 0,
+		"nemotecnico": "LM_CHILE_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1827",
+		"idNotacion": 0,
+		"nemotecnico": "LM_CHILE_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Viejo Continente Accionario Serie A",
+		"idNemotecnico": "1368",
+		"idNotacion": 0,
+		"nemotecnico": "LM_EURO_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Viejo Continente Accionario Serie APV",
+		"idNemotecnico": "1369",
+		"idNotacion": 0,
+		"nemotecnico": "LM_EURO_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Legg Mason Inversion Dolar (Pesos)",
+		"idNemotecnico": "1515",
+		"idNotacion": 0,
+		"nemotecnico": "LM_INV_DOL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "America Latina Accionario Serie A",
+		"idNemotecnico": "1357",
+		"idNotacion": 0,
+		"nemotecnico": "LM_LATIN_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "America Latina Accionario Serie APV",
+		"idNemotecnico": "1358",
+		"idNotacion": 0,
+		"nemotecnico": "LM_LATIN_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2877",
+		"idNotacion": 0,
+		"nemotecnico": "LM_LATIN_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z08 Prueba",
+		"idNemotecnico": "1498",
+		"idNotacion": 0,
+		"nemotecnico": "LM_LATIN_F"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "America Latina Accionario Serie I",
+		"idNemotecnico": "1473",
+		"idNotacion": 0,
+		"nemotecnico": "LM_LATIN_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1820",
+		"idNotacion": 0,
+		"nemotecnico": "LM_LATIN_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "USA Accionario Serie A",
+		"idNemotecnico": "1345",
+		"idNotacion": 0,
+		"nemotecnico": "LM_USA_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "USA Accionario Serie APV",
+		"idNemotecnico": "1367",
+		"idNotacion": 0,
+		"nemotecnico": "LM_USA_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2879",
+		"idNotacion": 0,
+		"nemotecnico": "LM_USA_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z02 Prueba",
+		"idNemotecnico": "1471",
+		"idNotacion": 0,
+		"nemotecnico": "LM_USA_F"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "USA Accionario Serie I",
+		"idNemotecnico": "1470",
+		"idNotacion": 0,
+		"nemotecnico": "LM_USA_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1872",
+		"idNotacion": 0,
+		"nemotecnico": "LM_USA_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Latam Mid Cap Serie A",
+		"idNemotecnico": "1582",
+		"idNotacion": 0,
+		"nemotecnico": "LTM_MID"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Latam Mid Cap Serie B",
+		"idNemotecnico": "1584",
+		"idNotacion": 0,
+		"nemotecnico": "LTM_MID B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1852",
+		"idNotacion": 0,
+		"nemotecnico": "LTM_MID C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1851",
+		"idNotacion": 0,
+		"nemotecnico": "LTM_MID S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2884",
+		"idNotacion": 0,
+		"nemotecnico": "LTM_MID_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1788",
+		"idNotacion": 0,
+		"nemotecnico": "MAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Marfil Garantizado",
+		"idNemotecnico": "1482",
+		"idNotacion": 0,
+		"nemotecnico": "MAR_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z14 Prueba",
+		"idNemotecnico": "1435",
+		"idNotacion": 0,
+		"nemotecnico": "MED USD"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Medical & Health-Care Fund Serie A",
+		"idNemotecnico": "1365",
+		"idNotacion": 0,
+		"nemotecnico": "MEDICAL"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Medical & Health-Care Fund Serie B",
+		"idNemotecnico": "1506",
+		"idNotacion": 0,
+		"nemotecnico": "MEDICAL_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Latin America Fund Serie A",
+		"idNemotecnico": "1359",
+		"idNotacion": 0,
+		"nemotecnico": "MERCADOS"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Mid Cap Serie A",
+		"idNemotecnico": "1356",
+		"idNotacion": 0,
+		"nemotecnico": "MID_CAP_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Mid Cap Serie APV",
+		"idNemotecnico": "1472",
+		"idNotacion": 0,
+		"nemotecnico": "MID_CAP_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z04 Prueba",
+		"idNemotecnico": "1497",
+		"idNotacion": 0,
+		"nemotecnico": "MID_CAP_F"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Mid Cap Serie I",
+		"idNemotecnico": "1343",
+		"idNotacion": 0,
+		"nemotecnico": "MID_CAP_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1826",
+		"idNotacion": 0,
+		"nemotecnico": "MID_CAP_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2899",
+		"idNotacion": 0,
+		"nemotecnico": "MM_CAP_EMP"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3095",
+		"idNotacion": 0,
+		"nemotecnico": "MM_C_EFECP"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1891",
+		"idNotacion": 0,
+		"nemotecnico": "MM_C_EFECT"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3065",
+		"idNotacion": 0,
+		"nemotecnico": "MM_REND_CP"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Muralla China Garantizado",
+		"idNemotecnico": "1383",
+		"idNotacion": 0,
+		"nemotecnico": "MU_CHI_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2983",
+		"idNotacion": 0,
+		"nemotecnico": "M_CONSERVA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Operacional Serie A",
+		"idNemotecnico": "1323",
+		"idNotacion": 0,
+		"nemotecnico": "OPERACIONA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Operacional Serie B",
+		"idNemotecnico": "1487",
+		"idNotacion": 0,
+		"nemotecnico": "OPE_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Operacional Serie D",
+		"idNemotecnico": "1502",
+		"idNotacion": 0,
+		"nemotecnico": "OPE_D"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z18 Prueba",
+		"idNemotecnico": "1310",
+		"idNotacion": 0,
+		"nemotecnico": "OPOR_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z19 Prueba",
+		"idNemotecnico": "1300",
+		"idNotacion": 0,
+		"nemotecnico": "OPOR_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z17 Prueba",
+		"idNemotecnico": "1382",
+		"idNotacion": 0,
+		"nemotecnico": "OPOR_EME"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2890",
+		"idNotacion": 0,
+		"nemotecnico": "OPOR_SEC_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Patrimonial Serie A",
+		"idNemotecnico": "1327",
+		"idNotacion": 0,
+		"nemotecnico": "PATRIMONIA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Patrimonial Serie B",
+		"idNemotecnico": "1449",
+		"idNotacion": 0,
+		"nemotecnico": "PAT_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Performance Serie A",
+		"idNemotecnico": "1374",
+		"idNotacion": 0,
+		"nemotecnico": "PERFORMAN"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Performance Serie B",
+		"idNemotecnico": "1488",
+		"idNotacion": 0,
+		"nemotecnico": "PER_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Potencias Garantizado",
+		"idNemotecnico": "1464",
+		"idNotacion": 0,
+		"nemotecnico": "POT_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Global Fund Serie A",
+		"idNemotecnico": "1318",
+		"idNotacion": 0,
+		"nemotecnico": "PREFERENTE"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Potencias Consolidadas Garantizado",
+		"idNemotecnico": "1384",
+		"idNotacion": 0,
+		"nemotecnico": "P_CONS_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2938",
+		"idNotacion": 0,
+		"nemotecnico": "QUANT_GLBB"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2939",
+		"idNotacion": 0,
+		"nemotecnico": "QUANT_GLOB"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Renta Futura Serie A",
+		"idNemotecnico": "1397",
+		"idNotacion": 0,
+		"nemotecnico": "RENTA FUTU"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Renta Futura Serie B",
+		"idNemotecnico": "1450",
+		"idNotacion": 0,
+		"nemotecnico": "REN_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Renta Futura Serie D",
+		"idNemotecnico": "1315",
+		"idNotacion": 0,
+		"nemotecnico": "REN_D"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1819",
+		"idNotacion": 0,
+		"nemotecnico": "REN_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2918",
+		"idNotacion": 0,
+		"nemotecnico": "RET_ACCLP"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Retorno Dolar Serie A",
+		"idNemotecnico": "1341",
+		"idNotacion": 0,
+		"nemotecnico": "RET_DOLARA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Retorno Dolar Serie I",
+		"idNemotecnico": "1328",
+		"idNotacion": 0,
+		"nemotecnico": "RET_DOLARI"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Retorno L.P. UF Serie A",
+		"idNemotecnico": "1441",
+		"idNotacion": 0,
+		"nemotecnico": "RET_LP_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Retorno L.P. UF Serie APV",
+		"idNemotecnico": "1340",
+		"idNotacion": 0,
+		"nemotecnico": "RET_LP_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z03 Prueba",
+		"idNemotecnico": "1494",
+		"idNotacion": 0,
+		"nemotecnico": "RET_LP_F"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Retorno L.P. UF Serie I",
+		"idNemotecnico": "1495",
+		"idNotacion": 0,
+		"nemotecnico": "RET_LP_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1841",
+		"idNotacion": 0,
+		"nemotecnico": "RET_LP_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Deuda Nacional Serie D",
+		"idNemotecnico": "1339",
+		"idNotacion": 0,
+		"nemotecnico": "RET_MP_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Deuda Nacional Serie APV",
+		"idNemotecnico": "1352",
+		"idNotacion": 0,
+		"nemotecnico": "RET_MP_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z05 Prueba",
+		"idNemotecnico": "1468",
+		"idNotacion": 0,
+		"nemotecnico": "RET_MP_F"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Deuda Nacional Serie A",
+		"idNemotecnico": "1493",
+		"idNotacion": 0,
+		"nemotecnico": "RET_MP_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1836",
+		"idNotacion": 0,
+		"nemotecnico": "RET_MP_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2888",
+		"idNotacion": 0,
+		"nemotecnico": "R_VAR_CH_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z12 Prueba",
+		"idNemotecnico": "1433",
+		"idNotacion": 0,
+		"nemotecnico": "TEC USD"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Technology Fund Serie A",
+		"idNemotecnico": "1364",
+		"idNotacion": 0,
+		"nemotecnico": "TECHNOLOGY"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Technology Fund Serie B",
+		"idNemotecnico": "1451",
+		"idNotacion": 0,
+		"nemotecnico": "TEC_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z16 Prueba",
+		"idNemotecnico": "1437",
+		"idNotacion": 0,
+		"nemotecnico": "TEL USD"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Telecommunication Fund Serie A",
+		"idNemotecnico": "1395",
+		"idNotacion": 0,
+		"nemotecnico": "TELECOMMUN"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Telecommunication Fund Serie B",
+		"idNemotecnico": "1452",
+		"idNotacion": 0,
+		"nemotecnico": "TEL_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Tigres Garantizado",
+		"idNemotecnico": "1398",
+		"idNotacion": 0,
+		"nemotecnico": "TIGRE_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1924",
+		"idNotacion": 0,
+		"nemotecnico": "TWINWINUSA"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2031",
+		"idNotacion": 0,
+		"nemotecnico": "TWIN_USA_$"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2909",
+		"idNotacion": 0,
+		"nemotecnico": "TW_EUR_EQT"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Tecnología y Telecomunicaciones Serie A",
+		"idNemotecnico": "1463",
+		"idNotacion": 0,
+		"nemotecnico": "TYT_SEC_A"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Tecnología y Telecomunicaciones Serie B",
+		"idNemotecnico": "1326",
+		"idNotacion": 0,
+		"nemotecnico": "TYT_SEC_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Tecnología y Telecomunicaciones Serie C",
+		"idNemotecnico": "1299",
+		"idNotacion": 0,
+		"nemotecnico": "TYT_SEC_C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Banewdards U.S. Bond Fund",
+		"idNemotecnico": "1370",
+		"idNotacion": 0,
+		"nemotecnico": "US BOND FU"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "U.S. Dollar Fund",
+		"idNemotecnico": "1413",
+		"idNotacion": 0,
+		"nemotecnico": "US DOLLAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1847",
+		"idNotacion": 0,
+		"nemotecnico": "US DOLLARC"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "U.S. Fund Serie A",
+		"idNemotecnico": "1378",
+		"idNotacion": 0,
+		"nemotecnico": "US FUND"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "U.S. Fund Serie B",
+		"idNemotecnico": "1422",
+		"idNotacion": 0,
+		"nemotecnico": "US FUND B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "U.S. Fund Serie C",
+		"idNemotecnico": "1407",
+		"idNotacion": 0,
+		"nemotecnico": "US FUND C"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1844",
+		"idNotacion": 0,
+		"nemotecnico": "US FUND S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "U.S. High Technology Fund Serie A",
+		"idNemotecnico": "1394",
+		"idNotacion": 0,
+		"nemotecnico": "US HIGH"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "3221",
+		"idNotacion": 0,
+		"nemotecnico": "USA_CPN100"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1988",
+		"idNotacion": 0,
+		"nemotecnico": "USA_EQ_TAD"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z13 Prueba",
+		"idNemotecnico": "1434",
+		"idNotacion": 0,
+		"nemotecnico": "USH USD"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "U.S. High Technology Fund Serie B",
+		"idNemotecnico": "1489",
+		"idNotacion": 0,
+		"nemotecnico": "USH_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Z15 Prueba",
+		"idNemotecnico": "1436",
+		"idNotacion": 0,
+		"nemotecnico": "USS USD"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "U.S. Stability  Fund Serie A",
+		"idNemotecnico": "1373",
+		"idNotacion": 0,
+		"nemotecnico": "USSTABILIT"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "U.S. Stability Fund Serie B",
+		"idNemotecnico": "1453",
+		"idNotacion": 0,
+		"nemotecnico": "USS_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Utilidades Serie A",
+		"idNemotecnico": "1314",
+		"idNotacion": 0,
+		"nemotecnico": "UTGLOBALES"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Utilidades Serie B",
+		"idNemotecnico": "1454",
+		"idNotacion": 0,
+		"nemotecnico": "UTI_B"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Verde Amarelo Garantizado",
+		"idNemotecnico": "1456",
+		"idNotacion": 0,
+		"nemotecnico": "VERDE_GAR"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "2880",
+		"idNotacion": 0,
+		"nemotecnico": "VIEJO_E"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Viejo Continente Accionario Serie I",
+		"idNemotecnico": "1509",
+		"idNotacion": 0,
+		"nemotecnico": "VIEJO_I"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "",
+		"idNemotecnico": "1832",
+		"idNotacion": 0,
+		"nemotecnico": "VIEJO_S"
+	}, {
+		"codTipo": "FMU",
+		"descripcion": "Wall Street 107 Garantizado",
+		"idNemotecnico": "1476",
+		"idNotacion": 0,
+		"nemotecnico": "WALL_GAR"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "BANCA",
+		"idNemotecnico": "1702",
+		"idNotacion": 21195465,
+		"nemotecnico": "BANCA"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "CHILE65",
+		"idNemotecnico": "759",
+		"idNotacion": 0,
+		"nemotecnico": "CHILE65"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "COMMODITIES",
+		"idNemotecnico": "1704",
+		"idNotacion": 21195467,
+		"nemotecnico": "COMMODITIES"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "CONST&INMOB",
+		"idNemotecnico": "1705",
+		"idNotacion": 21195468,
+		"nemotecnico": "CONST-INMOB"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "CONSUMO",
+		"idNemotecnico": "1706",
+		"idNotacion": 21195469,
+		"nemotecnico": "CONSUMO"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "DAX",
+		"idNemotecnico": "773",
+		"idNotacion": 20735,
+		"nemotecnico": "DAX"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "FTSE MIB",
+		"idNemotecnico": "785",
+		"idNotacion": 7385442,
+		"nemotecnico": "FTSEMIB"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "HK HANG SENG",
+		"idNemotecnico": "779",
+		"idNotacion": 324933,
+		"nemotecnico": "HSI"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "IBEX 35",
+		"idNemotecnico": "776",
+		"idNotacion": 324911,
+		"nemotecnico": "IBEX"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "BOVESPA",
+		"idNemotecnico": "771",
+		"idNotacion": 1335248,
+		"nemotecnico": "IBOV"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "IGPA",
+		"idNemotecnico": "782",
+		"idNotacion": 325080,
+		"nemotecnico": "IGPA"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "IGPA LARGE",
+		"idNemotecnico": "1707",
+		"idNotacion": 21195470,
+		"nemotecnico": "IGPALARGE"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "IGPA MID",
+		"idNemotecnico": "1708",
+		"idNotacion": 21195471,
+		"nemotecnico": "IGPAMID"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "IGPA SMALL",
+		"idNemotecnico": "1709",
+		"idNotacion": 21195472,
+		"nemotecnico": "IGPASMALL"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "INDUSTRIAL",
+		"idNemotecnico": "1710",
+		"idNotacion": 21195473,
+		"nemotecnico": "INDUSTRIAL"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "INTER-10",
+		"idNemotecnico": "1700",
+		"idNotacion": 17242076,
+		"nemotecnico": "INTER-10"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "IPSA",
+		"idNemotecnico": "1701",
+		"idNotacion": 17242077,
+		"nemotecnico": "IPSA"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "MERVAL",
+		"idNemotecnico": "2035",
+		"idNotacion": 10717659,
+		"nemotecnico": "MERVAL"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "NIKKEI 225",
+		"idNemotecnico": "3089",
+		"idNotacion": 60972397,
+		"nemotecnico": "NKY"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "RETAIL",
+		"idNemotecnico": "1711",
+		"idNotacion": 21195474,
+		"nemotecnico": "RETAIL"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "RTS INDEX",
+		"idNemotecnico": "783",
+		"idNotacion": 362159,
+		"nemotecnico": "RTSI$"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "SALMON",
+		"idNemotecnico": "1941",
+		"idNotacion": 48179172,
+		"nemotecnico": "SALMON"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "EURO STOXX 50",
+		"idNemotecnico": "2034",
+		"idNotacion": 193736,
+		"nemotecnico": "SP5X"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "S&P 500",
+		"idNemotecnico": "784",
+		"idNotacion": 4359526,
+		"nemotecnico": "SPX"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "FTSE 100",
+		"idNemotecnico": "772",
+		"idNotacion": 1918069,
+		"nemotecnico": "UKX"
+	}, {
+		"codTipo": "IND",
+		"descripcion": "UTILITIES",
+		"idNemotecnico": "1712",
+		"idNotacion": 21195475,
+		"nemotecnico": "UTILITIES"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "AUD/USD",
+		"idNemotecnico": "791",
+		"idNotacion": 833622,
+		"nemotecnico": "DOLAU"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "USD/CAD",
+		"idNemotecnico": "792",
+		"idNotacion": 832889,
+		"nemotecnico": "DOLCA"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "USD/CLP",
+		"idNemotecnico": "790",
+		"idNotacion": 24698976,
+		"nemotecnico": "DOSPOT"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "EUR/USD",
+		"idNemotecnico": "789",
+		"idNotacion": 1390634,
+		"nemotecnico": "EURO"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "GBP/USD",
+		"idNemotecnico": "786",
+		"idNotacion": 1305587,
+		"nemotecnico": "LIBRA"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "USD/MXN",
+		"idNemotecnico": "793",
+		"idNotacion": 1007591,
+		"nemotecnico": "PESMN"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "USD/ARS",
+		"idNemotecnico": "2039",
+		"idNotacion": 8326417,
+		"nemotecnico": "PESOA"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "USD/BRL",
+		"idNemotecnico": "795",
+		"idNotacion": 994752,
+		"nemotecnico": "READO"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "USD/JPY",
+		"idNemotecnico": "788",
+		"idNotacion": 1363989,
+		"nemotecnico": "YENJA"
+	}, {
+		"codTipo": "MON",
+		"descripcion": "USD/CNY",
+		"idNemotecnico": "787",
+		"idNotacion": 1343320,
+		"nemotecnico": "YUANCH"
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "BCP 10 AÑOS",
+		"idNemotecnico": "1293",
+		"idNotacion": 17121761,
+		"nemotecnico": "BCP 10 AÑOS"
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "BCP 5 AÑOS",
+		"idNemotecnico": "1294",
+		"idNotacion": 23132523,
+		"nemotecnico": "BCP 5 AÑOS"
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "BCU 10 AÑOS",
+		"idNemotecnico": "1292",
+		"idNotacion": 17121760,
+		"nemotecnico": "BCU 10 AÑOS"
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "BCU 5 AÑOS",
+		"idNemotecnico": "1291",
+		"idNotacion": 17121758,
+		"nemotecnico": "BCU 5 AÑOS"
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "TAB NOMINAL 360 DÍAS",
+		"idNemotecnico": "2048",
+		"idNotacion": 28932554,
+		"nemotecnico": "TAB NOMINAL 360 DÍAS"
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "TAB UF 360 DÍAS",
+		"idNemotecnico": "2038",
+		"idNotacion": 28932557,
+		"nemotecnico": "TAB UF 360 DÍAS"
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "US TREASURY 10",
+		"idNemotecnico": "1296",
+		"idNotacion": 25812381,
+		"nemotecnico": "US TREASURY 10"
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "US TREASURY 2",
+		"idNemotecnico": "2037",
+		"idNotacion": 25812379,
+		"nemotecnico": "US TREASURY 2"
+	}, {
+		"codTipo": "TAX",
+		"descripcion": "US TREASURY 5",
+		"idNemotecnico": "1295",
+		"idNotacion": 25812380,
+		"nemotecnico": "US TREASURY 5"
+	}]
+}

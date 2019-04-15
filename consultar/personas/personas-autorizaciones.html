@@ -1,0 +1,284 @@
+<!-- Jadra 25 Oct-->
+<section>
+  <div class="contenido--background consultar-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Autorizaciones</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-cuenta-buscar-fav.html' "></div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+           <div ng-controller="VerAyudaFFMM" ng-show="miTexto" ng-cloak>
+              <div ng-include src=" 'buscadores/buscador-documentos.html' ">
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorAutorizaciones -->
+<section>
+  <div class="ban-container">
+    <div class="card tablaMaster h--marginBottom4 h--borderRadiusBottom4px h--paddingBottom2">
+      <!-- inicio autorizacionesTotales -->
+      <div class="card--contenido">
+        <div class="documentos a_fadein">
+          <md-tabs md-dynamic-height md-border-bottom>
+            <!-- inicio autorizacionesPendientes -->
+            <md-tab label="Pendientes">
+              <table fixed-header class="animated fadeInDown" wt-responsive-table ng-controller="InstruccionesCtrl">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="tableHead--titulo" click-sort="sort" sort-by="producto">Fecha</th>
+                    <th class="tableHead--left" click-sort="sort" sort-by="operacion">Producto</th>
+                    <th class="tableHead--left" click-sort="sort" sort-by="fecha">Transacción</th>
+                    <th class="tableHead--left" click-sort="sort" sort-by="origen">Instrumento</th>
+                    <th click-sort="sort" sort-by="destino">Nº de orden</th>
+                    <th click-sort="sort" sort-by="monto">Monto</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-class="{'tr--active': instrucciones.expanded}" ng-click="instrucciones.expanded = !instrucciones.expanded" ng-repeat-start="instrucciones in instruccion | orderBy : sort">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button acciones" ng-if="!instrucciones.expanded">
+                        <md-icon>
+                          <i class="material-icons">expand_more</i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button acciones" ng-if="instrucciones.expanded">
+                        <md-icon>
+                          <i class="material-icons">expand_less</i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal">{{instrucciones.fecha}}</td>
+                    <td class="td--datos td--auto">{{instrucciones.producto}}</td>
+                    <td class="td--datos td--auto">{{instrucciones.transaccion}}</td>
+                    <td class="td--datos td--auto">{{instrucciones.instrumento}}</td>
+                    <td class="td--valores td--auto">{{instrucciones.orden}}</td>
+                    <td class="td--valores">{{instrucciones.monto}}</td>
+                    <!-- inicio iconoAperturaResponsive -->
+                    <td class="td--iconoAperturaResponsive">
+                      <md-button class="md-icon-button acciones" ng-if="!instrucciones.expanded" ng-click="instrucciones.expanded = true">
+                        <md-icon>
+                          <i class="material-icons">expand_more</i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button acciones" ng-if="instrucciones.expanded" ng-click="instrucciones.expanded = false">
+                        <md-icon>
+                          <i class="material-icons">expand_less</i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <!-- fin iconoAperturaResponsive -->
+                    <td class="td--iconos">
+                      <md-button class="md-icon-button" aria-label="comprobante">
+                        <md-icon>
+                          <i class="material-icons icono--pending">rotate_right</i>
+                        </md-icon>
+                        <md-tooltip md-direction="bottom">Pendiente</md-tooltip>
+                      </md-button>
+                    </td>
+                    <td class="td--iconos">
+                      <div class="td--botonesTransar">
+                        <md-button class="md-icon-button acciones" aria-label="comprobante">
+                          <md-icon>
+                            <i class="material-icons icono--principal">description</i>
+                          </md-icon>
+                          <md-tooltip md-direction="bottom">Comprobante</md-tooltip>
+                        </md-button>
+                      </div>
+                    </td>
+                  </tr>
+                  <!--inicio detalleAutorizacionesPendientes -->
+                  <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-hide="!instrucciones.expanded" ng-repeat-end="">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="despliegueDetalle" colspan="7">
+                                <div ng-include class="fadeIn animated" src="'detalle/detalle-autorizaciones-origenP.html'"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <!--fin detalleAutorizacionesPendientes -->
+                </tbody>
+              </table>
+              <!-- inicio tablaPaginador -->
+              <div class="pie--tabla animated fadeInDown">
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin tablaPaginador -->
+            </md-tab>
+            <!-- fin autorizacionesPendientes -->
+            <!-- inicio autorizacionesAprobadas -->
+            <md-tab label="Aprobadas">
+              <table fixed-header class="animated fadeInDown" wt-responsive-table ng-controller="InstruccionesCtrl">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="tableHead--titulo" click-sort="sort" sort-by="producto">Fecha</th>
+                    <th class="tableHead--left" click-sort="sort" sort-by="operacion">Producto</th>
+                    <th class="tableHead--left" click-sort="sort" sort-by="fecha">Transacción</th>
+                    <th class="tableHead--left" click-sort="sort" sort-by="origen">Instrumento</th>
+                    <th click-sort="sort" sort-by="destino">Nº de orden</th>
+                    <th click-sort="sort" sort-by="monto">Monto</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-class="{'tr--active': instrucciones.expanded}" ng-click="instrucciones.expanded = !instrucciones.expanded" ng-repeat-start="instrucciones in instruccion | orderBy : sort">
+                    <td class="td--iconoApertura">
+                      <md-button class="md-icon-button acciones" ng-if="!instrucciones.expanded">
+                        <md-icon>
+                          <i class="material-icons">expand_more</i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button acciones" ng-if="instrucciones.expanded">
+                        <md-icon>
+                          <i class="material-icons">expand_less</i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <td class="td--principal">{{instrucciones.fecha}}</td>
+                    <td class="td--datos td--auto">{{instrucciones.producto}}</td>
+                    <td class="td--datos td--auto">{{instrucciones.transaccion}}</td>
+                    <td class="td--datos td--auto">{{instrucciones.instrumento}}</td>
+                    <td class="td--valores td--auto">{{instrucciones.orden}}</td>
+                    <td class="td--valores">{{instrucciones.monto}}</td>
+                    <!-- inicio iconoAperturaResponsive -->
+                    <td class="td--iconoAperturaResponsive">
+                      <md-button class="md-icon-button acciones" ng-if="!instrucciones.expanded" ng-click="instrucciones.expanded = true">
+                        <md-icon>
+                          <i class="material-icons">expand_more</i>
+                        </md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button acciones" ng-if="instrucciones.expanded" ng-click="instrucciones.expanded = false">
+                        <md-icon>
+                          <i class="material-icons">expand_less</i>
+                        </md-icon>
+                      </md-button>
+                    </td>
+                    <!-- fin iconoAperturaResponsive -->
+                    <td class="td--iconos">
+                      <md-button class="md-icon-button" aria-label="comprobante">
+                        <md-icon>
+                          <i class="material-icons icono--check">check</i>
+                        </md-icon>
+                        <md-tooltip md-direction="bottom">Aprobado</md-tooltip>
+                      </md-button>
+                    </td>
+                  </tr>
+                  <!--inicio detalleAutorizacionesAprobadas -->
+                  <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-hide="!instrucciones.expanded" ng-repeat-end="">
+                    <td colspan="12">
+                      <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                        <table class="tableContenido tableContenido__margin">
+                          <tbody>
+                            <tr>
+                              <td class="despliegueDetalle" colspan="7">
+                                <div ng-include class="fadeIn animated" src="'detalle/detalle-autorizaciones-origenP-aprobadas.html'"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <!--fin detalleAutorizacionesAprobadas -->
+                </tbody>
+              </table>
+              <!-- inicio tablaPaginador -->
+              <div class="pie--tabla animated fadeInDown">
+                <div class="pie--contenido">
+                  <div class="ban-row">
+                    <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                      <div class="pie--paginacion">
+                        <div class="paginacion--accion h--displayNone">
+                          <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                        </div>
+                        <div class="paginacion--accion h--displayNone">
+                          <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                            <md-option value="1">10</md-option>
+                            <md-option value="2">20</md-option>
+                            <md-option value="3">30</md-option>
+                          </md-select>
+                        </div>
+                        <div class="paginacion--accion">
+                          <p class="paginacion--parrafo">10 de 22</p>
+                        </div>
+                        <div class="paginacion--accion">
+                          <md-button class="md-icon-button" aria-label="Atras">
+                            <md-icon>
+                              <i class="material-icons">&#xE314;</i>
+                            </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button" aria-label="Adelante">
+                            <md-icon>
+                              <i class="material-icons">&#xE315;</i>
+                            </md-icon>
+                          </md-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin tablaPaginador -->
+            </md-tab>
+            <!-- fin autorizacionesAprobadas -->
+          </md-tabs>
+        </div>
+      </div>
+      <!-- fin autorizacionesTotales -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorAutorizaciones -->

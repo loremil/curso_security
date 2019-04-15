@@ -1,0 +1,26 @@
+<!-- Verificacion Jadra 23-08-->
+<div class="operacion--informe">
+  <div class="ban-row">
+    <div class="ban-col-xs-3 ban-col-md-2">
+      <md-icon><i class="material-icons">info_outline</i></md-icon>
+    </div>
+    <div class="ban-col-xs-9 ban-col-md-10">
+      <h2 class="informe--texto">Hasta las 14:00 de días hábiles tu inversión será ingresada  el mismo día, fuera de este horario lo verás reflejado al día hábil siguiente.</h2>
+    </div>
+  </div>
+</div>
+<div class="operacion--confirmacion h--marginBottom2">
+  <div class="ban-row">
+    <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6 ">
+      <md-input-container class="input--dropdowns">
+        <label>Clave de seguridad</label>
+        <md-icon class="dropdowns--icon">
+          <i class="material-icons">verified_user</i></md-icon>
+        <input ng-model="user.autorizacion">
+      </md-input-container>
+    </div>
+    <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-6 " ng-controller="modalesCrtl">
+      <md-button ng-click="showAbonarCI($event)" class="boton1 confirmacion--boton md-raised">Abonar</md-button>
+    </div>
+  </div>
+</div>

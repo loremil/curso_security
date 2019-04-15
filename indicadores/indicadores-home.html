@@ -1,0 +1,368 @@
+<div class="indicadoresBackground"></div>
+<div id="indicadoresContainer">
+  <section>
+    <div class="indicadoresCard h--borderRadiusTop4px">
+      <div class="indicadoresHeader">
+        <div class="ban-col-xs-9 ban-col-sm-10 ban-col-md-4">
+          <div class="banchile--logo">
+            <a href="#" title="Banchile Inversiones">
+              <img src="assets/images/logo--Banchile_Borderless.png" class="ban-img-responsive">
+            </a>
+          </div>
+        </div>
+        <div class="ban-col-md-2">
+          <div class="indicadoresHeader--mercado">
+            <div class="indicadorMercado mercado--abierto">
+              <h3>
+                Mercado:
+                <span>Abierto</span>
+              </h3>
+              <md-icon class="material-icons">
+                <i class="material-icons"></i>
+              </md-icon>
+            </div>
+          </div>
+        </div>
+        <div ng-controller="sliderIndicadoresDisplay">
+          <div class="ban-col-md-6">
+            <ks-swiper-container class="sliderCards" override-parameters="parametrosNotificacion">
+              <!-- inicio contenedorNotificacion -->
+              <ks-swiper-slide>
+                <div class="indicadoresNotificacion notificacionPublicitaria" style="background-image: url('https://www.xn--sueoscumplidos-snb.cl/img/slider-img-4.jpg') !important;">
+                  <div class="notificacionPublicitaria--contenedor">
+                    <div class="indicadoresNotificacion--icono">
+                      <img src="assets/images/iconTarjetas.png" alt="">
+                    </div>
+                    <div class="indicadoresNotificacion--contenido">
+                      <h3 class="indicadoresNotificacion--titulo">ARMA Y GANA EL VIAJE DE TUS SUEÑOS</h3>
+                      <p class="indicadoresNotificacion--texto">con tus tarjetas de credito y debito</p>
+                    </div>
+                  </div>
+                  <div class="indicadoresNotificacion--filtro">
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- fin contenedorNotificacion -->
+              <!-- inicio contenedorNotificacion -->
+              <ks-swiper-slide>
+                <div class="indicadoresNotificacion notificacionPublicitaria notificacionAzul">
+                  <div class="notificacionPublicitaria--contenedor">
+                    <div class="indicadoresNotificacion--icono">
+                      <img src="assets/images/iconMiPago.png" alt="">
+                    </div>
+                    <div class="indicadoresNotificacion--contenido">
+                      <p class="indicadoresNotificacion--texto">Usa tu APP Mi Pago en Copec</p>
+                      <h3 class="indicadoresNotificacion--titulo">y obten 50% de descuento por litro</h3>
+                    </div>
+                  </div>
+                  <div class="indicadoresNotificacion--filtro">
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- fin contenedorNotificacion -->
+              <!-- inicio contenedorNotificacion -->
+              <ks-swiper-slide>
+                <div class="indicadoresNotificacion notificacionPublicitaria" style="background-image: url('https://marketingland.com/wp-content/ml-loads/2016/10/technology-man-laptop-analytics-data-ss-1920.jpg') !important;">
+                  <div class="notificacionPublicitaria--contenedor">
+                    <div class="indicadoresNotificacion--icono">
+                      <img src="assets/images/iconPassword.png" alt="">
+                    </div>
+                    <div class="indicadoresNotificacion--contenido">
+                      <h3 class="indicadoresNotificacion--titulo">¡EVITA FRAUDES!</h3>
+                      <p class="indicadoresNotificacion--texto">Jamás entregues tus claves de seguridad</p>
+                    </div>
+                  </div>
+                  <div class="indicadoresNotificacion--filtro">
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- fin contenedorNotificacion -->
+            </ks-swiper-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="indicadoresCard h--borderRadiusBottom4px" ng-controller="sliderIndicadoresDisplay">
+      <ks-swiper-container class="sliderCards" override-parameters="parametrosIndicadores">
+        <!-- inicio sliderFondosMutuos -->
+        <ks-swiper-slide>
+          <div class="indicadoresEstructure">
+            <!-- inicio contenedorResumen -->
+            <div class="indicadoresTablas tablaMaster">
+              <!-- inicio cajaTranzadas -->
+              <div class="ban-col-md-4">
+                <div class="card h--shadowBoxNoHover">
+                  <div class="contenedor--subtitulo">
+                    <h3 class="subtitulo ">Acciones más transadas</h3>
+                  </div>
+                  <table class="h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                    <thead>
+                      <tr>
+                        <th class="tableHead--titulo">Serie</th>
+                        <th>Precio</th>
+                        <th>Var(%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesIndicadores | orderBy : sort">
+                        <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                        <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                        <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- fin cajaTranzadas -->
+              <!-- inicio cajaAlzas -->
+              <div class="ban-col-md-4">
+                <div class="card h--shadowBoxNoHover">
+                  <div class="contenedor--subtitulo">
+                    <h3 class="subtitulo ">Acciones con mayores alzas</h3>
+                  </div>
+                  <table fixed-header class="animated fadeInDown h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                    <thead>
+                      <tr>
+                        <th class="tableHead--titulo">Serie</th>
+                        <th>Precio</th>
+                        <th>Var(%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesIndicadores | orderBy : sort ">
+                        <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                        <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                        <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- fin cajaAlzas -->
+              <!-- inicio cajaBajas -->
+              <div class="ban-col-md-4">
+                <div class="homeNoticias">
+                  <div class="cardNoticias noticiasNormales h--shadowBox">
+                    <div class="contenedorimg--noticiasNormales">
+                      <img src="assets/images/noticia-normal-card1.jpg" alt="">
+                    </div>
+                    <div class="contenedor--noticiaNormales">
+                      <h4>ECONOMIA</h4>
+                      <h3>Banchile Inversiones lanza su nueva aplicación compatible con IOS y Android.</h3>
+                      <p>Dirigido a inversionistas, su nueva aplicación permite operar con diferentes productos, pudiendo comprar
+                        y vender acciones desde cualquier lugar.
+                      </p>
+                    </div>
+                    <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- fin cajaBajas -->
+            </div>
+            <!-- fin contenedorResumen -->
+            <div class="ban-col-md-12 indicadoresEstructure--infoFooter">
+              <div ng-include src="'mensajes/mensajes--info.html'"></div>
+            </div>
+          </div>
+        </ks-swiper-slide>
+        <!-- fin sliderFondosMutuos -->
+        <!-- inicio sliderAcciones -->
+        <ks-swiper-slide>
+          <div class="indicadoresEstructure">
+            <!-- inicio contenedorResumen -->
+            <div class="indicadoresTablas tablaMaster">
+              <!-- inicio cajaTranzadas -->
+              <div class="ban-col-md-4">
+                <div class="card h--shadowBoxNoHover">
+                  <div class="contenedor--subtitulo">
+                    <h3 class="subtitulo ">Acciones más transadas</h3>
+                  </div>
+                  <table class="h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                    <thead>
+                      <tr>
+                        <th class="tableHead--titulo">Serie</th>
+                        <th>Precio</th>
+                        <th>Var(%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesIndicadores | orderBy : sort">
+                        <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                        <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                        <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- fin cajaTranzadas -->
+              <!-- inicio cajaAlzas -->
+              <div class="ban-col-md-4">
+                <div class="card h--shadowBoxNoHover">
+                  <div class="contenedor--subtitulo">
+                    <h3 class="subtitulo ">Acciones con mayores alzas</h3>
+                  </div>
+                  <table fixed-header class="animated fadeInDown h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                    <thead>
+                      <tr>
+                        <th class="tableHead--titulo">Serie</th>
+                        <th>Precio</th>
+                        <th>Var(%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesIndicadores | orderBy : sort ">
+                        <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                        <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                        <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- fin cajaAlzas -->
+              <!-- inicio cajaBajas -->
+              <div class="ban-col-md-4">
+                <div class="card h--shadowBoxNoHover">
+                  <div class="contenedor--subtitulo">
+                    <h3 class="subtitulo ">Acciones con mayores bajas</h3>
+                  </div>
+                  <table fixed-header class="animated fadeInDown h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                    <thead>
+                      <tr>
+                        <th class="tableHead--titulo">Serie</th>
+                        <th>Precio</th>
+                        <th>Var(%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesIndicadores | orderBy : sort">
+                        <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                        <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                        <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- fin cajaBajas -->
+            </div>
+            <!-- fin contenedorResumen -->
+            <div class="ban-col-md-12 indicadoresEstructure--infoFooter">
+              <div ng-include src="'mensajes/mensajes--info.html'"></div>
+            </div>
+          </div>
+        </ks-swiper-slide>
+        <!-- fin sliderAcciones -->
+        <!-- inicio sliderMonedas -->
+        <ks-swiper-slide>
+          <div class="indicadoresEstructure">
+            <!-- inicio contenedorResumen -->
+            <div class="indicadoresTablas tablaMaster">
+              <!-- inicio cajaTranzadas -->
+              <div class="ban-col-md-4">
+                <div class="card h--shadowBoxNoHover">
+                  <div class="contenedor--subtitulo">
+                    <h3 class="subtitulo ">Acciones más transadas</h3>
+                  </div>
+                  <table class="h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                    <thead>
+                      <tr>
+                        <th class="tableHead--titulo">Serie</th>
+                        <th>Precio</th>
+                        <th>Var(%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesIndicadores | orderBy : sort">
+                        <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                        <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                        <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- fin cajaTranzadas -->
+              <!-- inicio cajaAlzas -->
+              <div class="ban-col-md-4">
+                <div class="card h--shadowBoxNoHover">
+                  <div class="contenedor--subtitulo">
+                    <h3 class="subtitulo ">Acciones con mayores alzas</h3>
+                  </div>
+                  <table fixed-header class="animated fadeInDown h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                    <thead>
+                      <tr>
+                        <th class="tableHead--titulo">Serie</th>
+                        <th>Precio</th>
+                        <th>Var(%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesIndicadores | orderBy : sort ">
+                        <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                        <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                        <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- fin cajaAlzas -->
+              <!-- inicio cajaBajas -->
+              <div class="ban-col-md-4">
+                <div class="card h--shadowBoxNoHover">
+                  <div class="contenedor--subtitulo">
+                    <h3 class="subtitulo ">Acciones con mayores bajas</h3>
+                  </div>
+                  <table fixed-header class="animated fadeInDown h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                    <thead>
+                      <tr>
+                        <th class="tableHead--titulo">Serie</th>
+                        <th>Precio</th>
+                        <th>Var(%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesIndicadores | orderBy : sort">
+                        <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                        <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                        <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                      </tr>
+                      <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- fin cajaBajas -->
+            </div>
+            <!-- fin contenedorResumen -->
+            <div class="ban-col-md-12 indicadoresEstructure--infoFooter">
+              <div ng-include src="'mensajes/mensajes--info.html'"></div>
+            </div>
+          </div>
+        </ks-swiper-slide>
+        <!-- fin sliderMonedas -->
+      </ks-swiper-container>
+      <div class="indicadores--acrylic">
+      </div>
+    </div>
+  </section>
+</div>

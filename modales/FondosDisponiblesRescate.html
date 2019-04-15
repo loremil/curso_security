@@ -1,0 +1,123 @@
+<!-- modal 18/05 -->
+<div class="modal modales-xl">
+  <md-dialog class="emergente" flex="auto">
+    <div class="ban-row">
+      <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12" ng-controller="VerAyudaFFMM">
+        <h3 class="subtitulos">Fondos disponibles</h3>
+        <table class="table tableContenido" wt-responsive-table ng-controller="tablaFFMM">
+          <thead class="tableContenido--head head__segundario">
+            <tr>
+              <th></th>
+              <th class="td--label">Fondo Mutuo</th>
+              <th>%30 días</th>
+              <th>%1 año</th>
+              <th>Riesgo</th>
+              <th>Nº cuotas</th>
+              <th>Monto</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tableContenido--info info__descripcion">
+              <td class="info--iconos"></td>
+              <td class="info--title" data-title="">Fondos Money Market</td>
+              <td class="info--descrip" data-title="" colspan="6" class="">Son una atractiva opción para no adquirir riesgos elevados, pero aún así obtener rentabilidades competitivas en el corto plazo. </td>
+            </tr>
+
+            <tr class="tableContenido--info info--detalle" ng-repeat-start="fondomut in fondom | orderBy : sort">
+              <td class="info--iconos">
+                <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+                <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+              </td>
+              <td class="info--principal__cuenta" data-title="Fondo Mutuo">{{fondomut.producto}}
+                <div class="cartera--ico" aria-label="Ya tienes este Fondo">
+                  <i class="material-icons icons--color icons--small">work</i>
+                </div>
+              </td>
+              <td class="valor--td__info" data-title="%30 días">{{fondomut.dias}}</td>
+              <td class="valor--td__info" data-title="%1 año">{{fondomut.ano}}</td>
+              <td class="valor--td__info" data-title="Riesgo">{{fondomut.riesgo}}</td>
+              <td class="valor--td__info" data-title="Nº cuotas">{{fondomut.cuota}}</td>
+              <td class="valor--td__info" data-title="Monto">{{fondomut.monto}}</td>
+              <td class="contenido--botones">
+                <div class="datos--botones">
+                  <md-button class="boton--aportar md-raised" ng-click="mostrarSeleccion()">Seleccionar</md-button>
+                  <md-button class="md-icon-button ver--mas" data-title="ver detalle" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                    <md-icon><i class="material-icons">&#xE316;</i> </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button ver--mas" data-title="ver detalle" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                    <md-icon><i class="material-icons">&#xE313;</i> </md-icon>
+                  </md-button>
+                </div>
+              </td>
+            </tr>
+            <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+              <td class="animacionApertura--shadow" colspan="8" data-title="">
+                <table class="tableContenido tableContenido__margin">
+                  <tbody>
+                    <tr class="tableContenido--info info__cuenta">
+                      <td class="info--iconos">
+                      </td>
+                      <td class="info--principal">Cuenta 11-2</td>
+                      <td class="valor--td__info"></td>
+                      <td class="valor--td__info"></td>
+                      <td class="valor--td__info"></td>
+                      <td class="valor--td__info"></td>
+                      <td class="contenido--botones">
+                        <div class="datos--botones">
+                          <md-button class="boton--aportar md-raised" ng-click="mostrarSeleccion()">Seleccionar</md-button>
+                          <md-button class="md-icon-button ver--mas" data-title="ver detalle" ng-click="fondomut.expandedd = false" ng-if="fondomut.expandedd">
+                            <md-icon><i class="material-icons">&#xE316;</i> </md-icon>
+                          </md-button>
+                          <md-button class="md-icon-button ver--mas" data-title="ver detalle" ng-click="fondomut.expandedd = true" ng-if="!fondomut.expandedd">
+                            <md-icon><i class="material-icons">&#xE313;</i> </md-icon>
+                          </md-button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tableContenido--info info__valorizado">
+                      <td colspan="7" class="info--cuenta">
+                        <p class="cuenta--plan"> Plan de inversión normal</p>
+                        <p> Beneficio Tributario 57 BIS</p>
+                        <p class="cuenta--comision">Monto libre de comisión $5.000.000</p>
+                        <p> Número de cuotas 14.601,0987</p>
+                        <p> Monto $14.601</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="despliegueDetalle animated fadeInDown" colspan="7">
+                        <div ng-include src="'detalle/detalle-cuenta-fm.html'"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="contenedor--botones right">
+          <md-button class="boton2 md-raised" ng-click="hideExitoEmpresa()">Cancelar</md-button>
+        </div>
+        <div class="ban-col-sm-12 ban-col-md-12 h--paddingBottom2">
+          <div class="informese ">
+            <md-icon md-font-set="banicon-informacion "></md-icon>
+            <p class="informese--texto ">La rentabilidad o ganancia obtenida en el pasado por estos fondos, no garantiza que ella se repita en el futuro. Los valores de las cuotas de los fondos son variables. Infórmese de las características esenciales de la inversión en estos fondos,
+              las que se encuentran contenidas en su reglamento interno y contrato general de fondos. Las pérdidas que eventualmente pueda sufrir el Fondo serán asumidos exclusivamente por tus aportantes y no por la administradora ni por las entidades
+              bancarias o financieras del grupo empresarial al cual pertenece, o tus filiales. Antes de invertir revise el Reglamento Interno y el Folleto Informativo del Fondo. Las inversiones en el Fondo no están aseguradas por la garantía estatal de
+              los depósitos de la Ley General de Bancos ni por la Federal Deposit Insurance Corporation, y no son depósitos, obligaciones, ni están endosados o garantizados, en cualquier forma, por cualquier entidad bancaria. Banchile Administradora General
+              de Fondos S.A. es filial del Banco de Chile, quien puede designar directores en aquella. Banco de Chile y Banchile Corredores de Bolsa S.A. son agentes de Banchile Administradora General de Fondos S.A. en la colocación, suscripción y rescates
+              de las cuotas de los Fondos que administra.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-dialog>
+</div>

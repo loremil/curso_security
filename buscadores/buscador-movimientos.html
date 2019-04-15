@@ -1,0 +1,39 @@
+<div class="contenedorBuscador--ffmm colorFondo--buscador colorFuente--buscador collapseFFMM">
+  <div class="ban-row">
+    <div class="margen--buscador">
+      <div class="ban-col-sm-6 ban-col-md-4">
+        <md-input-container class="ayuda--input ayuda--buscador">
+          <md-icon><i class="material-icons buscador--icono">search</i></md-icon>
+          <label>Palabra clave</label>
+          <input name="texto" ng-model="ffmm.palabra">
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-4">
+        <md-input-container class="ayuda--input">
+          <label>Período</label>
+          <md-select name="date01" ng-model="date01">
+            <md-option value="1">Enero, 2016</md-option>
+            <md-option value="2">Febrero, 2016</md-option>
+            <md-option selected value="3">Marzo, 2016</md-option>
+            <md-option value="4">Abril, 2016</md-option>
+            <md-option value="5">Mayo, 2016</md-option>
+            <md-option value="6">Junio, 2016</md-option>
+            <md-option value="7">Julio, 2016</md-option>
+            <md-option value="8">Agosto, 2016</md-option>
+            <md-option value="9">Septiembre, 2016</md-option>
+            <md-option value="10">Octubre, 2016</md-option>
+            <md-option value="11">Noviembre, 2016</md-option>
+            <md-option value="12">Diciembre, 2016</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-12 ban-col-md-4">
+        <div class="buscador--boton">
+          <md-button ng-click="accionesResultado = !accionesResultado" class="boton2 boton--100 md-raised primario" type="button">
+            <span class="ng-scope">Buscar</span>
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

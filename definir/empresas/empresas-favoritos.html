@@ -1,0 +1,159 @@
+<!-- 18 Agosto "gbujes" -->
+<section>
+  <div class="contenido--background definir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion">Favoritos</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-include src="'select-cuenta/empresas/card-cuenta-fav.html'"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-controller="FavoritosCtrl" ng-init="init()">
+  <div class="ban-container">
+    <div class="card h--paddingBottom2">
+      <div class="empresaFavorita animated fadeInDown">
+        <div class="contenedor--subtitulo h--paddingTopnone">
+          <h3 class="subtitulo">Empresa Favorita</h3>
+        </div>
+        <p>Selecciona la empresa con la que quieres comenzar siempre</p>
+        <div class="ban-row">
+          <div class="ban-col-xs-12 ban-col-sm-4 ">
+            <md-input-container class="input--dropdowns">
+              <label>Empresa</label>
+              <md-select name="beneficiario" ng-model="banchilepay.beneficiario">
+                <md-option value="1">Agrícola Campo Lindo Ltda.</md-option>
+                <md-option value="2">Pesquera Corp Fish Ltda.</md-option>
+                <md-option value="3">Importadora Saigon S.A.</md-option>
+              </md-select>
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card h--marginTop h--marginBottomcard">
+      <div class="indicadoresFavoritos animated fadeInDown">
+        <div class="contenedor--subtitulo h--paddingTopnone">
+          <h3 class="subtitulo">Indicadores favoritos</h3>
+        </div>
+        <p class="indicadoresFavoritos--parrafo">Puedes agregar hasta 5 indicadores a tu lista de favoritos y debes tener al menos 1 indicador selecionado.
+        </p>
+        <div class="ban-row">
+          <div class="ban-col-md-12 ban-col-lg-4">
+            <div class="indicadoresFavoritos--buscador">
+              <md-input-container>
+                <md-select class="" placeholder="indicadores" name="empresa" ng-model="tipoIndSel">
+                  <md-option ng-value="itemTipo" ng-repeat="itemTipo in tipoInd">{{itemTipo.nombre}}</md-option>
+                </md-select>
+              </md-input-container>
+              <md-input-container>
+                <input required name="palabraClave" ng-model="palabraClave" ng-change="changePalabraClave($event)">
+              </md-input-container>
+              <i class="material-icons">search</i>
+            </div>
+            <div class="indicadoresFavoritos--lista">
+              <md-list ng-cloak id="origenDrag">
+                <md-list-item ng-repeat="item in indicadores | filter:{tipo: tipoIndSel.tipo, nombre:palabraClave, hide:false}">
+                  <p> {{item.nombre}} </p>
+                  <md-button class="md-icon-button" aria-label="x" ng-click="agregarIndicador($event, item)" ng-hide="item.hide">
+                    <md-icon>
+                      <i class="material-icons">add</i>
+                    </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button" aria-label="x" ng-hide="!item.hide">
+                    <md-icon>
+                      <i class="material-icons">block</i>
+                    </md-icon>
+                  </md-button>
+                </md-list-item>
+              </md-list>
+            </div>
+          </div>
+          <div class="ban-col-md-12 ban-col-lg-8">
+            <div class="indicadoresFavoritos--contenedor">
+              <p>Arrastra tus indicadores para establecer un orden
+                <personalizado></personalizado>
+              </p>
+              <div class="indicadoresFavoritos--widgetsFavoritos" id="destinoDrag">
+                <div id="wdFav{{itemInd.item + '-' + itemInd.hide}}" class="widgetsFavoritos--contenedor h--shadowBoxNoHover" ng-repeat="itemInd in indDest">
+                  <div class="widgetsFavoritos--boton">
+                    <md-button class="md-icon-button" aria-label="x" ng-click="eliminarIndicador($event, itemInd)" ng-hide="itemInd.hide">
+                      <md-icon>
+                        <i class="material-icons">clear</i>
+                      </md-icon>
+                      <md-tooltip md-direction="bottom">Eliminar</md-tooltip>
+                    </md-button>
+                    <md-button class="md-icon-button md-hide" aria-label="x" ng-hide="!itemInd.hide">
+                      <md-icon>
+                        <i class="material-icons">check_circle</i>
+                      </md-icon>
+                    </md-button>
+                  </div>
+                  <h4 ng-hide="!itemInd.hide">{{itemInd.nombre}}</h4>
+                  <div ng-hide="itemInd.hide" class="widgetsFavoritos--contenedorCategoria widgetsFavoritos--{{itemInd.tipo}}">
+                    <div class="widgetsFavoritos--categoria">
+                      <h3>{{itemInd.nombre}}</h3>
+                      <h5>{{itemInd.tipoNombre}}</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card h--marginTop">
+      <div class="misAccesosFavoritos animated fadeInDown">
+        <div class="contenedor--subtitulo h--paddingTopnone">
+          <h3 class="subtitulo">Accesos favoritos</h3>
+        </div>
+        <p>Puedes agrega hasta 5 accesos a tu lista de accesos favoritos</p>
+        <div ng-cloak class="misAccesosFavoritos--navTabs">
+          <md-tabs md-border-bottom>
+            <md-tab label="{{itemMenu.nombre}}" ng-repeat="itemMenu in menu">
+              <div>
+                <md-list ng-cloak>
+                  <md-list-item ng-repeat="subMenuItem in itemMenu.subMenu">
+                    <p>{{subMenuItem.nombre}}</p>
+                    <md-checkbox class="md-secondary" ng-click="agregarFavorito($event, subMenuItem)"></md-checkbox>
+                  </md-list-item>
+                </md-list>
+              </div>
+            </md-tab>
+          </md-tabs>
+        </div>
+        <div class="misAccesosFavoritos--iconosContenedor">
+          <h4>Aquí puedes visualizar como quedará tu lista de favoritos</h4>
+          <div class="iconosFavoritos">
+            <md-fab-speed-dial md-open="true" md-direction="left" ng-class="md-fling">
+              <md-fab-trigger>
+                <md-button aria-label="menu" class="md-fab md-warn">
+                  <i class="material-icons">&#xE5CD;</i>
+                </md-button>
+              </md-fab-trigger>
+              <md-fab-actions>
+                <md-button aria-label="Twitter" class="md-fab md-raised md-mini" ng-repeat="itemFav in favList">
+                  <p>{{subMenuItem.nombre}}</p>
+
+                </md-button>
+              </md-fab-actions>
+            </md-fab-speed-dial>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor--botones right">
+      <md-button class="boton2 md-raised">Cancelar</md-button>
+      <md-button class="boton1 md-raised">Guardar</md-button>
+    </div>
+  </div>
+</section>

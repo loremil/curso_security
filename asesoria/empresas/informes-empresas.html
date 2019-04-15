@@ -1,0 +1,2212 @@
+<section>
+  <div class="contenido--background asesoria-persona"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5">
+          <h1 class="titulo--operacion ">Informes</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-buscar-fav.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include src=" 'buscadores/buscador-informes.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <!-- ¡INICIO! Contenido tablas PDF -->
+    <div class="card h--marginBottom4 h--borderRadiusBottom4px" data-wow-delay="0.5s" ng-controller="BuscaListadoCtrl">
+      <div ng-cloak class="informes a_fadein">
+        <md-tabs md-dynamic-height="true" md-border-bottom="true" md-swipe-content="true" md-autoselect>
+          <md-tab label="Informes Diarios">
+            <!-- INICIO DE APERTURA BUSCADOR -->
+            <div class="buscador--avanzado buscador-show buscador--avanzado__help" ng-show="miTextoNEW" ng-cloak>
+              <div class="ban-row">
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4  ban-col-lg-4">
+                  <md-input-container class="buscador--date md-block">
+                    <label>Periodo </label>
+                    <md-select name="date01" ng-model="date01">
+                      <md-option value="1">Enero, 2016</md-option>
+                      <md-option value="2">Febrero, 2016</md-option>
+                      <md-option value="3">Marzo, 2016</md-option>
+                      <md-option value="4">Abril, 2016</md-option>
+                      <md-option value="5">Mayo, 2016</md-option>
+                      <md-option value="6">Junio, 2016</md-option>
+                      <md-option value="7">Julio, 2016</md-option>
+                      <md-option value="8">Agosto, 2016</md-option>
+                      <md-option value="9">Septiembre, 2016</md-option>
+                      <md-option value="10">Octubre, 2016</md-option>
+                      <md-option value="11">Noviembre, 2016</md-option>
+                      <md-option value="12">Diciembre, 2016</md-option>
+                    </md-select>
+                  </md-input-container>
+                </div>
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 ">
+                  <div class="input--palabraClave">
+                    <md-icon>
+                      <i class="material-icons">vpn_key</i>
+                    </md-icon>
+                    <md-input-container class="buscador--input">
+                      <input name="texto" ng-model="buscar.texto" placeholder="Palabra clave">
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="ban-mobile ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 float--right">
+                  <div class="buscador--boton">
+                    <div class="acciones--botones acciones--botones__rigth ">
+                      <md-button class="boton1 md-raised primario">Buscar</md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE APERTURA BUSCADOR -->
+            <!-- INICIO DE CONTENIDO DE TABS -->
+            <div class="contenedor-documentos h--paddingTop2" ng-controller="dialogCtrl">
+              <div class="ban-row " ng-repeat="contrato in informes">
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE CONTENIDO DE TABS -->
+            <!-- INICIO DE PAGINACION -->
+            <div class="pie--tabla" ng-cloak>
+              <div class="pie--contenido">
+                <div class="ban-row">
+                  <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                    <div class="pie--paginacion">
+                      <div class="paginacion--accion h--displayNone">
+                        <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                      </div>
+                      <div class="paginacion--accion h--displayNone">
+                        <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                          <md-option value="1">10</md-option>
+                          <md-option value="2">20</md-option>
+                          <md-option value="3">30</md-option>
+                        </md-select>
+                      </div>
+                      <div class="paginacion--accion">
+                        <p class="paginacion--parrafo">10 de 22</p>
+                      </div>
+                      <div class="paginacion--accion">
+                        <md-button class="md-icon-button" aria-label="Atras">
+                          <md-icon>
+                            <i class="material-icons">&#xE314;</i>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Adelante">
+                          <md-icon>
+                            <i class="material-icons">&#xE315;</i>
+                          </md-icon>
+                        </md-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE PAGINACION -->
+          </md-tab>
+
+          <md-tab label="Informes Semanales">
+            <!-- INICIO DE APERTURA BUSCADOR -->
+            <div class="buscador--avanzado buscador-show buscador--avanzado__help" ng-show="miTextoNEW" ng-cloak>
+              <div class="ban-row">
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4  ban-col-lg-4 ">
+
+                  <md-input-container class="buscador--date md-block">
+                    <label>Periodo </label>
+                    <md-select name="date01" ng-model="date01">
+                      <md-option value="1">Enero, 2016</md-option>
+                      <md-option value="2">Febrero, 2016</md-option>
+                      <md-option value="3">Marzo, 2016</md-option>
+                      <md-option value="4">Abril, 2016</md-option>
+                      <md-option value="5">Mayo, 2016</md-option>
+                      <md-option value="6">Junio, 2016</md-option>
+                      <md-option value="7">Julio, 2016</md-option>
+                      <md-option value="8">Agosto, 2016</md-option>
+                      <md-option value="9">Septiembre, 2016</md-option>
+                      <md-option value="10">Octubre, 2016</md-option>
+                      <md-option value="11">Noviembre, 2016</md-option>
+                      <md-option value="12">Diciembre, 2016</md-option>
+                    </md-select>
+                  </md-input-container>
+                </div>
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 ">
+                  <div class="input--palabraClave">
+                    <md-icon>
+                      <i class="material-icons">vpn_key</i>
+                    </md-icon>
+                    <md-input-container class="buscador--input">
+                      <input name="texto" ng-model="buscar.texto" placeholder="Palabra clave">
+                    </md-input-container>
+                  </div>
+
+                </div>
+                <div class="ban-mobile ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 float--right">
+                  <div class="buscador--boton">
+                    <div class="acciones--botones acciones--botones__rigth ">
+                      <md-button class="boton1 md-raised primario">Buscar</md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE APERTURA BUSCADOR -->
+
+            <!-- INICIO DE CONTENIDO DE TABS -->
+            <div class="contenedor-documentos h--paddingTop2" ng-controller="dialogCtrl">
+              <div class="ban-row " ng-repeat="contrato in informes">
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE CONTENIDO DE TABS -->
+            <div class="pie--tabla" ng-cloak>
+              <div class="pie--contenido">
+                <div class="ban-row">
+                  <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                    <div class="pie--paginacion">
+                      <div class="paginacion--accion h--displayNone">
+                        <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                      </div>
+                      <div class="paginacion--accion h--displayNone">
+                        <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                          <md-option value="1">10</md-option>
+                          <md-option value="2">20</md-option>
+                          <md-option value="3">30</md-option>
+                        </md-select>
+                      </div>
+                      <div class="paginacion--accion">
+                        <p class="paginacion--parrafo">10 de 22</p>
+                      </div>
+                      <div class="paginacion--accion">
+                        <md-button class="md-icon-button" aria-label="Atras">
+                          <md-icon>
+                            <i class="material-icons">&#xE314;</i>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Adelante">
+                          <md-icon>
+                            <i class="material-icons">&#xE315;</i>
+                          </md-icon>
+                        </md-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE PAGINACION -->
+          </md-tab>
+          <!-- INICIO TABS -->
+          <!-- INICIO DE CONTENIDO DE TABS -->
+          <div class="contenedor-documentos h--paddingTop2" ng-controller="dialogCtrl">
+            <div class="ban-row " ng-repeat="contrato in informes">
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIN DE CONTENIDO DE TABS -->
+          <!-- FIN TABS -->
+          <md-tab label="Informes Estrategia">
+            <!-- INICIO DE APERTURA BUSCADOR -->
+            <div class="buscador--avanzado buscador-show buscador--avanzado__help" ng-show="miTextoNEW" ng-cloak>
+              <div class="ban-row">
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4  ban-col-lg-4 ">
+
+                  <md-input-container class="buscador--date md-block">
+                    <label>Periodo </label>
+                    <md-select name="date01" ng-model="date01">
+                      <md-option value="1">Enero, 2016</md-option>
+                      <md-option value="2">Febrero, 2016</md-option>
+                      <md-option value="3">Marzo, 2016</md-option>
+                      <md-option value="4">Abril, 2016</md-option>
+                      <md-option value="5">Mayo, 2016</md-option>
+                      <md-option value="6">Junio, 2016</md-option>
+                      <md-option value="7">Julio, 2016</md-option>
+                      <md-option value="8">Agosto, 2016</md-option>
+                      <md-option value="9">Septiembre, 2016</md-option>
+                      <md-option value="10">Octubre, 2016</md-option>
+                      <md-option value="11">Noviembre, 2016</md-option>
+                      <md-option value="12">Diciembre, 2016</md-option>
+                    </md-select>
+                  </md-input-container>
+                </div>
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 ">
+                  <div class="input--palabraClave">
+                    <md-icon>
+                      <i class="material-icons">vpn_key</i>
+                    </md-icon>
+                    <md-input-container class="buscador--input">
+                      <input name="texto" ng-model="buscar.texto" placeholder="Palabra clave">
+                    </md-input-container>
+                  </div>
+
+                </div>
+                <div class="ban-mobile ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 float--right">
+                  <div class="buscador--boton">
+                    <div class="acciones--botones acciones--botones__rigth ">
+                      <md-button class="boton1 md-raised primario">Buscar</md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE APERTURA BUSCADOR -->
+            <!-- INICIO DE CONTENIDO DE TABS -->
+            <div class="contenedor-documentos h--paddingTop2" ng-controller="dialogCtrl">
+              <div class="ban-row " ng-repeat="contrato in informes">
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE CONTENIDO DE TABS -->
+            <!-- INICIO DE PAGINACION -->
+            <div class="pie--tabla" ng-cloak>
+              <div class="pie--contenido">
+                <div class="ban-row">
+                  <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                    <div class="pie--paginacion">
+                      <div class="paginacion--accion h--displayNone">
+                        <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                      </div>
+                      <div class="paginacion--accion h--displayNone">
+                        <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                          <md-option value="1">10</md-option>
+                          <md-option value="2">20</md-option>
+                          <md-option value="3">30</md-option>
+                        </md-select>
+                      </div>
+                      <div class="paginacion--accion">
+                        <p class="paginacion--parrafo">10 de 22</p>
+                      </div>
+                      <div class="paginacion--accion">
+                        <md-button class="md-icon-button" aria-label="Atras">
+                          <md-icon>
+                            <i class="material-icons">&#xE314;</i>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Adelante">
+                          <md-icon>
+                            <i class="material-icons">&#xE315;</i>
+                          </md-icon>
+                        </md-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE PAGINACION -->
+          </md-tab>
+
+          <md-tab label="Informes Economía">
+            <!-- INICIO DE APERTURA BUSCADOR -->
+            <div class="buscador--avanzado buscador-show buscador--avanzado__help" ng-show="miTextoNEW" ng-cloak>
+              <div class="ban-row">
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4  ban-col-lg-4 ">
+
+                  <md-input-container class="buscador--date md-block">
+                    <label>Periodo </label>
+                    <md-select name="date01" ng-model="date01">
+                      <md-option value="1">Enero, 2016</md-option>
+                      <md-option value="2">Febrero, 2016</md-option>
+                      <md-option value="3">Marzo, 2016</md-option>
+                      <md-option value="4">Abril, 2016</md-option>
+                      <md-option value="5">Mayo, 2016</md-option>
+                      <md-option value="6">Junio, 2016</md-option>
+                      <md-option value="7">Julio, 2016</md-option>
+                      <md-option value="8">Agosto, 2016</md-option>
+                      <md-option value="9">Septiembre, 2016</md-option>
+                      <md-option value="10">Octubre, 2016</md-option>
+                      <md-option value="11">Noviembre, 2016</md-option>
+                      <md-option value="12">Diciembre, 2016</md-option>
+                    </md-select>
+                  </md-input-container>
+                </div>
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 ">
+                  <div class="input--palabraClave">
+                    <md-icon>
+                      <i class="material-icons">vpn_key</i>
+                    </md-icon>
+                    <md-input-container class="buscador--input">
+                      <input name="texto" ng-model="buscar.texto" placeholder="Palabra clave">
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="ban-mobile ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 float--right">
+                  <div class="buscador--boton">
+                    <div class="acciones--botones acciones--botones__rigth ">
+                      <md-button class="boton1 md-raised primario">Buscar</md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE APERTURA BUSCADOR -->
+            <!-- INICIO DE CONTENIDO DE TABS -->
+            <div class="contenedor-documentos h--paddingTop2" ng-controller="dialogCtrl">
+              <div class="ban-row " ng-repeat="contrato in informes">
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE CONTENIDO DE TABS -->
+            <!-- INICIO DE PAGINACION -->
+            <div class="pie--tabla" ng-cloak>
+              <div class="pie--contenido">
+                <div class="ban-row">
+                  <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                    <div class="pie--paginacion">
+                      <div class="paginacion--accion h--displayNone">
+                        <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                      </div>
+                      <div class="paginacion--accion h--displayNone">
+                        <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                          <md-option value="1">10</md-option>
+                          <md-option value="2">20</md-option>
+                          <md-option value="3">30</md-option>
+                        </md-select>
+                      </div>
+                      <div class="paginacion--accion">
+                        <p class="paginacion--parrafo">10 de 22</p>
+                      </div>
+                      <div class="paginacion--accion">
+                        <md-button class="md-icon-button" aria-label="Atras">
+                          <md-icon>
+                            <i class="material-icons">&#xE314;</i>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Adelante">
+                          <md-icon>
+                            <i class="material-icons">&#xE315;</i>
+                          </md-icon>
+                        </md-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE PAGINACION -->
+          </md-tab>
+
+          <md-tab label="Flash de Economía">
+            <!-- INICIO DE APERTURA BUSCADOR -->
+            <div class="buscador--avanzado buscador-show buscador--avanzado__help" ng-show="miTextoNEW" ng-cloak>
+              <div class="ban-row">
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4  ban-col-lg-4 ">
+
+                  <md-input-container class="buscador--date md-block">
+                    <label>Periodo </label>
+                    <md-select name="date01" ng-model="date01">
+                      <md-option value="1">Enero, 2016</md-option>
+                      <md-option value="2">Febrero, 2016</md-option>
+                      <md-option value="3">Marzo, 2016</md-option>
+                      <md-option value="4">Abril, 2016</md-option>
+                      <md-option value="5">Mayo, 2016</md-option>
+                      <md-option value="6">Junio, 2016</md-option>
+                      <md-option value="7">Julio, 2016</md-option>
+                      <md-option value="8">Agosto, 2016</md-option>
+                      <md-option value="9">Septiembre, 2016</md-option>
+                      <md-option value="10">Octubre, 2016</md-option>
+                      <md-option value="11">Noviembre, 2016</md-option>
+                      <md-option value="12">Diciembre, 2016</md-option>
+                    </md-select>
+                  </md-input-container>
+                </div>
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 ">
+                  <div class="input--palabraClave">
+                    <md-icon>
+                      <i class="material-icons">vpn_key</i>
+                    </md-icon>
+                    <md-input-container class="buscador--input">
+                      <input name="texto" ng-model="buscar.texto" placeholder="Palabra clave">
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="ban-mobile ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 float--right">
+                  <div class="buscador--boton">
+                    <div class="acciones--botones acciones--botones__rigth ">
+                      <md-button class="boton1 md-raised primario">Buscar</md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE APERTURA BUSCADOR -->
+            <!-- INICIO DE CONTENIDO DE TABS -->
+            <div class="contenedor-documentos h--paddingTop2" ng-controller="dialogCtrl">
+              <div class="ban-row " ng-repeat="contrato in informes">
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE CONTENIDO DE TABS -->
+            <!-- INICIO DE PAGINACION -->
+            <div class="pie--tabla" ng-cloak>
+              <div class="pie--contenido">
+                <div class="ban-row">
+                  <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                    <div class="pie--paginacion">
+                      <div class="paginacion--accion h--displayNone">
+                        <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                      </div>
+                      <div class="paginacion--accion h--displayNone">
+                        <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                          <md-option value="1">10</md-option>
+                          <md-option value="2">20</md-option>
+                          <md-option value="3">30</md-option>
+                        </md-select>
+                      </div>
+                      <div class="paginacion--accion">
+                        <p class="paginacion--parrafo">10 de 22</p>
+                      </div>
+                      <div class="paginacion--accion">
+                        <md-button class="md-icon-button" aria-label="Atras">
+                          <md-icon>
+                            <i class="material-icons">&#xE314;</i>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Adelante">
+                          <md-icon>
+                            <i class="material-icons">&#xE315;</i>
+                          </md-icon>
+                        </md-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE PAGINACION -->
+          </md-tab>
+
+          <md-tab label="Informes Banchile">
+            <!-- INICIO DE APERTURA BUSCADOR -->
+            <div class="buscador--avanzado buscador-show buscador--avanzado__help" ng-show="miTextoNEW" ng-cloak>
+              <div class="ban-row">
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4  ban-col-lg-4 ">
+
+                  <md-input-container class="buscador--date md-block">
+                    <label>Periodo </label>
+                    <md-select name="date01" ng-model="date01">
+                      <md-option value="1">Enero, 2016</md-option>
+                      <md-option value="2">Febrero, 2016</md-option>
+                      <md-option value="3">Marzo, 2016</md-option>
+                      <md-option value="4">Abril, 2016</md-option>
+                      <md-option value="5">Mayo, 2016</md-option>
+                      <md-option value="6">Junio, 2016</md-option>
+                      <md-option value="7">Julio, 2016</md-option>
+                      <md-option value="8">Agosto, 2016</md-option>
+                      <md-option value="9">Septiembre, 2016</md-option>
+                      <md-option value="10">Octubre, 2016</md-option>
+                      <md-option value="11">Noviembre, 2016</md-option>
+                      <md-option value="12">Diciembre, 2016</md-option>
+                    </md-select>
+                  </md-input-container>
+                </div>
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 ">
+                  <div class="input--palabraClave">
+                    <md-icon>
+                      <i class="material-icons">vpn_key</i>
+                    </md-icon>
+                    <md-input-container class="buscador--input">
+                      <input name="texto" ng-model="buscar.texto" placeholder="Palabra clave">
+                    </md-input-container>
+                  </div>
+
+                </div>
+                <div class="ban-mobile ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 float--right">
+                  <div class="buscador--boton">
+                    <div class="acciones--botones acciones--botones__rigth ">
+                      <md-button class="boton1 md-raised primario">Buscar</md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE APERTURA BUSCADOR -->
+            <!-- INICIO DE CONTENIDO DE TABS -->
+            <div class="contenedor-documentos h--paddingTop2" ng-controller="dialogCtrl">
+              <div class="ban-row " ng-repeat="contrato in informes">
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE CONTENIDO DE TABS -->
+            <!-- INICIO DE PAGINACION -->
+            <div class="pie--tabla" ng-cloak>
+              <div class="pie--contenido">
+                <div class="ban-row">
+                  <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                    <div class="pie--paginacion">
+                      <div class="paginacion--accion h--displayNone">
+                        <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                      </div>
+                      <div class="paginacion--accion h--displayNone">
+                        <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                          <md-option value="1">10</md-option>
+                          <md-option value="2">20</md-option>
+                          <md-option value="3">30</md-option>
+                        </md-select>
+                      </div>
+                      <div class="paginacion--accion">
+                        <p class="paginacion--parrafo">10 de 22</p>
+                      </div>
+                      <div class="paginacion--accion">
+                        <md-button class="md-icon-button" aria-label="Atras">
+                          <md-icon>
+                            <i class="material-icons">&#xE314;</i>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Adelante">
+                          <md-icon>
+                            <i class="material-icons">&#xE315;</i>
+                          </md-icon>
+                        </md-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE PAGINACION -->
+          </md-tab>
+
+          <md-tab label="Informes Corto Plazo">
+            <!-- INICIO DE APERTURA BUSCADOR -->
+            <div class="buscador--avanzado buscador-show buscador--avanzado__help" ng-show="miTextoNEW" ng-cloak>
+              <div class="ban-row">
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4  ban-col-lg-4 ">
+
+                  <md-input-container class="buscador--date md-block">
+                    <label>Periodo </label>
+                    <md-select name="date01" ng-model="date01">
+                      <md-option value="1">Enero, 2016</md-option>
+                      <md-option value="2">Febrero, 2016</md-option>
+                      <md-option value="3">Marzo, 2016</md-option>
+                      <md-option value="4">Abril, 2016</md-option>
+                      <md-option value="5">Mayo, 2016</md-option>
+                      <md-option value="6">Junio, 2016</md-option>
+                      <md-option value="7">Julio, 2016</md-option>
+                      <md-option value="8">Agosto, 2016</md-option>
+                      <md-option value="9">Septiembre, 2016</md-option>
+                      <md-option value="10">Octubre, 2016</md-option>
+                      <md-option value="11">Noviembre, 2016</md-option>
+                      <md-option value="12">Diciembre, 2016</md-option>
+                    </md-select>
+                  </md-input-container>
+                </div>
+                <div class="ban-mobile ban-col-xs-6 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 ">
+                  <div class="input--palabraClave">
+                    <md-icon>
+                      <i class="material-icons">vpn_key</i>
+                    </md-icon>
+                    <md-input-container class="buscador--input">
+                      <input name="texto" ng-model="buscar.texto" placeholder="Palabra clave">
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="ban-mobile ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 float--right">
+                  <div class="buscador--boton">
+                    <div class="acciones--botones acciones--botones__rigth ">
+                      <md-button class="boton1 md-raised primario">Buscar</md-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE APERTURA BUSCADOR -->
+
+            <!-- INICIO DE CONTENIDO DE TABS -->
+            <div class="contenedor-documentos h--paddingTop2" ng-controller="dialogCtrl">
+              <div class="ban-row " ng-repeat="contrato in informes">
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ban-col-sm-6 ban-col-md-4">
+                  <div class="documentosCliente">
+                    <div class="documentosCliente--icon">
+                      <i class="material-icons">picture_as_pdf</i>
+                    </div>
+                    <div class="documentosCliente--info">
+                      <h3 class="caja--titulo">{{contrato.name}}</h3>
+                      <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                    </div>
+                    <div class="documentosCliente--download">
+                      <div class="download--icon {{contrato.classBorder}}">
+                        <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                      </div>
+                      <div class="download--circular">
+                        <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE CONTENIDO DE TABS -->
+            <div class="pie--tabla" ng-cloak>
+              <div class="pie--contenido">
+                <div class="ban-row">
+                  <div class=" ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6 ">
+                    <div class="pie--paginacion">
+                      <div class="paginacion--accion h--displayNone">
+                        <p class="paginacion--parrafo paginacion--parrafo__right">Campos por página:</p>
+                      </div>
+                      <div class="paginacion--accion h--displayNone">
+                        <md-select class="paginacion--select" ng-model="paginacion.uno" placeholder="10">
+                          <md-option value="1">10</md-option>
+                          <md-option value="2">20</md-option>
+                          <md-option value="3">30</md-option>
+                        </md-select>
+                      </div>
+                      <div class="paginacion--accion">
+                        <p class="paginacion--parrafo">10 de 22</p>
+                      </div>
+                      <div class="paginacion--accion">
+                        <md-button class="md-icon-button" aria-label="Atras">
+                          <md-icon>
+                            <i class="material-icons">&#xE314;</i>
+                          </md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Adelante">
+                          <md-icon>
+                            <i class="material-icons">&#xE315;</i>
+                          </md-icon>
+                        </md-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN DE PAGINACION -->
+          </md-tab>
+          <!-- INICIO DE CONTENIDO DE TABS -->
+          <div class="contenedor-documentos h--paddingTop2" ng-controller="dialogCtrl">
+            <div class="ban-row " ng-repeat="contrato in informes">
+              <div class="ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-4">
+                <div class="documentosCliente">
+                  <div class="documentosCliente--icon">
+                    <i class="material-icons">picture_as_pdf</i>
+                  </div>
+                  <div class="documentosCliente--info">
+                    <h3 class="caja--titulo">{{contrato.name}}</h3>
+                    <p class="caja--periodo">Fecha de generación {{contrato.fechaGeneracion}}</p>
+                  </div>
+                  <div class="documentosCliente--download">
+                    <div class="download--icon {{contrato.classBorder}}">
+                      <a ng-href="assets/images/CONTRATO_SERVICIOTRANSACCIONINTERNET.pdf" target="_blank"><i class="material-icons">{{contrato.icono}}</i></a>
+                    </div>
+                    <div class="download--circular">
+                      <md-progress-circular md-mode="indeterminate" md-diameter="76px" ng-show="contrato.downloading"></md-progress-circular>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIN DE CONTENIDO DE TABS -->
+      </div>
+    </div>
+    <!--  ¡FIN!  Contenido tablas PDF  -->
+  </div>
+</section>

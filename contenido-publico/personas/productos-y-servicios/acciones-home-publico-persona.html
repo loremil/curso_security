@@ -1,0 +1,464 @@
+<!-- Jadra 31 -->
+<section>
+  <div class="contenido--background invertir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-11 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Acciones</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-1 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-buscar.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include src=" 'buscadores/buscador-acciones-publico-empresa.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerAcciones">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Recomendamos</h3>
+        </div>
+        <div class="cuadroFlotanteP ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">En general la compra o venta de moneda extranjera tiene un protocolo sencillo y se puede realizar a través de la corredora de un banco, en una sucursal de banco directamente o por internet, también a través de una casa de cambio autorizada.
+          </p>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <a href="#">Aprende más sobre Acciones</a>
+          <a href="#">¿Cómo invertir en este producto?</a>
+          <a href="#">Más asesoría sobre mis inversiones</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio tituloVentajas -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde  a_fadeup2">
+          <h3 class="subtitulos-centrados">Razones para invertir en Acciones</h3>
+          <p class="bajada--texto">Una excelente alternativa de inversión de una manera fácil, cómoda y conveniente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloVentajas -->
+<!-- inicio contenedorVentajas -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-row">
+        <div class="ban-col-sm-6 ban-col-md-3 a_fadeup1">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Diversificacion.png" alt="">
+            <h3 class="caja--subtitulo">Menor riesgo,
+              <br>mayor diversificación</h3>
+            <p class="caja--texto">Puedes conseguir diversificación al invertir en acciones que posean distintas clases de riesgo.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3 a_fadeup2">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/icoDisplay_Pension.png" alt="">
+            <p class="caja--subtitulo">Ganancia de capital</p>
+            <p class="caja--texto">Obtenida de la diferencia en el precio al cual se compró y el precio al cual se venderá en el futuro.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3 a_fadeup3">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Asesoria-profesional.png" alt="">
+            <p class="caja--subtitulo">Beneficios</p>
+            <p class="caja--texto">Los dividendos recibidos por una sociedad en un momento determinado, son repartidos entre sus accionistas.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3 a_fadeup4">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Fondo-preciso.png" alt="">
+            <p class="caja--subtitulo">Control</p>
+            <p class="caja--texto">La posibilidad de obtener el manejo de una compañía a través de la compra de importantes paquetes de acciones en el mercado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorVentajas -->
+<!-- inicio tituloVideo -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card fondoSeparador">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1">
+        <div class="contenedor--subtitulo h--borde no_visible" when-visible="a_fadein">
+          <h3 class="subtitulos-centrados">Aprenda a invertir en Acciones</h3>
+          <p class="bajada--texto">Te entregamos toda la información que necesitas para tomar tus decisiones de inversión</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloVideo -->
+<!-- inicio contenedorVideo -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card fondoSeparador h--paddingBottom2">
+      <div class="contenedorVideo">
+        <div class="ban-row">
+          <div class="ban-col-md-5">
+            <div class="contenedorVideo--imagen">
+              <img src="assets/images/sitio_publico/Aprende-Acciones.jpg">
+            </div>
+          </div>
+          <div class="ban-col-md-7">
+            <div class="contenedorVideo--Texto no_visible" when-visible="a_fadein">
+              <h3 class="subtitulo--subseccion h--marginTop0_6">¿Cómo invertir en Acciones?</h3>
+              <p>A través de una corredora de bolsa, como Banchile Corredores de Bolsa, donde nos encargaremos de comprar o vender acciones de acuerdo a tus instrucciones. En Banchile Inversiones también tienes la opción de realizar estas operaciones de
+                forma remota.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorVideo -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2 no_visible" when-visible="a_fadein">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados">Productos Relacionados</h3>
+          <p class="bajada--texto">Estos productos te podrían interesar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorProductos -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <!-- inicio productosSimultaneas -->
+      <div class="contenedorVideo h--marginTop1">
+        <div class="ban-row h--marginBottom2">
+          <div class="ban-col-md-6">
+            <div class="contenedorImagen imagen--texto01">
+            </div>
+          </div>
+          <div class="ban-col-md-6">
+            <div class="contenido-productoDerivados no_visible" when-visible="a_fadein">
+              <div class="textoProductosDerivados">
+                <h3 class="subtitulo--subseccion h--marginTop0_6">Venta Corta</h3>
+                <p class="normal--lectura h--paddingTop1">
+                  Producto enfocado en clientes con alta tolerancia de riesgo, que apuesta a la baja en los precios de las acciones de mercado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin productosSimultaneas -->
+      <!-- inicio productosVentaCorta -->
+      <div class="contenedorVideo h--marginTop1">
+        <div class="ban-row h--marginBottom2">
+          <div class="ban-col-md-6">
+            <div class="contenido-productoDerivados orden_2 no_visible" when-visible="a_fadein">
+              <div class="textoProductosDerivados">
+                <h3 class="subtitulo--subseccion h--marginTop0_6">Simultánea</h3>
+                <p class="normal--lectura h--paddingTop1">
+                  Accionistas que buscan financiamiento de manera que existe una entrega de dinero a modo de préstamo, de parte del financista y una entrega de acciones a modo de garantía por parte del financiado.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="ban-col-md-6">
+            <div class="contenedorImagen imagen--texto02">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin productosVentaCorta -->
+
+    </div>
+  </div>
+</section>
+<!-- fin contenedorProductos -->
+<!-- inicio tituloResumen -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2 no_visible" when-visible="a_fadein">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados">Resumen Bursátil</h3>
+          <p class="bajada--texto">Puedes usar nuestras herramientas para hacer análisis de estos índices</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloAccionesResumen -->
+<!-- inicio contenedorResumen -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card tablaMaster">
+      <!-- inicio resumenBursatil -->
+      <div ng-controller="sliderAccionesRecomendadas">
+        <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+          <!-- inicio cajaTranzadas -->
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="card h--shadowBoxNoHover">
+                <div class="contenedor--subtitulo">
+                  <h3 class="subtitulo ">Acciones más transadas</h3>
+                </div>
+                <table fixed-header class=" h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                  <thead class="tableHead--recomendado">
+                    <tr>
+                      <th class="tableHead--titulo">Serie</th>
+                      <th>Precio</th>
+                      <th>Var(%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                      <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                      <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                      <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <!-- fin cajaTranzadas -->
+          <!-- inicio cajaAlzas -->
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="card h--shadowBoxNoHover">
+                <div class="contenedor--subtitulo">
+                  <h3 class="subtitulo ">Acciones con mayores alzas</h3>
+                </div>
+                <table fixed-header class=" h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                  <thead class="tableHead--recomendado">
+                    <tr>
+                      <th class="tableHead--titulo">Serie</th>
+                      <th>Precio</th>
+                      <th>Var(%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort " class="no_visible" when-visible="a_fadein">
+                      <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                      <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                      <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <!-- fin cajaAlzas -->
+          <!-- inicio cajaBajas -->
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="card h--shadowBoxNoHover">
+                <div class="contenedor--subtitulo">
+                  <h3 class="subtitulo ">Acciones con mayores bajas</h3>
+                </div>
+                <table fixed-header class="h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                  <thead class="tableHead--recomendado">
+                    <tr>
+                      <th class="tableHead--titulo">Serie</th>
+                      <th>Precio</th>
+                      <th>Var(%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort" class="no_visible" when-visible="a_fadein">
+                      <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                      <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                      <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <!-- fin cajaBajas -->
+          <!-- inicio cajaIndicadores -->
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="card h--shadowBoxNoHover">
+                <div class="contenedor--subtitulo">
+                  <h3 class="subtitulo ">Indicadores financieros</h3>
+                </div>
+                <table fixed-header class="h--marginBottom2" wt-responsive-table ng-controller="tablaFFMM">
+                  <thead class="tableHead--recomendado">
+                    <tr>
+                      <th class="tableHead--titulo">Serie</th>
+                      <th>Precio</th>
+                      <th>Var(%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-class="{'tr--active': fondomut.expanded}" ng-repeat-start="fondomut in accionesResumen | orderBy : sort">
+                      <td class="td--principal" data-title="Nemotécnico">{{fondomut.serie}}</td>
+                      <td class="td--valores" data-title="Precio">{{fondomut.precio}}</td>
+                      <td class="td--valores" ng-class="indicador(fondomut.variacion)" data-title="Variación">{{fondomut.variacion}} %</td>
+                    </tr>
+                    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="fondomut.expandedd" ng-repeat-end="">
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <!-- fin cajaIndicadores -->
+        </ks-swiper-container>
+      </div>
+      <!-- inicio resumenBursatil -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorResumen -->
+<!-- inicio tituloNoticias -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2 no_visible" when-visible="a_fadein">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados">Noticias relacionadas</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloNoticias -->
+<!-- inicio contenedorNoticias -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="sliderNoticiasRecomendadas" ng-controller="sliderNoticiasRecomendadas">
+        <ks-swiper-container class="sliderCards" override-parameters="noticiasRecomendadas" show-nav-buttons="true">
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado"</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas"</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+        </ks-swiper-container>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorNoticias -->
+<!-- inicio contenedorCajaCliente -->
+<section>
+  <div class="ban-container h--marginBottom4">
+    <div class="card h--paddingTop2 h--paddingBottom2 h--borderRadiusBottom4px">
+      <!-- inicio cajaCliente -->
+      <div class="ban-row">
+        <div class="ban-col-sm-12 ban-col-md-12">
+          <div class="cajasCliente">
+            <div class="cajas-informacion">
+              <div class="cajas--texto">
+                <p>
+                  Si quieres obtener información profesional o contratar este producto
+                </p>
+              </div>
+              <div class="cajas--botones">
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-2">
+                  <md-button class="botonCliente boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO SER CLIENTE</span>
+                  </md-button>
+                </div>
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-0">
+                  <md-button class="boton2 boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO QUE ME CONTACTEN</span>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+            <div class="cajas--imagen">
+              <img src="assets/images/HazteCliente.png" alt="Manos estrechandose ante un acuerdo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin cajaCliente -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorCajaCliente -->

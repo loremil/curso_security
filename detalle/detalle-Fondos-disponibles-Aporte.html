@@ -1,0 +1,140 @@
+<!-- buscador en aside 1 Agosto 6pm -->
+<div ng-controller="asideCloseRight">
+  <md-button class="md-icon-button md-primary asideClose" ng-click="close()">
+    <i class="material-icons">close</i>
+  </md-button>
+</div>
+<h2 class="operaciones--titulo">Selecciona un Fondo Mutuo</h2>
+<h3 class="operaciones--subtitulo">Selecciona uno de tus Fondos Mutuos disponibles para Aportar</h3>
+
+<!--Inicio contenedorBuscador--->
+<section>
+  <div class="contenedorBuscador fondo--azul contenido--blanco">
+    <div class="ban-row">
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="buscador--input margin md-block">
+          <md-icon>
+            <i class="material-icons">search</i>
+          </md-icon>
+          <input name="texto" ng-model="buscar.texto" placeholder="¿Que estás buscando?">
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="buscador--input md-block">
+          <label>Región Geográfica</label>
+          <md-select name="date01" ng-model="date01">
+            <md-option value="1">Enero, 2016</md-option>
+            <md-option value="2">Febrero, 2016</md-option>
+            <md-option value="3">Marzo, 2016</md-option>
+            <md-option value="4">Abril, 2016</md-option>
+            <md-option value="5">Mayo, 2016</md-option>
+            <md-option value="6">Junio, 2016</md-option>
+            <md-option value="7">Julio, 2016</md-option>
+            <md-option value="8">Agosto, 2016</md-option>
+            <md-option value="9">Septiembre, 2016</md-option>
+            <md-option value="10">Octubre, 2016</md-option>
+            <md-option value="11">Noviembre, 2016</md-option>
+            <md-option value="12">Diciembre, 2016</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <md-input-container class="buscador--input md-block">
+          <label>Clasificación</label>
+          <md-select name="date01" ng-model="date01">
+            <md-option value="1">Enero, 2016</md-option>
+            <md-option value="2">Febrero, 2016</md-option>
+            <md-option value="3">Marzo, 2016</md-option>
+            <md-option value="4">Abril, 2016</md-option>
+            <md-option value="5">Mayo, 2016</md-option>
+            <md-option value="6">Junio, 2016</md-option>
+            <md-option value="7">Julio, 2016</md-option>
+            <md-option value="8">Agosto, 2016</md-option>
+            <md-option value="9">Septiembre, 2016</md-option>
+            <md-option value="10">Octubre, 2016</md-option>
+            <md-option value="11">Noviembre, 2016</md-option>
+            <md-option value="12">Diciembre, 2016</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3">
+        <div class="buscador--boton">
+          <md-button class="boton2 boton--100 md-raised primario">Buscar</md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!--Fin contenedorBuscador--->
+
+<table fixed-header class="table tableContenido" wt-responsive-table ng-controller="tablaFFMM">
+  <thead class="tableContenido--head head__segundario">
+    <tr>
+      <th></th>
+      <th class="td--label">Fondo Mutuo</th>
+      <th>%30 días</th>
+      <th>%1 año</th>
+      <th>Riesgo</th>
+      <th>Cuota</th>
+      <th>Monto</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tableContenido--info info--detalle" ng-repeat-start=" money in moneda  | orderBy : sort">
+      <td class="info--iconos">
+        <md-button class="md-icon-button icons" ng-click="money.expanded = false" ng-if="money.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+        <md-button class="md-icon-button icons" ng-click="money.expanded = true" ng-if="!money.expanded">
+          <md-icon>
+            <i class="material-icons"></i>
+          </md-icon>
+        </md-button>
+      </td>
+      <td class="info--principal__cuenta" data-title="Fondo Mutuo">{{money.producto}}
+        <div class="cartera--ico" aria-label="Ya tienes este Fondo">
+          <i class="material-icons icons--color icons--small">work</i>
+        </div>
+      </td>
+      <td class="valor--td__inf" data-title="%30 días">{{money.dias}}
+        <div class="moneda--ico" aria-label="Ya tienes este Fondo">
+          <md-icon aria-hidden="true"><i class="material-icons">arrow_drop_up</i></md-icon>
+        </div>
+      </td>
+      <td class="valor--td__inf" data-title="%1 año">{{money.ano}}
+        <div class="moneda--ico" aria-label="Ya tienes este Fondo">
+          <md-icon aria-hidden="true"><i class="material-icons">arrow_drop_up</i></md-icon>
+        </div>
+      </td>
+      <td class="valor--td__info" data-title="Riesgo">{{money.riesgo}}</td>
+      <td class="valor--td__info" data-title="Nº cuotas">{{money.cuota}}</td>
+      <td class="valor--td__info" data-title="Monto">{{money.monto}}</td>
+      <td class="contenido--botones">
+        <div class="datos--botones">
+          <div class="datos--botones">
+            <md-button class="boton--rescatar md-raised" href="#personas-ffmm-Aporte-operacion">SELECCIONA</md-button>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr aria-label="Toggle ngHide" class="animacionApertura" ng-if="money.expanded" ng-repeat-end="">
+      <td class="animacionApertura--shadow" colspan="8" data-title="">
+        <table class="tableContenido tableContenido__margin">
+          <tbody>
+            <tr>
+              <td class="despliegueDetalle h--marginTop2" colspan="7">
+                <div ng-include src="'detalle/detalle-cuenta-fm.html'"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</tbody>
+</table>

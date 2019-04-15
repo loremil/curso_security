@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'generales';
+@import 'header';
+@import 'tablas';
+@import 'tablas-new';
+@import 'tablas-detalle';
+@import 'login';
+@import 'footer';
+@import 'fab';
+@import 'home';
+@import 'resumen';
+@import 'banchilepay';
+@import 'movimientos';
+@import 'documentos';
+@import 'patrimonio';
+@import 'configuracion';
+@import 'modales';
+@import 'favoritos';
+@import 'noticias';
+@import 'principal';
+@import 'asides';
+@import 'autorizaciones';
+@import 'elementos';
+@import 'desplegables';
+@import 'helpers';
+@import 'slider-cards';
+@import 'mis-datos';
+@import 'animacion';
+@import 'indicadores';
+
+/* TRAIDOS DESDE MAIN-PERSONAS */
+@import 'variables';
+@import 'cajainternet';
+@import 'informes';
+@import 'ffmm';
+@import 'cartera-activa';
+@import 'actualizacion';
+//@import 'personas';
+@import 'background';
+
+/* CLASES ESPECIALESPARA IE */
+@import 'ie10';
+// @import 'tabla';
+
+/* THEMES POR SITIOS */
+@import 'theme-wealth';
+@import 'theme-personas';
+@import 'theme-private-wealth';
+@import 'theme-empresa';
+
+/* PUBLICO */
+@import 'modulos_publico';
+@import 'landing';

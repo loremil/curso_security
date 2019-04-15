@@ -1,0 +1,768 @@
+._md-datepicker-floating-label > label:not(.md-no-float):not(._md-container-ignore) {
+  right: auto;
+}
+
+.md-datepicker-expand-triangle {
+  display: block;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: end;
+  width: 24px;
+  margin: 0 4px;
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+  font-size: 1.2rem;
+  position: initial;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: auto;
+  border-left: initial;
+  border-right: initial;
+  border-top: initial;
+
+  &:after {
+    display: block;
+    content: '\25BC';
+    position: relative;
+    top: 2px;
+    left: -6px;
+    speak: none;
+    font-size: 16px;
+    -webkit-transform: scaleY(0.6) scaleX(1);
+    transform: scaleY(0.6) scaleX(1);
+    color: #536374;
+  }
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused md-icon {
+  color: #5BABBF;
+}
+
+.contenedorDatos {
+  .contenedor--perfil {
+    .perfil--titulo {
+      padding: 1em 0 0.3em;
+      line-height: 1.2em;
+      margin-bottom: 1em;
+      @include font-16;
+    }
+
+    .perfil--contenido {
+      text-align: center;
+
+      .contenido--marco {
+        display: flex;
+        display: -ms-flexbox;
+        padding-bottom: 0.5em;
+        align-items: center;
+
+        img {
+          margin-right: 1em;
+          height: 60px;
+          padding-left: 1em;
+        }
+
+        .marco--info {
+          text-align: left;
+
+          .calculado--title {
+            display: inline;
+            padding-bottom: 0.7em;
+            @include font-18;
+            @include roboto-normal;
+          }
+
+          .calculado--texto {
+            line-height: 1.4em;
+            color: #519CAD;
+            padding-right: 1.5em;
+            @include font-16;
+            @include roboto-normal;
+          }
+        }
+      }
+    }
+
+    .boton--width {
+      padding: 2em 0;
+      width: 100%;
+
+      .boton--perfil {
+        width: 80%;
+        text-align: center;
+        color: #336A9B;
+        background-color: rgba(255, 255, 255, 0.96) !important;
+        margin: 0;
+      }
+    }
+
+    .contenido--descrip {
+      color: #FFF;
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: 2px;
+      margin-top: 2em;
+      margin-bottom: 1em;
+
+      &.descrip--activo {
+        padding: 1.5em;
+        color: #536374;
+        background-color: #F8F9FA;
+        border-radius: 3px;
+        border: 1px solid #CCD1D9;
+        display: inline-block;
+        margin-top: 1.7em;
+        margin-bottom: 0;
+
+        i {
+          float: left;
+        }
+
+        .marco--tooltip {
+          padding-left: 0.5em;
+          line-height: 1.3em;
+          @include roboto-normal;
+          width: 87%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    md-input-container.perfil--input {
+      width: 100%;
+    }
+
+    .perfil--titulo__check {
+      padding-top: 1em;
+      @include font-16;
+    }
+
+    .perfil--check {
+      margin-bottom: 0.8em;
+      color: #486C7C;
+      display: inline-flex;
+      align-items: center;
+
+      &.inactivo {
+        color: #D0D2D3;
+      }
+    }
+
+    .perfil--select {
+      padding-left: 1em;
+    }
+  }
+  /*botones*/
+  .contenedor--boton {
+    width: 14%;
+    background-color: #FFF;
+    vertical-align: top;
+    padding-top: 6px;
+    min-height: 90px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+
+    .boton--texto {
+      line-height: 1.2em;
+      vertical-align: middle;
+      white-space: pre-line;
+      @include font-14;
+      color: #7d7d7d;
+    }
+
+    .boton--img {
+      display: inline-block;
+      vertical-align: top;
+      height: 22px;
+    }
+  }
+}
+
+.boton--back {
+  float: left;
+  padding-top: 0.5em;
+
+  i.material-icons {
+    color: #fff;
+    background: #9B9B9B;
+    border-radius: 28px;
+    margin-right: 8px;
+    vertical-align: middle;
+    @include font-30;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #9B9B9B;
+  }
+}
+
+.boton--verMas {
+  float:right;
+
+  i.material-icons {
+    color: #FFC80A !important;
+    border-radius: 28px;
+    margin-left: 8px;
+    vertical-align: middle;
+    padding: 0 !important;
+    max-height: 30px !important;
+    margin-left: -7px;
+    @include font-30;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #9B9B9B;
+  }
+}
+
+.info {
+  &.info--display {
+    padding-top: 1.8em;
+  }
+}
+
+.contenedor--subtitulo {
+  .subtitulo--boton {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: -10px;
+  }
+}
+
+.barraProgress {
+  text-align: center;
+  width: 100%;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+
+  md-progress-linear ._md-container {
+    background: transparent;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    top: 24px;
+  }
+
+  md-progress-linear ._md-container ._md-bar {
+    background: #7EB645;
+    height: 10px;
+    width: 100%;
+  }
+
+  .barraProgress--linea {
+    margin: 0;
+    width: 59%;
+    padding: 0 0 1em 16em;
+
+    &.encuestaBarra {
+      margin: 0;
+      width: 78%;
+      padding: 0 8em 1em;
+    }
+  }
+
+  .check--title {
+    vertical-align: middle;
+    @include font-14;
+
+    &.check__inactive {
+      color: #E5E4E5;
+    }
+  }
+
+  .check--numero {
+    position: relative;
+    border: 5px solid #fff;
+    background-color: #336A9B;
+    color: #FFFFFF;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5em;
+    @include font-14;
+    font-family: 'robotobold';
+
+    &.encuesta--numero {
+      border: 5px solid #535557;
+    }
+
+    &.check__inactive {
+      background-color: #E5E4E5;
+    }
+  }
+
+  .check-active {
+    color: #7EB645;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    height: 23px;
+    width: 23px;
+    margin-bottom: 10px;
+
+    i.material-icons {
+      font-size: 26px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: solid 2px #fff;
+
+      &.encuesta--check {
+        background-color: #535557;
+        border: solid 2px #535557;
+      }
+    }
+  }
+}
+
+.checkActualizacion {
+  width: 19%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.infoUser {
+  .infoUser--radioButton {
+    padding-bottom: 1em;
+
+    .infoUser--respuesta {
+      margin-top: 1.5em;
+      padding-left: 1em;
+      width: 100%;
+      @include font-14;
+
+      md-radio-button {
+        margin-left: 0.5em;
+      }
+    }
+
+    .perfil--titulo {
+      padding-left: 0.5em;
+      padding-top: 0.5em;
+      @include font-16;
+    }
+  }
+}
+
+.contenedor--preguntas {
+  color: #fff;
+  padding: 0;
+  text-align: center;
+
+  .preguntas--titulo {
+    line-height: 26px;
+    margin: 1.2em 0 0.8em;
+    text-align: center;
+    animation-name: fadeInUp;
+    animation-duration: 0.8s;
+    @include font-22;
+    @include roboto-light;
+  }
+}
+
+.preguntas--rango {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 4px;
+  overflow: inherit;
+  width: 62%;
+  display: inline-block;
+  background-color: #535557;
+  color: #fff;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.datosDireccion--container {
+  margin-top: 0.5em;
+}
+
+.datosIniciales {
+  padding-top: 1.5em;
+  border-bottom: 1px solid #CCD1D9;
+  padding-bottom: 0.5em;
+  @include font-16;
+}
+
+.marco--select {
+  padding: 1.1em 0 1em 1em;
+  display: inline;
+  vertical-align: sub;
+  border-radius: 2px;
+}
+
+.pasos__inactive {
+  .check--numero {
+    background-color: #7d7d7d !important;
+  }
+
+  h2 {
+    color: #7d7d7d !important;
+  }
+}
+
+.h--pasosucces {
+  color: #7EB645;
+}
+
+.h--pasosactive {
+  color: #fff;
+}
+
+.rzslider span {
+  word-break: break-word;
+  width: 130px;
+}
+
+.rzslider .rz-tick-legend {
+  white-space: normal;
+}
+
+.rzslider .rz-tick-value {
+  display: none;
+}
+
+.rzslider .rz-pointer {
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  background-color: #5BABBF;
+  outline: 0;
+}
+
+.rzslider .rz-pointer:after {
+  top: 8px;
+  left: 8px;
+  width: 9px;
+  height: 9px;
+}
+
+.rzslider .rz-pointer.rz-active:after {
+  background-color: #336A9B;
+}
+@media screen and (max-width: 1024px ) {
+  .barraProgress .barraProgress--linea {
+    margin: 0;
+    width: 59%;
+    padding: 0 0 1em 13em;
+  }
+}
+@media (min-width: 768px) and (max-width:991px) {
+.boton--verMas{
+  margin-top: -10px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .boton--width {
+    .boton--perfil {
+      width: 100%;
+    }
+  }
+
+  .barraProgress {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+
+    md-progress-linear ._md-container {
+      background: transparent;
+      height: 5px;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      position: relative;
+    }
+
+    md-progress-linear ._md-container ._md-bar {
+      background: #7EB645;
+      height: 10px;
+    }
+
+    .barraProgress--linea {
+      width: 59%;
+      padding: 0 0 1em 10em;
+
+      &.encuestaBarra {
+        width: 78%;
+        padding: 0 6em 1em;
+      }
+    }
+
+    .check--numero {
+      &.check__inactive {
+        background-color: #E5E4E5;
+      }
+    }
+
+    .check-active {
+      color: #7EB645;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      margin-right: 0.5em;
+      height: 23px;
+      width: 23px;
+      margin-bottom: 10px;
+
+      i.material-icons {
+        font-size: 26px;
+        background-color: white;
+        border-radius: 50%;
+        border: solid 2px white;
+      }
+    }
+  }
+
+  .checkActualizacion {
+    width: 19%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .contenedorDatos {
+    .contenedor--boton {
+      width: 40%;
+    }
+  }
+
+  .marco--select {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .barraProgress {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+
+    md-progress-linear ._md-container {
+      background: transparent;
+      height: 5px;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      position: relative;
+    }
+
+    md-progress-linear ._md-container ._md-bar {
+      background: #7EB645;
+      height: 10px;
+    }
+
+    .barraProgress--linea {
+      width: 58%;
+      padding: 0 0 1em 11em;
+
+      &.encuestaBarra {
+        width: 78%;
+        padding: 0 6em 1em;
+      }
+    }
+
+    .check--numero {
+      &.check__inactive {
+        background-color: #E5E4E5;
+      }
+    }
+
+    .check-active {
+      color: #7EB645;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      margin-right: 0.5em;
+      height: 23px;
+      width: 23px;
+      margin-bottom: 10px;
+
+      i.material-icons {
+        font-size: 26px;
+        background-color: white;
+        border-radius: 50%;
+        border: solid 2px white;
+      }
+    }
+  }
+
+  .checkActualizacion {
+    width: 19%;
+    display: inline-block;
+    vertical-align: middle;
+
+    h2 {
+      display: none;
+    }
+  }
+
+  .contenedorDatos {
+    padding: 0.5em 0;
+
+    .contenedor--boton {
+      width: 90%;
+    }
+
+    .contenedor--perfil {
+      .perfil--contenido {
+        display: block;
+        text-align: center;
+
+        .contenido--marco {
+          padding-bottom: 0.5em;
+        }
+      }
+    }
+  }
+
+  .boton--agregar {
+    min-width: inherit;
+
+    span {
+      display: none;
+    }
+  }
+
+  .infoUser {
+    .infoUser--radioButton {
+      .infoUser--pregunta {
+        line-height: 1.4em;
+      }
+
+      .infoUser--respuesta {
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+  .h--inputDatos {
+    padding-bottom: 1em;
+    margin-top: 0;
+  }
+
+  .contenedor--preguntas {
+    .preguntas--titulo {
+      @include font-18;
+    }
+  }
+
+  .marco--select {
+    width: 44%;
+    display: inline-block;
+    padding: 0.5em;
+
+    .select--marco {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .checkActualizacion {
+    text-align: center;
+  }
+
+  .datosIniciales {
+    padding-top: 2.5em;
+  }
+
+  .h--paddingL {
+    padding: 0 0.8em;
+  }
+
+  .contenedor--perfil {
+    padding: 0 0.8em;
+  }
+
+  .md-button.boton1,
+  .md-button.boton2 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .rzslider span {
+    width: 65px;
+  }
+
+  .preguntas--rango {
+    width: 90%;
+    padding: 0;
+    margin: 0 0 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .barraProgress {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+
+    md-progress-linear ._md-container {
+      background: transparent;
+      height: 5px;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      position: relative;
+    }
+
+    md-progress-linear ._md-container ._md-bar {
+      background: #7EB645;
+      height: 10px;
+    }
+
+    .barraProgress--linea {
+      width: 59%;
+      padding: 0 0 1em 6em;
+
+      &.encuestaBarra {
+        width: 78%;
+        padding: 0 3em 2em;
+      }
+    }
+
+    .check--numero {
+      &.check__inactive {
+        background-color: #E5E4E5;
+      }
+    }
+
+    .check-active {
+      color: #7EB645;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      margin-right: 0.5em;
+      height: 23px;
+      width: 23px;
+      margin-bottom: 10px;
+
+      i.material-icons {
+        font-size: 26px;
+        background-color: white;
+        border-radius: 50%;
+        border: solid 2px white;
+      }
+    }
+  }
+
+  .checkActualizacion {
+    width: 19%;
+    display: inline-block;
+    vertical-align: middle;
+
+    h2 {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,204 @@
+
+        <header class="headerBanchile">
+
+         <div class="headerBanchile--menuSitios">
+              <div class="menuSitios--opciones">
+                  <ul>
+                      <li><a href="#">PERSONAS</a></li>
+                      <li class="opciones--activo">
+                        <a class="opciones--activo__color" href="#" >EMPRESAS</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+            <div class="headerBanchile--menuGeneral" sticky>
+                <div class="ban-container-fluid">
+                    <div class="ban-row">
+                          <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-3">
+                            <div class="menuGeneral--logo">
+                              <h1 id="logo--banchile">
+                                  <a href="">
+                                      <img alt="banchile" src="assets/images/logo--Banchile_P.png" class="ban-img-responsive"/>
+                                  </a>
+                              </h1>
+                            </div>
+                          </div>
+                          <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-9">
+                                <div class="ban-row">
+                                  <div class="ban-col-xs-8 ban-col-sm-7 ban-col-md-9 ban-alingRight ban-widhtLeft">
+                                    <!--
+                                      <div class="menuGeneral--contenidoPublico">
+                                        <md-button ng-href="" target="_blank">Asesoría personalizada</md-button>
+                                        <md-button ng-href="" target="_blank">Productos y servicios</md-button>
+                                        <md-button ng-href="" target="_blank">Reputación y respaldo</md-button>
+                                      </div>
+                                      <div class="menuGeneral--infoDesplegable">
+                                        <md-button class="md-icon-button" aria-label="Indicadores" ng-click="indicadores($event)">
+                                            <md-icon>
+                                                <i class="material-icons">trending_up</i>
+                                            </md-icon>
+                                            <md-tooltip md-direction="Bottom">Indicadores</md-tooltip>
+                                        </md-button>
+
+                                      </div>-->
+
+                                  </div>
+                                  <div class="ban-col-xs-4 ban-col-sm-5 ban-col-md-3 ban-widhtRight">
+                                    <div class="menuGeneral--ingresoUsuario">
+                                              <div class="ingresoUsuario--cuenta" ng-controller="expandCollapseCtrl">
+                                                  <md-button class="colapsable--lateral-3" ng-class="{'header--cerrado': active6, 'header--expandido': !active6}">
+                                                      <md-icon class="persona-user">
+                                                          <i class="material-icons">account_circle</i>
+                                                      </md-icon>
+                                                      <p class="cuenta--ingresarPersonas">Ingresa a tu cuenta</p>
+                                                  </md-button>
+                                                  <div class="cuenta--menu" ng-hide="active6">
+                                                      <div class="menu--colapsable">
+                                                          <ul>
+                                                              <li>
+                                                                  <div class="sesion--menu">
+                                                                      <p class="texto--sesion">
+                                                                          Mi último acceso: 01/08/29016
+                                                                      </p>
+                                                                      <p class="texto--sesion">
+                                                                          Mi ejecutiva: Amanda Rivas
+                                                                      </p>
+                                                                      <p class="texto--sesion">
+                                                                          <md-button class="md-icon-button md-primary" aria-label="Settings">
+                                                                              <md-icon>
+                                                                                  <i class="material-icons">phone</i>
+                                                                              </md-icon>
+                                                                          </md-button>
+                                                                          <md-button class="md-icon-button md-primary" aria-label="Settings">
+                                                                              <md-icon>
+                                                                                  <i class="material-icons">mail</i>
+                                                                              </md-icon>
+                                                                          </md-button>
+                                                                      </p>
+                                                                      <p class="texto--sesion">
+                                                                          <md-button class="md-raised cerrar-sesion">CERRAR SESIÓN</md-button>
+                                                                      </p>
+
+                                                                  </div>
+                                                              </li>
+                                                          </ul>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="widget widget-show" ng-show="misIndicadores">
+                    <md-button ng-click="indicadores($event)" aria-label="cerrar" class="md-icon-button widget--cerrar">
+                        <md-icon><i class="material-icons">close</i></md-icon>
+                    </md-button>
+                    <div class="ban-container">
+                        <div class="ban-row">
+                            <div class="ban-col-sm-12">
+                                <div class="widget--header">
+                                    <h1 class="widget--titulos">Indicadores</h1>
+                                    <md-button aria-label="Atrás" class="md-icon-button widget--vermas">
+                                        <md-icon><i class="material-icons">arrow_forward</i></md-icon>
+                                    </md-button>
+                                </div>
+                                <div class="widget--content" ng-controller="indicadoresHeaderCtrl">
+                                    <div class="ban-row">
+                                        <div class="ban-col-sm-6">
+                                            <div class="widget--indicadores">
+                                                <ul class="indicadores--ul">
+                                                    <li class="indicadores--contenido" ng-repeat="indicadores in indicador" ng-class="{activado:isActiveTab(indicadores.url)}" ng-click="onClickTab(indicadores)">
+                                                        <h2 class="indicadores--encabezado">{{indicadores.indicador}}</h2>
+                                                        <p class="indicadores--parrafo">{{indicadores.valor}}</p>
+                                                        <p class="indicadores--variacion indicadores--variacion__rojo">{{indicadores.variacion}}%</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="ban-col-sm-6">
+                                            <div class="widget--grafico">
+                                                <div class="ban-row">
+                                                    <div class="ban-col-sm-1">
+                                                    </div>
+                                                    <div class="ban-col-sm-11">
+                                                        <div ng-include="currentTab"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/ng-template" id="dolar.tpl.html">
+                        <div class="grafico--indica bold">Dólar</div>
+                        <div class="grafico--datos">659,75<span class="dato--indicador__up">-0,48%</span></div>
+                        <div class="grafico--actualizacion">Última actualización: 23/09/2016 11:40:29</div>
+                        <div class="grafico--bienvenida">
+                            <img alt="test" src="assets/images/grafico01.png" class="ban-img-responsive">
+                        </div>
+                    </script>
+                    <script type="text/ng-template" id="euro.tpl.html">
+                        <div class="grafico--indica bold">Euro</div>
+                        <div class="grafico--datos">713,11<span class="dato--indicador__up">-0,48%</span></div>
+                        <div class="grafico--actualizacion">Última actualización: 23/09/2016 11:39:28</div>
+                        <div class="grafico--bienvenida">
+                            <img alt="test" src="assets/images/grafico01.png" class="ban-img-responsive">
+                        </div>
+                    </script>
+                    <script type="text/ng-template" id="ipsa.tpl.html">
+                        <div class="grafico--indica bold">IPSA</div>
+                        <div class="grafico--datos">4011,95<span class="dato--indicador__up">-0,43%</span></div>
+                        <div class="grafico--actualizacion">Última actualización: 23/09/2016 11:40:29</div>
+                        <div class="grafico--bienvenida">
+                            <img alt="test" src="assets/images/grafico01.png" class="ban-img-responsive">
+                        </div>
+                    </script>
+                    <script type="text/ng-template" id="igpa.tpl.html">
+                        <div class="grafico--indica bold">IGPA</div>
+                        <div class="grafico--datos">19800,43<span class="dato--indicador__up">-0,36%</span></div>
+                        <div class="grafico--actualizacion">Última actualización: 23/09/2016 11:40:06</div>
+                        <div class="grafico--bienvenida">
+                            <img alt="test" src="assets/images/grafico01.png" class="ban-img-responsive">
+                        </div>
+                    </script>
+                    <script type="text/ng-template" id="uf.tpl.html">
+                        <div class="grafico--indica bold">UF</div>
+                        <div class="grafico--datos">26121,46<span class="dato--indicador__up">-0,06%</span></div>
+                        <div class="grafico--actualizacion">Última actualización: 23/09/2016 11:35:44</div>
+                        <div class="grafico--bienvenida">
+                            <img alt="test" src="assets/images/grafico01.png" class="ban-img-responsive">
+                        </div>
+                    </script>
+                    <script type="text/ng-template" id="utm.tpl.html">
+                        <div class="grafico--indica bold">UTM</div>
+                        <div class="grafico--datos">45999,00<span class="dato--indicador__up">-0,22%</span></div>
+                        <div class="grafico--actualizacion">Última actualización: 23/09/2016 11:37:20</div>
+                        <div class="grafico--bienvenida">
+                            <img alt="test" src="assets/images/grafico01.png" class="ban-img-responsive">
+                        </div>
+                    </script>
+                    <script type="text/ng-template" id="sp.tpl.html">
+                        <div class="grafico--indica bold">SP 500</div>
+                        <div class="grafico--datos">2177,13<span class="dato--indicador__up">-0,65%</span></div>
+                        <div class="grafico--actualizacion">Última actualización: 23/09/2016 11:34:09</div>
+                        <div class="grafico--bienvenida">
+                            <img alt="test" src="assets/images/grafico01.png" class="ban-img-responsive">
+                        </div>
+                    </script>
+                    <script type="text/ng-template" id="bovespa.tpl.html">
+                        <div class="grafico--indica bold">BOVESPA</div>
+                        <div class="grafico--datos">58994,17<span class="dato--indicador__up">-1,03%</span></div>
+                        <div class="grafico--actualizacion">Última actualización: 23/09/2016 11:41:19</div>
+                        <div class="grafico--bienvenida">
+                            <img alt="test" src="assets/images/grafico01.png" class="ban-img-responsive">
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </header>

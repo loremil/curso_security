@@ -1,0 +1,367 @@
+<!-- Jadra 31 -->
+<section>
+  <div class="contenido--background invertir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px" ng-controller="BuscaListadoCtrl">
+      <div class="ban-row a_fadein">
+        <div class="ban-col-xs-12 ban-col-sm-11 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Ahorro Previsional Voluntario</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-1 ban-col-md-7 ban-col-lg-8">
+          <div id="select-cuenta" ng-include src=" 'select-cuenta/personas/card-buscar.html' "></div>
+        </div>
+        <!-- inicio buscador -->
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div ng-controller="VerAyudaFFMM" ng-show="miTexto">
+            <div ng-include class="animated fadeIn" src=" 'buscadores/buscador-acciones.html' "></div>
+          </div>
+        </div>
+        <!-- fin buscador -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio contenedorPortada -->
+<section>
+  <div class="ban-container">
+    <div class="ban-col-md-12 contenedorPortada headerAPV">
+      <div class="contenedorPortada--filtro">
+      </div>
+      <div class="portada--textoPrueba a_fadein">
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <h3 class="portada--titulo">Invierte hoy en tu pensión</h3>
+        </div>
+        <div class="cuadroFlotanteP ban-col-lg-8 ban-col-sm-12 ban-col-md-8">
+          <p class="portada--bajada">El Ahorro Previsional Voluntario (APV) que permite a las personas dependientes e independientes, ahorrar por sobre
+            lo cotizado obligatoriamente en su Administradoras de Fondos de Pensiones (AFP).
+          </p>
+        </div>
+        <div class="cuadroFlotante ban-col-lg-9 ban-col-sm-12">
+          <a href="#">Aprende más sobre APV</a>
+          <a href="#">Elige tu Cartera Activa</a>
+          <a href="#">Más asesoría sobre mis inversiones</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorPortada -->
+<!-- inicio tituloVentajas -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde a_fadeup1">
+          <h3 class="subtitulos-centrados">Razones para invertir en Apv</h3>
+          <p class="bajada--texto">Una excelente alternativa de inversión de una manera fácil, cómoda y conveniente</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloVentajas -->
+<!-- inicio contenedorVentajas -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-row">
+        <div class="ban-col-sm-6 ban-col-md-3 a_fadeup1">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Retirar-dinero.png" alt="">
+            <p class="caja--subtitulo">Liquidez.</p>
+            <p class="caja--texto">Puedes retirar tu saldo de depósitos de APV, o parte de ellos, en cualquier momento pagando el impuesto correspondiente.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3 a_fadeup2">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/icoDisplay_Renta-trabajador.png" alt="">
+            <p class="caja--subtitulo">Beneficios tributarios</p>
+            <p class="caja--texto">Mientras más alta sea la renta del trabajador, mayor será el beneficio tributario obtenido.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3 a_fadeup3">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Pension.png" alt="">
+            <p class="caja--subtitulo">Flexibilidad</p>
+            <p class="caja--texto">Anticipa tu fecha de pensión obteniendo el mismo monto de pensión que si hubieras esperado la edad legal pero
+              sin hacer APV.</p>
+          </div>
+        </div>
+        <div class="ban-col-sm-6 ban-col-md-3 a_fadeup4">
+          <div class="items--caja h--shadowBox">
+            <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Aumenta-beneficios.png" alt="">
+            <p class="caja--subtitulo">Aumenta tus beneficios</p>
+            <p class="caja--texto">Acumula un mayor saldo previsional y obtiene una mejor pensión.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorVentajas -->
+<!-- inicio tituloVideo -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card fondoSeparador">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop1">
+        <div class="contenedor--subtitulo h--borde no_visible" when-visible="a_fadeup1">
+          <h3 class="subtitulos-centrados">Aprende de Ahorro Previsional Voluntario</h3>
+          <p class="bajada--texto">Te entregamos toda la información que necesitas para tomar tus decisiones de inversión</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloVideo -->
+<!-- inicio contenedorVideo -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card fondoSeparador h--paddingBottom2">
+      <div class="contenedorVideo">
+        <div class="ban-row">
+          <div class="ban-col-md-6">
+            <div class="contenedorVideo--imagen">
+              <img src="assets/images/sitio_publico/Aprende-APV.jpg">
+            </div>
+          </div>
+          <div class="ban-col-md-6">
+            <div class="contenedorVideo--Texto no_visible" when-visible="a_fadein">
+              <h3 class="subtitulo--subseccion h--marginTop0_6">Simulador de Ahorro Previsional Voluntario</h3>
+              <p class="normal--lectura h--paddingTop1">El objetivo principal de este mecanismo de incentivo al ahorro, consiste en otorgar a las personas diferentes
+                planes de ahorro previsional voluntario, los cuales pueden ser ofrecidos por las distintas Instituciones
+                autorizadas por la Ley.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorVideo -->
+<!-- inicio tituloAPV -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2 no_visible" when-visible="a_fadein">
+        <div class="contenedor--subtitulo h--borde">
+          <h3 class="subtitulos-centrados">Beneficios Tributarios APV</h3>
+          <p class="bajada--texto">Elige el régimen que mejor convenga para tu inversón</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloAPV -->
+<!-- inicio contenedorAPV -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <!-- inicio productosRegimenA -->
+      <div class="contenedorVideo h--marginTop1">
+        <div class="ban-row h--marginBottom2">
+          <div class="ban-col-md-6">
+            <div class="contenedorImagen imagen--texto01">
+            </div>
+          </div>
+          <div class="ban-col-md-6">
+            <div class="contenido-productoDerivados no_visible" when-visible="a_fadein">
+              <div class="textoProductosDerivados">
+                <h3 class="subtitulo--subseccion h--marginTop0_6">Régimen A</h3>
+                <p class="normal--lectura h--paddingTop1">
+                  Como un incentivo al esfuerzo de ahorrar para la pensión, el Estado te entregará anualmente una bonificación de un 15% de
+                  lo que ahorraste durante el año. ¡Mientras más ahorres, mayor será lo que recibirás!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin productosRegimenA -->
+      <!-- inicio productosRegimenB -->
+      <div class="contenedorVideo h--marginTop1">
+        <div class="ban-row h--marginBottom2">
+          <div class="ban-col-md-6">
+            <div class="contenido-productoDerivados orden_2 no_visible" when-visible="a_fadein">
+              <div class="textoProductosDerivados">
+                <h3 class="subtitulo--subseccion h--marginTop0_6">Régimen B</h3>
+                <p class="normal--lectura h--paddingTop1">
+                  Permite descontar los aportes APV de la renta tributable anual. Dependiendo de tu tramo de renta, podrás obtener un ahorro
+                  de impuestos entre un 4% y un 40% del monto aportado.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="ban-col-md-6">
+            <div class="contenedorImagen imagen--texto02">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin productosRegimenB -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorApv -->
+<!-- inicio contenedorAPV -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-row h--marginTop2 no_visible" when-visible="a_fadein">
+        <div class="ban-col-md-4">
+          <h3 class="items--subtitulo">Principales caracteristicas del Ahorro Previsional Voluntario Régimen A y B</h3>
+        </div>
+        <div class="ban-col-md-8">
+          <div class="tabla--docLegales">
+            <div class="info--tab caracteristicas--seccion">
+              <p class="info--titulos">Incremento en el monto de tu futura pensión</p>
+              <p class="info--descripcion">Cuando tomes la decisión de jubilarte, el dinero existente en tu APV, incluyendo las bonificaciones y rentabilidades,
+                podrás transferirlo a tu cuenta de la AFP, con lo que se incrementará tu fondo previsional.</p>
+            </div>
+            <div class="info--tab caracteristicas--seccion">
+              <p class="info--titulos">Bonificación al ahorrar</p>
+              <p class="info--descripcion">Cada año, dependiendo del régimen tributario escogido, el Estado bonifica en 15%* el monto aportado.</p>
+            </div>
+            <div class="info--tab caracteristicas--seccion">
+              <p class="info--titulos">Liquidez de los fondos</p>
+              <p class="info--descripcion">Puedes retirar tu ahorro previsional voluntario cuando quieras, o traspasarlo a otras instituciones.</p>
+            </div>
+            <div class="info--tab caracteristicas--seccion">
+              <p class="info--titulos">Inversiones sin limites</p>
+              <p class="info--descripcion">No hay limitaciones en la cantidad de fondos en los que quieras invertir.</p>
+            </div>
+            <div class="info--tab caracteristicas--seccion">
+              <p class="info--titulos">Pensión anticipada</p>
+              <p class="info--descripcion">Elige APV para generar mayores beneficios en tu pensión y jubilarte anticipadamente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorAPV -->
+<!-- inicio tituloNoticias -->
+<section>
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="card">
+      <div class="ban-col-sm-12 ban-col-md-12 h--marginTop2">
+        <div class="contenedor--subtitulo h--borde no_visible" when-visible="a_fadeup1">
+          <h3 class="subtitulos-centrados">Noticias relacionadas</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin tituloNoticias -->
+<!-- inicio contenedorNoticias -->
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="sliderNoticiasRecomendadas" ng-controller="sliderNoticiasRecomendadas">
+        <ks-swiper-container class="sliderCards" override-parameters="noticiasRecomendadas" show-nav-buttons="true">
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado"</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas"</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en
+                  US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en
+                  US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en
+                  US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en
+                  US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+        </ks-swiper-container>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorNoticias -->
+<!-- inicio contenedorCajaCliente -->
+<section>
+  <div class="ban-container h--marginBottom4" ng-controller="animateCtrl">
+    <div class="card h--paddingTop2 h--paddingBottom2 h--borderRadiusBottom4px">
+      <!-- inicio cajaCliente -->
+      <div class="ban-row">
+        <div class="ban-col-sm-12 ban-col-md-12">
+          <div class="cajasCliente">
+            <div class="cajas-informacion">
+              <div class="cajas--texto no_visible" when-visible="a_fadein">
+                <p>
+                  Si quieres obtener información profesional o contratar este producto
+                </p>
+              </div>
+              <div class="cajas--botones">
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-2 no_visible" when-visible="a_fadeup1">
+                  <md-button class="botonCliente boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO SER CLIENTE</span>
+                  </md-button>
+                </div>
+                <div class="ban-col-xs-10 ban-col-xs-offset-1 ban-col-md-4 ban-col-md-offset-0 no_visible" when-visible="a_fadeup2">
+                  <md-button class="boton2 boton--100 md-raised primario" href="#contactanos" type="button">
+                    <span class="ng-scope">QUIERO QUE ME CONTACTEN</span>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+            <div class="cajas--imagen">
+              <img src="assets/images/HazteCliente.png" alt="Manos estrechandose ante un acuerdo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin cajaCliente -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorCajaCliente -->

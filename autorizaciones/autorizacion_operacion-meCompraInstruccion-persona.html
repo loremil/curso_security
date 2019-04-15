@@ -1,0 +1,23 @@
+<div class="operacion--informe">
+  <md-icon>
+    <i class="material-icons">info_outline</i>
+  </md-icon>
+  <h2 class="informe--texto">Hasta las 14:00 de días hábiles tu inversión será ingresada el mismo día, fuera de este horario lo verá reflejado al día
+    hábil siguiente.</h2>
+</div>
+<div class="operacion--confirmacion h--marginBottom2">
+  <div class="claveSeguridad" ng-controller="modalesCrtl">
+    <div class="claveSeguridad--input">
+      <md-input-container class="input--dropdowns">
+        <label>Ingrese clave</label>
+        <md-icon class="dropdowns--icon">
+          <i class="material-icons">verified_user</i>
+        </md-icon>
+        <input ng-model="user.autorizacion">
+      </md-input-container>
+    </div>
+    <div class="claveSeguridad--buton">
+      <md-button ng-click="showCompraMEIN($event)" class="boton1 confirmacion--boton md-raised">Instruir</md-button>
+    </div>
+  </div>
+</div>

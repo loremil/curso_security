@@ -1,0 +1,37 @@
+<div class="card h--marginTop">
+  <div class="ban-row h--paddingBottom2">
+    <div class="ban-col-md-12">
+      <div class="contenedor--subtitulo subt--noborder">
+        <h3 class="subtitulo animated fadeInDown">Autorización</h3>
+      </div>
+      <p>Ingresa clave de dispositivo de seguridad</p>
+    </div>
+    <div class="ban-col-md-12">
+      <div class="autorizacionSms">
+        <md-button class="md-raised autorizacionSms--boton">
+          <md-icon class="boton--icon">
+            <i class="material-icons">phone_iphone</i>
+          </md-icon>
+          <span class="boton--texto">Generar SMS</span>
+        </md-button>
+        <div class="info h--inlineBlock">
+          <md-icon md-font-set="banicon-informacion titulo--icono"></md-icon>
+          <p class="info--texto">Un SMS llegará a tu celular para autorizar tu operación de manera fácil, rápida y segura</p>
+        </div>
+      </div>
+    </div>
+    <div class="ban-col-sm-6 ban-col-md-3">
+      <md-input-container class="input--dropdowns">
+        <label>Clave de seguridad</label>
+        <md-icon class="dropdowns--icon">
+          <i class="material-icons">verified_user</i></md-icon>
+        <input ng-model="user.autorizacion">
+      </md-input-container>
+    </div>
+
+  </div>
+</div>
+<div class="contenedor--botones right" ng-controller="modalesCrtl">
+  <md-button ng-click="showRechazado($event)" class="boton2 md-raised">Cancelar</md-button>
+  <md-button ng-click="showAutorizado($event)" class="boton1 md-raised">Ingresar</md-button>
+</div>

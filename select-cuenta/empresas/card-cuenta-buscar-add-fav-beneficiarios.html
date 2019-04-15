@@ -1,0 +1,64 @@
+<div class="cardSeleccion" ng-controller="SelectCtrl">
+   <div class="ban-row">
+      <div class="ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-4 ban-col-lg-offset-1">
+         <md-card-content class="cardSeleccion--select md-block">
+           <div class="seleccionCuenta">
+               <span class="select--option">Empresa:</span>
+               <md-select ng-model="select.empresa" placeholder="Selecciona" class="md-no-underline">
+                  <md-optgroup label="Selección de Cuenta">
+                     <md-option value="1">Agrícola Campo Lindo Ltda.
+                        <span class="selectEmpresa">Rut: 97.554.554-6</span>
+                     </md-option>
+                     <md-option value="2">Pesquera Corp Fish Ltda.
+                        <span class="selectEmpresa">Rut: 97.554.554-6</span>
+                     </md-option>
+                     <md-option value="3">Importadora Saigon S.A.
+                        <span class="selectEmpresa">Rut: 97.554.554-6</span>
+                     </md-option>
+                  </md-optgroup>
+               </md-select>
+            </div>
+         </md-card-content>
+      </div>
+      <div class="ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-4">
+         <md-card-content class="cardSeleccion--select md-block">
+           <div class="seleccionCuenta">
+               <span class="select--option">Cuenta:</span>
+               <md-select ng-model="select.cuenta" class="md-no-underline">
+                  <md-optgroup label="Selección de Cuenta">
+                     <md-option value="1">Gonzalo Ahumada 1</md-option>
+                    <md-option value="2">Gonzalo Ahumada 2</md-option>
+                    <md-option value="3">Gonzalo Ahumada 3</md-option>
+                  </md-optgroup>
+               </md-select>
+            </div>
+         </md-card-content>
+      </div>
+      <div class="ban-col-xs-12 ban-col-sm-4 ban-col-md-4 ban-col-lg-3 h--alignCenter">
+         <div class="boton--select">
+            <md-button href="" ng-click="texto($event)" class="md-icon-button" aria-label="Buscar">
+               <md-icon>
+                  <i class="material-icons icons--color">&#xE8B6;</i>
+               </md-icon>
+               <md-tooltip md-direction="Bottom">Buscar</md-tooltip>
+            </md-button>
+         </div>
+         <div class="boton--select">
+           <md-button href="" ng-click="" ng-href="#agregar-beneficiario" class="md-icon-button" aria-label="Agregar">
+             <md-icon>
+               <i class="material-icons icons--color">add</i>
+             </md-icon>
+             <md-tooltip md-direction="Bottom">Agregar</md-tooltip>
+           </md-button>
+         </div>
+         <div class="boton--select">
+            <md-button href="" ng-click="" class="md-icon-button" aria-label="Favoritos">
+               <md-icon>
+                  <i class="material-icons icons--color">star_border</i>
+               </md-icon>
+               <md-tooltip md-direction="Bottom">Favoritos</md-tooltip>
+            </md-button>
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,395 @@
+<section>
+<div class="ban-row">
+  <div class="ban-col-xs-9 ban-col-md-6">
+      <h2 class="titulo--operacion titulo--aside ">Selecciona un Fondo</h2>
+      <div class="border--titulo">
+        <hr>
+      </div>
+  </div>
+  <div class=" ban-col-xs-3 ban-col-md-6"  ng-controller="asideCloseRight">
+      <md-button class="md-icon-button md-primary asideClose" ng-click="close()">
+        <i class="material-icons">close</i>
+      </md-button>
+  </div>
+</div>
+</section>
+<!-- inicio contenedorFondos -->
+<section>
+  <div class="ban-row">
+    <div class="ban-col-md-12">
+      <!-- inicio fondosReinversion -->
+      <div class="tablaMaster">
+        <table fixed-header class="animated fadeInDown h--marginTop1" wt-responsive-table ng-controller="tablaFFMM">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="tableHead--titulo">Fondo Mutuo</th>
+              <th>%30 días</th>
+              <th>%1 año</th>
+              <th>Nº cuotas</th>
+              <th>Monto</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in fondom | orderBy : sort">
+              <td class="td--iconoApertura">
+                <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+                <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+              </td>
+              <td class="td--principal td--auto" data-title="Fondo Mutuo">{{fondomut.producto}}
+                <div class="cartera--ico" aria-label="Ya tienes este Fondo">
+                  <i class="material-icons icons--color icons--small">work</i>
+                </div>
+              </td>
+              <td class="td--valores" data-title="%30 días">{{fondomut.dias}}</td>
+              <td class="td--valores" data-title="%1 año">{{fondomut.ano}}</td>
+              <td class="td--valores" data-title="Nº cuotas">{{fondomut.cuota}}</td>
+              <td class="td--valores" data-title="Monto">{{fondomut.monto}}</td>
+              <!-- inicio iconoAperturaResponsive -->
+              <td class="td--iconoAperturaResponsive">
+                <md-button class="md-icon-button icons" ng-click="fondomut.expanded = false" ng-if="fondomut.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+                <md-button class="md-icon-button icons" ng-click="fondomut.expanded = true" ng-if="!fondomut.expanded">
+                  <md-icon>
+                    <i class="material-icons"></i>
+                  </md-icon>
+                </md-button>
+              </td>
+              <!-- inicio iconoAperturaResponsive -->
+              <td class="td--botones">
+                <div class="td--botonesTransar" ng-controller="asideCloseRight">
+                  <md-button class="boton--rescatar md-raised primario" ng-click="close();">Selecciona</md-button>
+                </div>
+              </td>
+            </tr>
+            <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+              <td colspan="7">
+                <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                  <table class="tableContenido tableContenido__margin">
+                    <tbody>
+                    </tbody>
+                  </table>
+                  <table class="table tableContenido tableContenido__margin tableContenido__cuenta" wt-responsive-table>
+                    <tbody>
+                      <tr>
+                        <td colspan="7">
+                          <div ng-include class="fadeIn animated" src="'detalle/detalle-cuenta-fm.html'"></div>
+                        </td>
+                      </tr>
+                      <tr class="tableContenido--detalle info--detalle" ng-repeat="fondomut in cuenta | orderBy : sort">
+                        <td class="td--width">
+                        </td>
+                        <td class="cuenta--texto">
+                          <p class="numero--cta">{{fondomut.cuenta}}</p>
+                          <p> Beneficio Tributario
+                            <span>57 BIS</span>
+                          </p>
+                        </td>
+                        <td class="cuenta--texto">
+                          <p> Plan de inversión
+                            <span>normal</span>
+                          </p>
+                          <p>Monto libre de comisión
+                            <span>$5.000.000</span>
+                          </p>
+                        </td>
+                        <td class="cuenta--texto">
+                          <p> Monto
+                            <span>$14.601</span>
+                          </p>
+                          <p> Número de cuotas
+                            <span>14.601,0987</span>
+                          </p>
+                        </td>
+                        <td colspan="3" class="contenido--monto">
+                          <div class="datos--botones">
+                            <md-button md-no-ink class="boton--aportar md-raised" href="#fondosmutuos-aporte-clp">Aportar</md-button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="tableContenido--detalle info--detalle">
+                        <td class="td--width">
+                        </td>
+                        <td class="cuenta--texto">
+                          <p class="numero--cta">Cuenta nueva</p>
+                        </td>
+                        <td class="cuenta--texto">
+                        </td>
+                        <td class="cuenta--texto">
+                        </td>
+                        <td colspan="3" class="contenido--monto">
+                          <div class="datos--botones">
+                            <md-button md-no-ink class="boton--aportar md-raised" href="#fondosmutuos-aporte-cargando">Aportar</md-button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- fin fondosReinversion -->
+    </div>
+  </div>
+</section>
+<!-- fin contenedorFondos -->
+<!-- inicio contenedorBuscador -->
+<section>
+  <div class="ban-row tablaMaster">
+    <div class="ban-col-sm-12 ban-col-md-12">
+      <div class="h--marginTop2 animated" ng-controller="VerAyudaFFMM">
+        <!-- inicio buscadorCaja -->
+        <div class="contenedorBuscador--ffmm colorFondo--buscador colorFuente--buscador collapseFFMM" ng-show="ayudaFondos">
+          <div class="ban-row">
+            <div class="margen--buscador">
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="ayuda--input ayuda--buscador">
+                  <md-icon>
+                    <i class="material-icons buscador--icono">search</i>
+                  </md-icon>
+                  <label>Palabra clave</label>
+                  <input name="texto" ng-model="ffmm.palabra">
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="ayuda--input">
+                  <label>Clasificación</label>
+                  <md-select name="clasificacion" ng-model="ffmm.clasificacion">
+                    <md-option value="1">Money Market</md-option>
+                    <md-option value="2">Money Market</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <md-input-container class="ayuda--input">
+                  <label>Región geográfica</label>
+                  <md-select name="region" ng-model="ffmm.region">
+                    <md-option value="1">Europa</md-option>
+                    <md-option value="2">Asia</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+              <div class="ban-col-sm-6 ban-col-md-3">
+                <div class="buscador--boton">
+                  <md-button ng-click="patrimonioResultado = !patrimonioResultado" class="boton2 boton--100 md-raised primario" type="button">
+                    <span class="ng-scope">Buscar</span>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin buscadorCaja -->
+        <!-- inicio buscadorResultados -->
+        <div class="h--paddingBottom1" ng-show="patrimonioResultado">
+          <!-- inicio buscadorTags -->
+          <div class="ban-row">
+            <div class="ban-col-sm-12 ban-col-md-12">
+              <div class="resultado--busqueda h--margin2">
+                <p> Se han encontrado 5 resultados</p>
+              </div>
+              <div class="tags">
+                <ul>
+                  <li class="tags--chip">Money Market
+                    <button class="chip--cerrar" aria-label="cerrar">
+                      <md-icon class="material-icons">
+                        <i class="material-icons icono">close</i>
+                      </md-icon>
+                    </button>
+                  </li>
+                  <li class="tags--chip">Europa
+                    <button class="chip--cerrar" aria-label="cerrar">
+                      <md-icon class="material-icons">
+                        <i class="material-icons icono">close</i>
+                      </md-icon>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- fin buscadorTags -->
+          <!-- inicio buscadorTabla -->
+          <table fixed-header class="animated fadeInDown" wt-responsive-table ng-controller="tablaFFMM">
+            <thead class="tableHead--buscador">
+              <tr>
+                <th></th>
+                <th class="tableHead--titulo">Fondo Mutuo</th>
+                <th>%30 días</th>
+                <th>%1 año</th>
+                <th>Nº cuotas</th>
+                <th>Monto</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="tableHead--informativo">
+                <td></td>
+                <td class="td--principal">Fondos Money Market</td>
+                <td class="td--left" colspan="12">Son una atractiva opción para no adquirir riesgos elevados, pero aún así obtener rentabilidades competitivas
+                  en el corto plazo. </td>
+              </tr>
+              <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in fondomRecomend2 | orderBy : sort">
+                <td class="td--iconoApertura">
+                  <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                    <md-icon>
+                      <i class="material-icons"></i>
+                    </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                    <md-icon>
+                      <i class="material-icons"></i>
+                    </md-icon>
+                  </md-button>
+                </td>
+                <td class="td--principal" data-title="Fondo Mutuo">{{fondomut.producto}}</td>
+                <td class="td--valores" data-title="%30 días">{{fondomut.dias}}</td>
+                <td class="td--valores" data-title="%1 año">{{fondomut.ano}}</td>
+                <td class="td--valores" data-title="Nº cuotas">{{fondomut.cuota}}</td>
+                <td class="td--valores" data-title="Monto">{{fondomut.monto}}</td>
+                <td class="td--botones">
+                  <div class="td--botonesTransar" ng-controller="asideCloseRight">
+                    <md-button class="boton--rescatar btn_accionesPublico md-raised primario" ng-click="close();">Selecciona</md-button>
+                  </div>
+                </td>
+              </tr>
+              <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                <td colspan="12">
+                  <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                    <table class="tableContenido">
+                      <tbody>
+                        <tr>
+                          <td colspan="7">
+                            <div ng-include class="animated fadeIn" src="'detalle/detalle-cuenta-fm.html'"></div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr ng-class="{'tr--active': fondomut.expanded}" ng-click="fondomut.expanded = !fondomut.expanded" ng-repeat-start="fondomut in fondom  | orderBy : sort">
+                <td class="td--iconoApertura">
+                  <md-button class="md-icon-button icons" ng-if="fondomut.expanded">
+                    <md-icon>
+                      <i class="material-icons"></i>
+                    </md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button icons" ng-if="!fondomut.expanded">
+                    <md-icon>
+                      <i class="material-icons"></i>
+                    </md-icon>
+                  </md-button>
+                </td>
+                <td class="td--principal" data-title="Fondo Mutuo">{{fondomut.producto}}
+                  <div class="cartera--ico" aria-label="Ya tienes este Fondo">
+                    <i class="material-icons icons--color icons--small">work</i>
+                  </div>
+                </td>
+                <td class="td--valores" data-title="%30 días">{{fondomut.dias}}</td>
+                <td class="td--valores" data-title="%1 año">{{fondomut.ano}}</td>
+                <td class="td--valores" data-title="Nº cuotas">{{fondomut.cuota}}</td>
+                <td class="td--valores" data-title="Monto">{{fondomut.monto}}</td>
+                <td class="td--botones">
+                  <div class="td--botonesTransar" ng-controller="asideCloseRight">
+                    <md-button class="boton--rescatar btn_accionesPublico md-raised primario" ng-click="close();">Selecciona</md-button>
+                  </div>
+                </td>
+              </tr>
+              <tr aria-label="Toggle ngHide" class="tr--desplegable animacionApertura" ng-if="fondomut.expanded" ng-repeat-end="">
+                <td colspan="7">
+                  <div class="contenidoDesplegable" ng-controller="tablaFondoMutuos">
+                    <table class="tableContenido tableContenido__margin">
+                      <tbody>
+                      </tbody>
+                    </table>
+                    <table class="table tableContenido tableContenido__margin tableContenido__cuenta" wt-responsive-table>
+                      <tbody>
+                        <tr>
+                          <td colspan="7">
+                            <div ng-include class="fadeIn animated" src="'detalle/detalle-cuenta-fm.html'"></div>
+                          </td>
+                        </tr>
+                        <tr class="tableContenido--detalle info--detalle" ng-repeat="fondomut in cuenta | orderBy : sort">
+                          <td class="td--width">
+                          </td>
+                          <td class="cuenta--texto">
+                            <p class="numero--cta">{{fondomut.cuenta}}</p>
+                            <p> Beneficio Tributario
+                              <span>57 BIS</span>
+                            </p>
+                          </td>
+                          <td class="cuenta--texto">
+                            <p> Plan de inversión
+                              <span>normal</span>
+                            </p>
+                            <p>Monto libre de comisión
+                              <span>$5.000.000</span>
+                            </p>
+                          </td>
+                          <td class="cuenta--texto">
+                            <p> Monto
+                              <span>$14.601</span>
+                            </p>
+                            <p> Número de cuotas
+                              <span>14.601,0987</span>
+                            </p>
+                          </td>
+                          <td colspan="3" class="contenido--monto">
+                            <div class="datos--botones" ng-controller="asideCloseRight">
+                              <md-button class="boton--rescatar md-raised" ng-click="close(); ">Selecciona</md-button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- fin buscadorTabla -->
+          <!-- inicio buscadorInformese -->
+          <div class="ban-col-sm-12 ban-col-md-12 informese h--marginTop2">
+            <div class="caja--informacion-icono">
+              <i class="material-icons">info</i>
+            </div>
+            <div class="informese--texto">
+              <p>La rentabilidad o ganancia obtenida en el pasado por estos fondos, no garantiza que ella se repita en el futuro.
+                Los valores de las cuotas de los fondos son variables. Infórmese de las características esenciales de la
+                inversión en estos fondos, las que se encuentran contenidas en su reglamento interno y contrato general de
+                fondos. Las pérdidas que eventualmente pueda sufrir el Fondo serán asumidos exclusivamente por tus aportantes
+                y no por la administradora ni por las entidades bancarias o financieras del grupo empresarial al cual pertenece,
+                o tus filiales. Antes de invertir revise el Reglamento Interno y el Folleto Informativo del Fondo. Las inversiones
+                en el Fondo no están aseguradas por la garantía estatal de los depósitos de la Ley General de Bancos ni por
+                la Federal Deposit Insurance Corporation, y no son depósitos, obligaciones, ni están endosados o garantizados,
+                en cualquier forma, por cualquier entidad bancaria. Banchile Administradora General de Fondos S.A. es filial
+                del Banco de Chile, quien puede designar directores en aquella. Banco de Chile y Banchile Corredores de Bolsa
+                S.A. son agentes de Banchile Administradora General de Fondos S.A. en la colocación, suscripción y rescates
+                de las cuotas de los Fondos que administra.
+              </p>
+            </div>
+          </div>
+          <!-- fin buscadorInformese -->
+        </div>
+        <!-- buscadorResultados -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorBuscador -->

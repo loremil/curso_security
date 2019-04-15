@@ -1,0 +1,62 @@
+<div class="contenidoDesplegable--info info__detalle">
+    <div class="ban-row">
+      <div class="ban-col-sm-6 ban-col-md-9">
+        <h3 class="detalle--titulo">Transferencia a Terceros</h3>
+        <h4 class="detalle--subtitulo">Internacional</h4>
+      </div>
+      <div class="ban-col-sm-6 ban-col-md-3 h--alignR">
+        <div class="info--operacion">Nº de Orden <span class="operacion--numero">756040</span></div>
+      </div>
+    </div>
+    <!-- inicio detalle transferen
+    cia -->
+    <div class="ban-row h--paddingTop1">
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Moneda</h4>
+          <p>USD/CLP</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Origen</h4>
+          <p>Moneda extranjera</p>
+        </div>
+      </div>
+      <div class="ban-col-xs-6 ban-col-sm-6 ban-col-md-3">
+        <div class="contenido--datos">
+          <h4>Fecha de solicitud</h4>
+          <p>22/10/2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="ban-row">
+      <div class="h--lineaEntrecortada"></div>
+          <div class="ban-col-sm-12 ban-col-md-6 ban-col-md-offset-6">
+            <div class="contendidoMonto">
+              <p class="contendidoMonto--texto">Monto</p>
+              <p  class="contendidoMonto--valor">$217.602</p>
+            </div>
+          </div>
+    </div>
+    <!-- fin detalle destino transferencia -->
+    <!-- fin detalle destino transferencia -->
+    <div ng-controller="instruccionesVentanaCtrl">
+      <div class="ver--autorizadores h--lineNoneBottom">
+        <md-button ng-click="verAutorizadores($event)" class="boton2 md-raised">
+          VER INSTRUCCIONES
+          <md-tooltip md-direction="bottom">Ver composición de la cartera</md-tooltip>
+        </md-button>
+      </div>
+      <!-- Fin sub-bloque ver autorizadores -->
+      <div class="contenidoDesplegable--acciones">
+        <!-- bloque dos -->
+        <div class="bitacora h--lineNoneTop h--lineNoneBottom h--padding0" ng-show="autorizadores" ng-cloak>
+          <!-- sub-bloque Autorizadores -->
+          <div ng-include src="'autorizaciones/bitacora-instrucciones.html'"></div>
+        </div>
+        <!-- FIN sub-bloque Autorizadores -->
+      </div>
+      <!-- FIN bloque dos -->
+    </div>
+  </div>

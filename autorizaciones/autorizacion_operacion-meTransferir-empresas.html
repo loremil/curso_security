@@ -1,0 +1,32 @@
+<div class="operacion--informe">
+  <md-icon><i class="material-icons">info_outline</i></md-icon>
+  <h2 class="informe--texto">Hasta las 14:00 de días hábiles tu inversión será ingresada el mismo día, fuera de este horario lo verá reflejado al día
+    hábil siguiente.</h2>
+</div>
+<div class="operacion--confirmacion h--marginBottom2">
+  <div class="autorizacionSms">
+    <div class="autorizacionSms--contenedor" ng-controller="modalesCrtl">
+      <md-button class="md-raised autorizacionSms--boton" ng-click="showAutorizarBeneficiario($event)">
+        <md-icon class="boton--icon"><i class="material-icons">phone_iphone</i></md-icon>
+        <span class="boton--texto">Generar SMS</span>
+      </md-button>
+    </div>
+    <div class="texto--sms">
+      <md-icon class="boton--icon"><i class="material-icons">info</i></md-icon>
+      <p class="">Un SMS llegará a tu celular para autorizar tu operación de manera fácil, rápida y segura</p>
+    </div>
+  </div>
+  <div class="claveSeguridad" ng-controller="modalesCrtl">
+    <div class="claveSeguridad--input">
+      <md-input-container class="input--dropdowns">
+        <label>Ingrese clave</label>
+        <md-icon class="dropdowns--icon">
+          <i class="material-icons">verified_user</i></md-icon>
+        <input ng-model="user.autorizacion">
+      </md-input-container>
+    </div>
+    <div class="claveSeguridad--buton">
+      <md-button ng-click="showAporteFFMM($event)" class="boton1 confirmacion--boton md-raised">Aportar</md-button>
+    </div>
+  </div>
+</div>

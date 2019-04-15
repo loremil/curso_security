@@ -1,0 +1,428 @@
+<!-- 21 Agosto "gbujes" -->
+<section>
+  <div class="contenido--background invertir-empresa"></div>
+  <div class="ban-container">
+    <div class="card h--marginTopcard h--borderRadiusTop4px">
+      <div class="ban-row  animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-lg-4">
+          <h1 class="titulo--operacion">Banchile Pay</h1>
+          <div class="border--titulo">
+            <hr>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-7 ban-col-lg-8">
+            <div id="select-cuenta" ng-include src=" 'select-cuenta/empresas/card-cuenta-fav.html' "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="informacion--atencion animated fadeInDown">
+        <md-icon md-font-set="banicon-atencion titulo--icono"> </md-icon>
+        <p class="informacion--atencion__txt">
+          Recuerda que nuestro horario para invertir es hasta las 14:00 hrs. de días hábiles. Fuera de este horario verás reflejada tu inversión al día hábil siguiente.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="ban-container">
+    <div class="card">
+      <div class="ban-row h--marginBottom1 animated fadeInDown">
+        <!-- datos empresa -->
+        <div class="ban-col-xs-12 ban-col-sm-7 ban-col-sm-6">
+          <div class="ban-row datos--empresaCuenta">
+            <div class="ban-col-xs-12 ban-col-sm-2 ban-col-md-1">
+              <div class="empresaCuenta--caja">
+                <md-input-container class="empresaCuenta--icono">
+                  <md-icon>
+                    <i class="material-icons">&#xE7EE;</i>
+                  </md-icon>
+                </md-input-container>
+              </div>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-9 ban-col-md-11">
+              <div class="ban-row">
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-8">
+                  <p class="empresaCuenta--origen">Banchile Administradora General de Fondos</p>
+                </div>
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-4">
+                  <p class="empresaCuenta--monto">$ 35.230.032.424</p>
+                </div>
+
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+                  <p class="empresaCuenta--rut">RUT: 76.003.234-2</p>
+                </div>
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-6">
+                  <p class="empresaCuenta--fecha">Valorizado al 20/02/2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-7 ban-col-sm-6">
+          <div class="ban-row datos--empresaCuenta">
+            <div class="ban-col-xs-12 ban-col-sm-2 ban-col-md-1">
+              <div class="empresaCuenta--caja">
+                <md-input-container class="empresaCuenta--icono">
+                  <md-icon>
+                    <i class="material-icons">&#xE0C3;</i>
+                  </md-icon>
+                </md-input-container>
+              </div>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-9 ban-col-md-11">
+              <div class="ban-row">
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-8">
+                  <p class="empresaCuenta--origen">Cuenta de Inversión 200</p>
+                </div>
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-4">
+                  <p class="empresaCuenta--monto">$ 12.230.032</p>
+                </div>
+              </div>
+              <div class="ban-row">
+                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-5 ban-col-md-offset-7">
+                  <p class="empresaCuenta--fecha"> <span class="quitar--fecha">Valorizado </span>al 20/02/2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section ng-controller="formularioCtrl">
+  <div class="ban-container">
+    <div class="card">
+      <div class="contenedor--subtitulo">
+        <h3 class="subtitulo animated fadeInDown">Solicitud de pagos a proveedores</h3>
+      </div>
+      <div class="ban-row animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--dropdowns">
+            <label>Quiero pagar en esta moneda</label>
+            <md-select name="monedapago" ng-model="banchilepay.monedapago">
+              <md-option value="1">Peso</md-option>
+              <md-option value="2">Dolar</md-option>
+              <md-option value="3">Euro</md-option>
+            </md-select>
+            <div class="input--hint_select">Seleccione moneda de pago</div>
+            <div ng-messages="banchilepayForm.pagarDesde.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--dropdowns input--responsive">
+            <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
+              Quiero usar una plantilla
+            </md-checkbox>
+          </md-input-container>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--dropdowns">
+            <label>Seleccione plantilla</label>
+            <md-select name="plantilla" ng-model="banchilepay.platilla">
+              <md-option value="1">Plantilla-1</md-option>
+              <md-option value="2">Plantilla-2</md-option>
+              <md-option value="3">Plantilla-3</md-option>
+            </md-select>
+            <div class="input--hint_select">Guardada anteriormente</div>
+            <div ng-messages="banchilepayForm.pagarDesde.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+          <md-input-container class="input--dropdowns">
+            <label>Quiero guardar esta plantilla</label>
+            <input class="input--text_monto">
+            <div class="input--hint_select">Nombre de la plantilla</div>
+            <div ng-messages="banchilepayForm.monto.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+      </div>
+      <div ng-controller="agregarOtro">
+        <div class="contenedor--subtitulo subtitulos__usuarios">
+          <div class="ban-row">
+            <div class="ban-col-xs-9 ban-col-sm-9 ban-col-md-9">
+              <h3 class="subtitulo">Ingresar destinos del pago</h3>
+            </div>
+            <div class="ban-col-xs-3 ban-col-sm-3 ban-col-md-3 h--alignRight">
+              <div class="subtitulo--boton">
+                <md-button class="md-icon-button boton--agregar" ng-click="add()">
+                  <md-icon class="boton--agregar--icon">
+                    <i class="material-icons boton--agregar--plus">add</i>
+                    <md-tooltip>Agregar otra dirección</md-tooltip>
+                  </md-icon>
+                </md-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ng-repeat="item in items">
+          <div class="contenedor--subtitulo" ng-if="!$first">
+            <div class="ban-row animated fadeInDown">
+              <div class="ban-col-xs-7 ban-col-sm-9 ban-col-md-10">
+                <h3 class="subtitulo subtitulo__agregar">Otro banco intermediario</h3>
+              </div>
+              <div class="ban-col-xs-5 ban-col-sm-3 ban-col-md-2 h--alignRight">
+                <div class="subtitulo--boton boton--color">
+                  <md-button class="md-icon-button boton--color" aria-label="eliminar" ng-click="add()">
+                    <md-icon>
+                      <i class="material-icons boton--color">add</i>
+                    </md-icon>
+                    <md-tooltip>
+                      Agregar otro
+                    </md-tooltip>
+                  </md-button>
+                </div>
+                <div class="subtitulo--boton boton--color">
+                  <md-button class="md-icon-button boton--color" aria-label="eliminar" ng-click="remove($index)">
+                    <md-icon>
+                      <i class="material-icons boton--color">&#xE872;</i>
+                    </md-icon>
+                    <md-tooltip>
+                      Eliminar
+                    </md-tooltip>
+                  </md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ban-row animated fadeInDown">
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>A mi beneficiario</label>
+                <md-select name="beneficiario" ng-model="banchilepay.beneficiario">
+                  <md-option value="1">Beneficiario 1</md-option>
+                  <md-option value="2">Beneficiario 2</md-option>
+                  <md-option value="3">Beneficiario 3</md-option>
+                </md-select>
+                <div class="input--hint_select">Previamente registrado</div>
+                <div ng-messages="banchilepayForm.BancoCuenta.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>En el Banco y Cuenta</label>
+                <md-select required name="BancoCuenta" ng-model="banchilepay.BancoCuenta">
+                  <md-option value="1">Banco/cuenta 0001</md-option>
+                  <md-option value="2">Banco/cuenta 0002</md-option>
+                  <md-option value="3">Banco/cuenta 0003</md-option>
+                </md-select>
+                <div class="input--hint_select">Definidos en el registro de beneficiarios</div>
+                <div ng-messages="banchilepayForm.BancoCuenta.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Por Concepto de pago</label>
+                <md-select name="ConceptoPago" ng-model="banchilepay.ConceptoPago">
+                  <md-option value="1">0001 Concepto de Pago</md-option>
+                  <md-option value="2">0002 Concepto de Pago</md-option>
+                  <md-option value="3">0003 Concepto de Pago</md-option>
+                </md-select>
+                <div class="input--hint_select">Asociado a código de Banco Central</div>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-3">
+              <md-input-container class="input--dropdowns">
+                <label>Un monto de</label>
+                <p class="input--txt_pay">US$</p>
+                <input class="input--text_monto" placeholder="$0">
+                <div class="input--hint_select">A pagar a mi beneficiario</div>
+                <div ng-messages="banchilepayForm.monto.$error">
+                  <div ng-message="required">Este campo es obligatorio.</div>
+                </div>
+                <p class="comision--texto">Comisión por transferencia</p>
+                <p class="comision--valor">US$ 20</p>
+              </md-input-container>
+            </div>
+            <div class="ban-col-sm-6 ban-col-md-9">
+              <md-input-container class="input--dropdowns">
+                <label>Observaciones</label>
+                <textarea rows="1" md-select-on-focus="" placeholder="Ingresa tus observaciones "></textarea>
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- total a pagar-->
+      <div class="ban-row animated fadeInDown">
+        <div class="ban-col-sm-6 ban-col-sm-offset-6 ban-col-md-3 ban-col-md-offset-9 h--marginTop_5_5">
+          <div class="banchile--totales">
+            <md-input-container class="input--dropdowns">
+              <label>Total a pagar
+                        <md-icon class="input--icon"><i class="material-icons">&#xE88E;</i></md-icon>
+                        <md-tooltip md-direction="bottom">Los pagos tendrán valuta 24 o 48 horas dependiendo del fondo seleccionado.</md-tooltip>
+                         </label>
+              <p class="input--txt_pay">US$</p>
+              <input class="input--text_monto" ng-model="user.total0" placeholder="$0">
+              <div ng-messages="banchilepayForm.monto.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+      <!-- total a pagar-->
+      <div class="contenedor--subtitulo">
+        <h3 class="subtitulo animated fadeInDown">Ingresar origen del pago</h3>
+      </div>
+      <div class="ban-row animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3 h--marginRight50">
+          <md-input-container class="input--dropdowns">
+            <label>Quiero pagar desde mi</label>
+            <md-select name="pagarDesde" ng-model="pagarDesde">
+              <md-option value="1">Fondo Nacional en pesos</md-option>
+              <md-option value="2">Fondo Internacional en dólares</md-option>
+              <!-- <md-option value="3">Fondo Internacional 003</md-option> -->
+            </md-select>
+            <div class="input--hint_select">Cuenta de origen</div>
+            <div ng-messages="banchilepayForm.pagarDesde.$error">
+              <div ng-message="required">Este campo es obligatorio.</div>
+            </div>
+          </md-input-container>
+        </div>
+        <div ng-show="pagarDesde == '1'" class="animated fadeInDown input--ingresar">
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+            <div class="producto--info info--direccion">
+              <p class="md-caption info--caption info--caption__label">Tengo un disponible de</p>
+              <p class="md-subhead"><span class="info_montoleft">$</span>500.000</p>
+            </div>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+            <div class="producto--info">
+              <p class="md-caption info--caption info--caption__label">Equivalente a</p>
+              <p class="md-subhead"><span class="info_montoleft">US$</span>680.000</p>
+            </div>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-sm-offset-6 ban-col-md-3 ban-col-md-offset-0 h--marginTopinput">
+            <md-input-container class="input--dropdowns">
+              <label>Quiero comprar</label>
+              <p class="input--txt_pay">US$</p>
+              <input class="input--text_monto" ng-model="user.usar" placeholder="$0">
+              <div class="input--hint_select"></div>
+              <div ng-messages="banchilepayForm.monto.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+              <p class="comision--texto"></p>
+              <p class="comision--valor"></p>
+            </md-input-container>
+          </div>
+        </div>
+        <div ng-show="pagarDesde == '2'" class="animated fadeInDown input--ingresar">
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+            <div class="producto--info info--direccion">
+              <p class="md-caption info--caption info--caption__label">Tengo un disponible de</p>
+              <p class="md-subhead"><span class="info_montoleft">US$</span>680.000</p>
+            </div>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-3">
+            <div class="producto--info">
+              <p class="md-caption info--caption info--caption__label">Equivalente a</p>
+              <p class="md-subhead"><span class="info_montoleft">$</span>500.000</p>
+            </div>
+          </div>
+          <div class="ban-col-xs-12 ban-col-sm-6 ban-col-sm-offset-6 ban-col-md-3 ban-col-md-offset-0 h--marginTopinput">
+            <md-input-container class="input--dropdowns h--marginBottom0">
+              <label>Quiero comprar</label>
+              <p class="input--txt_pay">US$</p>
+              <input class="input--text_monto" ng-model="user.usar" placeholder="$0">
+              <div class="input--hint_select"></div>
+              <div ng-messages="banchilepayForm.monto.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+              <p class="comision--texto"></p>
+              <p class="comision--valor"></p>
+            </md-input-container>
+          </div>
+          <div class="ban-col-sm-6 ban-col-md-3 ban-col-md-offset-9">
+            <div class="actual--dolar producto--info__conimagen">
+              <div class="contenedorValor">
+                <p class="md-caption info--caption info--caption__label info--caption__labelPadding">Valor actual del dolar</p>
+                <p class="md-subhead"><span class="info_montoleft">US$</span>650</p>
+              </div>
+              <div class="progresscirculo">
+                <div class="progress-wrapper" ng-controller="timerProgress">
+                  <div class="progress ng-cloak" ng-style="getStyle()">{{ time }}</div>
+                  <round-progress max="59" current="seconds" color="#F6A623" bgcolor="transparent" radius="{{ radius*0.27 }}" semi="isSemi" rounded="rounded" clockwise="clockwise" responsive="responsive" stroke="{{ stroke*0.38 }}" animation="{{ currentAnimation }}" offset="inherit"></round-progress>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Total a distribuir-->
+      <div class="ban-row animated fadeInDown">
+        <div class="ban-col-sm-6 ban-col-sm-offset-6 ban-col-md-3 ban-col-md-offset-9">
+          <div class="banchile--totales">
+            <md-input-container class="input--dropdowns">
+              <label>Total a distribuir
+                        <md-icon class="input--icon"><i class="material-icons">&#xE88E;</i></md-icon>
+                        <md-tooltip md-direction="bottom">Los montos disponibles tienen una reserva debido a eventuales diferencias en la valoración de las cuotas al momento de efectuar el pago</md-tooltip>
+                        </label>
+              <p class="input--txt_pay">US$</p>
+              <input class="input--text_monto" ng-model="user.total0" placeholder="$0">
+              <div ng-messages="banchilepayForm.monto.$error">
+                <div ng-message="required">Este campo es obligatorio.</div>
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ban-row animated fadeInDown">
+        <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+          <div class="contenedor--subtitulo h--borde animated fadeInDown">
+            <h3 class="subtitulo">Términos y condiciones</h3>
+          </div>
+          <div class="condiciones">
+            <div class="ban-row">
+              <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                <div class="condiciones--texto" height="200">Declaro que he sido informado de lo siguiente:
+                  <p>El Cliente declara su intención de entregar en administración a Banchile Administradora General de Fondos S.A. activos de su propiedad, para ser invertidos única y exclusivamente en Fondos Mutuos administrados por la misma Administradora,
+                    de modo que ésta, por cuenta y riesgo del Cliente, pueda decidir su inversión, enajenación y demás actividades que correspondan, de acuerdo a las disposiciones del presente Contrato y a las normas legales o reglamentarias vigentes
+                    o que se dicten en el futuro.
+                    <p>Las partes entienden por “Activos” la totalidad de los recursos en efectivo y cuotas de fondos mutuos de que el Cliente sea titular y que éste entregue a la Administradora para su administración, así como las cuotas de fondos mutuos
+                      que éste adquiera para el Cliente en dicha administración y los dividendos y rescates provenientes de las respectivas inversiones que la Administradora efectúe por cuenta del Cliente. En el Anexo al Contrato de Administración de
+                      Cartera en Fondos Mutuos se contempla el “Plan de Inversión” donde se señala la Cartera de Fondos Mutuos administrados por la Administradora en la que se deberán mantener invertidos los Activos del Cliente, según se define más adelante.
+                      El Cliente podrás mantener una o más Carteras objeto de inversión, las que serán administradas por la Administradora, de acuerdo a los límites establecidos en el respectivo Anexo Plan de Inversión. Con todo, previa firma de un nuevo
+                      Anexo, el Cliente podrás siempre y en cualquier tiempo cambiarse de una Cartera a otra a partir del primer proceso de ajuste, según se señala más adelante. Por “Cartera” se entenderá aquel conjunto de cuotas de aquellos fondos mutuos
+                      administrados por la Administradora, que componen cada una de las categorías de fondos mutuos en las cuales se invertirán los activos del Cliente. Existirán 7 Carteras denominadas: Cartera Protegida, Cartera Defensiva, Cartera Controlada,
+                      Cartera Moderada, Cartera Equilibrada, Cartera Potenciada y Cartera Agresiva, cuyas características, Activo objeto y límites, están definidos en los respectivos Anexos. Sin perjuicio de lo anterior, el número de carteras puede aumentarse
+                      en el futuro, de común acuerdo por las partes, mediante la formalización de un nuevo Anexo. Cada vez que el presente Contrato se refiera a la palabra “Fondos Mutuos”, deberá entenderse por tal aquel patrimonio a que se refiere el
+                      artículo 28 de la Ley número 20.712 de 2014, administrado para estos efectos por Banchile Administradora General de Fondos S.A.
+                    </p>
+                  </p>
+                </div>
+                <md-input-container class="input--dropdowns">
+                  <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+                    He leído y acepto las condiciones
+                  </md-checkbox>
+                </md-input-container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-show="datachecked.check">
+      <div ng-include src="'autorizaciones/autorizacion.html'"></div>
+    </div>
+    <!-- bloque 03 -->
+  </div>
+</section>

@@ -1,0 +1,73 @@
+//INICIO BACKGROUND
+
+.contenido--background {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 345px;
+  position: fixed;
+  top: 0;
+
+  &.consultar-empresa {
+    background-image: url("../images/fondosweb/fondoConsultar-empresa2.png");
+  }
+
+  &.consultar-persona {
+    background-image: url("../images/fondosweb/fondoConsultar-empresa2.png");
+  }
+
+  &.invertir-empresa {
+    background-image: url("../images/fondosweb/fondoInvertir-empresa.jpg");
+  }
+
+  &.servicios-empresa {
+    background-image: url("../images/fondosweb/fondoServicios-empresa.png");
+  }
+
+  &.invertir-persona {
+    background-image: url("../images/fondosweb/fondoInvertir-persona.jpg");
+  }
+
+  &.asesoria-persona {
+    background-image: url("../images/fondosweb/Bg-Seccion_Asesoria.png");
+  }
+
+  &.reputacion-persona {
+    background-image: url("../images/fondosweb/Bg-Seccion_Reputacion.jpg");
+  }
+
+  &.definir-persona {
+    background-image: url("../images/fondosweb/fondoDefinir-persona.png");
+  }
+
+  &.definir-empresa {
+    background-image: url("../images/fondosweb/fondoDefinir-persona.png");
+  }
+
+  &.resumen-consultar {
+    background-image: url("../images/resumen-fondoConsultar.jpg");
+  }
+
+  &.informe-persona {
+    background-image: url("../images/Bg-Seccion_Asesoria.png");
+  }
+
+  &.landing-publico {
+    background-image: url("../images/fondosweb/fondoLanding.png");
+  }
+}
+
+.persona-actualizacion {
+  height: 799px;
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("../images/1bg_enrolamieniento.jpg");
+}
+//FIN BACKGROUND

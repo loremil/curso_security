@@ -1,0 +1,33 @@
+<div class="contenedor--subtitulo subt--noborder subtitulos__usuarios" ng-controller="animateCtrl">
+  <div class="ban-row no_visible" when-visible="a_fadein">
+    <div class="ban-col-md-6">
+      <div class="autorizacionSms">
+        <div class="autorizacionSms--contenedor" ng-controller="modalesCrtl">
+          <md-button class="md-raised autorizacionSms--boton" ng-click="showAutorizarBeneficiario($event)">
+            <md-icon class="boton--icon"><i class="material-icons">phone_iphone</i></md-icon>
+            <span class="boton--texto">Generar SMS</span>
+          </md-button>
+        </div>
+        <div class="texto--sms">
+          <md-icon class="boton--icon"><i class="material-icons">info</i></md-icon>
+          <p class="">Un SMS llegará a tu celular para autorizar tu operación de manera fácil, rápida y segura</p>
+        </div>
+      </div>
+    </div>
+    <div class="ban-col-md-6">
+      <div class="claveSeguridad" ng-controller="modalesCrtl">
+        <div class="claveSeguridad--input">
+          <md-input-container class="input--dropdowns">
+            <label>Ingrese clave</label>
+            <md-icon class="dropdowns--icon">
+              <i class="material-icons">verified_user</i></md-icon>
+            <input ng-model="user.autorizacion">
+          </md-input-container>
+        </div>
+        <div class="claveSeguridad--buton" ng-controller="modalesCrtl">
+          <md-button ng-click="showAgregarUsuario($event)" class="boton1 confirmacion--boton md-raised no_visible" when-visible="a_fadeup1">Agregar</md-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

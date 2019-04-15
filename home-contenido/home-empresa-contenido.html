@@ -1,0 +1,609 @@
+<!-- actualización jorge 16-08 -->
+<section class="homePresentacion" id="my-video">
+  <div class="ban-container">
+    <div class="homePresentacion--contenedor a_fadein">
+      <h1 class="titulo ">LA VISIÓN DEL LÍDER</h1>
+      <h2 class="subtitulo ">Tenemos una alternativa para <br>ti y sabemos cual elegir</h2>
+    </div>
+  </div>
+  <!-- nuevo ks-swipper -->
+  <div id="sliderhomeContenedor" class="ban-container">
+    <div class="sliderHome a_fadein" ng-controller="TestCtrl">
+      <ks-swiper-container autoplay="3000" loop="true" swiper="swiper" pagination-is-active="true" on-ready="onReadySwiper(swiper)">
+        <ks-swiper-slide class="swiper-slide ">
+          <a href="landing.html" target="_blank">
+            <div class="contenedorSliderHome  h--shadowBoxBlack">
+              <img src="assets/images/bannerSlider-1-P.png">
+              <div class="contenedorSliderHome--mensaje">
+                <h4>MERCADO DE VALORES EXTRANJEROS</h4>
+                <p>Invierte de manera fácil, ágil y segura en el mercado de valores extranjero en Chile.</p>
+              </div>
+            </div>
+          </a>
+        </ks-swiper-slide>
+        <ks-swiper-slide class="swiper-slide">
+          <a href="landing.html" target="_blank">
+            <div class="contenedorSliderHome  h--shadowBoxBlack">
+              <img src="assets/images/bannerSlider-2-P.png">
+              <div class="contenedorSliderHome--mensaje">
+                <h4>BANCHILE PAY</h4>
+                <p>Pago a Proveedores nacionales o extranjeros en línea.</p>
+              </div>
+            </div>
+          </a>
+        </ks-swiper-slide>
+        <ks-swiper-slide class="swiper-slide ">
+          <a href="landing.html" target="_blank">
+            <div class="contenedorSliderHome  h--shadowBoxBlack">
+              <img src="assets/images/bannerSlider-3-P.png">
+              <div class="contenedorSliderHome--mensaje">
+                <h4>SOLIDEZ Y RESPALDO</h4>
+                <p>Solidez y respaldo para tus inversiones</p>
+              </div>
+            </div>
+          </a>
+        </ks-swiper-slide>
+      </ks-swiper-container>
+    </div>
+  </div>
+  <!-- nuevo ks-swipper -->
+  <div class="video--home">
+    <video autoplay loop muted>
+      <source src="assets/media/empresa.mp4" type="video/mp4" />
+    </video>
+  </div>
+</section>
+<section class="homeIndicadores">
+  <div class="ban-container">
+    <div class="sliderIndicadoresHome" ng-controller="sliderIndicadoresHome">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="contenedorIndicador">
+              <div class="indicadorNombre">
+                <p>Dólar Observado</p>
+              </div>
+              <div class="indicadorEstructura">
+                <div class="indicadorDatos">
+                  <p class="indicadorPrecio">$650,09</p>
+                  <p class="indicadorVariacion td--valoresVerde">0,02%</p>
+                </div>
+                <div class="indicadorGrafico">
+                  <hc-chart-cinta idgraf="1" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="contenedorIndicador">
+              <div class="indicadorNombre">
+                <p>Euro</p>
+              </div>
+              <div class="indicadorEstructura">
+                <div class="indicadorDatos">
+                  <p class="indicadorPrecio">$716,04</p>
+                  <p class="indicadorVariacion td--valoresRojo">0,12%</p>
+                </div>
+                <div class="indicadorGrafico">
+                  <hc-chart-cinta idgraf="2" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="contenedorIndicador">
+              <div class="indicadorNombre">
+                <p>IPSA</p>
+              </div>
+              <div class="indicadorEstructura">
+                <div class="indicadorDatos">
+                  <p class="indicadorPrecio">$4.138,59</p>
+                  <p class="indicadorVariacion td--valoresVerde">0,99%</p>
+                </div>
+                <div class="indicadorGrafico">
+                  <hc-chart-cinta idgraf="3" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="contenedorIndicador">
+              <div class="indicadorNombre">
+                <p>IGPA</p>
+              </div>
+              <div class="indicadorEstructura">
+                <div class="indicadorDatos">
+                  <p class="indicadorPrecio">$20.418,29</p>
+                  <p class="indicadorVariacion td--valoresRojo">0,26%</p>
+                </div>
+                <div class="indicadorGrafico">
+                  <hc-chart-cinta idgraf="1" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="contenedorIndicador">
+              <div class="indicadorNombre">
+                <p>UF</p>
+              </div>
+              <div class="indicadorEstructura">
+                <div class="indicadorDatos">
+                  <p class="indicadorPrecio">$27.598.658</p>
+                  <p class="indicadorVariacion td--valoresRojo">1,1%</p>
+                </div>
+                <div class="indicadorGrafico">
+                  <hc-chart-cinta idgraf="2" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="contenedorIndicador">
+              <div class="indicadorNombre">
+                <p>INSXS</p>
+              </div>
+              <div class="indicadorEstructura">
+                <div class="indicadorDatos">
+                  <p class="indicadorPrecio">$144,04</p>
+                  <p class="indicadorVariacion td--valoresVerde">0,69%</p>
+                </div>
+                <div class="indicadorGrafico">
+                  <hc-chart-cinta idgraf="3" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="contenedorIndicador">
+              <div class="indicadorNombre">
+                <p>IPC</p>
+              </div>
+              <div class="indicadorEstructura">
+                <div class="indicadorDatos">
+                  <p class="indicadorPrecio">0.02%</p>
+                  <p class="indicadorVariacion td--valoresVerde">0,10%</p>
+                </div>
+                <div class="indicadorGrafico">
+                  <hc-chart-cinta idgraf="1" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="contenedorIndicador">
+              <div class="indicadorNombre">
+                <p>UTM</p>
+              </div>
+              <div class="indicadorEstructura">
+                <div class="indicadorDatos">
+                  <p class="indicadorPrecio">$46,251</p>
+                  <p class="indicadorVariacion td--valoresVerde">0,69%</p>
+                </div>
+                <div class="indicadorGrafico">
+                  <!-- <img src="assets/images/indicadores-down.png" class="img-responsive"> -->
+                  <hc-chart-cinta idgraf="2" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="homeProductos color--fondo">
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="ban-col-sm-12 no_visible" when-visible="a_fadeup1">
+      <h2 class="titulo">Productos y servicios</h2>
+      <hr class="titulo-linea">
+    </div>
+    <div class="ban-row">
+      <div class="ban-col-sm-4 ban-col-md-4">
+        <div class="slide-up no_visible" when-visible="a_fadeup1">
+          <div class="productos--bloque producto--fondo">
+            <div class="producto--filtro"></div>
+            <div class="productos--icono"><i class="material-icons">group_work</i></div>
+            <div class="productos--textos">
+              <h3 class="productos--titulos">Fondos Mutuos</h3>
+            </div>
+            <p class="productos--parrafo hide show-xs show-sm">Alternativas de inversión que permiten tanto a personas naturales como jurídicas, acceder a distintos mercados de una manera fácil, cómoda y conveniente.</p>
+            <div class="producto--overlay">
+              <p class="productos--parrafo">Alternativas de inversión que permiten tanto a personas naturales como jurídicas, acceder a distintos mercados de una manera fácil, cómoda y conveniente.</p>
+              <a ng-href="#fondos-mutuos-publico-empresa" class="linkProductos"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-sm-4 ban-col-md-4">
+        <div class="slide-up no_visible" when-visible="a_fadeup2">
+          <div class="productos--bloque producto--acciones">
+            <div class="producto--filtro"></div>
+            <div class="productos--icono"><i class="material-icons">trending_up</i></div>
+            <div class="productos--textos">
+              <h3 class="productos--titulos">Acciones</h3>
+            </div>
+            <p class="productos--parrafo hide show-xs show-sm">Podrás comprar y vender todas las acciones transadas en la Bolsa de Comercio de Santiago y en la Bolsa Electrónica de Chile, con un excelente servicio y una rápida y eficiente ejecución de las órdenes.
+            </p>
+            <div class="producto--overlay">
+              <p class="productos--parrafo">Podrás comprar y vender todas las acciones transadas en la Bolsa de Comercio de Santiago y en la Bolsa Electrónica de Chile, con un excelente servicio y una rápida y eficiente ejecución de las órdenes.
+              </p>
+              <a ng-href="#acciones-home-publico-empresa" class="linkProductos"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-sm-4 ban-col-md-4">
+        <div class="slide-up no_visible" when-visible="a_fadeup3">
+          <div class="productos--bloque producto--mx">
+            <div class="producto--filtro"></div>
+            <div class="productos--icono"><i class="material-icons">monetization_on</i></div>
+            <div class="productos--textos">
+              <h3 class="productos--titulos">Moneda Extranjera</h3>
+            </div>
+            <p class="productos--parrafo hide show-xs show-sm">Podrás realizar transacciones con dólares y otras monedas, obteniendo una gestión rápida y segura en todas las operaciones.</p>
+            <div class="producto--overlay">
+              <p class="productos--parrafo">Podrás realizar transacciones con dólares y otras monedas, obteniendo una gestión rápida y segura en todas las operaciones.</p>
+              <a ng-href="#moneda-publico-empresa" class="linkProductos"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-sm-4 ban-col-md-4">
+        <div class="slide-up no_visible" when-visible="a_fadeup1">
+          <div class="productos--bloque producto--rentafija">
+            <div class="producto--filtro"></div>
+            <div class="productos--icono"><i class="material-icons">account_balance</i></div>
+            <div class="productos--textos">
+              <h3 class="productos--titulos">Renta Fija</h3>
+            </div>
+            <p class="productos--parrafo hide show-xs show-sm">Te ofrecemos la posibilidad de invertir en instrumentos de renta fija, optimizando la combinación de rentabilidad, flexibilidad y liquidez.</p>
+            <div class="producto--overlay">
+              <p class="productos--parrafo">Te ofrecemos la posibilidad de invertir en instrumentos de renta fija, optimizando la combinación de rentabilidad, flexibilidad y liquidez.</p>
+              <a ng-href="#renta-fija-publico-empresa" class="linkProductos"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-sm-4 ban-col-md-4">
+        <div class="slide-up no_visible" when-visible="a_fadeup2">
+          <div class="productos--bloque producto--mercado">
+            <div class="producto--filtro"></div>
+            <div class="productos--icono"><i class="material-icons">language</i></div>
+            <div class="productos--textos">
+              <h3 class="productos--titulos">Mercado de Valores Extranjeros</h3>
+            </div>
+            <p class="productos--parrafo hide show-xs show-sm">Podrás invertir en los mercados internacionales, teniendo la posibilidad de comprar y vender valores extranjeros como acciones y ETF's que actualmente se encuentran transando en la Bolsa de Comercio de Santiago.</p>
+            <div class="producto--overlay">
+              <p class="productos--parrafo">Podrás invertir en los mercados internacionales, teniendo la posibilidad de comprar y vender valores extranjeros como acciones y ETF's que actualmente se encuentran transando en la Bolsa de Comercio de Santiago.</p>
+              <a ng-href="#mercado-extranjero-publico-empresa" class="linkProductos"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-sm-4 ban-col-md-4">
+        <div class="slide-up no_visible" when-visible="a_fadeup3">
+          <div class="productos--bloque producto--derivados">
+            <div class="producto--filtro"></div>
+            <div class="productos--icono"><i class="material-icons">share</i></div>
+            <div class="productos--textos">
+              <h3 class="productos--titulos">Derivados</h3>
+            </div>
+            <p class="productos--parrafo hide show-xs show-sm">Podrás acceder a productos de inversión más complejos como son los Productos Derivados, cuyo valor depende de un activo subyacente.</p>
+            <div class="producto--overlay">
+              <p class="productos--parrafo">Podrás acceder a productos de inversión más complejos como son los Productos Derivados, cuyo valor depende de un activo subyacente.</p>
+              <a ng-href="#productos-derivados-publico-empresa" class="linkProductos"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-sm-4 ban-col-md-4">
+        <div class="slide-up no_visible" when-visible="a_fadeup1">
+          <div class="productos--bloque producto--banchilepay">
+            <div class="producto--filtro"></div>
+            <div class="productos--icono"><i class="material-icons">pie_chart</i></div>
+            <div class="productos--textos">
+              <h3 class="productos--titulos">Banchile Pay</h3>
+            </div>
+            <p class="productos--parrafo hide show-xs show-sm">Nuevo servicio para empresas le permitirá gestionar tus pagos a proveedores en el extranjero de manera rápida, fácil y eficaz </p>
+            <div class="producto--overlay">
+              <p class="productos--parrafo">Nuevo servicio para empresas le permitirá gestionar tus pagos a proveedores en el extranjero de manera rápida, fácil y eficaz.</p>
+              <a ng-href="#banchilepay" class="linkProductos"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-sm-4 ban-col-md-4">
+        <div class="slide-up no_visible" when-visible="a_fadeup2">
+          <div class="productos--bloque producto--fondoinversion">
+            <div class="producto--filtro"></div>
+            <div class="productos--icono"><i class="material-icons">spa</i></div>
+            <div class="productos--textos">
+              <h3 class="productos--titulos">Fondos de Inversión</h3>
+            </div>
+            <p class="productos--parrafo hide show-xs show-sm">Alternativa que reúne patrimonios de distintas personas para invertirlos en valores de oferta pública nacional e internacional. Además, cuentan con un plazo de inversión determinado y el número de cuotas es limitado.</p>
+
+            <div class="producto--overlay">
+              <p class="productos--parrafo">Alternativa que reúne patrimonios de distintas personas para invertirlos en valores de oferta pública nacional e internacional. Además, cuentan con un plazo de inversión determinado y el número de cuotas es limitado.</p>
+
+              <a ng-href="#fondos-inversion-publico-empresa" class="linkProductos"></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-col-sm-4 ban-col-md-4">
+      </div>
+    </div>
+  </div>
+</section>
+<section parallax-background parallax-ratio="0.5" class="homeInvierte paraxify">
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="ban-col-sm-12 no_visible" when-visible="a_fadeup1">
+      <h2 class="titulo">Invierte como un experto con nuestra APP</h2>
+      <hr class="titulo-linea">
+    </div>
+    <div class="ban-row">
+      <div class="ban-col-md-12">
+        <div class="invierte--bloque">
+          <p class="invierte--parrafo no_visible" when-visible="a_fadein">Puedes revisar la información detallada sobre tus inversiones y operar sobre tus productos en línea de manera segura y ágil.</p>
+          <div class="invierte--app no_visible" when-visible="a_fadeup1">
+            <img src="assets/images/app_store2x.png" class="botonAppstore" href="#">
+            <img src="assets/images/google_play2x.png" class="botonAppstore" href="#">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="homeLideres">
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="ban-col-md-12 no_visible" when-visible="a_fadeup1">
+      <h2 class="titulo">Reputación y respaldo</h2>
+      <hr class="titulo-linea">
+    </div>
+    <div class="ban-row">
+      <div class="ban-col-md-12 no_visible" when-visible="a_fadein">
+        <div class="lideres--bloque">
+          <p class="lideres--parrafo">Entregamos un servicio de excelencia basado en la asesoría y capacidad de acceso para la selección de activos y conformación de portafolios de inversión precisos. Por más de 35 años hemos forjado una sólida reputación y nos hemos consolidado
+            como líderes del mercado nacional.</p>
+          <img class="lideres--imagen" alt="" src="assets/images/logo-win.png">
+          <div class="premiosReconocimientos no_visible" when-visible="a_fadeup1">
+            <md-button ng-href="#premios-reconocimientos" class="botonCliente md-raised primario md-button md-ink-ripple" type="button" ng-transclude="">
+              <span class="ng-scope">Premios y reconocimientos</span>
+            </md-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section parallax-background parallax-ratio="0.2" class="homeInformate paraxify">
+  <div ng-controller="animateCtrl" class="ban-container">
+    <div class="ban-col-sm-12 no_visible" when-visible="a_fadeup1">
+      <h2 class="titulo ">Información para mis decisiones</h2>
+      <hr class="titulo-linea ">
+    </div>
+    <div class="ban-row">
+      <div class="ban-col-md-12">
+        <div class="informate--bloque">
+          <p class="informate--parrafo no_visible" when-visible="a_fadein">Los estudios de empresas elaborados por el Departamento de Estudios de Banchile Inversiones muestran estimaciones de resultados, precios objetivos y recomendaciones de inversión para distintas compañías nacionales.
+          </p>
+          <div ng-controller="sliderInformesDepto">
+            <ks-swiper-container class="sliderCards" override-parameters="parametrosPatrimonio" show-nav-buttons="true">
+              <ks-swiper-slide>
+                <div class="ban-col-md-12">
+                  <div class="items--caja h--shadowBox">
+                    <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_ Document-DocumentoEnviado.png" alt="">
+                    <p class="caja--subtitulo">Informe Semanal</p>
+                    <p class="caja--texto">Análisis de la evolución macroeconómica tanto local como internacional y su impacto.</p>
+                    <div class="botones-caja">
+                      <md-button md-no-ink class="md-primary md-button" ng-href="assets/images/semanal.pdf" target="_blank">DESCARGAR </md-button>
+                    </div>
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- cajaTranzadas -->
+              <!-- cajaTranzadas -->
+              <ks-swiper-slide>
+                <div class="ban-col-md-12">
+                  <div class="items--caja h--shadowBox">
+                    <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_BusinessPeople-Presentacion.png" alt="">
+                    <p class="caja--subtitulo">Informe Bursátil</p>
+                    <p class="caja--texto">Análisis de la evolución macroeconómica tanto local como internacional y su impacto.</p>
+                    <div class="botones-caja">
+                      <md-button md-no-ink class="md-primary md-button" ng-href="assets/images/semanal.pdf" target="_blank">DESCARGAR </md-button>
+                    </div>
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- cajaTranzadas -->
+              <!-- cajaTranzadas -->
+              <ks-swiper-slide>
+                <div class="ban-col-md-12">
+                  <div class="items--caja h--shadowBox">
+                    <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_ Business-Banco.png" alt="">
+                    <p class="caja--subtitulo">Informe Mensual Economía</p>
+                    <p class="caja--texto">Análisis de la evolución macroeconómica tanto local como internacional y su impacto.</p>
+                    <div class="botones-caja">
+                      <md-button md-no-ink class="md-primary md-button" ng-href="login-empresa.html" target="_blank">DESCARGAR<i class="material-icons">lock_outline</i> </md-button>
+                    </div>
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- cajaTranzadas -->
+              <!-- cajaTranzadas -->
+              <ks-swiper-slide>
+                <div class="ban-col-md-12">
+                  <div class="items--caja h--shadowBox">
+                    <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Performance-TiempoLimite.png" alt="">
+                    <p class="caja--subtitulo">Informe Flash de Economía</p>
+                    <p class="caja--texto">Análisis macro tras la publicación de cifras económicas como Imacec, producción industrial, IPC y más. </p>
+                    <div class="botones-caja">
+                      <md-button md-no-ink class="md-primary md-button" ng-href="login-empresa.html" target="_blank">DESCARGAR<i class="material-icons">lock_outline</i> </md-button>
+                    </div>
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- cajaTranzadas -->
+              <!-- cajaTranzadas -->
+              <ks-swiper-slide>
+                <div class="ban-col-md-12">
+                  <div class="items--caja h--shadowBox">
+                    <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_ BusinessGlobal-Transacciones.png" alt="">
+                    <p class="caja--subtitulo">Informe Mensual de Renta Fija</p>
+                    <p class="caja--texto">Análisis del mercado con énfasis en TPM, incluye estadísticas sobre bonos corporativos.</p>
+                    <div class="botones-caja">
+                      <md-button md-no-ink class="md-primary md-button" ng-href="login-empresa.html">DESCARGAR <i class="material-icons">lock_outline</i></md-button>
+                    </div>
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- cajaTranzadas -->
+              <!-- cajaTranzadas -->
+              <ks-swiper-slide>
+                <div class="ban-col-md-12">
+                  <div class="items--caja h--shadowBoxNoHover">
+                    <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_ BusinessGlobal-Edificios.png" alt="">
+                    <p class="caja--subtitulo">Informe de Empresas</p>
+                    <p class="caja--texto">Recomendaciones y proyecciones de largo plazo sobre las compañías bajo cobertura.</p>
+                    <div class="botones-caja">
+                      <md-button md-no-ink class="md-primary md-button" ng-href="login-empresa.html">DESCARGAR <i class="material-icons">lock_outline</i></md-button>
+                    </div>
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- cajaTranzadas -->
+              <ks-swiper-slide>
+                <div class="ban-col-md-12">
+                  <div class="items--caja h--shadowBoxNoHover">
+                    <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_Marketing-Estrategia.png" alt="">
+                    <p class="caja--subtitulo">Informe de Estrategia</p>
+                    <p class="caja--texto">Visión sobre el mercado tanto del punto de vista macroeconómico, renta variable y renta fija del país.</p>
+                    <div class="botones-caja">
+                      <md-button md-no-ink class="md-primary md-button" ng-href="login-empresa.html">DESCARGAR <i class="material-icons">lock_outline</i></md-button>
+                    </div>
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <ks-swiper-slide>
+                <div class="ban-col-md-12">
+                  <div class="items--caja h--shadowBox">
+                    <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_ Diagram-GraficoMixto.png" alt="">
+                    <p class="caja--subtitulo">Informe de Estadísticas</p>
+                    <p class="caja--texto"> Visión de los distintos sectores de la economía chilena, como así también de flujos accionarios.</p>
+                    <div class="botones-caja">
+                      <md-button md-no-ink class="md-primary md-button" ng-href="login-empresa.html">DESCARGAR <i class="material-icons">lock_outline</i></md-button>
+                    </div>
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- cajaTranzadas -->
+              <!-- cajaTranzadas -->
+              <ks-swiper-slide>
+                <div class="ban-col-md-12">
+                  <div class="items--caja h--shadowBox">
+                    <img class="caja--icono h--marginTop1" src="assets/images/iconosDisplay/IcoDisplay_ BusinessGlobal-Banderas.png" alt="">
+                    <p class="caja--subtitulo">Informes Sectoriales</p>
+                    <p class="caja--texto">Análisis global sectorial de las principales compañías, base de la recomendación y tesis de inversión.</p>
+                    <div class="botones-caja">
+                      <md-button md-no-ink class="md-primary md-button" ng-href="login-empresa.html">DESCARGAR <i class="material-icons">lock_outline</i></md-button>
+                    </div>
+                  </div>
+                </div>
+              </ks-swiper-slide>
+              <!-- cajaTranzadas -->
+              <!-- cajaTranzadas -->
+            </ks-swiper-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inicio subtitulo -->
+<section class="homeLideres h--paddingBottom1">
+  <div class="ban-container" ng-controller="animateCtrl">
+    <div class="ban-col-sm-12 no_visible" when-visible="a_fadeup1">
+      <h2 class="titulo">Noticias relacionadas</h2>
+      <hr class="titulo-linea h--marginBottom1">
+    </div>
+  </div>
+</section>
+<!-- fin subtitulo -->
+<!-- inicio contenedorNoticias -->
+<section>
+  <div class="ban-container">
+    <div class="sliderNoticiasRecomendadas" ng-controller="sliderNoticiasRecomendadas">
+      <ks-swiper-container class="sliderCards" override-parameters="noticiasRecomendadas" show-nav-buttons="true">
+        <ks-swiper-slide>
+          <div class="ban-col-md-12">
+            <div class="noticiasRecomendadas h--shadowBox">
+              <h4>Renta Fija</h4>
+              <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+              <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+              <div class="pin"></div>
+              <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+            </div>
+          </div>
+        </ks-swiper-slide>
+        <ks-swiper-slide>
+          <div class="ban-col-md-12">
+            <div class="noticiasRecomendadas h--shadowBox">
+              <h4>Renta Fija</h4>
+              <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+              <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+              <div class="pin"></div>
+              <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+            </div>
+          </div>
+        </ks-swiper-slide>
+        <ks-swiper-slide>
+          <div class="ban-col-md-12">
+            <div class="noticiasRecomendadas h--shadowBox">
+              <h4>Renta Fija</h4>
+              <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+              <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+              <div class="pin"></div>
+              <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+            </div>
+          </div>
+        </ks-swiper-slide>
+        <ks-swiper-slide>
+          <div class="ban-col-md-12">
+            <div class="noticiasRecomendadas h--shadowBox">
+              <h4>Renta Fija</h4>
+              <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+              <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+              <div class="pin"></div>
+              <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+            </div>
+          </div>
+        </ks-swiper-slide>
+        <ks-swiper-slide>
+          <div class="ban-col-md-12">
+            <div class="noticiasRecomendadas h--shadowBox">
+              <h4>Renta Fija</h4>
+              <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+              <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+              <div class="pin"></div>
+              <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+            </div>
+          </div>
+        </ks-swiper-slide>
+      </ks-swiper-container>
+    </div>
+  </div>
+</section>
+<!-- fin contenedorNoticias -->
+<!-- inicio boton -->
+<section ng-controller="animateCtrl">
+  <div class="contenedor--botones h--marginTop1 h--paddingBottom2 h--alignCenter" ng-controller="modalesCrtl">
+    <md-button href="#noticias" class="boton2 md-raised boton--xl no_visible" when-visible="a_fadeup1">VER MÁS NOTICIAS</md-button>
+  </div>
+</section>
+
+<!-- fin boton -->

@@ -1,0 +1,69 @@
+<div class="ban-container" nav--Privado>
+  <div class="Privado-menu" ng-controller="menuPrivadoCrtl-p">
+    <!-- mega menu -->
+    <ul>
+      <li ng-repeat="menu in menuEmpresa" ng-class="{open: currentOpen.menuId == menu.id}" ng-click="indicadores = false">
+        <md-button ng-click="currentOpen.menuId = currentOpen.menuId == menu.id ? null : menu.id; prueba1()" class="nav-submenu boton--privado" data-toggle="nav-submenu" href="">
+          <div>
+            {{menu.name}}
+          </div>
+        </md-button>
+        <md-menu-content class="menuFondo navMenu" ng-click="currentOpen.menuId = false">
+          <div class="ban-row" data-ui-sref="{{menu.id}}" data-ui-sref-active="active" ng-mouseleave="currentOpen.menuId = false">
+            <div class="ban-col-xs-12 ban-col-sm-5 ban-col-md-3  menu--padding hide-xs">
+              <div class="{{menu.image}}">
+                <h3 class="navMenu--titulo">{{menu.name}}</h3>
+                <hr width="15%">
+                <p class="navMenu--texto">{{menu.desc}}</p>
+              </div>
+            </div>
+            <div class="ban-col-xs-12 ban-col-sm-7 ban-col-md-9 navMenu--contenido menu--padding menu--responsive">
+              <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-4" ng-repeat="subMenu in menu.menu">
+                <md-list class="navMenu--opciones">
+                  <div class="subheader">
+                    <md-list-item ng-href="{{subMenu.url}}" target="{{subMenu.target}}">{{subMenu.name}}</md-list-item>
+                  </div>
+                  <div class="list-item" ng-repeat="hijos in subMenu.subMenu">
+                    <md-list-item ng-href="{{hijos.url}}">{{hijos.name}}</md-list-item>
+                  </div>
+                </md-list>
+              </div>
+            </div>
+          </div>
+        </md-menu-content>
+      </li>
+      <li class="menu--iconos">
+        <!-- inicio notificaciones -->
+        <div class="menu--notificaciones">
+          <div class="menuPrivado ">
+            <md-button class="md-icon-button" href="" ng-click="notificaciones = ! notificaciones; currentOpen.menuId = false; indicadores = false ">
+              <md-icon>
+                <i class="material-icons">notifications</i>
+              </md-icon>
+            </md-button>
+          </div>
+          <div class="menuFondo navMenu" ng-show="notificaciones">
+            <md-menu-content ng-mouseleave="notificaciones = false">
+              <div class="ban-row">
+                <div class="ban-col-xs-12 ban-col-sm-5 ban-col-md-3 navMenu--imagen hide-xs">
+                  <div class="navMenu--imagen imagen--notificaciones">
+                    <h3 class="navMenu--titulo"> Notificaciones</h3>
+                    <hr width="15%">
+                    <p class="navMenu--texto">Revisa los temas de tu interés, tus tareas pendientes y los procesos en curso. </p>
+                  </div>
+                </div>
+                <div class="ban-col-xs-12 ban-col-md-9 ban-col-sm-7 navMenu--contenido">
+                  <!-- Inicio Notificaciones -->
+                  <div ng-include src="'detalle/detalle-notificaciones.html'"></div>
+                  <!-- Fin Notificaciones -->
+                </div>
+              </div>
+            </md-menu-content>
+          </div>
+        </div>
+        <!-- fin notificaciones -->
+      </li>
+    </ul>
+  </div>
+</div>
+<!--FIN TAG mega menu jorge 23/08 -->
